@@ -26,7 +26,7 @@ github_username:  TianyiShi2001
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
