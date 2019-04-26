@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On the Unification of Knowledge and Free Quality Education for All"
+title:  "关于知识资源的统一和其对全人类的自由获取 On the Unification of Knowledge Resources and Their Open-Access for All"
 date:   2019-04-26 22:10:32 +0100
 categories: open access
 ---
@@ -12,6 +12,8 @@ This means when I want to extract valueable information
 embedded within a large amount of 'repetitive information'
 
 Why don't these authors come together and write a 
+
+我阅读很多教科书。高中的时候，为了准备生物奥赛，我阅读
 
 
 
