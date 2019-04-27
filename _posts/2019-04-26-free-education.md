@@ -8,8 +8,7 @@ I read a lot of textbooks. Back in high school, I read *Campbell Biology*[^Reece
 
 Different authors have different perspectives on the same subject or single topic, so reading different textbooks helps to gain a holistic understanding of that topic or subject. However, for all 'Biology' books, or 'Biochemistry' books, most contents are essentially written in the same way by different authors—rephrased in one way or another. 
 
-This means when I want to extract valueable information 
-embedded within a large amount of 'repetitive information'
+This reduces the efficiency of learning, because when one have read about a topic in one book and starts to study another book, the valueable information exclusively contained in that other book is hidden within a large amount of 'repetitive information'.
 
 Why don't these authors come together and write a 
 
@@ -18,7 +17,10 @@ Why don't these authors come together and write a
 
 
 Wikipedia is a huge lead towards 'free knowledge for all', but it has critical constraints that make it unsuitable for 'education'. Can you learn biochemistry with wikipedia only? No, you need a textbook and/or series of lectures. Why? What's the difference between Wikipedia and textbooks?
-1. 
+1. The knowledge in Wikipedia is largely unorganised. For example, it does not tell from which page should you start learning biochemistry; when you have learnt about "ketogenic acid", Wikipedia does not tell what to do next. 
+2. 
+
+hhhhhh
 
 [^Reece]: Campbell, N. A., Urry, L. A., Cain, M. L., Wasserman, S. A., Minorsky, P. V., Reece, J. (2014). *Campbell biology* (10 ed.). Boston: Pearson, 2014.
 [^Sadava]: Sadava, D. E., Hillis, D. M., Heller, H. C., & Hacker, S. D. (2017). *Life: The science of biology* (11 ed): Sinauer Associates
