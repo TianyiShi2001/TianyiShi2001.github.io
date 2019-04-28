@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于知识资源的统一和其对全人类的自由获取 On the Unification of Knowledge Resources and Their Open-Access for All"
+title:  "On the Unification of Knowledge Resources and Their Open-Access for All 关于知识资源的统一和其对全人类的自由获取"
 date:   2019-04-26 22:10:32 +0100
 categories: open access
 ---
