@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial Essay-Y1T3W3</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="tutorial.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ 
+        TeX: { 
+            extensions: ["extpfeil.js"] 
+        }
+    });
+    </script>
+    <script src="tutorial.js"></script>
+</head>
+<body>
+    <div class="trig d-none d-lg-block">
+        <div class="corn"><span>
+            <a href="https://tianyishi2001.github.io">HOME</a>
+        </span></div>
+    </div>
+    <div class="container">
+        <div class="topic pt-5">Amino acid Metabolism and Gluconeogenesis</div>
+        <div><span class="badge badge-primary">2019-05-03</span> <span class="badge badge-primary">Tutor: Tanadet Pipatpolkai</span></div>
+        <p class="subject"></p>
+        <p class="tutor"></p>
+        <div class="description alert alert-primary">
+            <h4>Essay Title</h4>
+            <ul>
+                <li>Using at least three examples, explain how amino acids can be glucogenic, ketogenic or both? </li>
+                <li>How is ammonia as a by-product incorporated into urea?</li>
+            </ul>
+        </div>
+        <div class="essay">
+            <p>
+                Catabolism of an amino acid produces ammonia and a carbon skeleton. In humans, ammonia is converted to a less toxic, but still soluble form, urea, and excreted. The carbon skeleton, depending on the identity of the amino acid, can be converted to common energy-producing pathways:
+                <ol>
+                    <li>
+                        Glucogenic amino acids
+                    </li>
+                    <li>
+                        Ketogenic amino acids give rise to acetyl-CoA, or other intermediates in 
+                    </li>
+                </ol>
+                To be specific, these terms are only valid when the person is starved. WHen fed, carbon skeletons derived from excess amino acids are either oxidised, to produce energy, or stored, in the form of glycogen or triacylglycerol. When starved, 
+                Humans lack the glyoxylate cycle, so acetyl-CoA cannot be converted to glucose
+            </p>
+            <div class="alert alert-success">
+                <h4>Mnemonic</h4>
+                <ul>
+                    <li>Ketogenic only: "L" amino acids: L (<b>L</b>eucine) & K (<b>L</b>ysine)</li>
+                    <li>Both ketogenic and glucogenic: "FITTT", i.e. F (Phenylalanine), I (<b>I</b>soleucine), T (<b>T</b>hreonine), W (<b>T</b>ryptophan), Y (<b>T</b>yrosine)</li>
+                    <li>Other amino acids are glucogenic only (A, C, D, E, G, H, M, N, P, Q, R, S, V)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="description alert alert-primary">SAQ: Explain how (i) lactate (ii) glycerol and (iii) alanine can be converted into glucose.
+        </div>
+        <ol type="i">
+            <li> Lactate
+                <ol>
+                    <li>Lactate is mainly produced by anaerobic respiration of muscles and glycolysis in erythrocytes.</li>
+                    <li>(Mainly in liver, ) lactate is oxidised by lactate dehydrogenase to pyruvate. This step produces an equivalent amount of NADH for the later GAPDH reaction.
+                            $$\text{lactate + NAD}^+ \Rightarrow \text{pyruvate + NADH + H}^+$$
+                    </li> 
+                    <li>
+                        Pyruvate is then processed by mitochondrial pyruvate carboxylase and PEP carboxykinase to produce PEP. PEP is transported out into the cytoplasm to continue subsequent steps in gluconeogenesis, as described in Voet's and Lehninger's <i>Biochemistry</i>. I'm highly suspicious about the validity of PEP transport. I searched for "PEP transporter" on PubMed and Google and the only (probably) relevant article<sup>1</sup> supporting this view was written in 1983.
+                    </li>
+                    <li>
+                        Then I learnt that 
+                    </li>
+                </ol>
+            </li>
+            <li> Glycerol
+                <ol type="1">
+                    <li>Glycerol is phosphorylated by glycerol kinase (expressed in liver and kidney) to glycerol-3-phosphate.
+                        $$\text{glycerol + NAD}^+ \Rightarrow \text{DHAP + NADH + H}^+$$
+                    </li>
+                    <li>glycerol-3-phosphate dehydrogenase oxidises it to dihydroacetone phosphate (DHAP)</li>
+                </ol>
+            </li>
+            <li> Alanine
+                <ol>
+                    <li>
+                        Alanine is mainly produced by amino acid catabolism in myocytes (transamination from various amino acids to glutamate then pyruvate).
+                    </li>
+                    <li>
+                        Alanine is mainly taken up by hepatocytes, and is converted back to pyruvate by alanine aminotransferase (ALT).
+                    </li>
+                    <li>
+                        This step does not produce NADH, so pyruvate is carboxylated and reduced to malate in mitochondria,and malate is oxidised back to oxaloacetate in the cytoplasm to provide NADH. 
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <div>
+                <ol>
+                    <li>
+                        Drahota, Z., Rauchova, H., Mikova, M., Kaul, P., & Bass, A. (1983). Phosphoenolpyruvate shuttle—transport of energy from mitochondria to cytosol. <i>FEBS Lett, 157</i>(2), 347-349. 
+                    </li>
+                    <li>
+                        Stark, R., Guebre-Egziabher, F., Zhao, X., Feriod, C., Dong, J., Alves, T. C., ... & Cline, G. W. (2014). A role for mitochondrial phosphoenolpyruvate carboxykinase (PEPCK-M) in the regulation of hepatic gluconeogenesis. <i>Journal of biological chemistry, 289</i>(11), 7257-7263.
+                    </li>
+                </ol>
+            </div>
+    </div>
+</body>
+</html>
