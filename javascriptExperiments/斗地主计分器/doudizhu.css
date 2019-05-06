@@ -1,9 +1,16 @@
 .container {
-    margin: 10% 25% 20% 25%;
+    margin: 0% 25% 20% 25%;
     text-align: center;
 }
 
 div {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+h1 {
+    font-family: source-han-serif-sc, serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 3rem;
 }
