@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>斗地主计分器</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="doudizhu.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        名字设置
+        <ul id="nameSet">
+            <li>玩家1：<input type="text" id="player1NameSet"></li>
+            <li>玩家2：<input type="text" id="player2NameSet"></li>
+            <li>玩家3：<input type="text" id="player3NameSet"></li>
+        </ul>
+    </div>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="player1Name" scope="col">
+                        Player 1
+                    </th>
+                    <th class="player2Name" scope="col">
+                        Player 2
+                    </th>
+                    <th class="player3Name" scope="col">
+                        Player 3
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="player1Display">
+                        0
+                    </td>
+                    <td id="player2Display">
+                        0
+                    </td>
+                    <td id="player3Display">
+                        0
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <label for="difen">底分：</label>
+            <input type="number" id="difen">
+        </div>
+        <div>
+            倍数：<span id="beishu">1</span>
+        </div>
+        <div>
+            本局分数：<span id="benju"></span>
+        </div>
+        <div>
+            <button id="erbei">二倍</button>
+            <button id="sanbei">三倍</button>
+            <button id="sibei">四倍</button>
+        </div>
+<!--         <div>
+            <label for="benjudizhu">本局地主：</label>
+            <select name="benjudizhu" id="benjudizhu">
+                <option value="dizhuplayer1" class="player1Name">Player 1</option>
+                <option value="dizhuplayer2" class="player2Name">Player 2</option>
+                <option value="dizhuplayer3" class="player3Name">Player 3</option>
+            </select>
+        </div> -->
+        <div>
+            <button id="dizhu1" class="btn btn-warning"><span class="player1Name">玩家1</span></button>
+            <button id="dizhu2" class="btn btn-warning"><span class="player2Name">玩家2</span></button>
+            <button id="dizhu3" class="btn btn-warning"><span class="player3Name">玩家3</span></button>
+        </div>
+        <div>
+            <button class="btn btn-success" id="player1Wins"><span class="player1Name">玩家1</span>赢了</button>
+            <button class="btn btn-success" id="player2Wins"><span class="player2Name">玩家2</span>赢了</button>
+            <button class="btn btn-success" id="player3Wins"><span class="player3Name">玩家3</span>赢了</button>
+        </div>
+        <div>
+            <button id="chongzhi" class="btn btn-danger">重置</button>
+        </div>
+    </div>
+    <script src="doudizhu.js"></script>
+</body>
+</html>
