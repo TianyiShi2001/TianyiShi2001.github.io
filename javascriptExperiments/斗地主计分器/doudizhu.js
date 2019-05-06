@@ -37,6 +37,11 @@ document.querySelector("#difen").addEventListener("change", function(){
     benjuUpdate()
 });
 
+function difenreset() {
+    difen = 1
+    document.querySelector("#difen").value = 1
+}
+
 //=================================================================
 
 var beishu = 1;
@@ -75,10 +80,6 @@ document.querySelector("#benju").textContent = benju
 var dizhu = "none"
 
 nodizhu = dizhu === "none"
-
-/* document.querySelector("#benjudizhu").addEventListener("change", function(){
-    dizhu = document.querySelector("select").value;
-}); */
 
 document.querySelector("#dizhu1").addEventListener("click", function(){
     dizhu = "dizhuplayer1"
@@ -187,10 +188,9 @@ document.querySelector("#player3Wins").addEventListener("click", function(){
     }
 });
 
-
+//=================================================================
 
 document.querySelector("#chongzhi").addEventListener("click", function(){
-    document.querySelector("#beishu").textContent = beishu
     for(var i = 0; i < p1NameAll.length; i++) {
         p1NameAll[i].textContent = "玩家1"
     };
@@ -203,6 +203,8 @@ document.querySelector("#chongzhi").addEventListener("click", function(){
     p1Total = 0;
     p2Total = 0;
     p3Total = 0;
+    difen = 1
     displayTotalAndReset();
+    difenreset();
 });
 
