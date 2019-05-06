@@ -72,7 +72,9 @@ document.querySelector("#benju").textContent = benju
 
 //=================================================================
 
-var dizhu = "dizhuplayer1"
+var dizhu = "none"
+
+nodizhu = dizhu === "none"
 
 /* document.querySelector("#benjudizhu").addEventListener("change", function(){
     dizhu = document.querySelector("select").value;
@@ -80,18 +82,21 @@ var dizhu = "dizhuplayer1"
 
 document.querySelector("#dizhu1").addEventListener("click", function(){
     dizhu = "dizhuplayer1"
+    nodizhu = dizhu === "none"
     document.querySelector("#dizhu2").classList.add("disabled")
     document.querySelector("#dizhu3").classList.add("disabled")
 });
 
 document.querySelector("#dizhu2").addEventListener("click", function(){
     dizhu = "dizhuplayer2"
+    nodizhu = dizhu === "none"
     document.querySelector("#dizhu1").classList.add("disabled")
     document.querySelector("#dizhu3").classList.add("disabled")
 });
 
 document.querySelector("#dizhu3").addEventListener("click", function(){
     dizhu = "dizhuplayer3"
+    nodizhu = dizhu === "none"
     document.querySelector("#dizhu1").classList.add("disabled")
     document.querySelector("#dizhu2").classList.add("disabled")
 });
@@ -109,63 +114,77 @@ function displayTotalAndReset() {
     document.querySelector("#dizhu1").classList.remove("disabled");
     document.querySelector("#dizhu2").classList.remove("disabled");
     document.querySelector("#dizhu3").classList.remove("disabled");
+    dizhu = "none"
+    nodizhu = dizhu === "none"
 }
 
 document.querySelector("#player1Wins").addEventListener("click", function(){
-    if(dizhu === "dizhuplayer1"){
-        p1Total += benju*2;
-        p2Total -= benju;
-        p3Total -= benju;
-        displayTotalAndReset()
-    } else if(dizhu === "dizhuplayer2"){
-        p1Total += benju;
-        p2Total -= benju*2;
-        p3Total += benju;
-        displayTotalAndReset()
+    if(nodizhu) {
+        alert("请设置地主")
     } else {
-        p1Total += benju;
-        p2Total += benju;
-        p3Total -= benju*2;
-        displayTotalAndReset()
+        if(dizhu === "dizhuplayer1"){
+            p1Total += benju*2;
+            p2Total -= benju;
+            p3Total -= benju;
+            displayTotalAndReset()
+        } else if(dizhu === "dizhuplayer2"){
+            p1Total += benju;
+            p2Total -= benju*2;
+            p3Total += benju;
+            displayTotalAndReset()
+        } else {
+            p1Total += benju;
+            p2Total += benju;
+            p3Total -= benju*2;
+            displayTotalAndReset()
+        }
     }
 });
 
 document.querySelector("#player2Wins").addEventListener("click", function(){
-    if(dizhu === "dizhuplayer2"){
-        p1Total -= benju;
-        p2Total += benju*2;
-        p3Total -= benju;
-        displayTotalAndReset()
-    } else if(dizhu === "dizhuplayer1"){
-        p1Total -= benju*2;
-        p2Total += benju;
-        p3Total += benju;
-        displayTotalAndReset()
+    if(nodizhu) {
+        alert("请设置地主")
     } else {
-        p1Total += benju;
-        p2Total += benju;
-        p3Total -= benju*2;
-        displayTotalAndReset()
-    };
+        if(dizhu === "dizhuplayer2"){
+            p1Total -= benju;
+            p2Total += benju*2;
+            p3Total -= benju;
+            displayTotalAndReset()
+        } else if(dizhu === "dizhuplayer1"){
+            p1Total -= benju*2;
+            p2Total += benju;
+            p3Total += benju;
+            displayTotalAndReset()
+        } else {
+            p1Total += benju;
+            p2Total += benju;
+            p3Total -= benju*2;
+            displayTotalAndReset()
+        };
+    }
 });
 
 document.querySelector("#player3Wins").addEventListener("click", function(){
-    if(dizhu === "dizhuplayer3"){
-        p1Total -= benju;
-        p2Total -= benju;
-        p3Total += benju*2;
-        displayTotalAndReset()
-    } else if(dizhu === "dizhuplayer1"){
-        p1Total -= benju*2;
-        p2Total += benju;
+    if(nodizhu) {
+        alert("请设置地主")
+    } else {
+        if(dizhu === "dizhuplayer3"){
+            p1Total -= benju;
+            p2Total -= benju;
+            p3Total += benju*2;
+            displayTotalAndReset()
+        } else if(dizhu === "dizhuplayer1"){
+            p1Total -= benju*2;
+            p2Total += benju;
+            p3Total += benju;
+            displayTotalAndReset()
+        } else {
+        p1Total += benju;
+        p2Total -= benju*2;
         p3Total += benju;
         displayTotalAndReset()
-    } else {
-    p1Total += benju;
-    p2Total -= benju*2;
-    p3Total += benju;
-    displayTotalAndReset()
-    };
+        };
+    }
 });
 
 
