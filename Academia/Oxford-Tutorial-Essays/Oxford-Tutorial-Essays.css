@@ -1,3 +1,7 @@
+.bigtitle {
+	text-align: center;
+}
+
 .navigation a,
 .navigation a:visited {
 	color: black;
