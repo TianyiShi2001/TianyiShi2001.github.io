@@ -1,3 +1,16 @@
-$(document).ready(function() {
-	$(".topic").addClass("display-4 border-bottom border-info pb-3");
+// tooltip
+$(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+
+$(".tutor").attr({
+	"data-toggle": "tooltip",
+	title: "Tutor",
+	"data-placement": "top"
+});
+
+$(".dttm").attr({
+	"data-toggle": "tooltip",
+	title: "Date and Time of Tutorial",
+	"data-placement": "top"
 });
