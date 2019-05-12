@@ -12,7 +12,7 @@
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ 
         TeX: { 
-            extensions: ["extpfeil.js"] 
+            extensions: ["extpfeil.js", "mhchem.js"] 
         }
     });
     </script>
@@ -34,19 +34,50 @@
             </ul>
         </div>
         <div class="essay">
+            <h2>Glucogenic and Ketogenic Amino Acids</h2>
             <p>
-                Catabolism of an amino acid produces ammonia and a carbon skeleton. In humans, ammonia is converted to a less toxic, but still soluble form, urea, and excreted. The carbon skeleton, depending on the identity of the amino acid, can be converted to common energy-producing pathways:
+                Catabolism of an amino acid produces ammonia (exists as ammonium ion at physiological pH) and a carbon skeleton (α-ketoacid). In humans, ammonia is principally converted to a less toxic, but still soluble product, urea, and excreted. The carbon skeleton, depending on the identity of the amino acid, can be fed into two different fuel molecule-producing pathways (when starved), leading to an anthropocentric (because humans lack the glyoxylate cycle) classification of amino acids:
                 <ol>
                     <li>
-                        Glucogenic amino acids
+                        Glucogenic amino acids can be converted into substrates of gluconeogenesis, i.e. pyruvate or oxaloacetate (and hence any intermediates of the TCA cycle).
                     </li>
                     <li>
-                        Ketogenic amino acids give rise to acetyl-CoA, or other intermediates in 
+                        Ketogenic amino acids give rise to intermediates in the HMG-CoA (ketone body-production) pathway (acetyl-CoA, acetoacetyl-CoA, HMG-CoA and acetoacetate).
                     </li>
                 </ol>
-                To be specific, these terms are only valid when the person is starved. WHen fed, carbon skeletons derived from excess amino acids are either oxidised, to produce energy, or stored, in the form of glycogen or triacylglycerol. When starved, 
-                Humans lack the glyoxylate cycle, so acetyl-CoA cannot be converted to glucose
+                Importantly, only when starved, the amino acids are truely, literally, "glucogenic" or "ketogenic".
+                <ul>
+                    <li>When fed, carbon skeletons derived from excess amino acids are either oxidised, to produce energy, or stored, in the form of glycogen (for glucogenic amino acids) or triacylglycerol (for ketogenic amino acids).</li>
+                    <li>
+                        Erythrocytes rely exclusively on glucose for their energy production; glucose is also the principal fuel of the brain (though it can metabolise ketone bodies). Thus, maintaining an optimal blood glucose concentration is crucial. When starved, no sugars can be obtained from food, and most body tissues switch from consuming glucose to consuming triacylglycerol. Glycerol produced from triacylglycerol can be used for gluconeogenesis, but this far from enough. Therefore glucose must be produced from amino acids, with breakdown of body proteins.
+                    </li>
+                </ul>
+                <div class="alert alert-secondary">In principle, only erythrocytes are obligate glucose consumers (ketone bodies can be produced from acetyl-CoA to fuel the brain), and the glucose they consume can be sustainably obtained from lactate (Cori Cycle). This is in fact not achievable, because unavoidably a small amount of glucose is still taken up by tissues supposed to be using triacylglycerol as their fuel, and the brain still consumes a lot glucose when ketone bodies are available.</div>
             </p>
+            <h4>Glucogenic Amino Acids</h4>
+            <p>Catabolism of glucogenic amino acids leads to production of either pyruvate, oxaloacetate, succinyl-CoA, α-ketoglutarate, or fumarate, as shown below. Simplest examples are direct transamination reactions of alanine, aspartate, and dehydrogenation of glutamate, producing pyruvate, oxaloacetate, and α-ketoglutarate, respectively.
+            </p>
+            <img src="img/glucogenic-amino-acids.jpg" alt="Glucogenic Amino Acids" class="img-fluid">
+            <h4>Ketogenic Amino Acids</h4>
+            <p>The entry points of ketogenic amino acids into the HMG-CoA pathway are shown below. The amount of acetoacetate produced from one unit of each intermediate is indicated in parentheses.</p>
+            <img src="img/ketogenic-amino-acids.jpg" alt="Ketoganic Amino Acids" class="img-400">
+            <h4>Aromatic Amino Acids are Both Ketogenic and Glucogenic</h4>
+            <p>
+                Aromatic amino acids are both glucogenic and ketogenic, and importantly, for each of them, a single catabolic pathway leads to an ketogenic product and an glucogenic product. A notable feature of aromatic amino acid degradation is the use of several oxygenases (monooxygenases and dioxygenases). I used phenylalanine/tyrosine as the example to illustrate this:
+            </p>
+            <img src="img/phenylalanine-catabolism.jpg" alt="Phenylalanine catabolism" class="img-long">
+
+            <div class="alert alert-secondary">
+                <p>
+                    Alkaptonuria is caused by mutant homogentisate 1,2-dioxygenase. Accumulation of homogentisate and its oxide, alkapton, results in dark urine and other physiological damages. 
+                </p>
+                <p>
+                    Not mentioned in most, if not all textbooks, alkaptonuria was the first disease explained by Mendelian genetics. This study, done by Archibald E. Garrod (M.A., M.D. Oxon), was published in the famous medical journal <i>The Lancet</i> in 1902<sup>[1]</sup>. (one decade before world war I!)
+                </p>
+                <p>
+                    Unfortunately, the mechanism of heredity was not the focus of medicine at that time, and few biologist would read <i>The Lancet</i>. Garrod's findings and hypotheses were therefore ignored. (the next important experiment in genetics was done by Griffith two decades later, in 1928, but it was not until 1940s did the field of genetics really begin to shine, with studies done by Beadle, Tatum, Luria, Avery <i>et al.</i>)
+                </p>
+            </div>
             <div class="alert alert-success">
                 <h4>Mnemonic</h4>
                 <ul>
@@ -56,54 +87,72 @@
                 </ul>
             </div>
         </div>
+        <h2>Urea Production</h2>
+        <p>The reactions of the urea cycle are shown below. The mechanism of argininosuccinate synthesis is not obvious (to me), so I also included this. (mechanisms of other reactions are simple nucleophilic substitutions and eliminations)</p>
+        <img src="img/urea-cycle-1.jpg" alt="Urea cycle reations" class="img-fluid">
+        <p>The overall reaction is: $$\ce{HCO3^- + NH4^+ + H2O + 3ATP + aspartate -> urea + 2ADP + AMP + 4P_{i} + fumarate}$$ which is equivalent to: $$\ce{CO2 + 2 amino-acids + 4H2O + 4ATP + FAD + NAD+ + NAD+/NADP+}$$ $$\ce{-> urea + 2 keto-acids + 4ADP + 4P_{i} + FADH2 + NADH + NADH/NADPH + 2H+}$$</p>
+        <p>The diagram shown below verifies that, the production of urea from amino acids, albeit complex, does not result in net consumption or redistribution of 4C and 5C molecules i.e. it does not interfere with other pathways that share common intermediates such as oxaloacetate and fumarate. Transdeamination of two amino acids leads to production of one urea: two amino groups are first transferred onto two α-ketoglutarate (producing glutamate), then one glutamate gives its amino group via ammonia (carbamoyl phosphate), and the other one via oxaloacetate (aspartate), to form urea. 
+        <img src="img/urea-cycle-2.jpg" alt="Urea cycle" class="img-fluid">
+        Although glutamate dehydrogenase, carbamoyl phosphate synthetase and ornithine carbamoyltransferase reactions are widely believed to occur in the mitochondrial matrix, there is currently no absolute consensus on where the transamination of general amino acids and convertion of fumarate (formed in the urea cycle) back to glutamate occur, and, if both mitochondrial and cytosolic forms exist, in what proportions and what the physiological significance are. For example, the diagram JS used in his ppt (lec. 11, p. 12) suggests that a cytosolic form of fumarase exist and it participates in the urea cycle, and the diagram also impies that (though not shown) half of the transamination occurs in the cytosol and the other half in the mitochondria (otherwise α-ketoglutarate will accumulate in the cytosol).</p>
         <hr>
-        <div class="description alert alert-primary">SAQ: Explain how (i) lactate (ii) glycerol and (iii) alanine can be converted into glucose.
-        </div>
-        <div class="alert alert-danger">
-            Some
+        <div class="description alert alert-primary">
+            <h4>SAQ</h4>
+            Explain how (i) lactate (ii) glycerol and (iii) alanine can be converted into glucose.
         </div>
         <ol type="i">
             <li> Lactate
                 <ol>
                     <li>Lactate is mainly produced by anaerobic respiration of muscles and glycolysis in erythrocytes.</li>
-                    <li>(Mainly in liver, ) lactate is oxidised by lactate dehydrogenase to pyruvate. This step produces an equivalent amount of NADH for the later GAPDH reaction.
+                    <li>Dehydrogenation of lactate by <b>lactate dehydrogenase</b> in (mainly liver and kidney cells') cytoplasm produces pyruvate (and NADH).
                             $$\text{lactate + NAD}^+ \Rightarrow \text{pyruvate + NADH + H}^+$$
                     </li> 
-                    <li>
-                        Pyruvate is then processed by mitochondrial pyruvate carboxylase and PEP carboxykinase to produce PEP. PEP is transported out into the cytoplasm to continue subsequent steps in gluconeogenesis, as described in Voet's and Lehninger's <i>Biochemistry</i>. I'm highly suspicious about the validity of PEP transport. I searched for "PEP transporter" on PubMed and Google and the only (probably) relevant article<sup>1</sup> supporting this view was written in 1983.
-                    </li>
-                    <li>
-                        Stark and Guebre-Egziabher<sup>2</sup> (2014) wrote:
-                        <q>Consistent with its predicted role, gluconeogenesis rates from hepatocytes lacking PEPCK-M are severely reduced for lactate, alanine, and glutamine, but not for pyruvate and glycerol.</q> 
-                    </li>
                 </ol>
             </li>
             <li> Glycerol
                 <ol type="1">
-                    <li>Glycerol is phosphorylated by glycerol kinase (expressed in liver and kidney) to glycerol-3-phosphate.
+                    <li>Glycerol used for gluconeogenesis is produced from triacylglycerol (mainly stored in adipose tissues) when starved.</li>
+                    <li>Glycerol is phosphorylated by <b>glycerol kinase</b> (mainly liver and kidney cells') to glycerol-3-phosphate.
                         $$\text{glycerol + NAD}^+ \Rightarrow \text{DHAP + NADH + H}^+$$
                     </li>
                     <li>glycerol-3-phosphate dehydrogenase oxidises it to dihydroacetone phosphate (DHAP)</li>
+                    <!-- The liver preferentially uses lactate, glycerol, and glucogenic amino acids (especially alanine) while the kidney preferentially uses lactate, glutamine and glycerol. -->
                 </ol>
             </li>
             <li> Alanine
                 <ol>
                     <li>
-                        Alanine is mainly produced by amino acid catabolism in myocytes (transamination from various amino acids to glutamate then pyruvate).
+                        Alanine is mainly produced by amino acid catabolism in myocytes (transamination from various amino acids to glutamate then to pyruvate).
                     </li>
                     <li>
-                        Alanine is mainly taken up by hepatocytes, and is converted back to pyruvate by alanine aminotransferase (ALT).
-                    </li>
-                    <li>
-                        This step does not produce NADH, so pyruvate is carboxylated and reduced to malate in mitochondria,and malate is oxidised back to oxaloacetate in the cytoplasm to provide NADH. 
+                        Alanine is mainly taken up by hepatocytes, and is converted back to pyruvate by <b>alanine aminotransferase</b> (ALT).
+                        $$\text{alanine} + \text{α-ketoglutarate} \Rightarrow \text{pyruvate} + \text{glutamate}$$
                     </li>
                 </ol>
             </li>
         </ol>
-        <div>
+        <ul>
+            <li>All gluconeogenic substrates eventually converge at the pathway shown below to produce glucose (e.g. lactate and alanine are converted into pyruvate; many amino acids are converted into oxaloacetate; glycerol is converted into DHAP).
+                <img src="img/gluconeogenesis-pyruvate.jpg" alt="gluconeogenesis-pyruvate" class="img-fluid">
+            </li>
+        </ul>
+        <div class="alert alert-danger">
+            <h4>Note about PEPCK</h4>
+            <p>
+                In Lehninger's and Voet's <i>Biochemistry</i>, two paths of gluconeogenesis are described, one using mitochondrial PEPCK (PEP carboxykinase) and the other using cytosolic PEPCK. The rationale is that, when <b>lactate</b> is dehydrogenated in the cytosol, an equivalent amount of NADH is produced for the later GAPDH reaction, thus oxaloacetate produced from lactate is directly decarboxylated via <b>mitochondrial PEPCK</b> to produce PEP; conversion of <b>alanine</b> to pyruvate does not produce the NADH, so oxaloacetate is first reduced to malate in mitochondria, then dehydrogenation of malate back to oxaloacetate in the cytosol produces the NADH (then PEP is produced via <b>cytosolic PEPCK</b>).</p>
+            <p>
+                JS implied that we only need to remember the path with malate as an intermediate (for both alanine and lactate). I talked to him about what I learnt from Lehninger's, and he said yes there can be two paths but generally cytosolic PEPCK is more important in gluconeogenesis, and the mix of two paths is complicated (the rationale given in Lehninger's is not 100% accurate).
+            </p>
+            <p>
+                Later, I found valuable information in a recent article written by Stark and Guebre-Egziabher <sup>[2]</sup>:
                 <ol>
-                    <li>
-                        Drahota, Z., Rauchova, H., Mikova, M., Kaul, P., & Bass, A. (1983). Phosphoenolpyruvate shuttle—transport of energy from mitochondria to cytosol. <i>FEBS Lett, 157</i>(2), 347-349. 
+                    <li>"This study is the first to directly address the role of PEPCK-M by elimination of the enzyme", and it concludes that "Approximately a third of gluconeogenesis comes from PEPCK-M." (thus it's not unimportant! It's just long been overlooked.)</li>
+                    <li>"Gluconeogenesis rates from hepatocytes lacking PEPCK-M are severely reduced for lactate, alanine, and glutamine, but not for pyruvate and glycerol." (this contradicts with the rationale given by Lehninger's: gluconeogenesis from lactate is actually highly dependent on PEPCK-M, and pyruvate, which, like alanine, has a net consumption of NADH during gluconeogenesis, is <i>not</i> PEPCK-M-dependent.)</li>
+                </ol>
+            </div>
+        <div>
+            <h3>References</h3>
+                <ol>
+                    <li>Garrod, A. E. (1902). The incidence of alkaptonuria: a study in chemical individuality. <i>The Lancet</i>, 160(4137), 1616-1620. 
                     </li>
                     <li>
                         Stark, R., Guebre-Egziabher, F., Zhao, X., Feriod, C., Dong, J., Alves, T. C., ... & Cline, G. W. (2014). A role for mitochondrial phosphoenolpyruvate carboxykinase (PEPCK-M) in the regulation of hepatic gluconeogenesis. <i>Journal of biological chemistry, 289</i>(11), 7257-7263.

@@ -70,6 +70,22 @@
 	font-size: 1.2rem;
 }
 
+.img-long {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	width: 250px;
+}
+
+.img-400 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	width: 400px;
+}
+
 /* Toptriangle */
 
 .trig {
