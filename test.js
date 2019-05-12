@@ -1,3 +1,3 @@
-var cat = require("cat-me");
+var express = require("express");
 
-console.log(cat());
+var app = express();
