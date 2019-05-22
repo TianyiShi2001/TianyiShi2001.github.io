@@ -86,6 +86,40 @@
 	width: 400px;
 }
 
+.img-500 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+.img-600 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+.centerTable {
+	margin: 1rem auto;
+	border: 2px solid black;
+	width: 80%;
+}
+
+td,
+th {
+	border: 1px solid black;
+}
+
+th {
+	text-align: center;
+}
+
+figcaption {
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+
 /* Toptriangle */
 
 .trig {

@@ -1,20 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head>
- <title></title>
- <meta charset="utf-8">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-</head>
+    <head>
+        <title>Photosynthesis</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="tutorial.css">
+        <script src="/src/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ 
+            TeX: { 
+                extensions: ["mhchem.js"]
+            }
+        });
+        </script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              TeX: { equationNumbers: { autoNumber: "AMS" } }
+            });
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    </head>
 <body>
+    <div class="trig d-none d-lg-block d-print-none">
+        <div class="corn"><span>
+            <a href="Oxford-Tutorial-Essays.html">BACK</a>
+        </span></div>
+    </div>
+    <div class="container">
+        <div class="title">Photosynthesis</div>
+        <div class="info"><span class="tutor">Tanadet Pipatpolkai</span><span class="dttm">2019-05-23 16:00</span><span class="subject">Metabolism</span></div>
+        <div class="description alert alert-primary">
+            <h4>Essay Title</h4>
+            <ul>
+                <li>Discuss how CO<sub>2</sub> is fixed in green plant. </li>
+                <li>Explain how and why plant assimilates their products in the form of sucrose and starch.</li>
+            </ul>
+        </div>
+        <div class="essay">
+            <h2>CO<sub>2</sub> Fixation in Green Plants</h2>
+            <h4>RuBisCO and the Calvin Cycle</h4>
+            <p>Broadly speaking, carbon fixation is incorporating inorganic carbon (in the form of CO<sub>2</sub> or HCO<sub>3</sub><sup>-</sup>) into organic/biological compounds. This term is also used to refer specifically to 'autotrophic carbon fixation', which means sustainable production of new biological molecules from CO<sub>2</sub>. Various autotrophic carbon fixation pathways have been found in bacteria and archea. In all plants, however, the Calvin cycle is the only pathway, which starts with the reaction catalysed by RuBisCO (ribulose-1,5-bisphosphate carboxylase/oxygenase): 
+                \begin{equation}
+                    \text{ribulose 1,5-bisphosphate} + \ce{CO2 ->[\text{RuBisCO}]} 2 \times \text{3-phosphoglycerate}
+                \end{equation}</p>
+            <p>The Calvin cycle then goes on to the reduction phase, using ATP and NADPH to convert 3-phosphoglycerate to glyceraldehyde 3-phosphate (resembling part of the gluconeogenesis pathway). 5/6 of glyceraldehyde 3-phosphate is converted back to RuBP by rearrangement of carbon skeleton catalysed by transketolases, and 1/6 is the net gain of triose.</p>
+            <figure>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/8/8e/Calvin-cycle4.svg' alt='' class="img-600"/>
+                <figcaption>"Overview of the Calvin cycle and carbon fixation" by Mike Jones. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></figcaption>
+            </figure>
+            <p>
+                The overall equation for net gain of one glyceraldehyde 3-phosphate (GAP) is: 
+                \begin{equation}
+                    \ce{3CO2 + 9 ATP + 6 (NADPH + H+)-> GAP + 9 (ADP + Pi) + 6 NADP+}
+                \end{equation}
+            </p>
+            <h4>Carbon Fixation in C4 and CAM Plants</h4>
+            <p>
+                RuBisCO can add molecular oxygen to RuBP, producing 3-phosphoglycerate (PGA) and 2-phosphoglycolate (2PG). Two 2PG molecules can be converted back to one PGA though a series of reactions in the chloroplast, peroxisome and mitochondia. The process, known as photorespiration, results in loss of organic carbon and consumption of ATP. The rate of photorespiration is increased by lowered CO<sub>2</sub> availability or increased temperature.
+            </p>
+            <p>
+                Plants have evolved different mechanisms to avoid photorespiration, and these plants are broadly classified into two classes: C4 plants and CAM plants. They both use PEP carboxylase to capture CO<sub>2</sub> and pass it to RuBisCO when/where oxygenase activity is low. 
+            </p>
+            <p>
+                <strong>C4 plants have spatial isolation between initial capture of CO<sub>2</sub> and RuBisCO.</strong>
+                There are 3 variant forms of C4 mechanism and this is the most common one:
+            </p>
+            <img src="img/C4-metabolism.jpg" alt="C4 carbon fixation" class="img-600">
+            <p>
+                <strong>CAM plants have termporal isolation between initial capture of CO<sub>2</sub> and RuBisCO.</strong>
+                The enzymes involved are the same as C4 carbon fixation; the difference is that only one cell type is involved. At night, stomata are open, allowing entry of CO<sub>2</sub> and formation of malate. Malate is stored in the vacuole. In the daytime, stomata are closed (preventing photorespiration and water loss), and malate are released from the vacuole, cleaved by malic enzyme, releasing CO<sub>2</sub> for Calvin cycle.
+            </p>
+            <h2>Sucrose and Starch</h2>
+            <p>
+                The primary product of Calvin cycle is glyceraldehyde 3-phosphate (GAP), which itself is a sugar (triose). Most GAP is converted into sucrose and starch.
+                The majority of sucrose produced by photosynthetic tissues (source) is exported to non-photosynthetic tissues (sink) in a process known as translocation, which occurs in phloem. Some of the sucrose received by the sink is directly oxidised to produce ATP, and some are converted to amino acids and lipids. Yet others are converted to starch for long term storage (especially in specialised sink tissues such as potato tubers). The table below shows basic properties of sucrose and starch:
+            </p>
+            <table class="centerTable">
+                <thead>
+                    <tr>
+                        <th>Sucrose</th>
+                        <th>Starch</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+                                    Disaccharide (α-<small>D</small>-glucopyranosyl-(1→2)-β-<small>D</small>-fructofuranoside)
+                                </li>
+                                <li>
+                                    Short-term storage in vacuoles
+                                </li>
+                                <li>
+                                    The principal form of sugar used in translocation (transport from source to sink)
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Polysaccharide (with α(1→4) and α(1→6) linkages between glucose molecules; amylose + amylopectin)
+                                </li>
+                                <li>
+                                    Long-term storage in chloroplasts
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            (Starch is the most common form of storage of energy in plants, but sucrose, fructan, and lipids are also used, depending on species and tissue type)
+            <h4>Starch and sucrose synthesis in plants</h4>
+            <p>
+                Starch is synthesised in the chloroplast stroma. The pathway resembles glycogen synthesis in animals, except that ATP, rather than UDP, is used to activate glucose. 
+            </p>
+            <p>
+                Sucrose is synthesised in the cytosol. The export of each DHAP is coupled with the import of orthophosphate so the number of phosphate groups is balanced. 
+            </p>
+            <img src="img/plant-starch-and-sucrose-synthesis.jpg" alt="" class="img-600">
+            <h4>Why sucrose is suitable for transport</h4>
+            <p><strong>Sucrose is a non-reducing sugar,</strong> which means it is more chemically stable. All sugars have either a ketone or aldehyde group (in their open chain form), and the ketone group can tautomerise to aldehyde group. The aldehyde group makes monosaccharides chemically active because it can be oxidised to carboxyl group while ruducing other compounds (thus 'reducing sugar'). The carbonyl group of hexoses and pentoses can be attacked by \(-\ce{OH}\) on another carbon to form a 5- or 6-membered ring. The carbonyl group is then converted to a hemiacetal or hemiketal group (hemi- means it has one \(-\ce{OH}\) and one \(-\ce{OR}\) group), and that position is said to be anomeric. If the anomeric \(-\ce{OH}\) group is involved in a glycosidic bond, the sugar cannot be converted back to its open chain form. This explains why maltose is a reducing sugar while sucrose is not, though both are monosaccharides:</p>
+            <img src="img/maltose-and-sucrose.jpg" alt="" class="img-400">
+            <p>
+                <b>Sucrose has about the same osmotic activity as glucose but has twice as much sugar.</b> The mechanism of translocation is called 'pressure flow'. At source, sucrose is actively loaded into the sieve tube. This lowers the water potential, so water passively diffuse into the tube, building up pressure potential (part of water potential). At sink, sucrose is removed from the sieve tube and water follows to leave. This lowers water potential so water flows in the sieve tube from source (high water potential) to sink (low water potential), carrying solutes (including sucrose) along its travel.
+                The ability of sucrose to lower water potential is the same because the solute potential (or osmotic potential) is related only to the concentration of dissolved particles (molecules or ions) regardless of size (to a first approximation):
+                $$\Psi_\pi=-c_jRT$$
+                (here I am not sure how the pressure in the sieve tube and/or loading of sucrose is regulated and/or limited. If they are not regulated, transport of glucose can achieve the same amount of sugar transport efficiency by using higher pressure.)
+            </p>
+            <h4>Why starch is suitable for storage</h4>
+            <p>
+                <b>Starch is insoluble and thus osmotically inactive.</b> This means it can be stored in a plastid in large amounts without causing water to flow into the compartment that causes it to burst.
+            </p>
+            <p>
+                Starch and glycogen are all polymers of glucose, but glycogen is soluble while starch is not. Glycogen, made of one structure, has a small size
+                Starch has a complex structure and contains both crystalline and amorphous parts. (Bertoft 2017) Starch is made of amylopectin (major component) and amylose (minor component) and amylose requires preexisting amylopectin granule for its formation.
+            </p>
+            <p>
+                Amylopectin and glycogen are all branched glucose polymers, but their branching pattern causes them to adopt different structures and have different solubilities in water. 
+                In glycogen, α-1,6 branches are evenly distributed within the glycogen particle. This branching pattern in allows its spherical growth, and it is also size-limiting because it leads to a structure that is increasingly crowded towards the periphery. Glycogen particles therefore have a maximum diameter of about 42nm and are entirely soluble in water. 
+                In amylopectin, α-1,6 linkages are asymmetrically distributed, leading to clusters of chains (shown in D) that allows indefinite growth. 
+                The small portion containing the branches is called the amorphous lamella of the unit cluster while the chains generated through the branches intertwine to form the double helical structures that define the unit crystalline lamella. (Ball 2011)
+                <figure>
+                    <img src="img/glycogen-and-amylopectin.png" alt="" class="img-500">
+                    <figcaption>Macro- and micro-structure of glycogen (A and C) and amylopectin (B and D).</figcaption>
+                </figure>
+                Another type of energy rich and insoluble form of storage is triacylglycerol, but synthesising triacylglycerol from sugar is energy-consuming, and this makes is less favourable than starch for plants. (Animals use triacylglycerol because animals do move, and triacylglycerol is ligher than starch; similarly, many plant seeds use lipids as enrgy storage to keep them small for easier dispersal) (my own deduction)
+            </p>
+        </div>
+        <div class="description alert alert-primary">
+            <h4>SAQ</h4>
+            <p>Explain why plant needs both cyclic and non-cyclic photophosphorylation.</p>
+        </div>
+        <p>
+            Cyclic photophosphorylation produces ATP only, and it has no substrate requirements other than light. Non-cyclic photophosphorylation consumes water, and produces NADPH and ATP, which are then mostly used to produce glyceraldehyde 3-phosphate in the Calvin cycle.
+        </p>
+        <p>
+            Obviously plants cannot rely on cyclic photophosphorylation only. Not all plant cells have chloroplast and they have to produce energy from respiration, fueled by sucrose produced in photosynthetic tissues. 
+        </p>
+        <p>
+            To explain whu non-cyclic photophosphorylation is also necessary, quantitative analysis is needed. In non-cyclic photophosphorylation, for each H<sub>2</sub>O to be split and 4 electrons to be transferred, 2 NADPH is produced and 12 protons are pumped into the thylakoid lumen (Allen 2002). Chloroplast ATP synthase has 14 c subunits (Alexander 2018), so 
+            $$\dfrac{12}{14} \times 3 = 2.57$$
+            2.57 ATP is produced per 2 NADPH (ratio=1.286). However, for a net gain of one glyceraldehyde 3-phosphate, 9 ATP and 6 NADPH are required (see equation 2), with ratio=1.5. This means that, using non-cyclic photophosphorylation alone, the ATP produced will not be enough for the Calvin cycle to proceed. This additional ATP is provided by cyclic photophosphorylation.
+        </p>
+        <hr>
+        <h3>References</h3>
+        <ol>
+            <li>
+                Smith, A. M., Coupland, G., Dolan, L., Harberd, N., Jones, J., Martin, C., . . . Amey, A. (2010). <i>Plant biology.</i> New York, NY: Garland Science.
+            </li>
+            <li>
+                William G. Hopkins, & Hüner, N. P. A. (2008). <i>Introduction to Plant Physiology</i> (4th ed.): Wiley.
+            </li>
+            <li>
+                Alberts, B., Johnson, A., Lewis, J., Morgan, D., Raff, M., Roberts, K., & Walter, P. (2014). <i>Molecular biology of the cell</i> (6th ed.): Garland Science.
+            </li>
+            <li>
+                Nelson, D. L., & Cox, M. M. (2017). <i>Lehninger principles of biochemistry</i> (7th ed.): W. H. Freeman.
+            </li>
+            <li>
+                Hahn, A., Vonck, J., Mills, D. J., Meier, T., & Kühlbrandt, W. (2018). Structure, mechanism, and regulation of the chloroplast ATP synthase. <i>Science</i>, 360(6389), eaat4318. doi:10.1126/science.aat4318
+            </li>
+            <li>
+                Allen, J. F. (2002). Photosynthesis of ATP—Electrons, Proton Pumps, Rotors, and Poise. <i>Cell</i>, 110(3), 273-276. doi:https://doi.org/10.1016/S0092-8674(02)00870-
+            </li>
+            <li>
+                Bertoft E. (2017). Understanding Starch Structure: Recent Progress. <i>Agronomy</i>, 7(3), 56; https://doi.org/10.3390/agronomy7030056
+            </li>
+            <li>
+                Ball, S., Colleoni, C., Cenci, U., Raj, J. N., & Tirtiaux, C. (2011). The evolution of glycogen and starch metabolism in eukaryotes gives molecular clues to understand the establishment of plastid endosymbiosis. <i>Journal of Experimental Botany</i>, 62(6), 1775-1801. doi:10.1093/jxb/erq411
+            </li>
+        </ol>
 </body>
 </html>
-
-Tutorial 6 Photosynthesis
-
-SAQ: Explain why plant needs both cyclic and non-cyclic photophosphorylation
-
-Essay: Discuss how CO2 is fixed in green plant. Explain how and why plant assimilates their products in the form of sucrose and starch.
