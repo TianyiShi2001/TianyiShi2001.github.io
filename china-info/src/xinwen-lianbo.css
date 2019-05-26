@@ -17,6 +17,8 @@ h1 {
 .heading {
     font-weight: 400;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 .heading::after {
@@ -74,4 +76,9 @@ p{
     position: sticky;
     top: 0;
     padding: 0px;
+}
+
+#fill {
+    background: white;
+    color: white;
 }
