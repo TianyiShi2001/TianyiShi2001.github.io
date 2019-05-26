@@ -208,3 +208,11 @@ document.querySelector("#chongzhi").addEventListener("click", function(){
     difenreset();
 });
 
+x = document.querySelectorAll('.post-content')
+for (var i = 0; i < x.length; i++) {
+    content.push(x[i].innerHTML);
+}
+
+for (var i = 0; i < x.length; i++) {
+    console.log(x[i].innerHTML);
+}
