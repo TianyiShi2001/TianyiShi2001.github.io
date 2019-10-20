@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Tianyi's Site</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/img/zhuan.jpg" type="image/x-icon">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/bootstrap.min.css">
     <script src="src/jquery-3.4.1.min.js"></script>
     <script src="src/bootstrap.min.js"></script>
     <script src="index.js"></script>
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'tob8xaq',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        (function (d) {
+            var config = {
+                kitId: 'tob8xaq',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 my-0 fixed-top" id="mainNavBar">
         <div class="container">
-            <a class="navbar-brand py-0 my-0 d-block" href="/index.html" ><img id="zhuan" src="img/zhuan.jpg" alt="zhuanshu" width="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand py-0 my-0 d-block" href="/index.html"><img id="zhuan" src="img/zhuan.jpg"
+                    alt="zhuanshu" width="40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
+                aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -39,11 +45,14 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Content
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Content
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Academia/Oxford-Tutorial-Essays/Oxford-Tutorial-Essays.html">Tutorial Essays at Oxford</a>
+                            <a class="dropdown-item"
+                                href="Academia/Oxford-Tutorial-Essays/Oxford-Tutorial-Essays.html">Tutorial Essays at
+                                Oxford</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="Gallery/index.html">Photo Gallery</a>
                         </div>
@@ -53,16 +62,25 @@
                     </li>
                 </ul>
                 <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-                    <div><a href="https://github.com/TianyiShi2001"><span style="font-size: 1.5rem; color: white;"><i class="fab fa-github"></i></div></span></a>
+                    <div><a href="https://github.com/TianyiShi2001"><span style="font-size: 1.5rem; color: white;"><i
+                                    class="fab fa-github"></i></div></span></a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="container pt-5">
-        <p>For many years, I have been long for having a website of my own—I mean, I have the full control of the website, from the content to the styling and to the functions—not based on any prebuit templates.</p>
-        <p>I had't touched HTML, CSS and JS (not to mention backend languages) until 0th week of Trinity term of Year 1, so building up this website was quite crazy—I compromised a significant amount of time supposed to be used for prelim revision.</p>
-        <p>But I made it, though this website is still largely incomplete. Beside a tutorial essay, there's a gallery of my photographs (also largely incomplete), and you can access it though the nav bar (content --> gallery)</p>
-        <p>In the Easter vacation, I intended to write a book about biophysical chemistry focused on derivations of equations and tips for solving problems (beutifully typeset with LaTeX!). Unfortunately I did not have enough time, energy and motivation to finish it. Only the chapter "enzyme kinetics" was finished, and the book can be found <a href="Academia/Miscellaneous/Biophysical-Chemistry/Equations in Biophysics.pdf">here</a>.</p>
+    <div class="container pt-5" style="display: none;">
+        <p>For many years, I have been long for having a website of my own—I mean, I have the full control of the
+            website, from the content to the styling and to the functions—not based on any prebuit templates.</p>
+        <p>I had't touched HTML, CSS and JS (not to mention backend languages) until 0th week of Trinity term of Year 1,
+            so building up this website was quite crazy—I compromised a significant amount of time supposed to be used
+            for prelim revision.</p>
+        <p>But I made it, though this website is still largely incomplete. Beside a tutorial essay, there's a gallery of
+            my photographs (also largely incomplete), and you can access it though the nav bar (content --> gallery)</p>
+        <p>In the Easter vacation, I intended to write a book about biophysical chemistry focused on derivations of
+            equations and tips for solving problems (beutifully typeset with LaTeX!). Unfortunately I did not have
+            enough time, energy and motivation to finish it. Only the chapter "enzyme kinetics" was finished, and the
+            book can be found <a
+                href="Academia/Miscellaneous/Biophysical-Chemistry/Equations in Biophysics.pdf">here</a>.</p>
         <p>I also made a scorekeeper for Doudizhu (a Chinese card game) using javascript.</p>
 
         <div class="row">
@@ -72,7 +90,8 @@
                     <h5 class="card-title">Gallery</h5>
                     <p class="card-text">A collection of my photographs.</p>
                     <div class="d-flex justify-content-center">
-                        <a href="https://tianyishi2001.github.io/Gallery/index.html" class="btn btn-outline-success btn-sm ">Learn More</a>
+                        <a href="https://tianyishi2001.github.io/Gallery/index.html"
+                            class="btn btn-outline-success btn-sm ">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -85,13 +104,16 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card text-center">
                     <h5 class="card-title">Oxford Tutorial Essays</h5>
-                    <p class="card-text">A collection of the tutorial essays I wrote during my MBiochem course at Oxford.</p>
+                    <p class="card-text">A collection of the tutorial essays I wrote during my MBiochem course at
+                        Oxford.</p>
                     <div class="d-flex justify-content-center">
-                            <a href="/Academia/Oxford-Tutorial-Essays/Oxford-Tutorial-Essays.html" class="btn btn-outline-success btn-sm ">Learn More</a>
-                        </div>
+                        <a href="/Academia/Oxford-Tutorial-Essays/Oxford-Tutorial-Essays.html"
+                            class="btn btn-outline-success btn-sm ">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
