@@ -1,0 +1,416 @@
+---
+title: Hong Kong campus siege almost over, but the violence and anger is here to stay
+---
+
+Published: 2019-11-19 04:58:21+00:00; modified: 2019-11-19 12:03:39+00:00
+
+![The Hong Kong Polytechnic University campus as seen on the morning of November 19, 2019.](../_img_cnn/191119105328-hong-kong-polyu-1119-01.jpeg)
+The Hong Kong Polytechnic University campus as seen on the morning of November 19, 2019.
+![ Photos:](../_img_cnn/191120064437-01-hong-kong-protests-1120.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191120030414-03-hong-kong-unrest-1119.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191120030205-02-hong-kong-unrest-1119.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191120025931-01-hong-kong-unrest-1119.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118214951-18-hong-kong-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118212319-16-hong-kong-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118085818-06-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118090159-08-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118090329-10-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118213639-17-hong-kong-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118090238-09-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191118090426-11-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117212805-02-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117212527-01-hong-kong-unrest-1118.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117065319-bpt107-hong-kopng-protests-111719.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117064926-bpt106-hong-kong-protests-111719.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117063312-bpt104-hong-kong-protests-110919.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117061844-bpt101-hong-kong-protests-111719.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191117062918-bpt103-hong-kong-protests-111719.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191116075207-01-hong-kong-unrest-1116.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191114115551-06-hong-kong-unrest-1114-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191114103713-05-hong-kong-unrest-1114.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191114103553-04-hong-kong-unrest-1114.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191113154402-hong-kong-protest-flaming-arrow-1113.jpeg)
+ Photos:
+![ Photos:](../_img_cnn/191114120326-15-hong-kong-unrest-1113.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191112212824-02-hong-kong-protests-1112.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191113100657-13-hong-kong-unrest-1112.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191112072333-05-hong-kong-unrest-1112.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191112072518-07-hong-kong-unrest-1112.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191111033832-03-hong-kong-unrest-1111.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191111033640-01-hong-kong-unrest-1111.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191111033600-04-hong-kong-unrest-1110.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191111033410-02-hong-kong-unrest-1110.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191108122916-04-hong-kong-protests-1108.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191108032902-02-hong-kong-protests-1108.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191108122725-02-hong-kong-protest-1107.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191103221557-01-hong-kong-protests-1102.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191103223042-02-hong-kong-protests-1102.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191103223125-03-hong-kong-protests-1102.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191031223455-04-hong-kong-halloween-1031.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191031223239-01-hong-kong-halloween-1031.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191029043840-01-hong-kong-unrest-1029.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191029012833-05-hong-kong-unrest-1027.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191029011550-03-hong-kong-unrest-1026.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191029011830-01-hong-kong-unrest-1027-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191029012106-02-hong-kong-unrest-1017-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191029012449-01-hong-kong-unrest-1025.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191020143308-01-hong-kong-protests-1020.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191020143359-02-hong-kong-protests-1020.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191020143618-06-hong-kong-protests-1020.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191016234138-02-hong-kong-carrie-lam-1016.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191016234331-02-hong-kong-protests-1015.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191014112703-05-hong-kong-unrest-1013-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191014112824-01-hong-kong-unrest-1014.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191014112547-04-hong-kong-unrest-1013.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191014112100-02-hong-kong-unrest-1013.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191014112434-03-hong-kong-unrest-1013.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191009231506-01-hong-kong-unrest-1009.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191007110302-01-hong-kong-unrest-1007.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191007110808-03-hong-kong-unrest.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191007110637-02-hong-kong-unrest-1007.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191006111233-05-hk-protests-1006.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191006111318-06-hk-protests-1006.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191006111335-07-hk-protests-1006.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191006111351-08-hk-protests-1006.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104232-01-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104257-02-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104328-03-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104517-04-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104543-05-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104653-06-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005104741-07-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005105142-08-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191005105208-09-hong-kong-protests-1005.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191004094214-01-hong-kong-1004.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191004102518-06-hong-kong-unrest-1002.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001231742-04-hong-kong-unrest-1002.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191003153158-08-week-in-photos-1004.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001231627-03-hong-kong-unrest-1001.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001231456-02-hong-kong-unrest-1001.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001231352-01-hong-kong-unrest-1001.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001145411-16-hong-kong-protest-1001.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001112849-09-hong-kong-protest-1001.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001152546-17b-hong-kong-protest-1001.jpg)
+ Photos:
+![ Photos:](../_img_cnn/191001151937-01-hong-kong-0930.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190929082947-02-hong-kong-unrest-0928.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190929145049-04-hong-kong-unrest-0928.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190923032435-01-hong-kong-unrest-0922.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190923032522-02-hong-kong-unrest-0922.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190915134312-01-hong-kong-0915.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190915134414-02-hong-kong-0915.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190913115124-01-hong-kong-protests-0913.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190913115219-02-hong-kong-protests-0913.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190907080615-01-hong-kong-protest-0906.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190907080732-03-hong-kong-protest-0906.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190907080749-04-hong-kong-protest-0906.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190905015820-01-hong-kong-protests-0905.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190904123347-02-hong-kong-0904.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190905015825-03-hong-kong-0904.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190905015833-04-hong-kong-0903-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190902014502-03-hong-kong-protest-0902.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190902025459-04-hong-kong-protest-0901.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190901212802-01-hong-kong-protests-0901.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190831090351-02-hong-kong-protests-0831.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190831091421-06-hong-kong-protests-0831.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190831090840-03-hong-kong-protests-0831.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190831091258-04-hong-kong-protests-0831.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190831091339-05-hong-kong-protests-0831.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190831061911-bpt102-hong-kong-protests-08312019.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190830103932-02-hong-kong-protests-0830.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190826114224-01-hong-kong-protest-unf-0825.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190913105813-01-hk-pistol-0825.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190826114403-03-hong-kong-protest-unf-0825.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190824084029-02-hong-kong-protests-0824.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190824084228-04-hong-kong-protests-0824.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190824084310-05-hong-kong-protests-0824.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190823075843-02-hong-kong-protests-0823.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190823121529-07-hong-kong-protests-0823.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190818074841-02-hk-protests-0818.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190818075000-03-hk-protests-0818.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190818075130-06-hk-protests-0818.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190814153214-08-hong-kong-0814.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190814153640-09-hong-kong-0814.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190814102048-17-hong-kong-0813.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190813170056-12b-hong-kong-0813.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190813164643-11-hong-kong-0813.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190813103721-03-hong-kong-0813.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190813165538-13-hong-kong-0813-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190813120638-08-hong-kong-0813.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190812103840-hong-kong-protest-0811-03.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190811154444-04b-hong-kong-protest-0811.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190806133604-10-hong-kong-0805.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190805102257-01-hong-kong-0805.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190805102352-02-hong-kong-0805.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190805102933-05-hong-kong-0805.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190806132139-01-hong-kong-protest-0804.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190803081718-02-hong-kong-protests-0803.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190803081744-03-hong-kong-protests-0803.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190803081812-04-hong-kong-protests-0803.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190728082004-09-hong-kong-protests.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190728081644-06-hong-kong-protests.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190728083249-12-hong-kong-protests.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190726090139-01-hong-kong-protest-0726.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190722133746-11-hong-kong-protest-0721.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190722115954-01-hong-kong-unrest-0722.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190722094329-01-hong-kong-protest-0721.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190722133607-01-hong-kong-protest-0722.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190713083507-01-hong-kong-protests-0713.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701153119-21-hong-kong-protest-0701.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701160918-22-hong-kong-protest-0701.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701112425-06-hong-kong-protest-0701-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701145804-20-hong-kong-protest-0701.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701103220-04-hong-kong-protest-0701-restricted.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701122817-09-hong-kong-protest-0701.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701123051-11-hong-kong-protest-0701.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190701122645-07-hong-kong-protest-0701.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190630214915-0701-hk-rallies-02.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190617040457-hk-rallies.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190612140254-25-hong-kong-protests-0612.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190612125654-21-hong-kong-protests-0612.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190612000349-0612-hk-protests-10.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190612120804-20-hong-kong-protests-0612.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190611131343-24-hong-kong-extradition-0610.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190609082548-04-hong-kong-extradition-protest.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190612133511-02-hong-kong-protests-0609.jpg)
+ Photos:
+![ Photos:](../_img_cnn/190612133312-01-hong-kong-protest-0608.jpg)
+ Photos:
+![Hong Kong firefighters get caught up in clashes](../_img_cnn/191118101111-hong-kong-firefighters-1115-01.jpg)
+Hong Kong firefighters get caught up in clashes
+
+Hong Kong (CNN)
+
+Attention in Hong Kong continues to be focused on the city's Polytechnic University, where an ever-shrinking number of protesters remain holed up inside the besieged campus under the threat of arrest. 
+
+The university has been occupied by hundreds of protesters, including many high school students, since last week. On Sunday it was the scene of some of the most intense fighting since anti-government demonstrations began five months ago, as protesters fought-back police attempts to enter the campus using a variety of improvised weaponry, including crude homemade napalm, bows and arrows and at least one large slingshot.
+
+The university remains sealed-off by police, who have installed a tight security cordon and issued instructions to those inside to "drop their weapons" and turn themselves in. 
+
+The mood on the campus was somber Tuesday, but far less tense, as a sense of defeat spread among those remaining. Throughout the morning, dozens of protesters surrendered to police, several in tears, as others vowed to fight on but with little idea of how to do so. 
+
+Throughout the campus were scenes of destruction, the aftermath of huge fires set by protesters to block police advances on Sunday and Monday, and the effects of hundreds of people camping out in a place not built for it. 
+
+Large amounts of weapons could be seen ready for the final fight -- though few had the energy to carry it out -- with boxes, crates and trolleys filled with petrol bombs, as well as flammable chemicals apparently looted from a university lab, including methanol, ethanol, lighter fluid and various unidentified gas canisters.  
+
+Government seeking 'peaceful solution'
+
+One protester who remained on campus told CNN that they were "trying to seek the best possible outcome for the worst possible situation," as others expressed anger at those who had already surrendered, and called on people to do more to try and break them out. 
+
+Multiple attempts to do so were carried out Monday, with varying success. Some protesters managed to break past police lines in daring escapes, even as others were tackled and in several cases violently detained. Sympathy protests involving thousands of people and intended to distract police attention took place in multiple parts of the city, but did not succeed in alleviating pressure on the campus. 
+
+Speaking Tuesday, Hong Kong Chief Executive Carrie Lam said that more than 600 people had surrendered at the Polytechnic University, which is known locally as PolyU, and blamed protesters for exacerbating the situation. 
+
+"Universities have become weapons factories now ... they look like military training grounds," Lam said, adding that police were working for a "peaceful solution" to the crisis. 
+
+There were multiple questions raised over police tactics Monday, with protesters trying to leave greeted with heavy force. Police said they feared those apparently surrendering were armed and posed a threat, but video of tear gas being fired and protesters beaten spread wildly on Hong Kong social media, prompting more protests elsewhere. 
+
+This month has seen a major uptick in violence and disruption after almost half a year of unrest. Protesters launched what they described as a general strike last week in response to the death of a Hong Kong University of Science and Technology (HKUST) student, after he fell near a protest, and began attempting to shut down major roads, disrupt subway transit and otherwise ramp up the pressure on the government. 
+
+The unrest soon spread to universities, with occupations on many campuses, a new development in a movement that had previously been fluid -- with activists using the term "be water" to describe protest tactics. From the campuses, protesters -- many of whom were not actually students at those schools -- launched wildcat demonstrations and blockades of neighboring roads and tunnels. 
+
+Both PolyU and the Chinese University of Hong Kong (CUHK) are strategically located near major thoroughfares, the blockage of which caused disruption and travel chaos. When police attempted to clear the campuses, particularly CUHK, they were met with fierce resistance and outrage, with many protesters claiming it was a blow against academic freedom. 
+
+Some protesters escape siege
+
+The occupations which began on campuses last week involved many non-frontline protesters, and when police began cracking down some felt trapped, suddenly in a much more dangerous and impactful situation than they signed up for. 
+
+Violent clashes between police and protesters on Sunday and Monday, in which one officer was shot by a bow and arrow and police threatened to use live rounds, served only to heighten the sense of volatility. 
+
+There was widespread fear among those inside PolyU that they could face serious injury if they went outside, and even those that were able to surrender peacefully may face serious legal repercussions. 
+
+"You will never prepare for being arrested until you have to face it. Early in the revolution, everyone said we had to be prepared for being arrested, but you never think about it properly until it nearly happens to you," a 23-year-old protester who had been inside PolyU told CNN. 
+
+He later escaped with his girlfriend, after hiding under a bridge and sprinting to safety. He knows about 50 people who also got out, some of whom escaped by abseiling down a rope to waiting motorbikes or running along train tracks.
+
+There were attempts Tuesday to persuade most protesters still on the campus to surrender peacefully. The government and police said that those under 18 would not be immediately arrested, and that all injured protesters could be taken to hospital. Adults on the campus are being arrested, though much more sedately than on Monday. 
+
+Tang Ping-keung, Hong Kong's newly appointed commissioner of police, defended the force against accusations it had made the situation worse with its hardline tactics Monday. Many had pointed out that were police willing to allow protesters to leave without insisting on making arrests, they could have defused the situation much faster and avoided the further disruption that sprung up around the city. 
+
+"We understand that citizens have different opinions in police's law enforcement," Tang said Tuesday. "But citizens need to understand that it is police's responsibility to maintain Hong Kong's law and order and to do law enforcement -- there is a massive scale of illegal acts and some citizens indulge those illegal acts."
+
+Fear of military intervention
+
+The demonstrations began in June over a controversial China extradition bill, which sparked huge marches across the city.
+
+The government suspended but did not immediately withdraw the bill. By the time the bill was withdrawn -- three months later -- the movement's focus had already expanded to complaints of police brutality and wider calls for democracy.
+
+After multiple points in the last six months when the protests appeared to be dying down or reaching some kind of stability, this month's escalation has thrown everything into even greater uncertainty. 
+
+During clashes last week, one protester was shot by a traffic police officer, a man was set on fire after a dispute with protesters, and a 70-year-old man died after being struck by a brick during attempted road clearances. Many people were also injured by both police and protester action during the attempted clearances of the CUHK and PolyU campuses. 
+
+Hanging over the escalating unrest is the potential threat of military intervention. On Saturday, soldiers from one of Hong Kong's People's Liberation Army (PLA) barracks were seen helping local residents clean up surrounding streets. 
+
+The presence of the troops on the streets, despite being unarmed and wearing workout gear -- unnerved many Hong Kong residents and pro-democracy legislators, even as it was cheered by pro-Beijing newspapers and on Chinese social media. 
+
+Analysts agree that a military intervention could severely damage Hong Kong's economy and might spark an exodus from the city. Speaking Tuesday, Lam said it was "not uncommon" for PLA troops to engage in voluntary activities. 
+
+When asked by CNN what level of violence needs to be reached for her to consider calling for China's reinforcement, Lam said the government remains "very confident that we are able to deal with the situation."
+
+But she added that situations like the one unfolding at PolyU were very complicated, and if protesters continue "damaging Hong Kong from one place to another" and "manufacturing more and more offensive weapons," Hong Kong's government might decide it needs external help.
+
+Lam did conclude, however, that "right now, we are still displaying that confidence to handle that situation ourselves."
+
+CNN's Sandi Sidhu, Rebecca Wright and Isaac Yee contributed reporting. 
