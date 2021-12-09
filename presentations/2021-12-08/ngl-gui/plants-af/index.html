@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NGL - webapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="subresource" href="../css/light.css" />
+    <link rel="subresource" href="../css/dark.css" />
+</head>
+
+<body>
+    <!-- NGL -->
+    <script src="../js/ngl.dev.js"></script>
+
+    <!-- UI -->
+    <script src="../js/lib/signals.min.js"></script>
+    <script src="../js/lib/tether.min.js"></script>
+    <script src="../js/lib/colorpicker.min.js"></script>
+    <script src="../js/ui/ui.js"></script>
+    <script src="../js/ui/ui.extra.js"></script>
+    <script src="../js/ui/ui.ngl.js"></script>
+    <script src="../js/gui.js"></script>
+
+    <script>
+        NGL.cssDirectory = "../css/"
+        NGL.documentationUrl = "../build/docs/"
+        NGL.examplesListUrl = "../build/scriptsList.json"
+        NGL.examplesScriptUrl = "./scripts/"
+
+        // Datasources
+        NGL.DatasourceRegistry.add("data", new NGL.StaticDatasource("."))
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const stage = new NGL.Stage()
+            NGL.StageWidget(stage)
+
+            const schemeId = NGL.ColormakerRegistry.addSelectionScheme([
+                ["green", "1-80"],
+                ["white", "*"]
+            ]);
+
+            const files = [
+                "1.mol2",
+                "130.mol2",
+                "142.mol2",
+                "145.mol2",
+                "187.mol2",
+                "227.mol2",
+                "231.mol2",
+                "322.mol2",
+                "33.mol2",
+                "38.mol2",
+                "380.mol2",
+                "5.mol2",
+                "519.mol2",
+                "583.mol2",
+                "631.mol2",
+                "772.mol2",
+                "812.mol2",
+                "LSM12.pdb",
+            ]
+
+            for (f of files) {
+                stage.loadFile(f, { defaultRepresentation: true }).then(function (o) {
+                    o.addRepresentation("cartoon", { color: schemeId });  // pass schemeId here
+                    o.autoView();
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>

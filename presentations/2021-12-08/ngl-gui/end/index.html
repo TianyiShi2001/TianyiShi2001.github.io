@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NGL - webapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="subresource" href="../css/light.css" />
+    <link rel="subresource" href="../css/dark.css" />
+</head>
+
+<body>
+    <!-- NGL -->
+    <script src="../js/ngl.dev.js"></script>
+
+    <!-- UI -->
+    <script src="../js/lib/signals.min.js"></script>
+    <script src="../js/lib/tether.min.js"></script>
+    <script src="../js/lib/colorpicker.min.js"></script>
+    <script src="../js/ui/ui.js"></script>
+    <script src="../js/ui/ui.extra.js"></script>
+    <script src="../js/ui/ui.ngl.js"></script>
+    <script src="../js/gui.js"></script>
+
+    <script>
+        NGL.cssDirectory = "../css/"
+        NGL.documentationUrl = "../build/docs/"
+        NGL.examplesListUrl = "../build/scriptsList.json"
+        NGL.examplesScriptUrl = "./scripts/"
+
+        // Datasources
+        NGL.DatasourceRegistry.add("data", new NGL.StaticDatasource("."))
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const stage = new NGL.Stage()
+            NGL.StageWidget(stage)
+
+            const files = [
+                "end_1.pdb",
+                "end_142.pdb",
+                "end_227.pdb",
+                "end_322.pdb",
+                "end_5.pdb",
+                "end_631.pdb",
+
+            ]
+
+            for (f of files) {
+                stage.loadFile(f, { defaultRepresentation: true }).then(function (o) {
+                    o.addRepresentation("cartoon");  // pass schemeId here
+                    o.setVisibility(false);
+                    o.autoView();
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>
