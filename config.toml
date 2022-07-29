@@ -1,0 +1,63 @@
+baseURL = "http://tianyishi2001.github.io/"
+languageCode = "en-us"
+title = "Tianyi@Oxford"
+theme = "hugo-lithium"
+googleAnalytics = ""
+publishDir = "./docs"
+relativeURLs = true
+ignoreFiles = ["\\.Rmarkdown$", "_files$", "_cache$", "./bib/."]
+uglyURLs = true
+hasCJKLanguage = true
+
+[taxonomies]
+  categories = "categories"
+  tags = "tags"
+  term = "term"
+
+[permalinks]
+    post = "/:section/:year-:month-:day-:slug/"
+
+[[menu.main]]
+    name = "Tutorial"
+    url = "/tutorial.html"
+[[menu.main]]
+    name = "Lab"
+    url = "/lab.html"
+[[menu.main]]
+    name = "Worksheet"
+    url = "/worksheet.html"
+[[menu.main]]
+    name = "Notes"
+    url = "/notes.html"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/TianyiShi2001"
+[[menu.main]]
+    name = "菜谱"
+    url = "/menu.html"
+[[menu.main]]
+    name = "Special"
+    url = "/special.html"
+
+[params]
+    description = "Tianyi Shi's blog"
+    AuthorName = "Tianyi Shi"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml", "python", "json", "go", "rust"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "favicon.ico"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+

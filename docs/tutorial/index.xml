@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Tianyi@Oxford</title>
+    <link>/tutorial.html</link>
+    <description>Recent content in Tutorials on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insertion of Membrane Proteins</title>
+      <link>/tutorial/insertion-of-membrane-proteins.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/insertion-of-membrane-proteins.html</guid>
+      <description>1 Targeting the Protein to the ER Membrane: SRP and the Sec61 Translocon 2 Single-Pass Proteins 2.1 Type I Proteins 2.2 Type II and III Proteins 3 Multi-Pass Proteins 4 Insertases 4.1 Insertion of Tail-anchored Proteins by the Get system 4.2 The Roles of YidC 5 \(\beta\)-barrel Proteins References The majority of integral membrane proteins in an eukaryotic cell are made of one or more \(\alpha\)-helices and are first inserted co-translationally via the Sec61 translocon into the endoplasmic reticulum (ER) membrane, assembled there, and then dispatched, via the golgi apparatus and vesicles, to their final destinations.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Nucleic Acid Interactions</title>
+      <link>/tutorial/protein-nucleic-acid-interactions.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-nucleic-acid-interactions.html</guid>
+      <description>1 Introduction 2 An Overview of Mechanisms of Protein-DNA Interactions 3 Thermodynamics of Protein-DNA Binding 4 Base Readout in the Major Groove 5 Shape Readout 5.1 Minor Groove Narrowing 5.2 Kinks 6 The Nucleosome as an Example of Non-Specific Binding 7 (Question 2) 7.1 (a) bHLH Motif 7.2 (b) Leucine Zipper 7.3 (c) Zinc Finger 7.4 (d) TATA box binding protein References 1 Introduction Protein-DNA interactions have profound impact on the expression and regulation of genes.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Protein Interactions</title>
+      <link>/tutorial/protein-protein-interactions.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-protein-interactions.html</guid>
+      <description>1 Introduction 2 Properties of PPI 2.1 Reversibility 2.2 Properties of the Binding Interfaces 2.3 Roles of Water Molecules 2.4 Kinetics and Thermodynamics 3 Studying PPIs 3.1 Determining Kd (and rate constants) 3.1.1 Surface Plasmon resonance (SPR) 3.1.2 Fluorescence anisotropy 3.1.3 Isothermal titration calorimetry (ITC) 3.2 Mechanistic Studies 3.2.1 Alanine Scanning 3.2.2 Extent of Exchengeability of Amino Acids 3.2.3 Directed Evolution 3.2.4 Computational Approaches 3.2.5 Connectivity Map Reveals Modularity 3.</description>
+    </item>
+    
+    <item>
+      <title>Membrane Protein: Structure and Stability</title>
+      <link>/tutorial/membrane-protein-structure-and-stability.html</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/membrane-protein-structure-and-stability.html</guid>
+      <description>1 Introduction 2 The Biomembrane Environment 3 The Thermodynamic Basis of Secondary Structure Formation 4 Glycine and Proline in TM Helices 5 Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling 6 Interactions with Lipids 1 Introduction Many proteins that perform vital functions are membrane proteins. These include transport proteins (channels, transporters and pumps), cell adhesion molecules, and proteins that transduces energy in the electron transport chain. Despite their diverse roles, the same set of biophysical and biochemical rules govern their structural stability.</description>
+    </item>
+    
+    <item>
+      <title>Crystallography: A Case Study</title>
+      <link>/tutorial/crystallography-a-case-study.html</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/crystallography-a-case-study.html</guid>
+      <description>Introduction The Ca2+ selectivity of voltage-gated calcium (Cav) channels remained unclear. They were thought to use a ‘knock-off’ methanism which requires multiple ion-binding cores, but mutational analyses supported a single high-affinity Ca2+ binding site. This paradox is explained by the mechanism proposed in this article, based on the crystal structures of CavAb channels.
+Methods In this study, the authors created several mutants of bacterial Nav channel NavAb by site directed mutagenesis using QuickChange at the selectivity filter region1.</description>
+    </item>
+    
+    <item>
+      <title>Assessing The Quality Structural Models</title>
+      <link>/tutorial/assessing-structural-models.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/assessing-structural-models.html</guid>
+      <description>1 The Essence of X-Ray Crystallography 2 Assessing the Quality of A Structure During Model Building and Refinement 2.1 R and Rfree 2.2 Reciprocal-Space Refinement: Refinement by least squares 2.3 Real-Space Refinement: Map Fitting 3 Assessing Quality After Automatic Model Building and Refinement 3.1 Density fit analysis and local geometry validation 3.1.1 Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles 3.1.2 Torsional Angles and Ramachandran Plot 3.</description>
+    </item>
+    
+    <item>
+      <title>Redox-Based Modulation of Enzyme Activity</title>
+      <link>/tutorial/redox-based-modulation-of-enzyme-activity.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/redox-based-modulation-of-enzyme-activity.html</guid>
+      <description>Presentation see here
+Geigenberger, Peter, Ina Thormählen, Danilo M. Daloso, and Alisdair R. Fernie. 2017. “The Unprecedented Versatility of the Plant‎ Thioredoxin System.” Trends in Plant Science 22 (3): 249–62. https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008.
+Hägglund, Per, Christine Finnie, Hiroyuki Yano, Azar Shahpiri, Bob B. Buchanan, Anette Henriksen, and Birte Svensson. 2016. “Seed Thioredoxin H.” Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics 1864 (8): 974–82. https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014.</description>
+    </item>
+    
+    <item>
+      <title>Improving Photosynthesis by Photorespiratory Bypasses</title>
+      <link>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</guid>
+      <description>1 Attempts to Inhibit Photorespiration and Improve Specificity of Rubisco 2 Bypassing Photorespiration 2.1 Implementing The Bacterial Glycerate Pathway 2.2 Inhibition of the Glycolate Transporter 3 Conclusion References Discuss the feasibility and desirability of improving photosynthesis in higher plants through the use of photorespiratory bypasses.
+Plants and algae use the Calvin cycle to capture inorganic carbon (as CO2) and use ATP and NADPH generated in light reactions to convert it to organic carbon.</description>
+    </item>
+    
+    <item>
+      <title>Genetic Manipulation of the Calvin Cycle</title>
+      <link>/tutorial/genetic-manipulation-of-the-calvin-cycle.html</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/genetic-manipulation-of-the-calvin-cycle.html</guid>
+      <description>1 Introduction 1.1 Rubisco Does not Exert Much Control on the Flux of the Calvin Cycle Unless in Special Conditions 2 Other Enzymes that Catalyse Irreversible Reactions 3 Plastid Aldolase as an ‘Non-Regulated’ Enzyme Exerts a Greater Control than Rubisco on the Rate of Photosynthesis 4 Transketolase Directly Controls not Only Calvin Cycle but Also Other Pathways 5 Conclusion To what extent has genetic manipulation of the Calvin cycle forced the reappraisal of our understanding of the control of metabolic pathways in plants?</description>
+    </item>
+    
+    <item>
+      <title>Coordination of PS I and PS II</title>
+      <link>/tutorial/coordination-of-ps-i-and-ps-ii.html</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/coordination-of-ps-i-and-ps-ii.html</guid>
+      <description>1 Background 2 Why is Coordination between Photosystems I and II Needed 3 How is Coordination between PS-I and PS-II Achieved 3.1 The Role of the Plastoquinone Pool 3.2 Reversible Redistribution of LHC-II 3.3 Transcriptional Regulation 3.3.1 How does SIG1 phosphorylation confer phhotosystem promoter specificity? 4 Conclusion References Why do plants co-ordinate the relative activities of Photosystems I and II and how is this co-ordination achieved?
+1 Background Photosystems I and II are photochemical complexes that harvest light energy to drive endergonic redox reactions.</description>
+    </item>
+    
+    <item>
+      <title>Fuel Selection During Exercise</title>
+      <link>/tutorial/sensing-energy-status-during-exercise.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/sensing-energy-status-during-exercise.html</guid>
+      <description>1 Introduction 2 Overview 2.1 Glycogen and Glucose 2.1.1 Blood Glucose 2.1.2 Regulation of Glycogenolysis 2.2 Fatty Acids 2.2.1 Adipose Tissue Lipolysis and Plasma NEFA 2.2.2 Intramuscular Triacylglycerol (IMTG) 2.2.3 Plasma TG (VLDL-TG) What effects do the intensity and duration of exercise have on fuel selection by mammalian muscle?
+1 Introduction During exercise, glucose and fatty acids are the fuels used by the muscle. Their origin and relative contribution depend on the intensity and duration of exercise, as well as on characteristics of individuals such as the level of physical training.</description>
+    </item>
+    
+    <item>
+      <title>Insulin and Ketone Bodies</title>
+      <link>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</guid>
+      <description>1 Introduction 2 Regulation of Ketogenesis by Insulin 2.1 Adipocyte Lipolysis 2.2 Regulation of CPT1 2.3 Channeling of Acetyl-CoA into Ketogenesis 2.4 Mitochondrial HMG-CoA Synthase 3 Diabetes and Ketone Bodies 3.1 Aetiology of Diabetes 3.2 Overproduction of Ketone Bodies 3.3 Consequences of Ketoacidosis How does insulin regulate the pathways for the conversion of body fat into ketone bodies? Why are ketone bodies overproduced in uncontrolled diabetes and what are the metabolic consequences.</description>
+    </item>
+    
+    <item>
+      <title>Glucagon and Insulin</title>
+      <link>/tutorial/glucagon-and-insulin.html</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/glucagon-and-insulin.html</guid>
+      <description>1 Introduction 2 Initial Steps of Glucagon and Insulin Signalling 2.1 Insulin Signalling 2.2 Glucagon Signalling 3 Glucose Metabolism 3.1 Glycogen Metabolism in Liver 3.1.1 Glucagon Activates Glycogenolysis in Liver 3.1.2 Insulin Activates Glycogen Synthesis in Liver 3.2 Glycolysis and Gluconeogeneis in Liver 3.2.1 Short-Term Control via PFK2/PBPase2 Bifunctional Enzyme 3.2.2 Long-Term Transcriptional Control 3.3 Glucose Uptake into Muscle Cells 4 Lipid Metabolism 4.1 Lipolysis in Adipocytes 4.2 TAG Synthesis in Liver 4.</description>
+    </item>
+    
+    <item>
+      <title>Supplying Fuels to the Brain During Starvation</title>
+      <link>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</guid>
+      <description>Title: As starvation proceeds, how does the supply of fuels to the brain change? How is this change related to a requirement to conserve body protein?
+Due to the blood-brain barrier, The human brain can only harness energy from catabolising either glucose or ketone bodies. Under normal circumstances, glucose of dietary origin is the predominant source of fuel for the brain. As starvation begins (during the postabsorptive phase), astrocytes in the brain break down their stored glycogen to supply fuel in the form of lactate to neurons, which is followed by hepatic glycogenolysis that continue to provide glucose for the brain for a short period.</description>
+    </item>
+    
+    <item>
+      <title>How Has Ras Signalling Been Studied in C. Elegans</title>
+      <link>/tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html</guid>
+      <description>1 Introduction 2 The Big Picture: Components of the C. elegans EGF-Ras-MAPK Pathway Involved in Vulva Induction 3 Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction 3.1 Forward Genetics and Reverse Genetics 3.1.1 In Early Experiments, Forward Genetics Methods were Used Entensively 3.1.2 RNAi and Reverse Genetics Since 1998 3.2 Observing Cell Fates 3.2.1 Microscopic Analysis 3.2.2 Transcriptional Reporters 3.3 Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy 3.</description>
+    </item>
+    
+    <item>
+      <title>What is the Point of Studying Developmental Biology</title>
+      <link>/tutorial/what-is-the-point-of-studying-developmental-biology.html</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/what-is-the-point-of-studying-developmental-biology.html</guid>
+      <description>Title: What is the point of studying developmental biology?
+Link to presentation
+The main theme of developmental biology is the fate determination of cells, their division, differention and death, as well as the resulting higher level processes, including morphogenesis and organ formation. I’ll illustrate how this knowledge can help with preventive and public healthcare as well as modern medical research.
+Prenatal Care (Preventing Teratogenesis) Teratogen and congenital anomaly According to the US’ National Research Council, ~3% of live births suffer from major developmental aberrations, ~70% of neonatal deaths are due to developmental defects.</description>
+    </item>
+    
+    <item>
+      <title>Three Biophysical Methods</title>
+      <link>/tutorial/three-biophysical-methods.html</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/three-biophysical-methods.html</guid>
+      <description>1 Circular Dichorism (CD) 1.1 Physical Principles 1.2 Experimental Setup 1.3 Application of CD 1.4 Other CD-based Techniques 2 Small-angle X-ray Scattering (SAXS) 2.1 Physical Principles 2.2 Experimentation and Data Processing 3 Analytical Ultracentrifuge (AUC) 3.1 Choice of Optical System 3.2 Experiments 3.2.1 Sedimentation Velocity (SV) References 1 Circular Dichorism (CD) Reference: Ranjbar and Gill (2009); Kelly, Jess, and Price (2005);Whitmore and Wallace (2008)
+Circular dichorism measures the difference in absorption of left-hand and right-hand circularly polarised light by optically active (chiral) molecules (usually biological macromolecules).</description>
+    </item>
+    
+    <item>
+      <title>Electron Microscopy and X-Ray Crystallography</title>
+      <link>/tutorial/electron-microscopy-and-x-ray-crystallography.html</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/electron-microscopy-and-x-ray-crystallography.html</guid>
+      <description>&lt;p&gt;Learning objectives&lt;/p&gt;
+&lt;p&gt;To understand the methodological principle of electron microscopy in its different applications (e.g. TEM, SEM, tomography, single-particle), and X-ray crystallography  To be able to evaluate, which method of structural analysis would be most feasible with which kind of biological specimen (e.g. whole cells, viruses, protein complexes, peptides).&lt;/p&gt;
+&lt;p&gt;To gain a conception of the resolution ranges attainable by EM methods as compared to X-ray crystallography.&lt;/p&gt;
+&lt;p&gt;To be aware of the computational methods that combine EM maps and crystallogrographic data&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bacterial Cell Division</title>
+      <link>/tutorial/bacterial-cell-division.html</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bacterial-cell-division.html</guid>
+      <description>discussing both Gram positive and negative bacteria with different morphologies, how they divide and chose examples of antibiotics, comparing their different effects</description>
+    </item>
+    
+    <item>
+      <title>MCB Toolbox</title>
+      <link>/tutorial/mcb-toolbox.html</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/mcb-toolbox.html</guid>
+      <description>For the second tutorial, I want you to try some proper molecular biology using online tools, just as we do every day in the lab. Try it out on your own first, though you may wish to discuss any issues you may be having with each other. Please bring files/printouts and if you have one, your laptop to the tutorial. You will find NCBI BLAST useful and various links within www.</description>
+    </item>
+    
+    <item>
+      <title>Vectors Used in Bacterial and Eukaryotic Host Cells</title>
+      <link>/tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html</guid>
+      <description>What are the key similarities and differences between vectors used in bacterial and eukaryotic host cells? What can such vectors be used for?</description>
+    </item>
+    
+    <item>
+      <title>Antibiotics and Protein Synthesis</title>
+      <link>/tutorial/antibiotics-and-protein-synthesis.html</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/antibiotics-and-protein-synthesis.html</guid>
+      <description>Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.</description>
+    </item>
+    
+    <item>
+      <title>RNA Splicing</title>
+      <link>/tutorial/rna-splicing.html</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/rna-splicing.html</guid>
+      <description>What are the roles of small nuclear RNAs (SnRNAs) in pre-mRNA splicing and what are the mechanisms that control alternative splicing?</description>
+    </item>
+    
+    <item>
+      <title>NMR</title>
+      <link>/tutorial/nmr.html</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/nmr.html</guid>
+      <description>SAQ Write brief notes on the chemical shift, the nuclear Overhauser enhancement effect (NOE), the relaxation times T1 and T2, and the spin-spin coupling constant (J) with an emphasis on how these can provide information about the structure and dynamics of biological molecules.
+Chemical Shift: NMR applies RF wave to induce resonance with the precession frequency, \(\omega=\gamma (B_0-B_S)\), where \(B_0\) is the constant magnetic field strength on the \(z\) axis, \(B_S\) is the magnetic field strength shilded by electrons around the nucleus and \(\gamma\) is the magnetogyric ratio (depending of the identity of the nucleus).</description>
+    </item>
+    
+    <item>
+      <title>Biophysical Techniques</title>
+      <link>/tutorial/biophysical-techniques.html</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/biophysical-techniques.html</guid>
+      <description>You have expressed and purified a protein in a recombinant system. How would you confirm that the protein was the one expected from the DNA sequence. (ESI-MS) How would you determine that the protein was folded and its solution behaviour. (CD, Thermofluor, Intrinsic fluorescence, DSC, SEC MALS, AUC, DLS) How can we quantify the binding between two macromolecules? Discuss how you could use the following techniques to determine a KD for an interaction? What are their limitations in practice? What would decide which techniques you could apply to an interaction? (Surface Plasmon resonance, Fluorimetry/Fluorescence anisotropy, Microscale thermophoresis (MST), Isothermal titration calorimetry (ITC), Stopped flow, NMR, AUC) References: Use Campbell&amp;rsquo;s Biophysical Techniques; for MST use Wienken et al 2010 Nature Communications 10.1038/ncomms1093</description>
+    </item>
+    
+    <item>
+      <title>Paper VI 2011</title>
+      <link>/tutorial/paper-vi-1.html</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/paper-vi-1.html</guid>
+      <description>Alzheimer’s Disease Effect of AMPK on secreted A\(\beta\) levels in neuronal cultures In ELISA (enzyme-linked immunosorbant assay), antibodies are used to bind an antigen of interest (usually protein) with high specificity, and the presence and concentration of the antigen is reported by the extent of reaction of the enzyme conjugated with the antibody. Using two types of antibodies binding to different regions of the antigen allows sandwich ELISA (see below), which has greater specificity.</description>
+    </item>
+    
+    <item>
+      <title>Protein Expression and Purification</title>
+      <link>/tutorial/protein-purification.html</link>
+      <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-purification.html</guid>
+      <description>You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein. OR What strategies could you employ during protein expression and purification to minimise heterogeneity in a sample required for structural studies?</description>
+    </item>
+    
+    <item>
+      <title>Protein Structure and Function</title>
+      <link>/tutorial/protein-structure-and-function.html</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-structure-and-function.html</guid>
+      <description>Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins&amp;rsquo; lecture series. Bring notes no essay.</description>
+    </item>
+    
+    <item>
+      <title>Principle of electron transfer and proton transport</title>
+      <link>/tutorial/principle-of-electron-transfer-and-proton-transport.html</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/principle-of-electron-transfer-and-proton-transport.html</guid>
+      <description>What mechanisms are employed by mitochondrial electron transfer proteins to generate a proton-motive force (pmf)? Using the concept of membrane capacitance, explain why the dominant component of the pmf in mitochondria is an electrical potential rather than a pH gradient.</description>
+    </item>
+    
+    <item>
+      <title>Principle of chemiosmotic mechanism</title>
+      <link>/tutorial/principle-of-chemiosmotic-mechanism.html</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/principle-of-chemiosmotic-mechanism.html</guid>
+      <description>What is the evidence that the chemiosmotic mechanism applies to oxidative phosphorylation and photophosphorylation?</description>
+    </item>
+    
+  </channel>
+</rss>

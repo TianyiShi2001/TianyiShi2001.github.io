@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>purification on Tianyi@Oxford</title>
+    <link>/tags/purification.html</link>
+    <description>Recent content in purification on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/purification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protein Purification Practical</title>
+      <link>/lab/protein-purification-practical.html</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/protein-purification-practical.html</guid>
+      <description>absorbance &amp;lt;- c(0.086, 0.142, 0.548, 0.976, 1.419, 1.294, 1.161, 1.472, 1.800, 2.003, 1.777, 1.463, 1.430, 1.486, 1.538, 1.254, 0.820, 0.503, 0.388, 0.235, 0.204, 0.163, 0.148, 0.151, 0.169, 0.221, 0.381, 0.701, 0.954, 0.917, 0.651, 0.423, 0.274, 0.191, 0.034, 0.031 ) volume &amp;lt;- 1:36 plot(volume, absorbance, xlab = &amp;#39;volume (ml)&amp;#39;, type = &amp;#39;p&amp;#39;, ylim=c(0, 2.2), yaxs=&amp;#39;i&amp;#39;) lines(volume, absorbance) lines(c(5, 5), c(0.0, 1.419), col=&amp;#39;red&amp;#39;) lines(c(10, 10), c(0.0, 2.003), col=&amp;#39;red&amp;#39;) lines(c(15, 15), c(0.0, 1.</description>
+    </item>
+    
+  </channel>
+</rss>

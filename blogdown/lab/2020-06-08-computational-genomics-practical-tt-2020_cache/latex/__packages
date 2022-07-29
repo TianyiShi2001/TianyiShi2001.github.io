@@ -1,0 +1,14 @@
+base
+usethis
+devtools
+R.matlab
+reshape2
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats

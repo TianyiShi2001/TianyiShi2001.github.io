@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1-Hilary on Tianyi@Oxford</title>
+    <link>/term/1-hilary.html</link>
+    <description>Recent content in 1-Hilary on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/term/1-hilary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Immunoassay (in Silico)</title>
+      <link>/lab/immunoassay-in-silico.html</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/immunoassay-in-silico.html</guid>
+      <description>1 Aim of the Practical 2 Background Q1 3 Introduction to Radioimmunoassay 4 Radioimmunoassay Simulation — Tutorial (a) Choosing a suitable concentration of Ab (b) Testing effect of changing [Ab] at fixed [Ag] (d) Testing precision 5 RIA: Generating Your Own Data (a) Finding a suitable concentration of antibody (b) Generating the calibartion curve and (c) Finding the concentration of the unknown 6 Enzyme-Linked Immunosorbentassay (a) Background to ELISA (b) METHOD: ElisaLab 7 ELISA Tutorial 8 ELISA Experiment (a) Choosing a suitable concentration of antibody (b) Generating the calibration curve (c) Measuring concentration of the unknown 9 Supplementary Information 9.</description>
+    </item>
+    
+    <item>
+      <title>How Has Ras Signalling Been Studied in C. Elegans</title>
+      <link>/tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html</guid>
+      <description>1 Introduction 2 The Big Picture: Components of the C. elegans EGF-Ras-MAPK Pathway Involved in Vulva Induction 3 Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction 3.1 Forward Genetics and Reverse Genetics 3.1.1 In Early Experiments, Forward Genetics Methods were Used Entensively 3.1.2 RNAi and Reverse Genetics Since 1998 3.2 Observing Cell Fates 3.2.1 Microscopic Analysis 3.2.2 Transcriptional Reporters 3.3 Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy 3.</description>
+    </item>
+    
+    <item>
+      <title>What is the Point of Studying Developmental Biology</title>
+      <link>/tutorial/what-is-the-point-of-studying-developmental-biology.html</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/what-is-the-point-of-studying-developmental-biology.html</guid>
+      <description>Title: What is the point of studying developmental biology?
+Link to presentation
+The main theme of developmental biology is the fate determination of cells, their division, differention and death, as well as the resulting higher level processes, including morphogenesis and organ formation. I’ll illustrate how this knowledge can help with preventive and public healthcare as well as modern medical research.
+Prenatal Care (Preventing Teratogenesis) Teratogen and congenital anomaly According to the US’ National Research Council, ~3% of live births suffer from major developmental aberrations, ~70% of neonatal deaths are due to developmental defects.</description>
+    </item>
+    
+    <item>
+      <title>Random Notes on Bioinformatics</title>
+      <link>/bioinformatics/random-notes-on-biioinformatics.html</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/random-notes-on-biioinformatics.html</guid>
+      <description>Go https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2903-5</description>
+    </item>
+    
+    <item>
+      <title>Visualising the Resolution Revolution of Electron Microscopy</title>
+      <link>/bioinformatics/pdb-stats.html</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/pdb-stats.html</guid>
+      <description>1 Getting All the PDB Files 2 Parsing PDB files 3 Data Analysis with R 3.0.1 Prerequisites 3.1 Load Data 3.2 Tidying Data 3.3 Plotting 3.3.1 Plot Setup 3.3.2 Median Resolution of Different Methods Over Time 3.3.3 All Cases of X-Ray and EM Structures 3.3.4 Boxplots Last week I wrote an essay on electron microscopy (EM) and X-ray crystallography. I originally thought X-ray’s superiority in resolution has always been unrivalled, but the situation is changing—the best resolution achived by cryo-EM is now comparable with the average/median resolution achived by X-ray crystallography, which is around 2.</description>
+    </item>
+    
+    <item>
+      <title>Three Biophysical Methods</title>
+      <link>/tutorial/three-biophysical-methods.html</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/three-biophysical-methods.html</guid>
+      <description>1 Circular Dichorism (CD) 1.1 Physical Principles 1.2 Experimental Setup 1.3 Application of CD 1.4 Other CD-based Techniques 2 Small-angle X-ray Scattering (SAXS) 2.1 Physical Principles 2.2 Experimentation and Data Processing 3 Analytical Ultracentrifuge (AUC) 3.1 Choice of Optical System 3.2 Experiments 3.2.1 Sedimentation Velocity (SV) References 1 Circular Dichorism (CD) Reference: Ranjbar and Gill (2009); Kelly, Jess, and Price (2005);Whitmore and Wallace (2008)
+Circular dichorism measures the difference in absorption of left-hand and right-hand circularly polarised light by optically active (chiral) molecules (usually biological macromolecules).</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Protein Structures Using Plotly</title>
+      <link>/bioinformatics/visualizing-protein-structures-using-plotly.html</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/visualizing-protein-structures-using-plotly.html</guid>
+      <description>Am I the first one to try to visualize protein structures using Plotly?
+Personally, I think the hitherto most powerful and elegant protein structure visualization tool is SwissPdbViewer (a.k.a. DeepView), which is tightly linked to SWISS-MODEL. Apparently it’s used as a web application, but it is not written in JS. It is not open source, and it’s 32-bit architecture makes it obsolete on modern 64-bit computers.
+Plotly has an open source graphing library with APIs for R, Python and JS, of which the R API highly compatible with the renowned ggplot2 package.</description>
+    </item>
+    
+    <item>
+      <title>Electron Microscopy and X-Ray Crystallography</title>
+      <link>/tutorial/electron-microscopy-and-x-ray-crystallography.html</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/electron-microscopy-and-x-ray-crystallography.html</guid>
+      <description>&lt;p&gt;Learning objectives&lt;/p&gt;
+&lt;p&gt;To understand the methodological principle of electron microscopy in its different applications (e.g. TEM, SEM, tomography, single-particle), and X-ray crystallography  To be able to evaluate, which method of structural analysis would be most feasible with which kind of biological specimen (e.g. whole cells, viruses, protein complexes, peptides).&lt;/p&gt;
+&lt;p&gt;To gain a conception of the resolution ranges attainable by EM methods as compared to X-ray crystallography.&lt;/p&gt;
+&lt;p&gt;To be aware of the computational methods that combine EM maps and crystallogrographic data&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bacterial Cell Division</title>
+      <link>/tutorial/bacterial-cell-division.html</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bacterial-cell-division.html</guid>
+      <description>discussing both Gram positive and negative bacteria with different morphologies, how they divide and chose examples of antibiotics, comparing their different effects</description>
+    </item>
+    
+    <item>
+      <title>Isoelectric Point Calculation</title>
+      <link>/bioinformatics/isoelectric-point-calculation.html</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/isoelectric-point-calculation.html</guid>
+      <description>By rearranging the Henderson-Hasselbalch equation:
+\[ \text{pH}=\text{pK}_\text{a} + \log\left(\dfrac{\text{[A}^{-}\text{]}}{\text{[HA]}}\right) \]
+we can get the ratio between an acid and its conjugate base:
+\[ \frac{\text{[HA]}}{\text{[A}^{-}\text{]}}=10^{(\text{pK}_\text{a}-\text{pH})} \]
+and between an base and its conjugate acid:
+\[ \frac{\text{[B]}}{\text{[BH}^+\text{]}} = 10^{(\text{pH}-\text{pK}_\text{a})} \]
+Thus, the proportion of deprotonated acid is calculated as follows:
+\[ \dfrac{\text{[A}^{-}\text{]}}{\text{[A]}_\text{total}}=\dfrac{\text{[A}^{-}\text{]}}{\text{[HA]}+\text{[A}^{-}\text{]}}=\dfrac{1}{1+\frac{\text{[HA]}}{\text{[A}^{-}\text{]}}}=\dfrac{1}{1+10^{(\text{pK}_\text{a}-\text{pH})}} \]
+Similarly, for basic species:
+\[ \dfrac{\text{[BH}^+\text{]}}{\text{[B]}_\text{total}}=\dfrac{\text{[BH}^+\text{]}}{\text{[B]}+\text{[BH}^+\text{]}}=\dfrac{1}{1+\frac{\text{[B]}}{\text{[BH}^+\text{]}}}=\dfrac{1}{1+10^{(\text{pH}-\text{pK}_\text{a})}} \]
+http://fields.scripps.edu/DTASelect/20010710-pI-Algorithm.pdf</description>
+    </item>
+    
+    <item>
+      <title>Molecular Cloning</title>
+      <link>/notes/molecular-cloning.html</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/molecular-cloning.html</guid>
+      <description>About the frame Sometimes we want to use the start/stop codon in the vector for our protein production, especially when tag sequences need to be included. In these cases, we need to check our inserted GOI is in frame with the start/codon on the vector. Frame mismatch can be corrected by adding 1 or 2 random nucleotide(s) to the primer (forward primer to match vector start condon and reverse primer to match the stop codon) between the GOI sequence and the restriction site sequence.</description>
+    </item>
+    
+    <item>
+      <title>Sequence Alignment</title>
+      <link>/bioinformatics/sequence-alignment.html</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment.html</guid>
+      <description>Sequence Alignment in R Packages library(Biostrings) library(seqinr) DNA sequence myScoringMat &amp;lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE) dnaSeq1 &amp;lt;- &amp;quot;GAATTCGGCTA&amp;quot; # can be a plain string dnaSeq2 &amp;lt;- DNAString(&amp;quot;GATTACCTA&amp;quot;) # or an XString gapOpen &amp;lt;- 2 gapExtend &amp;lt;- 1 dnaAln &amp;lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &amp;#39;global&amp;#39;, scoreOnly=FALSE) dnaAln Amino acid sequence Here is a list of built-in amino acid substitution matrices, which can be shown with data(package=&amp;quot;Biostrings&amp;quot;):</description>
+    </item>
+    
+    <item>
+      <title>Protein Purification Practical</title>
+      <link>/lab/protein-purification-practical.html</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/protein-purification-practical.html</guid>
+      <description>absorbance &amp;lt;- c(0.086, 0.142, 0.548, 0.976, 1.419, 1.294, 1.161, 1.472, 1.800, 2.003, 1.777, 1.463, 1.430, 1.486, 1.538, 1.254, 0.820, 0.503, 0.388, 0.235, 0.204, 0.163, 0.148, 0.151, 0.169, 0.221, 0.381, 0.701, 0.954, 0.917, 0.651, 0.423, 0.274, 0.191, 0.034, 0.031 ) volume &amp;lt;- 1:36 plot(volume, absorbance, xlab = &amp;#39;volume (ml)&amp;#39;, type = &amp;#39;p&amp;#39;, ylim=c(0, 2.2), yaxs=&amp;#39;i&amp;#39;) lines(volume, absorbance) lines(c(5, 5), c(0.0, 1.419), col=&amp;#39;red&amp;#39;) lines(c(10, 10), c(0.0, 2.003), col=&amp;#39;red&amp;#39;) lines(c(15, 15), c(0.0, 1.</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>/fun/vim.html</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/fun/vim.html</guid>
+      <description>B = Life Technologies C = Minotech Biotechnology E = Agilent Technologies I = SibEnzyme Ltd. J = Nippon Gene Co., Ltd. K = Takara Bio Inc. M = Roche Applied Science N = New England Biolabs O = Toyobo Biochemicals Q = Molecular Biology Resources - CHIMERx R = Promega Corporation S = Sigma Chemical Corporation V = Vivantis Technologies X = EURx Ltd. Y = SinaClon BioScience Co.</description>
+    </item>
+    
+    <item>
+      <title>Techniques</title>
+      <link>/notes/techniques.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/techniques.html</guid>
+      <description>Protein Structure Homology Modelling Swiss Model Model Evaluation GMQE (global model quality estimation) 0-1, higher better combines properties from the target-alignment and the template search method replecting the expected accuracy of a model built with that alignment and the template and the coverage of the target computed before modelling and after modelling. The latter also takes into account the QMEAN QMEAN QMEAN z score: around 0: ideal; &amp;lt; -4.0: low quality QMEAN is a composite estimator based on different geometrical properties and provides both global and local absolute quality estimates on the basis of one single model the QMEAN z-score provides an estimate of the ‘degree of nativeness’ of the structural features observed in the model on a global scale.</description>
+    </item>
+    
+    <item>
+      <title>MCB Toolbox</title>
+      <link>/tutorial/mcb-toolbox.html</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/mcb-toolbox.html</guid>
+      <description>For the second tutorial, I want you to try some proper molecular biology using online tools, just as we do every day in the lab. Try it out on your own first, though you may wish to discuss any issues you may be having with each other. Please bring files/printouts and if you have one, your laptop to the tutorial. You will find NCBI BLAST useful and various links within www.</description>
+    </item>
+    
+    <item>
+      <title>2019–20 outbreak of novel coronavirus &#39;2019-nCoV&#39;</title>
+      <link>/special/wuhan-coronavirus.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/special/wuhan-coronavirus.html</guid>
+      <description>About the virus See Wikipedia Statistics Source Code library(tidyverse) library(lubridate) library(scales) library(RColorBrewer) library(maps) library(mapdata) library(maptools) if(&amp;#39;content&amp;#39; %in% dir()){setwd(&amp;#39;content/special/data&amp;#39;)} source(&amp;#39;ncov_commons.R&amp;#39;) # read data --------------------------------------------------------------- read_ncov &amp;lt;- function(sheet, caseType, fn = &amp;#39;wuhan.xlsx&amp;#39;){ readxl::read_excel(fn, sheet = sheet) %&amp;gt;% replace(is.na(.), 0) %&amp;gt;% mutate(date = as_date(date)) %&amp;gt;% mutate_at(-1, cumsum) %&amp;gt;% gather(location, !!caseType, -1) %&amp;gt;% mutate(location=as_factor(location)) } calc_ncov_params &amp;lt;- function(df){ mutate(df, current = all-death-cure, deathRate = death/all, cureRate = cure/all) } ncov &amp;lt;- read_ncov(&amp;#39;incidence-wiki&amp;#39;, &amp;#39;all&amp;#39;) %&amp;gt;%</description>
+    </item>
+    
+    <item>
+      <title>Vectors Used in Bacterial and Eukaryotic Host Cells</title>
+      <link>/tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html</guid>
+      <description>What are the key similarities and differences between vectors used in bacterial and eukaryotic host cells? What can such vectors be used for?</description>
+    </item>
+    
+  </channel>
+</rss>

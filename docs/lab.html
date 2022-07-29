@@ -1,0 +1,3305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Labs - Tianyi@Oxford</title>
+<meta property="og:title" content="Labs - Tianyi@Oxford">
+
+
+<link href='./favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="./lab/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="./css/fonts.css" media="all">
+<link rel="stylesheet" href="./css/main.css" media="all">
+<script src=./js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=./ class="nav-logo">
+    <img src="./images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="./lab.html">Lab</a></li>
+      
+      <li><a href="./notes.html">Notes</a></li>
+      
+      <li><a href="./special.html">Special</a></li>
+      
+      <li><a href="./tutorial.html">Tutorial</a></li>
+      
+      <li><a href="./worksheet.html">Worksheet</a></li>
+      
+      <li><a href="./menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="./lab.html">Lab</a></li>
+    
+    <li><a href="./notes.html">Notes</a></li>
+    
+    <li><a href="./special.html">Special</a></li>
+    
+    <li><a href="./tutorial.html">Tutorial</a></li>
+    
+    <li><a href="./worksheet.html">Worksheet</a></li>
+    
+    <li><a href="./menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content section" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">Labs</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="./lab/metabolic-modelling.html" class="archive-item-link">
+                Metabolic Modelling 
+              </a>
+              <span class="archive-item-date">
+                2020-11-26
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+<script src="./rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="./rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#the-haldane-relationship"><span class="toc-section-number">1</span> The Haldane Relationship</a></li>
+<li><a href="#control-points-in-a-simple-linear-pathway"><span class="toc-section-number">2</span> Control Points in A Simple Linear Pathway</a></li>
+<li><a href="#linear-pathway-with-negative-feedback"><span class="toc-section-number">3</span> Linear Pathway with Negative Feedback</a>
+<ul>
+<li><a href="#re-analyse-the-effect-of-k_i-with-constant-flux"><span class="toc-section-number">3.1</span> Re-analyse the effect of <span class="math inline">\(K_i\)</span> with constant flux</a>
+<ul>
+<li><a href="#repeat-with-model-212"><span class="toc-section-number">3.1.1</span> Repeat with Model 212</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<ul>
+<li><strong>Model 112 was used.</strong></li>
+</ul>
+<div id="the-haldane-relationship" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> The Haldane Relationship</h1>
+<p>Using the “Parameter Scan” utility in Copasi (Figure <a href="#fig:copasi-q1-scan">1.1</a>), I collected steady state concentrations of ‘A’ and ‘B’ in <span class="math inline">\(5^4 = 625\)</span> combinations of <span class="math inline">\(V_{max(f)}\)</span>, <span class="math inline">\(K_{m(p)}\)</span>, <span class="math inline">\(V_{max(r)}\)</span>, and <span class="math inline">\(K_{m(s)}\)</span>, where each parameter vary from <span class="math inline">\(1\times10^{-2}\)</span> to <span class="math inline">\(1\times10^{2}\)</span> in a logarithmic scale.</p>
+<div class="figure"><span id="fig:copasi-q1-scan"></span>
+<img src="../img/copasi-q1-scan.png" alt="&quot;Parameter Scan&quot; setup" width="100%" />
+<p class="caption">
+Figure 1.1: “Parameter Scan” setup
+</p>
+</div>
+<p>Here I read the data, and add two columns, where <code>keq</code> represents the experimental <span class="math inline">\(K_\text{eq}\)</span>:</p>
+<p><span class="math inline">\(K_\text{eq} = \dfrac{\text{[B]}}{\text{[A]}}\)</span></p>
+<p>and <code>keq_calc</code> represents the <span class="math inline">\(K_\text{eq}\)</span> calculated from the Haldane relationship:</p>
+<p><span class="math inline">\(K_\text{eq} = \dfrac{V_{max(f)}\cdot K_{m(p)}}{V_{max(r)}\cdot K_{m(s)}}\)</span></p>
+<pre class="r"><code>q1 &lt;- read_tsv(&#39;metabolic modelling/q1.txt&#39;, col_names = c(&#39;vf&#39;, &#39;kmp&#39;, &#39;vr&#39;, &#39;kms&#39;, &#39;A&#39;, &#39;B&#39;))
+q1 &lt;- q1 %&gt;% mutate(
+  keq = B/A,
+  keq_calc = (vf * kmp) / (vr * kms),
+  keq_diff = keq - keq_calc
+)
+q1</code></pre>
+<pre><code>## # A tibble: 625 x 9
+##       vf   kmp     vr   kms     A        B      keq keq_calc  keq_diff
+##    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
+##  1  0.01  0.01   0.01  0.01 1     1         1         1       0.      
+##  2  0.01  0.01   0.1   0.01 1.82  0.182     0.1       0.1     0.      
+##  3  0.01  0.01   1     0.01 1.98  0.0198    0.01      0.01    0.      
+##  4  0.01  0.01  10     0.01 2.00  0.00200   0.001     0.001   0.      
+##  5  0.01  0.01 100     0.01 2.00  0.000200  0.00010   0.0001 -1.36e-20
+##  6  0.1   0.01   0.01  0.01 0.182 1.82     10.0      10      -1.78e-15
+##  7  0.1   0.01   0.1   0.01 1     1         1         1       0.      
+##  8  0.1   0.01   1     0.01 1.82  0.182     0.1       0.1     0.      
+##  9  0.1   0.01  10     0.01 1.98  0.0198    0.01      0.01    0.      
+## 10  0.1   0.01 100     0.01 2.00  0.00200   0.001     0.001   0.      
+## # … with 615 more rows</code></pre>
+<p>Plotting <code>keq_calc</code> against <code>keq</code> shows that <span class="math inline">\(K_\text{eq}\)</span> calculated in these two ways are equal, as the linear regression line has a gradient of 1 and passes through the origin.</p>
+<pre class="r"><code>q1 %&gt;% ggplot(aes(keq, keq_calc)) +
+  geom_point() +
+  geom_smooth()+
+  scale_x_log10()+
+  scale_y_log10()</code></pre>
+<p><img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>mod &lt;- lm(q1$keq ~ q1$keq_calc)
+summary(mod)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = q1$keq ~ q1$keq_calc)
+## 
+## Residuals:
+##        Min         1Q     Median         3Q        Max 
+## -1.148e-08 -4.480e-10 -4.480e-10 -4.190e-10  2.880e-07 
+## 
+## Coefficients:
+##              Estimate Std. Error   t value Pr(&gt;|t|)    
+## (Intercept) 7.078e-10  4.630e-10 1.529e+00    0.127    
+## q1$keq_calc 1.000e+00  1.135e-16 8.814e+15   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.156e-08 on 623 degrees of freedom
+## Multiple R-squared:      1,  Adjusted R-squared:      1 
+## F-statistic: 7.769e+31 on 1 and 623 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>The Haldane relationship shows that <span class="math inline">\(K_\text{eq}\)</span> is proportional to <span class="math inline">\(V_{max(f)}\)</span> and <span class="math inline">\(K_{m(p)}\)</span>, and inversely proportional to <span class="math inline">\(V_{max(r)}\)</span> and <span class="math inline">\(K_{m(s)}\)</span>, and this can be illustrated using a facetted heatmap:</p>
+
+<pre class="r"><code>q1 %&gt;% ggplot(aes(x = vf, y = kmp, fill = log10(keq))) +
+  geom_tile()+
+  facet_grid((1/vr)~(1/kms), as.table = FALSE, labeller = label_both)+
+  scale_x_log10(labels = plain, expand = c(0, 0))+
+  scale_y_log10(labels = plain, expand = c(0, 0))+
+  scale_fill_gradient2(low = &#39;blue&#39;, mid = &#39;yellow&#39;, high = &#39;red&#39;)+
+  labs(title = &quot;Variation of Keq with vf, kmp, vr, and kms&quot;)+
+  theme(axis.text.x = element_text(angle = 90))</code></pre>
+<div class="figure"><span id="fig:q1"></span>
+<img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/q1-1.png" alt="Variation of \(K_\text{eq}\) with \(V_{max(f)}\), \(K_{m(p)}\), \(V_{max(r)}\), and \(K_{m(s)}\)" width="672" />
+<p class="caption">
+Figure 1.2: Variation of <span class="math inline">\(K_\text{eq}\)</span> with <span class="math inline">\(V_{max(f)}\)</span>, <span class="math inline">\(K_{m(p)}\)</span>, <span class="math inline">\(V_{max(r)}\)</span>, and <span class="math inline">\(K_{m(s)}\)</span>
+</p>
+</div>
+<p>The pattern in each grid shows that <span class="math inline">\(K_\text{eq}\)</span> is proportional to <span class="math inline">\(V_{max(f)}\)</span> and <span class="math inline">\(K_{m(p)}\)</span>, and the pattern across the grids shows that it is inversely proportional to <span class="math inline">\(V_{max(r)}\)</span> and <span class="math inline">\(K_{m(s)}\)</span>.</p>
+</div>
+<div id="control-points-in-a-simple-linear-pathway" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Control Points in A Simple Linear Pathway</h1>
+<p>I use the “Parameter Scan” function to vary the <span class="math inline">\(K_\text{eq}\)</span> of reaction 3 (that catalyses the reversible conversion between C and D) in the range <span class="math inline">\(10^{-6}\)</span> to <span class="math inline">\(10^6\)</span> in a logarithmic scale (13 samples). The variables being recorded are <span class="math inline">\(K_\text{eq}\)</span> and <span class="math inline">\(J\)</span> (flux control coefficient) of reaction 3, and the concentrations of C and D. Then, the reaction quotient, <span class="math inline">\(Q\)</span> (a.k.a. mass action ratio), of each row is calculated as:</p>
+<p><span class="math display">\[Q = \dfrac{\text{[D]}}{\text{[C]}}\]</span></p>
+<pre class="r"><code>q2_scan_r3 &lt;- read_tsv(&#39;metabolic modelling/Q2.txt&#39;)
+q2_scan_r3 &lt;- q2_scan_r3 %&gt;% mutate(q = d/c)
+q2_scan_r3</code></pre>
+<pre><code>## # A tibble: 13 x 5
+##            j     keq     c         d          q
+##        &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;
+##  1 0.0000489 1.00e-6 100.   0.000100 0.00000100
+##  2 0.0000489 1.00e-5 100    0.001    0.00001   
+##  3 0.00470   1.00e-4  99.1  0.00987  0.0000996 
+##  4 0.0353    1.00e-3  92.2  0.0885   0.000960  
+##  5 0.119     1.00e-2  69.0  0.556    0.00806   
+##  6 0.210     1.00e-1  44.5  2.35     0.0528    
+##  7 0.309     1.00e+0  32.0  6.77     0.212     
+##  8 0.369     1.00e+1  28.6 10.0      0.350     
+##  9 0.380     1.00e+2  28.2 10.6      0.378     
+## 10 0.381     1.00e+3  28.1 10.7      0.381     
+## 11 0.381     1.00e+4  28.1 10.7      0.381     
+## 12 0.381     1.00e+5  28.1 10.7      0.381     
+## 13 0.381     1.00e+6  28.1 10.7      0.381</code></pre>
+<p>Figure <a href="#fig:q2-keq">2.1</a> shows the variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3, with its <span class="math inline">\(K_\text{eq}\)</span>. The plot shows that a high <span class="math inline">\(K_\text{eq}\)</span>, i.e. high irreversibility, is correlated with a high <span class="math inline">\(J\)</span>, and in the intermediate range <span class="math inline">\(J\)</span> varies linearly with <span class="math inline">\(\ln(K_\text{eq})\)</span>, i.e. varies linearly with <span class="math inline">\(\Delta G = -RT\ln(K_\text{eq})\)</span></p>
+
+<pre class="r"><code>q2_scan_r3 %&gt;% ggplot(aes(log(keq), j)) +
+  geom_point()</code></pre>
+<div class="figure"><span id="fig:q2-keq"></span>
+<img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/q2-keq-1.png" alt="Variation of the flux control coefficient, \(J\), of reaction 3, with its \(K_\text{eq}\)" width="672" />
+<p class="caption">
+Figure 2.1: Variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3, with its <span class="math inline">\(K_\text{eq}\)</span>
+</p>
+</div>
+<p>Figure <a href="#fig:q2-displacement">2.2</a> shows the variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3 with <span class="math inline">\(Q/K_\text{eq}\)</span>, which is a measure of displacement of the reaction from the equilibrium. A <span class="math inline">\(Q/K_\text{eq}\)</span> close to 1 indicates the reaction is close to equilibrium.
+The plot shows that when reaction is further displaced from the equilibrium, the its flux control coefficient is higher.</p>
+
+<pre class="r"><code>q2_scan_r3 %&gt;% ggplot(aes(q/keq, j)) +
+  geom_point()+
+  geom_smooth(method = &#39;lm&#39;, size = 0.5)</code></pre>
+<div class="figure"><span id="fig:q2-displacement"></span>
+<img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/q2-displacement-1.png" alt="Variation of the flux control coefficient, \(J\), of reaction 3, with \(Q/K_\text{eq}\)" width="672" />
+<p class="caption">
+Figure 2.2: Variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3, with <span class="math inline">\(Q/K_\text{eq}\)</span>
+</p>
+</div>
+<p>A linear regression analysis shows that there is a strong linear correlation between <span class="math inline">\(J\)</span> and <span class="math inline">\(Q/K_\text{eq}\)</span>, with <span class="math inline">\(p = 4.02\times10^{-6} &lt; 10^{-5}\)</span></p>
+<pre class="r"><code>mod &lt;- with(q2_scan_r3, lm(j ~ q/keq))
+summary(mod)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = j ~ q/keq)
+## 
+## Residuals:
+##       Min        1Q    Median        3Q       Max 
+## -0.054438 -0.019991 -0.012931  0.001452  0.108459 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  5.448e-02  2.221e-02   2.453   0.0341 *  
+## q            8.960e-01  9.010e-02   9.945 1.67e-06 ***
+## q:keq       -4.196e-08  1.569e-07  -0.267   0.7946    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.05374 on 10 degrees of freedom
+## Multiple R-squared:  0.9167, Adjusted R-squared:    0.9 
+## F-statistic:    55 on 2 and 10 DF,  p-value: 4.02e-06</code></pre>
+<p>In order to vary <span class="math inline">\(Q/K_\text{eq}\)</span> without directly varying <span class="math inline">\(K_\text{eq}\)</span>, and to see the effect not only on reaction 3 but also on all other reactions, I vary <span class="math inline">\(V_f\)</span>, not <span class="math inline">\(K_\text{eq}\)</span>, of reaction 3 from <span class="math inline">\(10^{-6}\)</span> to <span class="math inline">\(10^6\)</span> with 1000 intervals, and collected the flux control coefficients of all 6 reactions, the <span class="math inline">\(K_\text{eq}\)</span> of reaction 3, as well as concentrations of all species, which are then used to calculate the mass action ratio of each reaction. Then, the displacement of each reaction is calculated. The resulting dataframe contains three columns: 1) the reaction number; 2) the flux control coefficient and 3) displacement from equilibrium of this reaction</p>
+<pre class="r"><code>q2_scan_r3_vf &lt;- read_tsv(&#39;metabolic modelling/Q2-1.txt&#39;)
+q2_scan_r3_vf &lt;- q2_scan_r3_vf %&gt;% 
+  mutate(
+    d1 = (B/A) / 10,
+    d2 = (C/B) / 1,
+    d3 = (D/C) / 0.5,
+    d4 = (E/D) / 5,
+    d5 = (F/E) / 2,
+    d6 = (G/F) / 10,
+    c1 = A + B,
+    c2 = B + C,
+    c3 = C + D,
+    c4 = D + E,
+    c5 = E + F,
+    c6 = F + G,
+  ) %&gt;% select(!(1:7))
+q2_scan_r3_vf_cleaned &lt;- tibble(
+  reaction = integer(),
+  displacement = double(),
+  j = double()
+  )
+for (i in 1:6) {
+  q2_scan_r3_vf_cleaned &lt;- add_row(
+    q2_scan_r3_vf_cleaned, 
+    reaction = i, j = q2_scan_r3_vf[[paste0(&#39;j&#39;, i)]], displacement = q2_scan_r3_vf[[paste0(&#39;d&#39;, i)]])
+}
+q2_scan_r3_vf_cleaned </code></pre>
+<pre><code>## # A tibble: 6,006 x 3
+##    reaction displacement            j
+##       &lt;int&gt;        &lt;dbl&gt;        &lt;dbl&gt;
+##  1        1         1.00 0.0000000343
+##  2        1         1.00 0.0000000353
+##  3        1         1.00 0.0000000363
+##  4        1         1.00 0.0000000373
+##  5        1         1.00 0.0000000383
+##  6        1         1.00 0.0000000394
+##  7        1         1.00 0.0000000405
+##  8        1         1.00 0.0000000416
+##  9        1         1.00 0.0000000428
+## 10        1         1.00 0.0000000440
+## # … with 5,996 more rows</code></pre>
+<p>Then, for all reactions, <span class="math inline">\(J\)</span> versus displacement from equilibrium is plotted:</p>
+<pre class="r"><code>q2_scan_r3_vf_cleaned %&gt;% ggplot(aes(displacement, j)) + 
+  geom_point()+
+  facet_wrap(~reaction, scales = &#39;free&#39;, labeller = label_both)+
+  xlab(&quot;MAR/Keq&quot;)</code></pre>
+<p><img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/q2_2-1.png" width="672" /></p>
+<p>The plots shows that, when disturbing <span class="math inline">\(V_{max(f)}\)</span> of reaction 3, the disequilibrium ratio of all reactions are also altered. Not only reaction 3 but also all other reactions follow the rule that, the flux control coefficent of a reaction increases with the extent of displacement from the equilibrium. However, it is hard to predict <span class="math inline">\(J\)</span> given only the value of <span class="math inline">\(Q/K_\text{eq}\)</span>, as different reactions show different patterns of variations, so <span class="math inline">\(Q/K_\text{eq}\)</span> (displacement from equilibrium) is not a robust indicator of <span class="math inline">\(J\)</span>.</p>
+</div>
+<div id="linear-pathway-with-negative-feedback" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Linear Pathway with Negative Feedback</h1>
+<p>I chose reaction 2 to be the one sensitive to the inhibitor, and varied <span class="math inline">\(K_i\)</span> from <span class="math inline">\(10^{-18}\)</span> to <span class="math inline">\(10^{18}\)</span> with 1000 intervals, and recorded it along with flux control coefficients of all reactions. The results are shown in Figure <a href="#fig:q3">3.1</a>.</p>
+
+<pre class="r"><code>q3 &lt;- read_tsv(&#39;metabolic modelling/Q3.txt&#39;)
+q3 &lt;- q3 %&gt;% gather(reaction, &quot;j&quot;, -ki)
+q3 %&gt;% ggplot(aes(ki, j)) +
+  geom_point()+
+  facet_wrap(~reaction, labeller = label_both)+
+  scale_x_log10()</code></pre>
+<div class="figure"><span id="fig:q3"></span>
+<img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/q3-1.png" alt="Effect of changing \(K_i\) of reaction 2 on the flux control coefficient of all reactions. Lower \(K_i\) means higher binding affinity to the inhibitor." width="672" />
+<p class="caption">
+Figure 3.1: Effect of changing <span class="math inline">\(K_i\)</span> of reaction 2 on the flux control coefficient of all reactions. Lower <span class="math inline">\(K_i\)</span> means higher binding affinity to the inhibitor.
+</p>
+</div>
+<p>The plots show that, the flux control coefficient (<span class="math inline">\(J\)</span>) of reaction 2 increases as the binding affinity (i.e. sensitivity) to the inhibitor of the enzyme involved in this step increases (i.e. as <span class="math inline">\(K_i\)</span> decreases). <span class="math inline">\(J\)</span> of the upsteam reaction 1 also inceases slightly. For all downstream reactions, <span class="math inline">\(J\)</span> decreases.</p>
+<div id="re-analyse-the-effect-of-k_i-with-constant-flux" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Re-analyse the effect of <span class="math inline">\(K_i\)</span> with constant flux</h2>
+<p>The flux and values of <span class="math inline">\(J\)</span> when <span class="math inline">\(K_\text{i} = 10^{-18}\)</span> and when <span class="math inline">\(K_\text{i} = 10^18\)</span> are shown below:</p>
+<pre class="r"><code>ki_low = 1e-18
+flux_low = 0.476572
+j_low = c(0.203839, 0.717872,   0.0342001,  0.0340061,  0.00278022, 0.007302)
+ki_high = 1e18
+flux_high = 1.07393
+j_high = c(0.110937,    0.0822319,  0.278976,   0.319753,   0.0478304,  0.160271)</code></pre>
+<p><span class="math inline">\(V_f\)</span> of reaction 2 are optimised so that the flux when <span class="math inline">\(K_\text{i} = 10^{-18}\)</span> is 1.07393 (the same as when <span class="math inline">\(K_\text{i} = 10^{18}\)</span>)</p>
+<pre><code>Optimization Result:
+
+    Objective Function Value:   1.07393
+    Function Evaluations:   248
+    CPU Time [s]:   0.061
+    Evaluations/Second [1/s]:   4065.57
+
+    (R2).Vf: 45.0229</code></pre>
+<div class="figure"><span id="fig:copasi-q32"></span>
+<img src="../img/copasi-q32.png" alt="Adjusting Vf" width="100%" />
+<p class="caption">
+Figure 3.2: Adjusting Vf
+</p>
+</div>
+<p>I adjusted the <span class="math inline">\(V_f\)</span> of reaction 2 from 5 to 45.0229 (<a href="#fig:copasi-q32">3.2</a>), verified that the flux is 1.07393 (the same as in the state with negligible inhibition), and the values of <span class="math inline">\(J\)</span> are:</p>
+<pre class="r"><code>j_low &lt;-    c(0.144048, 0.0858949,  0.266261,   0.30518,    0.0456503,  0.152966)</code></pre>
+<p>which can be directly compared to the <span class="math inline">\(J\)</span> values in the uninhibited state:</p>
+<pre class="r"><code>tibble(
+  ki =c(rep(&quot;low (1e-18)&quot;, 6), rep(&quot;high (1e18)&quot;, 6)),
+  reaction = rep(as.character(1:6), 2),
+  j = c(j_low, j_high)
+) %&gt;% ggplot(aes(reaction, j, fill = ki)) +
+  geom_col(position = &#39;dodge&#39;)</code></pre>
+<p><img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>The plot shows that, when the flux is made constant, a lower <span class="math inline">\(K_i\)</span> (higher affinity of inhibitor binding) increases the flux control coefficent of reaction 2 and the upstream reaction 1, and decreases that of downstream reactions, which is consistent with the previous experiment. However, the amount of change is not as much as previously modelled.</p>
+<div id="repeat-with-model-212" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Repeat with Model 212</h3>
+<p>I repeat the last analysis with model 212, this time choosing reaction 1 as the one to be affected by the inhibitor.</p>
+<pre class="r"><code>ki_low = 1e-16
+j_low = c(0.982287, 0.0109131,  0.00433655, 0.00237021, 6.9396e-05, 2.40539e-05)
+flux_low = 0.091902
+ki_high = 1e16
+flux_high = 0.807846
+j_high = c(0.437942,    0.31832,    0.104533,   0.12481,    0.0105218,  0.00387277)</code></pre>
+<pre><code>Optimization Result:
+
+    Objective Function Value:   0.807846
+    Function Evaluations:   82
+    CPU Time [s]:   0.018
+    Evaluations/Second [1/s]:   4555.56
+
+    (R1).Vf: 25.7611</code></pre>
+<p>I adjusted the <span class="math inline">\(V_f\)</span> of reaction 1 from 5 to 25.7611 (<a href="#fig:copasi-q32">3.2</a>), verified that the flux is 0.807846 (the same as in the state with negligible inhibition), and the values of <span class="math inline">\(J\)</span> are:</p>
+<pre class="r"><code>j_low &lt;-    c(0.479732, 0.294652,   0.0967611,  0.11553,    0.00973947, 0.00358483)</code></pre>
+<p>comparing to the <span class="math inline">\(J\)</span> values in the uninhibited state:</p>
+<pre class="r"><code>tibble(
+  ki =c(rep(&quot;low (1e-16)&quot;, 6), rep(&quot;high (1e16)&quot;, 6)),
+  reaction = rep(as.character(1:6), 2),
+  j = c(j_low, j_high)
+) %&gt;% ggplot(aes(reaction, j, fill = ki)) +
+  geom_col(position = &#39;dodge&#39;)</code></pre>
+<p><img src="./lab/2020-11-26-metabolic-modelling_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>This time only reaction 1 has an increased <span class="math inline">\(J\)</span>, and all other downstream reactions have an lowered <span class="math inline">\(J\)</span>, which is consistent with previous observations.</p>
+</div>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="./lab/gene-expression-practical-paper-6-questions.html" class="archive-item-link">
+                Gene Expression Practical Paper 6 Questions 
+              </a>
+              <span class="archive-item-date">
+                2020-11-22
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+<script src="./rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="./rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p><strong>(a) Assign each lac mutation to one of the strains 1 to 5. Explain your reasoning in each case.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">WT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>glycerol</td>
+<td align="center">+</td>
+<td align="center">−</td>
+<td align="center">+</td>
+<td align="center">−</td>
+<td align="center">−</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td>glycerol+IPTG</td>
+<td align="center">+</td>
+<td align="center">−</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">−</td>
+<td align="center">+</td>
+</tr>
+<tr class="odd">
+<td>glucose+IPTG</td>
+<td align="center">−</td>
+<td align="center">−</td>
+<td align="center">−</td>
+<td align="center">+</td>
+<td align="center">−</td>
+<td align="center">-</td>
+</tr>
+<tr class="even">
+<td>×WT hybrid + glycerol</td>
+<td align="center">IPTG</td>
+<td align="center">IPTG</td>
+<td align="center">+</td>
+<td align="center">IPTG</td>
+<td align="center">IPTG</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td>×lacY<sup>−</sup> hybrid</td>
+<td align="center"></td>
+<td align="center">IPTG</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">×</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Strain 1: <em>lacI<sup>-</sup></em></li>
+<li>Strain 2: <em>lacZ<sup>-</sup></em></li>
+<li>Strain 3: <em>lacO<sup>c</sup></em></li>
+<li>Strain 4: mutation that causes RNAP to bind more easily</li>
+<li>Strain 5: <em>lacP<sup>-</sup></em></li>
+</ul>
+<p>Strains 1 and 3 are both sensitive to catabolite repression (by glucose) but insensitive to induction by IPTG (transcription occurs as long as glucose is not present), which can be either due to <em>lacI<sup>-</sup></em> or <em>lacO<sup>c</sup></em>. In the diploid with WT, strain 1 becomes sensitive to IPTG, which means strain 1 had a <em>lacI<sup>-</sup></em> mutation, and the <em>lacI<sup>-</sup></em> of the newly introduced WT allele produces LacI proteins which are effective on both <em>lac</em> operons. Strain 3 has a <em>lacO<sup>c</sup></em> mutation, thus this operon is continuously being transcribed regardless of the newly introduced WT allele (LacI is present, but this mutant operon is insensitive to it)</p>
+<p>In the last experiment, the introduced plasmid has <em>lacY<sup>-</sup></em> mutation and therefore cannot produce <span class="math inline">\(\beta\)</span>-galactoside permease, this causes strain 5 unable to survive with only lactose. Thus, strain 5 has the <em>lacP<sup>-</sup></em> mutation, which originally was able to produce neither permease or galactosidase (because RNAP cannot bind to the promoter to initiate transcription). With plasmid introduced, only galactosidase but not permease is produced, which is not sufficient to catabolise lactose.</p>
+<p>Strain 2 contains a <em>lacZ<sup>-</sup></em> mutation, which make it unable to produce galactoside but able to produce permease. Thus, <span class="math inline">\(\beta\)</span>-galactoside catabolism activity is rescued by the introduction of the <em>lacY<sup>-</sup></em> pladmid in the last experiment, which allows galactosidase to be produced.</p>
+<p><strong>What is a likely explanation for the phenotype displayed by the strain containing the uncharacterized mutation? In which part of the lac region is the uncharacterized mutation likely to be found?</strong></p>
+<p>Strain 4 shows insensitivity to catabolite repression (IPTG induces transcription regardless of the presence of glucose). Thus, it may contain a mutation in the promoter region that causes RNA polymerase to bind more easily, without activation by CAP-cAMP.</p>
+<p><strong>The mutation in the catabolite repression-insensitive strain used in the practical has been determined to be within the lac operon and is shown below. The sequence alteration involved (substitution of GT in the wild-type sequence with AA) is highlighted by arrows (▼). How could this sequence alteration lead to the observed mutant phenotype?</strong></p>
+<p>ApA and ApT steps have smaller base stacking energies than TpT steps, and there are 2 hydrogen bonds between a AT base pair, which is weaker than the 3 hydrogen bonds between a CG base pair. These makes the sequence <code>AAT</code> easier to deform than <code>GTT</code>. Higher deformability makes a the mutant promoter stronger (i.e. higher affinity for RNA polymerase), so RNAP can bind to it regardless of the binding of CAP-cAMP.</p>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="./lab/gene-control-practical.html" class="archive-item-link">
+                Gene Control Practical 
+              </a>
+              <span class="archive-item-date">
+                2020-11-05
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+<script src="./rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="./rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#determine-the-time-course-of-beta-galactosidase-induction"><span class="toc-section-number">1</span> Determine the time course of <span class="math inline">\(\beta\)</span>-galactosidase induction</a>
+<ul>
+<li><a href="#protocal"><span class="toc-section-number">1.1</span> Protocal</a></li>
+<li><a href="#results"><span class="toc-section-number">1.2</span> Results</a></li>
+</ul></li>
+<li><a href="#identify-the-wt-strain"><span class="toc-section-number">2</span> Identify the WT Strain</a>
+<ul>
+<li><a href="#protocol"><span class="toc-section-number">2.1</span> Protocol</a></li>
+</ul></li>
+<li><a href="#devise-an-experimental-protocol-to-show-the-role-played-by-camp-in-catabolite-repression."><span class="toc-section-number">3</span> Devise an experimental protocol to show the role played by cAMP in catabolite repression.</a>
+<ul>
+<li><a href="#results-part-2-and-3"><span class="toc-section-number">3.1</span> Results (part 2 and 3)</a></li>
+</ul></li>
+<li><a href="#devise-experiments-to-test-the-following-model."><span class="toc-section-number">4</span> Devise experiments to test the following model.</a>
+<ul>
+<li><a href="#protocol-1"><span class="toc-section-number">4.1</span> Protocol</a></li>
+<li><a href="#results-1"><span class="toc-section-number">4.2</span> Results</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="determine-the-time-course-of-beta-galactosidase-induction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Determine the time course of <span class="math inline">\(\beta\)</span>-galactosidase induction</h1>
+<div id="protocal" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Protocal</h2>
+<p>Trial experiment:</p>
+<ul>
+<li>Take OD<sub>600</sub> reading in spectrophotometer 1) to verify that the absorbance is around 0.6 (i.e. the cultures are in exponential growth) 2) to estimate the density of <em>E. coli.</em> in solution</li>
+<li>Add 9.940 ml (9.9 ml + <span class="math inline">\((20 \times 2)\)</span> <span class="math inline">\(\mu\)</span>l) of stock E. coli solution into each of two flasks labelled <code>+IPTG</code> and <code>-IPTG</code> (control), respectively</li>
+<li>at 1 min intervals take 20 <span class="math inline">\(\mu\)</span>l sample and add to a microtube containing 80 <span class="math inline">\(\mu\)</span>l permeabilisation reagent (200 mM Na2HPO4, 20 mM KCl, 2 mM MgSO4, 0.8 mg/mL hexadecyltrimethylammonium bromide (CTAB), 0.4 mg/mL sodium deoxycholate and chloramphenicol. Whirlimix for 5 seconds. (add permeabilisation reagent as soon as a sample is taken out, which contains antibiotics to stop the bacteria from producing more galactosidase (otherwise the bacteria taken out will just continue to produce galactosidase at the same rate); do not add ONPG until all samples are collected, so assays start at the same time)</li>
+<li>collect 2 samples, at -2 min and 0 min (for both <code>+IPTG</code> and <code>-IPTG</code>) which represent baseline activity and then:
+<ul>
+<li>To the remaining 9.9 ml of <em>E. coli.</em> in <code>+IPTG</code> flask, add 0.1 ml of IPTG (stock solution provided at 100 mM) so that the final concentration is 1 mM. This will induce the lac operon by acting as an allolactose mimic. Mix.</li>
+<li>To the remaining 9.9 ml of <em>E. coli.</em> in <code>-IPTG</code> flask, add 0.1 ml of salt solution</li>
+</ul></li>
+<li>Collect 10 additional samples (for each of <code>+IPTG</code> and <code>-IPTG</code>), and setup a blank: 20 <span class="math inline">\(\mu\)</span>l of salt solution plus 80 <span class="math inline">\(\mu\)</span>l permeabilisation reagent. (i.e. measuring 40 samples against one blank).</li>
+<li>Add 75 <span class="math inline">\(\mu\)</span>l of ONPG to 75 <span class="math inline">\(\mu\)</span>l of each sample and the blank. Incubate at 37<sup>o</sup>C and start the timer.</li>
+<li>Monitor the reaction until a convenient intensity of colour has developed. Take samples out and note the time of incubation.</li>
+<li>Read absorption at 415 nm against the blank. The readings should not exceed 1.2 to ensure linearity, so it’s important to stop the reaction before the colour gets too dark (in the previous step).
+<ul>
+<li>If any of the readings gets beyond 1.2, incubate for less time in the next experiment</li>
+</ul></li>
+<li>Plot a graph of A<sub>415</sub> against time. Assess the graph:
+<ul>
+<li>Are there any regions of uncertainty? If yes, take more samples in this region in the next experiemnt.</li>
+<li>Has the induction reached completion? If not, take samples in a longer time range (2 hours) in the next experiment.</li>
+</ul></li>
+</ul>
+<p>Optimised experiment:</p>
+<p>Perform the same procedure described above with better knowledge on the time of incubation and time range and intervals to take samples.</p>
+</div>
+<div id="results" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Results</h2>
+<pre class="r"><code>control &lt;- c(.060, .076, .077, .079, .080, .082,
+             .086, .082, .084, .085, .085, .083)
+iptg    &lt;- c(.077, .082, .079, .098, .103, .136,
+             .171, .220, .280, .297, .310, .336)
+iptg1   &lt;- c(.079, .079, .078, .105, .112, .148,
+             .202, .239, .274, .335, .362, .440)
+iptg2   &lt;- c(.081, .082, .082, .110, .168, .219,
+             .324, .414, .538, .651, .704, .786)
+tibble(
+  time = rep(seq(-2, 20, 2), 4),
+  group = rep(c(&quot;-IPTG&quot;, &quot;+IPTG 1&quot;, &quot;+IPTG 2&quot;, &quot;+IPTG 3&quot;), each = 12),
+  absorbance = c(control, iptg, iptg1, iptg2)
+) %&gt;% ggplot(aes(time, absorbance)) +
+  geom_line(aes(color = group)) +
+  ylab(&quot;absorbance (A415)&quot;)+
+  geom_vline(xintercept = 0)+
+  geom_text(data = tibble(x = 1.4, y = 0.4, label = &#39;+IPTG&#39;),
+            aes(x, y, label = label))+
+  scale_x_continuous(breaks = seq(-2, 20, 2))</code></pre>
+<p><img src="./lab/2020-11-05-gene-control-practical_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><strong>Conclusion.</strong> It takes about 4 minutes for the effect of IPTG on increasing galactosidase activity to become evident.</p>
+</div>
+</div>
+<div id="identify-the-wt-strain" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Identify the WT Strain</h1>
+<p><em>You are provided with two strains of coli labelled A and B, one of which (‘wild type’) is subject to catabolite repression, and one of which is not. Devise an experimental protocol to determine which strain is the wild type strain.</em></p>
+<p>The E.coli strains are already grown on minimal medium containing 1% glycerol as a ‘poor’ carbon source (which should result in a <em>high</em> intracellualr cAMP concentration). Thus, to test for sensitivity of catabolite repression, we add a ‘good’ carbon source — glucose (which should increase cAMP level and repress galactosidase synthesis).</p>
+<div id="protocol" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Protocol</h2>
+<ul>
+<li>Measure OD<sub>600</sub> of both strains.</li>
+<li>For each of strains A and B, set up two flasks, <code>+glucose</code> and <code>-glucose</code> (i.e. 4 flasks in total); then:
+<ul>
+<li>Add 9.440 ml of <em>E. coli</em> to all flasks</li>
+<li>collect 2 samples, at -2 min and 0 min which represent baseline activity and then:</li>
+<li>add 0.5 ml of glucose solution or glycerol solution to <code>+glucose</code> flasks and <code>-glucose</code> flasks, respectively</li>
+<li>collect 3 samples at 2, 4, 6 min and then:</li>
+<li>Add 0.1 ml IPTG (100 mM) to all flasks and mix (start induction)</li>
+<li>From 8 to 18 min, take 6 samples at 2 min intervals</li>
+<li>Add 0.1 ml cAMP to all flasks</li>
+<li>Collect samples and set up a blank: 20 <span class="math inline">\(\mu\)</span>l of salt solution plus 80 <span class="math inline">\(\mu\)</span>l permeabilisation reagent. (the blank is used by all samples taken from 4 flasks)</li>
+<li>Add 75 <span class="math inline">\(\mu\)</span>l of ONPG to 75 <span class="math inline">\(\mu\)</span>l of each sample and the blank. Incubate at 37<sup>o</sup>C.</li>
+<li>Incubate for appropriate amount of time (as determined in part 1)</li>
+<li>Read absorption at 415 nm against the blank.</li>
+<li>Plot a graph of A<sub>415</sub> against time.</li>
+</ul></li>
+<li>Compare the plots. The strain unresponsive to catabolite inhibition should give similar plots in both <code>+glucose</code> and <code>-glucose</code> conditions. The WT strain should show lower A<sub>415</sub> (galactosidase activity) when glucose is added, since its galactosidase synthesis is inhibited by the ‘good’ carbon source, pyruvate.</li>
+</ul>
+<p>The experiment in this part also answers the question in the next part, and results are shown there.</p>
+</div>
+</div>
+<div id="devise-an-experimental-protocol-to-show-the-role-played-by-camp-in-catabolite-repression." class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Devise an experimental protocol to show the role played by cAMP in catabolite repression.</h1>
+<!-- cAMP production is promoted by a lack of metabolites (or unavailability of 'good' carbon sources), and cAMP in turn allows for galactosidase production via CAP. Here, -->
+<p>Since our bacteria are grown on minimal medium containing 1% glycerol as a ‘poor’ carbon source (which should result in a <em>high</em> intracellualr cAMP concentration), we need to first use glucose to inhibit galactosidase production (as described in part 2). Then, we add cAMP. If the added cAMP enhances the production of galactosidase, we can prove that it’s cAMP whose level is decreased during catabolite repression (by addition of a ‘good’ carbon source, pyruvate).</p>
+<p>The experimental procedure is described in the previous section.</p>
+<div id="results-part-2-and-3" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Results (part 2 and 3)</h2>
+<p><strong>Optical density</strong>. OD<sub>600</sub> of strain A and B solutions are 0.309 and 0.505, respectively. Both are within the range in which the bacteria are in exponential growth phase. However, since their densitie differ, when interpreting the result we should not directly compare A to B. Instead, we should assess the effects of glucose and cAMP on each of the strains independently.</p>
+<p><strong>Galactosidase activity assay results.</strong> The raw data and the plot are shown below.</p>
+<pre class="r"><code># strain A -glucose
+Ag = c(.089, .049, .089, .048, .070, .072, .079, .111, 
+       .156, .198, .254,  NA, .388, .424, .419, .520)
+# strain A +glucose
+AG = c(.071, .071, .082, .049, .075, .070,   NA, .102,
+       .130, .169, .207, .221, .251, .261, .342, .412)
+# strain B -glucose
+Bg = c(.087, .086, .097, .073, .091, .089, .099, .156,
+       .188, .273, .356, .482, .593, .699, .795, .943)
+# strain B +glucose
+BG = c(.084, .080, .084, .071, .087, .088, .096, .109,
+       .127, .150, .184, .216, .254, .322, .463, .543)
+label = tibble (
+  x = c(2, 6, 18),
+  y = c(0.75, 0.7, 0.75),
+  label = c(&quot;+glucose&quot;, &quot;+IPTG&quot;, &quot;+cAMP&quot;)
+)
+tibble(
+  strain = rep(c(&quot;A&quot;, &quot;B&quot;), each = 32),
+  glucose = rep(c(&quot;-&quot;, &quot;+&quot;, &quot;-&quot;, &quot;+&quot;), each = 16),
+  time = rep(seq(-2, 28, 2), 4),
+  absorbance = c(Ag, AG, Bg, BG)
+) %&gt;%
+  ggplot(aes(time, absorbance)) +
+  geom_point(aes(shape = glucose))+
+  geom_smooth(aes(linetype = glucose), method = &#39;loess&#39;, formula = &#39;y ~ x&#39;)+
+  # label addition of glucose, IPTG and cAMP
+  geom_vline(xintercept = c(0, 6, 18))+
+  geom_text(data = label, aes(x, y, label = label))+
+  # plot strain A and strain B side by side
+  facet_grid(~strain)+
+  # tweak axes and add title &amp; notes
+  scale_x_continuous(breaks = c(0, seq(-2, 30, 4)))+
+  labs(
+    title = &quot;Effect of glucose and cAMP on galactosidase activity of strains A and B&quot;,
+    caption = &quot;N.B. anomalous data values were replaced with NA and are invisible from the plot&quot;
+  )</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="./lab/2020-11-05-gene-control-practical_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><strong>Conclusion.</strong> Strain B is WT. In strain B, galactosidase activity was significantly lower in <code>+glucose</code> than in <code>-glucose</code> from <code>t = 6 min</code> to <code>t = 18 min</code> (after IPTG induction, before addition of cAMP). In strain A the difference is less pronounced. Addition of cAMP at <code>t = 18 min</code> markedly increased galactosidase activity in <code>strain B + glucose</code> setup, but had no noticeable effects in the other three setups. This means catabolite repression by glucose is mediated by lowering concentration of cAMP, and thus an addition of cAMP could relieve this repression.</p>
+</div>
+</div>
+<div id="devise-experiments-to-test-the-following-model." class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Devise experiments to test the following model.</h1>
+<p><span class="math inline">\(\alpha\)</span><em>-keto acids are the long sought `catabolites’ that control cAMP levels and that they act by inhibiting cAMP synthesis</em></p>
+<p><em>(Solutions of <span class="math inline">\(\alpha\)</span>-ketoglutarate, pyruvate, and succinate are available in the lab. E. coli is able to take up any of these exogenously added metabolites.)</em></p>
+<div id="protocol-1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Protocol</h2>
+<p>Repeat the experimental procedure described in part 2 with only the WT strain (strain B) and replacing glucose with different <span class="math inline">\(\alpha\)</span>-keto acids. The concentration of the ketoacids are 0.5 M. Thus, to make their concentration in the 10 ml reaction mixture be 10 mM, 0.2 mL of each was added to different flasks individually (alpha-ketoglutarate was 1.0 M, so 0.1 mL of it was added instead).</p>
+<!-- - Use the WT strain in this set of experiments.
+- 4 experiments will be done for each $\alpha$-keto acid. Adding the control, there will be a total of 13 experiments. (if there isn't enough reagent, just scale everything by 1/10)
+- Make 1:10 and 1:100 dilutions of each $\alpha$-keto acid.  (*do we need to be quantitative (i.e. comparing the effectiveness of different metabolite)? If this is just a qualitative assessment we don't need multiple dilutions to prove their involvement in catabolite repression and inhibition of cAMP synthesis (we only need 2 experiments for each ketoacid)*)
+
+|            | $\alpha$-ketoglutarate | pyruvate | succinate |
+| ---------- | ---------------------- | -------- | --------- |
+| 1:1        |                        |          |           |
+| 1:10       |                        |          |           |
+| 1:100      |                        |          |           |
+| 1:1 + cAMP |                        |          |           |
+
+For each cell of the above table:
+
+- Take 9.0 ml of *E. coli* and add 0.9 ml of the dilution.
+- Wait for 5 minutes to allow the bacteria adapt to the addition of  $\alpha$-keto acid.
+- Add 0.1 ml IPTG (100 mM) and mix (start induction).
+- At 1 min intervals take 20 $\mu$l sample and add to a microtube containing 80 $\mu$l permeabilisation reagent
+- Collect samples and set up a blank: 20 $\mu$l of uninduced *E. coli* plus 80 $\mu$l permeabilisation reagent. (the blank is only made once and used for all measurements)
+- Add 75 $\mu$l of ONPG to 75 $\mu$l of each sample and the blank. Incubate at 37^o^C.
+- Incubate for appropriate amount of time (as determined in part 1)
+- Read absorption at 415 nm against the blank.
+- Plot a graph of A~415~ against time. -->
+<p>If the addition of an <span class="math inline">\(\alpha\)</span>-keto acid alone causes the activity of galactosidase to decrease, it can be considered as the evidence that this ketoacid is involved in catabolite repression. If the following addition of cAMP can ‘rescue’ galactosidase activity, then this can be considered as the evidence that this ketoacid inhibits cAMP synthesis.</p>
+</div>
+<div id="results-1" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Results</h2>
+<p><strong>Optical density</strong>. OD<sub>600</sub> = 0.393, which verifies that the bacteria were in exponential growth phase.</p>
+<p><strong>Galactosidase activity assay results.</strong> The raw data and the plot are shown below.</p>
+<pre class="r"><code># glycerol (control)
+gly = c(.075, .076, .076, .076, .077, .078, .116, .214,
+        .303, .404, .510, .609, .702, .901, 1.028, 1.173)
+# pyruvate
+pyr = c(.077, .075, .075, .075, .075, .072, .085, .088,
+        .095, .135, .149, .184, .234, .280, .469, .585)
+# succinate
+suc = c(.074, .076, .075, .074, .078, .080, .083, .120, 
+        .152, .204, NA, .307, .408, .554, NA, .762)
+# alpha-ketoglutarate
+akg = c(.077, .076, .073, .074, .076, .078, .088, .097, 
+        .122, .172, .215, .244, .293, .367, .448, .647)
+tibble(
+  carbon_source = as_factor(rep(c(&quot;glycerol&quot;, &quot;succinate&quot;, &quot;alpha-ketoglutarate&quot;, &quot;pyruvate&quot;), each = 16)),
+  time = rep(seq(-2, 28, 2), 4),
+  absorbance = c(gly, suc, akg, pyr)
+) %&gt;%
+  ggplot(aes(time, absorbance)) +
+  geom_point(aes(shape = carbon_source))+
+  geom_smooth(aes(color = carbon_source), method = &#39;loess&#39;, formula = &#39;y ~ x&#39;)+
+  # rates after adding cAMP (tangent lines)
+  geom_abline(slope = 0.06314, intercept = c(-0.647, -1.00, -1.20))+
+  # label addition of glucose, IPTG and cAMP
+  geom_vline(xintercept = c(0, 6, 18))+
+  geom_text(data = label, aes(x, y, label = label))+
+  # tweak the axes and add title &amp; notes
+  scale_x_continuous(breaks = c(0, seq(-2, 30, 4)))+
+  labs(
+    title = &quot;Effect of different carbon sources on galactosidase activity&quot;,
+    caption = &quot;N.B. anomalous data values were replaced with NA and are invisible from the plot&quot;
+  )</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="./lab/2020-11-05-gene-control-practical_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><strong>Conclusion.</strong> All three <span class="math inline">\(\alpha\)</span>-keto acids are shown to be capable of catabolite repression. After adding IPTG, the extents to which the <span class="math inline">\(\beta\)</span>-galactosidase activity increases in <em>E. coli</em> provided with <span class="math inline">\(\alpha\)</span>-keto acids are significantly and consistently lower than in <em>E. coli</em> provided with glycerol only. Addition of cAMP has no significant effect on the <code>glycerol</code> control, but was able to improve the rate of increase of <span class="math inline">\(\beta\)</span>-galactosidase activity (gradient on the graph) in groups with <span class="math inline">\(\alpha\)</span>-keto acids to about the same as the <code>glycerol</code> control (shown as tangent lines in the plot). The capability of different <span class="math inline">\(\alpha\)</span>-keto acids can be ranked qualitatively: pyruvate &gt; <span class="math inline">\(\alpha\)</span>-ketoglutarate &gt; succinate.</p>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="./lab/computational-genomics-practical-tt-2020.html" class="archive-item-link">
+                Computational Genomics Practical (TT 2020) 
+              </a>
+              <span class="archive-item-date">
+                2020-06-08
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+<script src="./rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="./rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#quiz-5"><span class="toc-section-number">1</span> Quiz 5</a>
+<ul>
+<li><a href="#heatmaps-using-ggplot2-in-r"><span class="toc-section-number">1.1</span> Heatmaps (using <strong>ggplot2</strong> in R)</a></li>
+<li><a href="#heatmaps-in-python-with-seaborn"><span class="toc-section-number">1.2</span> Heatmaps in Python (with <strong>seaborn</strong>)</a></li>
+<li><a href="#average-gene-profile"><span class="toc-section-number">1.3</span> Average Gene Profile</a></li>
+</ul></li>
+<li><a href="#quiz-8"><span class="toc-section-number">2</span> Quiz 8</a>
+<ul>
+<li><a href="#matlab"><span class="toc-section-number">2.1</span> Matlab</a></li>
+<li><a href="#using-r"><span class="toc-section-number">2.2</span> Using R</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="quiz-5" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Quiz 5</h1>
+<div id="heatmaps-using-ggplot2-in-r" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Heatmaps (using <strong>ggplot2</strong> in R)</h2>
+<p>Loading Packages</p>
+<pre class="r"><code>library(R.matlab)</code></pre>
+<pre><code>## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.matlab for help.</code></pre>
+<pre><code>## 
+## Attaching package: &#39;R.matlab&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     getOption, isOpen</code></pre>
+<pre class="r"><code>library(reshape2)
+library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.4     ✓ dplyr   1.0.2
+## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
+## ✓ readr   1.4.0     ✓ forcats 0.5.0</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<p>Loading Data</p>
+<pre class="r"><code>setwd(&#39;/Users/tianyishi/Documents/GitHub/ox/content/lab/src/Y2T3W7-genomics&#39;)
+H3K4me3 &lt;- readMat(&#39;H3K4me3_ChIP_seq_glucose_gene_levels.mat&#39;)$H3K4me3.ChIP.seq.glucose.gene.levels
+MNase &lt;- readMat(&#39;MNase_seq_glucose_gene_levels.mat&#39;)$MNase.seq.glucose.gene.levels
+NET &lt;- readMat(&#39;NET_seq_glucose_gene_levels_sense_strand.mat&#39;)$NET.seq.glucose.gene.levels.sense.strand
+NET[NET &lt; -0.5 | NET &gt; 5] = NA</code></pre>
+<pre class="r"><code>plot_heatmap &lt;- function(mat, title) {
+  return(
+    mat %&gt;% 
+    melt() %&gt;% 
+    ggplot(aes(Var2, Var1, fill=value))+
+      geom_tile()+
+      scale_x_continuous(expand = c(0,0), breaks = c(1, 501, 1001, 1501), labels = c(&#39;-500&#39;, &#39;TSS&#39;, &#39;+500&#39;, &#39;+1000&#39;))+
+      scale_y_continuous(expand = c(0,0))+
+      scale_fill_gradient(low=&quot;blue&quot;, high = &quot;yellow&quot;)+
+      labs(title=title,
+           x=&#39;Position relative to TSS (bp)&#39;,
+           y=&#39;Gene number&#39;)
+  )
+}</code></pre>
+<pre class="r"><code>plot_heatmap(H3K4me3, &#39;H3K4me3 ChIP-seq Glucose&#39;)</code></pre>
+<p><img src="./lab/2020-06-08-computational-genomics-practical-tt-2020_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code>plot_heatmap(MNase, &quot;MNase&quot;)</code></pre>
+<p><img src="./lab/2020-06-08-computational-genomics-practical-tt-2020_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
+<pre class="r"><code>plot_heatmap(NET, &#39;NET&#39;)</code></pre>
+<p><img src="./lab/2020-06-08-computational-genomics-practical-tt-2020_files/figure-html/unnamed-chunk-4-3.png" width="672" /></p>
+</div>
+<div id="heatmaps-in-python-with-seaborn" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Heatmaps in Python (with <strong>seaborn</strong>)</h2>
+<p>Plotting above heatmaps using <strong>ggplot2</strong> in R is very slow. Using <strong>seaborn</strong> in Python is faster (plots not displayed):</p>
+<pre class="python"><code>from scipy.io import loadmat
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set()
+
+MNase = np.array(loadmat(&quot;MNase_seq_glucose_gene_levels.mat&quot;)[&quot;MNase_seq_glucose_gene_levels&quot;])
+H3K4me3 = np.array(loadmat(&quot;H3K4me3_ChIP_seq_glucose_gene_levels.mat&quot;)[&quot;H3K4me3_ChIP_seq_glucose_gene_levels&quot;])
+NET = readMat(&#39;NET_seq_glucose_gene_levels_sense_strand.mat&#39;)[&#39;NET_seq_glucose_gene_levels_sense_strand.mat&#39;]
+
+def plot_heatmap(mat, title):
+    p = sns.heatmap(mat)
+    p.set(
+        title=title,
+        xlabel=&#39;Position relative to TSS (bp)&#39;, ylabel=&#39;Gene number&#39;,
+        xticks=[0, 500, 1000, 1500],
+        xticklabels=[&quot;-500&quot;, &quot;TSS&quot;, &quot;+500&quot;, &quot;+1000&quot;],
+        yticks=[0, 999, 1999, 2999, 3999, 4999],
+        yticklabels=[1, 1000, 2000, 3000, 4000, 5000],
+    )
+    return p
+
+plot_heatmap(MNase, &quot;MNase seq Glucose&quot;)
+plt.show()
+plot_heatmap(H3K4me3, &#39;H3K4me3 ChIP-seq Glucose&#39;)
+plt.show()
+plot_heatmap(NET, &#39;NET-seq Glucose sense strand&#39;)
+plt.show()</code></pre>
+</div>
+<div id="average-gene-profile" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Average Gene Profile</h2>
+<pre class="r"><code>xylabs &lt;- labs(x=&#39;Position relative to TSS (bp)&#39;, y=&#39;average NET-seq level&#39;)
+xaxis &lt;- scale_x_continuous(breaks = c(0, 500, 1000, 1500), labels = c(&#39;-500&#39;, &#39;TSS&#39;, &#39;+500&#39;, &#39;+1000&#39;))
+
+# Average gene profile MNase-seq Glucose
+tibble(x=0:1500, y=apply(MNase, 2, mean)) %&gt;% 
+  ggplot(aes(x, y))+
+  geom_line()+
+  xaxis+
+  xylabs+
+  labs(title=&#39;Average gene profile MNase-seq Glucose&#39;)</code></pre>
+<p><img src="./lab/2020-06-08-computational-genomics-practical-tt-2020_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code># NET-seq data highest and lowest H3K4me3 comparison
+tibble() %&gt;% 
+  bind_rows(tibble(x=0:1500, y=apply(NET[1:501,], 2, function(x){mean(x, na.rm = TRUE)})) %&gt;% add_column(`H3K4me3 level`=&#39;high&#39;)) %&gt;% 
+  bind_rows(tibble(x=0:1500, y=apply(NET[4501:5000,], 2, function(x){mean(x, na.rm = TRUE)})) %&gt;% add_column(`H3K4me3 level`=&#39;low&#39;)) %&gt;%
+  ggplot(aes(x, y, color=`H3K4me3 level`))+
+    geom_line()+
+    xylabs+xaxis+
+    labs(title=&#39;NET-seq data highest and lowest H3K4me3 comparison&#39;)</code></pre>
+<p><img src="./lab/2020-06-08-computational-genomics-practical-tt-2020_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+</div>
+</div>
+<div id="quiz-8" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Quiz 8</h1>
+<div id="matlab" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Matlab</h2>
+<pre class="matlab"><code>pos=yeast_gene_positions(:,[1,2,5])
+% three colomns correspond to chromosome number, direction and TSS
+avgs = []
+i = 1
+for p = pos.&#39;
+  chr = NET_seq_data{p(1) + 16 * (1 - p(2))};
+  if p(2)==1
+    seq = chr(p(3):(p(3) + 299), :);
+  else
+    seq = chr((p(3) - 299):p(3), :);
+  end
+  avgs(i,:) = mean(seq);
+  i = i + 1;
+end
+corr(avgs,yeast_gene_measurements(:,1))</code></pre>
+</div>
+<div id="using-r" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Using R</h2>
+<pre class="r"><code>setwd(&#39;/Users/tianyishi/Documents/GitHub/ox/content/lab/src/Y2T3W7-genomics&#39;)
+pos &lt;- readMat(&#39;yeast_gene_positions.mat&#39;)$yeast.gene.positions[,c(1,2,5)]
+net &lt;- lapply(readMat(&#39;NET_seq_genome_wide_data.mat&#39;)$NET.seq.data, as_vector)
+clc &lt;- apply(pos, 1, function(x){
+  mean(net[[x[1] + (1-x[2])*16]][x[3]:(x[3]+ifelse(x[2]==0, -1, 1)*299)])
+})
+exp &lt;- readMat(&#39;yeast_gene_measurements.mat&#39;)$yeast.gene.measurements[,1]
+
+plot(clc, exp)</code></pre>
+<p><img src="./lab/2020-06-08-computational-genomics-practical-tt-2020_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>cor(clc, exp)</code></pre>
+<pre><code>## [1] 0.8281284</code></pre>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="./lab/immunoassay-in-silico.html" class="archive-item-link">
+                Immunoassay (in Silico) 
+              </a>
+              <span class="archive-item-date">
+                2020-03-08
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#aim-of-the-practical"><span class="toc-section-number">1</span> Aim of the Practical</a></li>
+<li><a href="#background"><span class="toc-section-number">2</span> Background</a><ul>
+<li><a href="#q1">Q1</a></li>
+</ul></li>
+<li><a href="#introduction-to-radioimmunoassay"><span class="toc-section-number">3</span> Introduction to Radioimmunoassay</a></li>
+<li><a href="#radioimmunoassay-simulation-tutorial"><span class="toc-section-number">4</span> Radioimmunoassay Simulation — Tutorial</a><ul>
+<li><a href="#a-choosing-a-suitable-concentration-of-ab">(a) Choosing a suitable concentration of Ab</a></li>
+<li><a href="#b-testing-effect-of-changing-ab-at-fixed-ag">(b) Testing effect of changing [Ab] at fixed [Ag]</a></li>
+<li><a href="#d-testing-precision">(d) Testing precision</a></li>
+</ul></li>
+<li><a href="#ria-generating-your-own-data"><span class="toc-section-number">5</span> RIA: Generating Your Own Data</a><ul>
+<li><a href="#a-finding-a-suitable-concentration-of-antibody">(a) Finding a suitable concentration of antibody</a></li>
+<li><a href="#b-generating-the-calibartion-curve-and-c-finding-the-concentration-of-the-unknown">(b) Generating the calibartion curve and (c) Finding the concentration of the unknown</a></li>
+</ul></li>
+<li><a href="#enzyme-linked-immunosorbentassay"><span class="toc-section-number">6</span> Enzyme-Linked Immunosorbentassay</a><ul>
+<li><a href="#a-background-to-elisa">(a) Background to ELISA</a></li>
+<li><a href="#b-method-elisalab">(b) METHOD: ElisaLab</a></li>
+</ul></li>
+<li><a href="#etut"><span class="toc-section-number">7</span> ELISA Tutorial</a></li>
+<li><a href="#elisa-experiment"><span class="toc-section-number">8</span> ELISA Experiment</a><ul>
+<li><a href="#a-choosing-a-suitable-concentration-of-antibody">(a) Choosing a suitable concentration of antibody</a></li>
+<li><a href="#b-generating-the-calibration-curve">(b) Generating the calibration curve</a></li>
+<li><a href="#c-measuring-concentration-of-the-unknown">(c) Measuring concentration of the unknown</a></li>
+</ul></li>
+<li><a href="#supplementary-information"><span class="toc-section-number">9</span> Supplementary Information</a><ul>
+<li><a href="#ria-supp"><span class="toc-section-number">9.1</span> RIA</a></li>
+<li><a href="#elisa-absorbance"><span class="toc-section-number">9.2</span> ELISA</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="aim-of-the-practical" class="section level1">
+<h1><span class="header-section-number">1</span> Aim of the Practical</h1>
+</div>
+<div id="background" class="section level1">
+<h1><span class="header-section-number">2</span> Background</h1>
+<div id="q1" class="section level2 unnumbered">
+<h2>Q1</h2>
+<p>Draw a simple schematic diagram of an IgG molecule, labelling the relevant chains and domains.</p>
+<p>Diagram see Figure <a href="#fig:ab-schematic">2.1</a></p>
+<div class="figure"><span id="fig:ab-schematic"></span>
+<img src="../img/ab-schematic.jpg" alt="Schematic of an IgG molecule." width="100%" />
+<p class="caption">
+Figure 2.1: Schematic of an IgG molecule.
+</p>
+</div>
+<ol style="list-style-type: lower-roman">
+<li>What is meant by a polyclonal antibody?
+<ul>
+<li>A mixture of antibodies with diifferent F<sub>v</sub> regions (antigen-binding sites) that are complementary to different epitopes (on the same antigen)</li>
+</ul></li>
+<li>What is a monoclonal antibody?
+<ul>
+<li>A group of clone of a single antibody, with identical F<sub>v</sub> region and bind to the same epitope.</li>
+</ul></li>
+<li>Detail the steps by which mouse monoclonal antibodies are raised.
+<ul>
+<li>When the antigen molecules are injected (probably with an adjunvant e.g. Aluminium salt to elicit immune response more effectively), they activate antigen-presenting cells (APCs) called dendritic cells. Activated dendritic cells then use their MHC class II to present antigens on their plasma membrane, while migrating to the lymphatic system. When they encounter B cells and T<sub>h</sub> (T helper) cells with cognate BCR/TCRs in lymph nodes, they activate these B and T cells. With the help from activated dendritic cells and T<sub>h</sub> cells, B cells undergoes monoclonal expansion, class switching and somatic hypermutation, and differentiate into plasma cells, which produce a large number of antibodies in a short period.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="introduction-to-radioimmunoassay" class="section level1">
+<h1><span class="header-section-number">3</span> Introduction to Radioimmunoassay</h1>
+<div id="q2" class="section level3 unnumbered">
+<h3>Q2</h3>
+<p><strong>18 tubes are set up for radioimmunoassay containing antibody with a capacity for binding 1µg antigen. Both labelled antigen and a known concentration of unlabelled antigen are added to the tube as indicated. Note that the labelled antigen has been conjugated with 125I so that approx 50,000 cpm are associated with every <span class="math inline">\(\mu\text{g}\)</span> of labelled antigen). Fill in the table below giving values rounded to the nearest integer.</strong></p>
+<table>
+<caption>Horizontal axis: unlabelled antigen (<span class="math inline">\(\mu\text{g}\)</span>); vertical axis: labelled antigen (<span class="math inline">\(\mu\text{g}\)</span>);</caption>
+<thead>
+<tr class="header">
+<th align="right"></th>
+<th align="right">0</th>
+<th align="right">0.5</th>
+<th align="right">1</th>
+<th align="right">2</th>
+<th align="right">4</th>
+<th align="right">8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>0.5</strong></td>
+<td align="right"><em>25000</em></td>
+<td align="right">25000</td>
+<td align="right">16667</td>
+<td align="right">10000</td>
+<td align="right">5556</td>
+<td align="right">2941</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>1.0</strong></td>
+<td align="right">50000</td>
+<td align="right">33333</td>
+<td align="right">25000</td>
+<td align="right">16666</td>
+<td align="right">10000</td>
+<td align="right">5556</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>2.0</strong></td>
+<td align="right">50000</td>
+<td align="right">40000</td>
+<td align="right">33333</td>
+<td align="right">25000</td>
+<td align="right">16667</td>
+<td align="right">10000</td>
+</tr>
+</tbody>
+</table>
+<p>When the antibodies are saturated with antigens (when the amount of total antigen is greater than <span class="math inline">\(1 \mu\text{g}\)</span>), the radioactivity is the proportion of labelled antigen multiplied by the maximal radioactivity (50000 cpm). There is one case (0 <span class="math inline">\(\mu\text{g}\)</span> unlabelled; 0.5 <span class="math inline">\(\mu\text{g}\)</span> labelled) where the antibodies are not saturated.</p>
+</div>
+<div id="q3" class="section level3 unnumbered">
+<h3>Q3</h3>
+<p><strong>Use the data from Q2 to draw curves of <em>counts precipitated</em> versus <em>amount of unlabelled antigen</em> added at each concentration of labelled antigen.</strong></p>
+<p>There are two ways to plot it. The obvious way is to directly plot the radioactivity count against the amount of unlabelled antigen (Figure <a href="#fig:q2">3.1</a> <strong>A</strong>). However, by simply taking the reciprocal of the radioactivity count, a linear relationship can be obtained (Figure <a href="#fig:q2">3.1</a> <strong>B</strong>). This is explained in more detail in Q4.</p>
+<pre class="r"><code># Loading data
+d &lt;- tibble(labelled = rep(c(&#39;0.5 microgram&#39;, &#39;1 microgram&#39;, &#39;2 microgram&#39;), each = 6),
+       unlabelled = rep(c(0, 0.5, 1, 2, 4, 8), 3),
+       count = c(25000, 25000, 16667, 10000, 5556, 2941,
+                 50000, 33333, 25000, 16666, 10000, 5556,
+                 50000, 40000, 33333, 25000, 16667, 10000))
+# Direct plot
+direct &lt;- ggplot(d, aes(unlabelled, count, linetype = labelled))+
+  geom_line()+
+  labs(title=&#39;Direct Plotting&#39;)
+# Plot after transformation
+linear &lt;- ggplot(d, aes(unlabelled, 10000/count, linetype = labelled))+
+  geom_line()+
+  labs(title=&quot;Tranformed to Linear Relationship&quot;)
+# Arrangement
+ggarrange(direct, linear, ncol=2, nrow=1, common.legend = TRUE, legend=&quot;bottom&quot;, labels = c(&quot;A&quot;, &quot;B&quot;))</code></pre>
+<div class="figure"><span id="fig:q2"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/q2-1.png" alt="A: direct plotting; B: plotting the reciprocal of radioactivity count against unlabelled antigen amount." width="100%" />
+<p class="caption">
+Figure 3.1: A: direct plotting; B: plotting the reciprocal of radioactivity count against unlabelled antigen amount.
+</p>
+</div>
+</div>
+<div id="q4" class="section level3 unnumbered">
+<h3>Q4</h3>
+<p><strong>Explain why these curves have a negative slope.</strong></p>
+<p>When antibodies are saturated with antigens, this simple relationship holds:</p>
+<p><span class="math display">\[y=\dfrac{k}{x+k}\times A\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is the amount of labelled antigen (constant), <span class="math inline">\(x\)</span> is the amount of unlabelled antigen, <span class="math inline">\(A\)</span> is the maximal radioactivity count (when <span class="math inline">\(x=0\)</span> and all antibodies are bound to labelled antigens). In other words, the proportion of labelled antigen (relative to the total amount of antigen that saturates the antibodies) equals the ratio between the actual radioactivity and the maximal radioactivity. Thus, according to this equation, plotting radioactivity against amount of unlabelled antigen will result in a negative slope.</p>
+<p>Taking the reciprocal results in a linear relationship between <span class="math inline">\(\dfrac{1}{y}\)</span> and <span class="math inline">\(x\)</span>, and this was used to plot Q3 and later the calibration curve.</p>
+<p><span class="math display">\[\dfrac{1}{y}=\dfrac{x}{Ak} + A\]</span></p>
+</div>
+<div id="q5" class="section level3 unnumbered">
+<h3>Q5</h3>
+<p><strong>From the data in Q3 and Q4 and your graph, identify the range of counts precipitated that would be useful for calibration (i.e. that will give you a significant change in counts precipitated when you add antigen).</strong></p>
+<p>The slope of the curve is steeper (i.e. it’s more sensitive to small change in unlabelled antigen amount) as the radioactivity count is closer to maximum (50000). However, when the count is too close to 50000, the amount of unlabelled antigen would be too low, which would be more error-prone.</p>
+<p>Thus my answer is: 5000-20000 cpm.</p>
+</div>
+<div id="q6" class="section level3 unnumbered">
+<h3>Q6</h3>
+<p><strong>How does this vary with [Ag] labelled and [Ag] unlabelled?</strong></p>
+<p>A decrease in [Ag]<sub>labelled</sub> increases the sensitivity of RIA for detecting [Ag]<sub>unlabelled</sub>, but the amount of labelled antigen must be at least as much as the capacity of the antibodies (in this case, 1 microgram), otherwise it would be impossible to detect very small amount (precisely, capacity of antibodies minus amount of labelled antigen) of unlabelled antigen.</p>
+<p>As [Ag]<sub>unlabelled</sub> increases, the change in cpm becomes less significant.</p>
+<p><strong>What does this tell you about the dynamic range of the assay (i.e. the range of amounts of unlabelled antigen you can measure) in these particular experiments?</strong></p>
+<p>The dynamic range varies with the amount of labelled antigen. Greater [Ag]<sub>labelled</sub> allows measurement of larger [Ag]<sub>unlabelled</sub> (but has less absolute precision/sensitivity); smaller [Ag]<sub>labelled</sub> allows more precise measurement of low concentrations of unlabelled antigen, but becomes insensitive when [Ag]<sub>unlabelled</sub> is high. The amount of labelled antigen must be at least as much as the capacity of the antibodies, as noted above.</p>
+</div>
+</div>
+<div id="radioimmunoassay-simulation-tutorial" class="section level1">
+<h1><span class="header-section-number">4</span> Radioimmunoassay Simulation — Tutorial</h1>
+<div id="a-choosing-a-suitable-concentration-of-ab" class="section level2 unnumbered">
+<h2>(a) Choosing a suitable concentration of Ab</h2>
+<p><strong>7. Enter your results in the table below, using scientific notation rather than strings of zeros.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag dil</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ab dil (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ab vol</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>6</sup></td>
+<td align="right">1</td>
+<td align="right">489</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">5525</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">44899</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">51875</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">1</td>
+<td align="right">48750</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>1</sup></td>
+<td align="right">1</td>
+<td align="right">51700</td>
+</tr>
+</tbody>
+</table>
+<p><strong>14. Fill out the table below using own your own data from the results screen, making sure you use scientific notation (ie NOT like the data table on screen). Calculate how much Ag you have added.</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="6%" />
+<col width="25%" />
+<col width="19%" />
+<col width="25%" />
+<col width="6%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag dil</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Amount of Ag (pg)</th>
+<th align="right">Ab dil (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ab vol</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">1000</td>
+<td align="right">10<sup>6</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>4606</strong></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">7</td>
+<td align="right">700</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>5178</strong></td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">5</td>
+<td align="right">700</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>9203</strong></td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">0</td>
+<td align="right">100</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>25687</strong></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">0</td>
+<td align="right">10</td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>51613</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unique Code: txt9</strong></p>
+</div>
+<div id="b-testing-effect-of-changing-ab-at-fixed-ag" class="section level2 unnumbered">
+<h2>(b) Testing effect of changing [Ab] at fixed [Ag]</h2>
+<p><strong>2. Increase the Ab concentration 10x (ie decrease the dilution factor to 103) and test against three concentrations of Ag (diluted 10<sup>3</sup>, 10<sup>4</sup> and 10<sup>5</sup>) (Keep volume of Ab and Ag at 1 <span class="math inline">\(\mu\text{l}\)</span> for now). Click Experiment and 1mg/ml to generate data. Enter the results.</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1000</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">48772</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">100</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">55150</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">43975</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Now perform the same experiment but with the ‘optimal’ Ab dilution of 10<sup>4</sup>.</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1000</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">4122</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">100</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">22237</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">44681</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Finally, set up three tubes with 10x LESS Ab than the ‘optimal’ i.e. diluted 10<sup>5</sup>. Again, note your data:</strong></p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="27%" />
+<col width="10%" />
+<col width="15%" />
+<col width="10%" />
+<col width="27%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1000</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">402</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">100</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">2366</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">4872</td>
+</tr>
+</tbody>
+</table>
+<div id="q6-1" class="section level3 unnumbered">
+<h3>Q6</h3>
+<p><strong>How does the amount of antibody influence the number of counts precipitated?</strong></p>
+<p>The number of counts increases with increasing antibody concentration until the antigen-binding capacity of antibodies exceed the amount of labelled antigen (when Ab dilution is 10<sup>3</sup>). In this case, additional unlabelled antigens will just bind free antibodies without interfering with those bound to labelled antigens.</p>
+</div>
+<div id="q7" class="section level3 unnumbered">
+<h3>Q7</h3>
+<p>See Figure <a href="#fig:immunolab-q7">4.1</a>.</p>
+<div class="figure"><span id="fig:immunolab-q7"></span>
+<img src="../img/immunolab-q7.jpg" alt="Q7" width="100%" />
+<p class="caption">
+Figure 4.1: Q7
+</p>
+</div>
+</div>
+</div>
+<div id="d-testing-precision" class="section level2 unnumbered">
+<h2>(d) Testing precision</h2>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">19215</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14307</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14866</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14474</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14607</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">15341</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">51798</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">45749</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">52873</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">55798</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">57048</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">49474</td>
+</tr>
+</tbody>
+</table>
+<div id="q8" class="section level3 unnumbered">
+<h3>Q8</h3>
+<p>See Figure <a href="#fig:immunolab-q8">4.2</a></p>
+<div class="figure"><span id="fig:immunolab-q8"></span>
+<img src="../img/immunolab-q8.jpg" alt="Q8" width="100%" />
+<p class="caption">
+Figure 4.2: Q8
+</p>
+</div>
+</div>
+<div id="q9" class="section level3 unnumbered">
+<h3>Q9</h3>
+<p>Calculations see Figure <a href="#fig:immunolab-q9">4.3</a></p>
+<div class="figure"><span id="fig:immunolab-q9"></span>
+<img src="../img/immunolab-q9.jpg" alt="Q9" width="100%" />
+<p class="caption">
+Figure 4.3: Q9
+</p>
+</div>
+<p><strong>Explain the possible causes of the variation, bearing in mind the experiments have been carried out by an experienced operator</strong></p>
+<ul>
+<li>Radioactive decay is a probablistic event, so the number of disintegrations per unit time naturally varies.</li>
+<li>There can also be random errors intrintic to the Geiger counter</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="ria-generating-your-own-data" class="section level1">
+<h1><span class="header-section-number">5</span> RIA: Generating Your Own Data</h1>
+<p><strong>Unique Code:</strong> <code>yckmq9fe</code></p>
+<div id="a-finding-a-suitable-concentration-of-antibody" class="section level2 unnumbered">
+<h2>(a) Finding a suitable concentration of antibody</h2>
+<p><strong>4. Using the grid below…</strong></p>
+<p>See Figure <a href="#fig:immunolab-5a4">5.1</a></p>
+<div class="figure"><span id="fig:immunolab-5a4"></span>
+<img src="../img/immunolab-5a4.jpg" alt="5 (a) 4." width="100%" />
+<p class="caption">
+Figure 5.1: 5 (a) 4.
+</p>
+</div>
+<p><strong>6. Note down useful data in the tables below</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">346</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">4083</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">18380</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">35217</td>
+</tr>
+</tbody>
+</table>
+<p><strong>8. If necessary, try varying the volume at given Ab dilution to see if you can optimise further.</strong></p>
+<p>I decided to use the 10<sup>4</sup> dilution.</p>
+</div>
+<div id="b-generating-the-calibartion-curve-and-c-finding-the-concentration-of-the-unknown" class="section level2 unnumbered">
+<h2>(b) Generating the calibartion curve and (c) Finding the concentration of the unknown</h2>
+<p><strong>5. Note all the relevant data in the table below</strong></p>
+<p>Implicitly shown in Figure <a href="#fig:ria-cali-raw">5.2</a> and <a href="#fig:ria-cali">5.3</a>.</p>
+<p><strong>Q10: How many replicates would be appropriate for your unknown solution? Explain your answer using sound statistical reasoning.</strong></p>
+<p>This depends on the precision we want to achieve, the <em>p</em> value we adopt, and the variance of the results of the repeats of that particular piece of experiment (which is unknown before we have done them). For example, if we choose <span class="math inline">\(p=0.05\)</span> as the threshold, and did some experiments resulting in a mean of <span class="math inline">\(\bar{x}\)</span> and standard deviation of <span class="math inline">\(s_x\)</span>, the confidence interval of the population mean, <span class="math inline">\(\mu\)</span>, will be:</p>
+<p><span class="math display">\[\mu = \bar{x} \pm t_{0.975, n} \times \dfrac{s_x}{\sqrt{n}}\]</span></p>
+<p>Clearly, in order to calculate <span class="math inline">\(n\)</span>, it should be specified clearly to what precision we want to achieve for <span class="math inline">\(\mu\)</span>, and calculate <span class="math inline">\(\mu\)</span> each time we finish one repeat of the experiment (because <span class="math inline">\(\bar{x}\)</span> and <span class="math inline">\(s_x\)</span> will update).</p>
+<p><strong>You may have to test a range of Ag dilutions before you obtain a cpm value that can be read of your calibration curve (remember to find appropriate range first by altering only the dilution). Show your preliminary data here:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Unknown Ag dilution</th>
+<th align="right">Unknown Ag volume (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">10<sup>2</sup></td>
+<td align="right">1</td>
+<td align="right">454</td>
+</tr>
+<tr class="even">
+<td align="right">10<sup>3</sup></td>
+<td align="right">5</td>
+<td align="right">826</td>
+</tr>
+<tr class="odd">
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">3857</td>
+</tr>
+<tr class="even">
+<td align="right">10<sup>4</sup></td>
+<td align="right">5</td>
+<td align="right">8245</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>10<sup>4</sup></strong></td>
+<td align="right"><strong>1</strong></td>
+<td align="right"><strong>19760</strong></td>
+</tr>
+<tr class="even">
+<td align="right">10<sup>5</sup></td>
+<td align="right">5</td>
+<td align="right">29922</td>
+</tr>
+<tr class="odd">
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">33886</td>
+</tr>
+</tbody>
+</table>
+<p>I decide to use Ag dilution of 10<sup>4</sup> and volume of 1 <span class="math inline">\(\mu\text{l}\)</span>, because 19760 is within the optimal range of the calibration curve (shown later, as a response to Q11)</p>
+<p><strong>Q11: Read the data off your calibration curve, and calculate the concentration of antigen in your unknown solution. (Each successful measurement will generate a value for the amount of antigen estimated to be present in that particular assay tube. You are required to calculate the concentration of antigen in the unknown solution). Explain your result below. Provide a discussion of your experimental approach, the validity of your answer (conduct appropriate statistical tests) and discuss any aspects that could have been improved. How would you express the precision of your answer (see Q.8)?</strong></p>
+<p>Here I load the data (and standardised variable names):</p>
+<pre class="r"><code>library(tidyverse)
+raw &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/ria.tsv&#39;) %&gt;% 
+  transmute(antigen_volume = `Ag volume`,
+            antigen_dilution = `Ag dilution`,
+            antibody_volume = `Ab volume`,
+            antibody_dilution = factor(`Ab dilution`),
+            count = Count,
+            known = `Known?`)</code></pre>
+<div id="calibration-curve" class="section level3 unnumbered">
+<h3>Calibration Curve</h3>
+<p>I extracted experiments with known amount of antigen and calculated the mass of antigen in pg:</p>
+<pre class="r"><code>known &lt;- raw %&gt;%
+  filter(known == 1, # experiments with known antigen amount for calibration
+         antibody_dilution == 10000) %&gt;%
+  mutate(antigen_amount = 
+        antigen_volume / 1000 # \mu L to ml
+                       * 10^9  # mg to pg
+                       / antigen_dilution) %&gt;%
+  filter(antigen_amount&lt;=1000)</code></pre>
+<p>First, I plotted count vs antigen amount directly (the blue line is fitted using the LOESS algorithm) in Figure <a href="#fig:ria-cali-raw">5.2</a> . Although this plot is not the most useful for calibration, it shows that the random variation is large when the count is greater than 20000. Therefore I aim at a count around 20000 in the test for the unkown antigen concentration.</p>
+<pre class="r"><code>known %&gt;%
+  ggplot(aes(antigen_amount, count))+
+  geom_point()+
+  geom_smooth(span=0.9, se=FALSE)+
+  labs(x = &#39;antigen amount (pg)&#39;, title = &#39;Calibration Curve (cpm vs antigen amount)&#39;)+
+  theme_bw()</code></pre>
+<div class="figure"><span id="fig:ria-cali-raw"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/ria-cali-raw-1.png" alt="RIA Calibration Curve" width="672" />
+<p class="caption">
+Figure 5.2: RIA Calibration Curve
+</p>
+</div>
+<p>The real calibration curve is shown in Figure <a href="#fig:ria-cali">5.3</a> (The reasoning was described in Q3 and Q4).</p>
+<pre class="r"><code>known %&gt;% 
+  ggplot(aes(antigen_amount, 10000/count))+
+  geom_point()+
+  geom_smooth(span=0.9)+
+  labs(x = &#39;antigen amount (pg)&#39;, title = &#39;Calibration Curve (10000/cpm vs antigen amount)&#39;)+
+  theme_bw()</code></pre>
+<div class="figure"><span id="fig:ria-cali"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/ria-cali-1.png" alt="RIA Calibration Curve (10000/count vs antigen amount)" width="672" />
+<p class="caption">
+Figure 5.3: RIA Calibration Curve (10000/count vs antigen amount)
+</p>
+</div>
+<p>The equation of the fitted straight line can be calculated as follows:</p>
+<pre class="r"><code>with(known, summary(lm(10000/count ~ antigen_amount)))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = 10000/count ~ antigen_amount)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.33043 -0.05604  0.00116  0.05493  0.39587 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)    2.591e-01  1.659e-02   15.62   &lt;2e-16 ***
+## antigen_amount 2.486e-03  3.819e-05   65.10   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.133 on 134 degrees of freedom
+## Multiple R-squared:  0.9693, Adjusted R-squared:  0.9691 
+## F-statistic:  4238 on 1 and 134 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>This gives:</p>
+<p><span class="math display">\[10000/\text{cpm} = 0.2591 + 2.486\times10^{-3}\text{antigen amount}\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[\text{antigen amount (in pg)}=4022526/\text{cpm} - 104.2237\]</span></p>
+</div>
+<div id="testing-for-the-unkown" class="section level3 unnumbered">
+<h3>Testing for the Unkown</h3>
+<p>Here is the data when I tried different antigen dilution and volumes to make the count close to 20000. <span class="math inline">\(1\mu\text{L}\)</span> of <span class="math inline">\(1\times10^4\)</span> dilution suffices:</p>
+<pre class="r"><code>unknown_trial &lt;- raw %&gt;%
+  filter(`known`== 0,
+         `antigen_volume` != 0) %&gt;%
+  slice(1:7)
+unknown_trial</code></pre>
+<pre><code>## # A tibble: 7 x 6
+##   antigen_volume antigen_dilution antibody_volume antibody_dilution count known
+##            &lt;dbl&gt;            &lt;dbl&gt;           &lt;dbl&gt; &lt;fct&gt;             &lt;dbl&gt; &lt;dbl&gt;
+## 1              1              100               1 10000               454     0
+## 2              5             1000               1 10000               826     0
+## 3              1             1000               1 10000              3857     0
+## 4              5            10000               1 10000              8245     0
+## 5              1            10000               1 10000             19760     0
+## 6              5           100000               1 10000             29922     0
+## 7              1           100000               1 10000             33886     0</code></pre>
+<p>Then I repeated <span class="math inline">\(1\mu\text{L}\)</span> of <span class="math inline">\(1\times10^4\)</span> dilution 276 times (see Section <a href="#ria-supp">9.1</a> for the data). <strong>Curiously, the counts do not follow a normal distribution. It is bimodal:</strong></p>
+<pre class="r"><code>unknown_test &lt;- raw %&gt;%
+  filter(`known`== 0,
+         `antigen_volume` != 0) %&gt;%
+  slice(8:n())
+unknown_test %&gt;% 
+  ggplot(aes(count))+
+  geom_histogram(bins = 40, fill=&#39;white&#39;, color=&#39;black&#39;)+
+  labs(title = &#39;Distribution of 276 Radioactivity Count Readings&#39;, x=&#39;radioactivity count&#39;)+
+  theme_bw()</code></pre>
+<p><img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><strong>This is likely to be a bug in the ImmunoLab application. </strong></p>
+<p>If I had to assume it’s a normal distribution, a 95% confidence interval could be calculated:</p>
+<pre class="r"><code>cpm = unknown_test[[&#39;count&#39;]]
+mass = 4022526/cpm - 104.2237
+conc = mass /
+          1e-3 / # 1e-3 ml
+          1e-4 / # dilution
+          1e9  # pg to mg
+mean = mean(conc); sd = sd(conc);
+t = qt(0.975, length(conc)-1); t_sd = t*sd
+c(mean=mean, sd = sd, t = t, t_sd = t_sd, lower = mean-t_sd, upper = mean+t_sd)</code></pre>
+<pre><code>##      mean        sd         t      t_sd     lower     upper 
+## 0.8361621 0.1897999 1.9686279 0.3736453 0.4625168 1.2098075</code></pre>
+<p>(The relationship between cpm and antigen amount has been established previously: <span class="math inline">\(\text{antigen amount (in pg)}=4022526/\text{cpm} - 104.2237\)</span>)</p>
+<p>The mean is 0.8362 mg/ml and the confidence interval is <span class="math inline">\(0.8362 \pm 0.3736\)</span>, or [0.4625 1.2098] mg/ml. (This is actually invalid because the distribution was not normal).</p>
+</div>
+</div>
+</div>
+<div id="enzyme-linked-immunosorbentassay" class="section level1">
+<h1><span class="header-section-number">6</span> Enzyme-Linked Immunosorbentassay</h1>
+<div id="a-background-to-elisa" class="section level2 unnumbered">
+<h2>(a) Background to ELISA</h2>
+<div id="q12" class="section level3 unnumbered">
+<h3>Q12</h3>
+<p><strong>Draw a simple labelled diagram showing the principle of a sandwich ELISA.</strong></p>
+<p>See Figure <a href="#fig:immunolab-elisa">6.1</a>.</p>
+<div class="figure"><span id="fig:immunolab-elisa"></span>
+<img src="../img/immunolab-elisa.jpg" alt="Schematic of ELISA" width="100%" />
+<p class="caption">
+Figure 6.1: Schematic of ELISA
+</p>
+</div>
+</div>
+<div id="q13" class="section level3 unnumbered">
+<h3>Q13</h3>
+<p><strong>Give an example of a chromogenic substrate for:</strong></p>
+<ol style="list-style-type: lower-roman">
+<li>phosphatase: BCIP/NBT</li>
+<li>peroxidase: TMB (3,3’,5,5’-tetramethylbenzidine)</li>
+</ol>
+</div>
+<div id="q14" class="section level3 unnumbered">
+<h3>Q14</h3>
+<p><strong>Measuring the amount of enzyme in a well is technically simpler than measuring radioactivity, but it is much more susceptible to outside influences. List the factors that might affect the accuracy of your estimation of the amount of enzyme (assuming that optical density measurements are completely accurate).</strong></p>
+<ul>
+<li>Variation in temperature and pH</li>
+<li>Aggregation of enzyme proteins (which leads to underestimation)</li>
+</ul>
+</div>
+</div>
+<div id="b-method-elisalab" class="section level2 unnumbered">
+<h2>(b) METHOD: ElisaLab</h2>
+<div id="q15" class="section level3 unnumbered">
+<h3>Q15</h3>
+<p><strong>What is the Beer-Lambert law and why is it relevant when working out how much labelled antibody to use?</strong></p>
+<p>Beer-Lambert Law is:</p>
+<p><span class="math display">\[A = \epsilon cl\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is the absorbance (<span class="math inline">\(A=\log_{10}\left(\dfrac{I_\text{incident}}{I_\text{transmitted}}\right)\)</span>), <span class="math inline">\(\epsilon\)</span> is the molar extinction coefficient, <span class="math inline">\(c\)</span> is the concentration of the light-absorbing substance, <span class="math inline">\(l\)</span> is the path length.</p>
+<p>By measuring absorbance (<span class="math inline">\(A\)</span>), the concentration of the coloured product, and hence the concentration of the enzyme-conjugated antibodies, can be deduced.</p>
+<p><strong>What would happen to the dynamic range if we used more labelled Ab?</strong></p>
+</div>
+</div>
+</div>
+<div id="etut" class="section level1">
+<h1><span class="header-section-number">7</span> ELISA Tutorial</h1>
+<p>As I will be plot several heatmaps to show the ELISA results, and the procedures are similar, I created this helper function to prevent repetition:</p>
+<pre class="r"><code>plot_elisa &lt;- function(fn, title) {
+  df &lt;- read_tsv(fn) %&gt;% 
+    janitor::clean_names() %&gt;% 
+    mutate(ag_dilution = factor(ag_dilution),
+           ab_dilution = factor(ab_dilution))
+  return(ggplot(df, aes(ab_dilution, ag_dilution, fill=absorbance))+
+    geom_tile()+
+    labs(title = title)+
+    scale_y_discrete(limits = rev(levels(df$ag_dilution)))+
+    scale_fill_gradient(high=&#39;blue&#39;, low=&#39;white&#39;)+
+    geom_text(aes(label=absorbance)))
+}</code></pre>
+<p><strong><em>A small flaw: until now I haven’t found an easy way to show exponent forms of axes values in this case. It would have been straightforward if my axes had been continuous. However, heatmaps require discrete variables so I converted numerical values (continuous) to factors (discrete).</em></strong></p>
+<p>The results of the ELISA tutorial are shown in Figure <a href="#fig:elisa-tut">7.1</a>.</p>
+<pre class="r"><code>plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_tutorial.tsv&#39;, &quot;ELISA Tutorial&quot;)</code></pre>
+<div class="figure"><span id="fig:elisa-tut"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-tut-1.png" alt="ELISA tutorial results" width="100%" />
+<p class="caption">
+Figure 7.1: ELISA tutorial results
+</p>
+</div>
+</div>
+<div id="elisa-experiment" class="section level1">
+<h1><span class="header-section-number">8</span> ELISA Experiment</h1>
+<p><strong>Reference number:</strong> <code>2nf5rpcd</code></p>
+<div id="a-choosing-a-suitable-concentration-of-antibody" class="section level2 unnumbered">
+<h2>(a) Choosing a suitable concentration of antibody</h2>
+<div id="q16" class="section level3 unnumbered">
+<h3>Q16</h3>
+<p><strong>Describe the steps you took to optimise Antibody dilution for the rest of the experiment.</strong></p>
+<p>First, I used a wide range of antibody dilutions (but with smaller intervals around <span class="math inline">\(10^4\)</span>, as the optimal concentration is more likely to be around here), these concentrations are <span class="math inline">\(10^2, 10^3, 4\times10^3, 10^4, 4\times10^4, 8\times10^4, 10^5, 10^6\)</span>. The antigen concentrations are evenly distributed, namely <span class="math inline">\(1\times10^n\)</span> and <span class="math inline">\(4\times10^n\)</span> for <span class="math inline">\(n\)</span> in <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>. The results are shown in Figure <a href="#fig:elisa-t1">8.1</a>. The <code>plot_elisa()</code> function used here were defined in Section <a href="#etut">7</a>. I believe the plots I made are a better representation of ELISA results than screenshots or Excel spreadsheets. However, if you wish to view the raw data, you can download them from <a href="https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/">https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/</a>.</p>
+<pre class="r"><code>plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_trial_1.tsv&#39;, &quot;ELISA Trial 1 (choosing antibody concentration)&quot;)</code></pre>
+<div class="figure"><span id="fig:elisa-t1"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-t1-1.png" alt="ELISA Trial 1 (choosing antibody concentration) results." width="100%" />
+<p class="caption">
+Figure 8.1: ELISA Trial 1 (choosing antibody concentration) results.
+</p>
+</div>
+<p>As shown in Figure <a href="#fig:elisa-t1">8.1</a>, the optimal antibody concentration is between <span class="math inline">\(4\times10^4\)</span> and <span class="math inline">\(8\times10^4\)</span>. So in the next round of trial, I chosed antibody concentrations of <span class="math inline">\(3.2\times10^4\)</span>, <span class="math inline">\(4.0\times10^4\)</span>, <span class="math inline">\(6.4\times10^4\)</span>, and <span class="math inline">\(8.0\times10^4\)</span>. The antigen concentrations are the same as the previous trial. The experiments on these four antibody concentrations are repeated to fill 96 wells. The results are shown in Figure <a href="#fig:elisa-t2">8.2</a>.</p>
+<pre class="r"><code>elisa_trial_2_1 &lt;- plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_trial_2_1.tsv&#39;, &quot;ELISA Trial 2-1&quot;)
+elisa_trial_2_2 &lt;- plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_trial_2_2.tsv&#39;, &quot;ELISA Trial 2-2&quot;)
+ggarrange(elisa_trial_2_1, elisa_trial_2_2, ncol=2, nrow=1, common.legend = TRUE, legend=&quot;bottom&quot;, labels = c(&quot;A&quot;, &quot;B&quot;))</code></pre>
+<div class="figure"><span id="fig:elisa-t2"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-t2-1.png" alt="ELISA Trial 2 (choosing antibody concentration) results." width="100%" />
+<p class="caption">
+Figure 8.2: ELISA Trial 2 (choosing antibody concentration) results.
+</p>
+</div>
+<p>The plot suggests that an antibody concentration of <span class="math inline">\(4.0\times10^4\)</span> would be optimal. Its maximum is close to, but does not exceed, 2.0.</p>
+</div>
+</div>
+<div id="b-generating-the-calibration-curve" class="section level2 unnumbered">
+<h2>(b) Generating the calibration curve</h2>
+<div id="q17" class="section level3 unnumbered">
+<h3>Q17</h3>
+<p><strong>Discuss how you generated data for your calibration curve (you can append titled data sets to the end of this document)</strong></p>
+</div>
+<div id="q18" class="section level3 unnumbered">
+<h3>Q18</h3>
+<p><strong>Plot your results to generate a calibration curve. Ensure axes are labelled, amount (not dilution) of antigen is plotted and that you have provided a descriptive title of the graph.</strong></p>
+<p>First, I used the same antigen concentrations as in previous two trials (<span class="math inline">\(1\times10^n\)</span> and <span class="math inline">\(4\times10^n\)</span> for <span class="math inline">\(n\)</span> in <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>.), as shown below (this code reads data into dataframe <code>std1</code> while printing unique dilutions used).</p>
+<pre class="r"><code>std1 &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_std1.tsv&#39;) %&gt;%
+  janitor::clean_names() %T&gt;%
+  # print dilutions used
+  (function(d){print(sort(unique(d$ag_dilution)))}) %&gt;%
+  # convert antigen dilution into antigen concentration in ng/ml
+  # keep only two variables: ag_conc and absorbance
+  transmute(ag_conc = 10^6 / ag_dilution, absorbance)</code></pre>
+<pre><code>##  [1] 1e+01 4e+01 1e+02 4e+02 1e+03 4e+03 1e+04 4e+04 1e+05 4e+05 1e+06 4e+06</code></pre>
+<p>As shown in Figure <a href="#fig:elisa-std-1-raw">8.3</a>, if plotted directly, it can be observed that absorbance increases with increasing antigen concentration as expected, but the mathematical relationship is unclear and so the ‘optimal range’ is also vague.</p>
+<pre class="r"><code>ggplot(std1, aes(ag_conc, absorbance))+
+  geom_point()+
+  labs(title = &#39;ELISA priliminary calibration curve&#39;, x = &#39;antigen concentration (ng/ml)&#39;)</code></pre>
+<div class="figure"><span id="fig:elisa-std-1-raw"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-std-1-raw-1.png" alt="ELISA priliminary calibration curve" width="100%" />
+<p class="caption">
+Figure 8.3: ELISA priliminary calibration curve
+</p>
+</div>
+<p>However, as shown in Figure <a href="#fig:elisa-std-1">8.4</a>, a linear relationship can be obtained by a double-log transformation. In this plot, it is clear that the useful range of antigen concentration would be <span class="math inline">\(1.0&lt;\log_{10}{c}&lt;{3.4}\)</span>, or <span class="math inline">\(10^1 &lt; c &lt; 10^{3.4}\)</span>, where <span class="math inline">\(c\)</span> is the antigen concentration in <span class="math inline">\(ng/ml\)</span>. This corresponds to a range of dilution of <span class="math inline">\(4\times10^2 &lt; x &lt; 10^5\)</span>.</p>
+<pre class="r"><code>ggplot(std1, aes(log10(ag_conc), log10(absorbance)))+
+  geom_point()+
+  labs(title = &#39;ELISA priliminary calibration curve (double log)&#39;,
+       x = &#39;log(antigen concentration (ng/ml))&#39;)+
+  geom_abline(intercept = -3.4, slope = 1)+
+  geom_text(x=2,y=-1, label=&#39;y = x - 3.4&#39;, family=&quot;Helvetica&quot;, size=4.5)</code></pre>
+<div class="figure"><span id="fig:elisa-std-1"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-std-1-1.png" alt="ELISA priliminary calibration curve (double log)" width="100%" />
+<p class="caption">
+Figure 8.4: ELISA priliminary calibration curve (double log)
+</p>
+</div>
+<p>Based on previous knowledge that the dilution should be in the range <span class="math inline">\(4\times10^2 &lt; x &lt; 10^5\)</span>, more experiments are carried out. The dilutions used are shown below.</p>
+<pre class="r"><code>std2 &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_std2.tsv&#39;) %&gt;%
+  janitor::clean_names() %T&gt;%
+  # print dilutions used
+  (function(d){print(sort(unique(d$ag_dilution)))}) %&gt;%
+  # convert antigen dilution into antigen concentration in ng/ml
+  # keep only two variables: ag_conc and absorbance
+  transmute(ag_conc = 10^6 / ag_dilution, absorbance)</code></pre>
+<pre><code>##  [1]   800  1000  2000  4000  8000 10000 20000 32000 40000 64000 80000</code></pre>
+<p>The calibration curve is shown in Figure <a href="#fig:elisa-std-fin">8.5</a>.</p>
+<pre class="r"><code>ggplot(std2, aes(log10(ag_conc), log10(absorbance)))+
+  geom_point()+
+  labs(title = &#39;ELISA calibration curve&#39;,
+       x = &#39;log(antigen concentration (ng/ml))&#39;)+
+  geom_smooth(method=&#39;lm&#39;)</code></pre>
+<div class="figure"><span id="fig:elisa-std-fin"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-std-fin-1.png" alt="ELISA calibration curve (double log)" width="100%" />
+<p class="caption">
+Figure 8.5: ELISA calibration curve (double log)
+</p>
+</div>
+</div>
+<div id="q19" class="section level3 unnumbered">
+<h3>Q19</h3>
+<p><strong>Briefly comment on the graph:</strong></p>
+<pre class="r"><code>summary(lm(log10(std2$absorbance) ~ log10(std2$ag_conc)))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = log10(std2$absorbance) ~ log10(std2$ag_conc))
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.09315 -0.03981  0.00023  0.04625  0.08439 
+## 
+## Coefficients:
+##                      Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         -3.397722   0.015712  -216.3   &lt;2e-16 ***
+## log10(std2$ag_conc)  0.996370   0.007425   134.2   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.04711 on 94 degrees of freedom
+## Multiple R-squared:  0.9948, Adjusted R-squared:  0.9948 
+## F-statistic: 1.801e+04 on 1 and 94 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>As shown in Figure <a href="#fig:elisa-std-fin">8.5</a> and in the linear model summary above, when the antigen concentration is in the range <span class="math inline">\(10^1 &lt; c &lt; 2.5\times10^3\)</span> (i.e. the absorbance is in the range <span class="math inline">\(0.004 &lt; A &lt; 1.000\)</span>), there is a significant correlation between the antigen concentration and the absorbance, which can be described by this equation:</p>
+<p><span class="math display">\[\log_{10}{A} = \log_{10}{c} - 3.40\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is the absorbance and <span class="math inline">\(c\)</span> is the antigen concentration in <span class="math inline">\(ng/ml\)</span>.</p>
+<p>As shown in Figure <a href="#fig:elisa-std-fin">8.5</a>, when log(antigen concentration) is less than 1.7, the variation within each sets of absorbance readings is slightly larger, so the optimal range should be narrow down to <span class="math inline">\(10^{1.7} &lt; c &lt; 10^{3.4}\)</span> for antigen concentration, or <span class="math inline">\(0.020 &lt; A &lt; 1.000\)</span> for absorbance.</p>
+</div>
+</div>
+<div id="c-measuring-concentration-of-the-unknown" class="section level2 unnumbered">
+<h2>(c) Measuring concentration of the unknown</h2>
+<div id="q20" class="section level3 unnumbered">
+<h3>Q20</h3>
+<p><strong>Using appropriate dilutions and number of replicates (discuss briefly below). Calculate the concentration of antigen in the original (unknown) solution, stating your calculation process. Where relevant, you can append titled data sets to the end of this document. Esnure your answer is statistically valid (think back to the stats test used in RiaLab)</strong></p>
+<p>First, I used a broad range of dilutions (again, <span class="math inline">\(1\times10^n\)</span> and <span class="math inline">\(4\times10^n\)</span> for <span class="math inline">\(n\)</span> in <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>).</p>
+<pre class="r"><code>df &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_exp1.tsv&#39;) %&gt;%
+  janitor::clean_names() %&gt;%
+  transmute(ag_dilution = factor(ag_dilution), absorbance)
+ggplot(df, aes(ag_dilution, absorbance))+
+    geom_boxplot()+
+    labs(title = &quot;ELISA Experiment for the Unknown&quot;)+
+    geom_hline(yintercept = 1.000, color=&#39;red&#39;, size = 0.6)+
+    geom_hline(yintercept = 0.020, color=&#39;red&#39;, size = 0.6)</code></pre>
+<div class="figure"><span id="fig:elisa-exp1"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-exp1-1.png" alt="Finding the appropriate dilution of the unknown so that the absorbance fall within the linear range." width="100%" />
+<p class="caption">
+Figure 8.6: Finding the appropriate dilution of the unknown so that the absorbance fall within the linear range.
+</p>
+</div>
+<pre class="r"><code>    # scale_x_discrete(limits = rev(levels(df$ag_dilution)))+</code></pre>
+<p>As learnt from Q19, the linear range is where the absorbance lies between 0.020 and 1.000. According to Figure <a href="#fig:elisa-exp1">8.6</a>, a <span class="math inline">\(10^3\)</span> dilution would be the most appropriate. Therefore, I repeat 480 times with this dilution.</p>
+<pre class="r"><code>elisa_absorbance &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_exp_fin.tsv&#39;) %&gt;%
+  janitor::clean_names() %&gt;%
+  extract2(&#39;absorbance&#39;)</code></pre>
+<p>Curiously, again, the distribution is bimodal (the data is shown in Section <a href="#elisa-absorbance">9.2</a>:</p>
+<pre class="r"><code>qplot(elisa_absorbance, geom = &#39;histogram&#39;, bins = I(40), fill=I(&#39;white&#39;), color=I(&#39;black&#39;),
+      main = &quot;distribution of 480 absorbance readings for the unknown&quot;)</code></pre>
+<div class="figure"><span id="fig:elisa-abs-dist"></span>
+<img src="./lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-abs-dist-1.png" alt="Distribution of 480 absorbance readings for the ELISA assay with 1:1000 unknown sample and 1:40000 antibody" width="100%" />
+<p class="caption">
+Figure 8.7: Distribution of 480 absorbance readings for the ELISA assay with 1:1000 unknown sample and 1:40000 antibody
+</p>
+</div>
+<p>If I had to assume it’s a normal distribution, a 95% confidence interval could be calculated:</p>
+<pre class="r"><code>conc &lt;- 10^(log10(elisa_absorbance) + 3.40) *
+                10^3 / # dilution
+                10^6 # ng/ml to mg/ml
+mean &lt;- mean(conc); sd = sd(conc);
+t &lt;- qt(0.975, length(conc)-1); t_sd &lt;- t*sd
+c(mean=mean, sd = sd, t = t, t_sd = t_sd, lower = mean-t_sd, upper = mean+t_sd)</code></pre>
+<pre><code>##       mean         sd          t       t_sd      lower      upper 
+## 0.80949203 0.08313395 1.96492886 0.16335230 0.64613973 0.97284433</code></pre>
+<p>(Used the relationship between antigen concentration and absorbance established previously: <span class="math inline">\(\log_{10}{A} = \log_{10}{c} - 3.40\)</span>)</p>
+<p>The mean is 0.8095 mg/ml and the confidence interval is <span class="math inline">\(0.8094\pm0.1634\)</span>, or [0.6461 0.9728] mg/ml. (This is actually invalid because the distribution was not normal).</p>
+</div>
+</div>
+</div>
+<div id="supplementary-information" class="section level1">
+<h1><span class="header-section-number">9</span> Supplementary Information</h1>
+<p>For a complete set of raw data, please go to <a href="https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/">https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/</a>.</p>
+<div id="ria-supp" class="section level2">
+<h2><span class="header-section-number">9.1</span> RIA</h2>
+<p>The 276 counts for <span class="math inline">\(1\mu\text{L}\)</span> of <span class="math inline">\(1\times10^4\)</span> dilution of antigen:</p>
+<pre class="r"><code>unknown_test[[&#39;count&#39;]]</code></pre>
+<pre><code>##   [1] 20336 17947 20618 23919 23332 23224 21150 23007 23463 20596 25927 18685
+##  [13] 20270 21910 20466 20162 19880 17502 20314 24646 20281 20151 18946 20346
+##  [25] 23137 21715 20108 19858 23180 19445 18012 20477 23256 19782 23235 24407
+##  [37] 23647 24320 20064 21291 19521 22735 19250 21573 23560 18631 25656 19337
+##  [49] 19174 24016 19630 24136 20292 24005 17643 23365 19890 20629 24103 20173
+##  [61] 25102 20933 19174 19065 23397 19880 22388 19174 23159 23658 22008 24787
+##  [73] 22931 24309 24841 23484 23777 25048 20976 24700 20053 20629 20792 19565
+##  [85] 19261 24527 18099 24516 23072 22279 21139 23745 21715 19782 19977 19923
+##  [97] 24353 18609 23452 19000 20336 19858 18968 23951 24744 23539 24418 23810
+## [109] 21009 19478 23625 19152 25211 23202 22963 22844 20379 22409 25069 17730
+## [121] 20846 23452 24646 25254 24722 18533 24429 19597 19532 24483 22073 19521
+## [133] 19804 25493 19956 20889 18240 17806 19445 18577 24168 19543 25395 23929
+## [145] 19912 24820 24060 18707 18881 20368 19044 24114 23224 20640 23995 20227
+## [157] 24049 19348 23506 24679 19152 20412 19413 23560 22442 23897 19814 23159
+## [169] 22399 19586 22605 23473 23148 19337 20650 17969 23061 22789 25482 19749
+## [181] 24537 23408 20564 18989 22127 19011 20596 19337 19022 19402 20455 23169
+## [193] 22724 19966 20835 20216 23148 23951 19510 20650 19206 24559 23647 19434
+## [205] 22073 19880 20705 19543 17849 23691 23940 17686 20813 19250 22876 19521
+## [217] 23767 22225 25688 23734 18826 20683 20694 20433 21573 19206 25004 23354
+## [229] 23332 24635 22540 17914 22692 23017 22149 19652 24038 20900 24744 20346
+## [241] 22681 20064 19717 19109 24331 19500 23235 19825 19152 19684 19630 21421
+## [253] 23365 22822 20162 22073 23202 24505 24309 22062 23799 19836 22963 24429
+## [265] 19293 23962 21204 23886 18685 24147 20531 19901 19521 23734 20118 24125</code></pre>
+</div>
+<div id="elisa-absorbance" class="section level2">
+<h2><span class="header-section-number">9.2</span> ELISA</h2>
+<p>The 480 absorbance readings:</p>
+<pre class="r"><code>elisa_absorbance</code></pre>
+<pre><code>##   [1] 0.354 0.343 0.355 0.279 0.268 0.303 0.348 0.358 0.283 0.358 0.277 0.378
+##  [13] 0.290 0.290 0.304 0.284 0.355 0.331 0.345 0.271 0.276 0.356 0.349 0.301
+##  [25] 0.259 0.308 0.331 0.357 0.284 0.361 0.295 0.332 0.282 0.381 0.278 0.340
+##  [37] 0.358 0.316 0.273 0.285 0.359 0.366 0.286 0.297 0.275 0.307 0.368 0.351
+##  [49] 0.341 0.339 0.313 0.354 0.346 0.284 0.334 0.278 0.300 0.286 0.312 0.353
+##  [61] 0.361 0.364 0.357 0.372 0.285 0.358 0.274 0.282 0.280 0.344 0.253 0.300
+##  [73] 0.336 0.300 0.301 0.348 0.355 0.374 0.276 0.290 0.279 0.370 0.338 0.270
+##  [85] 0.373 0.351 0.356 0.353 0.256 0.294 0.339 0.315 0.351 0.288 0.311 0.352
+##  [97] 0.352 0.280 0.333 0.368 0.334 0.294 0.297 0.299 0.279 0.343 0.357 0.309
+## [109] 0.366 0.363 0.310 0.311 0.358 0.335 0.361 0.296 0.257 0.334 0.308 0.293
+## [121] 0.293 0.336 0.342 0.352 0.366 0.287 0.266 0.286 0.360 0.313 0.358 0.287
+## [133] 0.305 0.363 0.343 0.284 0.290 0.339 0.268 0.350 0.363 0.334 0.343 0.271
+## [145] 0.324 0.299 0.258 0.334 0.309 0.336 0.374 0.362 0.290 0.344 0.303 0.352
+## [157] 0.295 0.314 0.286 0.300 0.287 0.292 0.369 0.349 0.292 0.349 0.360 0.334
+## [169] 0.339 0.277 0.286 0.347 0.293 0.325 0.288 0.278 0.303 0.271 0.289 0.305
+## [181] 0.309 0.364 0.344 0.309 0.355 0.360 0.298 0.298 0.299 0.322 0.340 0.364
+## [193] 0.344 0.337 0.311 0.344 0.294 0.365 0.351 0.297 0.384 0.327 0.350 0.315
+## [205] 0.326 0.301 0.316 0.292 0.300 0.366 0.346 0.329 0.291 0.355 0.290 0.300
+## [217] 0.301 0.370 0.299 0.340 0.336 0.274 0.301 0.359 0.342 0.345 0.350 0.356
+## [229] 0.347 0.317 0.354 0.286 0.339 0.358 0.326 0.362 0.358 0.349 0.329 0.298
+## [241] 0.317 0.337 0.327 0.309 0.301 0.291 0.368 0.342 0.359 0.347 0.337 0.352
+## [253] 0.292 0.294 0.370 0.377 0.287 0.292 0.279 0.349 0.315 0.370 0.365 0.280
+## [265] 0.352 0.342 0.342 0.363 0.278 0.335 0.372 0.351 0.354 0.348 0.292 0.293
+## [277] 0.298 0.327 0.286 0.374 0.335 0.348 0.359 0.274 0.314 0.354 0.359 0.347
+## [289] 0.331 0.345 0.371 0.283 0.370 0.289 0.359 0.344 0.356 0.374 0.267 0.356
+## [301] 0.304 0.333 0.279 0.344 0.355 0.366 0.291 0.306 0.352 0.361 0.372 0.270
+## [313] 0.359 0.317 0.294 0.340 0.257 0.265 0.283 0.285 0.293 0.330 0.345 0.322
+## [325] 0.294 0.336 0.362 0.369 0.343 0.283 0.324 0.326 0.341 0.299 0.362 0.368
+## [337] 0.358 0.334 0.283 0.331 0.278 0.261 0.351 0.337 0.288 0.278 0.269 0.298
+## [349] 0.361 0.311 0.355 0.361 0.287 0.343 0.267 0.294 0.343 0.293 0.286 0.312
+## [361] 0.296 0.340 0.267 0.281 0.301 0.326 0.356 0.287 0.265 0.296 0.295 0.254
+## [373] 0.289 0.371 0.274 0.285 0.349 0.361 0.353 0.277 0.341 0.332 0.336 0.296
+## [385] 0.274 0.321 0.279 0.297 0.346 0.273 0.370 0.298 0.380 0.273 0.338 0.342
+## [397] 0.369 0.308 0.361 0.294 0.312 0.353 0.371 0.288 0.354 0.278 0.367 0.280
+## [409] 0.315 0.335 0.334 0.369 0.308 0.292 0.369 0.349 0.312 0.286 0.289 0.379
+## [421] 0.349 0.315 0.339 0.297 0.355 0.310 0.287 0.342 0.296 0.275 0.337 0.353
+## [433] 0.329 0.302 0.332 0.356 0.311 0.344 0.283 0.358 0.288 0.332 0.341 0.278
+## [445] 0.367 0.284 0.287 0.321 0.343 0.286 0.307 0.271 0.311 0.266 0.357 0.348
+## [457] 0.298 0.297 0.361 0.370 0.377 0.362 0.330 0.388 0.287 0.332 0.295 0.357
+## [469] 0.279 0.306 0.313 0.355 0.279 0.303 0.328 0.334 0.339 0.335 0.312 0.305</code></pre>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="./lab/protein-purification-practical.html" class="archive-item-link">
+                Protein Purification Practical 
+              </a>
+              <span class="archive-item-date">
+                2020-02-02
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<pre class="r"><code>absorbance &lt;- 
+  c(0.086, 0.142, 0.548, 0.976, 1.419, 1.294, 
+    1.161, 1.472, 1.800, 2.003, 1.777, 1.463, 
+    1.430, 1.486, 1.538, 1.254, 0.820, 0.503, 
+    0.388, 0.235, 0.204, 0.163, 0.148, 0.151,
+    0.169, 0.221, 0.381, 0.701, 0.954, 0.917,
+    0.651, 0.423, 0.274, 0.191, 0.034, 0.031
+  )
+volume &lt;- 1:36
+plot(volume, absorbance, xlab = &#39;volume (ml)&#39;, type = &#39;p&#39;, 
+     ylim=c(0, 2.2), yaxs=&#39;i&#39;)
+lines(volume, absorbance)
+lines(c(5, 5), c(0.0, 1.419), col=&#39;red&#39;)
+lines(c(10, 10), c(0.0, 2.003), col=&#39;red&#39;)
+lines(c(15, 15), c(0.0, 1.538), col=&#39;red&#39;)
+lines(c(29, 29), c(0.0, 0.954), col=&#39;red&#39;)
+text(4, 1.5, &#39;ferritin (450 kDa)&#39;)
+text(10, 2.1, expression(paste(gamma, &#39;-globulin (155 kDa)&#39;)))
+text(17, 1.6, &#39;serum albumin (67 kDa)&#39;)
+text(29, 1.05, &#39;cytochrome-c (14 kDa)&#39;)</code></pre>
+<p><img src="./lab/2020-02-02-protein-purification-practical_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>volume &lt;- c(5, 10, 15, 29) + 44
+log_mw &lt;- log(c(450, 155, 67, 14), 10)
+plot(volume, log_mw, 
+     xlab=&#39;elution volume (ml)&#39;, ylab=&#39;log(molecular weight) (kDa)&#39;)
+(mod &lt;- lm(log_mw ~ volume))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = log_mw ~ volume)
+## 
+## Coefficients:
+## (Intercept)       volume  
+##     5.52272     -0.06075</code></pre>
+<pre class="r"><code>abline(mod, col=&#39;red&#39;)
+(mod1 &lt;- lm(log_mw[-4] ~ volume[-4]))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = log_mw[-4] ~ volume[-4])
+## 
+## Coefficients:
+## (Intercept)   volume[-4]  
+##     6.68975     -0.08271</code></pre>
+<pre class="r"><code>abline(mod1, col=&#39;blue&#39;)
+points(c(67, 60), log(c(25.8, 29.1), 10), col=&#39;red&#39;)</code></pre>
+<p><img src="./lab/2020-02-02-protein-purification-practical_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>par(mar = c(5,5,2,5))
+f &lt;- c(13, 11, 11, 12, 12, 15, 14, 14, 16, 16, 14, 17, 
+       16, 16, 16, 17, 17, 18, 15, 17, 16, 15, 14, 15, 
+       19, 22, 24, 32, 41, 28, 34, 37, 75, 76, 79, 65, 
+       341, 608, 1554, 3107, 2264, 1768, 2196, 1424, 33)
+v &lt;- 28:72
+plot(v, f, type=&#39;p&#39;, col=&#39;red&#39;, ylab=&#39;Fluoresence (arbitrary units)&#39;, xlab=&#39;elution volume (mL)&#39;)
+lines(v, f, col=&#39;red&#39;)
+
+A &lt;- c(0.086, 0.072, 0.067, 0.067, 0.067, 0.079, 0.073, 0.065, 0.068, 
+       0.070, 0.065, 0.064, 0.080, 0.067, 0.073, 0.079, 0.077, 0.074,
+       0.078, 0.075, 0.082, 0.078, 0.076, 0.085, 0.081, 0.080, 0.081,
+       0.099, 0.118, 0.122, 0.111, 0.146, 0.180, 0.140, 0.126, 0.117, 
+       0.141, 0.125, 0.145, 0.196, 0.138, 0.161, 0.176, 0.150, 0.071)
+par(new = T)
+plot(v, A, axes=F, xlab=NA, ylab=NA, col=&#39;blue&#39;, pch=4)
+lines(v, A, col=&#39;blue&#39;)
+axis(side = 4)
+mtext(side = 4, line = 3, &#39;Absorbance (arbitrary units)&#39;)
+legend(&#39;topleft&#39;,
+       legend=c(&#39;fluoresence&#39;, &#39;absorbance&#39;),
+       lty=c(1, 1), pch=c(1, 4), col=c(&#39;red&#39;, &#39;blue&#39;))
+abline(v = c(60, 67, 70))
+axis(side = 1, at = 67,labels = T)</code></pre>
+<p><img src="./lab/2020-02-02-protein-purification-practical_files/figure-html/3C-1.png" width="672" /></p>
+
+              </div>
+            </article>
+          
+      
+      <h2 class="archive-title">2019</h2>
+          
+            <article class="archive-item">
+              <a href="./lab/2019-10-16-specific-radioactivity.html" class="archive-item-link">
+                Specific Radioactivity 
+              </a>
+              <span class="archive-item-date">
+                2019-10-20
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  Specific radioactivity of ATP and glucose.<hr>
+                
+                
+
+
+<div id="TOC">
+<ul>
+<li><a href="#aim"><span class="toc-section-number">1</span> Aim</a></li>
+<li><a href="#reagents-and-apparatus-provided"><span class="toc-section-number">2</span> Reagents and Apparatus Provided</a></li>
+<li><a href="#method"><span class="toc-section-number">3</span> Method</a><ul>
+<li><a href="#method-atp"><span class="toc-section-number">3.1</span> ATP concentration</a><ul>
+<li><a href="#dilution"><span class="toc-section-number">3.1.1</span> Dilution</a></li>
+<li><a href="#results"><span class="toc-section-number">3.1.2</span> Results</a></li>
+</ul></li>
+<li><a href="#method-glucose"><span class="toc-section-number">3.2</span> Glucose concentration</a><ul>
+<li><a href="#mechanism"><span class="toc-section-number">3.2.1</span> Mechanism</a></li>
+<li><a href="#determine-the-volume-of-enzyme"><span class="toc-section-number">3.2.2</span> Determine the volume of enzyme</a></li>
+<li><a href="#determining-lambda_textmax"><span class="toc-section-number">3.2.3</span> Determining <span class="math inline">\(\lambda_\text{max}\)</span></a></li>
+<li><a href="#calibration"><span class="toc-section-number">3.2.4</span> Calibration</a></li>
+<li><a href="#sample-assay"><span class="toc-section-number">3.2.5</span> Sample Assay</a></li>
+<li><a href="#results-1"><span class="toc-section-number">3.2.6</span> Results</a></li>
+</ul></li>
+<li><a href="#radioactivity-counting-virtual"><span class="toc-section-number">3.3</span> Radioactivity Counting (Virtual)</a></li>
+</ul></li>
+<li><a href="#our-results"><span class="toc-section-number">4</span> Our Results</a><ul>
+<li><a href="#our-atp"><span class="toc-section-number">4.1</span> ATP</a><ul>
+<li><a href="#distinguish"><span class="toc-section-number">4.1.1</span> Distinguishing between 4.0mM and 4.5mM ATP</a></li>
+</ul></li>
+<li><a href="#our-glucose"><span class="toc-section-number">4.2</span> Glucose</a><ul>
+<li><a href="#glucose-calibration-results"><span class="toc-section-number">4.2.1</span> Calibration</a></li>
+<li><a href="#our-glucose-sample"><span class="toc-section-number">4.2.2</span> Sample result</a></li>
+<li><a href="#distinguish-glucose"><span class="toc-section-number">4.2.3</span> Distinguishing between 4.0mM and 4.5mM glucose</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#class-results"><span class="toc-section-number">5</span> Class Results</a><ul>
+<li><a href="#dataremoved"><span class="toc-section-number">5.1</span> Data</a></li>
+<li><a href="#preliminary-graphical-analysis"><span class="toc-section-number">5.2</span> Preliminary graphical analysis</a></li>
+<li><a href="#class-atp"><span class="toc-section-number">5.3</span> ATP concentration</a><ul>
+<li><a href="#grouping-and-grouped-confidence-interval-of-mean"><span class="toc-section-number">5.3.1</span> Grouping and grouped confidence interval of mean</a></li>
+<li><a href="#test-for-significance-of-the-difference-in-concentration-between-the-two-groups"><span class="toc-section-number">5.3.2</span> Test for significance of the difference in concentration between the two groups</a></li>
+<li><a href="#test-for-diviation-from-given-concentrations"><span class="toc-section-number">5.3.3</span> Test for diviation from given concentrations</a></li>
+</ul></li>
+<li><a href="#class-glucose"><span class="toc-section-number">5.4</span> Glucose</a><ul>
+<li><a href="#grouping-and-grouped-confidence-interval-of-mean-1"><span class="toc-section-number">5.4.1</span> Grouping and grouped confidence interval of mean</a></li>
+<li><a href="#test-for-significance-of-the-difference-in-concentration-between-the-two-groups-1"><span class="toc-section-number">5.4.2</span> Test for significance of the difference in concentration between the two groups</a></li>
+<li><a href="#test-for-diviation-from-given-concentrations-1"><span class="toc-section-number">5.4.3</span> Test for diviation from given concentrations</a></li>
+</ul></li>
+<li><a href="#radioactivity"><span class="toc-section-number">5.5</span> Radioactivity</a><ul>
+<li><a href="#results-of-the-sample"><span class="toc-section-number">5.5.1</span> Results of the sample</a></li>
+<li><a href="#correction-for-overlap"><span class="toc-section-number">5.5.2</span> Correction for overlap</a></li>
+<li><a href="#specific-radioactivity"><span class="toc-section-number">5.5.3</span> Specific Radioactivity</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#appendix"><span class="toc-section-number">6</span> Appendix</a><ul>
+<li><a href="#temp"><span class="toc-section-number">6.1</span> People should report all measurements to get a true 95% confidence interval</a></li>
+<li><a href="#the-mathematical-computation-behind-r-functions-used-in-this-report"><span class="toc-section-number">6.2</span> The mathematical computation behind R functions used in this report</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="aim" class="section level1">
+<h1><span class="header-section-number">1</span> Aim</h1>
+<ul>
+<li>Given a sample containing (fake) radioactive <sup>14</sup>C glucose and <sup>3</sup>H ATP:
+<ul>
+<li>determine concentration of glucose and ATP.
+<ul>
+<li>Given that both concentrations lie between 1mM and 10mM.</li>
+<li>Given that <span class="math inline">\(\epsilon^{260}_\text{ATP}=1.57\times10^4 \text{ mol}^{-1}\text{ dm}^3\text{ dm}^{-1}\)</span></li>
+</ul></li>
+<li>determine radioactivity of the sample (virtual practical)</li>
+<li>and hence determine the specific radioactivity of ATP and glucose</li>
+</ul></li>
+<li>23 samples have glucose and ATP concentrations falling into two distinct classes. They are independently measured by 23 pairs of students. Determine these concentrations using the class results and assess precision and accuracy.</li>
+</ul>
+</div>
+<div id="reagents-and-apparatus-provided" class="section level1">
+<h1><span class="header-section-number">2</span> Reagents and Apparatus Provided</h1>
+<ul>
+<li>15mL sample solution</li>
+<li>0.1 M Na<sub>3</sub>PO<sub>4</sub> buffer at pH 7.0</li>
+<li>1mM ABTS</li>
+<li>Glucose Oxidase (100 U/mL) and peroxidase (20 U/mL)</li>
+<li>Solid glucose</li>
+<li>Spectrophotometer</li>
+</ul>
+</div>
+<div id="method" class="section level1">
+<h1><span class="header-section-number">3</span> Method</h1>
+<div id="method-atp" class="section level2">
+<h2><span class="header-section-number">3.1</span> ATP concentration</h2>
+<div id="dilution" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Dilution</h3>
+<div id="determining-scale-of-dilution" class="section level4">
+<h4><span class="header-section-number">3.1.1.1</span> Determining scale of dilution</h4>
+<p>Given that 1mM &lt; <a href="#our-atp">ATP</a> &lt; 10mM and that <span class="math inline">\(\epsilon^{260}_\text{ATP}=1.57\times10^4 \text{ mol}^{-1}\text{ dm}^3\text{ dm}^{-1}\)</span>, according to <span class="math inline">\(A^{260}=\epsilon^{260}cl\)</span>:</p>
+<p>if no dilution:</p>
+<p><span class="math display">\[
+\begin{aligned}
+1.57\times10^4\times0.001&lt;&amp;A^{260}&lt;1.57\times10^4\times0.01 \\
+15.7&lt;&amp;A^{260}_\text{raw}&lt;157 \\
+\end{aligned}
+\]</span></p>
+<p>clearly, a 1:100 dilution would be very likely to produce a sensible <span class="math inline">\(A^{260}\)</span>:</p>
+<p><span class="math display">\[0.157&lt;A^{260}_\text{1:100 dilution}&lt;1.57\]</span></p>
+</div>
+<div id="making-dilution" class="section level4">
+<h4><span class="header-section-number">3.1.1.2</span> Making dilution</h4>
+<p>5mL of 1:100 diluton is made serially by first fixing 500 <span class="math inline">\(\mu\text{L}\)</span> sample with 4.5mL buffer then mixing 500 <span class="math inline">\(\mu\text{L}\)</span> of the resulting 1:10 dilution with another 4.5mL buffer.</p>
+<p>A preliminary test gives <span class="math inline">\(A^{260}_\text{1:100 dilution}=0.503\)</span>, which is within the range where the spectrophotometer is accurate, so we made 4 more 1:100 dilutions using the method described above.</p>
+</div>
+</div>
+<div id="results" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Results</h3>
+<p>See section <a href="#our-atp">4.1</a></p>
+</div>
+</div>
+<div id="method-glucose" class="section level2">
+<h2><span class="header-section-number">3.2</span> Glucose concentration</h2>
+<div id="mechanism" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Mechanism</h3>
+<p>Glucose itself does not have convenient absorption. Thus, glucose oxidase, ABTS and peroxidase is added to make a green solution (glucose is first oxidised by oxidase to produce gluconic acid and H<sub>2</sub>O<sub>2</sub>; peroxidase then catalyses the reaction between H<sub>2</sub>O<sub>2</sub> and ABTS to produce a green dye).</p>
+</div>
+<div id="determine-the-volume-of-enzyme" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Determine the volume of enzyme</h3>
+<p>We want the reaction to ‘virtually’ complete (i.e. &gt; 99% conversion of substrate) in 10 min.</p>
+<p>For an enzyme reaction:</p>
+<p><span class="math display">\[-\dfrac{ds}{dt}=v-\dfrac{V_\text{max}s}{K_m+S}\]</span></p>
+<p>As the reaction approaches completion, <span class="math inline">\(s&lt;&lt;K_m\)</span>:</p>
+<p><span class="math display">\[-\dfrac{ds}{dt}=\dfrac{V_\text{max}s}{K_m}\]</span></p>
+<p>Integrating to determine the total time for a given change in <span class="math inline">\(s\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+-\int_{s_0}^{s_1}{\dfrac{ds}{s}}&amp;=\dfrac{V_\text{max}}{K_m}\int_0^t dt \\
+\ln\dfrac{s_0}{s_1}&amp;=\dfrac{V_\text{max}t}{K_m}
+\end{aligned}
+\]</span></p>
+<p>For a decrease in <span class="math inline">\(s\)</span> from 100% to 1% in 10 min:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\ln\dfrac{100}{1}&amp;=\dfrac{V_\text{max}\times 10}{K_m} \\
+V_\text{max}&amp;=0.4605K_m \text{ (mol L}^{-1}\text{min}^{-1}\text{)}
+\end{aligned}
+\]</span></p>
+<p>Our assay volume will be 4.0mL, so the amound of enzyme, in U (<span class="math inline">\(\mu\text{mol min}^{-1}\)</span>), will be</p>
+<p><span class="math display">\[\text{amount of enzyme in U}=0.4605\times K_m \times 4.0 \times 10^{-3}\times10^6=1842K_m\]</span></p>
+<p>where <span class="math inline">\(K_m\)</span> has unit M.</p>
+<p>For GOD, <span class="math inline">\(K_m=1\text{ mM}\)</span>, and the provided enzyme concentration is 100U/mL:</p>
+<p><span class="math display">\[
+\begin{aligned}
+K_m&amp;=1\text{ mM} \\
+\text{minimum amount of enzyme}&amp;=1842 \times 1 \times 10^{-3}=1.84 \text{ U} \\
+\text{minimum volume of enzyme}&amp;=1.84 \div 100=0.0184 \text{ mL}
+\end{aligned}
+\]</span></p>
+<p>For POD, <span class="math inline">\(K_m=100\text{ }\mu\text{M}\)</span>, and the provided enzyme concentration is 20U/mL:</p>
+<p><span class="math display">\[
+\begin{aligned}
+K_m&amp;=100\text{ }\mu\text{M} \\
+\text{minimum amount of enzyme}&amp;=1842 \times 100 \times 10^{-6}=0.184 \text{ U} \\
+\text{minimum volume of enzyme}&amp;=0.184 \div 20=0.0092 \text{ mL}
+\end{aligned}
+\]</span></p>
+<p>We decided to use an excess amount of enzyme (i.e. 0.1mL for both). This guarantees that the reactions will complete within 10 min, and makes it easier to make up the 4mL total volume for assay (see section <a href="#glu-assay">3.2.4.2</a>).</p>
+</div>
+<div id="determining-lambda_textmax" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Determining <span class="math inline">\(\lambda_\text{max}\)</span></h3>
+<p>Measuring absorbance near <span class="math inline">\(\lambda_\text{max}\)</span> reduces error. An 100nmol-glucose-containing (i.e. with 1mL 0.1mM glucose solution, see section <a href="#glu-assay">3.2.4.2</a>) assay result is used. The absorbance in the range 350nm to 450nm is measured, and <span class="math inline">\(\lambda_\text{max} = 418\text{ nm}\)</span>. We then used this wavelength for all glucose assays.</p>
+</div>
+<div id="calibration" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Calibration</h3>
+<p>Calibrate <span class="math inline">\(A^{418}\)</span> with known glucose concentrations, then we can map <span class="math inline">\(A^{418}_\text{sample}\)</span> to the calibration curve to determine sample glucose concentration.</p>
+<div id="dilution-1" class="section level4">
+<h4><span class="header-section-number">3.2.4.1</span> Dilution</h4>
+<ul>
+<li>0.18 g glucose is dissolved in 100mL buffer, which gives 10mM glucose solution (which is handy, as the maximum possible concentration of glucose in the sample is also 10mM)</li>
+<li>100mL 0.1mM glucose solution is made by mixing 1mL 10mM glucose solution with 99mL buffer (1:100 dilution).</li>
+</ul>
+</div>
+<div id="glu-assay" class="section level4">
+<h4><span class="header-section-number">3.2.4.2</span> Assay</h4>
+<p>Assays are made on 4mL mixtures with varying amount of glucose, according to the following table:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">ABTS</th>
+<th align="center">Buffer</th>
+<th align="center">0.1mM glucose</th>
+<th align="center">H<sub>2</sub>O</th>
+<th align="center">GOD</th>
+<th align="center">POD</th>
+<th align="center">nmol glucose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">1.0mL</td>
+<td align="center">0mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center">100</td>
+</tr>
+<tr class="even">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0.2mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center">80</td>
+</tr>
+<tr class="odd">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0.6mL</td>
+<td align="center">0.4mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center">60</td>
+</tr>
+<tr class="even">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0.4mL</td>
+<td align="center">0.6mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center">40</td>
+</tr>
+<tr class="odd">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0.2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center">20</td>
+</tr>
+<tr class="even">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">0mL</td>
+<td align="center">1.0mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>Then the mixture is incubated at 37<span class="math inline">\(^\circ\text{C}\)</span> for 10 minutes (in a theromostatically-controlled water bath), then <span class="math inline">\(A^{418}\)</span> is measured.</p>
+<p>Every row is repeated 3 times.</p>
+</div>
+</div>
+<div id="sample-assay" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Sample Assay</h3>
+<p>The sample is diluted 1:100 by mixing 1mL sample with 99mL buffer.</p>
+<p>4mL assays are made on 1mL 1:100 dilution 3 times, according to the following table (identical to the assays used for calibration except that an unknown concentration is used this time)</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">ABTS</th>
+<th align="center">Buffer</th>
+<th align="center">diluted sample</th>
+<th align="center">GOD</th>
+<th align="center">POD</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">2mL</td>
+<td align="center">0.8mL</td>
+<td align="center">1.0mL</td>
+<td align="center">0.1mL</td>
+<td align="center">0.1mL</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="results-1" class="section level3">
+<h3><span class="header-section-number">3.2.6</span> Results</h3>
+<p>See section <a href="#our-glucose">4.2</a></p>
+</div>
+</div>
+<div id="radioactivity-counting-virtual" class="section level2">
+<h2><span class="header-section-number">3.3</span> Radioactivity Counting (Virtual)</h2>
+<p>0.2mL sample is mixed with 1.8mL scintillation fluid in a polyvial and placed into the scintillation counter. The count time is 2min. The results are shown in section <a href="#radioactivity">5.5</a>.</p>
+</div>
+</div>
+<div id="our-results" class="section level1">
+<h1><span class="header-section-number">4</span> Our Results</h1>
+<div id="our-atp" class="section level2">
+<h2><span class="header-section-number">4.1</span> ATP</h2>
+<p>(Methods in section <a href="#method-atp">3.1</a>)</p>
+<pre class="r"><code>A &lt;- c(0.503, 0.513, 0.508, 0.525, 0.516)
+c_ATP &lt;- A/1.57e4*100*1000
+kable(tibble(`$A^{260}_\\text{1:100 dilution}$`=A, `[ATP] of raw sample (mM)`=c_ATP))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right"><span class="math inline">\(A^{260}_\text{1:100 dilution}\)</span></th>
+<th align="right"><a href="#our-atp">ATP</a> of raw sample (mM)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0.503</td>
+<td align="right">3.203822</td>
+</tr>
+<tr class="even">
+<td align="right">0.513</td>
+<td align="right">3.267516</td>
+</tr>
+<tr class="odd">
+<td align="right">0.508</td>
+<td align="right">3.235669</td>
+</tr>
+<tr class="even">
+<td align="right">0.525</td>
+<td align="right">3.343949</td>
+</tr>
+<tr class="odd">
+<td align="right">0.516</td>
+<td align="right">3.286624</td>
+</tr>
+</tbody>
+</table>
+<p>Statistical summary of <a href="#our-atp">ATP</a> in sample:</p>
+<pre class="r"><code>x &lt;- c_ATP; n &lt;- length(x); df &lt;- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))</code></pre>
+<pre><code>##       mean         sd         SE          t       t*SE 
+## 3.26751592 0.05309978 0.02374695 2.77644511 0.06593209</code></pre>
+<p>Which gives 95% confidence interval: <span class="math inline">\(\text{[ATP]}=3.268\pm0.054\)</span> mM</p>
+<div id="distinguish" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Distinguishing between 4.0mM and 4.5mM ATP</h3>
+<p>The percentage error (coefficient of variance) of this experiment is:</p>
+<p><span class="math display">\[c_v=\dfrac{s_x}{\bar{x}}=\dfrac{0.054}{3.268}=0.0165\]</span></p>
+<p>for <span class="math inline">\(\bar{x}\)</span> = 4.0 and 4.5, <span class="math inline">\(s_x=c_v\bar{x}\)</span> = 0.0661 and 0.0744, respectively.</p>
+<p>To distinguish between the two, two sample t test is used. If <span class="math inline">\(n\)</span> measurements are made on each concentration, then</p>
+<p><span class="math display">\[t=\dfrac{\bar{x_1}-\bar{x_2}}{\sqrt{\dfrac{s_1^2}{n}+\dfrac{s_2^2}{n}}}=\dfrac{4.5-4.0}{\sqrt{\dfrac{0.0661^2+0.0744^2}{n}}}=\sqrt{25.26n}\]</span></p>
+<p>then we can get a list of <span class="math inline">\(p\)</span> values for each <span class="math inline">\(n\)</span>:</p>
+<pre class="r"><code>n &lt;- 2:8
+df &lt;- n - 1
+t &lt;- sqrt(25.26 * n)
+p &lt;- (1 - pt(t, df)) * 2
+names(p) &lt;- paste(&#39;n =&#39;, n)
+round(p, 5)</code></pre>
+<pre><code>##   n = 2   n = 3   n = 4   n = 5   n = 6   n = 7   n = 8 
+## 0.08898 0.01294 0.00210 0.00036 0.00006 0.00001 0.00000</code></pre>
+<p>as n increases, <span class="math inline">\(p\)</span> decreases. When n = 3, <span class="math inline">\(p\)</span> is already less than 0.05.</p>
+</div>
+</div>
+<div id="our-glucose" class="section level2">
+<h2><span class="header-section-number">4.2</span> Glucose</h2>
+<p>(Methods in section <a href="#method-glucose">3.2</a>)</p>
+<div id="glucose-calibration-results" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Calibration</h3>
+<p>The results are shown below:</p>
+<pre class="r"><code>A1 &lt;- c(0.952, 0.815, 0.709, 0.496, 0.272, 0)
+A2 &lt;- c(1.223, 0.969, 0.704, 0.415, 0.222, 0)
+A3 &lt;- c(1.194, 0.919, 0.682, 0.452, 0.236, 0)
+A &lt;- c(A1, A2, A3)
+glucose = c(100, 80, 60, 40, 20, 0)
+kable(tibble(`nmol glucose in 4mL assay` = glucose, `$A^{418}_1$` = A1,
+             `$A^{418}_2$` = A2, `$A^{418}_3$` = A3))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">nmol glucose in 4mL assay</th>
+<th align="right"><span class="math inline">\(A^{418}_1\)</span></th>
+<th align="right"><span class="math inline">\(A^{418}_2\)</span></th>
+<th align="right"><span class="math inline">\(A^{418}_3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">100</td>
+<td align="right">0.952</td>
+<td align="right">1.223</td>
+<td align="right">1.194</td>
+</tr>
+<tr class="even">
+<td align="right">80</td>
+<td align="right">0.815</td>
+<td align="right">0.969</td>
+<td align="right">0.919</td>
+</tr>
+<tr class="odd">
+<td align="right">60</td>
+<td align="right">0.709</td>
+<td align="right">0.704</td>
+<td align="right">0.682</td>
+</tr>
+<tr class="even">
+<td align="right">40</td>
+<td align="right">0.496</td>
+<td align="right">0.415</td>
+<td align="right">0.452</td>
+</tr>
+<tr class="odd">
+<td align="right">20</td>
+<td align="right">0.272</td>
+<td align="right">0.222</td>
+<td align="right">0.236</td>
+</tr>
+<tr class="even">
+<td align="right">0</td>
+<td align="right">0.000</td>
+<td align="right">0.000</td>
+<td align="right">0.000</td>
+</tr>
+</tbody>
+</table>
+<p>To fit a straight line, linear regression is used. The coefficients are shown below:</p>
+<pre class="r"><code>summary(lm(A ~ 0 + rep(glucose, 3)))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = A ~ 0 + rep(glucose, 3))
+## 
+## Residuals:
+##       Min        1Q    Median        3Q       Max 
+## -0.181273 -0.000982  0.005691  0.039277  0.089727 
+## 
+## Coefficients:
+##                  Estimate Std. Error t value Pr(&gt;|t|)    
+## rep(glucose, 3) 0.0113327  0.0002387   47.48   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.06132 on 17 degrees of freedom
+## Multiple R-squared:  0.9925, Adjusted R-squared:  0.9921 
+## F-statistic:  2254 on 1 and 17 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>which shows there is a linear relationship <span class="math inline">\(A^{418}=0.01133n_\text{glucose}\)</span> with <span class="math inline">\(R^2=0.9921\)</span>.</p>
+<p>Then we can plot it (CI added).</p>
+<pre class="r"><code>ggplot(data.frame(A, glucose), aes(glucose, A))+
+  geom_point()+
+  geom_smooth(formula = y ~ 0 + x, method = &#39;lm&#39;)+
+  labs(x = &#39;nmol glucose in 4mL assay&#39;, y = expression(A ^ 418),
+       title = &#39;Calibrationn Curve for 4mL essay&#39;)</code></pre>
+<p><img src="./lab/2019-10-16-specific-radioactivity_files/figure-html/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="our-glucose-sample" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Sample result</h3>
+<p>Three independent measurements of <span class="math inline">\(A^{418}_\text{sample}\)</span> gives 0.863, 0.872 and 0.871. According to the linear relationship <span class="math inline">\(A^{418}=0.01133n_\text{glucose}\)</span> we can calculate the amount (in nmol) of glucose in 1mL 1:100 dilution, then the concentration of the raw sample can be calculated easily:</p>
+<pre class="r"><code>A &lt;- c(0.863, 0.872, 0.871) # sample absorbance
+n &lt;- A/0.01133 # nmol glucose in 1 mL 1:100 dilution
+(c_glucose_sample &lt;- n * 1e-9 # converting to mol/mL (1:100 dilution)
+       / 1e-3 # converting to M (1:100 dilution)
+       * 100 # in M (raw sample)
+       * 1e3) # converting to mM (raw sample)</code></pre>
+<pre><code>## [1] 7.616946 7.696381 7.687555</code></pre>
+<p>Statistical summary:</p>
+<pre class="r"><code>x &lt;- c_glucose_sample; n &lt;- length(x); df &lt;- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t * sd(x)/sqrt(n))</code></pre>
+<pre><code>##       mean         sd         SE          t       t*SE 
+## 7.66696087 0.04353824 0.02513682 4.30265273 0.10815499</code></pre>
+<p>Which gives 95% confidence interval: <span class="math inline">\(\text{[glucose]}=7.667\pm0.057\)</span> mM</p>
+</div>
+<div id="distinguish-glucose" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Distinguishing between 4.0mM and 4.5mM glucose</h3>
+<p>Similar to the calculation for ATP shown in section <a href="#distinguish">4.1.1</a>, first calculate the percentage error (coefficient of variance) of this experiment:</p>
+<p><span class="math display">\[c_v=\dfrac{s_x}{\bar{x}}=\dfrac{0.057}{7.667}=0.00743\]</span></p>
+<p>for <span class="math inline">\(\bar{x}\)</span> = 4.0 and 4.5, <span class="math inline">\(s_x=c_v\bar{x}\)</span> = 0.0297 and 0.0335, respectively.</p>
+<p>To distinguish between the two, two sample t test is used. If <span class="math inline">\(n\)</span> measurements are made on each concentration, then</p>
+<p><span class="math display">\[t=\dfrac{\bar{x_1}-\bar{x_2}}{\sqrt{\dfrac{s_1^2}{n}+\dfrac{s_2^2}{n}}}=\dfrac{4.5-4.0}{\sqrt{\dfrac{0.0297^2+0.0335^2}{n}}}=\sqrt{124.7n}\]</span></p>
+<p>then we can get a list of <span class="math inline">\(p\)</span> values for each <span class="math inline">\(n\)</span>:</p>
+<pre class="r"><code>n &lt;- 2:8
+df &lt;- n - 1
+t &lt;- sqrt(124.7 * n)
+p &lt;- (1 - pt(t, df)) * 2
+names(p) &lt;- paste(&#39;n =&#39;, n)
+round(p, 5)</code></pre>
+<pre><code>##   n = 2   n = 3   n = 4   n = 5   n = 6   n = 7   n = 8 
+## 0.04026 0.00266 0.00020 0.00002 0.00000 0.00000 0.00000</code></pre>
+<p>as n increases, <span class="math inline">\(p\)</span> decreases. When n = 2, <span class="math inline">\(p\)</span> is already less than 0.05.</p>
+<div id="what-difference-would-it-make-to-your-assay-if-you-doubled-the-concentrations-of-abts-god-and-pod" class="section level4">
+<h4><span class="header-section-number">4.2.3.1</span> What difference would it make to your assay if you doubled the concentrations of ABTS, GOD and POD?</h4>
+<p>Time required for incubation will be shorter and the final intensity of colors (and hence absorption) will be the same.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="class-results" class="section level1">
+<h1><span class="header-section-number">5</span> Class Results</h1>
+<div id="dataremoved" class="section level2">
+<h2><span class="header-section-number">5.1</span> Data<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h2>
+<pre class="r"><code>ATP &lt;- c(3.93, 4.04, 3.01, 3.94, 3.20, 3.15, 2.81,       
+         4.07, 3.17, 3.05, 4.20, 3.15, 4.17, 3.05,       
+         3.90, 2.97, 3.11, 4.13, 3.27, 3.85, 2.92)
+ATP_sd &lt;- c(0.164, 0.082, 0.080, 0.080, 0.140, 0.126, 0.139,       
+            0.071, 0.140, 0.142, 0.002, 0.012, 0.240, 0.033,       
+            0.051, 0.091, 0.187, 0.160, 0.053, 5.e-4, 0.218)
+glucose &lt;- c(6.89, 6.92, 8.36, 7.38, 7.10, 7.65, 7.70,         
+             9.09, 7.34, 7.60, 8.92, 8.80, 8.50, 6.60,       
+             3.81, 9.80, 7.73, 9.80, 7.67, 8.50, 8.63)
+glucose_sd &lt;- c(0.0880, 0.0104, 0.1560, 0.0150, 0.0603, 0.5900, 1.4580,        
+                0.0470, 0.1640, 0.2810, 0.2500, 0.2000, 0.0010, 0.1180,       
+                0.0170, 0.0425, 0.1500, 0.0530, 0.0440, 0.1400, 0.4800)
+class_results &lt;- tibble(ATP, ATP_sd, glucose, glucose_sd)
+kable(tibble(`ATP conc`=ATP, `ATP sd`=ATP_sd, 
+             `Glucose conc`=glucose, `Glucose sd`=glucose_sd))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">ATP conc</th>
+<th align="right">ATP sd</th>
+<th align="right">Glucose conc</th>
+<th align="right">Glucose sd</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3.93</td>
+<td align="right">0.1640</td>
+<td align="right">6.89</td>
+<td align="right">0.0880</td>
+</tr>
+<tr class="even">
+<td align="right">4.04</td>
+<td align="right">0.0820</td>
+<td align="right">6.92</td>
+<td align="right">0.0104</td>
+</tr>
+<tr class="odd">
+<td align="right">3.01</td>
+<td align="right">0.0800</td>
+<td align="right">8.36</td>
+<td align="right">0.1560</td>
+</tr>
+<tr class="even">
+<td align="right">3.94</td>
+<td align="right">0.0800</td>
+<td align="right">7.38</td>
+<td align="right">0.0150</td>
+</tr>
+<tr class="odd">
+<td align="right">3.20</td>
+<td align="right">0.1400</td>
+<td align="right">7.10</td>
+<td align="right">0.0603</td>
+</tr>
+<tr class="even">
+<td align="right">3.15</td>
+<td align="right">0.1260</td>
+<td align="right">7.65</td>
+<td align="right">0.5900</td>
+</tr>
+<tr class="odd">
+<td align="right">2.81</td>
+<td align="right">0.1390</td>
+<td align="right">7.70</td>
+<td align="right">1.4580</td>
+</tr>
+<tr class="even">
+<td align="right">4.07</td>
+<td align="right">0.0710</td>
+<td align="right">9.09</td>
+<td align="right">0.0470</td>
+</tr>
+<tr class="odd">
+<td align="right">3.17</td>
+<td align="right">0.1400</td>
+<td align="right">7.34</td>
+<td align="right">0.1640</td>
+</tr>
+<tr class="even">
+<td align="right">3.05</td>
+<td align="right">0.1420</td>
+<td align="right">7.60</td>
+<td align="right">0.2810</td>
+</tr>
+<tr class="odd">
+<td align="right">4.20</td>
+<td align="right">0.0020</td>
+<td align="right">8.92</td>
+<td align="right">0.2500</td>
+</tr>
+<tr class="even">
+<td align="right">3.15</td>
+<td align="right">0.0120</td>
+<td align="right">8.80</td>
+<td align="right">0.2000</td>
+</tr>
+<tr class="odd">
+<td align="right">4.17</td>
+<td align="right">0.2400</td>
+<td align="right">8.50</td>
+<td align="right">0.0010</td>
+</tr>
+<tr class="even">
+<td align="right">3.05</td>
+<td align="right">0.0330</td>
+<td align="right">6.60</td>
+<td align="right">0.1180</td>
+</tr>
+<tr class="odd">
+<td align="right">3.90</td>
+<td align="right">0.0510</td>
+<td align="right">3.81</td>
+<td align="right">0.0170</td>
+</tr>
+<tr class="even">
+<td align="right">2.97</td>
+<td align="right">0.0910</td>
+<td align="right">9.80</td>
+<td align="right">0.0425</td>
+</tr>
+<tr class="odd">
+<td align="right">3.11</td>
+<td align="right">0.1870</td>
+<td align="right">7.73</td>
+<td align="right">0.1500</td>
+</tr>
+<tr class="even">
+<td align="right">4.13</td>
+<td align="right">0.1600</td>
+<td align="right">9.80</td>
+<td align="right">0.0530</td>
+</tr>
+<tr class="odd">
+<td align="right">3.27</td>
+<td align="right">0.0530</td>
+<td align="right">7.67</td>
+<td align="right">0.0440</td>
+</tr>
+<tr class="even">
+<td align="right">3.85</td>
+<td align="right">0.0005</td>
+<td align="right">8.50</td>
+<td align="right">0.1400</td>
+</tr>
+<tr class="odd">
+<td align="right">2.92</td>
+<td align="right">0.2180</td>
+<td align="right">8.63</td>
+<td align="right">0.4800</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="preliminary-graphical-analysis" class="section level2">
+<h2><span class="header-section-number">5.2</span> Preliminary graphical analysis</h2>
+<p>Density plots and histograms are used to examine the distribution of measurements:</p>
+<pre class="r"><code>op &lt;- par(mfrow=c(2,2))
+for(i in c(&#39;ATP&#39;, &#39;glucose&#39;)){
+  main = paste0(&#39;[&#39;, i, &#39;] in 21 samples:&#39;); xlab &lt;- paste(i, &#39;concentration&#39;)
+  {
+    plot(density(class_results[[i]], bw = c(ATP = 0.1, glucose = 0.2)[i]), 
+         main = paste(main, &#39;density plot&#39;), xlab = xlab) 
+    rug(class_results[[i]])
+  }
+  {
+    hist(class_results[[i]], breaks = 10, main = paste(main, &#39;histogram&#39;), xlab = xlab)
+  }
+}</code></pre>
+<p><img src="./lab/2019-10-16-specific-radioactivity_files/figure-html/unnamed-chunk-12-1.png" width="100%" /></p>
+<p>Clealy, <a href="#our-atp">ATP</a> has a clear bimodal distribution, with two peaks at around 3.1 and 4.0.</p>
+<p>The distibution of <a href="#class-glucose">glucose</a> is affected by two outliers (the maximum and minimum). After their removal, a bimodal distribution, which peaks at 7.6 and 8.8, is also produced:</p>
+<pre class="r"><code>op &lt;- par(mfrow=c(1,2))
+glucose &lt;- glucose[glucose != max(glucose) &amp; glucose != min(glucose)]
+main = &#39;[glucose] corrected&#39;; xlab &lt;- &#39;glucose concentration&#39;
+{
+  plot(density(glucose, bw = c(ATP = 0.1, glucose = 0.2)[i]), 
+       main = paste(main, &#39;density plot&#39;), xlab = xlab) 
+  rug(glucose)
+}
+{
+  hist(glucose, breaks = 10, main = paste(main, &#39;histogram&#39;), xlab = xlab)
+}</code></pre>
+<p><img src="./lab/2019-10-16-specific-radioactivity_files/figure-html/unnamed-chunk-14-1.png" width="100%" height="60%" /></p>
+</div>
+<div id="class-atp" class="section level2">
+<h2><span class="header-section-number">5.3</span> ATP concentration</h2>
+<div id="grouping-and-grouped-confidence-interval-of-mean" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Grouping and grouped confidence interval of mean</h3>
+<p>According to the plots, evidently there are two ATP concentrations, so we need to divide the 21 measurements into two groups, and calculate their mean and CI separately.</p>
+<pre class="r"><code>ATP1 &lt;- ATP[ATP &lt; 3.5] # less than 3.5mM, around 3.0mM
+ATP2 &lt;- ATP[ATP &gt; 3.5] # more than 3.5mM, around 4.0mM</code></pre>
+<p>For the <a href="#our-atp">ATP</a> around 3.0:</p>
+<pre class="r"><code>x &lt;- ATP1; n &lt;- length(x); df &lt;- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))</code></pre>
+<pre><code>##       mean         sd         SE          t       t*SE 
+## 3.07166667 0.12995337 0.03751431 2.20098516 0.08256843</code></pre>
+<p>95% confidence interval: <span class="math inline">\(\text{[ATP]}=3.07\pm0.08\)</span> mM</p>
+<p>For the <a href="#our-atp">ATP</a> around 4.0:</p>
+<pre class="r"><code>x &lt;- ATP2; n &lt;- length(x); df &lt;- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))</code></pre>
+<pre><code>##       mean         sd         SE          t       t*SE 
+## 4.02555556 0.12620530 0.04206843 2.30600414 0.09700998</code></pre>
+<p>95% confidence interval: <span class="math inline">\(\text{[ATP]}=4.03\pm0.10\)</span> mM</p>
+</div>
+<div id="test-for-significance-of-the-difference-in-concentration-between-the-two-groups" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Test for significance of the difference in concentration between the two groups</h3>
+<p>To test there is a significant difference between the two concentrations, t-test<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> is used:</p>
+<pre class="r"><code>t.test(ATP1, ATP2)</code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  ATP1 and ATP2
+## t = -16.923, df = 17.66, p-value = 2.346e-12
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.0724720 -0.8353058
+## sample estimates:
+## mean of x mean of y 
+##  3.071667  4.025556</code></pre>
+<p><span class="math inline">\(p=2.3\times10^{-12}&lt;&lt;0.05\)</span>; the two concentrations are significantly different</p>
+</div>
+<div id="test-for-diviation-from-given-concentrations" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Test for diviation from given concentrations</h3>
+<p>The solutions were actually made up to be 3.0mM and 4.0mM ATP. Were they made up correctly? We need two one-sample t tests using the given concentrations as the population mean, <span class="math inline">\(\mu\)</span>:</p>
+<p>3.0mM: (<span class="math inline">\(H_0\)</span>: true concentration is 3.0mM)</p>
+<pre class="r"><code>t.test(ATP1, mu=3.0)</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  ATP1
+## t = 1.9104, df = 11, p-value = 0.08249
+## alternative hypothesis: true mean is not equal to 3
+## 95 percent confidence interval:
+##  2.989098 3.154235
+## sample estimates:
+## mean of x 
+##  3.071667</code></pre>
+<p><span class="math inline">\(p=0.082&gt;0.05\)</span>, failed to reject hypothesis. Solution made up correctly.</p>
+<p>4.0mM: (<span class="math inline">\(H_0\)</span>: true concentration is 4.0mM)</p>
+<pre class="r"><code>t.test(ATP2, mu=4.0)</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  ATP2
+## t = 0.60748, df = 8, p-value = 0.5604
+## alternative hypothesis: true mean is not equal to 4
+## 95 percent confidence interval:
+##  3.928546 4.122566
+## sample estimates:
+## mean of x 
+##  4.025556</code></pre>
+<p><span class="math inline">\(p=0.56&gt;0.05\)</span>, failed to reject hypothesis. Solution made up correctly.</p>
+</div>
+</div>
+<div id="class-glucose" class="section level2">
+<h2><span class="header-section-number">5.4</span> Glucose</h2>
+<div id="grouping-and-grouped-confidence-interval-of-mean-1" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Grouping and grouped confidence interval of mean</h3>
+<p>By observing the plots, the boundary between the two concentrations of glucose is 8.0mM, so we can divide them into two groups:</p>
+<pre class="r"><code>glucose1 &lt;- glucose[glucose &lt; 8.0]
+glucose2 &lt;- glucose[glucose &gt; 8.0]</code></pre>
+<p>And calculate their 95% CIs separately:</p>
+<pre class="r"><code>lapply(list(glucose1=glucose1, glucose2=glucose2), function(x){
+  n &lt;- length(x); df &lt;- n - 1; t = qt(0.975, df)
+  c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))
+})</code></pre>
+<pre><code>## $glucose1
+##      mean        sd        SE         t      t*SE 
+## 7.3254545 0.3921317 0.1182322 2.2281389 0.2634377 
+## 
+## $glucose2
+##      mean        sd        SE         t      t*SE 
+## 8.6857143 0.2612698 0.0987507 2.4469119 0.2416343</code></pre>
+<p>The confidence intervals are: <span class="math inline">\(7.33\pm0.27\)</span> mM and <span class="math inline">\(8.69\pm0.22\)</span> mM</p>
+</div>
+<div id="test-for-significance-of-the-difference-in-concentration-between-the-two-groups-1" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> Test for significance of the difference in concentration between the two groups</h3>
+<p>t-test performed to test for significance:</p>
+<pre class="r"><code>t.test(glucose1, glucose2)  </code></pre>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  glucose1 and glucose2
+## t = -8.8301, df = 15.912, p-value = 1.573e-07
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -1.686972 -1.033548
+## sample estimates:
+## mean of x mean of y 
+##  7.325455  8.685714</code></pre>
+<p><span class="math inline">\(p=1.57\times 10^{-7}&lt;&lt;0.05\)</span>, which shows the two concentrations are significantly different.</p>
+</div>
+<div id="test-for-diviation-from-given-concentrations-1" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Test for diviation from given concentrations</h3>
+<p>The solutions were actually made up to be 7.0mM and 9.0mM ATP. Were they made up correctly? We need two one-sample t tests using the given concentrations as the population mean, <span class="math inline">\(\mu\)</span>:</p>
+<p>7.0mM: (<span class="math inline">\(H_0\)</span>: true concentration is 7.0mM)</p>
+<pre class="r"><code>t.test(glucose1, mu=7.0)</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  glucose1
+## t = 2.7527, df = 10, p-value = 0.02038
+## alternative hypothesis: true mean is not equal to 7
+## 95 percent confidence interval:
+##  7.062017 7.588892
+## sample estimates:
+## mean of x 
+##  7.325455</code></pre>
+<p><span class="math inline">\(p=0.020&lt;0.05\)</span>, reject null hypothesis. Solution made up incorrectly.</p>
+<p>9.0mM: (<span class="math inline">\(H_0\)</span>: true concentration is 9.0mM)</p>
+<pre class="r"><code>t.test(glucose2, mu=9.0)</code></pre>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  glucose2
+## t = -3.1826, df = 6, p-value = 0.01901
+## alternative hypothesis: true mean is not equal to 9
+## 95 percent confidence interval:
+##  8.444080 8.927349
+## sample estimates:
+## mean of x 
+##  8.685714</code></pre>
+<p><span class="math inline">\(p=0.019&lt;0.05\)</span>, reject null hypothesis. Solution made up incorrectly.</p>
+</div>
+</div>
+<div id="radioactivity" class="section level2">
+<h2><span class="header-section-number">5.5</span> Radioactivity</h2>
+<div id="results-of-the-sample" class="section level3">
+<h3><span class="header-section-number">5.5.1</span> Results of the sample</h3>
+<p>Counts in the H channel and C channel are shown below:</p>
+<pre class="r"><code>H &lt;- c(14178.5, 13963, 14065, 14356.5, 13809, 14157.5, 13824.5, 14032, 14094.5, 14014)
+C &lt;- c(3411, 3472.5, 3386.5, 3516, 3375.5, 3418.5, 3438, 3464.5, 3513.5, 3438.5)</code></pre>
+<p>Statistical summaries are calculated:</p>
+<pre class="r"><code>n &lt;- 10; df &lt;- n-1; t = qt(0.975, df)
+lapply(list(`H Channel`=H, `C Channel`=C), function(i){
+  c(mean=mean(i), sd=sd(i), SE=sd(i)/sqrt(n), t = t, `t*SE` = t*sd(i)/sqrt(n))
+})</code></pre>
+<pre><code>## $`H Channel`
+##         mean           sd           SE            t         t*SE 
+## 14049.450000   164.091176    51.890186     2.262157   117.383756 
+## 
+## $`C Channel`
+##        mean          sd          SE           t        t*SE 
+## 3443.450000   48.359447   15.292600    2.262157   34.594264</code></pre>
+<p>95% confidence intervals:</p>
+<ul>
+<li>H channel: <span class="math inline">\(14049.5\pm 117.38\)</span> cpm</li>
+<li>C channel: <span class="math inline">\(3443.5\pm 34.59\)</span> cpm</li>
+</ul>
+</div>
+<div id="correction-for-overlap" class="section level3">
+<h3><span class="header-section-number">5.5.2</span> Correction for overlap</h3>
+<p>Let counts due to <sup>3</sup>H = <span class="math inline">\(X\)</span> and counts due to <sup>14</sup>C = <span class="math inline">\(Y\)</span>. Let <span class="math inline">\(\alpha\)</span> be the fraction in H channel of all counts due to <sup>3</sup>H and <span class="math inline">\(\beta\)</span> be the fraction in C channel of all counts due to <sup>14</sup>C, so that for a sample with mixed isotopes:</p>
+<p><span class="math display">\[H = \alpha X + (1-\beta)Y\]</span>
+<span class="math display">\[C = (1-\alpha)X+\beta Y\]</span></p>
+<p><span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> can be determined by counting pure <sup>3</sup>H and <sup>14</sup>C, respectively. Here are the results:</p>
+<pre class="r"><code>c(H_in_H = mean(c(464814.5, 462463.5, 464775.5)),
+  H_in_C = mean(c(14825.5, 15057.5, 14210.0)),
+  C_in_H = mean(c(10295, 9842.5, 9922.5)),
+  C_in_C = mean(c(47989, 48868.5, 49133.5)))</code></pre>
+<pre><code>##    H_in_H    H_in_C    C_in_H    C_in_C 
+## 464017.83  14697.67  10020.00  48663.67</code></pre>
+<p>which gives:</p>
+<p><span class="math display">\[
+\begin{aligned}
+ \alpha &amp;= 464017.83/(464017.83+14697.67)=0.9693 \\
+ \beta &amp;= 48663.67/(48663.67+10020.00)=0.8293
+\end{aligned}
+\]</span></p>
+<p>Plugging in sample results:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  H &amp;= \alpha X + (1-\beta)Y = 0.9693X+(1-0.8293)Y=14049.5(\pm117.38) \\
+  C &amp;= (1-\alpha)X+\beta Y = (1-0.9693)X+0.8293Y = 3443.5(\pm34.59)
+\end{aligned}
+\]</span></p>
+<p>Simplifying…</p>
+<p><span class="math display">\[
+\begin{aligned}
+  0.9693X+0.1707Y&amp;=14049.5(\pm117.38) \\
+  0.0307X+0.8293Y &amp;= 3443.5(\pm34.59)
+\end{aligned}
+\]</span></p>
+<p>Solving for X: (note that uncertainties are added)</p>
+<p><span class="math display">\[
+\begin{aligned}
+  4.7075X+0.8293Y &amp;=60721.7(\pm507.31) \\
+  0.0307X+0.8293Y &amp;= 3443.5(\pm34.59) \\
+  4.6769X &amp;= 57278.2(\pm541.9) \\
+X &amp;= 12247.2(\pm115.9)
+\end{aligned}
+\]</span></p>
+<p>Solving for Y:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  0.9693X+0.1707Y&amp;=14049.5(\pm117.38) \\
+  0.9693X+26.18Y &amp;= 108722.6(\pm1058.66) \\
+  26.01Y &amp;= 94673.1(\pm1176.04) \\
+  Y &amp;= 3639.4(\pm45.2)
+\end{aligned}
+\]</span></p>
+<p>which gives:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  \text{actual H (ATP) counts in 0.2mL sample}&amp;=12247.2(\pm115.9) \\
+  \text{actual C (glucose) counts in 0.2mL sample} &amp;= 3639.4(\pm45.2)
+\end{aligned}
+\]</span></p>
+</div>
+<div id="specific-radioactivity" class="section level3">
+<h3><span class="header-section-number">5.5.3</span> Specific Radioactivity</h3>
+<p>The radioactivity counting were done on 0.2mL sample. Our ATP concentration (section <a href="#our-atp">4.1</a>) is <span class="math inline">\(\text{[ATP]}=3.268\pm0.054\)</span> mM and glucose concentration (section <a href="#our-glucose-sample">4.2.2</a>) is <span class="math inline">\(\text{[glucose]}=7.667\pm0.057\)</span> mM. Thus, the specific radioactivity of ATP and glucose are:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  \text{ATP: }12247.2(\pm115.9)/[0.2\times10^{-3}\times3.268\times 10^{-3}(\pm0.054\times 10^{-3})]&amp;= 1.87(\pm0.05)\times 10^{10} \text{ cpm mol}^{-1}\\
+  \text{glucose: } 3639.4(\pm45.2)/[0.2\times10^{-3}\times7.667\times 10^{-3}(\pm0.057\times 10^{-3})]&amp;= 2.37(\pm0.05) \times 10^{9} \text{ cpm mol}^{-1}
+\end{aligned}
+\]</span></p>
+<p>(the <span class="math inline">\(\pm0.05\)</span> comes from the maximal possible numerator (e.g. <span class="math inline">\(12247.2 + 115.9\)</span> for ATP) over the least possible denominator (e.g. <span class="math inline">\((3.268-0.054)\times10^{-3}\)</span> for ATP))</p>
+</div>
+</div>
+</div>
+<div id="appendix" class="section level1">
+<h1><span class="header-section-number">6</span> Appendix</h1>
+<div id="temp" class="section level2">
+<h2><span class="header-section-number">6.1</span> People should report all measurements to get a true 95% confidence interval</h2>
+<p>The statistical computations perfomed in section <a href="#class-atp">5.3</a> and section <a href="#class-glucose">5.4</a> for class results are actually improper.</p>
+<p>Let’s say 3 people are measuring a concentration whose true value is 4.0. Here are their results:</p>
+<pre class="r"><code>c1 &lt;- rnorm(5, 4.0, 3) # 5 times, sd about 3
+c2 &lt;- rnorm(6, 4.0, 2) # 6 times, sd about 2
+c3 &lt;- rnorm(7, 4.0, 1) # 7 times, sd about 1</code></pre>
+<p>To calculate the true mean and sd, we need to combine their results i.e. to get list of 15 independent measurements:</p>
+<p>True mean:</p>
+<pre class="r"><code>mean(c(c1,c2,c3))</code></pre>
+<pre><code>## [1] 4.509869</code></pre>
+<p>but if we take the mean of the mean (which in this practical we are supposed to do):</p>
+<pre class="r"><code>mean(c(mean(c1),
+       mean(c2),
+       mean(c3)))</code></pre>
+<pre><code>## [1] 4.564576</code></pre>
+<p>This gives a different mean from the true mean!</p>
+<p>similarly, the true sd calculation is not possible if only the sd of each person’s results are given:</p>
+<p>true sd:</p>
+<pre class="r"><code>sd(c(c1, c2, c3))</code></pre>
+<pre><code>## [1] 1.948202</code></pre>
+<p>we might be supposed to calculate:</p>
+<pre class="r"><code>mean(c(sd(c1), sd(c2), sd(c3)))</code></pre>
+<pre><code>## [1] 1.742614</code></pre>
+<p>(see: <a href="https://bit.ly/2Wj505F" class="uri">https://bit.ly/2Wj505F</a> )</p>
+<p>What I did was treating each person’s mean as one observation:</p>
+<pre class="r"><code>c(
+  mean = mean(c(mean(c1),
+       mean(c2),
+       mean(c3))),
+  sd = sd(c(mean(c1),
+     mean(c2),
+     mean(c3)))
+)</code></pre>
+<pre><code>##      mean        sd 
+## 4.5645764 0.8848836</code></pre>
+</div>
+<div id="the-mathematical-computation-behind-r-functions-used-in-this-report" class="section level2">
+<h2><span class="header-section-number">6.2</span> The mathematical computation behind R functions used in this report</h2>
+<p>Statistical computations are done automatically by R. For completeness, I include here the actual mathematical operations performed by the mathematical functions used in this report.</p>
+<p>For an R vector <code>x &lt;- c(x1, x2, x3, x4, x5, ... xn)</code>:</p>
+<p><code>mean(x)</code> = <span class="math inline">\(\bar{x}=\dfrac{\sum{x}}{n}\)</span>
+<code>sd(x)</code> = <span class="math inline">\(s_x=\sqrt{\dfrac{\sum{(x-\bar{x})^2}}{n-1}}=\sqrt{\dfrac{\sum{x^2}-\dfrac{(\sum x)^2}{n}}{n-1}}\)</span></p>
+<p><code>lm(y ~ x)</code> produces a linear model <span class="math inline">\(y = b_0 + b_1x\)</span></p>
+<p><span class="math display">\[b_1=\dfrac{s_{xy}}{s_x}=\dfrac{\sum{(x-\bar{x})}\sum{(y-\bar{y})}}{\sum{(x-\bar{x})^2}} = \dfrac{n\sum{xy}-\sum x \sum y}{n\sum{x^2}-(\sum x)^2}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[b_0 = \bar{y} - b_1\bar{x} = \dfrac{\sum y - b_1 \sum x}{n}\]</span></p>
+<p>However, I forced intercept to be at the origin (<code>lm(y ~ 0 + x)</code>), so actually <span class="math inline">\(b_1\)</span> is calculated as:</p>
+<p><span class="math display">\[b_1=\dfrac{\sum xy}{\sum x^2}\]</span></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>2 pairs of students produced incomplete results, so only 21/23 sets of results are given.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Specifically, Welch’s two sample t-test with unequal variances<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="./js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="./index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="./images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="./js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>sequence alignment - Tianyi@Oxford</title>
+<meta property="og:title" content="sequence alignment - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../tags/sequence-alignment/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">sequence alignment</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="../bioinformatics/sequence-alignment-gap-penalty.html" class="archive-item-link">
+                Sequence Alignment: Gap Penalty 
+              </a>
+              <span class="archive-item-date">
+                2020-08-29
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../bioinformatics/sequence-alignment.html" class="archive-item-link">
+                Sequence Alignment 
+              </a>
+              <span class="archive-item-date">
+                2020-02-03
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<div id="sequence-alignment-in-r" class="section level1">
+<h1>Sequence Alignment in R</h1>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<pre class="r"><code>library(Biostrings)
+library(seqinr)</code></pre>
+</div>
+<div id="dna-sequence" class="section level2">
+<h2>DNA sequence</h2>
+<pre class="r"><code>myScoringMat &lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE)
+dnaSeq1 &lt;- &quot;GAATTCGGCTA&quot; # can be a plain string
+dnaSeq2 &lt;- DNAString(&quot;GATTACCTA&quot;) # or an XString
+gapOpen &lt;- 2
+gapExtend &lt;- 1
+dnaAln &lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &#39;global&#39;, scoreOnly=FALSE)   
+dnaAln</code></pre>
+</div>
+<div id="amino-acid-sequence" class="section level2">
+<h2>Amino acid sequence</h2>
+<p>Here is a list of built-in amino acid substitution matrices, which can be shown with <code>data(package=&quot;Biostrings&quot;)</code>:</p>
+<pre><code>BLOSUM100
+BLOSUM45
+BLOSUM50
+BLOSUM62
+BLOSUM80
+PAM120
+PAM250
+PAM30
+PAM40
+PAM70</code></pre>
+<pre class="r"><code>aaSeq1 &lt;- &#39;PAWHEAE&#39;
+aaSeq2 &lt;- &#39;HEAGAWGHE&#39;
+aaAln &lt;- pairwiseAlignment(aaSeq1, aaSeq2, substitutionMatrix=&quot;BLOSUM62&quot;, gapOpening=gapOpen, gapExtension=gapExtend, type=&#39;global&#39;, scoreOnly=FALSE)
+aaAln</code></pre>
+<pre class="r"><code>ncov &lt;- readDNAStringSet(&#39;./src/2019-ncov.fasta&#39;, &#39;fasta&#39;)
+sars &lt;- readDNAStringSet(&#39;./src/sars.fasta&#39;, &#39;fasta&#39;)</code></pre>
+<pre class="r"><code>virusAln &lt;- pairwiseAlignment(ncov, sars, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &#39;global&#39;, scoreOnly=FALSE)</code></pre>
+<pre class="r"><code>ncov1 &lt;- seqinr::read.fasta(&#39;./src/2019-ncov.fasta&#39;, seqtype = &#39;DNA&#39;)
+sars1 &lt;- seqinr::read.fasta(&#39;./src/sars.fasta&#39;, seqtype = &#39;DNA&#39;)</code></pre>
+<pre class="r"><code>library(ape)
+myset &lt;- c(&quot;U15717&quot;, &quot;U15718&quot;, &quot;U15719&quot;, &quot;U15720&quot;, &quot;U15721&quot;,&quot;U15722&quot;, &quot;U15723&quot;, &quot;U15724&quot;)
+myseqs &lt;- read.GenBank(myset)
+mydist &lt;- dist.dna(myseqs)
+plot(myphylo, type=&quot;phylogram&quot;, edge.color=&quot;red&quot;, cex=1, edge.width=1,main=&quot;(A) Phylogram&quot;)</code></pre>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

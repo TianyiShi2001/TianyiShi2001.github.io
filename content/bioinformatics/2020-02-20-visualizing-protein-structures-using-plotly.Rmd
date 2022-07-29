@@ -1,0 +1,70 @@
+---
+title: Visualizing Protein Structures Using Plotly
+author: Tianyi Shi
+date: '2020-02-20'
+slug: visualizing-protein-structures-using-plotly
+categories:
+  - bioinformatics
+tags:
+  - protein
+  - structural biochemistry
+term: 1-Hilary
+week: 5
+tutor: ~
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+Am I the first one to try to visualize protein structures using Plotly?
+
+Personally, I think the hitherto most powerful and elegant protein structure visualization tool is [SwissPdbViewer (a.k.a. DeepView)](https://spdbv.vital-it.ch/content.html), which is tightly linked to SWISS-MODEL. Apparently it's used as a web application, but it is not written in JS. It is not open source, and it's 32-bit architecture makes it obsolete on modern 64-bit computers.
+
+Plotly has an open source graphing library with APIs for R, Python and JS, of which the R API highly compatible with the renowned `ggplot2` package. This means you can make ggplots in R and convert them into interactive svg images for web with one line of code!
+
+Apart ggplot conversion, Plotly also provides its own suite of plotting functions in its R API, many of which are specifically suited for web application (e.g. 3D support). 
+
+Given its simplicity and rich APIs, I think Plotly might be used as a framwork for plotting protein structures. In this preliminary experiment, I plotted the atoms of a protein structure (written in a PDB file) as dots with Plotly in R, and rendered them into HTML widgets in Rmarkdown, so that the plots shown below are interactive!
+
+Required Packages:
+
+```{r include=FALSE}
+library(tidyverse)
+library(plotly)
+library(Rpdb)
+```
+
+```{r eval=FALSE}
+library(tidyverse)
+library(plotly)
+library(Rpdb)
+```
+
+```{r warning=FALSE, cache=TRUE}
+x <- read.pdb('/Users/tianyishi/Desktop/sample.pdb')
+pdb <- as_tibble(x$atoms) %>% 
+  mutate(charge = ifelse(resname %in% c('LYS', 'ARG', 'HIS'),
+                         'basic', ifelse(resname %in% c('ASP', 'GLU'),
+                                         'acidic', 'neutral')))
+
+
+pdb %>% plot_ly(x = ~x1, y = ~x2, z = ~x3, color = ~charge, colors = c('red', 'blue', 'grey')) %>%
+  add_markers()
+
+pdb %>% plot_ly(x = ~x1, y = ~x2, z = ~x3, color = ~resname) %>%
+  add_markers()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

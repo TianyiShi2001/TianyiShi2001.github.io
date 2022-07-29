@@ -1,0 +1,88 @@
+---
+title: Antibiotics and Protein Synthesis
+author: Tianyi Shi
+date: '2019-11-30'
+slug: antibiotics-and-protein-synthesis
+categories:
+  - MCB
+tags:
+  - ribosome
+  - RNA
+term: 3-Michaelmas
+week: 8
+tutor: ~
+summary: Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+
+
+<p><strong>Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.</strong></p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Protein synthesis occurs in ribosomes and involves 3 phases: initiation, elongation (which is subdivided into 4 steps) and termination. Each phase depends on the correct conformation and/or catalytic activity of different domains of the ribosomal complex and soluble protein factors (IFs, EFs and RFs). The identities and mechanisms of these critical RNA/protein domains (in bacterial cells) can be investigated by genetic mutation and antibiotics, which hinder their normal functions, along with recent advances in biophysical methods, which allows high resolution structures to be determined for ribosomes in different contexts.</p>
+</div>
+<div id="background-information" class="section level1">
+<h1>Background information</h1>
+<div id="the-ribosome" class="section level2">
+<h2>The Ribosome</h2>
+<p>The bacterial 70S ribosome comprises two subunits, the 50S (large) and the 30S (small) subunit. The 30S subunit mediates selection of cognate aminoacyl tRNAs and the 50S subunit contains the peptidyl-transferase centre (PTC), which catalyses addition of new amino acids to the elongating polypeptide chain.</p>
+</div>
+<div id="the-process-of-protein-synthesis" class="section level2">
+<h2>The process of protein synthesis</h2>
+<p>The 3 phases of protein synthesis are initiation, elongation and termination.</p>
+<p>During initiation, the 3’ end of the 16S rRNA of the 30S subunit base-pairs with the Shine-Dalgarno sequence, which positions the start codon (usually AUG) in the P site for the binding of the initiator tRNA (usually fMet-tRNA) and IF1, 2, 3. Joining of the 50S subunit and dissociations of IFs primes the elongation phase.</p>
+<p>The elongation phase, where new amino acids are appended to the growing polypeptide, involves 4 steps:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Decoding.</strong> An aminoacylated tRNA (aa-tRNA) is delivered to the A-site of the ribosome by elongation factor EF-Tu complexed with GTP. GTP hydrolysis facilitates discrimination between cognate and non-cognate tRNAs.</li>
+<li><strong>Peptidyl transfer.</strong> The peptidyl-transferase centre (PTC) on the 50S subunit catalyses the formation of peptide bond between the amino acids attached to the tRNAs in the A- and P-sites by transferring the polypeptide chain from the P-site tRNA to the aa-tRNA in the A-site.</li>
+<li><strong>Translocation.</strong> EF-G catalyses the movement tRNAs from the A and P sites to the P and E sites</li>
+<li>the growing polypeptide chain passes through an exit tunnel</li>
+</ol>
+<p>Finally, when the stop codon (UAA/UAG/UGA) is encountered, it is recognised by release factors (RF1/RF2) that forces hydrolysis of the peptidyl-tRNA bond in the P-site, thus releasing the polypeptide chain from the ribosome.</p>
+</div>
+</div>
+<div id="mutations" class="section level1">
+<h1>Mutations</h1>
+<p>Mutation in different components of protein synthesis (tRNA, ribosomal proteins, rRNAs) can all lead to decreased fidelity of this process.</p>
+<p>The tRNA needs to undergo a structual transition that involves a 30<span class="math inline">\(^\circ\)</span> bend in order to achieve the A/T (decoding) conformation. Mutagenesis studies showed that two mutations in the D-stem, A9C and G24A, promote miscoding and these two bases are critical for distortion of the cognate tRNA that is required for decoding.</p>
+<p>Mutagenesis studies also help to identify ribosomal proteins that are critical in the decoding process. The mutations can be classified into two types according to their implication on the speed and accuracy/robustness of translation: <em>ram</em> (ribosome ambiguity) mutations improve speed but has a higher frequency of failure in rejecting non-cognate tRNAs; in contrast, ribosomes with <em>str</em> (stringency) mutations are slower and more accurate, but they reject some cognate aa-tRNAs and thus waste GTP. Most of such mutations are found in the ribosomal proteins S12, S5 and S4, which are close to the decoding site, and these proteins have an important effect on codon/anticodon interactions.</p>
+</div>
+<div id="antibiotics" class="section level1">
+<h1>Antibiotics</h1>
+<p>The antibiotic puromycin can be used to demonstrate the existence of A and P sites in the ribosome and the ATP/GTP-independent nature of the peptidyl transfer reaction.</p>
+<p>Puromycin (PM) is an aa-tRNA analogue which is composed of an nucleoside and an bound amino acid. Unlike the normal aa-tRNA where the 5’ OH of the nucleoside (adenosine) is linked to the rest of the tRNA, PM has a free 5’ OH. Therefore, PM can fit into the peptidyl transfer centre (PTC) and accept the polypeptide chain in the peptidyl tranfer reaction, but the new peptide with PM attached is released immediately because PM does not have an attached tRNA to anchor it to the ribosome.</p>
+<p>The details of the experiment is shown below and in Figure <a href="#fig:puromycin">1</a>:</p>
+<ul>
+<li>Take a cell free system containing: ribosomes, Mg<sup>2+</sup>-containing buffer, poly-U mRNA, <sup>14</sup>C-Phe-tRNA, ATP/GTP-regenerating system and add varying concentrations of soluble cell extract.</li>
+<li>This yields ribosomes carrying polyPhe-tRNA (not free polyPhe or poly-Phe-tRNA unbound to ribosomes). [with prior knowledge, this is because there are no stop codons on the mRNA and hence RFs are not recruited to terminate translation]</li>
+<li>the ribosomes are washed to remove soluble proteins and ATP/GTP.</li>
+<li>then they are incubated with puromycin (PM)</li>
+<li>about 50% of the ribosomes release <sup>14</sup> labelled polyPhe as polyPhe-PM [As shown in Figure <a href="#fig:puromycin">1</a>, the convertion from state 2 to 3 and from state 3 to 1 requires GTP, and the convertion from state 1 to 2 (peptidyl transfer) does not. Therefore, when GTP is removed, protein synthesis is either trapped in state 2 or 3]</li>
+<li>without a tRNA, PM cannot bind to the ribosome (at A/P sites) so the compound with polyPhe is released</li>
+</ul>
+<p>Conclusion: ribosome itself catalyses the formation of the peptide bond without energy supplying molecules (ATP/GTP).</p>
+<ul>
+<li>now wash the ribosomes to remove the PM</li>
+<li>add soluble cell extract and GTP, then more PM</li>
+<li>the remaining 50% ribosomes release polyPhe-PM</li>
+</ul>
+<p>Conclusion:</p>
+<ol style="list-style-type: decimal">
+<li>ribosomes have a ‘PM-reactive’ site (P site) and a ‘PM-unreactive site’ (A site)</li>
+<li>soluble cell extract can translocate from RM-unreactive to PM-reactive site (driven by EF-G)</li>
+</ol>
+<div class="figure"><span id="fig:puromycin"></span>
+<img src="../img/puromycin.jpg" alt="The puromycin experiment." width="100%" />
+<p class="caption">
+Figure 1: The puromycin experiment.
+</p>
+</div>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<p>Mutagenesis and ribosome-targeting antibiotics are valuable tools for studying the mechanisms of protein synthesis in the ribosome. These methods are usually aided by cryo-EM and X-ray crystallography to probe into the 3D molecular details.</p>
+<p>Mutations in tRNA, rRNA and associated proteins give information on their specific roles and behaviours during protein synthesis. Antibiotics with various (and usually predictable) chemical properties is another way of studying the mechanisms of protein synthesis. Apart from the puromycin (which targets the peptidyl transfer centre) mentioned in this essay, there is a wide range of antibiotics that target different steps of protein synthesis. For example, streptomycins interferes with the delivery of tRNAs to the A-site and neomycin hinders translocation following peptidyl transfer. High resolution crystal structures were obtained for many of these antibiotics in complex with the ribosome (or part of ribosome). These structures are indicative of functionally important sites in the ribosome and they often shed light on the mechanisms.</p>
+</div>

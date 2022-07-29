@@ -1,0 +1,2 @@
+(R1).Flux	TaskList[Metabolic Control Analysis].Scaled flux control coefficients[(R1)][(R1)]	TaskList[Metabolic Control Analysis].Scaled flux control coefficients[(R1)][(R2)]	TaskList[Metabolic Control Analysis].Scaled flux control coefficients[(R1)][(R3)]	TaskList[Metabolic Control Analysis].Scaled flux control coefficients[(R1)][(R4)]	TaskList[Metabolic Control Analysis].Scaled flux control coefficients[(R1)][(R5)]	TaskList[Metabolic Control Analysis].Scaled flux control coefficients[(R1)][(R6)]
+0.476572	0.203839	0.717872	0.0342001	0.0340061	0.00278022	0.007302

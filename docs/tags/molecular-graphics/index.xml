@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>molecular graphics on Tianyi@Oxford</title>
+    <link>/tags/molecular-graphics.html</link>
+    <description>Recent content in molecular graphics on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/molecular-graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Techniques</title>
+      <link>/notes/techniques.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/techniques.html</guid>
+      <description>Protein Structure Homology Modelling Swiss Model Model Evaluation GMQE (global model quality estimation) 0-1, higher better combines properties from the target-alignment and the template search method replecting the expected accuracy of a model built with that alignment and the template and the coverage of the target computed before modelling and after modelling. The latter also takes into account the QMEAN QMEAN QMEAN z score: around 0: ideal; &amp;lt; -4.0: low quality QMEAN is a composite estimator based on different geometrical properties and provides both global and local absolute quality estimates on the basis of one single model the QMEAN z-score provides an estimate of the ‘degree of nativeness’ of the structural features observed in the model on a global scale.</description>
+    </item>
+    
+  </channel>
+</rss>

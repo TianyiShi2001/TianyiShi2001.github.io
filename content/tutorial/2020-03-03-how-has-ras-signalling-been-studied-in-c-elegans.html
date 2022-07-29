@@ -1,0 +1,232 @@
+---
+title: How Has Ras Signalling Been Studied in C. Elegans
+author: Tianyi Shi
+date: '2020-03-03'
+slug: how-has-ras-signalling-been-studied-in-c-elegans
+categories:
+  - MCB
+tags:
+  - developmental biology
+term: 1-Hilary
+week: 8
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+csl: ../bib/nature.csl
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: |
+    @Gilbert-2016, @Slack-2018, @Sternberg-2005
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#the-big-picture-components-of-the-c.-elegans-egf-ras-mapk-pathway-involved-in-vulva-induction"><span class="toc-section-number">2</span> The Big Picture: Components of the <em>C. elegans</em> EGF-Ras-MAPK Pathway Involved in Vulva Induction</a></li>
+<li><a href="#techniques-for-studying-egfr-ras-mapk-signalling-and-vulva-induction"><span class="toc-section-number">3</span> Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction</a><ul>
+<li><a href="#forward-genetics-and-reverse-genetics"><span class="toc-section-number">3.1</span> Forward Genetics and Reverse Genetics</a><ul>
+<li><a href="#in-early-experiments-forward-genetics-methods-were-used-entensively"><span class="toc-section-number">3.1.1</span> In Early Experiments, Forward Genetics Methods were Used Entensively</a></li>
+<li><a href="#rnai-and-reverse-genetics-since-1998"><span class="toc-section-number">3.1.2</span> RNAi and Reverse Genetics Since 1998</a></li>
+</ul></li>
+<li><a href="#observing-cell-fates"><span class="toc-section-number">3.2</span> Observing Cell Fates</a><ul>
+<li><a href="#microscopic-analysis"><span class="toc-section-number">3.2.1</span> Microscopic Analysis</a></li>
+<li><a href="#transcriptional-reporters"><span class="toc-section-number">3.2.2</span> Transcriptional Reporters</a></li>
+</ul></li>
+<li><a href="#cross-species-genomic-analysis-reveals-homology-and-helps-to-elucidate-roles-of-proteins-with-greater-accuracy"><span class="toc-section-number">3.3</span> Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy</a></li>
+<li><a href="#studying-egfr-localisation-and-trafficking"><span class="toc-section-number">3.4</span> Studying EGFR Localisation and Trafficking</a><ul>
+<li><a href="#immunostaining"><span class="toc-section-number">3.4.1</span> Immunostaining</a></li>
+<li><a href="#live-imaging"><span class="toc-section-number">3.4.2</span> Live Imaging</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conclusion"><span class="toc-section-number">4</span> Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>The <em>Caenorhabditis elegans</em> vulva is one of the best studied models of organogeneis. Genetic screening revealed three signalling pathways, EGFR-Ras-MAPK, Notch and Wnt<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, that are critical to the fate determination of the 6 vulval precursor cells (VPCs), P(3-8)p.</p>
+<p>VPCs adopt either 1<span class="math inline">\(^\circ\)</span> or 2<span class="math inline">\(^\circ\)</span> fate upon receiving appropriate signals, or 3<span class="math inline">\(^\circ\)</span> fate if undinduced. The 8 descentdents of the 1<span class="math inline">\(^\circ\)</span> VPC and the 14 descendents (7 each) of the 2<span class="math inline">\(^\circ\)</span> VPCs give rise to the vulva, while 3<span class="math inline">\(^\circ\)</span> VPCs produces epidermal cells which fuse with the syncytial epidermis hyp7.</p>
+<p>In the L1 stage, a Wnt signal form the posterior body region selects the six Pn.p cells to become the VPCs and form the vulval competentce group. Then in the L2 stage, LIN-3 (EGF) signal from the anchor cell (AC) in the somatic gonad selects P6.p to be the single 1<span class="math inline">\(^\circ\)</span> VPC<span class="citation"><sup>1,2</sup></span>, and contact-dependent LIN-12 (Notch) signalling causes the flanking P5.p and P7.p to become 2<span class="math inline">\(^\circ\)</span> VPCs. These precise signalling events always results in an invariant spatial pattern of VPCs in wild-type (WT) <em>C. elegans</em>, namely 3<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-1<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>.</p>
+<p>This essay illustrates how the LET-60 (Ras) signalling has been studied in <em>C. elegans</em> vulval development, specifically the 1<span class="math inline">\(^\circ\)</span> fate determination, according to these selected work and reviews: <span class="citation">3</span>; <span class="citation">4</span>; <span class="citation">5</span>; <span class="citation">6</span>; <span class="citation">7</span>; <span class="citation">8</span>. A recent review article by <span class="citation">9</span> and a book chapter by <span class="citation">10</span> are also taken into account (the latter was the most helpful).</p>
+</div>
+<div id="the-big-picture-components-of-the-c.-elegans-egf-ras-mapk-pathway-involved-in-vulva-induction" class="section level1">
+<h1><span class="header-section-number">2</span> The Big Picture: Components of the <em>C. elegans</em> EGF-Ras-MAPK Pathway Involved in Vulva Induction</h1>
+<p>Figure <a href="#fig:c-ele-valva-big">2.1</a> gives an overview of the pathways by which EGF-Ras-MAPK signalling leads to the 1<span class="math inline">\(^\circ\)</span> fate in P6.p and 2<span class="math inline">\(^\circ\)</span> fate in flanking P5.p and P7.p cells.</p>
+<div class="figure"><span id="fig:c-ele-valva-big"></span>
+<img src="../img/c-ele-valva-big.jpg" alt="P6.p is the VPC closest to the AC, and it also expresses the highest levels of LET-23 on its basolateral membrane. Thus, P6.p receives most LIN-3 signalling and commits to the 1\(^\circ\) fate. Downstram of the LET-23 (EGFR) RTK, a canocical Ras-MAPK pathway transduces the signal into the nucleus. The scaffold proteins LIN-2 (CASK), LIN-7 (Veli), and LIN-10 (Mint-1) form a complex which helps to maintain basolateral localisation of LET-23. The SEM-5 (Grb2) adaptor protein11 uses its SH2 domain to anchor to LET-23 at phosphorylated tyrosines. The guanine exchange factor (GEF) SOS-112 then binds to SEM-5 (at SEM-5’s two SH3 domains), and it activates the membrane-anchored LET-60 (Ras)3. GTP-bound LET-60 then activates the LIN-45 (Raf)13, MEK-214 and MPK-1 (MAPK) kinase cascade, which is facilitated by the scaffold protein KSR. LIN-1 and forkhead LIN-31 transcription factors are the targets of MPK-115. In their unphosphorylated state, LIN-1 and LIN-31 forms a complex which represses 1\(^\circ\)-specific transcription of lin-39 and egl-1716. Phosphorylation makes the complex to dissociate, and phospho-LIN-31 is turned into an transcriptional activator. The 1\(^\circ\) P6.p also produces LAG-2 (Delta), which is the ligand for LIN-12 (Notch), thus transducing lateral signals to P5.p and P7.p. Notch signalling inhibits MAKP, and LET-60 in P5.p and P7.p cells uses a RAL-1 dependent pathway to commit to 2\(^\circ\) fate. A number of modifiers and negative regulators of the EGFR pathway has been identified, which include the tyrosine kinase Ark-117, the RTK phosphatase Dep-118. Adapted from 10 with reference to 19 and 20." width="100%" />
+<p class="caption">
+Figure 2.1: P6.p is the VPC closest to the AC, and it also expresses the highest levels of LET-23 on its basolateral membrane. Thus, P6.p receives most LIN-3 signalling and commits to the 1<span class="math inline">\(^\circ\)</span> fate. Downstram of the LET-23 (EGFR) RTK, a canocical Ras-MAPK pathway transduces the signal into the nucleus. The scaffold proteins LIN-2 (CASK), LIN-7 (Veli), and LIN-10 (Mint-1) form a complex which helps to maintain basolateral localisation of LET-23. The SEM-5 (Grb2) adaptor protein<span class="citation"><sup>11</sup></span> uses its SH2 domain to anchor to LET-23 at phosphorylated tyrosines. The guanine exchange factor (GEF) SOS-1<span class="citation"><sup>12</sup></span> then binds to SEM-5 (at SEM-5’s two SH3 domains), and it activates the membrane-anchored LET-60 (Ras)<span class="citation"><sup>3</sup></span>. GTP-bound LET-60 then activates the LIN-45 (Raf)<span class="citation"><sup>13</sup></span>, MEK-2<span class="citation"><sup>14</sup></span> and MPK-1 (MAPK) kinase cascade, which is facilitated by the scaffold protein KSR. LIN-1 and <em>forkhead</em> LIN-31 transcription factors are the targets of MPK-1<span class="citation"><sup>15</sup></span>. In their unphosphorylated state, LIN-1 and LIN-31 forms a complex which represses 1<span class="math inline">\(^\circ\)</span>-specific transcription of <em>lin-39</em> and <em>egl-17</em><span class="citation"><sup>16</sup></span>. Phosphorylation makes the complex to dissociate, and phospho-LIN-31 is turned into an transcriptional activator. The 1<span class="math inline">\(^\circ\)</span> P6.p also produces LAG-2 (Delta), which is the ligand for LIN-12 (Notch), thus transducing lateral signals to P5.p and P7.p. Notch signalling inhibits MAKP, and LET-60 in P5.p and P7.p cells uses a RAL-1 dependent pathway to commit to 2<span class="math inline">\(^\circ\)</span> fate. A number of modifiers and negative regulators of the EGFR pathway has been identified, which include the tyrosine kinase Ark-1<span class="citation"><sup>17</sup></span>, the RTK phosphatase Dep-1<span class="citation"><sup>18</sup></span>. Adapted from <span class="citation">10</span> with reference to <span class="citation">19</span> and <span class="citation">20</span>.
+</p>
+</div>
+
+</div>
+<div id="techniques-for-studying-egfr-ras-mapk-signalling-and-vulva-induction" class="section level1">
+<h1><span class="header-section-number">3</span> Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction</h1>
+<div id="forward-genetics-and-reverse-genetics" class="section level2">
+<h2><span class="header-section-number">3.1</span> Forward Genetics and Reverse Genetics</h2>
+<div id="in-early-experiments-forward-genetics-methods-were-used-entensively" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> In Early Experiments, Forward Genetics Methods were Used Entensively</h3>
+<p>Studies on the molecular mechanisms of <em>C. elegans</em> development date back to the 1980s, when genetic manipulating techniques, especially gene cloning, were emerging, but the complete genome sequencing (of <em>C. elegans</em> and other model organisms) had yet to start. Therefore, those pioineering studies relied heavily on forward genetics, where worms were subjected to mutagens, and abnomal phenotypes were identified, isolated, amplified (by self-fertilisation) and the respective genotypes were determined. Differential interference contrast (DIC)/Nomarski microscopes were commonly used to examine the phenotypes because of their superior imaging quuality for live and unstained samples. There were also cellular methods for manipulating gene expression (which especially aided in eludidating cell-cell interactions). First, observing fates of the cells among varying individuals. Second, using laser beams to ablate cells suspected to interact with the cell of interest. Third, isolation of cells of interest, or rearrangement of their surrounding cells.</p>
+<p>These extensive genetic screens led to identification of a number of genes that cause abormal cell lineage (the <em>lin#</em> genes) phenotypes, notably vulvaless (Vul)/Egg-laying defective (Egl) or multivulva (Muv) (Figure <a href="#fig:egl-muv-c-ele-vulva">3.1</a>). Epistasis analyses of these phenotypes grouped these genes into distinct pathways (notably EGFR-Ras-MAPK and Notch) and helped elucidating where each component functions in the respetive pathway. The general idea is that, if the phenotype of gene A masks the phenotype of gene B, then gene A is likely to act downstream of gene B.</p>
+
+<div class="figure"><span id="fig:egl-muv-c-ele-vulva"></span>
+<img src="../img/egl-muv-c-ele-vulva.png" alt="Egg-laying defective (Egl) and Multivulva (Muv) phenotypes caused by LET-23 EGFR-Ras-MAPK signalling mutants. (a): Wild type. Eggs are neatly arranged in the uterus. (b) and (c): Defective LIN-10 (which helps to localise LET-23) can lead to disorganisation of eggs (b) and the bag-of-worms phenotype (c), in which self-fertilised eggs hatch and larvae fills up their mother’s carcass. (d): let-60 gain-of-function results in Ras signalling in all VPCs, resulting in a Muv phenotype. Reproduced from 10." width="100%" />
+<p class="caption">
+Figure 3.1: Egg-laying defective (Egl) and Multivulva (Muv) phenotypes caused by LET-23 EGFR-Ras-MAPK signalling mutants. (a): Wild type. Eggs are neatly arranged in the uterus. (b) and (c): Defective LIN-10 (which helps to localise LET-23) can lead to disorganisation of eggs (b) and the bag-of-worms phenotype (c), in which self-fertilised eggs hatch and larvae fills up their mother’s carcass. (d): <em>let-60</em> gain-of-function results in Ras signalling in all VPCs, resulting in a Muv phenotype. Reproduced from <span class="citation">10</span>.
+</p>
+</div>
+<p>Figure <a href="#fig:vul-Muv-simplest">3.2</a> shows the earliest expetiments that demonstrated the role of the AC and the LET-60 protein in vulval induction.</p>
+
+<div class="figure"><span id="fig:vul-Muv-simplest"></span>
+<img src="../img/vul-mul-simplest.jpg" alt="(a) in wild-type cells, signals from the AC results in the invariant VPC pattern 3\(^\circ\)-3\(^\circ\)-2\(^\circ\)-1\(^\circ\)-2\(^\circ\)-3\(^\circ\); (b) ablation of the AC renders a Vul phenotype, where all 6 VPCs adopts the 3\(^\circ\) fate, this shows that the AC positively regulates vulval induction; (c) inactive LET-60 (Ras) also renders a Vul phenotype even in the presence of the AC, therefore LET-60 should be downstream of the signal from the AC; (d) LET-60 hyperactivity leads to a Muv phenotype, further demonstrating LET-60 as a positive regulator of vulval induction." width="100%" />
+<p class="caption">
+Figure 3.2: (a) in wild-type cells, signals from the AC results in the invariant VPC pattern 3<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-1<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>; (b) ablation of the AC renders a Vul phenotype, where all 6 VPCs adopts the 3<span class="math inline">\(^\circ\)</span> fate, this shows that the AC positively regulates vulval induction; (c) inactive LET-60 (Ras) also renders a Vul phenotype even in the presence of the AC, therefore LET-60 should be downstream of the signal from the AC; (d) LET-60 hyperactivity leads to a Muv phenotype, further demonstrating LET-60 as a positive regulator of vulval induction.
+</p>
+</div>
+</div>
+<div id="rnai-and-reverse-genetics-since-1998" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> RNAi and Reverse Genetics Since 1998</h3>
+<p>Early mutagenesis studies relied on chance to generate individuals with mutations for certain genes, which is laborious and not specific—usually some genes/DNA regions other than the genes of interest are also mutated, and studies on them can lead to confounding results.</p>
+<p>Reverse genetics in <em>C. elegans</em> has become much more prevalent since 1998, when <em>C. elegans</em> became the first multicellular eukaryote to have its genome sequenced<span class="citation"><sup>21</sup></span>, and it was shown that introdcution of dsRNA into worms results in inactivation of an endogenous gene with corresponding sequence<span class="citation"><sup>22</sup></span>. This technique, known as RNA interference (RNAi), enables rapid, site-specific gene inactivation and has been rapidly embraced as a reverse-genetic tool and has dramatically accelerated the pace at which new gene functions are discovered.</p>
+</div>
+</div>
+<div id="observing-cell-fates" class="section level2">
+<h2><span class="header-section-number">3.2</span> Observing Cell Fates</h2>
+<div id="microscopic-analysis" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Microscopic Analysis</h3>
+<p>Observing Val and Muv phenotypes is generally sufficient for ordering the components of the Ras pathway, but cell-cell interaction analyses require the ability to identify differentiated or undifferentiated individual VPCs. The boundaries between cells are not visible by DIC optics and thus cells are identified by the location, size, and morphology of the nucleus and nucleoli. Undifferentiated VPCs at the Pn.p stage each have a characteristic oblong nucleus with a round nucleolus.</p>
+</div>
+<div id="transcriptional-reporters" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Transcriptional Reporters</h3>
+<p>Several transcriptional targets of LET-23 (EGFR) signalling in P6.p, such as <em>egl-17</em> and <em>lag-2</em>, have been identified and can be used as transcriptional reporters to identify vulval cell fates. By using a highly sentitive Ras-responsive reporter gene, <em>egl-17::CFP</em>, <span class="citation">8</span> showed that the Ras pathway is transiently activated in P5.p and P7.p, and that LIN-12 (Notch) activation in these two cells antagonises Ras signalling.</p>
+<p>Single molecule fluorescence <em>in situ</em> hybridisation (smFISH) can also be used to monitor expression of cell fate determinants. It reveals subtle changes in gene expression and has been used, for example by <span class="citation">23</span>, to visualise the dynamics of Ras-induced <em>lag-2</em> expression, which demonstrates the cellular control of EGF-Ras induced gene expression by changing sensitivity to the EGF gradient .</p>
+</div>
+</div>
+<div id="cross-species-genomic-analysis-reveals-homology-and-helps-to-elucidate-roles-of-proteins-with-greater-accuracy" class="section level2">
+<h2><span class="header-section-number">3.3</span> Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy</h2>
+<p>As sequencing techniques mature, complete genome sequences of more organisms are becoming available. This is accompanied by advance in computing power and bioinformatic algorithms, and they allow identification of a significant amount of homology among species.</p>
+<p>The studies on <em>C. elegans</em> Ras signalling also benefitted from these developments. For example, MPK-1 was initially identified as a suppressor of Ras and was named SUR-1 before being identified as an Erk1/2 homologue. The scaffold protein KSR-1 was originally named SUR-3 due to the same reason. With homology available, one can easily guess the function of a novel gene/protein identified in one organism, if its sequence is found homologous with another gene with known functions.</p>
+</div>
+<div id="studying-egfr-localisation-and-trafficking" class="section level2">
+<h2><span class="header-section-number">3.4</span> Studying EGFR Localisation and Trafficking</h2>
+<p>The LET-23 EGFR upstream of LET-60 Ras has a polarised localisation in VPCs: vuval induction requires that EGFR to be expressed on the basolateral membrane. Immunostaining and live imaging can be used to monitor LET-23 trafficking and identify regulators involved.</p>
+<div id="immunostaining" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Immunostaining</h3>
+<p>Immunostaining can be used to visualise subcellular localisation of components of regulators of the EDGR-Ras-MAPK pathway. This technique was used by <span class="citation">24</span> to establish the role of LIN-2/7/10 complex binding to LET-23 C-terminuc in regulating LET-23 basolateral localisation (Figure <a href="#fig:c-ele-vulva-immunostaining">3.3</a>).</p>
+
+<div class="figure"><span id="fig:c-ele-vulva-immunostaining"></span>
+<img src="../img/c-ele-vulva-immunostaining.png" alt="Top: LET-23 are localised to the basolateral membrane of VPCs in wild-type C. elegans; Middle: lin-7 mutant shows mislocalisation of LET-23 to the apical membrane; Bottom: let-23(sy1) mutant, in which a premature stop codon removes 6 C-terminal amino acids of LET-23, similarly resulted in mislocalisation of LET-23. LET-23 staining is shownin green, and staining for the cell junctions using the monoclonal antibody MH27 is shown in red. Reproduced from 24." width="100%" />
+<p class="caption">
+Figure 3.3: Top: LET-23 are localised to the basolateral membrane of VPCs in wild-type <em>C. elegans</em>; Middle: <em>lin-7</em> mutant shows mislocalisation of LET-23 to the apical membrane; Bottom: <em>let-23(sy1)</em> mutant, in which a premature stop codon removes 6 C-terminal amino acids of LET-23, similarly resulted in mislocalisation of LET-23. LET-23 staining is shownin green, and staining for the cell junctions using the monoclonal antibody MH27 is shown in red. Reproduced from <span class="citation">24</span>.
+</p>
+</div>
+</div>
+<div id="live-imaging" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Live Imaging</h3>
+<p>Modern imaging techniques, notably confocal and epifluorescence microscopy, allow the subcellular localisation and trafficking of LET-23 to be observed <em>in vivo</em>, in real time. These studies often involve fusion proteins with fluorescence tags. For example, <span class="citation">25</span> used time-lapse imaging and fluorescence recovery after photobleaching to identify ERM-1 (the Ezrin homologue) as a temporal regulator of LET-23 localisation.</p>
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1><span class="header-section-number">4</span> Conclusion</h1>
+<p>The understanding of the EGFR-Ras-MAPK signalling pathway is importnat because of its involvement in many human diseases, especially cancer. Vulva induction in <em>C. elegans</em> has been a valuable <em>in vivo</em> model for elucidating the identities and mechanisms of the components and regulators in this pathway. Studies on <em>C. elegans</em> traditionally relied on forward genetics, but new experimental techniques and bioinformatic are now solving previously unanswered questions in this field.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Hill-1992">
+<p>1. Hill, R. &amp; Sternberg, P. The gene lin-3 encodes an inductive signal for vulval development in c. Elegans. <em>Nature</em> <strong>358</strong>, 470–476 (1992).</p>
+</div>
+<div id="ref-Sternberg-1989">
+<p>2. Sternberg, P. W. &amp; Horvitz, H. The combined action of two intercellular signaling pathways specifies three cell fates during vulval induction in c. Elegans. <em>Cell</em> <strong>58</strong>, 679–693 (1989).</p>
+</div>
+<div id="ref-Beitel-1990">
+<p>3. Beitel, G. J., Clark, S. G. &amp; Horvitz, H. R. Caenorhabditis elegans ras gene let-60 acts as a switch in the pathway of vulval induction. <em>Nature</em> <strong>348</strong>, 503–509 (1990).</p>
+</div>
+<div id="ref-Thomas-1990">
+<p>4. Thomas, J. H., Stern, M. J. &amp; Horvitz, H. R. Cell interactions coordinate the development of the c. Elegans egg-laying system. <em>Cell</em> <strong>62</strong>, 1041–1052 (1990).</p>
+</div>
+<div id="ref-Sternberg-1998">
+<p>5. Sternberg, P. W. &amp; Han, M. Genetics of ras signaling in c. Elegans. <em>Trends Genet</em> <strong>14</strong>, 466–472 (1998).</p>
+</div>
+<div id="ref-Kornfeld-1997">
+<p>6. Kornfeld, K. Vulval development in caenorhabditis elegans. <em>Trends Genet</em> <strong>13</strong>, 55–61 (1997).</p>
+</div>
+<div id="ref-Sundaram-2004">
+<p>7. Sundaram, M. V. Vulval development: The battle between ras and notch. <em>Current Biology</em> <strong>14</strong>, R311–R313 (2004).</p>
+</div>
+<div id="ref-Yoo-2004">
+<p>8. Yoo, A., Bais, C. &amp; Greenwald, I. Crosstalk between the egfr and lin-12/notch pathways in c. Elegans vulval development. <em>Science</em> <strong>303</strong>, 663–666 (2004).</p>
+</div>
+<div id="ref-Schmid-2015">
+<p>9. Schmid, T. &amp; Hajnal, A. Signal transduction during c. Elegans vulval development: A neverending story. <em>Current Opinion in Genetics &amp; Development</em> <strong>32</strong>, 1–9 (2015).</p>
+</div>
+<div id="ref-Gauthier-2017">
+<p>10. Gauthier, K. &amp; Rocheleau, C. E. C. Elegans vulva induction: An in vivo model to study epidermal growth factor receptor signaling and trafficking. in <em>ErbB receptor signaling: Methods and protocols</em> (ed. Wang, Z.) vol. 1652 43–61 (Humana Press, 2017).</p>
+</div>
+<div id="ref-Clark-1992">
+<p>11. Clark, S., Stern, M. &amp; Horvritz, H. C. Elegans cell-signalling gene sem-5 encodes a protein with sh2 and sh3 domains. <em>Nature</em> <strong>356</strong>, 340–344 (1992).</p>
+</div>
+<div id="ref-Chang-2000">
+<p>12. Chang, C., Hopper, N. &amp; Sternberg, P. Caenorhabditis elegans sos-1 is necessary for multiple ras-mediated developmental signals. <em>EMBO Journal</em> <strong>19</strong>, 3283–3294 (2000).</p>
+</div>
+<div id="ref-Han-1993">
+<p>13. Han, M., Golden, A., Han, Y. &amp; Sternberg, P. C. Elegans lin-45 raf gene participates in let-60 ras-stimulated vulval differentiation. <em>Nature</em> <strong>363</strong>, 133–140 (1993).</p>
+</div>
+<div id="ref-Kornfeld-1995">
+<p>14. Kornfeld, K., Guan, K. L. &amp; Horvitz, H. R. The caenorhabditis elegans gene mek-2 is required for vulval induction and encodes a protein similar to the protein kinase mek. <em>Genes Dev</em> <strong>9</strong>, 756–768 (1995).</p>
+</div>
+<div id="ref-Lackner-1994">
+<p>15. Lackner, M. R., Kornfeld, K., Miller, L. M., Horvitz, H. R. &amp; Kim, S. K. A map kinase homolog, mpk-1, is involved in ras-mediated induction of vulval cell fates in caenorhabditis elegans. <em>Genes Dev</em> <strong>8</strong>, 160–173 (1994).</p>
+</div>
+<div id="ref-Leight-2005">
+<p>16. Leight, E. R., Glossip, D. &amp; Kornfeld, K. Sumoylation of lin-1 promotes transcriptional repression and inhibition of vulval cell fates. <em>Development</em> <strong>132</strong>, 1047–1056 (2005).</p>
+</div>
+<div id="ref-Hopper-2000">
+<p>17. Hopper, N. A., Lee, J. &amp; Sternberg, P. W. ARK-1 inhibits EGFR signaling in <em>C. elegans</em>. <em>Molecular Cell</em> <strong>6</strong>, 65–75 (2000).</p>
+</div>
+<div id="ref-Berset-2005">
+<p>18. Berset, T. A., Hoier, E. F. &amp; Hajnal, A. The c. Elegans homolog of the mammalian tumor suppressor dep-1/scc1 inhibits egfr signaling to regulate binary cell fate decisions. <em>Genes Dev</em> <strong>19</strong>, 1328–1340 (2005).</p>
+</div>
+<div id="ref-Alberts-2014">
+<p>19. Alberts, B. <em>et al.</em> <em>Molecular biology of the cell</em>. (Garland Science, 2014).</p>
+</div>
+<div id="ref-Sternberg-2005">
+<p>20. Sternberg, P. W. Vulval development. in <em>WormBook</em> (ed. Research Community, T. C. elegans) (WormBook, 2005). doi:<a href="https://doi.org/doi/10.1895/wormbook.1.6.1">doi/10.1895/wormbook.1.6.1</a>.</p>
+</div>
+<div id="ref-Stein-1999">
+<p>21. Stein, L. D. Internet access to the c. Elegans genome. <em>Trends in Genetics</em> <strong>15</strong>, 425–427 (1999).</p>
+</div>
+<div id="ref-Fire-1998">
+<p>22. Fire, A. <em>et al.</em> Potent and specific genetic interference by double-stranded rna in caenorhabditis elegans. <em>Nature</em> <strong>391</strong>, 806–811 (1998).</p>
+</div>
+<div id="ref-Zon-2015">
+<p>23. Zon, J. S. van, Kienle, S., Huelsz-Prince, G., Barkoulas, M. &amp; Oudenaarden, A. van. Cells change their sensitivity to an egf morphogen gradient to control egf-induced gene expression. <em>Nature Communications</em> <strong>6</strong>, 7053 (2015).</p>
+</div>
+<div id="ref-Kaech-1998">
+<p>24. Kaech, S. M., Whitfield, C. W. &amp; Kim, S. K. The lin-2/lin-7/lin-10 complex mediates basolateral membrane localization of the c. Elegans egf receptor let-23 in vulval epithelial cells. <em>Cell</em> <strong>94</strong>, 761–771 (1998).</p>
+</div>
+<div id="ref-Haag-2014">
+<p>25. Haag, P. A. B., Andrea AND Gutierrez. An in vivo egf receptor localization screen in c. Elegans identifies the ezrin homolog erm-1 as a temporal regulator of signaling. <em>PLOS Genetics</em> <strong>10</strong>, 1–13 (2014).</p>
+</div>
+<div id="ref-Gilbert-2016">
+<p>26. Gilbert, S. F. &amp; Barresi, M. J. F. <em>Developmental biology</em>. (Sinauer Associates, 2016).</p>
+</div>
+<div id="ref-Slack-2018">
+<p>27. Slack, J. M. W. <em>Essential developmental biology</em>. (WIley-Blackwell, 2018).</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In this essay, the names of the actual <em>C. elegans</em> proteins and their (more commonly known) vertebrate/<em>Drosophila</em> homologues are used interchangeably. Here is a translation between them: (<em>Drosophila</em>: <em>C. elegans</em>) EGF: LIN-3; EGFR: LET-23; Grb2: SEM-5; Ras: LET-60; Raf: LIN-45; MEK: MEK-2; MAPK/Erk: MPK-1; Notch: LIN-12; Frizzled and Ryk (WNT-receptors): LIN-17 and LIN-18. <em>C. elegans</em> protein naming follows the <a href="https://wormbase.org//about/userguide/nomenclature#634c2j7f9gi1e05kabmlh8d--10">WormBase convention</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

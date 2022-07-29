@@ -1,0 +1,67 @@
+---
+title: FASTA Parser Implemented in Rust with Nom
+author: Tianyi Shi
+date: '2020-08-23'
+slug: fasta-parser-implemented-in-rust-with-nom
+categories:
+  - bioinformatics
+tags:
+  - parser
+  - fasta
+  - nom
+  - Rust
+term: 3-Michaelmas
+week: -5
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: ~
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+Nom makes it possible to 
+
+# Parsing a single FASTA Record
+
+An example of FASTA record is shown below.
+
+```
+>gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA
+CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG
+AATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG
+CCGCCTCGGGAGCGTCCATGGCGGGTT
+
+>(another FASTA record)
+```
+
+Each record starts with a `>` character, which is followed by the title on the same line. The title can be further divided into an ID and description, which is separated by a space character. In this case, the ID is 'gi|2765658|emb|Z78533.1|CIZ78533' and the description is 'C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA'.
+
+The sequence starts from the second line. There can be line breaks within the sequence.
+
+## Representing the Record in Rust
+
+When we parse data, we *parse it into something that is meaningful in that language*. In Rust, users can define custom `struct` and `enum` data structures, and in this case, a C-like `struct` is the most appropriate.
+
+To make it simple, we define one two fields, `title` and `seq`:
+
+```{rust eval=FALSE}
+#[derive(Debug)]
+struct Record {
+  title: String,
+  seq: String
+}
+```
+
+## Parsing the Title
+
+To make it

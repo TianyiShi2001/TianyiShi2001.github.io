@@ -1,0 +1,52 @@
+---
+title: Isoelectric Point Calculation
+author: Tianyi Shi
+date: '2020-02-07'
+slug: isoelectric-point-calculation
+categories:
+  - bioinformatics
+tags:
+  - javascript
+  - python
+term: 1-Hilary
+week: 4
+tutor: ~
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+By rearranging the Henderson-Hasselbalch equation:
+
+$$
+\text{pH}=\text{pK}_\text{a} + \log\left(\dfrac{\text{[A}^{-}\text{]}}{\text{[HA]}}\right)
+$$
+
+we can get the ratio between an acid and its conjugate base:
+
+$$
+\frac{\text{[HA]}}{\text{[A}^{-}\text{]}}=10^{(\text{pK}_\text{a}-\text{pH})}
+$$
+
+and between an base and its conjugate acid:
+
+$$
+\frac{\text{[B]}}{\text{[BH}^+\text{]}} = 10^{(\text{pH}-\text{pK}_\text{a})}
+$$
+
+Thus, the proportion of deprotonated acid is calculated as follows:
+
+$$
+\dfrac{\text{[A}^{-}\text{]}}{\text{[A]}_\text{total}}=\dfrac{\text{[A}^{-}\text{]}}{\text{[HA]}+\text{[A}^{-}\text{]}}=\dfrac{1}{1+\frac{\text{[HA]}}{\text{[A}^{-}\text{]}}}=\dfrac{1}{1+10^{(\text{pK}_\text{a}-\text{pH})}}
+$$
+
+Similarly, for basic species:
+
+$$
+\dfrac{\text{[BH}^+\text{]}}{\text{[B]}_\text{total}}=\dfrac{\text{[BH}^+\text{]}}{\text{[B]}+\text{[BH}^+\text{]}}=\dfrac{1}{1+\frac{\text{[B]}}{\text{[BH}^+\text{]}}}=\dfrac{1}{1+10^{(\text{pH}-\text{pK}_\text{a})}}
+$$
+
+
+
+http://fields.scripps.edu/DTASelect/20010710-pI-Algorithm.pdf

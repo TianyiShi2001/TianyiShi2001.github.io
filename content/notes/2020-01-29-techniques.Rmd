@@ -1,0 +1,59 @@
+---
+title: Techniques
+author: Tianyi Shi
+date: '2020-01-29'
+slug: techniques
+categories:
+  - lab
+  - general
+tags:
+  - data handling
+  - data analysis
+  - biophysical techniques
+  - molecular graphics
+term: 1-Hilary
+week: 2
+tutor: ~
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+# Protein Structure
+
+## Homology Modelling
+
+### Swiss Model
+
+##### Model Evaluation
+
+- GMQE (global model quality estimation)
+  - 0-1, higher better
+  - combines properties from the target-alignment and the template search method
+  - replecting the expected accuracy of a model built with that alignment and the template and the coverage of the target
+  - computed before modelling and after modelling. The latter also takes into account the QMEAN
+- QMEAN
+  - QMEAN z score: around 0: ideal; < -4.0: low quality
+  - QMEAN is a composite estimator based on different **geometrical properties** and provides both global and local absolute quality estimates on the basis of *one single model*
+  - the QMEAN z-score provides an estimate of the 'degree of nativeness' of the structural features observed in the model on a global scale. It indicates whether the QMEAN score of the model is comparable to what one expect from experimental structures of similar size
+  - 4 terms of the global QMEAN quality score:
+    - the interaction potential between Cβ atoms only
+    - and between all atoms
+    - solvation potential
+    - torsion angle potential
+  - the accuracy of local QMEAN scores is enhanced by QMEANDisCo
+    - below 0.6: low quality 
+    - if downloaded, local score is reported in the B-factor column of the PDB file
+    - can be visualised by choosing the colour scheme 'QMEAN'
+    - QMEANDisco assesses the consistency of observed interatomic distances in the model with ensemble information extracted from experimentally determined protein structures that are homologous to the target sequence. The 'local quality' plot shows, for each residue of the model (x-axis), the expected similarity to the native structure (y-axis)
+    - in the 'comparison' plot, model quality scores are related to scores obtained for experimental structures of similar size. The x-axis shows protein length and the y-axis shows the normalized QMEAN score. Every dot represents an experimentally determined structure. The mean and standard deviation of the experimental structures around the x-location of the star (the model) are the basis to calculate the QMEAN z-score of the model.
+
+
+
+
+
+
+
+
+

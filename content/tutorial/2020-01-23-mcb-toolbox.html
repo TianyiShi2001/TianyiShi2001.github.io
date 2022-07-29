@@ -1,0 +1,185 @@
+---
+title: MCB Toolbox
+author: Tianyi Shi
+date: '2020-01-23'
+slug: mcb-toolbox
+categories:
+  - MCB
+tags:
+  - MCB
+  - toolbox
+term: 1-Hilary
+week: 2
+tutor: Lynne Cox
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+
+
+<p>For the second tutorial, I want you to try some proper molecular biology using online tools, just as we do every day in the lab. Try it out on your own first, though you may wish to discuss any issues you may be having with each other. Please bring files/printouts and if you have one, your laptop to the tutorial. You will find NCBI BLAST useful and various links within www.expasy.org (e.g. In proteomics section, Clustal, T-coffee, Translate, prot param etc). You may also like to download ApE or Snapgene viewer from the web but make sure you scan with e.g. Sophos before you open them. You can do full in silico cloning in ApE (but only in the expensive paid-for version of Snapgene) but Snapgene (even free viewer) offers much better visualization so you may want to use both but for different features. For structural productions, Swissprot is convenient, then for mutagenesis, move to Pymol or equivalent.</p>
+<pre><code>Mystery gene (lower case = non-coding, upper case = coding)
+
+GTATTTTGCGTCCATTTCGATCAAAAGACTATTTCTCATTTCCTCCCACGATTTTAGATAATAATATTATCTTATGTCATGCACAGATGATAAGTGATGATGACGATCTACCATCTACTCGCCCGGGATCTGTGAATGAGGAATTACCAGAAACCGAACCCGAAGATAATGATGAGTTGCCTGAAACAGAACCTGAAAGCGATTCCGATAAACCTACCGTAACCTCGAATAAAACAGAAAACCAAGTTGCTGATGAAGATTATGATTCATTCGACGATTTTGTGCCCAGTCAAACACACACAGCCTCCAAAATACCTGTAAAAAATAAACGAGCCAAAAAGTGCACTGTAGAATCTGATTCATCATCTTCGGATGATTCCGATCAAGGAGATGATTGTGAATTTATCCCAGCTTGTGATGAGACACAGGAAGTTCCGAAAATCAAAAGAGGATACACTCTGAGAACTCGAGCAAGTGTAAAGAACAAATGTGATGATTCATGGGATGATGGAATAGACGAAGAAGATGTCTCAAAAAGATCAGAAGACACGTTAAATGATTCATTTGTTGATCCTGAATTCATGGATTCTGTTCTAGATAATCAATTAACGATCAAAGGCAAAAAGCAATTTCTCGATGATGGAGAGTTTTTCACAGACCGGAATGTTCCTCAGATTGATGAAGCTACAAAAATGAAGTGGGCATCAATGACGTCACCTCCTCAAGAAGCTTTGAACGCATTGAACGAATTCTTCGGTCATAAAGGATTCCGAGAAAAGCAGTGGGATGTTGTCAGAAATGTTTTGGGAGGAAAAGACCAATTTGTTCTTATGTCCACTGGTTATGGTAAAAGTGTATGTTATCAGCTACCATCACTTCTTCTCAATTCGATGACTGTCGTGGTATCTCCATTAATTTCATTGATGAATGATCAAGTAACTACATTGGTTTCTAAAGGTATTGATGCAGTGAAACTAGATGGACATTCTACACAAATTGAATGGGATCAAGTTGCGAATAATATGCACCGAATTAGGTTCATCTACATGTCACCTGAAATGGTTACGAGCCAAAAGGGTTTGGAATTATTAACTTCTTGCCGAAAACATATCTCCCTCCTCGCTATTGATGAAGCTCATTGTGTTTCTCAATGGGGACACGACTTTCGAAACTCGTACAGGCATCTCGCAGAAATTAGAAACCGATCTGATCTATGCAATATTCCAATGATTGCTCTTACCGCTACTGCCACAGTTAGAGTTCGTGATGACGTCATTGCTAATTTAAGACTCCGCAAGCCATTAATCACAACTACGTCGTTTGATAGAAAGAATCTCTACATTTCTGTGCATTCTTCAAAGGACATGGCTGAAGATTTAGGATTATTCATGAAAACCGATGAAGTTAAAGGAAGACACTTTGGTGGACCTACTATTATTTATTGCCAAACGAAACAAATGGTCGATGATGTGAACTGTGTTTTGAGAAGAATCGGAGTTCGTTCTGCTCATTATCACGCAGGACTCACTAAAAATCAACGAGAAAAAGCACACACCGATTTTATGAGAGATAAGATTACAACAATCGTTGCGACAGTTGCATTTGGTATGGGAATTGACAAACCCGACGTTCGAAATGTGATTCATTACGGATGCCCGAACAATATCGAATCATATTATCAAGAAATCGGAAGAGCTGGTCGAGATGGATCTCCAAGTATTTGTCGTGTATTCTGGGCTCCGAAAGATTTGAATACTATAAAATTTAAACTTCGAAATTCGCAGCAAAAAGAAGAAGTAGTTGAAAATCTTACAATGATGCTAAGACAACTCGAGTTGGTTCTGACAACCGTTGGATGTAGAAGATACCAACTTCTGAAGCACTTTGACCCATCATACGCGAAACCTCCAACTATGCAAGCTGATTGTTGTGATAGATGTACTGAAATGCTCAATGGAAATCAAGATTCATCATCCAGTATTGTTGATGTTACAACAGAATCGAAGTGGTTGTTTCAAGTTATTAACGAAATGTACAACGGGAAAACTGGTATCGGAAAACCAATCGAATTTCTGAGGGGATCGAGTAAAGAAGACTGGCGAATCAAGACCACATCTCAACAAAAATTGTTTGGAATTGGAAAACATATTCCTGATAAATGGTGGAAAGCACTTGCAGCATCACTTCGAATTGCTGGTTATCTTGGAGAAGTTAGGCTGATGCAAATGAAATTTGGAAGTTGTATCACTTTGTCCGAACTCGGGGAACGATGGCTTTTGACTGGAAAAGAGATGAAAATCGATGCGACACCGATTTTATTGCAAGGGAAGAAAGAAAAAGCCGCACCTTCAACTGTCCCCGGAGCTTCAAGATCTCAGTCAACTAAATCAAGTACAGAGATTCCAACCAAGATTCTCGGAGCGAATAAGATTCGTGAATACGAGCCTGCAAATGAAAACGAGCAGCTGATGAACTTGAAAAAGCAAGAAGTCACTGGTCTTCCAGAGAAGATTGATCAACTGCGCTCTCGTCTTGACGACATTCGTGTAGGAATTGCAAACATGCATGAAGTAGCACCATTCCAAATTGTATCGAATACTGTTCTTGATTGTTTTGCCAACTTGAGACCTACCTCAGCCTCGAATCTCGAAATGATTGATGGAATGTCGGCTCAGCAGAAATCTAGATACGGAAAACGATTTGTCGATTGTGTTGTACAATTTTCAAAGGAAACTGGCATTGCAACAAACGTCAATGCCAACGATATGATACCCCCTGAACTTATTTCAAAAATGCAGAAAGTTCTCTCGGATGCGGTGAGAAGAGTATACACAGAGCATCTTATTTCGAGATCCACTGCGAAAGAAGTGGCAACTGCTCGAGGAATTAGTGAGGGTACTGTATATTCATATCTCGCGATGGCGGTAGAAAAAGGATTACCTCTTCACTTAGACAAGTTAAATGTCTCCAGAAAGAATATTGCAATGGCTCTAAATGCAGTTAGAGTACATTTAGGATCAAATGTTGCCGTACTGACACCATGGGTTGAAGCTATGGGAGTCGTACCTGATTTTAATCAGTTGAAATTGATCCGGGCAATTCTTATTTACGAATATGGATTGGATACGAGTGAGAACCAAGAGAAGCCAGACATCCAATCTATGCCGTCCACTTCAAATCCATCCACCATCAAAACAGTTCCATCAACACCTTCATCCTCTCTCAGAGCTCCTCCATTGAAGAAATTCAAACTTTAAATTTCTTATATTTTTTTTAATCTGAATATCATAACTATACGGTCTCTTATTTTCAATCTCATCCCTGTCTATATGAATGCTGGTTATTCGATTTTCACTTATGAATTTTTAAAAACACTT</code></pre>
+<pre><code>pIVEX2.3d Vector Sequence
+
+TCGCGCGTTTCGGTGATGACGGTGAAAACCTCTGACACATGCAGCTCCCGGAGACGGTCACAGCTTGTCTGTAAGCGGATGCCGGGAGCAGACAAGCCCGTCAGGGCGCGTCAGCGGGTGTTGGCGGGTGTCGGGGCTGGCTTAACTATGCGGCATCAGAGCAGATTGTACTGAGAGTGCACCATATATGCGGTGTGAAATACCGCACAGATGCGTAAGGAGAAAATACCGCATCAGGCGCCATTCGCCATTCAGGCTGCGCAACTGTTGGGAAGGGCGATCGGTGCGGGCCTCTTCGCTATTACGCCAGCTGGCGAAAGGGGGATGTGCTGCAAGGCGATTAAGTTGGGTAACGCCAGGGTTTTCCCAGTCACGACGTTGTAAAACGACGGCCAGTGCCAAGCTTGCATGCAAGGAGATGGCGCCCAACAGTCCCCCGGCCACGGGGCCTGCCACCATACCCACGCCGAAACAAGCGCTCATGAGCCCGAAGTGGCGAGCCCGATCTTCCCCATCGGTGATGTCGGCGATATAGGCGCCAGCAACCGCACCTGTGGCGCCGGTGATGCCGGCCACGATGCGTCCGGCGTAGAGGATCGAGATCTCGATCCCGCGAAATTAATACGACTCACTATAGGGAGACCACAACGGTTTCCCTCTAGAAATAATTTTGTTTAACTTTAAGAAGGAGATATACCATGGCACATATGAGCGGCCGCGTCGACTCGAGCGAGCTCCCGGGGGGGGTTCTCATCATCATCATCATCATTAATAAAAGGGCGAATTCCAGCACACTGGCGGCCGTTACTAGTGGATCCGGCTGCTAACAAAGCCCGAAAGGAAGCTGAGTTGGCTGCTGCCACCGCTGAGCAATAACTAGCATAACCCCTTGGGGCCTCTAAACGGGTCTTGAGGGGTTTTTTGCTGAAAGGAGGAACTATATCCGGATATCCACAGGACGGGTGTGGTCGCCATGATCGCGTAGTCGATAGTGGCTCCAAGTAGCGAAGCGAGCAGGACTGGGCGGCGGCCAAAGCGGTCGGACAGTGCTCCGAGAACGGGTGCGCATAGAAATTGCATCAACGCATATAGCGCTAGCAGCACGCCATAGTGACTGGCGATGCTGTCGGAATGGACGATATCCCGCAAGAGGCCCGGCAGTACCGGCATAACCAAGCCTATGCCTACAGCATCCAGGGTGACGGTGCCGAGGATGACGATGAGCGCATTGTTAGATTTCATACACGGTGCCTGACTGCGTTAGCAATTTAACTGTGATAAACTACCGCATTAAAGCTTATCGATGATAAGCTGTCAAACATGAGAATTCGTAATCATGTCATAGCTGTTTCCTGTGTGAAATTGTTATCCGCTCACAATTCCACACAACATACGAGCCGGAAGCATAAAGTGTAAAGCCTGGGGTGCCTAATGAGTGAGCTAACTCACATTAATTGCGTTGCGCTCACTGCCCGCTTTCCAGTCGGGAAACCTGTCGTGCCAGCTGCATTAATGAATCGGCCAACGCGCGGGGAGAGGCGGTTTGCGTATTGGGCGCTCTTCCGCTTCCTCGCTCACTGACTCGCTGCGCTCGGTCGTTCGGCTGCGGCGAGCGGTATCAGCTCACTCAAAGGCGGTAATACGGTTATCCACAGAATCAGGGGATAACGCAGGAAAGAACATGTGAGCAAAAGGCCAGCAAAAGGCCAGGAACCGTAAAAAGGCCGCGTTGCTGGCGTTTTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGTCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTAGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCACTGGTAACAGGATTAGCAGAGCGAGGTATGTAGGCGGTGCTACAGAGTTCTTGAAGTGGTGGCCTAACTACGGCTACACTAGAAGGACAGTATTTGGTATCTGCGCTCTGCTGAAGCCAGTTACCTTCGGAAAAAGAGTTGGTAGCTCTTGATCCGGCAAACAAACCACCGCTGGTAGCGGTGGTTTTTTTGTTTGCAAGCAGCAGATTACGCGCAGAAAAAAAGGATCTCAAGAAGATCCTTTGATCTTTTCTACGGGGTCTGACGCTCAGTGGAACGAAAACTCACGTTAAGGGATTTTGGTCATGAGATTATCAAAAAGGATCTTCACCTAGATCCTTTTAAATTAAAAATGAAGTTTTAAATCAATCTAAAGTATATATGAGTAAACTTGGTCTGACAGTTACCAATGCTTAATCAGTGAGGCACCTATCTCAGCGATCTGTCTATTTCGTTCATCCATAGTTGCCTGACTCCCCGTCGTGTAGATAACTACGATACGGGAGGGCTTACCATCTGGCCCCAGTGCTGCAATGATACCGCGAGACCCACGCTCACCGGCTCCAGATTTATCAGCAATAAACCAGCCAGCCGGAAGGGCCGAGCGCAGAAGTGGTCCTGCAACTTTATCCGCCTCCATCCAGTCTATTAATTGTTGCCGGGAAGCTAGAGTAAGTAGTTCGCCAGTTAATAGTTTGCGCAACGTTGTTGCCATTGCTACAGGCATCGTGGTGTCACGCTCGTCGTTTGGTATGGCTTCATTCAGCTCCGGTTCCCAACGATCAAGGCGAGTTACATGATCCCCCATGTTGTGCAAAAAAGCGGTTAGCTCCTTCGGTCCTCCGATCGTTGTCAGAAGTAAGTTGGCCGCAGTGTTATCACTCATGGTTATGGCAGCACTGCATAATTCTCTTACTGTCATGCCATCCGTAAGATGCTTTTCTGTGACTGGTGAGTACTCAACCAAGTCATTCTGAGAATAGTGTATGCGGCGACCGAGTTGCTCTTGCCCGGCGTCAATACGGGATAATACCGCGCCACATAGCAGAACTTTAAAAGTGCTCATCATTGGAAAACGTTCTTCGGGGCGAAAACTCTCAAGGATCTTACCGCTGTTGAGATCCAGTTCGATGTAACCCACTCGTGCACCCAACTGATCTTCAGCATCTTTTACTTTCACCAGCGTTTCTGGGTGAGCAAAAACAGGAAGGCAAAATGCCGCAAAAAAGGGAATAAGGGCGACACGGAAATGTTGAATACTCATACTCTTCCTTTTTCAATATTATTGAAGCATTTATCAGGGTTATTGTCTCATGAGCGGATACATATTTGAATGTATTTAGAAAAATAAACAAATAGGGGTTCCGCGCACATTTCCCCGAAAAGTGCCACCTGACGTCTAAGAAACCATTATTATCATGACATTAACCTATAAAAATAGGCGTATCACGAGGCCCTTTCGTC</code></pre>
+<ol style="list-style-type: decimal">
+<li>Use the information in the attached DNA file (mystery gene) to identify the encoded protein and the species.
+<ul>
+<li>Caenorhabditis elegans Probable Werner syndrome ATP-dependent helicase homolog 1 (wrn-1) (UniProt accession code: <a href="https://www.uniprot.org/uniprot/Q19546">Q19546</a>)</li>
+</ul></li>
+<li>Draw a schematic diagram of the protein, noting the number of amino acids, predicted Mw and pI of the encoded protein, and annotate on functional domains (e.g. in ppt).
+<ul>
+<li>1056 amino acids; MW = 118522.73 Da (average mass)/118447.63 Da (monoisotopic mass); pI = 6.08 (predicted using ExPASy <a href="https://web.expasy.org/compute_pi/">‘Compute pI/Mw tool’</a>)</li>
+<li><a href="https://swissmodel.expasy.org/repository/uniprot/Q19546">Automated homology modelling in the SWISS-MODEL Repository</a> uses 1oyy.1.A, 4cdg.1.A and 4cgz.1.A as templates to obtain models with global QMEANs of -3.35, -3.57 and -4.19, respectively</li>
+<li>Manual (interactive) modelling using 4q47.1.A (DrRecQ catalytic core (Dr = <em>Deinococcus radiodurans</em>)) achieved a better QMEAN of -3.09. The structure is shown in Fig. <a href="#fig:wrn-model">1</a> (highlighting functional domains) and in Fig. <a href="#fig:wrn-b-factor">2</a> (showing local quality (QMEAN) scores). The annotations on functional domains are based on <span class="citation">Chen et al. (2014)</span>.</li>
+<li>Update on 2 Feb: yet a higher QEMAN of -2.90 is achieved with 2wwy.1. 2wwy.1 is the structure of human RECQ-like helicase in complex with DNA substrate<span class="citation">(Pike et al. 2015)</span>. The homology model based on this is shown in Fig. <a href="#fig:recq-in-action">3</a>, and the PyMOL Session (<code>.pse</code>) file can be downloaded <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/model/tianyi-wrn.pse">here</a>.</li>
+<li>As shown in Fig. <a href="#fig:wrn-org-cox">4</a>, WRN is unique in the family of RecQ helicases in possessing an 3’-to-5’ exonuclease domain<span class="citation">(Cox and Mason 2013)</span>. In <em>C. elegans</em>, the exonuclease and the helicase are encoded in separate genes. The two experimental structures used for modelling (4q47.1.A (DrRecQ) and 2wwy.1 (human RECQ1)) and the query <em>C. elegans</em> wrn homolog all represent only the helicase domain and the RQC (WH) domain.</li>
+</ul></li>
+</ol>
+<div class="figure"><span id="fig:wrn-model"></span>
+<img src="../img/wrn-model.png" alt="A homology model of *C. elegans* wrn-1 based on DrRecQ catalytic core (PDB accession code: 4Q47). The N-terminal part contains the common core structure of the RecQ helicase family, which comprises two RecA-like domains, D1 and D2, each composed of a central β-sheet surrounded by α-helices. The conserved sequence motifs at the interface of D1 and D2 are responsible for ATP binding and hydrolysis. The following Zn-binding domain stabilizes the protein structure. The C-terminus consists of a WH domain (a.k.a RQC domain), which directly participates in DNA binding and base pair separation. [@Chen-2014]" width="100%" />
+<p class="caption">
+Figure 1: A homology model of <em>C. elegans</em> wrn-1 based on DrRecQ catalytic core (PDB accession code: 4Q47). The N-terminal part contains the common core structure of the RecQ helicase family, which comprises two RecA-like domains, D1 and D2, each composed of a central β-sheet surrounded by α-helices. The conserved sequence motifs at the interface of D1 and D2 are responsible for ATP binding and hydrolysis. The following Zn-binding domain stabilizes the protein structure. The C-terminus consists of a WH domain (a.k.a RQC domain), which directly participates in DNA binding and base pair separation. <span class="citation">(Chen et al. 2014)</span>
+</p>
+</div>
+<div class="figure"><span id="fig:wrn-b-factor"></span>
+<img src="../img/wrn-b-factor.png" alt="The same homology model, showing local QMEAN scores (b-factor). Compared to green and thin regions, red and thick regions have local geometrical properties deviating further from those of experimentally determined structures. The Zn-binding domain and WH domain are more consistent with experimental structures than the two RecA-like domains." width="100%" />
+<p class="caption">
+Figure 2: The same homology model, showing local QMEAN scores (b-factor). Compared to green and thin regions, red and thick regions have local geometrical properties deviating further from those of experimentally determined structures. The Zn-binding domain and WH domain are more consistent with experimental structures than the two RecA-like domains.
+</p>
+</div>
+<div class="figure"><span id="fig:recq-in-action"></span>
+<img src="../img/recq-in-action.png" alt="WRN catalytic core (RECQ) in action. This structure is based on the structure of a dimer of human RECQ1 helicase in complex with tailed duplux DNA solved by @Pike-2015. The monomer on the bottom shows the b-factor (local QMEAN) of the homology model with C. elegans wrn-1, where red indicates high and green indicates low scores. The monomer on the top shows the subunits of WRN catalytic core (RECQ), where D1, D2, Zn-binding, and WH (RQC) domains are coloured blue, red, yellow and green, respectively, similar to Fig. 1. DNA is coloured cyan. Ligands (2 zinc ions, 3 sulfate ions and 2 ethanediol molecules) are not removed. " width="100%" />
+<p class="caption">
+Figure 3: WRN catalytic core (RECQ) in action. This structure is based on the structure of a dimer of human RECQ1 helicase in complex with tailed duplux DNA solved by <span class="citation">Pike et al. (2015)</span>. The monomer on the bottom shows the b-factor (local QMEAN) of the homology model with C. elegans wrn-1, where red indicates high and green indicates low scores. The monomer on the top shows the subunits of WRN catalytic core (RECQ), where D1, D2, Zn-binding, and WH (RQC) domains are coloured blue, red, yellow and green, respectively, similar to Fig. 1. DNA is coloured cyan. Ligands (2 zinc ions, 3 sulfate ions and 2 ethanediol molecules) are not removed.
+</p>
+</div>
+<div class="figure"><span id="fig:wrn-org-cox"></span>
+<img src="../img/wrn-org-cox.png" alt="Domain organisation of human WRN and its homologs in *D. melanogaster* and *C. elegans*. Adapted from @Cox-2013." width="100%" />
+<p class="caption">
+Figure 4: Domain organisation of human WRN and its homologs in <em>D. melanogaster</em> and <em>C. elegans</em>. Adapted from <span class="citation">Cox and Mason (2013)</span>.
+</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Find homologues in human, Xenopus and mice and give the protein names (Uniprot should help)
+<ul>
+<li>Use <a href="https://www.uniprot.org/blast/">UniProt BLAST</a></li>
+<li>Query: Q19546 (UniProt ID)</li>
+<li>Relevant Results:
+<ul>
+<li>Werner syndrome ATP-dependent helicase (Homo sapiens) (<a href="https://www.uniprot.org/uniprot/Q14191">Q14191</a>; WRN_HUMAN)</li>
+<li>Werner syndrome ATP-dependent helicase homolog (Mus musculus (<a href="https://www.uniprot.org/uniprot/O09053">O09053</a>; WRN_MOUSE)</li>
+<li>Werner syndrome ATP-dependent helicase homolog (Xenopus laevis) (<a href="https://www.uniprot.org/uniprot/O93530">O93530</a>; WRN_XENLA)</li>
+</ul></li>
+</ul></li>
+<li>Show homology between your mystery protein and the human, mouse and frog homologues.
+<ul>
+<li>Sequences aligned using UniProt alignment tool (accessible via the BLAST result page)</li>
+<li>results displayed using SnapGene Viewer (<a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/clustal.pdf">view PDF</a>)</li>
+<li>UniProt uses the ‘clustalo’ program (MSA algorithm) to align</li>
+<li>I also used the ‘muscle’ program (MUltiple Sequence Comparison by Log-Expectation) in the command line to produce a different result, and standardised its output using BioPython for visualisation in SnapGene (<a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/muscle.pdf">view PDF</a>)</li>
+</ul>
+<pre class="bash"><code>$ cat ce.fasta hs.fasta mm.fasta xl.fasta | muscle -out muscle.fasta</code></pre>
+<pre class="python"><code>from Bio import AlignIO
+muscle = AlignIO.read(&#39;resources/wrn/muscle.fasta&#39;, &#39;fasta&#39;)
+AlignIO.write(muscle, &#39;muscle.aln&#39;, &#39;clustal&#39;)</code></pre>
+<p>With help of the <code>seqin</code> R package, the pairwise genetic differences between these 4 protein sequences can be calculated:</p>
+<pre class="r"><code>aln &lt;- seqinr::read.alignment(&#39;./resources/wrn/clustal.aln&#39;, &#39;clustal&#39;)
+alnDist &lt;- seqinr::dist.alignment(aln)
+alnDist</code></pre>
+<pre><code>##                     SP|Q19546|WRN_CAEEL SP|Q14191|WRN_HUMAN SP|O09053|WRN_MOUSE
+## SP|Q14191|WRN_HUMAN           0.5710006                                        
+## SP|O09053|WRN_MOUSE           0.5782777           0.3408993                    
+## SP|O93530|WRN_XENLA           0.5903942           0.4396192           0.4499939</code></pre>
+<p>These can be visulised by a phylogenetic tree produced by the <code>ape</code> package, as shown in Fig. <a href="#fig:phylo">5</a>.</p>
+<pre class="r"><code>mydist &lt;- seqinr::dist.alignment(aln)
+mytree &lt;- ape::nj(mydist)
+myrootedtree &lt;- root(mytree, &#39;SP|Q19546|WRN_CAEEL&#39;, resolve.root=TRUE)
+ape::plot.phylo(myrootedtree, type=&quot;p&quot;)</code></pre>
+<div class="figure"><span id="fig:phylo"></span>
+<img src="/tutorial/2020-01-23-mcb-toolbox_files/figure-html/phylo-1.png" alt="The phylogenetic relationship between the WRN homologs in 4 organisms" width="100%" />
+<p class="caption">
+Figure 5: The phylogenetic relationship between the WRN homologs in 4 organisms
+</p>
+</div></li>
+<li>Design PCR primers to amplify the coding region, incorporating suitable restriction enzyme sites in each primer so that you can clone easily into the vector pIVEX2.3d (though there are many online primer design sites, I find this is best done manually to get a feel for it, but these days I use SnapGene (viewer version is free….). Hint: we want to keep the start codon ATG so chose an enzyme that contains ATG in its recognition site for the forward primer.
+<ul>
+<li>I opened the <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/in-silico-cloning/original.dna">original sequence</a> with SnapGene. In the ‘Sequence’ view, I displayed translated amino acids with ‘Frame +1 only’ and thus located the stop codon (the start codon is obviously +1)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Then I used the ‘Enzymes’ view to obtain a list of noncutters. By comparing this list with the MCS of the <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/in-silico-cloning/vector.dna">piVEX2.3d</a>, I selected <em>Nde</em>I and <em>Sal</em>I as the RE sites to be used<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. The <em>Sal</em>I site is not in frame with the C-terminal His tag and stop codon, so I included an additional random nucleotide 3’ to the RE site. The stop codon is excluded from the reverse primer because it is provided in the vector.</li>
+<li>forward: <code>NN CAT ATGATAAGTGATGATGACGATCTACC</code>
+<ul>
+<li><code>CATATG</code> is <em>Nde</em>I restriction site. It ends with <code>ATG</code>, so adding <code>CAT</code> instead of <code>CATATG</code> to the 5’ suffices.</li>
+<li>31-mer; 39% GC (&gt;40% if <code>NN</code> = <code>GC</code>); 26 annealed bases; T<sub>m</sub> = 56ºC<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+</ul></li>
+<li>reverse: <code>NN GTCGAC N AAGTTTGAATTTCTTCAATGGAGGAGC</code>
+<ul>
+<li><code>GTCGAC</code> is <em>Sal</em>I restriction site</li>
+<li>36-mer; 43% GC; 28 annealed bases; T<sub>m</sub> = 58ºC</li>
+</ul></li>
+<li><em>In silico</em> PCR is done in SnapGene, and the resulting DNA can be downloaded <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/in-silico-cloning/Amplified1.dna">here</a></li>
+</ul></li>
+<li><em>In silico</em> clone this into the vector pIVEX2.3d (file attached - .dna is a snap gene format, docx is of course in word). Why might we want to use this vector?
+<ul>
+<li>This vector has a C-terminal 6-His tag which allows efficient purification by affinity chromatography</li>
+<li>The MCS is associated with the T7 promoter. T7 RNAP is highly processive, so consecutive expression is expected.</li>
+</ul></li>
+<li>Check that your new construct allows correct protein expression in frame with the hexahistidine tag of the vector (SnapGene is good for this, but you can also do it in a few more steps using ApE plus translation apps via Expasy)
+<ul>
+<li>Yes. (<a href="./resources/wrn/in-silico-cloning/Cloned1.dna.pdf">view result as PDF</a> or <a href="./resources/wrn/in-silico-cloning/Cloned1.dna">.dna file</a>)</li>
+<li>Serendipitously, the MCS has an ATG in frame with our insert and the His-tag/STOP codon, so translation will probably start more upstream than we expected, which will add 3 additional amino acid residues to the N-terminus of the product. This ATG was not in frame with the His-tag before insertion, and thus unspotted by SnapGene or me.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></li>
+</ul>
+<div class="figure"><span id="fig:clone-serendipity"></span>
+<img src="../img/clone-serendipity.png" alt="An additional in-frame start codon (red) upstream to the start codon of the insert (blue)." width="100%" />
+<p class="caption">
+Figure 6: An additional in-frame start codon (red) upstream to the start codon of the insert (blue).
+</p>
+</div></li>
+<li>Predict the protein fold of the new protein (eg Swissprot). Show the effect of predicted enzyme active site mutations on the structure (eg new file in swissport, but Pymol is good for this).
+<ul>
+<li>Swiss-Model shown in Q2.</li>
+</ul></li>
+</ol>
+<div id="bonus" class="section level3">
+<h3>Bonus: Tianyi’s Restriction Site Finder</h3>
+<p>See Fig. <a href="#fig:tianyi-re-001-1">7</a> and <a href="#fig:tianyi-re-001-2">8</a>.</p>
+<p>This tool takes in two sequences (plain text or FASTA or SnapGene <code>.dna</code> file), one representing the cloning site and the other representing the GOI, and finds the restriction sites inside the cloning site but not in the GOI, and label them with their positions in the cloning site and their commecial suppliers.</p>
+<p>The web interface is built upon the <a href="https://www.djangoproject.com">Django</a> framework and the data come from the <code>Restriction</code> module of <a href="https://biopython.org">BioPython</a>, which is (sort of) a wrapper around NEB’s <a href="http://rebase.neb.com/rebase/rebase.html">REBASE</a>.</p>
+<div class="figure"><span id="fig:tianyi-re-001-1"></span>
+<img src="../img/tianyi-re-001-1.png" alt="Restriction site finder by Tianyi. Query page." width="100%" />
+<p class="caption">
+Figure 7: Restriction site finder by Tianyi. Query page.
+</p>
+</div>
+<div class="figure"><span id="fig:tianyi-re-001-2"></span>
+<img src="../img/tianyi-re--001-2.png" alt="Restriction site finder by Tianyi. Result page." width="100%" />
+<p class="caption">
+Figure 8: Restriction site finder by Tianyi. Result page.
+</p>
+</div>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-Chen-2014">
+<p>Chen, Sheng-Chia, Chi-Hung Huang, Chia Shin Yang, Tzong-Der Way, Ming-Chung Chang, and Yeh Chen. 2014. “Crystal Structure of Deinococcus Radiodurans Recq Helicase Catalytic Core Domain: The Interdomain Flexibility.” <em>BioMed Research International</em> 2014. Hindawi.</p>
+</div>
+<div id="ref-Cox-2013">
+<p>Cox, Lynne S., and Penelope A. Mason. 2013. “The Role of Wrn Helicase/Exonuclease in Dna Replication.” In <em>The Mechanisms of Dna Replication</em>, edited by David Stuart. Rijeka: IntechOpen. <a href="https://doi.org/10.5772/51520">https://doi.org/10.5772/51520</a>.</p>
+</div>
+<div id="ref-Pike-2015">
+<p>Pike, Ashley C. W., Shivasankari Gomathinayagam, Paolo Swuec, Matteo Berti, Ying Zhang, Christina Schnecke, Francesca Marino, et al. 2015. “Human Recq1 Helicase-Driven Dna Unwinding, Annealing, and Branch Migration: Insights from Dna Complex Structures.” <em>Proceedings of the National Academy of Sciences</em> 112 (14). National Academy of Sciences: 4286–91. <a href="https://doi.org/10.1073/pnas.1417594112">https://doi.org/10.1073/pnas.1417594112</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Why does this sequence start with ATG but not end with a stop codon? Are the additional downstream nucleotides for the convinience of primer design (is it worthwhile to include additional upstream nucleotides)?<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Is there a more automatic way of choosing RE sites? I wish I could select the MCS sequence of the vector and the GOI sequence, and then the intersection between the cutting sites of the former and the noncutting sites of the latter is computed automatically. Is this functionality hidden somewhere in SnapGene, or is it available elsewhere? If not I’ll try to make it! (A prototype is shown in Fig. <a href="#fig:tianyi-re-001-1">7</a> and <a href="#fig:tianyi-re-001-2">8</a>)<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>When calculating %GC and T<sub>m</sub>, do we need to include the 5’ additional bases used for RE cutting/frame adjustment? In SnapGene it seems that these additional bases are included in the calculation of %GC but not T<sub>m</sub>. In practice, isn’t the annealing region the complete length of the primers for most DNA strands after a few rounds of synthesis? Do we need to increase the annealing temperature then?<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>It would be nice if it can highlight all ATGs regardless of the frame. I think additional in-frame ATGs can cause inclusion of unwanted aa residues and addtional out-of-frame ATGs can ruin the expression of GOI, especially in eukaryotes, because their ribosomes start translation at the first encountered ATG. It this correct?<a href="#fnref4" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

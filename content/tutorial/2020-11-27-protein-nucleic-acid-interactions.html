@@ -1,0 +1,176 @@
+---
+title: Protein-Nucleic Acid Interactions
+author: Tianyi Shi
+date: '2020-11-27'
+slug: protein-nucleic-acid-interactions
+categories:
+  - biochemistry
+tags:
+  - protein
+  - protein-dna interaction
+term: 3-Michaelmas
+week: 7
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: |
+  @Calladine-2004
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#an-overview-of-mechanisms-of-protein-dna-interactions"><span class="toc-section-number">2</span> An Overview of Mechanisms of Protein-DNA Interactions</a></li>
+<li><a href="#thermodynamics-of-protein-dna-binding"><span class="toc-section-number">3</span> Thermodynamics of Protein-DNA Binding</a></li>
+<li><a href="#base-readout-in-the-major-groove"><span class="toc-section-number">4</span> Base Readout in the Major Groove</a></li>
+<li><a href="#sr"><span class="toc-section-number">5</span> Shape Readout</a>
+<ul>
+<li><a href="#ele"><span class="toc-section-number">5.1</span> Minor Groove Narrowing</a></li>
+<li><a href="#kinks"><span class="toc-section-number">5.2</span> Kinks</a></li>
+</ul></li>
+<li><a href="#the-nucleosome-as-an-example-of-non-specific-binding"><span class="toc-section-number">6</span> The Nucleosome as an Example of Non-Specific Binding</a></li>
+<li><a href="#question-2"><span class="toc-section-number">7</span> (Question 2)</a>
+<ul>
+<li><a href="#a-bhlh-motif"><span class="toc-section-number">7.1</span> (a) bHLH Motif</a></li>
+<li><a href="#b-leucine-zipper"><span class="toc-section-number">7.2</span> (b) Leucine Zipper</a></li>
+<li><a href="#c-zinc-finger"><span class="toc-section-number">7.3</span> (c) Zinc Finger</a></li>
+<li><a href="#d-tata-box-binding-protein"><span class="toc-section-number">7.4</span> (d) TATA box binding protein</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>Protein-DNA interactions have profound impact on the expression and regulation of genes. Many DNA-binding proteins, especially transcription factors, are able to recognise and bind to a specific short sequence of DNA, while others, typically those involved in routine tasks such as DNA damage repair (e.g. glycosylase) and DNA packaging (e.g. histone) show less specificity.</p>
+</div>
+<div id="an-overview-of-mechanisms-of-protein-dna-interactions" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> An Overview of Mechanisms of Protein-DNA Interactions</h1>
+<p>Binding of proteins to DNA results from the favourable interactions between short DNA sequences and the amino acid side chains of specific DNA-binding motifs in proteins. In many DNA-binding proteins, the affinity and specificity of binding is also enhanced by flexible segments outside the globular core that mediate specific and nonspecific interactions but are sometimes not included in the definition of DNA binding domains. The majority of DNA-binding domains are made of either <span class="math inline">\(\alpha\)</span>-helices, <span class="math inline">\(\beta\)</span>-sheets, or both. While they can be classified into different types of motifs, any one type of motif can be used in multiple ways to interact with DNA, depending on the protein and the binding site.</p>
+<p>There are multiple mechanisms by which specificity is achieved. First, specific DNA base pairs and amino acid side chains can establish shape complementarity, resulting in hydrogen bonds or favourble polar, electrostatic, or hydrophobic interactions. This is commonly referred to as <em>direct readout</em> or <em>base readout</em>. These interactions usually more frequently in the the more accessible major groove of DNA than in the minor groove. However, there is no simple one-to-one relationship between DNA and protein sequences, which means this mechanism itself is not sufficient to accout for the specificity. The second mechanism, <em>shape readout</em>, involves recognition of a sequence-dependent DNA shape, for example an overall bend, a segment of narrow minor groove, or a kinked base pair step.</p>
+<p>Base readout and shape readout can be further devided into different modes. These mechanisms rarely exists in isolation, and protein-DNA recognition uses a continuum of mechanisms that depend on the structural features and flexibility of both DNA and protein.</p>
+</div>
+<div id="thermodynamics-of-protein-dna-binding" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Thermodynamics of Protein-DNA Binding</h1>
+<p>All protein-DNA complexes can gain favourable <span class="math inline">\(\Delta H\)</span> from direct protein-DNA recognition interactions and favourable <span class="math inline">\(\Delta S\)</span> from water release. However, in systems with strongly distorted DNA, the loss of favourable interaction due to the molecular strain of base pair destacking is so large so that the net <span class="math inline">\(\Delta H\)</span> becomes unfavourable. This is compensated by a more positive <span class="math inline">\(\Delta S\)</span> as the strained interface experiences less immobilisation (Figure <a href="#fig:pnipni-thermodynamics">3.1</a>).</p>
+
+<div class="figure"><span id="fig:pnipni-thermodynamics"></span>
+<img src="../img/pnipni-thermodynamics.png" alt="The relative enthalphic and entropic contributions to binding free energy (\(\Delta G_\text{free}\)) of a few site-specific DNA-binding proteins with similar \(\Delta G_\text{free}\) (about -11.7 kcal/mol). Taken from Jen-Jacobson, Engler, and Jacobson (2000)" width="100%" />
+<p class="caption">
+Figure 3.1: The relative enthalphic and entropic contributions to binding free energy (<span class="math inline">\(\Delta G_\text{free}\)</span>) of a few site-specific DNA-binding proteins with similar <span class="math inline">\(\Delta G_\text{free}\)</span> (about -11.7 kcal/mol). Taken from <span class="citation">Jen-Jacobson, Engler, and Jacobson (2000)</span>
+</p>
+</div>
+</div>
+<div id="base-readout-in-the-major-groove" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Base Readout in the Major Groove</h1>
+<p>The major groove is an ideal site for forming specific interactions between DNA bases and amino acid side chains because the four possible base pairs have a unique pattern of hydrogen bond donors and acceptors (and the 5-methyl of thymine) in the major groove. Proteins can also form hydrogen bonds with bases in the minor groove, but this contributes much less to the specificity (because the hydrogen bonding pattern cannot distinguish between AT from TA or CG from GC) (<a href="#fig:pni-major-minor-base">4.1</a>). Many DNA-binding motifs, including HTH, zinc finger and Leucine zipper, forms hydrogen bonds in the major groove.</p>
+<div class="figure"><span id="fig:pni-major-minor-base"></span>
+<img src="../img/pni-major-minor-base.png" alt="Hydrogen bonding patterns in the major and minor groove of AT and CG base pairs." width="100%" />
+<p class="caption">
+Figure 4.1: Hydrogen bonding patterns in the major and minor groove of AT and CG base pairs.
+</p>
+</div>
+<p>Specificity not only depends on the number of contacts formed but also on the uniqueness of the hydrogen bonding geometry. Bidentate hydrogen bonds (2 H-bonds with different donors and receptors, which can be formed, for example, between the two NH/NH<sub>2</sub> groups and the O and N of guanine) have the highest degree of specificity followed by bifurcated hydrogen bonds (two H-bonds share one donor) and single hydrogen bonds.</p>
+<p>Water molecules can be found at some protein-DNA binding sites. While water molecules can allow flexibility and mediate non-specific binding, they are also present in many specific protein-DNA compelxes, such as Trp repressor-DNA, where their positions are highly ordered and serve to bridge the hydrogen bonds.</p>
+</div>
+<div id="sr" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Shape Readout</h1>
+<p>In physiological conditions, most DNA exists in its B form with well-defined geometries. However, due to the subtle differences between the chemical properties of the four bases, the DNA shape varies in a sequence-dependent manner, and this structural variation is important for protein-DNA recognition.</p>
+<p>The B-DNA conformation is largely stabilised by the stacking energy between adjacent base pairs. Thus regions with weak stacking energy, which were found to be AT-AT and AT-TA stacks, have a stronger deformability (i.e. propensity to deviate from the B-DNA conformation). Specifically, DNA sequences of at least four consecutive A-T base pairs without an intervening TpA step are called “A-tracts”, which not only improves deformability but also has implications on electrostatic potentials, which are described in Section <a href="#ele">5.1</a></p>
+<p>The following table summarises the relationship between several sequence elements and their impact on the structural property of DNA:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sequence Element</th>
+<th>Structural Property</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A-tract</td>
+<td>narrow minor groove, bending, rigid for <span class="math inline">\(\ge\)</span> bp</td>
+</tr>
+<tr class="even">
+<td>TATA box</td>
+<td>high deformability</td>
+</tr>
+<tr class="odd">
+<td>YpR step (especially TpA)</td>
+<td>compresses major groove, high deformability, ‘hinge’ step, kinking</td>
+</tr>
+<tr class="even">
+<td>RpY step</td>
+<td>compresses minor groove, low deformability</td>
+</tr>
+</tbody>
+</table>
+<div id="ele" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Minor Groove Narrowing</h2>
+<p><span class="citation">Rohs et al. (2009)</span> reported that the binding of arginine residues to narrow (<span class="math inline">\(&lt; 5\)</span> angstroms) minor grooves is a common mode of protein-DNA recognition (Figure <a href="#fig:pni-narrow-minor">5.1</a>). These narrow groove are usually associates with A-tracts, which estabilish a connection between DNA sequence and shape. Arginines often insert into the minor groove as part of short sequence motifs that vary among different proteins, e.g. Arg-Gln-Arg in the Hox protein SCR, Arg-Lys-Lys-Arg in POU homeodomains, thus providing specificity.</p>
+<p>The narrowing results in a more negative electrostatic potential in the minor groove, which promotes the binding of positively charged arginine. The preference of arginine over lysine can be explained by the greater energetic cost of removing a charged lysine from water due to lysine’s smaller radius of the charged group (or greater charge density) compared to arginine.</p>
+
+<div class="figure"><span id="fig:pni-narrow-minor"></span>
+<img src="../img/pni-narrow-minor.png" alt="Amino acid frequencies in minor grooves. Taken from Rohs et al. (2009)" width="100%" />
+<p class="caption">
+Figure 5.1: Amino acid frequencies in minor grooves. Taken from <span class="citation">Rohs et al. (2009)</span>
+</p>
+</div>
+</div>
+<div id="kinks" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Kinks</h2>
+<p>YpR steps (especially TpA steps) have a strong tendency to form kinks that disrupt the linearity of the double helix. They can contribute to binding specificity by optimising protein-DNA contacts. The binding site of the catabolite activator protein (CAP), for example, shows dramatic kinks at two CpA steps, which along with two additional smaller kinks cause an overall bending of the DNA of about 90 degrees around the protein.</p>
+</div>
+</div>
+<div id="the-nucleosome-as-an-example-of-non-specific-binding" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> The Nucleosome as an Example of Non-Specific Binding</h1>
+<p>Histones are the ubiquitous nuclear protein that mainly serve to compact DNA. A nucleosome is formed by 147 base pairs of DNA wrapping around a histone octamer, and adjacent nucleosomes are joined by a linker sequence (about 50 bp long in humans). Since nucleosome are so prevalent, the histone-DNA interaction is often considered as non-specific, and its association with DNA is thought to be due to the electrostatic attraction between the abundant lysine and arginine residues on the surface of histoens and the negatively charged phosphate backbone of DNA. However, histones have preferred DNA regions to bind to.</p>
+<p>Nucleosomes are often formed in regions enriched with A-tracts for two reasons. First, A-tracts offer high deformability, which is required to bend DNA and wrap it around histone octamers. Second, histones are enriched with arginine residues, which recognise and penetrateinto the narrow minor grooves formed by A-tracts, thus providing important stabilising interaction (Section <a href="#ele">5.1</a>).</p>
+</div>
+<div id="question-2" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> (Question 2)</h1>
+<div id="a-bhlh-motif" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> (a) bHLH Motif</h2>
+<p>The basic helix-loop-helix (bHLH) motif consists of two <span class="math inline">\(\alpha\)</span>-helices separated by a loop. One of the helices (usually the longer one) contain basic residues (arginine and lysine) that bind to the major groove of DNA. The flexible loop and the other helix are involved in dimerisation. Many bHTH proteins occur as heterodimers (e.g. Myc/MAX), and their activity is hightly regulated by the dimerisation of subunits.</p>
+</div>
+<div id="b-leucine-zipper" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> (b) Leucine Zipper</h2>
+<p>The leucine zipper motif consists of a dimer of <span class="math inline">\(\alpha\)</span>-helices. The dimerisation is driven by interactions between the hydrophobic side chains that cover their inner surfaces. Specifically, each helix has a periodic repetition of leucine residues at every seventh position. Since every turn in an <span class="math inline">\(\alpha\)</span>-helix contains 3.6 amino acids—two turns contain 7.2, which is slightly more than 7, the helices coil around one another in a left-handed sense. The N-terminal DNA-binding domains of each helix protrudes into the major groove of DNA, which together recognise a 8-bp long sequence.</p>
+</div>
+<div id="c-zinc-finger" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> (c) Zinc Finger</h2>
+<p>The zinc finger contains a short <span class="math inline">\(\alpha\)</span>-helix, a two-stranded antiparallel <span class="math inline">\(\beta\)</span>-sheet, and a Zn<sup>2+</sup> ion coordinated by cysteine and histine residues. The zinc ion serves to stabilise the overall structure, while the helix make contact with DNA’s major groove. A typical zinc finger protein, e.g. Zif268, contains a chain of 3 zinc-finger modules that coil in a right-handed sense, so as to follow the curve within the major groove. Each finger recognises 3 base pairs, and thus a protein with 3 zinc finger domains recognise a continuous sequence of 9 base pairs.</p>
+</div>
+<div id="d-tata-box-binding-protein" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> (d) TATA box binding protein</h2>
+<p>TATA box binding proteins (TBP) use a ten-stranded <span class="math inline">\(\beta\)</span>-sheet to recognise DNA by binding in the minor groove. Insertion of the concave <span class="math inline">\(\beta\)</span>-sheet into the groove requires substantial DNA distortion. The flexibility intrinsic to TpA steps (Section <a href="#sr">5</a>) in the TATA sequence faciliates formation of kinks when TBP binds. In addition, yeast TBP-TATA structure shows that the kinks in the first and last base pair step (<strong>TA</strong>TATA<strong>AA</strong>) are stabilised through intercalations with phenylalanine residues.</p>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references hanging-indent">
+<div id="ref-Calladine-2004">
+<p>Calladine, Chris R., Horace Drew, Ben Luisi, and Andrew Travers. 2004. <em>Understanding Dna-the Molecule and How It Works</em>. 3rd ed. Academic Press. <a href="http://gen.lib.rus.ec/book/index.php?md5=c6b8d89cd8868255bc9ebd4cf51e1917">http://gen.lib.rus.ec/book/index.php?md5=c6b8d89cd8868255bc9ebd4cf51e1917</a>.</p>
+</div>
+<div id="ref-Jen-Jacobson-2000">
+<p>Jen-Jacobson, Linda, Lisa E. Engler, and Lewis A. Jacobson. 2000. “Structural and Thermodynamic Strategies for Site-Specific Dna Binding Proteins.” <em>Structure</em> 8 (10): 1015–23. <a href="https://doi.org/https://doi.org/10.1016/S0969-2126(00)00501-3">https://doi.org/https://doi.org/10.1016/S0969-2126(00)00501-3</a>.</p>
+</div>
+<div id="ref-Rohs-2009">
+<p>Rohs, Remo, Sean M. West, Alona Sosinsky, Peng Liu, Richard S. Mann, and Barry Honig. 2009. “The Role of Dna Shape in Protein–Dna Recognition.” <em>Nature</em> 461 (7268): 1248–53. <a href="https://doi.org/10.1038/nature08473">https://doi.org/10.1038/nature08473</a>.</p>
+</div>
+</div>
+</div>

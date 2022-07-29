@@ -1,0 +1,35 @@
+---
+title: Linux Setup
+author: Tianyi Shi
+date: '2020-02-26'
+slug: linux-setup
+categories: []
+tags:
+  - python
+  - R
+# term: 1-Hilary
+# week: 5
+---
+
+# Utilities
+
+## Input Methods
+
+Framwork: Fcitx
+
+Chinese: Sougou Pinyin
+Japanese: Mozc
+
+## LaTeX
+
+Select from: 
+
+- texlive-base - 136 MB
+- texlive-latex-recommended - 177 MB
+- texlive - 240 MB
+- texlive-latex-extra - 404 MB
+- texlive-full - 4714 MB
+
+References
+
+- https://linuxconfig.org/how-to-install-latex-on-ubuntu-18-04-bionic-beaver-linux

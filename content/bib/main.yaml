@@ -1,0 +1,4363 @@
+---
+references:
+- id: Garaycoechea-2018
+  type: article-journal
+  author:
+  - family: Garaycoechea
+    given: Juan I.
+  - family: Crossan
+    given: Gerry P.
+  - family: Langevin
+    given: Frédéric
+  - family: Mulderrig
+    given: Lee
+  - family: Louzada
+    given: Sandra
+  - family: Yang
+    given: Fentang
+  - family: Guilbaud
+    given: Guillaume
+  - family: Park
+    given: Naomi
+  - family: Roerink
+    given: Sophie
+  - family: Nik-Zainal
+    given: Serena
+  - family: Stratton
+    given: Michael R.
+  - family: Patel
+    given: Ketan J.
+  issued:
+  - year: 2018
+  title: Alcohol and endogenous aldehydes damage chromosomes and mutate stem cells
+  container-title: Nature
+  page: '171-177'
+  volume: '553'
+  issue: '7687'
+  abstract: Haematopoietic stem cells renew blood. Accumulation of DNA damage in these
+    cells promotes their decline, while misrepair of this damage initiates malignancies.
+    Here we describe the features and mutational landscape of DNA damage caused by
+    acetaldehyde, an endogenous and alcohol-derived metabolite. This damage results
+    in DNA double-stranded breaks that, despite stimulating recombination repair,
+    also cause chromosome rearrangements. We combined transplantation of single haematopoietic
+    stem cells with whole-genome sequencing to show that this damage occurs in stem
+    cells, leading to deletions and rearrangements that are indicative of microhomology-mediated
+    end-joining repair. Moreover, deletion of p53 completely rescues the survival
+    of aldehyde-stressed and mutated haematopoietic stem cells, but does not change
+    the pattern or the intensity of genome instability within individual stem cells.
+    These findings characterize the mutation of the stem-cell genome by an alcohol-derived
+    and endogenous source of DNA damage. Furthermore, we identify how the choice of
+    DNA-repair pathway and a stringent p53 response limit the transmission of aldehyde-induced
+    mutations in stem cells.
+  URL: https://doi.org/10.1038/nature25154
+  DOI: 10.1038/nature25154
+  ISBN: '1476-4687'
+
+- id: Haag-2014
+  type: article-journal
+  author:
+  - family: Haag
+    given: Peter AND Bühler
+    suffix: Andrea AND Gutierrez
+  issued:
+  - year: 2014
+  title: An in vivo egf receptor localization screen in c. Elegans identifies the
+    ezrin homolog erm-1 as a temporal regulator of signaling
+  container-title: PLOS Genetics
+  publisher: Public Library of Science
+  page: '1-13'
+  volume: '10'
+  issue: '5'
+  abstract: Author Summary Abnormal signaling by the epidermal growth factor receptor
+    (EGFR) contributes to the development of various human diseases, including different
+    cancer types. One important mechanism that controls intracellular signal transduction
+    is by regulation of the subcellular receptor localization in the signal-receiving
+    cell. We are investigating the regulation of the EGFR homolog LET-23 in the Nematode
+    C. elegans by observing the localization of the EGFR in the epithelial cells of
+    live animals. This approach has allowed us to study the dynamics of receptor trafficking
+    in cells embedded in their natural environment and receiving physiological concentrations
+    of various extracellular signals. In a systematic RNA interference screen, we
+    have identified 81 genes controlling EGFR localization and signaling in different
+    subcellular compartments. One new regulator of EGFR signaling identified in this
+    screen encodes the Ezrin Homolog ERM-1. We show genetic and biochemical evidence
+    indicating that ERM-1 is part of a buffering mechanism to maintain a pool of immobile
+    EGFR in the basolateral membrane compartment of the epithelial cells. This mechanism
+    permits the generation of a long-lasting EGFR signal during multiple rounds of
+    cell divisions. The control of receptor localization is thus necessary for the
+    precise temporal regulation of signal transduction during animal development.
+  URL: https://doi.org/10.1371/journal.pgen.1004341
+  DOI: 10.1371/journal.pgen.1004341
+
+- id: Kaech-1998
+  type: article-journal
+  author:
+  - family: Kaech
+    given: Susan M
+  - family: Whitfield
+    given: Charles W
+  - family: Kim
+    given: Stuart K
+  issued:
+  - year: 1998
+  title: The lin-2/lin-7/lin-10 complex mediates basolateral membrane localization
+    of the c. Elegans egf receptor let-23 in vulval epithelial cells
+  container-title: Cell
+  page: 761 - 771
+  volume: '94'
+  issue: '6'
+  abstract: In C. elegans, the LET-23 receptor tyrosine kinase is localized to the
+    basolateral membranes of polarized vulval epithelial cells. lin-2, lin-7, and
+    lin-10 are required for basolateral localization of LET-23, since LET-23 is mislocalized
+    to the apical membrane in lin-2, lin-7, and lin-10 mutants. Yeast two-hybrid,
+    in vitro binding, and in vivo coimmunoprecipitation experiments show that LIN-2,
+    LIN-7, and LIN-10 form a protein complex. Furthermore, compensatory mutations
+    in lin-7 and let-23 exhibit allele-specific suppression of apical mislocalization
+    and signaling-defective phenotypes. These results present a mechanism for basolateral
+    localization of LET-23 receptor tyrosine kinase by direct binding to the LIN-2/LIN-7/LIN-10
+    complex. Each of the binding interactions within this complex is conserved, suggesting
+    that this complex may also mediate basolateral localization in mammals.
+  URL: http://www.sciencedirect.com/science/article/pii/S0092867400817353
+  DOI: https://doi.org/10.1016/S0092-8674(00)81735-3
+  ISSN: '0092-8674'
+
+- id: Zon-2015
+  type: article-journal
+  author:
+  - family: Zon
+    given: Jeroen Sebastiaan
+    dropping-particle: van
+  - family: Kienle
+    given: Simone
+  - family: Huelsz-Prince
+    given: Guizela
+  - family: Barkoulas
+    given: Michalis
+  - family: Oudenaarden
+    given: Alexander
+    dropping-particle: van
+  issued:
+  - year: 2015
+  title: Cells change their sensitivity to an egf morphogen gradient to control egf-induced
+    gene expression
+  container-title: Nature Communications
+  page: '7053'
+  volume: '6'
+  issue: '1'
+  abstract: How cells in developing organisms interpret the quantitative information
+    contained in morphogen gradients is an open question. Here we address this question
+    using a novel integrative approach that combines quantitative measurements of
+    morphogen-induced gene expression at single-mRNA resolution with mathematical
+    modelling of the induction process. We focus on the induction of Notch ligands
+    by the LIN-3/EGF morphogen gradient during vulva induction in Caenorhabditis elegans.
+    We show that LIN-3/EGF-induced Notch ligand expression is highly dynamic, exhibiting
+    an abrupt transition from low to high expression. Similar transitions in Notch
+    ligand expression are observed in two highly divergent wild C. elegans isolates.
+    Mathematical modelling and experiments show that this transition is driven by
+    a dynamic increase in the sensitivity of the induced cells to external LIN-3/EGF.
+    Furthermore, this increase in sensitivity is independent of the presence of LIN-3/EGF.
+    Our integrative approach might be useful to study induction by morphogen gradients
+    in other systems.
+  URL: https://doi.org/10.1038/ncomms8053
+  DOI: 10.1038/ncomms8053
+  ISBN: '2041-1723'
+
+- id: Stein-1999
+  type: article-journal
+  author:
+  - family: Stein
+    given: Lincoln D
+  issued:
+  - year: 1999
+  title: Internet access to the c. Elegans genome
+  container-title: Trends in Genetics
+  publisher: Elsevier
+  page: '425-427'
+  volume: '15'
+  issue: '10'
+
+- id: Fire-1998
+  type: article-journal
+  author:
+  - family: Fire
+    given: A.
+  - family: Xu
+    given: S.
+  - family: Montgomery
+    given: M.K.
+  - family: Kostas
+    given: S.A.
+  - family: Driver
+    given: S.E.
+  - family: Mello
+    given: C.C.
+  issued:
+  - year: 1998
+  title: Potent and specific genetic interference by double-stranded rna in caenorhabditis
+    elegans
+  container-title: Nature
+  page: '806-811'
+  volume: '391'
+  issue: '6669'
+  note: cited By 10209
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0032545933&doi=10.1038%2f35888&partnerID=40&md5=d2cf4692bb59200506c75e264bd56f59
+  DOI: 10.1038/35888
+
+- id: Yoo-2004
+  type: article-journal
+  author:
+  - family: Yoo
+    given: A.S.
+  - family: Bais
+    given: C.
+  - family: Greenwald
+    given: I.
+  issued:
+  - year: 2004
+  title: Crosstalk between the egfr and lin-12/notch pathways in c. Elegans vulval
+    development
+  container-title: Science
+  page: '663-666'
+  volume: '303'
+  issue: '5658'
+  note: cited By 190
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0442272485&doi=10.1126%2fscience.1091639&partnerID=40&md5=63df7c68f0aa77406072157c2433c113
+  DOI: 10.1126/science.1091639
+
+- id: Lackner-1994
+  type: article-journal
+  author:
+  - family: Lackner
+    given: M R
+  - family: Kornfeld
+    given: K
+  - family: Miller
+    given: L M
+  - family: Horvitz
+    given: H R
+  - family: Kim
+    given: S K
+  issued:
+  - year: 1994
+  title: A map kinase homolog, mpk-1, is involved in ras-mediated induction of vulval
+    cell fates in caenorhabditis elegans.
+  container-title: Genes Dev
+  publisher-place: Department of Developmental Biology, Stanford University Medical
+    Center, California 94305.
+  page: '160-173'
+  volume: '8'
+  issue: '2'
+  abstract: During development of the Caenorhabditis elegans hermaphrodite, the gonadal
+    anchor cell induces nearby Pn.p cells to adopt vulval fates. The response to this
+    signal is mediated by a receptor tyrosine kinase signal transduction pathway that
+    has been remarkably well conserved during metazoan evolution. Because mitogen-activated
+    protein (MAP) kinases are activated by receptor tyrosine kinase pathways in vertebrate
+    cells, we hypothesized that C. elegans MAP kinase homologs may play a role in
+    vulval induction. Two C. elegans MAP kinase genes, mpk-1 and mpk-2 (mpk, MAP kinase),
+    were cloned using degenerate oligonucleotide primers and PCR amplification; in
+    parallel, genes involved in vulval induction were identified by screening for
+    mutations that suppress the vulval defects caused by an activated let-60 ras gene.
+    One such suppressor mutation is an allele of mpk-1. We used a new type of mosaic
+    analysis to show that mpk-1 acts cell autonomously in the Pn.p cells. Our results
+    show that mpk-1 plays an important functional role as an activator in ras-mediated
+    cell signaling in vivo.
+  DOI: 10.1101/gad.8.2.160
+  ISSN: 0890-9369 (Print); 0890-9369 (Linking)
+  PMID: '8299936'
+
+- id: Kornfeld-1995
+  type: article-journal
+  author:
+  - family: Kornfeld
+    given: K
+  - family: Guan
+    given: K L
+  - family: Horvitz
+    given: H R
+  issued:
+  - year: 1995
+  title: The caenorhabditis elegans gene mek-2 is required for vulval induction and
+    encodes a protein similar to the protein kinase mek.
+  container-title: Genes Dev
+  publisher-place: Howard Hughes Medical Institute, Department of Biology, Massachusetts
+    Institute of Technology, Cambridge 02139, USA.
+  page: '756-768'
+  volume: '9'
+  issue: '6'
+  abstract: An evolutionarily conserved signal transduction pathway that utilizes
+    a receptor tyrosine kinase and a Ras protein mediates the induction of vulval
+    cell fates in the nematode Caenorhabditis elegans. We sought new genes that function
+    in this pathway by screening for suppressors of the Multivulva phenotype caused
+    by a mutation that activates the let-60 ras gene. Seven such suppressor mutations
+    defined a new gene involved in vulval induction. We named this gene mek-2, because
+    its predicted protein product is most similar to MEK, a protein-serine/threonine
+    and tyrosine kinase. mek-2 mutations can be arranged in an allelic series. A probable
+    null mutation eliminated vulval induction, and the strongest mutations alter codons
+    conserved in most or all protein kinases. Our genetic analysis showed that mek-2
+    functions downstream of let-60 ras and is required for ras-mediated signal transduction
+    in vivo. The MEK-2 protein may interact with the products of the lin-45 raf and
+    mpk-1 MAP kinase genes, which also mediate vulval induction.
+  DOI: 10.1101/gad.9.6.756
+  ISSN: 0890-9369 (Print); 0890-9369 (Linking)
+  PMID: '7729691'
+
+- id: Han-1993
+  type: article-journal
+  author:
+  - family: Han
+    given: M.
+  - family: Golden
+    given: A.
+  - family: Han
+    given: Y.
+  - family: Sternberg
+    given: P.W.
+  issued:
+  - year: 1993
+  title: C. Elegans lin-45 raf gene participates in let-60 ras-stimulated vulval differentiation
+  container-title: Nature
+  page: '133-140'
+  volume: '363'
+  issue: '6425'
+  note: cited By 178
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0027263251&doi=10.1038%2f363133a0&partnerID=40&md5=d5040c47236960663ea69adf22d0e29f
+  DOI: 10.1038/363133a0
+
+- id: Beitel-1990a
+  type: article-journal
+  author:
+  - family: Beitel
+    given: G.J.
+  - family: Clark
+    given: S.G.
+  - family: Horvitz
+    given: H.R.
+  issued:
+  - year: 1990
+  title: Caenorhabditis elegans ras gene let-60 acts as a switch in the pathway of
+    vulval induction
+  container-title: Nature
+  page: '503-509'
+  volume: '348'
+  issue: '6301'
+  note: cited By 294
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0025226084&doi=10.1038%2f348503a0&partnerID=40&md5=98fd685612cc025f38c2aeaeab1ca65c
+  DOI: 10.1038/348503a0
+
+- id: Chang-2000
+  type: article-journal
+  author:
+  - family: Chang
+    given: C.
+  - family: Hopper
+    given: N.A.
+  - family: Sternberg
+    given: P.W.
+  issued:
+  - year: 2000
+  title: Caenorhabditis elegans sos-1 is necessary for multiple ras-mediated developmental
+    signals
+  container-title: EMBO Journal
+  page: '3283-3294'
+  volume: '19'
+  issue: '13'
+  note: cited By 52
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0034601059&partnerID=40&md5=4c464683d66c2472431f83a5f90cdde6
+
+- id: Clark-1992
+  type: article-journal
+  author:
+  - family: Clark
+    given: S.G.
+  - family: Stern
+    given: M.J.
+  - family: Horvritz
+    given: H.R.
+  issued:
+  - year: 1992
+  title: C. Elegans cell-signalling gene sem-5 encodes a protein with sh2 and sh3
+    domains
+  container-title: Nature
+  page: '340-344'
+  volume: '356'
+  issue: '6367'
+  note: cited By 443
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0026608178&doi=10.1038%2f356340a0&partnerID=40&md5=55f885d9d98246e2cc648c00f10f7974
+  DOI: 10.1038/356340a0
+
+- id: Sternberg-1989
+  type: article-journal
+  author:
+  - family: Sternberg
+    given: Paul W.
+  - family: Horvitz
+    given: H.Robert
+  issued:
+  - year: 1989
+  title: The combined action of two intercellular signaling pathways specifies three
+    cell fates during vulval induction in c. Elegans
+  container-title: Cell
+  page: 679 - 693
+  volume: '58'
+  issue: '4'
+  abstract: 'Each of the six C. elegans vulval precursor cells (VPCs) has three
+    potential fates (1$\,^{\circ}$, 2$\,^{\circ}$, or 3$\,^{\circ}$). The fate of
+    each VPC depends on two types of signals: a graded inductive signal that acts
+    at a distance and a short-range lateral signal among the VPCs. We describe interactions
+    among mutations that cause different misspecifications of VPC fates. Particular
+    combinations of mutations cause all six VPCs to have a single fate independent
+    of their positions. Our results suggest that specification of the three VPC fates
+    is accomplished by two binary decisions, each effected by one of the two signaling
+    pathways. The gene lin-12 acts in the lateral signaling pathway and specifies
+    2$\,^{\circ}$. The “vulvaless” and “multivulva” genes act in the inductive signaling
+    pathway and specify 1$\,^{\circ}$ independently of lin-12 and 2$\,^{\circ}$ via
+    lin-12. We describe a model for the regulatory circuitry underlying VPC determination
+    that includes a role for lin-12 in both autocrine and paracrine VPC signaling.'
+  URL: http://www.sciencedirect.com/science/article/pii/0092867489901037
+  DOI: https://doi.org/10.1016/0092-8674(89)90103-7
+  ISSN: '0092-8674'
+
+- id: Hill-1992
+  type: article-journal
+  author:
+  - family: Hill
+    given: R.J.
+  - family: Sternberg
+    given: P.W.
+  issued:
+  - year: 1992
+  title: The gene lin-3 encodes an inductive signal for vulval development in c. Elegans
+  container-title: Nature
+  page: '470-476'
+  volume: '358'
+  issue: '6386'
+  note: cited By 288
+  URL: https://www.scopus.com/inward/record.uri?eid=2-s2.0-0026763373&doi=10.1038%2f358470a0&partnerID=40&md5=41854a6f4908aececd6f7c22990b50da
+  DOI: 10.1038/358470a0
+
+- id: Berset-2005
+  type: article-journal
+  author:
+  - family: Berset
+    given: Thomas A
+  - family: Hoier
+    given: Erika Frohli
+  - family: Hajnal
+    given: Alex
+  issued:
+  - year: 2005
+  title: The c. Elegans homolog of the mammalian tumor suppressor dep-1/scc1 inhibits
+    egfr signaling to regulate binary cell fate decisions.
+  container-title: Genes Dev
+  publisher-place: Institute of Zoology, University of Zurich, Switzerland.
+  page: '1328-1340'
+  volume: '19'
+  issue: '11'
+  abstract: Protein phosphorylation by kinases and the subsequent dephosphorylation
+    by phosphatases are key mechanisms that regulate intracellular signal transduction
+    during development. Here, we report the identification of the receptor protein
+    tyrosine phosphatase DEP-1 as a negative regulator of the Caenorhabditis elegans
+    EGF receptor. DEP-1 amplifies in the developing vulva and the excretory system
+    the small differences in the amount of EGF signal received by equivalent precursor
+    cells to achieve binary cell fate decisions. During vulval development, DEP-1
+    inhibits EGFR signaling in the secondary cell lineage in parallel with the NOTCH-mediated
+    lateral inhibition, while EGFR signaling simultaneously down-regulates DEP-1 and
+    NOTCH expression in the primary cell lineage. This regulatory network of inhibitors
+    results in the full activation of the EGFR/RAS/MAPK pathway in the primary vulval
+    cells and at the same time keeps the EGFR/RAS/MAPK pathway inactive in the adjacent
+    secondary cells. Mammalian Dep-1/Scc1 functions as a tumor-suppressor gene in
+    the intestinal epithelium. Thus, mutations in human Dep-1 may promote tumor formation
+    through a hyperactivation of the EGF receptor.
+  DOI: 10.1101/gad.333505
+  ISSN: 0890-9369 (Print); 0890-9369 (Linking)
+  PMID: '15901674'
+
+- id: Hopper-2000
+  type: article-journal
+  author:
+  - family: Hopper
+    given: Neil A.
+  - family: Lee
+    given: Junho
+  - family: Sternberg
+    given: Paul W.
+  issued:
+  - year: 2000
+  title: ARK-1 inhibits EGFR signaling in *C. <span class="nocase">elegans</span>*
+  container-title: Molecular Cell
+  publisher: Elsevier
+  page: '65-75'
+  volume: '6'
+  issue: '1'
+  annote: 'doi: 10.1016/S1097-2765(05)00001-8'
+  URL: https://doi.org/10.1016/S1097-2765(05)00001-8
+  DOI: 10.1016/S1097-2765(05)00001-8
+  ISBN: '1097-2765'
+
+- id: Leight-2005
+  type: article-journal
+  author:
+  - family: Leight
+    given: Elizabeth R.
+  - family: Glossip
+    given: Danielle
+  - family: Kornfeld
+    given: Kerry
+  issued:
+  - year: 2005
+  title: Sumoylation of lin-1 promotes transcriptional repression and inhibition of
+    vulval cell fates
+  container-title: Development
+  publisher: The Company of Biologists Ltd
+  page: '1047-1056'
+  volume: '132'
+  issue: '5'
+  abstract: The LIN-1 ETS transcription factor inhibits vulval cell fates during Caenorhabditis
+    elegans development. We demonstrate that LIN-1 interacts with UBC-9, a small ubiquitin-related
+    modifier (SUMO) conjugating enzyme. This interaction is mediated by two consensus
+    sumoylation motifs in LIN-1. Biochemical studies showed that LIN-1 is covalently
+    modified by SUMO-1. ubc-9 and smo-1, the gene encoding SUMO-1, inhibit vulval
+    cell fates and function at the level of lin-1, indicating that sumoylation promotes
+    LIN-1 inhibition of vulval cell fates. Sumoylation of LIN-1 promoted transcriptional
+    repression and mediated an interaction with MEP-1, a protein previously shown
+    to associate with the nucleosome remodeling and histone deacetylation (NuRD) transcriptional
+    repression complex. Genetic studies showed that mep-1 inhibits vulval cell fates
+    and functions at the level of lin-1. We propose that sumoylation of LIN-1 mediates
+    an interaction with MEP-1 that contributes to transcriptional repression of genes
+    that promote vulval cell fates. These studies identify a molecular mechanism for
+    SUMO-mediated transcriptional repression.
+  URL: https://dev.biologists.org/content/132/5/1047
+  DOI: 10.1242/dev.01664
+  ISSN: '0950-1991'
+
+- id: Schmid-2015
+  type: article-journal
+  author:
+  - family: Schmid
+    given: Tobias
+  - family: Hajnal
+    given: Alex
+  issued:
+  - year: 2015
+  title: 'Signal transduction during c. Elegans vulval development: A neverending
+    story'
+  title-short: Signal transduction during c. Elegans vulval development
+  container-title: Current Opinion in Genetics & Development
+  page: 1 - 9
+  volume: '32'
+  note: Developmental mechanisms, patterning and organogenesis
+  abstract: The Caenorhabditis elegans hermaphrodite vulva is one of the best studied
+    models for signal transduction and cell fate determination during organogenesis.
+    Systematic forward genetic screens have identified a complex and highly interconnected
+    signaling network formed by the conserved EGFR, NOTCH, and WNT signaling pathways
+    that specifies an invariant pattern of cell fates among the six vulval precursor
+    cells (VPCs). Multiple inhibitory interactions between the EGFR and NOTCH pathways
+    ensure the selection of a single 1$\,^{\circ}$ VPC that is always flanked by two
+    2$\,^{\circ}$ VPCs thanks to lateral NOTCH signaling. Building on this ‘central
+    dogma’ of cell fate specification, scientists have investigated a broad spectrum
+    of novel questions that are summarized in this review. For example, vulval development
+    is a unique model to study the intracellular trafficking of signaling molecules,
+    such as NOTCH or EGFR, to investigate the interactions between the cell cycle
+    and cell fate specification pathways, and to observe epithelial tube morphogenesis
+    and cell invasion at single-cell resolution. Finally, computer scientists have
+    integrated the experimental data into mathematical and state-based ‘in silico’
+    models of vulval development, allowing them to test the completeness and limits
+    of our current understanding.
+  URL: http://www.sciencedirect.com/science/article/pii/S0959437X15000076
+  DOI: https://doi.org/10.1016/j.gde.2015.01.006
+  ISSN: 0959-437X
+
+- id: Gauthier-2017
+  type: chapter
+  author:
+  - family: Gauthier
+    given: Kimberley
+  - family: Rocheleau
+    given: Christian E
+  editor:
+  - family: Wang
+    given: Zhixiang
+  issued:
+  - year: 2017
+  title: 'C. Elegans vulva induction: An in vivo model to study epidermal growth
+    factor receptor signaling and trafficking'
+  title-short: C. Elegans vulva induction
+  container-title: 'ErbB receptor signaling: Methods and protocols'
+  collection-title: Methods in molecular biology
+  publisher: Humana Press
+  page: '43-61'
+  volume: '1652'
+  chapter-number: '3'
+  abstract: Epidermal growth factor receptor (EGFR)-mediated activation of the canonical
+    Ras/MAPK signaling cascade is responsible for cell proliferation and cell growth.
+    This signaling pathway is frequently overactivated in epithelial cancers; therefore,
+    studying regulation of this pathway is crucial not only for our fundamental understanding
+    of cell biology but also for our ability to treat EGFR-related disease. Genetic
+    model organisms such as Caenorhabditis elegans, a hermaphroditic nematode, played
+    a vital role in identifying components of the EGFR/Ras/MAPK pathway and delineating
+    their order of function, and continues to play a role in identifying novel regulators
+    of the pathway. Polarized activation of LET-23, the C. elegans homolog of EGFR,
+    is responsible for induction of the vulval cell fate; perturbations in this signaling
+    pathway produce either a vulvaless or multivulva phenotype. The translucent cuticle
+    of the nematode facilitates in vivo visualization of the receptor, revealing that
+    localization of LET-23 EGFR is tightly regulated and linked to its function. In
+    this chapter, we review the methods used to harness vulva development as a tool
+    for studying EGFR signaling and trafficking in C. elegans.
+  URL: https://pubmed.ncbi.nlm.nih.gov/28791633
+  DOI: 10.1007/978-1-4939-7219-7{\_}3
+  ISBN: '1940-6029'
+
+- id: Altun-2009
+  type: chapter
+  author:
+  - family: Altun
+    given: Z.F.
+  - family: Hall
+    given: D.H.
+  editor:
+  - family: Herndon
+    given: Laura A.
+  issued:
+  - year: 2009
+  title: Introduction
+  container-title: WormAtlas
+  publisher: WormAtlas
+  URL: https://www.wormatlas.org/hermaphrodite/introduction/mainframe.htm
+  DOI: doi:10.3908/wormatlas.1.1
+
+- id: Sundaram-2013
+  type: chapter
+  author:
+  - family: Sundaram
+    given: Meera V.
+  editor:
+  - family: Research Community
+    given: The C.
+    dropping-particle: elegans
+  issued:
+  - year: 2013
+  title: A major strength of c. Elegans as a model system is the ease of conducting
+    unbiased forward genetic screens to identify mutants and genes relevant to a biological
+    process of interest. Many studies on rtk-ras-erk signaling have focused on the
+    role of the let-23/egfr pathway in promoting vulval development (see vulval development),
+    and many core components of the pathway were first identified through forward
+    genetic screens for mutants with vul or muv mutant phenotypes (ferguson and horvitz,
+    1985).
+  container-title: WormBook
+  publisher: WormBook
+  URL: http://www.wormbook.org/chapters/www_RTKRasMAPKsignaling.2/RTKRasERKsignal.html
+  DOI: doi/10.1895/wormbook.1.80.2
+
+- id: Sternberg-2005
+  type: chapter
+  author:
+  - family: Sternberg
+    given: Paul W.
+  editor:
+  - family: Research Community
+    given: The C.
+    dropping-particle: elegans
+  issued:
+  - year: 2005
+  title: Vulval development
+  container-title: WormBook
+  publisher: WormBook
+  URL: http://www.wormbook.org/chapters/www_vulvaldev/vulvaldev.html
+  DOI: doi/10.1895/wormbook.1.6.1
+
+- id: Beitel-1990
+  type: article-journal
+  author:
+  - family: Beitel
+    given: G J
+  - family: Clark
+    given: S G
+  - family: Horvitz
+    given: H R
+  issued:
+  - year: 1990
+  title: Caenorhabditis elegans ras gene let-60 acts as a switch in the pathway of
+    vulval induction.
+  container-title: Nature
+  publisher-place: Howard Hughes Medical Institute, Department of Biology, Massachusetts
+    Institute of Technology, Cambridge 02139.
+  page: '503-509'
+  volume: '348'
+  issue: '6301'
+  abstract: The let-60 gene, an essential ras gene of the nematode Caenorhabditis
+    elegans, acts as a switch in the inductive signalling pathway that initiates vulva
+    formation. Recessive let-60 mutations that cause a vulvaless phenotype prevent
+    let-60 function in response to the inductive signal. These mutations are clustered
+    and define regions necessary either for the activation or for the action of the
+    let-60 ras protein. Dominant let-60 mutations that cause a multivulva phenotype
+    alter codon 13 and activate let-60 in vivo, rendering it independent of the inductive
+    signal. The let-60 gene acts within an extensively defined genetic pathway, and
+    other genes within this pathway seem likely to encode molecules that regulate
+    let-60 function as well as molecules that are targets of let-60 action.
+  DOI: 10.1038/348503a0
+  ISSN: 0028-0836 (Print); 0028-0836 (Linking)
+  PMID: '2123303'
+
+- id: Thomas-1990
+  type: article-journal
+  author:
+  - family: Thomas
+    given: J H
+  - family: Stern
+    given: M J
+  - family: Horvitz
+    given: H R
+  issued:
+  - year: 1990
+  title: Cell interactions coordinate the development of the c. Elegans egg-laying
+    system.
+  container-title: Cell
+  publisher-place: Howard Hughes Medical Institute, Department of Biology, Massachusetts
+    Institute of Technology, Cambridge 02139.
+  page: '1041-1052'
+  volume: '62'
+  issue: '6'
+  abstract: Egg laying by the nematode Caenorhabditis elegans requires the functioning
+    of the vulva, the gonad, the egg-laying muscles, and the two HSN neurons, which
+    innervate these muscles. By analyzing a newly isolated mutant (dig-1) that displaces
+    the gonad, we discovered that cell interactions coordinate the spatial relationships
+    among the different components of the egg-laying system. First, the gonad induces
+    the formation of the vulva, and vulval induction by dorsal gonads strongly suggests
+    that the inductive signal can act at a distance. Second, the gonad acts at a distance
+    to regulate the migrations of the sex myoblasts that generate the egg-laying musculature.
+    Third, the positions of the axonal branch and synapses of each HSN neuron are
+    displaced correspondingly with the rest of the egg-laying system in dig-1 animals,
+    which suggests that cell interactions also control aspects of HSN development.
+  DOI: 10.1016/0092-8674(90)90382-o
+  ISSN: 0092-8674 (Print); 0092-8674 (Linking)
+  PMID: '2401010'
+
+- id: Sternberg-1998
+  type: article-journal
+  author:
+  - family: Sternberg
+    given: P W
+  - family: Han
+    given: M
+  issued:
+  - year: 1998
+  title: Genetics of ras signaling in c. Elegans.
+  container-title: Trends Genet
+  publisher-place: pws64cco.caltech.edu
+  page: '466-472'
+  volume: '14'
+  issue: '11'
+  abstract: Genetic analysis of the RAS function in Caenorhabditis elegans has not
+    only clarified the functional relationship of signal transduction proteins, but
+    also led to the discovery of new proteins involved positively or negatively in
+    RAS signaling. The stereotyped development of C. elegans has allowed many of the
+    functions of RAS to be elucidated at the level of fates of individual cells.
+  DOI: 10.1016/s0168-9525(98)01592-3
+  ISSN: 0168-9525 (Print); 0168-9525 (Linking)
+  PMID: '9825675'
+
+- id: Kornfeld-1997
+  type: article-journal
+  author:
+  - family: Kornfeld
+    given: K
+  issued:
+  - year: 1997
+  title: Vulval development in caenorhabditis elegans.
+  container-title: Trends Genet
+  publisher-place: Department of Molecular Biology; Pharmacology, Washington University
+    School of Medicine, St Louis, MO 63110, USA. kornfeld\@pharmdec.wustl.edu
+  page: '55-61'
+  volume: '13'
+  issue: '2'
+  abstract: Ever since the cell lineage of the nematode Caenorhabditis elegans was
+    shown to be nearly invariant, investigators have tried to understand the mechanisms
+    that control these precise patterns of cell divisions and cell fates. Important
+    insights have come from analyzing the cells that form the hermaphrodite vulva,
+    a specialized hypodermal passageway used for egg laying and sperm entry. Early
+    experiments showed that the invariant pattern of vulval cell fates requires highly
+    reproducible intercellular signals. This review describes recent experiments that
+    have begun to characterize molecules that mediate these signals and explore the
+    relationships between different signaling pathways. Many of these molecules and
+    signaling pathways have been conserved during evolution suggesting mechanisms
+    used to establish patterns of cell fates during vulval development have also been
+    conserved.
+  DOI: 10.1016/s0168-9525(97)01005-6
+  ISSN: 0168-9525 (Print); 0168-9525 (Linking)
+  PMID: '9055606'
+
+- id: Sundaram-2004
+  type: article-journal
+  author:
+  - family: Sundaram
+    given: Meera V.
+  issued:
+  - year: 2004
+  title: 'Vulval development: The battle between ras and notch'
+  title-short: Vulval development
+  container-title: Current Biology
+  page: R311 - R313
+  volume: '14'
+  issue: '8'
+  abstract: Vulval patterning in Caenorhabditis elegans is controlled by both Ras-mediated
+    ‘inductive’ signaling and LIN-12/Notch-mediated ‘lateral’ signaling. Recent studies
+    have identified the lateral signal as well as various genes that are targets of
+    the lateral signaling pathway, and begun to define the multiple molecular links
+    connecting Ras and Notch.
+  URL: http://www.sciencedirect.com/science/article/pii/S0960982204002295
+  DOI: https://doi.org/10.1016/j.cub.2004.03.052
+  ISSN: '0960-9822'
+
+- id: Song-2011
+  type: article-journal
+  author:
+  - family: Song
+    given: Wen AND Wei
+    suffix: Zhou AND Yue
+  issued:
+  - year: 2011
+    month: 3
+  title: Sonic hedgehog pathway is essential for maintenance of cancer stem-like cells
+    in human gastric cancer
+  container-title: PLOS ONE
+  publisher: Public Library of Science
+  page: '1-13'
+  volume: '6'
+  issue: '3'
+  abstract: Abnormal activation of the Sonic hedgehog (SHH) pathway has been described
+    in a wide variety of human cancers and in cancer stem cells (CSCs), however, the
+    role of SHH pathway in gastric CSCs has not been reported. In this study, we investigated
+    the possibility that abnormal activation of the SHH pathway maintained the characteristics
+    of gastric CSCs. First, we identified cancer stem-like cells (CSLCs) from human
+    gastric cancer cell lines (HGC-27, MGC-803 and MKN-45) using tumorsphere culture.
+    Compared with adherent cells, the floating tumorsphere cells had more self-renewing
+    capacity and chemoresistance. The cells expressing CSCs markers (CD44, CD24 and
+    CD133) were also significantly more in tumorsphere cells than in adherent cells.
+    More importantly, in vivo xenograft studies showed that tumors could be generated
+    with 2×104 tumorsphere cells, which was 100-fold less than those required for
+    tumors seeding by adherent cells. Next, RT-PCR and Western blot showed that the
+    expression levels of Ptch and Gli1 (SHH pathway target genes) were significantly
+    higher in tumorsphere cells than in adherent cells. The results of quantitative
+    real-time PCR were similar to those of RT-PCR and Western blot. Further analysis
+    revealed that SHH pathway blocked by cyclopamine or 5E1 caused a higher reduction
+    in self-renewing capacity of HGC-27 tumorsphere cells than that of adherent cells.
+    We also found that SHH pathway blocking strongly enhanced the efficacy of chemotherapeutic
+    drugs in HGC-27 tumorsphere cells in vitro and in vivo but had no significant
+    effect in adherent cells. Finally, we isolated the tumorspheres from gastric cancer
+    specimen, these cells also had chemoresistance and tumorigenic capacity, and SHH
+    pathway maintained the gastric CSLCs characteristics of tumorsphere cells from
+    primary tumor samples. In conclusion, our data suggested that SHH pathway was
+    essential for maintenance of CSLCs in human gastric cancer.
+  URL: https://doi.org/10.1371/journal.pone.0017687
+  DOI: 10.1371/journal.pone.0017687
+
+- id: Takeo-2018
+  type: article-journal
+  author:
+  - family: Takeo
+    given: Makoto
+  - family: Tsuji
+    given: Takashi
+  issued:
+  - year: 2018
+  title: 'Organ regeneration based on developmental biology: Past and future'
+  title-short: Organ regeneration based on developmental biology
+  container-title: Current Opinion in Genetics & Development
+  page: 42 - 47
+  volume: '52'
+  note: Cell reprogramming, regeneration and repair
+  abstract: In this decade, great progress has been made in the field of organ regeneration
+    by incorporating emerging concepts from the fields of stem cell biology and developmental
+    biology, and this progress has pioneered a new frontier in regenerative medicine.
+    The generation of bioengineered organ germ-utilizing, fate-determined, organ-inductive
+    epithelial and mesenchymal cells has provided evidence for the concept of functional
+    organ regeneration in vivo. Organoid studies have verified that nearly all organs
+    can be generated in the form of a mini-organ by recapitulating embryonic body
+    patterning and establishing an organ-forming field among self-organizing pluripotent
+    stem cells by utilizing cytokines that mimic the patterning and positional signals
+    of organogenesis. More recently, the regeneration of an integumentary organ system
+    composed of multiple organs, including hair follicles, has been achieved, demonstrating
+    that regenerative medicine is forthcoming. In this review, we will introduce current
+    research trends aimed at regenerating a functional three-dimensional (3D) organ,
+    and we will discuss the potential use of these recent achievements and future
+    directions needed to realize the next-generation of regenerative therapy for organ
+    replacement.
+  URL: http://www.sciencedirect.com/science/article/pii/S0959437X17301338
+  DOI: https://doi.org/10.1016/j.gde.2018.05.008
+  ISSN: 0959-437X
+
+- id: Slack-2018
+  type: book
+  author:
+  - family: Slack
+    given: Jonathan M. W.
+  issued:
+  - year: 2018
+  title: Essential developmental biology
+  collection-title: 3rd ser.
+  publisher: WIley-Blackwell
+
+- id: Gilbert-2016
+  type: book
+  author:
+  - family: Gilbert
+    given: Scott F.
+  - family: Barresi
+    given: Michael J. F.
+  issued:
+  - year: 2016
+  title: Developmental biology
+  publisher: Sinauer Associates
+  edition: '11'
+
+- id: Liu-2007
+  type: article-journal
+  author:
+  - family: Liu
+    given: Huinan
+  - family: Webster
+    given: Thomas Jay
+  issued:
+  - year: 2007
+  title: 'Nanomedicine for implants: A review of studies and necessary experimental
+    tools'
+  title-short: Nanomedicine for implants
+  container-title: Biomaterials
+  page: 354 - 369
+  volume: '28'
+  issue: '2'
+  note: Cellular and Molecular Biology Techniques for Biomaterials Evaluation
+  abstract: The response of host organisms (including at the protein and cellular
+    level) to nanomaterials is different than that observed to conventional materials.
+    Nanomaterials are those materials which possess constituents less than 100nm in
+    at least one direction. This review will first introduce the use of nanomaterials
+    in a variety of implant applications highlighting their promise towards regenerating
+    tissues. Such reviewed studies will emphasize interactions of nanomaterials with
+    various proteins and subsequently cells. Moreover, such advances in the use of
+    nanomaterials as novel implants have been largely, to date, determined by conventional
+    methods. However, the novel structure–property relationships unique for nanosized
+    materials reside at the nanoscale. That is, the novelty of a nanomaterial can
+    only be fully appreciated by characterizing their interactions with biological
+    systems (such as proteins) with nanoscale resolution analytical tools. This characterization
+    of nanomaterials at the nanoscale is critical to understanding and, hence, further
+    promoting increased tissue growth on nanomaterials. For this reason, while more
+    tools are needed for this emerging field, this review will also cover currently
+    available surface characterization techniques that emphasize nanoscale resolution
+    pertinent for characterizing biological interactions with nanomaterials, including
+    attenuated total reflectance Fourier transform infrared (ATR-FTIR) spectroscopy,
+    X-ray photoelectron spectroscopy (XPS), time-of-flight secondary ion mass spectroscopy
+    (SIMS), colorimetric biological assays, circular dichroism (CD), and atomic force
+    microscopy (AFM). Only through the coordination of nanoscale analytical tools
+    with studies that highlight mechanisms of increased tissue growth on nanomaterials
+    will we be able to design better implant materials.
+  keyword: Nanomedicine, Nanotechnology, Tissue engineering, Implants, Measurements
+  URL: http://www.sciencedirect.com/science/article/pii/S0142961206007630
+  DOI: https://doi.org/10.1016/j.biomaterials.2006.08.049
+  ISSN: '0142-9612'
+
+- id: Pasternack-2003
+  type: article-journal
+  author:
+  - family: Pasternack
+    given: Robert F
+  issued:
+  - year: 2003
+  title: Circular dichroism and the interactions of water soluble porphyrins with
+    dna—a minireview
+  container-title: 'Chirality: The Pharmacological, Biological, and Chemical Consequences
+    of Molecular Asymmetry'
+  publisher: Wiley Online Library
+  page: '329-332'
+  volume: '15'
+  issue: '4'
+
+- id: Harding-2010
+  type: article-journal
+  author:
+  - family: Harding
+    given: Stephen E.
+  - family: Rowe
+    given: Arthur J.
+  issued:
+  - year: 2010
+  title: <span class="nocase">Insight into protein–protein interactions from analytical
+    ultracentrifugation</span>
+  container-title: Biochemical Society Transactions
+  page: '901-907'
+  volume: '38'
+  issue: '4'
+  abstract: Analytical ultracentrifugation is a free solution technique with no supplementary
+    immobilization, columns or membranes required, and can be used to study self-association
+    and hetero-interactions, stoichiometry, reversibility and interaction strength
+    across a very large dynamic range (dissociation constants from 10−12 M to 10−1
+    M). In the present paper, we review some of the advances that have been made in
+    the two different types of sedimentation experiment – sedimentation equilibrium
+    and sedimentation velocity – for the analysis of protein–protein interactions
+    and indicate how major complications such as thermodynamic and hydrodynamic non-ideality
+    can be dealt with.
+  URL: https://doi.org/10.1042/BST0380901
+  DOI: 10.1042/BST0380901
+  ISSN: '0300-5127'
+
+- id: Whitmore-2008
+  type: article-journal
+  author:
+  - family: Whitmore
+    given: Lee
+  - family: Wallace
+    given: B A
+  issued:
+  - year: 2008
+  title: 'Protein secondary structure analyses from circular dichroism spectroscopy:
+    Methods and reference databases'
+  title-short: Protein secondary structure analyses from circular dichroism spectroscopy
+  container-title: Biopolymers
+  publisher-place: United States
+  page: '392-400'
+  volume: '89'
+  issue: '5'
+  abstract: Circular dichroism (CD) spectroscopy has been a valuable method for the
+    analysis of protein secondary structures for many years. With the advent of synchrotron
+    radiation circular dichroism (SRCD) and improvements in instrumentation for conventional
+    CD, lower wavelength data are obtainable and the information content of the spectra
+    increased. In addition, new computation and bioinformatics methods have been developed
+    and new reference databases have been created, which greatly improve and facilitate
+    the analyses of CD spectra. This article discusses recent developments in the
+    analysis of protein secondary structures, including features of the DICHROWEB
+    analysis webserver.
+  keyword: \*Circular Dichroism/methods/trends; \*Databases, Protein/standards; Molecular
+    Structure; \*Protein Structure, Secondary; Reference Standards; \*Software
+  URL: https://pubmed.ncbi.nlm.nih.gov/17896349
+  DOI: 10.1002/bip.20853
+  ISBN: '0006-3525'
+
+- id: Kelly-2005
+  type: article-journal
+  author:
+  - family: Kelly
+    given: Sharon M
+  - family: Jess
+    given: Thomas J
+  - family: Price
+    given: Nicholas C
+  issued:
+  - year: 2005
+  title: How to study proteins by circular dichroism
+  container-title: Biochimica et biophysica acta
+  publisher-place: Netherlands
+  page: '119-139'
+  volume: '1751'
+  issue: '2'
+  abstract: Circular dichroism (CD) is being increasingly recognised as a valuable
+    technique for examining the structure of proteins in solution. However, the value
+    of many studies using CD is compromised either by inappropriate experimental design
+    or by lack of attention to key aspects of instrument calibration or sample characterisation.
+    In this article, we summarise the basis of the CD approach and its application
+    to the study of proteins, and then present clear guidelines on how reliable data
+    can be obtained and analysed.
+  keyword: Calibration; Circular Dichroism/instrumentation/\*methods; Protein Conformation;
+    Protein Folding; Protein Structure, Secondary; Protein Structure, Tertiary; Proteins/analysis/\*chemistry;
+    Reproducibility of Results
+  URL: https://pubmed.ncbi.nlm.nih.gov/16027053
+  DOI: 10.1016/j.bbapap.2005.06.005
+  ISBN: '0006-3002'
+
+- id: Kachala-2015
+  type: article-journal
+  author:
+  - family: Kachala
+    given: Michael
+  - family: Valentini
+    given: Erica
+  - family: Svergun
+    given: Dmitri I
+  issued:
+  - year: 2015
+  title: Application of saxs for the structural characterization of idps
+  container-title: Advances in experimental medicine and biology
+  publisher-place: United States
+  page: '261-289'
+  volume: '870'
+  abstract: Small-angle X-ray scattering (SAXS) is a powerful structural method allowing
+    one to study the structure, folding state and flexibility of native particles
+    and complexes in solution and to rapidly analyze structural changes in response
+    to variations in external conditions. New high brilliance sources and novel data
+    analysis methods significantly enhanced resolution and reliability of structural
+    models provided by the technique. Automation of the SAXS experiment, data processing
+    and interpretation make solution SAXS a streamline tool for large scale structural
+    studies in molecular biology. The method provides low resolution macromolecular
+    shapes ab initio and is readily combined with other structural and biochemical
+    techniques in integrative studies. Very importantly, SAXS is sensitive to macromolecular
+    flexibility being one of the few structural techniques applicable to flexible
+    systems and intrinsically disordered proteins (IDPs). A major recent development
+    is the use of SAXS to study particle dynamics in solution by ensemble approaches,
+    which allow one to quantitatively characterize flexible systems. Of special interest
+    is the joint use of SAXS with solution NMR, given that both methods yield highly
+    complementary structural information, in particular, for IDPs. In this chapter,
+    we present the basics of SAXS and also consider protocols of the experiment and
+    data analysis for different scenarios depending on the type of the studied object.
+    These include ab initio shape reconstruction, validation of available high resolution
+    structures and rigid body modelling for folded macromolecules and also characterisation
+    of flexible proteins with the ensemble methods. The methods are illustrated by
+    examples of recent applications and further perspectives of the integrative use
+    of SAXS with NMR in the studies of IDPs are discussed.
+  keyword: Ab initio shape reconstruction; Ensemble description of flexible proteins;
+    Hybrid methods in structural biology; Intrinsically disordered proteins; Rigid
+    body modelling; Small-angle X-ray scattering; Solution scattering; Intrinsically
+    Disordered Proteins/\*chemistry; Protein Conformation; \*Scattering, Small Angle;
+    \*X-Ray Diffraction
+  URL: https://pubmed.ncbi.nlm.nih.gov/26387105
+  DOI: 10.1007/978-3-319-20164-1{\_}8
+  ISBN: '0065-2598'
+
+- id: Kikhney-2015b
+  type: article-journal
+  author:
+  - family: Kikhney
+    given: Alexey G
+  - family: Svergun
+    given: Dmitri I
+  title: A practical guide to small angle x-ray scattering (saxs) of flexible and
+    intrinsically disordered proteins
+  container-title: FEBS letters
+  publisher-place: England
+  page: '2570-2577'
+  volume: '589'
+  issue: 19 Pt A
+  abstract: Small-angle X-ray scattering (SAXS) is a biophysical method to study the
+    overall shape and structural transitions of biological macromolecules in solution.
+    SAXS provides low resolution information on the shape, conformation and assembly
+    state of proteins, nucleic acids and various macromolecular complexes. The technique
+    also offers powerful means for the quantitative analysis of flexible systems,
+    including intrinsically disordered proteins (IDPs). Here, the basic principles
+    of SAXS are presented, and profits and pitfalls of the characterization of multidomain
+    flexible proteins and IDPs using SAXS are discussed from the practical point of
+    view. Examples of the synergistic use of SAXS with high resolution methods like
+    X-ray crystallography and nuclear magnetic resonance (NMR), as well as other experimental
+    and in silico techniques to characterize completely, or partially unstructured
+    proteins, are presented.
+  keyword: Disorder; Flexibility; Intrinsically disordered protein; Small angle scattering;
+    Small-angle X-ray scattering; Algorithms; Computer Simulation; Intrinsically Disordered
+    Proteins/\*chemistry; Models, Molecular; Pliability; \*Protein Conformation; \*Protein
+    Folding; \*Scattering, Small Angle; X-Ray Diffraction/instrumentation/\*methods
+  URL: https://pubmed.ncbi.nlm.nih.gov/26320411
+  DOI: 10.1016/j.febslet.2015.08.027
+  ISBN: '1873-3468'
+
+- id: Kikhney-2015a
+  type: article-journal
+  author:
+  - family: Kikhney
+    given: Alexey G
+  - family: Svergun
+    given: Dmitri I
+  issued:
+  - year: 2015
+  title: A practical guide to small angle x-ray scattering (saxs) of flexible and
+    intrinsically disordered proteins
+  container-title: FEBS letters
+  publisher-place: England
+  page: '2570-2577'
+  volume: '589'
+  issue: 19 Pt A
+  abstract: Small-angle X-ray scattering (SAXS) is a biophysical method to study the
+    overall shape and structural transitions of biological macromolecules in solution.
+    SAXS provides low resolution information on the shape, conformation and assembly
+    state of proteins, nucleic acids and various macromolecular complexes. The technique
+    also offers powerful means for the quantitative analysis of flexible systems,
+    including intrinsically disordered proteins (IDPs). Here, the basic principles
+    of SAXS are presented, and profits and pitfalls of the characterization of multidomain
+    flexible proteins and IDPs using SAXS are discussed from the practical point of
+    view. Examples of the synergistic use of SAXS with high resolution methods like
+    X-ray crystallography and nuclear magnetic resonance (NMR), as well as other experimental
+    and in silico techniques to characterize completely, or partially unstructured
+    proteins, are presented.
+  keyword: Disorder; Flexibility; Intrinsically disordered protein; Small angle scattering;
+    Small-angle X-ray scattering; Algorithms; Computer Simulation; Intrinsically Disordered
+    Proteins/\*chemistry; Models, Molecular; Pliability; \*Protein Conformation; \*Protein
+    Folding; \*Scattering, Small Angle; X-Ray Diffraction/instrumentation/\*methods
+  URL: https://pubmed.ncbi.nlm.nih.gov/26320411
+  DOI: 10.1016/j.febslet.2015.08.027
+  ISBN: '1873-3468'
+
+- id: Barrow-1992
+  type: article-journal
+  author:
+  - family: Barrow
+    given: Colin J.
+  - family: Yasuda
+    given: Akikazu
+  - family: Kenny
+    given: Peter T.M.
+  - family: Zagorski
+    given: Michael G.
+  issued:
+  - year: 1992
+  title: 'Solution conformations and aggregational properties of synthetic amyloid
+    β-peptides of alzheimer’s disease: Analysis of circular dichroism spectra'
+  title-short: Solution conformations and aggregational properties of synthetic amyloid
+    β-peptides of alzheimer’s disease
+  container-title: Journal of Molecular Biology
+  page: 1075 - 1093
+  volume: '225'
+  issue: '4'
+  abstract: 'The A4 or β-peptide (39 to 43 amino acid residues) is the principal
+    proteinaceous component of amyloid deposits in Alzheimer’s disease. Using circular
+    dichroism (c.d.), we have studied the secondary structures and aggregational properties
+    in solution of 4 synthetic amyloid β-peptides: β-(1–28), β-(1–39), β-(1–42) and
+    β-(29–42). The natural components of cerebrovascular deposits and extracellular
+    amyloid plaques are β-(1–39) and β-(1–42), while β-(1–28) and β-(29–42) are unnatural
+    fragments. The β-(1–28), β-(1–39) and β-(1–42) peptides adopt mixtures of β-sheet,
+    α-helix and random coil structures, with the relative proportions of each secondary
+    structure being strongly dependent upon the solution conditions. In aqueous solution,
+    β-sheet structure is favored for the β-(1–39) and β-(1–42) peptides, while in
+    aqueous solution containing trifluoroethanol (TFE) or hexafluoroisopropanol (HFIP),
+    α-helical structure is favored for all 3 peptides. The α-helical structure unfolds
+    with increasing temperature and is favored at pH 1 to 4 and pH 7 to 10; the β-sheet
+    conformation is temperature insensitive and is favored at pH 4 to 7. Peptide concentration
+    studies showed that the β-sheet conformation is oligomeric (intermolecular), whereas
+    the α-helical conformation is monomeric (intramolecular). The rate of aggregation
+    to the oligomeric β-sheet structure (α-helix → random coil → β-sheet) is also
+    dependent upon the solution conditions such as the pH and peptide concentration;
+    maximum β-sheet formation occurs at pH 5.4. These results suggest that β-peptide
+    is not an intrinsically insoluble peptide. Thus, solution abnormalities, together
+    with localized high peptide concentrations, which may occur in Alzheimer’s disease,
+    may contribute to the formation of amyloid plaques. The hydrophobic β-(29–42)
+    peptide adopts exclusively an intermolecular β-sheet conformation in aqueous solution
+    despite changes in temperature or pH. Therefore, this segment may be the first
+    region of the β-peptide to aggregate and may direct the folding of the complete
+    β-peptide to produce the β-pleated sheet structure found in amyloid deposits.
+    Differences between the solution conformations of the β-(1–39) and β-(1–42) peptides
+    suggests that the last 3 C-terminal amino acids are crucial to amyloid deposition.'
+  keyword: β-peptide, Alzheimer’s disease, circular dichroism
+  URL: http://www.sciencedirect.com/science/article/pii/002228369290106T
+  DOI: https://doi.org/10.1016/0022-2836(92)90106-T
+  ISSN: '0022-2836'
+
+- id: Unzai-2018
+  type: article-journal
+  author:
+  - family: Unzai
+    given: Satoru
+  issued:
+  - year: 2018
+  title: Analytical ultracentrifugation in structural biology
+  container-title: Biophysical reviews
+  publisher: Springer Berlin Heidelberg
+  page: '229-233'
+  volume: '10'
+  issue: '2'
+  abstract: Researchers in the field of structural biology, especially X-ray crystallography
+    and protein nuclear magnetic resonance, are interested in knowing as much as possible
+    about the state of their target protein in solution. Not only is this knowledge
+    relevant to studies of biological function, it also facilitates determination
+    of a protein structure using homogeneous monodisperse protein samples. A researcher
+    faced with a new protein to study will have many questions even after that protein
+    has been purified. Analytical ultracentrifugation (AUC) can provide all of this
+    information readily from a small sample in a non-destructive way, without the
+    need for labeling, enabling structure determination experiments without any wasting
+    time and material on uncharacterized samples. In this article, I use examples
+    to illustrate how AUC can contribute to protein structural analysis. Integrating
+    information from a variety of biophysical experimental methods, such as X-ray
+    crystallography, small angle X-ray scattering, electrospray ionization-mass spectrometry,
+    AUC allows a more complete understanding of the structure and function of biomacromolecules.
+  keyword: AUC; Crystallography; Interaction; Protein
+  URL: https://pubmed.ncbi.nlm.nih.gov/29188538
+  DOI: 10.1007/s12551-017-0340-0
+  ISBN: 1867-2450; 1867-2469
+
+- id: Uchiyama-2018
+  type: article-journal
+  author:
+  - family: Uchiyama
+    given: Susumu
+  - family: Noda
+    given: Masanori
+  - family: Krayukhina
+    given: Elena
+  issued:
+  - year: 2018
+  title: Sedimentation velocity analytical ultracentrifugation for characterization
+    of therapeutic antibodies
+  container-title: Biophysical reviews
+  publisher: Springer Berlin Heidelberg
+  page: '259-269'
+  volume: '10'
+  issue: '2'
+  abstract: Sedimentation velocity analytical ultracentrifugation (SV-AUC) coupled
+    with direct computational fitting of the observed concentration profiles (sedimentating
+    boundary) have been developed and widely used for the characterization of macromolecules
+    and nanoparticles in solution. In particular, size distribution analysis by SV-AUC
+    has become a reliable and essential approach for the characterization of biopharmaceuticals
+    including therapeutic antibodies. In this review, we describe the importance and
+    advantages of SV-AUC for studying biopharmaceuticals, with an emphasis on strategies
+    for sample preparation, data acquisition, and data analysis. Recent discoveries
+    enabled by AUC with a fluorescence detection system and potential future applications
+    are also discussed.
+  keyword: Aggregates; Analytical ultracentrifugation; Biopharmaceuticals; Immunogenicity;
+    Protein; Sedimentation velocity
+  URL: https://pubmed.ncbi.nlm.nih.gov/29243091
+  DOI: 10.1007/s12551-017-0374-3
+  ISBN: 1867-2450; 1867-2469
+
+- id: Harding-2015
+  type: article-journal
+  author:
+  - family: Harding
+    given: Stephen E
+  - family: Gillis
+    given: Richard B
+  - family: Almutairi
+    given: Fahad
+  - family: Erten
+    given: Tayyibe
+  - family: Kök
+    given: M Şamil
+  - family: Adams
+    given: Gary G
+  issued:
+  - year: 2015
+  title: Recent advances in the analysis of macromolecular interactions using the
+    matrix-free method of sedimentation in the analytical ultracentrifuge
+  container-title: Biology
+  publisher: MDPI
+  page: '237-250'
+  volume: '4'
+  issue: '1'
+  abstract: Sedimentation in the analytical ultracentrifuge is a matrix free solution
+    technique with no immobilisation, columns, or membranes required and can be used
+    to study self-association and complex or "hetero"-interactions, stoichiometry,
+    reversibility and interaction strength of a wide variety of macromolecular types
+    and across a very large dynamic range (dissociation constants from 10-12 M to
+    10-1 M). We extend an earlier review specifically highlighting advances in sedimentation
+    velocity and sedimentation equilibrium in the analytical ultracentrifuge applied
+    to protein interactions and mucoadhesion and to review recent applications in
+    protein self-association (tetanus toxoid, agrin), protein-like carbohydrate association
+    (aminocelluloses), carbohydrate-protein interactions (polysaccharide-gliadin),
+    nucleic-acid protein (G-duplexes), nucleic acid-carbohydrate (DNA-chitosan) and
+    finally carbohydrate-carbohydrate (xanthan-chitosan and a ternary polysaccharide
+    complex) interactions.
+  URL: https://pubmed.ncbi.nlm.nih.gov/25756246
+  DOI: 10.3390/biology4010237
+  ISBN: 2079-7737; 2079-7737
+
+- id: Ranjbar-2009
+  type: article-journal
+  author:
+  - family: Ranjbar
+    given: Bijan
+  - family: Gill
+    given: Pooria
+  issued:
+  - year: 2009
+  title: 'Circular dichroism techniques: Biomolecular and nanostructural analyses—a
+    review'
+  title-short: Circular dichroism techniques
+  container-title: Chemical biology & drug design
+  publisher-place: England
+  page: '101-120'
+  volume: '74'
+  issue: '2'
+  abstract: This paper reviews the best known techniques using circular dichroism
+    spectroscopy such as conventional circular dichroism (i.e. electronic circular
+    dichroism), magnetic circular dichroisms (magnetic vibrational circular dichroism,
+    x-ray magnetic circular dichroism), fluorescence detected circular dichroism,
+    near-infrared circular dichroism, vibrational circular dichroism, Fourier transform
+    infrared circular dichroism, high pressure liquid chromatography circular dichroism,
+    stopped-flow circular dichroism, and synchrotron radiation circular dichroism.
+    Also, we have described here the most important applications of circular dichroism
+    spectroscopy in structural biochemistry and nanoscience.
+  keyword: Circular dichroism
+  URL: https://pubmed.ncbi.nlm.nih.gov/19566697
+  DOI: 10.1111/j.1747-0285.2009.00847.x
+  ISBN: '1747-0285'
+
+- id: Kikhney-2015
+  type: article-journal
+  author:
+  - family: Kikhney
+    given: Alexey G.
+  - family: Svergun
+    given: Dmitri I.
+  issued:
+  - year: 2015
+  title: A practical guide to small angle x-ray scattering (saxs) of flexible and
+    intrinsically disordered proteins
+  container-title: FEBS Letters
+  page: 2570 - 2577
+  volume: '589'
+  issue: 19, Part A
+  note: Dynamics, flexibility, and intrinsic disorder in protein assemblies
+  abstract: Small-angle X-ray scattering (SAXS) is a biophysical method to study the
+    overall shape and structural transitions of biological macromolecules in solution.
+    SAXS provides low resolution information on the shape, conformation and assembly
+    state of proteins, nucleic acids and various macromolecular complexes. The technique
+    also offers powerful means for the quantitative analysis of flexible systems,
+    including intrinsically disordered proteins (IDPs). Here, the basic principles
+    of SAXS are presented, and profits and pitfalls of the characterization of multidomain
+    flexible proteins and IDPs using SAXS are discussed from the practical point of
+    view. Examples of the synergistic use of SAXS with high resolution methods like
+    X-ray crystallography and nuclear magnetic resonance (NMR), as well as other experimental
+    and in silico techniques to characterize completely, or partially unstructured
+    proteins, are presented.
+  keyword: Small angle scattering, Small-angle X-ray scattering, Flexibility, Disorder,
+    Intrinsically disordered protein
+  URL: http://www.sciencedirect.com/science/article/pii/S0014579315007279
+  DOI: https://doi.org/10.1016/j.febslet.2015.08.027
+  ISSN: '0014-5793'
+
+- id: Sievert-2018a
+  type: webpage
+  author:
+  - family: Sievert
+    given: Carson
+  issued:
+  - year: 2018
+  title: Plotly for r
+
+- id: Cheng-2018
+  type: article-journal
+  author:
+  - family: Cheng
+    given: Yifan
+  issued:
+  - year: 2018
+  title: Single-particle cryo-em—how did it get here and where will it go
+  container-title: Science
+  publisher: American Association for the Advancement of Science
+  page: '876-880'
+  volume: '361'
+  issue: '6405'
+  abstract: 'Cryoelectron microscopy, or simply cryo-EM, refers mainly to three
+    very different yet closely related techniques: electron crystallography, single-particle
+    cryo-EM, and electron cryotomography. In the past few years, single-particle cryo-EM
+    in particular has triggered a revolution in structural biology and has become
+    a newly dominant discipline. This Review examines the fascinating story of its
+    start and evolution over the past 40-plus years, delves into how and why the recent
+    technological advances have been so groundbreaking, and briefly considers where
+    the technique may be headed in the future.'
+  URL: https://science.sciencemag.org/content/361/6405/876
+  DOI: 10.1126/science.aat4346
+  ISSN: '0036-8075'
+
+- id: Sgro-2018
+  type: article-journal
+  author:
+  - family: Sgro
+    given: Germán G
+  - family: Costa
+    given: Tiago R D
+  issued:
+  - year: 2018
+  title: Cryo-em grid preparation of membrane protein samples for single particle
+    analysis.
+  container-title: Front Mol Biosci
+  publisher-place: Departamento de Bioquímica, Instituto de Química, Universidade
+    de São Paulo, São Paulo, Brazil.; Department of Life Sciences, Imperial College
+    London, MRC Centre for Molecular Microbiology; Infection, London, United Kingdom.
+  page: '74'
+  volume: '5'
+  abstract: Recent advances in cryo-electron microscopy (cryo-EM) have made it possible
+    to solve structures of biological macromolecules at near atomic resolution. Development
+    of more stable microscopes, improved direct electron detectors and faster software
+    for image processing has enabled structural solution of not only large macromolecular
+    (megadalton range) complexes but also small ( 60 kDa) proteins. As a result of
+    the widespread use of the technique, we have also witnessed new developments of
+    techniques for cryo-EM grid preparation of membrane protein samples. This includes
+    new types of solubilization strategies that better stabilize these protein complexes
+    and the development of new grid supports with proven efficacy in reducing the
+    motion of the molecules during electron beam exposure. Here, we discuss the practicalities
+    and recent challenges of membrane protein sample preparation and vitrification,
+    as well as grid support and foil treatment in the context of the structure determination
+    of protein complexes by single particle cryo-EM.
+  keyword: cryo-EM; membrane protein complex; protein purification; single particle
+    analysis; vitrification
+  DOI: 10.3389/fmolb.2018.00074
+  ISSN: 2296-889X (Print); 2296-889X (Electronic); 2296-889X (Linking)
+  PMID: '30131964'
+
+- id: Elmlund-2017
+  type: article-journal
+  author:
+  - family: Elmlund
+    given: Dominika
+  - family: Le
+    given: Sarah N
+  - family: Elmlund
+    given: Hans
+  issued:
+  - year: 2017
+  title: 'High-resolution cryo-em: The nuts and bolts'
+  title-short: High-resolution cryo-em
+  container-title: Current Opinion in Structural Biology
+  page: 1 - 6
+  volume: '46'
+  note: 'Cryo electron microscopy: exciting advances in CryoEM herald a new era
+    in structural biology \* Biophysical methods: behind the scenes of the cryo-EM
+    revolution'
+  abstract: Cryogenic electron microscopy (cryo-EM) and single-particle analysis now
+    enables the determination of high-resolution structures of macromolecular assemblies
+    that have resisted X-ray crystallography and other approaches. Successful high-resolution
+    structure determination by cryo-EM always depends on the quality of the protein
+    sample. While structural heterogeneity remains a key challenge for cryo-EM, it
+    also represents a rare opportunity to study the intrinsic conformational flexibility
+    of macromolecular assemblies. Here, we review the key technological advancements
+    that have made this ‘resolution revolution’ possible and give a concise overview
+    of the technical challenges that needed to be overcome to allow high-resolution
+    structure determination.
+  URL: http://www.sciencedirect.com/science/article/pii/S0959440X16301956
+  DOI: https://doi.org/10.1016/j.sbi.2017.03.003
+  ISSN: 0959-440X
+
+- id: Lu-2014
+  type: article-journal
+  author:
+  - family: Lu
+    given: Peilong
+  - family: Bai
+    given: Xiao-chen
+  - family: Ma
+    given: Dan
+  - family: Xie
+    given: Tian
+  - family: Yan
+    given: Chuangye
+  - family: Sun
+    given: Linfeng
+  - family: Yang
+    given: Guanghui
+  - family: Zhao
+    given: Yanyu
+  - family: Zhou
+    given: Rui
+  - family: Scheres
+    given: Sjors H. W.
+  - family: Shi
+    given: Yigong
+  issued:
+  - year: 2014
+  title: Three-dimensional structure of human γ-secretase
+  container-title: Nature
+  page: '166-170'
+  volume: '512'
+  issue: '7513'
+  abstract: The γ-secretase complex, comprising presenilin 1 (PS1), PEN-2, APH-1 and
+    nicastrin, is a membrane-embedded protease that controls a number of important
+    cellular functions through substrate cleavage. Aberrant cleavage of the amyloid
+    precursor protein (APP) results in aggregation of amyloid-β, which accumulates
+    in the brain and consequently causes Alzheimer’s disease. Here we report the three-dimensional
+    structure of an intact human γ-secretase complex at 4.5 Åresolution, determined
+    by cryo-electron-microscopy single-particle analysis. The γ-secretase complex
+    comprises a horseshoe-shaped transmembrane domain, which contains 19 transmembrane
+    segments (TMs), and a large extracellular domain (ECD) from nicastrin, which sits
+    immediately above the hollow space formed by the TM horseshoe. Intriguingly, nicastrin
+    ECD is structurally similar to a large family of peptidases exemplified by the
+    glutamate carboxypeptidase PSMA. This structure serves as an important basis for
+    understanding the functional mechanisms of the γ-secretase complex.
+  URL: https://doi.org/10.1038/nature13567
+  DOI: 10.1038/nature13567
+  ISBN: '1476-4687'
+
+- id: Bai-2015
+  type: article-journal
+  author:
+  - family: Bai
+    given: Xiao-chen
+  - family: Yan
+    given: Chuangye
+  - family: Yang
+    given: Guanghui
+  - family: Lu
+    given: Peilong
+  - family: Ma
+    given: Dan
+  - family: Sun
+    given: Linfeng
+  - family: Zhou
+    given: Rui
+  - family: Scheres
+    given: Sjors H. W.
+  - family: Shi
+    given: Yigong
+  issued:
+  - year: 2015
+  title: An atomic structure of human γ-secretase
+  container-title: Nature
+  page: '212-217'
+  volume: '525'
+  issue: '7568'
+  abstract: Dysfunction of the intramembrane protease γ-secretase is thought to cause
+    Alzheimer’s disease, with most mutations derived from Alzheimer’s disease mapping
+    to the catalytic subunit presenilin 1 (PS1). Here we report an atomic structure
+    of human γ-secretase at 3.4 Åresolution, determined by single-particle cryo-electron
+    microscopy. Mutations derived from Alzheimer’s disease affect residues at two
+    hotspots in PS1, each located at the centre of a distinct four transmembrane segment
+    (TM) bundle. TM2 and, to a lesser extent, TM6 exhibit considerable flexibility,
+    yielding a plastic active site and adaptable surrounding elements. The active
+    site of PS1 is accessible from the convex side of the TM horseshoe, suggesting
+    considerable conformational changes in nicastrin extracellular domain after substrate
+    recruitment. Component protein APH-1 serves as a scaffold, anchoring the lone
+    transmembrane helix from nicastrin and supporting the flexible conformation of
+    PS1. Ordered phospholipids stabilize the complex inside the membrane. Our structure
+    serves as a molecular basis for mechanistic understanding of γ-secretase function.
+  URL: https://doi.org/10.1038/nature14892
+  DOI: 10.1038/nature14892
+  ISBN: '1476-4687'
+
+- id: Parker-2016
+  type: article-journal
+  author:
+  - family: Parker
+    given: Joanne L
+  - family: Newstead
+    given: Simon
+  issued:
+  - year: 2016
+  title: 'Membrane protein crystallisation: Current trends and future perspectives'
+  title-short: Membrane protein crystallisation
+  container-title: Advances in experimental medicine and biology
+  publisher: Springer International Publishing
+  page: '61-72'
+  volume: '922'
+  abstract: Alpha helical membrane proteins are the targets for many pharmaceutical
+    drugs and play important roles in physiology and disease processes. In recent
+    years, substantial progress has been made in determining their atomic structure
+    using X-ray crystallography. However, a major bottleneck still remains; the identification
+    of conditions that give crystals that are suitable for structure determination.
+    Over the past 10 years we have been analysing the crystallisation conditions reported
+    for alpha helical membrane proteins with the aim to facilitate a rational approach
+    to the design and implementation of successful crystallisation screens. The result
+    has been the development of MemGold, MemGold2 and the additive screen MemAdvantage.
+    The associated analysis, summarised and updated in this chapter, has revealed
+    a number of surprisingly successfully strategies for crystallisation and detergent
+    selection.
+  keyword: \*Crystallisation; \*Detergent selection; \*Membrane protein; \*Screen
+    development; Animals; Bacterial Proteins/chemistry/isolation & purification; Buffers;
+    Chemical Precipitation; Crystallization; Crystallography, X-Ray; Detergents/pharmacology;
+    Humans; Hydrogen-Ion Concentration; Membrane Proteins/\*chemistry/isolation &
+    purification; Protein Structure, Secondary; Salts/chemistry
+  URL: https://pubmed.ncbi.nlm.nih.gov/27553235
+  DOI: 10.1007/978-3-319-35072-1_5
+  ISBN: 0065-2598; 2214-8019
+
+- id: Jain-2010
+  type: article-journal
+  author:
+  - family: Jain
+    given: Deepti
+  - family: Lamour
+    given: Valerie
+  issued:
+  - year: 2010
+  title: Computational tools in protein crystallography
+  container-title: Methods in molecular biology (Clifton, N.J.)
+  publisher-place: United States
+  page: '129-156'
+  volume: '673'
+  abstract: Protein crystallography emerged in the early 1970s and is, to this day,
+    one of the most powerful techniques for the analysis of enzyme mechanisms and
+    macromolecular interactions at the atomic level. It is also an extremely powerful
+    tool for drug design. This field has evolved together with developments in computer
+    science and molecular biology, allowing faster three-dimensional structure determination
+    of complex biological assemblies. In recent times, structural genomics initiatives
+    have pushed the development of methods to further speed up this process. The algorithms
+    initially defined in the last decade for structure determination are now more
+    and more elaborate, but the computational tools have evolved toward simpler and
+    more user-friendly packages and web interfaces. We present here a modest overview
+    of the popular software packages that have been developed for solving protein
+    structures, and give a few guidelines and examples for structure determination
+    using the two most popular methods, molecular replacement and multiple anomalous
+    dispersion.
+  keyword: Computational Biology/\*methods; Crystallography, X-Ray/\*methods; Databases,
+    Protein; Models, Molecular; Proteins/\*chemistry; \*Software
+  URL: https://pubmed.ncbi.nlm.nih.gov/20835796
+  DOI: 10.1007/978-1-60761-842-3_8
+  ISBN: '1940-6029'
+
+- id: Wang-2017
+  type: article-journal
+  author:
+  - family: Wang
+    given: Hong-Wei
+  - family: Wang
+    given: Jia-Wei
+  issued:
+  - year: 2017
+  title: How cryo-electron microscopy and x-ray crystallography complement each other
+  container-title: Protein Science
+  page: '32-39'
+  volume: '26'
+  issue: '1'
+  abstract: Abstract With the ability to resolve structures of macromolecules at atomic
+    resolution, X-ray crystallography has been the most powerful tool in modern structural
+    biology. At the same time, recent technical improvements have triggered a resolution
+    revolution in the single particle cryo-EM method. While the two methods are different
+    in many respects, from sample preparation to structure determination, they both
+    have the power to solve macromolecular structures at atomic resolution. It is
+    important to understand the unique advantages and caveats of the two methods in
+    solving structures and to appreciate the complementary nature of the two methods
+    in structural biology. In this review we provide some examples, and discuss how
+    X-ray crystallography and cryo-EM can be combined in deciphering structures of
+    macromolecules for our full understanding of their biological mechanisms.
+  keyword: cryo-EM, X-ray crystallography, structural biology, structure determination
+    methods, protein structure determination, X-ray and electron scattering
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/pro.3022
+  DOI: 10.1002/pro.3022
+
+- id: Powell-2017
+  type: article-journal
+  author:
+  - family: Powell
+    given: Harold R
+  title: X-ray data processing
+  container-title: Bioscience reports
+  publisher: Portland Press Ltd.
+  page: BSR20170227
+  volume: '37'
+  issue: '5'
+  abstract: The method of molecular structure determination by X-ray crystallography
+    is a little over a century old. The history is described briefly, along with developments
+    in X-ray sources and detectors. The fundamental processes involved in measuring
+    diffraction patterns on area detectors, i.e. autoindexing, refining crystal and
+    detector parameters, integrating the reflections themselves and putting the resultant
+    measurements on to a common scale are discussed, with particular reference to
+    the most commonly used software in the field.
+  keyword: crystallography; data processing; software; Crystallography, X-Ray/history/\*methods;
+    Electronic Data Processing/\*methods; History, 20th Century; Molecular Structure;
+    Software
+  URL: https://pubmed.ncbi.nlm.nih.gov/28899925
+  DOI: 10.1042/BSR20170227
+  ISBN: 1573-4935; 0144-8463
+
+- id: Earl-2017
+  type: article-journal
+  author:
+  - family: Earl
+    given: Lesley A
+  - family: Falconieri
+    given: Veronica
+  - family: Milne
+    given: Jacqueline LS
+  - family: Subramaniam
+    given: Sriram
+  issued:
+  - year: 2017
+  title: 'Cryo-em: Beyond the microscope'
+  title-short: Cryo-em
+  container-title: Current Opinion in Structural Biology
+  page: 71 - 78
+  volume: '46'
+  note: 'Cryo electron microscopy: exciting advances in CryoEM herald a new era
+    in structural biology \* Biophysical methods: behind the scenes of the cryo-EM
+    revolution'
+  abstract: The pace at which cryo-EM is being adopted as a mainstream tool in structural
+    biology has continued unabated over the past year. Initial successes in obtaining
+    near-atomic resolution structures with cryo-EM were enabled to a large extent
+    by advances in microscope and detector technology. Here, we review some of the
+    complementary technical improvements that are helping sustain the cryo-EM revolution.
+    We highlight advances in image processing that permit high resolution structure
+    determination even in the presence of structural and conformational heterogeneity.
+    We also review selected examples where biochemical strategies for membrane protein
+    stabilization facilitate cryo-EM structure determination, and discuss emerging
+    approaches for further improving the preparation of reliable plunge-frozen specimens.
+  URL: http://www.sciencedirect.com/science/article/pii/S0959440X17300180
+  DOI: https://doi.org/10.1016/j.sbi.2017.06.002
+  ISSN: 0959-440X
+
+- id: Whitford-2005a
+  type: chapter
+  author:
+  - family: Whitford
+    given: David
+  issued:
+  - year: 2005
+  title: Physical methods of determining the three-dimensional structure of proteins
+  container-title: 'Proteins: Structure and function'
+  publisher: John Wiley & Sons
+  publisher-place: Sussex, England
+  chapter-number: '10'
+  genre: Book
+  ISBN: '0-471-49893-9'
+
+- id: Whitford-2005
+  type: book
+  author:
+  - family: Whitford
+    given: David
+  issued:
+  - year: 2005
+  title: 'Proteins: Structure and function'
+  title-short: Proteins
+  publisher: John Wiley & Sons
+  publisher-place: Sussex, England
+  genre: Book
+  ISBN: '0-471-49893-9'
+
+- id: Nogales-2018
+  type: article-journal
+  author:
+  - family: Nogales
+    given: Eva
+  issued:
+  - year: 2018
+  title: Cryo-em
+  container-title: Current Biology
+  page: R1127 - R1128
+  volume: '28'
+  issue: '19'
+  URL: http://www.sciencedirect.com/science/article/pii/S0960982218309151
+  DOI: https://doi.org/10.1016/j.cub.2018.07.016
+  ISSN: '0960-9822'
+
+- id: Rhodes-2006
+  type: book
+  author:
+  - family: Rhodes
+    given: Gale
+  issued:
+  - year: 2006
+  title: An overview of protein crystallography
+  publisher: Academic Press
+  page: 7 - 30
+  chapter-number: '2'
+  edition: '3'
+  URL: http://www.sciencedirect.com/science/article/pii/B9780125870733500040
+  DOI: https://doi.org/10.1016/B978-012587073-3/50004-0
+  ISBN: '978-0-12-587073-3'
+
+- id: Rhodes-2006a
+  type: chapter
+  author:
+  - family: Rhodes
+    given: Gale
+  editor:
+  - family: Rhodes
+    given: Gale
+  issued:
+  - year: 2006
+  title: An overview of protein crystallography
+  container-title: Crystallography made crystal clear
+  collection-title: Complementary science
+  publisher: Academic Press
+  publisher-place: Burlington
+  page: 7 - 30
+  chapter-number: '2'
+  edition: '3'
+  URL: http://www.sciencedirect.com/science/article/pii/B9780125870733500040
+  DOI: https://doi.org/10.1016/B978-012587073-3/50004-0
+  ISBN: '978-0-12-587073-3'
+
+- id: Xiong-2008
+  type: article-journal
+  author:
+  - family: Xiong
+    given: Yong
+  issued:
+  - year: 2008
+  title: '<span class="nocase">From electron microscopy to X-ray crystallography:
+    molecular-replacement case studies</span>'
+  container-title: Acta Crystallographica Section D
+  page: '76-82'
+  volume: '64'
+  issue: '1'
+  abstract: Multi-component molecular complexes are increasingly being tackled by
+    structural biology, bringing X-ray crystallography into the purview of electron-microscopy
+    (EM) studies. X-ray crystallography can utilize a low-resolution EM map for structure
+    determination followed by phase extension to high resolution. Test studies have
+    been conducted on five crystal structures of large molecular assemblies, in which
+    EM maps are used as models for structure solution by molecular replacement (MR)
+    using various standard MR packages such as *AMoRe*, *MOLREP* and *Phaser*. The
+    results demonstrate that EM maps are viable models for molecular replacement.
+    Possible difficulties in data analysis, such as the effects of the EM magnification
+    error, and the effect of MR positional/rotational errors on phase extension are
+    discussed.
+  keyword: electron microscopy, molecular replacement
+  URL: https://doi.org/10.1107/S090744490705398X
+  DOI: 10.1107/S090744490705398X
+
+- id: Kuhlbrandt-2014
+  type: article-journal
+  author:
+  - family: Kühlbrandt
+    given: Werner
+  issued:
+  - year: 2014
+  title: 'Microscopy: Cryo-em enters a new era'
+  title-short: Microscopy
+  container-title: eLife
+  publisher: eLife Sciences Publications, Ltd
+  page: 'e03678'
+  volume: '3'
+  abstract: Advances in detector hardware and image-processing software have led to
+    a revolution in the use of electron cryo-microscopy to determine complex molecular
+    structures at high resolution.
+  keyword: Cryo-EM, image analysis, single-particle analysis, micoscopy
+  URL: https://doi.org/10.7554/eLife.03678
+  DOI: 10.7554/eLife.03678
+  ISSN: 2050-084X
+
+- id: Milne-2013
+  type: article-journal
+  author:
+  - family: Milne
+    given: Jacqueline L S
+  - family: Borgnia
+    given: Mario J
+  - family: Bartesaghi
+    given: Alberto
+  - family: Tran
+    given: Erin E H
+  - family: Earl
+    given: Lesley A
+  - family: Schauder
+    given: David M
+  - family: Lengyel
+    given: Jeffrey
+  - family: Pierson
+    given: Jason
+  - family: Patwardhan
+    given: Ardan
+  - family: Subramaniam
+    given: Sriram
+  title: Cryo-electron microscopy–a primer for the non-microscopist
+  container-title: The FEBS journal
+  page: '28-45'
+  volume: '280'
+  issue: '1'
+  abstract: Cryo-electron microscopy (cryo-EM) is increasingly becoming a mainstream
+    technology for studying the architecture of cells, viruses and protein assemblies
+    at molecular resolution. Recent developments in microscope design and imaging
+    hardware, paired with enhanced image processing and automation capabilities, are
+    poised to further advance the effectiveness of cryo-EM methods. These developments
+    promise to increase the speed and extent of automation, and to improve the resolutions
+    that may be achieved, making this technology useful to determine a wide variety
+    of biological structures. Additionally, established modalities for structure determination,
+    such as X-ray crystallography and nuclear magnetic resonance spectroscopy, are
+    being routinely integrated with cryo-EM density maps to achieve atomic-resolution
+    models of complex, dynamic molecular assemblies. In this review, which is directed
+    towards readers who are not experts in cryo-EM methodology, we provide an overview
+    of emerging themes in the application of this technology to investigate diverse
+    questions in biology and medicine. We discuss the ways in which these methods
+    are being used to study structures of macromolecular assemblies that range in
+    size from whole cells to small proteins. Finally, we include a description of
+    how the structural information obtained by cryo-EM is deposited and archived in
+    a publicly accessible database.
+  keyword: Animals; Cryoelectron Microscopy/\*methods; Electron Microscope Tomography;
+    Fourier Analysis; Humans; Imaging, Three-Dimensional; Macromolecular Substances/ultrastructure;
+    Proteins/ultrastructure
+  URL: https://pubmed.ncbi.nlm.nih.gov/23181775
+  DOI: 10.1111/febs.12078
+  ISBN: 1742-4658; 1742-464X
+
+- id: Rupp-2010
+  type: book
+  author:
+  - family: Rupp
+    given: Bernhard
+  issued:
+  - year: 2010
+  title: 'Biomolecular crystallography: Principles, practice, and application to
+    structural biology'
+  title-short: Biomolecular crystallography
+  publisher: Garland Science
+
+- id: Xiao-2016
+  type: article-journal
+  author:
+  - family: Xiao
+    given: Jie
+  - family: Goley
+    given: Erin D
+  issued:
+  - year: 2016
+  title: Redefining the roles of the ftsz-ring in bacterial cytokinesis
+  container-title: Current Opinion in Microbiology
+  page: 90 - 96
+  volume: '34'
+  note: 'Growth and development: Eukaryotes \* Growth and development: Prokaryotes'
+  abstract: In most bacteria, cell division relies on the functions of an essential
+    protein, FtsZ. FtsZ polymerizes at the future division site to form a ring-like
+    structure, termed the Z-ring, that serves as a scaffold to recruit all other division
+    proteins, and possibly generates force to constrict the cell. The scaffolding
+    function of the Z-ring is well established, but the force generating function
+    has recently been called into question. Additionally, new findings have demonstrated
+    that the Z-ring is more directly linked to cell wall metabolism than simply recruiting
+    enzymes to the division site. Here we review these advances and suggest that rather
+    than generating a rate-limiting constrictive force, the Z-ring’s function may
+    be redefined as an orchestrator of septum synthesis.
+  URL: http://www.sciencedirect.com/science/article/pii/S1369527416301254
+  DOI: https://doi.org/10.1016/j.mib.2016.08.008
+  ISSN: '1369-5274'
+
+- id: Chen-2001a
+  type: article-journal
+  author:
+  - family: Chen
+    given: Joseph C.
+  - family: Beckwith
+    given: Jon
+  title: FtsQ, ftsl and ftsi require ftsk, but not ftsn, for co-localization with
+    ftsz during escherichia coli cell division
+  container-title: Molecular Microbiology
+  publisher: John Wiley & Sons, Ltd
+  page: '395-413'
+  volume: '42'
+  issue: '2'
+  annote: 'doi: 10.1046/j.1365-2958.2001.02640.x'
+  URL: https://doi.org/10.1046/j.1365-2958.2001.02640.x
+  DOI: 10.1046/j.1365-2958.2001.02640.x
+  ISBN: 0950-382X
+
+- id: Pichoff-2007a
+  type: article-journal
+  author:
+  - family: Pichoff
+    given: Sebastien
+  - family: Lutkenhaus
+    given: Joe
+  issued:
+  - year: 2007
+  title: Identification of a region of ftsa required for interaction with ftsz
+  container-title: Molecular Microbiology
+  page: '1129-1138'
+  volume: '64'
+  issue: '4'
+  abstract: Summary The assembly of the Z ring is the earliest step in bacterial cell
+    division. In Escherichia coli this assembly requires either FtsA or ZipA which
+    bind to a conserved, C-terminal 17 amino acid motif in FtsZ and to the membrane.
+    The FtsZ–ZipA interaction is well characterized; however, nothing is known about
+    the region of FtsA involved in the interaction with FtsZ even though the FtsA–FtsZ
+    interaction is nearly ubiquitous in Eubacteria. FtsA is proposed to bind to the
+    membrane through its conserved C-terminal amphiphatic helix before efficiently
+    interacting with FtsZ. Based upon this model we designed a genetic screen to identify
+    mutants specifically impaired for the FtsA–FtsZ interaction. The mutants obtained
+    retain the ability to be targeted to the membrane but fail to be recruited to
+    the Z ring or interact with FtsZ in the yeast two-hybrid system. These mutants
+    do not complement an ftsA-depletion strain. Through this approach we have identified
+    a region of FtsA containing some invariant residues which is required for binding
+    to FtsZ. The results support our model that FtsA is targeted to the membrane before
+    it interacts with FtsZ and demonstrates that this interaction plays an essential
+    role in E. coli cell division.
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2958.2007.05735.x
+  DOI: 10.1111/j.1365-2958.2007.05735.x
+
+- id: Chen-2001
+  type: article-journal
+  author:
+  - family: Chen
+    given: Joseph C.
+  - family: Beckwith
+    given: Jon
+  issued:
+  - year: 2001
+  title: FtsQ, ftsl and ftsi require ftsk, but not ftsn, for co-localization with
+    ftsz during escherichia coli cell division
+  container-title: Molecular Microbiology
+  page: '395-413'
+  volume: '42'
+  issue: '2'
+  abstract: 'During cell division in Gram-negative bacteria, the cell envelope invaginates
+    and constricts at the septum, eventually severing the cell into two compartments,
+    and separating the replicated genetic materials. In Escherichia coli, at least
+    nine essential gene products participate directly in septum formation: FtsA, FtsI,
+    FtsL, FtsK, FtsN, FtsQ, FtsW, FtsZ and ZipA. All nine proteins have been localized
+    to the septal ring, an equatorial ring structure at the division site. We used
+    translational fusions to green fluorescent protein (GFP) to demonstrate that FtsQ,
+    FtsL and FtsI localize to potential division sites in filamentous cells depleted
+    of FtsN, but not in those depleted of FtsK. We also constructed translational
+    fusions of FtsZ, FtsA, FtsQ, FtsL and FtsI to enhanced cyan or yellow fluorescent
+    protein (ECFP or EYFP respectively), GFP variants with different fluorescence
+    spectra. Examination of cells expressing different combinations of the fusions
+    indicated that FtsA, FtsQ, FtsL and FtsI co-localize with FtsZ in filaments depleted
+    of FtsN. These localization results support the model that E. coli cell division
+    proteins assemble sequentially as a multimeric complex at the division site: first
+    FtsZ, then FtsA and ZipA independently of each other, followed successively by
+    FtsK, FtsQ, FtsL, FtsW, FtsI and FtsN.'
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1365-2958.2001.02640.x
+  DOI: 10.1046/j.1365-2958.2001.02640.x
+
+- id: Pichoff-2007
+  type: article-journal
+  author:
+  - family: Pichoff
+    given: Sebastien
+  - family: Lutkenhaus
+    given: Joe
+  issued:
+  - year: 2007
+  title: Identification of a region of ftsa required for interaction with ftsz
+  container-title: Molecular Microbiology
+  page: '1129-1138'
+  volume: '64'
+  issue: '4'
+  abstract: Summary The assembly of the Z ring is the earliest step in bacterial cell
+    division. In Escherichia coli this assembly requires either FtsA or ZipA which
+    bind to a conserved, C-terminal 17 amino acid motif in FtsZ and to the membrane.
+    The FtsZ–ZipA interaction is well characterized; however, nothing is known about
+    the region of FtsA involved in the interaction with FtsZ even though the FtsA–FtsZ
+    interaction is nearly ubiquitous in Eubacteria. FtsA is proposed to bind to the
+    membrane through its conserved C-terminal amphiphatic helix before efficiently
+    interacting with FtsZ. Based upon this model we designed a genetic screen to identify
+    mutants specifically impaired for the FtsA–FtsZ interaction. The mutants obtained
+    retain the ability to be targeted to the membrane but fail to be recruited to
+    the Z ring or interact with FtsZ in the yeast two-hybrid system. These mutants
+    do not complement an ftsA-depletion strain. Through this approach we have identified
+    a region of FtsA containing some invariant residues which is required for binding
+    to FtsZ. The results support our model that FtsA is targeted to the membrane before
+    it interacts with FtsZ and demonstrates that this interaction plays an essential
+    role in E. coli cell division.
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2958.2007.05735.x
+  DOI: 10.1111/j.1365-2958.2007.05735.x
+
+- id: Rodrigues-2012
+  type: article-journal
+  author:
+  - family: Rodrigues
+    given: Christopher D. A.
+  - family: Harry
+    given: Elizabeth J.
+  issued:
+  - year: 2012
+  title: The min system and nucleoid occlusion are not required for identifying the
+    division site in bacillus subtilis but ensure its efficient utilization
+  container-title: PLOS Genetics
+  publisher: Public Library of Science
+  page: '1-20'
+  volume: '8'
+  issue: '3'
+  abstract: 'Author Summary How organisms regulate biological processes so that
+    they occur at the correct place within the cell is a fundamental question in research.
+    Spatial regulation of cell division is vital to ensure equal partitioning of DNA
+    into newborn cells. Correct positioning of the division site at the cell centre
+    in rod-shaped bacteria is generally believed to occur via the combined action
+    of two factors: (i) nucleoid (chromosome) occlusion and (ii) a set of proteins
+    known collectively as the Min system. The earliest stage in bacterial cell division
+    is the assembly of a ring, called the Z ring, at the division site. Nucleoid occlusion
+    and Min work by preventing Z ring assembly at all sites along the cell other than
+    the cell centre. Here we make the surprising discovery that, in the absence of
+    both these factors, Z rings are positioned correctly at the division site, but
+    there is a delay in this process and it is less efficient. We propose that a separate
+    mechanism identifies the division site at midcell in rod-shaped bacteria, and
+    nucleoid occlusion and Min ensure that the Z ring forms there and only there,
+    at the right time and every time.'
+  URL: https://doi.org/10.1371/journal.pgen.1002561
+  DOI: 10.1371/journal.pgen.1002561
+
+- id: Hale-1999
+  type: article-journal
+  author:
+  - family: Hale
+    given: C A
+  - family: Boer
+    given: P A
+    dropping-particle: de
+  issued:
+  - year: 1999
+  title: Recruitment of zipa to the septal ring of escherichia coli is dependent on
+    ftsz and independent of ftsa
+  container-title: Journal of bacteriology
+  publisher: American Society for Microbiology
+  page: '167-176'
+  volume: '181'
+  issue: '1'
+  abstract: Cell division in prokaryotes is mediated by the septal ring. In Escherichia
+    coli, this organelle consists of several essential division proteins, including
+    FtsZ, FtsA, and ZipA. To gain more insight into how the structure is assembled,
+    we studied the interdependence of FtsZ, FtsA, and ZipA localization using both
+    immunofluorescence and Gfp tagging techniques. To this end, we constructed a set
+    of strains allowing us to determine the cellular location of each of these three
+    proteins in cells from which one of the other two had been specifically depleted.
+    Our results show that ZipA fails to accumulate in a ring shape in the absence
+    of FtsZ. Conversely, depletion of ZipA does not abolish formation of FtsZ rings
+    but leads to a significant reduction in the number of rings per unit of cell mass.
+    In addition, ZipA does not appear to require FtsA for assembly into the septal
+    ring and vice versa. It is suggested that septal ring formation starts by assembly
+    of the FtsZ ring, after which ZipA and FtsA join this structure in a mutually
+    independent fashion through direct interactions with the FtsZ protein.
+  keyword: Amino Acid Sequence; Bacterial Proteins/genetics/\*metabolism; Carrier
+    Proteins/genetics/\*metabolism; Cell Cycle Proteins/genetics/\*metabolism; Cell
+    Division; \*Cytoskeletal Proteins; Escherichia coli/\*cytology/genetics/\*metabolism;
+    \*Escherichia coli Proteins; Immunohistochemistry; Microscopy, Fluorescence; Microscopy,
+    Interference; Organelles/metabolism
+  URL: https://www.ncbi.nlm.nih.gov/pubmed/9864327
+  ISBN: 0021-9193; 1098-5530
+
+- id: Ramm-2019
+  type: article-journal
+  author:
+  - family: Ramm
+    given: Beatrice
+  - family: Heermann
+    given: Tamara
+  - family: Schwille
+    given: Petra
+  issued:
+  - year: 2019
+  title: The e. Coli mincde system in the regulation of protein patterns and gradients
+  container-title: Cellular and Molecular Life Sciences
+  page: '4245-4273'
+  volume: '76'
+  issue: '21'
+  abstract: Molecular self-organziation, also regarded as pattern formation, is crucial
+    for the correct distribution of cellular content. The processes leading to spatiotemporal
+    patterns often involve a multitude of molecules interacting in complex networks,
+    so that only very few cellular pattern-forming systems can be regarded as well
+    understood. Due to its compositional simplicity, the Escherichia coli MinCDE system
+    has, thus, become a paradigm for protein pattern formation. This biological reaction
+    diffusion system spatiotemporally positions the division machinery in E. coli
+    and is closely related to ParA-type ATPases involved in most aspects of spatiotemporal
+    organization in bacteria. The ATPase MinD and the ATPase-activating protein MinE
+    self-organize on the membrane as a reaction matrix. In vivo, these two proteins
+    typically oscillate from pole-to-pole, while in vitro they can form a variety
+    of distinct patterns. MinC is a passenger protein supposedly operating as a downstream
+    cue of the system, coupling it to the division machinery. The MinCDE system has
+    helped to extract not only the principles underlying intracellular patterns, but
+    also how they are shaped by cellular boundaries. Moreover, it serves as a model
+    to investigate how patterns can confer information through specific and non-specific
+    interactions with other molecules. Here, we review how the three Min proteins
+    self-organize to form patterns, their response to geometric boundaries, and how
+    these patterns can in turn induce patterns of other molecules, focusing primarily
+    on experimental approaches and developments.
+  URL: https://doi.org/10.1007/s00018-019-03218-x
+  DOI: 10.1007/s00018-019-03218-x
+  ISSN: '1420-9071'
+
+- id: Adams-2015
+  type: article-journal
+  author:
+  - family: Adams
+    given: David William
+  - family: Wu
+    given: Ling Juan
+  - family: Errington
+    given: Jeff
+  issued:
+  - year: 2015
+  title: Nucleoid occlusion protein noc recruits dna to the bacterial cell membrane.
+  container-title: EMBO J
+  page: '491-501'
+  volume: '34'
+  issue: '4'
+  abstract: To proliferate efficiently, cells must co-ordinate division with chromosome
+    segregation. In Bacillus subtilis, the nucleoid occlusion protein Noc binds to
+    specific DNA sequences (NBSs) scattered around the chromosome and helps to protect
+    genomic integrity by coupling the initiation of division to the progression of
+    chromosome replication and segregation. However, how it inhibits division has
+    remained unclear. Here, we demonstrate that Noc associates with the cell membrane
+    via an N-terminal amphipathic helix, which is necessary for function. Importantly,
+    the membrane-binding affinity of this helix is weak and requires the assembly
+    of nucleoprotein complexes, thus establishing a mechanism for DNA-dependent activation
+    of Noc. Furthermore, division inhibition by Noc requires recruitment of NBS DNA
+    to the cell membrane and is dependent on its ability to bind DNA and membrane
+    simultaneously. Indeed, Noc production in a heterologous system is sufficient
+    for recruitment of chromosomal DNA to the membrane. Our results suggest a simple
+    model in which the formation of large membrane-associated nucleoprotein complexes
+    physically occludes assembly of the division machinery.
+  keyword: Bacillus subtilis; FtsZ; Noc; ParB; nucleoid occlusion
+  DOI: 10.15252/embj.201490177
+  ISSN: 1460-2075 (Electronic); 0261-4189 (Print); 0261-4189 (Linking)
+
+- id: Du-2017
+  type: article-journal
+  author:
+  - family: Du
+    given: Shishen
+  - family: Lutkenhaus
+    given: Joe
+  issued:
+  - year: 2017
+  title: Assembly and activation of the escherichia coli divisome
+  container-title: Molecular Microbiology
+  page: '177-187'
+  volume: '105'
+  issue: '2'
+  abstract: Summary Cell division in Escherichia coli is mediated by a large protein
+    complex called the divisome. Most of the divisome proteins have been identified,
+    but how they assemble onto the Z ring scaffold to form the divisome and work together
+    to synthesize the septum is not well understood. In this review, we summarize
+    the latest findings on divisome assembly and activation as well as provide our
+    perspective on how these two processes might be regulated.
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/mmi.13696
+  DOI: 10.1111/mmi.13696
+
+- id: Tsang-2015
+  type: article-journal
+  author:
+  - family: Tsang
+    given: Mary-Jane
+  - family: Bernhardt
+    given: Thomas G
+  issued:
+  - year: 2015
+  title: Guiding divisome assembly and controlling its activity
+  container-title: Current Opinion in Microbiology
+  page: 60 - 65
+  volume: '24'
+  note: Cell regulation
+  abstract: Cell division in bacteria requires the construction of two new polar caps
+    for the daughter cells. To constrict the cell membrane and build these new surface
+    layers, bacteria employ a multiprotein machine called the divisome. Over the years,
+    most of the essential division proteins have been identified and localized to
+    the ring-like divisome apparatus. The challenge now is to determine the molecular
+    function of these factors, how they cooperate to bring about the dramatic transformation
+    of the mother cell envelope, and what coordinates their activity with other major
+    cell cycle events. In this review, we discuss recent progress in these areas with
+    an emphasis on results from the model organisms Escherichia coli and Bacillus
+    subtilis.
+  URL: http://www.sciencedirect.com/science/article/pii/S136952741500003X
+  DOI: https://doi.org/10.1016/j.mib.2015.01.002
+  ISSN: '1369-5274'
+
+- id: Ghosal-2014
+  type: article-journal
+  author:
+  - family: Ghosal
+    given: Debnath
+  - family: Trambaiolo
+    given: Daniel
+  - family: Amos
+    given: Linda A.
+  - family: Löwe
+    given: Jan
+  issued:
+  - year: 2014
+  title: MinCD cell division proteins form alternating copolymeric cytomotive filaments
+  container-title: Nature Communications
+  page: '5341'
+  volume: '5'
+  issue: '1'
+  abstract: During bacterial cell division, filaments of the tubulin-like protein
+    FtsZ assemble at midcell to form the cytokinetic Z-ring. Its positioning is regulated
+    by the oscillation of MinCDE proteins. MinC is activated by MinD through an unknown
+    mechanism and prevents Z-ring assembly anywhere but midcell. Here, using X-ray
+    crystallography, electron microscopy and in vivo analyses, we show that MinD activates
+    MinC by forming a new class of alternating copolymeric filaments that show similarity
+    to eukaryotic septin filaments. A non-polymerizing mutation in MinD causes aberrant
+    cell division in Escherichia coli. MinCD copolymers bind to membrane, interact
+    with FtsZ and are disassembled by MinE. Imaging a functional msfGFP-MinC fusion
+    protein in MinE-deleted cells reveals filamentous structures. EM imaging of our
+    reconstitution of the MinCD-FtsZ interaction on liposome surfaces reveals a plausible
+    mechanism for regulation of FtsZ ring assembly by MinCD copolymers.
+  URL: https://doi.org/10.1038/ncomms6341
+  DOI: 10.1038/ncomms6341
+  ISBN: '2041-1723'
+
+- id: Lluch-Senar-2010
+  type: article-journal
+  author:
+  - family: Lluch-Senar
+    given: Maria
+  - family: Querol
+    given: Enrique
+  - family: Piñol
+    given: Jaume
+  issued:
+  - year: 2010
+  title: Cell division in a minimal bacterium in the absence of ftsZ
+  container-title: Molecular Microbiology
+  page: '278-289'
+  volume: '78'
+  issue: '2'
+  abstract: Summary Mycoplasma genomes exhibit an impressively low amount of genes
+    involved in cell division and some species even lack the ftsZ gene, which is found
+    widespread in the microbial world and is considered essential for cell division
+    by binary fission. We constructed a Mycoplasma genitalium ftsZ null mutant by
+    gene replacement to investigate the role of this gene and the presence of alternative
+    cell division mechanisms in this minimal bacterium. Our results demonstrate that
+    ftsZ is non-essential for cell growth and reveal that, in the absence of the FtsZ
+    protein, M. genitalium can manage feasible cell divisions and cytokinesis using
+    the force generated by its motile machinery. This is an alternative mechanism,
+    completely independent of the FtsZ protein, to perform cell division by binary
+    fission in a microorganism. We also propose that the mycoplasma cytoskeleton,
+    a complex network of proteins involved in many aspects of the biology of these
+    microorganisms, may have taken over the function of many genes involved in cell
+    division, allowing their loss in the regressive evolution of the streamlined mycoplasma
+    genomes.
+  URL: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2958.2010.07306.x
+  DOI: 10.1111/j.1365-2958.2010.07306.x
+
+- id: Adams-2009
+  type: article-journal
+  author:
+  - family: Adams
+    given: David W.
+  - family: Errington
+    given: Jeff
+  issued:
+  - year: 2009
+  title: 'Bacterial cell division: Assembly, maintenance and disassembly of the
+    z ring'
+  title-short: Bacterial cell division
+  container-title: Nature Reviews Microbiology
+  page: '642-653'
+  volume: '7'
+  issue: '9'
+  abstract: The first recognizable event in bacterial cell division is the assembly
+    of FtsZ into a ring-like structure at mid-cell. This Z ring serves as a scaffold
+    for the assembly of the division machinery and contracts throughout division,
+    guiding the synthesis of the nascent septum.FtsZ is the ancestral homologue of
+    tubulin and assembles cooperatively, in a GTP-dependent manner, into longitudinal
+    protofilaments similar to those of αβ-tubulin. Although the polymerization of
+    FtsZ in vitro has been studied extensively, little is known about the architecture
+    of the polymers that make up the Z ring in vivo.Importantly, the concentration
+    of FtsZ in vivo is greatly in excess of the critical concentration for assembly.
+    Despite this, the intracellular concentration of FtsZ does not vary greatly during
+    the cell cycle. The initiation of cell division is instead regulated both spatially
+    and temporally at the level of Z ring assembly, by an array of accessory proteins
+    that can modulate the polymerization of FtsZ.FtsZ is a cytoplasmic protein, but
+    it must be tethered to the inner face of the cytoplasmic membrane to form the
+    Z ring. This is achieved primarily by the action of FtsA, which is widely conserved
+    and contains an amphipathic membrane-targeting sequence. Where present, ZipA,
+    an integral membrane protein, can also allow Z ring assembly and, along with ZapA,
+    also contributes to the stability of the Z ring.Other, early-assembling regulators,
+    such as ZapB and SepF, potentially play a part in organizing the ultrastructure
+    of the Z ring and, although it is not normally essential, SepF seems to contribute
+    to this process and might also be able to act as a membrane tether.The Z ring
+    is not a static structure. The polymers that constitute the Z ring are in a state
+    of flux, with subunits rapidly exchanging between the polymer and the cytoplasmic
+    pool. This turnover is stimulated by GTP hydrolysis and is regulated by the antagonistic
+    behaviour of many non-essential proteins, including ZapA, extra Z rings A (EzrA)
+    and ClpX.Several regulatory proteins also render the Z ring responsive to variations
+    in the cell cycle by taking advantage of the accessibility of subunits that is
+    afforded by the dynamic nature of the Z ring. UgtP delays cell division by destabilizing
+    the Z ring, and the induction of SulA during the SOS response prevents new Z ring
+    assembly and disassembles existing Z rings. In addition, during sporulation, mother
+    cell inhibitor of FtsZ (MciZ) prevents inappropriate cell division once the process
+    has been initiated.
+  URL: https://doi.org/10.1038/nrmicro2198
+  DOI: 10.1038/nrmicro2198
+  ISBN: '1740-1534'
+
+- id: Stahl-2019a
+  type: chapter
+  author:
+  - family: Stahl
+    given: Michael T Madigan; Kelly S Bender; Daniel Hezekiah Buckley; W Matthew Sattley;
+      David Allan
+  issued:
+  - year: 2019
+  title: Molecular biology of microbial growth
+  container-title: Brock biology of microorganisms
+  publisher: Pearson
+  chapter-number: '7'
+  edition: Fifteenth edition, Global edition.
+  ISBN: 9781292235103,1292235101
+
+- id: Stahl-2019
+  type: book
+  author:
+  - family: Stahl
+    given: Michael T Madigan; Kelly S Bender; Daniel Hezekiah Buckley; W Matthew Sattley;
+      David Allan
+  issued:
+  - year: 2019
+  title: Brock biology of microorganisms
+  publisher: Pearson
+  edition: Fifteenth edition, Global edition.
+  URL: http://gen.lib.rus.ec/book/index.php?md5=7fb6a4c2a30c74d1b64d425f1301fa76
+  ISBN: 9781292235103,1292235101
+
+- id: Eswara-2017
+  type: article-journal
+  author:
+  - family: Eswara
+    given: Prahathees J.
+  - family: Ramamurthi
+    given: Kumaran S.
+  issued:
+  - year: 2017
+  title: 'Bacterial cell division: Nonmodels poised to take the spotlight'
+  title-short: Bacterial cell division
+  container-title: Annual Review of Microbiology
+  page: '393-411'
+  volume: '71'
+  issue: '1'
+  note: 'PMID: 28697666'
+  abstract: The last three decades have witnessed an explosion of discoveries about
+    the mechanistic details of binary fission in model bacteria such as Escherichia
+    coli, Bacillus subtilis, and Caulobacter crescentus. This was made possible not
+    only by advances in microscopy that helped answer questions about cell biology
+    but also by clever genetic manipulations that directly and easily tested specific
+    hypotheses. More recently, research using understudied organisms, or nonmodel
+    systems, has revealed several alternate mechanistic strategies that bacteria use
+    to divide and propagate. In this review, we highlight new findings and compare
+    these strategies to cell division mechanisms elucidated in model organisms.
+  URL: https://doi.org/10.1146/annurev-micro-102215-095657
+  DOI: 10.1146/annurev-micro-102215-095657
+
+- id: Pike-2015
+  type: article-journal
+  author:
+  - family: Pike
+    given: Ashley C. W.
+  - family: Gomathinayagam
+    given: Shivasankari
+  - family: Swuec
+    given: Paolo
+  - family: Berti
+    given: Matteo
+  - family: Zhang
+    given: Ying
+  - family: Schnecke
+    given: Christina
+  - family: Marino
+    given: Francesca
+  - family: Delft
+    given: Frank
+    dropping-particle: von
+  - family: Renault
+    given: Ludovic
+  - family: Costa
+    given: Alessandro
+  - family: Gileadi
+    given: Opher
+  - family: Vindigni
+    given: Alessandro
+  issued:
+  - year: 2015
+  title: 'Human recq1 helicase-driven dna unwinding, annealing, and branch migration:
+    Insights from dna complex structures'
+  title-short: Human recq1 helicase-driven dna unwinding, annealing, and branch migration
+  container-title: Proceedings of the National Academy of Sciences
+  publisher: National Academy of Sciences
+  page: '4286-4291'
+  volume: '112'
+  issue: '14'
+  abstract: RecQ DNA helicases are critical enzymes for the maintenance of genome
+    integrity. Here, we determined the first DNA complex structures, to our knowledge,
+    of the human RECQ1 helicase. These structures provide new insight into the RecQ
+    helicase mechanism of DNA tracking, strand separation, strand annealing, and Holliday
+    junction (HJ) branch migration. We identified a surface region in the winged-helix
+    domain of RECQ1 that is important for both dsDNA recognition and HJ resolution,
+    and we used a combination of biochemical, analytical ultracentrifugation, and
+    EM experiments to begin elucidating the molecular basis of the distinct HJ resolution
+    activities of human RecQ helicases.RecQ helicases are a widely conserved family
+    of ATP-dependent motors with diverse roles in nearly every aspect of bacterial
+    and eukaryotic genome maintenance. However, the physical mechanisms by which RecQ
+    helicases recognize and process specific DNA replication and repair intermediates
+    are largely unknown. Here, we solved crystal structures of the human RECQ1 helicase
+    in complexes with tailed-duplex DNA and ssDNA. The structures map the interactions
+    of the ssDNA tail and the branch point along the helicase and Zn-binding domains,
+    which, together with reported structures of other helicases, define the catalytic
+    stages of helicase action. We also identify a strand-separating pin, which (uniquely
+    in RECQ1) is buttressed by the protein dimer interface. A duplex DNA-binding surface
+    on the C-terminal domain is shown to play a role in DNA unwinding, strand annealing,
+    and Holliday junction (HJ) branch migration. We have combined EM and analytical
+    ultracentrifugation approaches to show that RECQ1 can form what appears to be
+    a flat, homotetrameric complex and propose that RECQ1 tetramers are involved in
+    HJ recognition. This tetrameric arrangement suggests a platform for coordinated
+    activity at the advancing and receding duplexes of an HJ during branch migration.
+  URL: https://www.pnas.org/content/112/14/4286
+  DOI: 10.1073/pnas.1417594112
+  ISSN: '0027-8424'
+
+- id: Bernstein-2003
+  type: article-journal
+  author:
+  - family: Bernstein
+    given: Douglas A.
+  - family: Zittel
+    given: Morgan C.
+  - family: Keck
+    given: James L.
+  issued:
+  - year: 2003
+  title: High-resolution structure of the e.coli recq helicase catalytic core
+  container-title: The EMBO Journal
+  page: '4910-4921'
+  volume: '22'
+  issue: '19'
+  abstract: RecQ family helicases catalyze critical genome maintenance reactions in
+    bacterial and eukaryotic cells, playing key roles in several DNA metabolic processes.
+    Mutations in recQ genes are linked to genome instability and human disease. To
+    define the physical basis of RecQ enzyme function, we have determined a 1.8 Å
+    resolution crystal structure of the catalytic core of Escherichia coli RecQ in
+    its unbound form and a 2.5 Å resolution structure of the core bound to the ATP
+    analog ATPγS. The RecQ core comprises four conserved subdomains; two of these
+    combine to form its helicase region, while the others form unexpected Zn2+-binding
+    and winged-helix motifs. The structures reveal the molecular basis of missense
+    mutations that cause Bloom’s syndrome, a human RecQ-associated disease. Finally,
+    based on findings from the structures, we propose a mechanism for RecQ activity
+    that could explain its functional coordination with topoisomerase III.
+  keyword: helicase, RecQ, structure, winged helix, Zn2+ binding
+  URL: https://www.embopress.org/doi/abs/10.1093/emboj/cdg500
+  DOI: 10.1093/emboj/cdg500
+
+- id: Cox-2013
+  type: chapter
+  author:
+  - family: Cox
+    given: Lynne S.
+  - family: Mason
+    given: Penelope A.
+  editor:
+  - family: Stuart
+    given: David
+  issued:
+  - year: 2013
+  title: The role of wrn helicase/exonuclease in dna replication
+  container-title: The mechanisms of dna replication
+  publisher: IntechOpen
+  publisher-place: Rijeka
+  chapter-number: '9'
+  URL: https://doi.org/10.5772/51520
+  DOI: 10.5772/51520
+
+- id: Chen-2014
+  type: article-journal
+  author:
+  - family: Chen
+    given: Sheng-Chia
+  - family: Huang
+    given: Chi-Hung
+  - family: Yang
+    given: Chia Shin
+  - family: Way
+    given: Tzong-Der
+  - family: Chang
+    given: Ming-Chung
+  - family: Chen
+    given: Yeh
+  issued:
+  - year: 2014
+  title: 'Crystal structure of deinococcus radiodurans recq helicase catalytic core
+    domain: The interdomain flexibility'
+  title-short: Crystal structure of deinococcus radiodurans recq helicase catalytic
+    core domain
+  container-title: BioMed research international
+  publisher: Hindawi
+  volume: '2014'
+
+- id: LAbbe-2018
+  type: chapter
+  author:
+  - family: L’Abbé
+    given: Denis
+  - family: Bisson
+    given: Louis
+  - family: Gervais
+    given: Christian
+  - family: Grazzini
+    given: Eric
+  - family: Durocher
+    given: Yves
+  editor:
+  - family: Hacker
+    given: David L.
+  issued:
+  - year: 2018
+  title: Transient gene expression in suspension hek293-ebna1 cells
+  container-title: 'Recombinant protein expression in mammalian cells: Methods and
+    protocols'
+  publisher: Humana Press
+  volume: '1850'
+  chapter-number: '1'
+
+- id: Patel-2012
+  type: article-journal
+  author:
+  - family: Patel
+    given: Asmita
+  - family: Muñoz
+    given: Anisleidys
+  - family: Halvorsen
+    given: Katherine
+  - family: Rai
+    given: Priyamvada
+  issued:
+  - year: 2012
+  title: Creation and validation of a ligation-independent cloning (lic) retroviral
+    vector for stable gene transduction in mammalian cells
+  container-title: BMC Biotechnology
+  page: '3'
+  volume: '12'
+  issue: '1'
+  abstract: Cloning vectors capable of retroviral transduction have enabled stable
+    gene overexpression in numerous mitotic cell lines. However, the relatively small
+    number of feasible restriction enzyme sequences in their cloning sites can hinder
+    successful generation of overexpression constructs if these sequences are also
+    present in the target cDNA insert.
+  URL: https://doi.org/10.1186/1472-6750-12-3
+  DOI: 10.1186/1472-6750-12-3
+  ISBN: '1472-6750'
+
+- id: Merten-2016
+  type: article-journal
+  author:
+  - family: Merten
+    given: Otto-Wilhelm
+  - family: Hebben
+    given: Matthias
+  - family: Bovolenta
+    given: Chiara
+  issued:
+  - year: 2016
+  title: Production of lentiviral vectors
+  container-title: Molecular Therapy - Methods & Clinical Development
+  page: '16017'
+  volume: '3'
+  abstract: Lentiviral vectors (LV) have seen considerably increase in use as gene
+    therapy vectors for the treatment of acquired and inherited diseases. This review
+    presents the state of the art of the production of these vectors with particular
+    emphasis on their large-scale production for clinical purposes. In contrast to
+    oncoretroviral vectors, which are produced using stable producer cell lines, clinical-grade
+    LV are in most of the cases produced by transient transfection of 293 or 293T
+    cells grown in cell factories. However, more recent developments, also, tend to
+    use hollow fiber reactor, suspension culture processes, and the implementation
+    of stable producer cell lines. As is customary for the biotech industry, rather
+    sophisticated downstream processing protocols have been established to remove
+    any undesirable process-derived contaminant, such as plasmid or host cell DNA
+    or host cell proteins. This review compares published large-scale production and
+    purification processes of LV and presents their process performances. Furthermore,
+    developments in the domain of stable cell lines and their way to the use of production
+    vehicles of clinical material will be presented.
+  URL: http://www.sciencedirect.com/science/article/pii/S2329050116301589
+  DOI: https://doi.org/10.1038/mtm.2016.17
+  ISSN: '2329-0501'
+
+- id: Mizushima-1990
+  type: article-journal
+  author:
+  - family: Mizushima
+    given: S
+  - family: Nagata
+    given: S
+  issued:
+  - year: 1990
+  title: PEF-bos, a powerful mammalian expression vector
+  container-title: Nucleic Acids Res
+  publisher-place: Osaka Bioscience Institute, Japan.
+  page: '5322'
+  volume: '18'
+  issue: '17'
+  DOI: 10.1093/nar/18.17.5322
+  ISSN: 0305-1048 (Print); 1362-4962 (Electronic); 0305-1048 (Linking)
+  PMID: '1698283'
+
+- id: Swartz-2001
+  type: article-journal
+  author:
+  - family: Swartz
+    given: James R.
+  issued:
+  - year: 2001
+  title: Advances in escherichia coli production of therapeutic proteins
+  container-title: Current Opinion in Biotechnology
+  page: '195-201'
+  volume: '12'
+  issue: '2'
+  genre: Journal Article
+  URL: http://www.sciencedirect.com/science/article/pii/S0958166900001993
+  DOI: https://doi.org/10.1016/S0958-1669(00)00199-3
+  ISSN: '0958-1669'
+
+- id: Lai-2016
+  type: chapter
+  author:
+  - family: Lai
+    given: C.
+  issued:
+  - year: 2016
+  title: 'BAC transgenesis: Cell-type specific expression in the nervous system'
+  title-short: BAC transgenesis
+  container-title: Reference module in biomedical sciences
+  publisher: Elsevier
+  genre: Book Section
+  URL: http://www.sciencedirect.com/science/article/pii/B9780128012383045207
+  DOI: https://doi.org/10.1016/B978-0-12-801238-3.04520-7
+  ISBN: '978-0-12-801238-3'
+
+- id: Berg-2015
+  type: book
+  author:
+  - family: Berg
+    given: Jeremy M.
+  - family: Tymoczko
+    given: John L.
+  - family: Gatto Jr.
+    given: Gregory J.
+  - family: Stryer
+    given: Lubert
+  issued:
+  - year: 2015
+  title: Biochemistry
+  publisher: W. H. Freeman
+  edition: '8'
+  genre: Book
+  ISBN: '9781464126109'
+
+- id: Saraswathy-2011
+  type: book
+  author:
+  - family: Saraswathy
+    given: Nachimuthu
+  - family: Ramalingam
+    given: Ponnusamy
+  issued:
+  - year: 2011
+  title: Concepts and techniques in genomics and proteomics
+  publisher: Woodhead Publishing
+  genre: Book
+  URL: https://www.sciencedirect.com/book/9781907568107/concepts-and-techniques-in-genomics-and-proteomics#book-info
+  ISBN: '978-1-907568-10-7'
+
+- id: Connor-1989
+  type: article-journal
+  author:
+  - family: Connor
+    given: M.
+  - family: Peifer
+    given: M.
+  - family: Bender
+    given: W.
+  issued:
+  - year: 1989
+  title: Construction of large dna segments in escherichia coli
+  container-title: Science
+  page: '1307'
+  volume: '244'
+  issue: '4910'
+  genre: Journal Article
+  URL: http://science.sciencemag.org/content/244/4910/1307.abstract
+  DOI: 10.1126/science.2660262
+
+- id: Valla-2014
+  type: book
+  author:
+  - family: Valla
+    given: Svein
+  - family: Lale
+    given: Rahmi
+  issued:
+  - year: 2014
+  title: DNA cloning and assembly methods
+  collection-title: Methods in molecular biology
+  publisher: Humana Press
+  volume: '1116'
+  genre: Book
+  DOI: 10.1007/978-1-62703-764-8
+  ISBN: '978-1-62703-764-8'
+
+- id: Singha-2017
+  type: article-journal
+  author:
+  - family: Singha
+    given: Tapan Kumar
+  - family: Gulati
+    given: Pooja
+  - family: Mohanty
+    given: Aparajita
+  - family: Khasa
+    given: Yogender Pal
+  - family: Kapoor
+    given: Rajeev Kumar
+  - family: Kumar
+    given: Sanjay
+  issued:
+  - year: 2017
+  title: 'Efficient genetic approaches for improvement of plasmid based expression
+    of recombinant protein in escherichia coli: A review'
+  title-short: Efficient genetic approaches for improvement of plasmid based expression
+    of recombinant protein in escherichia coli
+  container-title: Process Biochemistry
+  page: '17-31'
+  volume: '55'
+  genre: Journal Article
+  URL: http://www.sciencedirect.com/science/article/pii/S1359511316304421
+  DOI: https://doi.org/10.1016/j.procbio.2017.01.026
+  ISSN: '1359-5113'
+
+- id: Griffiths-2015a
+  type: chapter
+  author:
+  - family: Griffiths
+    given: Anthony J. F.
+  - family: Wessler
+    given: Susan R.
+  - family: Carroll
+    given: Sean B.
+  - family: Doebley
+    given: John
+  issued:
+  - year: 2015
+  title: Gene isolation and manipulation
+  container-title: Introduction to genetic analysis
+  publisher: W.H. Freeman
+  chapter-number: '10'
+  edition: '11'
+
+- id: Hartwell-2018
+  type: book
+  author:
+  - family: Hartwell
+    given: Leland
+  - family: Goldberg
+    given: Michael L
+  - family: Fischer
+    given: Janice A
+  - family: Hood
+    given: Leroy
+  issued:
+  - year: 2018
+  title: 'Genetics: From genes to genomes'
+  title-short: Genetics
+  publisher: McGraw-Hill Education
+  publisher-place: New York, NY
+  edition: '6'
+  genre: Book
+  URL: https://lccn.loc.gov/2017017175
+  ISBN: '9781259700903'
+
+- id: Saraswathy-2011a
+  type: chapter
+  author:
+  - family: Saraswathy
+    given: Nachimuthu
+  - family: Ramalingam
+    given: Ponnusamy
+  issued:
+  - year: 2011
+  title: High capacity vectors
+  container-title: Concepts and techniques in genomics and proteomics
+  publisher: Woodhead Publishing
+  page: '49-56'
+  chapter-number: '4'
+  URL: http://www.sciencedirect.com/science/article/pii/B9781907568107500043
+  DOI: https://doi.org/10.1533/9781908818058.49
+  ISBN: '978-1-907568-10-7'
+
+- id: Greene-2012
+  type: chapter
+  author:
+  - family: Greene
+    given: James J.
+  editor:
+  - family: Balbás
+    given: Paulina
+  - family: Lorence
+    given: Argelia
+  issued:
+  - year: 2012
+  title: Host cell compatibility in protein expression
+  container-title: 'Recombinant gene expression: Reviews and protocols'
+  collection-title: Methods in molecular biology
+  publisher: Springer
+  volume: '267'
+  edition: '2'
+  genre: Book Section
+  ISBN: '1617794333'
+
+- id: Griffiths-2015
+  type: book
+  author:
+  - family: Griffiths
+    given: Anthony J. F.
+  - family: Wessler
+    given: Susan R.
+  - family: Carroll
+    given: Sean B.
+  - family: Doebley
+    given: John
+  issued:
+  - year: 2015
+  title: Introduction to genetic analysis
+  publisher: W.H. Freeman
+  edition: '11'
+
+- id: Owen-2013
+  type: book
+  author:
+  - family: Owen
+    given: Judith A.
+  - family: Punt
+    given: Jenni
+  - family: Stranford
+    given: Sharon A.
+  issued:
+  - year: 2013
+  title: Kuby immunology
+  publisher: W. H. Freeman; Company
+  publisher-place: New York, NY
+  edition: '7'
+  genre: Book
+  ISBN: '978-14292-1919-8'
+
+- id: Nelson-2017a
+  type: book
+  author:
+  - family: Nelson
+    given: David L.
+  - family: Cox
+    given: Michael M.
+  issued:
+  - year: 2017
+  title: Lehninger principles of biochemistry
+  publisher: W. H. Freeman
+  edition: 7th
+  genre: Book
+  URL: https://search.library.wisc.edu/catalog/999964334502121
+  ISBN: '9781319108243'
+
+- id: Weaver-2012
+  type: book
+  author:
+  - family: Weaver
+    given: Robert F.
+  issued:
+  - year: 2012
+  title: Molecular biology
+  publisher: McGraw-Hill
+  publisher-place: New York, NY
+  edition: '5'
+  genre: Book
+  ISBN: '978-0-07-352532-7'
+
+- id: Alberts-2014
+  type: book
+  author:
+  - family: Alberts
+    given: Bruce
+  - family: Johnson
+    given: Alexander
+  - family: Lewis
+    given: Julian
+  - family: Morgan
+    given: David
+  - family: Raff
+    given: Martin
+  - family: Roberts
+    given: Keith
+  - family: Walter
+    given: Peter
+  issued:
+  - year: 2014
+  title: Molecular biology of the cell
+  publisher: Garland Science
+  edition: 6th
+  genre: Book
+  ISBN: '978-0815345244'
+
+- id: Lodish-2016
+  type: book
+  author:
+  - family: Lodish
+    given: Harvey F.
+  - family: Berk
+    given: Arnold
+  - family: Kaiser
+    given: Chris
+  - family: Krieger
+    given: Monty
+  - family: Bretscher
+    given: Anthony
+  - family: Ploegh
+    given: Hidde L.
+  - family: Amon
+    given: Angelika
+  - family: Martin
+    given: Kelsey C
+  issued:
+  - year: 2016
+  title: Molecular cell biology
+  publisher: W.H. Freeman
+  publisher-place: New York
+  edition: '8'
+  genre: Book
+
+- id: Palomares-2012
+  type: chapter
+  author:
+  - family: Palomares
+    given: Laura A.
+  - family: Estrada-Mondaca
+    given: Sandino
+  - family: Ramírez
+    given: Octavio T.
+  editor:
+  - family: Balbás
+    given: Paulina
+  - family: Lorence
+    given: Argelia
+  issued:
+  - year: 2012
+  title: 'Production of recombinant proteins: Challenges and solutions'
+  title-short: Production of recombinant proteins
+  container-title: 'Recombinant gene expression: Reviews and protocols'
+  collection-title: Methods in molecular biology
+  publisher: Springer
+  volume: '267'
+  edition: '2'
+  genre: Book Section
+  ISBN: '1617794333'
+
+- id: Balbas-2012
+  type: book
+  author:
+  - family: Balbás
+    given: Paulina
+  - family: Lorence
+    given: Argelia
+  issued:
+  - year: 2012
+  title: 'Recombinant gene expression: Reviews and protocols'
+  title-short: Recombinant gene expression
+  collection-title: Methods in molecular biology
+  publisher: Springer
+  volume: '267'
+  edition: '2'
+  genre: Book
+  ISBN: '1617794333'
+
+- id: Hacker-2018
+  type: book
+  author:
+  - family: Hacker
+    given: David L.
+  issued:
+  - year: 2018
+  title: 'Recombinant protein expression in mammalian cells: Methods and protocols'
+  title-short: Recombinant protein expression in mammalian cells
+  collection-title: Methods in molecularbiology
+  publisher: Humana Press
+  volume: '1850'
+  genre: Book
+  DOI: 10.1007/978-1-4939-8730-6
+  ISBN: '978-1-4939-8730-6'
+
+- id: Smales-2005
+  type: book
+  author:
+  - family: Smales
+    given: C Mark
+  - family: James
+    given: David Cameron
+  issued:
+  - year: 2005
+  title: 'Therapeutic proteins: Methods and protocols'
+  title-short: Therapeutic proteins
+  collection-title: Methods in molecular biology
+  publisher: Humana
+  volume: '308'
+  genre: Book
+  DOI: https://doi.org/10.1385/1592599222
+  ISBN: '978-1-59259-922-6'
+
+- id: Lukashev-2016
+  type: article-journal
+  author:
+  - family: Lukashev
+    given: A. N.
+  - family: Zamyatnin
+    given: Jr.
+    suffix: A. A.
+  issued:
+  - year: 2016
+  title: 'Viral vectors for gene therapy: Current state and clinical perspectives'
+  title-short: Viral vectors for gene therapy
+  container-title: Biochemistry (Mosc)
+  page: '700-8'
+  volume: '81'
+  issue: '7'
+  genre: Journal Article
+  URL: https://www.ncbi.nlm.nih.gov/pubmed/27449616
+  DOI: 10.1134/S0006297916070063
+  ISSN: 1608-3040 (Electronic) 0006-2979 (Linking)
+
+- id: Lee-2015
+  type: article-journal
+  author:
+  - family: Lee
+    given: Yeon
+  - family: Rio
+    given: Donald C.
+  title: Mechanisms and regulation of alternative pre-mRNA splicing
+  container-title: Annual Review of Biochemistry
+  publisher: Annual Reviews
+  page: '291-323'
+  volume: '84'
+  issue: '1'
+  annote: 'doi: 10.1146/annurev-biochem-060614-034316'
+  abstract: Precursor messenger RNA (pre-mRNA) splicing is a critical step in the
+    posttranscriptional regulation of gene expression, providing significant expansion
+    of the functional proteome of eukaryotic organisms with limited gene numbers.
+    Split eukaryotic genes contain intervening sequences or introns disrupting protein-coding
+    exons, and intron removal occurs by repeated assembly of a large and highly dynamic
+    ribonucleoprotein complex termed the spliceosome, which is composed of five small
+    nuclear ribonucleoprotein particles, U1, U2, U4/U6, and U5. Biochemical studies
+    over the past 10 years have allowed the isolation as well as compositional, functional,
+    and structural analysis of splicing complexes at distinct stages along the spliceosome
+    cycle. The average human gene contains eight exons and seven introns, producing
+    an average of three or more alternatively spliced mRNA isoforms. Recent high-throughput
+    sequencing studies indicate that 100% of human genes produce at least two alternative
+    mRNA isoforms. Mechanisms of alternative splicing include RNA?protein interactions
+    of splicing factors with regulatory sites termed silencers or enhancers, RNA?RNA
+    base-pairing interactions, or chromatin-based effects that can change or determine
+    splicing patterns. Disease-causing mutations can often occur in splice sites near
+    intron borders or in exonic or intronic RNA regulatory silencer or enhancer elements,
+    as well as in genes that encode splicing factors. Together, these studies provide
+    mechanistic insights into how spliceosome assembly, dynamics, and catalysis occur;
+    how alternative splicing is regulated and evolves; and how splicing can be disrupted
+    by cis- and trans-acting mutations leading to disease states. These findings make
+    the spliceosome an attractive new target for small-molecule, antisense, and genome-editing
+    therapeutic interventions.
+  URL: https://doi.org/10.1146/annurev-biochem-060614-034316
+  DOI: 10.1146/annurev-biochem-060614-034316
+  ISBN: '0066-4154'
+
+- id: Zhuravleva-2017
+  type: article-journal
+  author:
+  - family: Zhuravleva
+    given: Anastasia
+  - family: Korzhnev
+    given: Dmitry M.
+  issued:
+  - year: 2017
+  title: Protein folding by nmr
+  container-title: Progress in Nuclear Magnetic Resonance Spectroscopy
+  page: '52-77'
+  volume: '100'
+  abstract: Protein folding is a highly complex process proceeding through a number
+    of disordered and partially folded nonnative states with various degrees of structural
+    organization. These transiently and sparsely populated species on the protein
+    folding energy landscape play crucial roles in driving folding toward the native
+    conformation, yet some of these nonnative states may also serve as precursors
+    for protein misfolding and aggregation associated with a range of devastating
+    diseases, including neuro-degeneration, diabetes and cancer. Therefore, in vivo
+    protein folding is often reshaped co- and post-translationally through interactions
+    with the ribosome, molecular chaperones and/or other cellular components. Owing
+    to developments in instrumentation and methodology, solution NMR spectroscopy
+    has emerged as the central experimental approach for the detailed characterization
+    of the complex protein folding processes in vitro and in vivo. NMR relaxation
+    dispersion and saturation transfer methods provide the means for a detailed characterization
+    of protein folding kinetics and thermodynamics under native-like conditions, as
+    well as modeling high-resolution structures of weakly populated short-lived conformational
+    states on the protein folding energy landscape. Continuing development of isotope
+    labeling strategies and NMR methods to probe high molecular weight protein assemblies,
+    along with advances of in-cell NMR, have recently allowed protein folding to be
+    studied in the context of ribosome-nascent chain complexes and molecular chaperones,
+    and even inside living cells. Here we review solution NMR approaches to investigate
+    the protein folding energy landscape, and discuss selected applications of NMR
+    methodology to studying protein folding in vitro and in vivo. Together, these
+    examples highlight a vast potential of solution NMR in providing atomistic insights
+    into molecular mechanisms of protein folding and homeostasis in health and disease.
+  keyword: Nonnative protein states; Folding intermediates; Protein quality control;
+    Molecular chaperones; Ribosome-nascent chain; In-cell NMR
+  URL: http://www.sciencedirect.com/science/article/pii/S0079656516300280
+  DOI: https://doi.org/10.1016/j.pnmrs.2016.10.002
+  ISBN: '0079-6565'
+
+- id: Campbell-2012
+  type: book
+  author:
+  - family: Campbell
+    given: Iain D.
+  issued:
+  - year: 2012
+  title: Biophysical techniques
+  publisher: Oxford University Press
+
+- id: Wienken-2010
+  type: article-journal
+  author:
+  - family: Wienken
+    given: Christoph J.
+  - family: Baaske
+    given: Philipp
+  - family: Rothbauer
+    given: Ulrich
+  - family: Braun
+    given: Dieter
+  - family: Duhr
+    given: Stefan
+  issued:
+  - year: 2010
+  title: Protein-binding assays in biological liquids using microscale thermophoresis
+  container-title: Nature Communications
+  page: '100'
+  volume: '1'
+  issue: '1'
+  abstract: Protein interactions inside the human body are expected to differ from
+    the situation in vitro. This is crucial when investigating protein functions or
+    developing new drugs. In this study, we present a sample-efficient, free-solution
+    method, termed microscale thermophoresis, that is capable of analysing interactions
+    of proteins or small molecules in biological liquids such as blood serum or cell
+    lysate. The technique is based on the thermophoresis of molecules, which provides
+    information about molecule size, charge and hydration shell. We validated the
+    method using immunologically relevant systems including human interferon gamma
+    and the interaction of calmodulin with calcium. The affinity of the small-molecule
+    inhibitor quercetin to its kinase PKA was determined in buffer and human serum,
+    revealing a 400-fold reduced affinity in serum. This information about the influence
+    of the biological matrix may allow to make more reliable conclusions on protein
+    functionality, and may facilitate more efficient drug development.
+  URL: https://doi.org/10.1038/ncomms1093
+  DOI: 10.1038/ncomms1093
+  ISBN: '2041-1723'
+
+- id: ThermoFisher-2019
+  type: no-type
+  author:
+  - family: ThermoFisher
+  issued:
+  - year: 2019
+  URL: https://www.thermofisher.com/uk/en/home/references/gibco-cell-culture-basics/transfection-basics/gene-delivery-technologies.html
+
+- id: Vicentelli-2019
+  type: book
+  author:
+  - family: Vicentelli
+    given: Renaud
+  editor:
+  - family: Walker
+    given: John M.
+  issued:
+  - year: 2019
+  title: 'HIgh-throughput protein production and purification: Methods and protocols'
+  title-short: HIgh-throughput protein production and purification
+  collection-title: Methods in molecular biology
+  publisher: Humana Press
+  publisher-place: New York, NY
+  volume: '2025'
+  keyword: protein expression, high-throughput
+
+- id: Doyle-2008
+  type: book
+  author:
+  - family: Doyle
+    given: Sharon A.
+  editor:
+  - family: Walker
+    given: John W.
+  issued:
+  - year: 2008
+  title: 'HIgh throughput protein expression and purification: Methods and protocols'
+  title-short: HIgh throughput protein expression and purification
+  collection-title: Methods in molecular biology
+  collection-number: '498'
+  publisher: Humana Press
+
+- id: Liu-2017
+  type: article-journal
+  author:
+  - family: Liu
+    given: Fangyu
+  - family: Zhang
+    given: Zhe
+  - family: Csanády
+    given: László
+  - family: Gadsby
+    given: David C.
+  - family: Chen
+    given: Jue
+  title: Molecular structure of the human cftr ion channel
+  container-title: Cell
+  publisher: Elsevier
+  page: '85-95.e8'
+  volume: '169'
+  issue: '1'
+  annote: 'doi: 10.1016/j.cell.2017.02.024'
+  URL: https://doi.org/10.1016/j.cell.2017.02.024
+  DOI: 10.1016/j.cell.2017.02.024
+  ISBN: '0092-8674'
+
+- id: Hirai-2019
+  type: article-journal
+  author:
+  - family: Hirai
+    given: Hidenori
+  - family: Matoba
+    given: Kyoko
+  - family: Mihara
+    given: Emiko
+  - family: Arimori
+    given: Takao
+  - family: Takagi
+    given: Junichi
+  issued:
+  - year: 2019
+  title: Crystal structure of a mammalian wnt–frizzled complex
+  container-title: Nature Structural & Molecular Biology
+  page: '372-379'
+  volume: '26'
+  issue: '5'
+  abstract: Wnt signaling plays fundamental roles in organogenesis, tissue regeneration
+    and cancer, but high-resolution structural information of mammalian Wnt proteins
+    is lacking. We solved a 2.8-Åresolution crystal structure of human Wnt3 in complex
+    with mouse Frizzled 8 Cys-rich domain (CRD). Wnt3 grabs the receptor in a manner
+    very similar to that found in Xenopus Wnt8 complexed with the same receptor. Unlike
+    Xenopus Wnt8-bound CRD, however, Wnt3-bound CRD formed a symmetrical dimer in
+    the crystal by exchanging the tip of the unsaturated acyl chain attached to each
+    Wnt3, confirming the ability of Wnt and Frizzled CRD to form a 2:2 complex. The
+    hypervariable ‘linker’region of Wnt3 formed a β-hairpin protrusion opposite from
+    the Frizzled binding interface, consistent with its proposed role in the coreceptor
+    recognition. Direct binding between this segment and the Wnt coreceptor LRP6 was
+    confirmed, enabling us to build a structural model of the Wnt–Frizzled–LRP6 ternary
+    complex.
+  URL: https://doi.org/10.1038/s41594-019-0216-z
+  DOI: 10.1038/s41594-019-0216-z
+  ISBN: '1545-9985'
+
+- id: Wikstrom-2018
+  type: article-journal
+  author:
+  - family: Wikström
+    given: Mårten
+  - family: Sharma
+    given: Vivek
+  issued:
+  - year: 2018
+  title: Proton pumping by cytochrome c oxidase – a 40 year anniversary
+  container-title: Biochimica et Biophysica Acta (BBA) - Bioenergetics
+  page: 692 - 698
+  volume: '1859'
+  issue: '9'
+  note: 20th European Bioenergetics Conference
+  abstract: Cytochrome c oxidase is a remarkable energy transducer that seems to work
+    almost purely by Coulombic principles without the need for significant protein
+    conformational changes. In recent years it has become possible to follow key partial
+    reactions of the catalytic cycle in real time, both with respect to electron and
+    proton movements. These experiments have largely set the stage for the proton
+    pump mechanism. The structures of the catalytic binuclear heme‑copper site that
+    is common to the huge family of heme‑copper oxidases, are today well understood
+    throughout the catalytic cycle of oxygen reduction to water based on both spectroscopic
+    studies and quantum chemical calculations. Here, we briefly review this progress,
+    and add some recent details into how the proton pump mechanism is protected from
+    failure by leakage.
+  URL: http://www.sciencedirect.com/science/article/pii/S0005272818300422
+  DOI: https://doi.org/10.1016/j.bbabio.2018.03.009
+  ISSN: '0005-2728'
+
+- id: Shi-2019
+  type: webpage
+  author:
+  - family: Shi
+    given: Tianyi
+  issued:
+  - year: 2019
+  title: Principle of chemiosmotic mechanism
+  keyword: Chemiosmosis
+
+- id: Hohner-2019
+  type: article-journal
+  author:
+  - family: Höhner
+    given: Ricarda
+  - family: Galvis
+    given: Viviana Correa
+  - family: Strand
+    given: Deserah D.
+  - family: Völkner
+    given: Carsten
+  - family: Krämer
+    given: Moritz
+  - family: Messer
+    given: Michaela
+  - family: Dinc
+    given: Firdevs
+  - family: Sjuts
+    given: Inga
+  - family: Bölter
+    given: Bettina
+  - family: Kramer
+    given: David M.
+  - family: Armbruster
+    given: Ute
+  - family: Kunz
+    given: Hans-Henning
+  issued:
+  - year: 2019
+  title: Photosynthesis in arabidopsis is unaffected by the function of the vacuolar
+    k$<$sup$>$+$<$/sup$>$ channel tpk3
+  container-title: Plant Physiology
+  page: '1322'
+  volume: '180'
+  issue: '3'
+  URL: http://www.plantphysiol.org/content/180/3/1322.abstract
+  DOI: 10.1104/pp.19.00255
+
+- id: Roessler-2010
+  type: article-journal
+  author:
+  - family: Roessler
+    given: Maxie M.
+  - family: King
+    given: Martin S.
+  - family: Robinson
+    given: Alan J.
+  - family: Armstrong
+    given: Fraser A.
+  - family: Harmer
+    given: Jeffrey
+  - family: Hirst
+    given: Judy
+  issued:
+  - year: 2010
+  title: Direct assignment of epr spectra to structurally defined iron-sulfur clusters
+    in complex i by double electron–electron resonance
+  container-title: Proceedings of the National Academy of Sciences
+  page: '1930'
+  volume: '107'
+  issue: '5'
+  URL: http://www.pnas.org/content/107/5/1930.abstract
+  DOI: 10.1073/pnas.0908050107
+
+- id: Sazanov-2015
+  type: article-journal
+  author:
+  - family: Sazanov
+    given: Leonid A.
+  issued:
+  - year: 2015
+  title: 'A giant molecular proton pump: Structure and mechanism of respiratory
+    complex i'
+  title-short: A giant molecular proton pump
+  container-title: Nature Reviews Molecular Cell Biology
+  publisher: Nature Publishing Group, a division of Macmillan Publishers Limited.
+    All Rights Reserved. SN -
+  page: 375 EP -
+  volume: '16'
+  URL: https://doi.org/10.1038/nrm3997
+
+- id: Verkhovskaya-2013
+  type: article-journal
+  author:
+  - family: Verkhovskaya
+    given: Marina
+  - family: Bloch
+    given: Dmitry A.
+  issued:
+  - year: 2013
+  title: 'Energy-converting respiratory complex i: On the way to the molecular mechanism
+    of the proton pump'
+  title-short: Energy-converting respiratory complex i
+  container-title: The International Journal of Biochemistry & Cell Biology
+  page: '491-511'
+  volume: '45'
+  issue: '2'
+  abstract: In respiring organisms the major energy transduction flux employs the
+    transmembrane electrochemical proton gradient as a physical link between exergonic
+    redox reactions and endergonic ADP phosphorylation. Establishing the gradient
+    involves electrogenic, transmembrane H+ translocation by the membrane-embedded
+    respiratory complexes. Among others, Complex I (NADH:ubiquinone oxidoreductase)
+    is the most structurally complex and functionally enigmatic respiratory enzyme;
+    its molecular mechanism is as yet unknown. Here we highlight recent progress and
+    discuss the catalytic events during Complex I turnover in relation to their role
+    in energy conversion and to the enzyme structure.
+  keyword: Bioenergetics; NADH:ubiquinone oxidoreductase; Electron transfer; Proton
+    translocation; Proton-pump
+  URL: http://www.sciencedirect.com/science/article/pii/S1357272512003020
+  DOI: https://doi.org/10.1016/j.biocel.2012.08.024
+  ISBN: '1357-2725'
+
+- id: Mannella-2013
+  type: article-journal
+  author:
+  - family: Mannella
+    given: Carmen A.
+  - family: Lederer
+    given: W. Jonathan
+  - family: Jafri
+    given: M. Saleet
+  issued:
+  - year: 2013
+  title: The connection between inner membrane topology and mitochondrial function
+  container-title: Journal of Molecular and Cellular Cardiology
+  page: '51-57'
+  volume: '62'
+  abstract: The mitochondrial inner membrane has a complex and dynamic structure that
+    plays an important role in the function of this organelle. The internal compartments
+    called cristae are created by processes that are just beginning to be understood.
+    Crista size and morphology influence the internal diffusion of solutes and the
+    surface area of the inner membrane, which is home to critical membrane proteins
+    including ATP synthase and electron transport chain complexes; metabolite and
+    ion transporters including the adenine nucleotide translocase, the calcium uniporter
+    (MCU), and the sodium/calcium exchanger (NCLX); and many more. Here we provide
+    a brief overview of what is known about crista structure and formation, and discuss
+    mitochondrial function in the context of that structure. We also suggest that
+    mathematical modeling of mitochondria that incorporates accurate information about
+    the organelle’s internal architecture can lead to a better understanding of its
+    diverse functions. This article is part of a Special Issue entitled ‘Calcium Signalling
+    in Heart’.
+  URL: http://www.sciencedirect.com/science/article/pii/S0022282813001697
+  DOI: https://doi.org/10.1016/j.yjmcc.2013.05.001
+  ISBN: '0022-2828'
+
+- id: Nicholls-2013
+  type: book
+  author:
+  - family: Nicholls
+    given: David G.
+  - family: Ferguson
+    given: Stuart J.
+  issued:
+  - year: 2013
+  title: Bioenergetics
+  publisher: Academic Press, Elsevier
+  publisher-place: Amsterdam
+  page: xiv, 419 pages
+  edition: '4'
+  genre: Book
+  ISBN: 9780123884251 (pbk.)
+
+- id: Nelson-2017
+  type: book
+  author:
+  - family: Nelson
+    given: David L.
+  - family: Cox
+    given: Michael M.
+  issued:
+  - year: 2017
+  title: Lehninger principles of biochemistry
+  publisher: W. H. Freeman
+  edition: 7th
+  genre: Book
+  URL: https://search.library.wisc.edu/catalog/999964334502121
+  ISBN: '9781319108243'
+
+- id: Zwicker-2006
+  type: article-journal
+  author:
+  - family: Zwicker
+    given: K.
+  - family: Galkin
+    given: A.
+  - family: Drose
+    given: S.
+  - family: Grgic
+    given: L.
+  - family: Kerscher
+    given: S.
+  - family: Brandt
+    given: U.
+  issued:
+  - year: 2006
+  title: The redox-bohr group associated with iron-sulfur cluster n2 of complex i
+  container-title: J Biol Chem
+  page: '23013-7'
+  volume: '281'
+  issue: '32'
+  genre: Journal Article
+  URL: https://www.ncbi.nlm.nih.gov/pubmed/16760472
+  DOI: 10.1074/jbc.M603442200
+  ISSN: 0021-9258 (Print) 0021-9258 (Linking)
+
+- id: Hirst-2013
+  type: article-journal
+  author:
+  - family: Hirst
+    given: Judy
+  issued:
+  - year: 2013
+  title: Mitochondrial complex i
+  container-title: Annual Review of Biochemistry
+  publisher: Annual Reviews
+  page: '551-575'
+  volume: '82'
+  issue: '1'
+  annote: 'doi: 10.1146/annurev-biochem-070511-103700'
+  abstract: Complex I (NADH:ubiquinone oxidoreductase) is crucial for respiration
+    in many aerobic organisms. In mitochondria, it oxidizes NADH from the tricarboxylic
+    acid cycle and ?-oxidation, reduces ubiquinone, and transports protons across
+    the inner membrane, contributing to the proton-motive force. It is also a major
+    contributor to cellular production of reactive oxygen species. The redox reaction
+    of complex I is catalyzed in the hydrophilic domain; it comprises NADH oxidation
+    by a flavin mononucleotide, intramolecular electron transfer along a chain of
+    iron-sulfur clusters, and ubiquinone reduction. Redox-coupled proton translocation
+    in the membrane domain requires long-range energy transfer through the protein
+    complex, and the molecular mechanisms that couple the redox and proton-transfer
+    half-reactions are currently unknown. This review evaluates extant data on the
+    mechanisms of energy transduction and superoxide production by complex I, discusses
+    contemporary mechanistic models, and explores how mechanistic studies may contribute
+    to understanding the roles of complex I dysfunctions in human diseases.
+  URL: https://doi.org/10.1146/annurev-biochem-070511-103700
+  DOI: 10.1146/annurev-biochem-070511-103700
+  ISBN: '0066-4154'
+
+- id: Wirth-2016
+  type: article-journal
+  author:
+  - family: Wirth
+    given: Christophe
+  - family: Brandt
+    given: Ulrich
+  - family: Hunte
+    given: Carola
+  - family: Zickermann
+    given: Volker
+  issued:
+  - year: 2016
+  title: Structure and function of mitochondrial complex i
+  container-title: Biochimica et Biophysica Acta (BBA) - Bioenergetics
+  page: '902-914'
+  volume: '1857'
+  issue: '7'
+  abstract: Proton-pumping NADH:ubiquinone oxidoreductase (complex I) is the largest
+    and most complicated enzyme of the respiratory chain. Fourteen central subunits
+    represent the minimal form of complex I and can be assigned to functional modules
+    for NADH oxidation, ubiquinone reduction, and proton pumping. In addition, the
+    mitochondrial enzyme comprises some 30 accessory subunits surrounding the central
+    subunits that are not directly associated with energy conservation. Complex I
+    is known to release deleterious oxygen radicals (ROS) and its dysfunction has
+    been linked to a number of hereditary and degenerative diseases. We here review
+    recent progress in structure determination, and in understanding the role of accessory
+    subunits and functional analysis of mitochondrial complex I. For the central subunits,
+    structures provide insight into the arrangement of functional modules including
+    the substrate binding sites, redox-centers and putative proton channels and pump
+    sites. Only for two of the accessory subunits, detailed structures are available.
+    Nevertheless, many of them could be localized in the overall structure of complex
+    I, but most of these assignments have to be considered tentative. Strikingly,
+    redox reactions and proton pumping machinery are spatially completely separated
+    and the site of reduction for the hydrophobic substrate ubiquinone is found deeply
+    buried in the hydrophilic domain of the complex. The X-ray structure of complex
+    I from Yarrowia lipolytica provides clues supporting the previously proposed two-state
+    stabilization change mechanism, in which ubiquinone redox chemistry induces conformational
+    states and thereby drives proton pumping. The same structural rearrangements may
+    explain the active/deactive transition of complex I implying an integrated mechanistic
+    model for energy conversion and regulation. This article is part of a Special
+    Issue entitled Respiratory complex I, edited by Volker Zickermann and Ulrich Brandt.
+  keyword: Oxidative phosphorylation; Ubiquinone; Proton pump; Membrane protein; X-ray
+    crystallography; Electron microscopy
+  URL: http://www.sciencedirect.com/science/article/pii/S0005272816300329
+  DOI: https://doi.org/10.1016/j.bbabio.2016.02.013
+  ISBN: '0005-2728'
+
+- id: Tsukihara-1996
+  type: article-journal
+  author:
+  - family: Tsukihara
+    given: Tomitake
+  - family: Aoyama
+    given: Hiroshi
+  - family: Yamashita
+    given: Eiki
+  - family: Tomizaki
+    given: Takashi
+  - family: Yamaguchi
+    given: Hiroshi
+  - family: Shinzawa-Itoh
+    given: Kyoko
+  - family: Nakashima
+    given: Ryosuke
+  - family: Yaono
+    given: Rieko
+  - family: Yoshikawa
+    given: Shinya
+  issued:
+  - year: 1996
+  title: The whole structure of the 13-subunit oxidized cytochrome c oxidase at 2.8
+    Å
+  container-title: Science
+  page: '1136'
+  volume: '272'
+  issue: '5265'
+  URL: http://science.sciencemag.org/content/272/5265/1136.abstract
+  DOI: 10.1126/science.272.5265.1136
+
+- id: Zong-2018
+  type: article-journal
+  author:
+  - family: Zong
+    given: Shuai
+  - family: Wu
+    given: Meng
+  - family: Gu
+    given: Jinke
+  - family: Liu
+    given: Tianya
+  - family: Guo
+    given: Runyu
+  - family: Yang
+    given: Maojun
+  issued:
+  - year: 2018
+  title: Structure of the intact 14-subunit human cytochrome c oxidase
+  container-title: Cell Research
+  page: '1026-1034'
+  volume: '28'
+  issue: '10'
+  abstract: Respiration is one of the most basic features of living organisms, and
+    the electron transport chain complexes are probably the most complicated protein
+    system in mitochondria. Complex-IV is the terminal enzyme of the electron transport
+    chain, existing either as randomly scattered complexes or as a component of supercomplexes.
+    NDUFA4 was previously assumed as a subunit of complex-I, but recent biochemical
+    data suggested it may be a subunit of complex-IV. However, no structural evidence
+    supporting this notion was available till now. Here we obtained the 3.3 Åresolution
+    structure of complex-IV derived from the human supercomplex I1III2IV1 and assigned
+    the NDUFA4 subunit into complex-IV. Intriguingly, NDUFA4 lies exactly at the dimeric
+    interface observed in previously reported crystal structures of complex-IV homodimer
+    which would preclude complex-IV dimerization. Combining previous structural and
+    biochemical data shown by us and other groups, we propose that the intact complex-IV
+    is a monomer containing 14 subunits.
+  URL: https://doi.org/10.1038/s41422-018-0071-1
+  DOI: 10.1038/s41422-018-0071-1
+  ISBN: '1748-7838'
+
+- id: Efremov-2010
+  type: article-journal
+  author:
+  - family: Efremov
+    given: R. G.
+  - family: Baradaran
+    given: R.
+  - family: Sazanov
+    given: L. A.
+  issued:
+  - year: 2010
+  title: The architecture of respiratory complex i
+  container-title: Nature
+  page: '441-5'
+  volume: '465'
+  issue: '7297'
+  genre: Journal Article
+  DOI: 10.1038/nature09066
+  ISSN: '0028-0836'
+
+- id: Kaila-2010
+  type: article-journal
+  author:
+  - family: Kaila
+    given: Ville R. I.
+  - family: Verkhovsky
+    given: Michael I.
+  - family: Wikström
+    given: Mårten
+  issued:
+  - year: 2010
+  title: Proton-coupled electron transfer in cytochrome oxidase
+  container-title: Chemical Reviews
+  publisher: American Chemical Society
+  page: '7062-7081'
+  volume: '110'
+  issue: '12'
+  annote: 'doi: 10.1021/cr1002003'
+  URL: https://doi.org/10.1021/cr1002003
+  DOI: 10.1021/cr1002003
+  ISBN: '0009-2665'
+
+- id: Swierczek-2010
+  type: article-journal
+  author:
+  - family: Świerczek
+    given: Monika
+  - family: Cieluch
+    given: Ewelina
+  - family: Sarewicz
+    given: Marcin
+  - family: Borek
+    given: Arkadiusz
+  - family: Moser
+    given: Christopher C.
+  - family: Dutton
+    given: P. Leslie
+  - family: Osyczka
+    given: Artur
+  issued:
+  - year: 2010
+  title: An electronic bus bar lies in the core of cytochrome bc$<$sub$>$1$<$/sub$>$
+  container-title: Science
+  page: '451'
+  volume: '329'
+  issue: '5990'
+  URL: http://science.sciencemag.org/content/329/5990/451.abstract
+  DOI: 10.1126/science.1190899
+
+- id: Efremov-2011
+  type: article-journal
+  author:
+  - family: Efremov
+    given: Rouslan G.
+  - family: Sazanov
+    given: Leonid A.
+  issued:
+  - year: 2011
+  title: Structure of the membrane domain of respiratory complex i
+  container-title: Nature
+  page: '414-420'
+  volume: '476'
+  issue: '7361'
+  abstract: Complex I is the first and largest enzyme of the respiratory chain, coupling
+    electron transfer between NADH and ubiquinone to the translocation of four protons
+    across the membrane. It has a central role in cellular energy production and has
+    been implicated in many human neurodegenerative diseases. The L-shaped enzyme
+    consists of hydrophilic and membrane domains. Previously, we determined the structure
+    of the hydrophilic domain. Here we report the crystal structure of the Esherichia
+    coli complex I membrane domain at 3.0 Åresolution. It includes six subunits, NuoL,
+    NuoM, NuoN, NuoA, NuoJ and NuoK, with 55 transmembrane helices. The fold of the
+    homologous antiporter-like subunits L, M and N is novel, with two inverted structural
+    repeats of five transmembrane helices arranged, unusually, face-to-back. Each
+    repeat includes a discontinuous transmembrane helix and forms half of a channel
+    across the membrane. A network of conserved polar residues connects the two half-channels,
+    completing the proton translocation pathway. Unexpectedly, lysines rather than
+    carboxylate residues act as the main elements of the proton pump in these subunits.
+    The fourth probable proton-translocation channel is at the interface of subunits
+    N, K, J and A. The structure indicates that proton translocation in complex I,
+    uniquely, involves coordinated conformational changes in six symmetrical structural
+    elements.
+  URL: https://doi.org/10.1038/nature10330
+  DOI: 10.1038/nature10330
+  ISBN: '1476-4687'
+
+- id: Sazanov-2006
+  type: article-journal
+  author:
+  - family: Sazanov
+    given: Leonid A.
+  - family: Hinchliffe
+    given: Philip
+  issued:
+  - year: 2006
+  title: Structure of the hydrophilic domain of respiratory complex i from thermus
+    thermophilus
+  container-title: Science
+  page: '1430'
+  volume: '311'
+  issue: '5766'
+  URL: http://science.sciencemag.org/content/311/5766/1430.abstract
+  DOI: 10.1126/science.1123809
+
+- id: Moser:2006
+  type: article-journal
+  author:
+  - family: Moser
+    given: Christopher C.
+  - family: Farid
+    given: Tammer A.
+  - family: Chobot
+    given: Sarah E.
+  - family: Dutton
+    given: P. Leslie
+  issued:
+  - year: 2006
+  title: Electron tunneling chains of mitochondria
+  container-title: Biochimica et Biophysica Acta (BBA) - Bioenergetics
+  page: '1096-1109'
+  volume: '1757'
+  issue: '9'
+  abstract: The single, simple concept that natural selection adjusts distances between
+    redox cofactors goes a long way towards encompassing natural electron transfer
+    protein design. Distances are short or long as required to direct or insulate
+    promiscuously tunneling single electrons. Along a chain, distances are usually
+    14 Åor less. Shorter distances are needed to allow climbing of added energetic
+    barriers at paired-electron catalytic centers in which substrate and the required
+    number of cofactors form a compact cluster. When there is a short-circuit danger,
+    distances between shorting centers are relatively long. Distances much longer
+    than 14Åwill support only very slow electron tunneling, but could act as high
+    impedance signals useful in regulation. Tunneling simulations of the respiratory
+    complexes provide clear illustrations of this simple engineering.
+  keyword: Mitochondria; Cytochrome oxidase cytochrome bc1; Succinate dehydrogenase;
+    NADH-ubiquinone oxidoreductase; Electron and nuclear tunneling; Oxidoreduction
+    catalytic transformation Energy conversion
+  URL: http://www.sciencedirect.com/science/article/pii/S0005272806001083
+  DOI: https://doi.org/10.1016/j.bbabio.2006.04.015
+  ISBN: '0005-2728'
+
+- id: Liang:2017
+  type: article-journal
+  author:
+  - family: Liang
+    given: Wenfeng
+  - family: Zhao
+    given: Yuliang
+  - family: Liu
+    given: Lianqing
+  - family: Wang
+    given: Yuechao
+  - family: Li
+    given: Wen Jung
+  - family: Lee
+    given: Gwo-Bin
+  issued:
+  - year: 2017
+  title: Determination of cell membrane capacitance and conductance via optically
+    induced electrokinetics
+  container-title: Biophysical Journal
+  page: '1531-1539'
+  volume: '113'
+  issue: '7'
+  abstract: Cell membrane capacitance and conductance are key pieces of intrinsic
+    information correlated with the cellular dielectric parameters and morphology
+    of the plasma membrane; these parameters have been used as electrophysiological
+    biomarkers to characterize cellular phenotype and state, and they have many associated
+    clinical applications. Here, we present our work on the non-invasive determination
+    of cell membrane capacitance and conductance by an optically activated microfluidics
+    chip. The model for determining the cell membrane capacitance and conductance
+    was established by a single layer of the shell-core polarization model. Three-dimensional
+    finite-element analyses of the positive and negative optically induced dielectrophoresis
+    forces generated by the projected light arrays of spots were performed, thus providing
+    a theoretical validation of the feasibility of this approach. Then, the crossover
+    frequency spectra for four typical types of cells (Raji cells, MCF-7 cells, HEK293
+    cells, and K562 cells) were experimentally investigated by using a micro-vision
+    based motion-tracking technique. The different responses of these cells to the
+    positive and negative ODEP forces were studied under four different liquid conductivities
+    by automatic observation and tracking of the cellular trajectory and texture during
+    the cells’translation. The cell membrane capacitance and conductance were determined
+    from the curve-fitted spectra, which were 11.1 $\pm$0.9 mF/m2 and 782 $\pm$32
+    S/m2, respectively, for Raji cells, 11.5 $\pm$0.8 mF/m2 and 114 $\pm$28 S/m2 for
+    MCF-7 cells, 9.0 $\pm$0.9 mF/m2 and 187 $\pm$22 S/m2 for HEK293 cells, and 10.2
+    $\pm$0.7 mF/m2 and 879 $\pm$24 S/m2 for K562 cells. Furthermore, as an application
+    of this technique, the membrane capacitances of MCF-7 cells treated with four
+    different concentrations of drugs were acquired. This technique introduces a determination
+    of cell membrane capacitance and conductance that yields statistically significant
+    data while allowing information from individual cells to be obtained in a non-invasive
+    manner.
+  URL: http://www.sciencedirect.com/science/article/pii/S0006349517308639
+  DOI: https://doi.org/10.1016/j.bpj.2017.08.006
+  ISBN: '0006-3495'
+
+- id: Zurawik:2016
+  type: article-journal
+  author:
+  - family: Żurawik
+    given: Tomasz Michal
+  - family: Pomorski
+    given: Adam
+  - family: Belczyk-Ciesielska
+    given: Agnieszka
+  - family: Goch
+    given: Grażyna
+  - family: Niedźwiedzka
+    given: Katarzyna
+  - family: Kucharczyk
+    given: Róża
+  - family: Krężel
+    given: Artur
+  - family: Bal
+    given: Wojciech
+  issued:
+  - year: 2016
+    month: 8
+  title: Revisiting mitochondrial pH with an improved algorithm for calibration of
+    the ratiometric 5(6)-carboxy-snarf-1 probe reveals anticooperative reaction with
+    h+ ions and warrants further studies of organellar pH
+  container-title: PLOS ONE
+  publisher: Public Library of Science
+  page: '1-17'
+  volume: '11'
+  issue: '8'
+  abstract: Fluorescence measurements of pH and other analytes in the cell rely on
+    accurate calibrations, but these have routinely used algorithms that inadequately
+    describe the properties of indicators. Here, we have established a more accurate
+    method for calibrating and analyzing data obtained using the ratiometric probe
+    5(6)-carboxy-SNARF-1. We tested the implications of novel approach to measurements
+    of pH in yeast mitochondria, a compartment containing a small number of free H+
+    ions. Our findings demonstrate that 5(6)-carboxy-SNARF-1 interacts with H+ ions
+    inside the mitochondria in an anticooperative manner (Hill coefficient n of 0.5)
+    and the apparent pH inside the mitochondria is  0.5 unit lower than had been generally
+    assumed. This result, at odds with the current consensus on the mechanism of energy
+    generation in the mitochondria, is in better agreement with theoretical considerations
+    and warrants further studies of organellar pH.
+  URL: https://doi.org/10.1371/journal.pone.0161353
+  DOI: 10.1371/journal.pone.0161353
+
+- id: Loiselle:2010
+  type: chapter
+  author:
+  - family: Loiselle
+    given: Frederick B.
+  - family: Casey
+    given: Joseph R.
+  editor:
+  - family: Yan
+    given: Qing
+  issued:
+  - year: 2010
+  title: Measurement of intracellular pH
+  container-title: Membrane transporters in drug discovery and development
+  collection-title: Methods in molecular biology
+  publisher: Humana Press
+  volume: '637'
+
+- id: Sone:1977
+  type: article-journal
+  author:
+  - family: Sone
+    given: 'N'
+  - family: Yoshida
+    given: M
+  - family: Hirata
+    given: H
+  - family: Kagawa
+    given: 'Y'
+  issued:
+  - year: 1977
+  title: Adenosine triphosphate synthesis by electrochemical proton gradient in vesicles
+    reconstituted from purified adenosine triphosphatase and phospholipids of thermophilic
+    bacterium.
+  container-title: Journal of Biological Chemistry
+  page: '2956-2960'
+  volume: '252'
+
+- id: Kagawa:2010
+  type: article-journal
+  author:
+  - family: Kagawa
+    given: Yasuo
+  issued:
+  - year: 2010
+  title: 'ATP synthase: From single molecule to human bioenergetics'
+  title-short: ATP synthase
+  container-title: Proceedings of the Japan Academy. Series B, Physical and biological
+    sciences
+  page: '667-693'
+  volume: '86'
+  issue: '7'
+  genre: Journal Article
+  URL: https://www.ncbi.nlm.nih.gov/pubmed/20689227 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3066536/
+  DOI: 10.2183/pjab.86.667
+  ISSN: 1349-2896 0386-2208
+
+- id: Jagendorf:1966
+  type: article-journal
+  author:
+  - family: Jagendorf
+    given: A T
+  - family: Uribe
+    given: E
+  issued:
+  - year: 1966
+  title: ATP formation caused by acid-base transition of spinach chloroplasts
+  container-title: Proceedings of the National Academy of Sciences
+  publisher: National Academy of Sciences
+  page: '170-177'
+  volume: '55'
+  issue: '1'
+  URL: https://www.pnas.org/content/55/1/170
+  DOI: 10.1073/pnas.55.1.170
+  ISSN: '0027-8424'
+
+- id: Robertson:1960
+  type: article-journal
+  author:
+  - family: Robertson
+    given: R. N.
+  issued:
+  - year: 1960
+  title: ION transport and respiration
+  container-title: Biological Reviews
+  page: '231-264'
+  volume: '35'
+  issue: '2'
+  genre: Journal Article
+  URL: https://doi.org/10.1111/j.1469-185X.1960.tb01415.x
+  DOI: 10.1111/j.1469-185X.1960.tb01415.x
+  ISSN: '1464-7931'
+
+- id: Mitchell:1967a
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  - family: Moyle
+    given: Jennifer
+  issued:
+  - year: 1967
+    month: 12
+  title: <span class="nocase">Respiration-driven proton translocation in rat liver
+    mitochondria</span>
+  container-title: Biochemical Journal
+  page: '1147-1162'
+  volume: '105'
+  issue: '3'
+  abstract: 1\. Pulses of acidity of the outer aqueous phase of rat liver mitochondrial
+    suspensions induced by pulses of respiration are due to the translocation of H+
+    (or OH−) ions across the osmotic barrier (M phase) of the cristae membrane and
+    cannot be attributed to the formation (with acid production) of a chemical intermediate
+    that subsequently decomposes. 2. The effective quantity of protons translocated
+    per bivalent reducing equivalent passing through the succinate-oxidizing and β-hydroxybutyrate-oxidizing
+    spans of the respiratory chain are very close to 4 and 6 respectively. These quotients
+    are constant between pH5·5 and 8·5 and are independent of changes in the ionic
+    composition of the mitochondrial suspension medium provided that the conditions
+    permit the accurate experimental measurement of the proton translocation. 3. Apparent
+    changes in the →H+/O quotients may be induced by conditions preventing the occurrence
+    of the usual backlash; these apparent changes of →H+/O are attributable to a very
+    fast electrically driven component of the decay of the acid pulses that is not
+    included in the experimental extrapolations. 4. Apparent changes in the →H+/O
+    quotients may also be induced by the presence of anions, such as succinate, malonate
+    and phosphate, or by cations such as Na+. These apparent changes of →H+/O are
+    due to an increase in the rate of the pH-driven decay of the acid pulses. 5. The
+    uncoupling agents, 2,4-dinitrophenol, carbonyl cyanide p-trifluoromethoxyphenylhydrazone
+    and gramicidin increase the effective proton conductance of the M phase and thus
+    increase the rate of decay of the respiration-driven acid pulses, but do not change
+    the initial →H+/O quotients. The increase in effective proton conductance of the
+    M phase caused by these uncouplers accounts quantitatively for their uncoupling
+    action; and the fact that the initial →H+/O quotients are unchanged shows that
+    uncoupler-sensitive chemical intermediates do not exist between the respiratory-chain
+    system and the effective proton-translocating mechanism. 6. Stoicheiometric acid–base
+    changes associated with the activity of the regions of the respiratory chain on
+    the oxygen side of the rotenone- and antimycin A-sensitive sites gives experimental
+    support for a suggested configuration of loop 3.
+  URL: https://doi.org/10.1042/bj1051147
+  DOI: 10.1042/bj1051147
+  ISSN: '0264-6021'
+
+- id: Mitchell:1978
+  type: no-type
+  issued:
+  - year: 1978
+  title: Peter mitchell – nobel lecture
+  publisher: NobelPrize.org
+
+- id: Mitchell:1965a
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  - family: Moyle
+    given: Jennifer
+  issued:
+  - year: 1965
+  title: Stoichiometry of proton translocation through the respiratory chain and adenosine
+    triphosphatase systems of rat liver mitochondria
+  container-title: Nature
+  page: '147-151'
+  volume: '208'
+  issue: '5006'
+  genre: Journal Article
+  URL: https://doi.org/10.1038/208147a0
+  DOI: 10.1038/208147a0
+  ISSN: '1476-4687'
+
+- id: Gerencser:2012
+  type: article-journal
+  author:
+  - family: Gerencser
+    given: Akos A.
+  - family: Chinopoulos
+    given: Christos
+  - family: Birket
+    given: Matthew J.
+  - family: Jastroch
+    given: Martin
+  - family: Vitelli
+    given: Cathy
+  - family: Nicholls
+    given: David G.
+  - family: Brand
+    given: Martin D.
+  issued:
+  - year: 2012
+  title: 'Quantitative measurement of mitochondrial membrane potential in cultured
+    cells: Calcium-induced de- and hyperpolarization of neuronal mitochondria'
+  title-short: Quantitative measurement of mitochondrial membrane potential in cultured
+    cells
+  container-title: The Journal of Physiology
+  page: '2845-2871'
+  volume: '590'
+  issue: '12'
+  genre: Journal Article
+  URL: https://doi.org/10.1113/jphysiol.2012.228387
+  DOI: 10.1113/jphysiol.2012.228387
+  ISSN: '0022-3751'
+
+- id: Mitchell:1961
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  issued:
+  - year: 1961
+  title: Coupling of phosphorylation to electron and hydrogen transfer by a chemi-osmotic
+    type of mechanism
+  container-title: Nature
+  page: '144-148'
+  volume: '191'
+  issue: '4784'
+  genre: Journal Article
+  URL: https://doi.org/10.1038/191144a0
+  DOI: 10.1038/191144a0
+  ISSN: '1476-4687'
+
+- id: Mitchell:1966
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  issued:
+  - year: 1966
+  title: CHEMIOSMOTIC coupling in oxidative and photosynthetic phosphorylation
+  container-title: Biological Reviews
+  page: '445-501'
+  volume: '41'
+  issue: '3'
+  genre: Journal Article
+  URL: https://doi.org/10.1111/j.1469-185X.1966.tb01501.x
+  DOI: 10.1111/j.1469-185X.1966.tb01501.x
+  ISSN: '1464-7931'
+
+- id: Mitchell:1967
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  issued:
+  - year: 1967
+  title: Proton current flow in mitochondrial systems
+  container-title: Nature
+  page: '1327-1328'
+  volume: '214'
+  issue: '5095'
+  genre: Journal Article
+  URL: https://doi.org/10.1038/2141327a0
+  DOI: 10.1038/2141327a0
+  ISSN: '1476-4687'
+
+- id: Mitchell:2011
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  issued:
+  - year: 2011
+  title: Chemiosmotic coupling in oxidative and photosynthetic phosphorylation
+  container-title: Biochimica et Biophysica Acta (BBA) - Bioenergetics
+  page: '1507-1538'
+  volume: '1807'
+  issue: '12'
+  genre: Journal Article
+  URL: http://www.sciencedirect.com/science/article/pii/S0005272811002283
+  DOI: https://doi.org/10.1016/j.bbabio.2011.09.018
+  ISSN: '0005-2728'
+
+- id: Mitchell:1965
+  type: article-journal
+  author:
+  - family: Mitchell
+    given: Peter
+  - family: Moyle
+    given: Jennifer
+  issued:
+  - year: 1965
+  title: Evidence discriminating between the chemical and the chemiosmotic mechanisms
+    of electron transport phosphorylation
+  container-title: Nature
+  page: '1205-1206'
+  volume: '208'
+  issue: '5016'
+  genre: Journal Article
+  URL: https://doi.org/10.1038/2081205a0
+  DOI: 10.1038/2081205a0
+  ISSN: '1476-4687'
+
+- id: Morelli:2019
+  type: article-journal
+  author:
+  - family: Morelli
+    given: Alessandro Maria
+  - family: Ravera
+    given: Silvia
+  - family: Calzia
+    given: Daniela
+  - family: Panfoli
+    given: Isabella
+  issued:
+  - year: 2019
+  title: An update of the chemiosmotic theory as suggested by possible proton currents
+    inside the coupling membrane
+  container-title: Open Biology
+  page: '180221'
+  volume: '9'
+  issue: '4'
+  genre: Journal Article
+  URL: https://doi.org/10.1098/rsob.180221
+  DOI: 10.1098/rsob.180221
+...

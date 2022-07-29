@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>biochemistry on Tianyi@Oxford</title>
+    <link>/categories/biochemistry.html</link>
+    <description>Recent content in biochemistry on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/biochemistry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insertion of Membrane Proteins</title>
+      <link>/tutorial/insertion-of-membrane-proteins.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/insertion-of-membrane-proteins.html</guid>
+      <description>1 Targeting the Protein to the ER Membrane: SRP and the Sec61 Translocon 2 Single-Pass Proteins 2.1 Type I Proteins 2.2 Type II and III Proteins 3 Multi-Pass Proteins 4 Insertases 4.1 Insertion of Tail-anchored Proteins by the Get system 4.2 The Roles of YidC 5 \(\beta\)-barrel Proteins References The majority of integral membrane proteins in an eukaryotic cell are made of one or more \(\alpha\)-helices and are first inserted co-translationally via the Sec61 translocon into the endoplasmic reticulum (ER) membrane, assembled there, and then dispatched, via the golgi apparatus and vesicles, to their final destinations.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Nucleic Acid Interactions</title>
+      <link>/tutorial/protein-nucleic-acid-interactions.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-nucleic-acid-interactions.html</guid>
+      <description>1 Introduction 2 An Overview of Mechanisms of Protein-DNA Interactions 3 Thermodynamics of Protein-DNA Binding 4 Base Readout in the Major Groove 5 Shape Readout 5.1 Minor Groove Narrowing 5.2 Kinks 6 The Nucleosome as an Example of Non-Specific Binding 7 (Question 2) 7.1 (a) bHLH Motif 7.2 (b) Leucine Zipper 7.3 (c) Zinc Finger 7.4 (d) TATA box binding protein References 1 Introduction Protein-DNA interactions have profound impact on the expression and regulation of genes.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Protein Interactions</title>
+      <link>/tutorial/protein-protein-interactions.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-protein-interactions.html</guid>
+      <description>1 Introduction 2 Properties of PPI 2.1 Reversibility 2.2 Properties of the Binding Interfaces 2.3 Roles of Water Molecules 2.4 Kinetics and Thermodynamics 3 Studying PPIs 3.1 Determining Kd (and rate constants) 3.1.1 Surface Plasmon resonance (SPR) 3.1.2 Fluorescence anisotropy 3.1.3 Isothermal titration calorimetry (ITC) 3.2 Mechanistic Studies 3.2.1 Alanine Scanning 3.2.2 Extent of Exchengeability of Amino Acids 3.2.3 Directed Evolution 3.2.4 Computational Approaches 3.2.5 Connectivity Map Reveals Modularity 3.</description>
+    </item>
+    
+    <item>
+      <title>Membrane Protein: Structure and Stability</title>
+      <link>/tutorial/membrane-protein-structure-and-stability.html</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/membrane-protein-structure-and-stability.html</guid>
+      <description>1 Introduction 2 The Biomembrane Environment 3 The Thermodynamic Basis of Secondary Structure Formation 4 Glycine and Proline in TM Helices 5 Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling 6 Interactions with Lipids 1 Introduction Many proteins that perform vital functions are membrane proteins. These include transport proteins (channels, transporters and pumps), cell adhesion molecules, and proteins that transduces energy in the electron transport chain. Despite their diverse roles, the same set of biophysical and biochemical rules govern their structural stability.</description>
+    </item>
+    
+    <item>
+      <title>Assessing The Quality Structural Models</title>
+      <link>/tutorial/assessing-structural-models.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/assessing-structural-models.html</guid>
+      <description>1 The Essence of X-Ray Crystallography 2 Assessing the Quality of A Structure During Model Building and Refinement 2.1 R and Rfree 2.2 Reciprocal-Space Refinement: Refinement by least squares 2.3 Real-Space Refinement: Map Fitting 3 Assessing Quality After Automatic Model Building and Refinement 3.1 Density fit analysis and local geometry validation 3.1.1 Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles 3.1.2 Torsional Angles and Ramachandran Plot 3.</description>
+    </item>
+    
+    <item>
+      <title>Redox-Based Modulation of Enzyme Activity</title>
+      <link>/tutorial/redox-based-modulation-of-enzyme-activity.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/redox-based-modulation-of-enzyme-activity.html</guid>
+      <description>Presentation see here
+Geigenberger, Peter, Ina Thormählen, Danilo M. Daloso, and Alisdair R. Fernie. 2017. “The Unprecedented Versatility of the Plant‎ Thioredoxin System.” Trends in Plant Science 22 (3): 249–62. https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008.
+Hägglund, Per, Christine Finnie, Hiroyuki Yano, Azar Shahpiri, Bob B. Buchanan, Anette Henriksen, and Birte Svensson. 2016. “Seed Thioredoxin H.” Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics 1864 (8): 974–82. https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014.</description>
+    </item>
+    
+    <item>
+      <title>Improving Photosynthesis by Photorespiratory Bypasses</title>
+      <link>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</guid>
+      <description>1 Attempts to Inhibit Photorespiration and Improve Specificity of Rubisco 2 Bypassing Photorespiration 2.1 Implementing The Bacterial Glycerate Pathway 2.2 Inhibition of the Glycolate Transporter 3 Conclusion References Discuss the feasibility and desirability of improving photosynthesis in higher plants through the use of photorespiratory bypasses.
+Plants and algae use the Calvin cycle to capture inorganic carbon (as CO2) and use ATP and NADPH generated in light reactions to convert it to organic carbon.</description>
+    </item>
+    
+    <item>
+      <title>Genetic Manipulation of the Calvin Cycle</title>
+      <link>/tutorial/genetic-manipulation-of-the-calvin-cycle.html</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/genetic-manipulation-of-the-calvin-cycle.html</guid>
+      <description>1 Introduction 1.1 Rubisco Does not Exert Much Control on the Flux of the Calvin Cycle Unless in Special Conditions 2 Other Enzymes that Catalyse Irreversible Reactions 3 Plastid Aldolase as an ‘Non-Regulated’ Enzyme Exerts a Greater Control than Rubisco on the Rate of Photosynthesis 4 Transketolase Directly Controls not Only Calvin Cycle but Also Other Pathways 5 Conclusion To what extent has genetic manipulation of the Calvin cycle forced the reappraisal of our understanding of the control of metabolic pathways in plants?</description>
+    </item>
+    
+    <item>
+      <title>Coordination of PS I and PS II</title>
+      <link>/tutorial/coordination-of-ps-i-and-ps-ii.html</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/coordination-of-ps-i-and-ps-ii.html</guid>
+      <description>1 Background 2 Why is Coordination between Photosystems I and II Needed 3 How is Coordination between PS-I and PS-II Achieved 3.1 The Role of the Plastoquinone Pool 3.2 Reversible Redistribution of LHC-II 3.3 Transcriptional Regulation 3.3.1 How does SIG1 phosphorylation confer phhotosystem promoter specificity? 4 Conclusion References Why do plants co-ordinate the relative activities of Photosystems I and II and how is this co-ordination achieved?
+1 Background Photosystems I and II are photochemical complexes that harvest light energy to drive endergonic redox reactions.</description>
+    </item>
+    
+    <item>
+      <title>Fuel Selection During Exercise</title>
+      <link>/tutorial/sensing-energy-status-during-exercise.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/sensing-energy-status-during-exercise.html</guid>
+      <description>1 Introduction 2 Overview 2.1 Glycogen and Glucose 2.1.1 Blood Glucose 2.1.2 Regulation of Glycogenolysis 2.2 Fatty Acids 2.2.1 Adipose Tissue Lipolysis and Plasma NEFA 2.2.2 Intramuscular Triacylglycerol (IMTG) 2.2.3 Plasma TG (VLDL-TG) What effects do the intensity and duration of exercise have on fuel selection by mammalian muscle?
+1 Introduction During exercise, glucose and fatty acids are the fuels used by the muscle. Their origin and relative contribution depend on the intensity and duration of exercise, as well as on characteristics of individuals such as the level of physical training.</description>
+    </item>
+    
+    <item>
+      <title>Insulin and Ketone Bodies</title>
+      <link>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</guid>
+      <description>1 Introduction 2 Regulation of Ketogenesis by Insulin 2.1 Adipocyte Lipolysis 2.2 Regulation of CPT1 2.3 Channeling of Acetyl-CoA into Ketogenesis 2.4 Mitochondrial HMG-CoA Synthase 3 Diabetes and Ketone Bodies 3.1 Aetiology of Diabetes 3.2 Overproduction of Ketone Bodies 3.3 Consequences of Ketoacidosis How does insulin regulate the pathways for the conversion of body fat into ketone bodies? Why are ketone bodies overproduced in uncontrolled diabetes and what are the metabolic consequences.</description>
+    </item>
+    
+    <item>
+      <title>Supplying Fuels to the Brain During Starvation</title>
+      <link>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</guid>
+      <description>Title: As starvation proceeds, how does the supply of fuels to the brain change? How is this change related to a requirement to conserve body protein?
+Due to the blood-brain barrier, The human brain can only harness energy from catabolising either glucose or ketone bodies. Under normal circumstances, glucose of dietary origin is the predominant source of fuel for the brain. As starvation begins (during the postabsorptive phase), astrocytes in the brain break down their stored glycogen to supply fuel in the form of lactate to neurons, which is followed by hepatic glycogenolysis that continue to provide glucose for the brain for a short period.</description>
+    </item>
+    
+  </channel>
+</rss>

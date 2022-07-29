@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RNA-seq on Tianyi@Oxford</title>
+    <link>/tags/rna-seq.html</link>
+    <description>Recent content in RNA-seq on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/rna-seq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Notes on RNA-seq</title>
+      <link>/bioinformatics/personal-notes-on-rna-seq.html</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/personal-notes-on-rna-seq.html</guid>
+      <description> 1 Trimming 2 Mapping 2.1 STAR 1 Trimming 2 Mapping 2.1 STAR The --outSAMstrandField intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data (Dobin and Gingeras 2015).
+Dobin, Alexander, and Thomas R. Gingeras. 2015. “Mapping RNA-Seq Reads with STAR.” Current Protocols in Bioinformatics 51 (1): 11.14.1–19. https://doi.org/https://doi.org/10.1002/0471250953.bi1114s51. </description>
+    </item>
+    
+  </channel>
+</rss>

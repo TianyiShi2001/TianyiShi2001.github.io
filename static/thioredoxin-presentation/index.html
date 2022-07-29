@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link rel="stylesheet" href="css/theme/black.css" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = window.location.search.match(/print-pdf/gi)
+      ? "css/print/pdf.css"
+      : "css/print/paper.css";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Methods Used to Study Trx-h</h1>
+      </section>
+      <section data-background-color="#D4D764">
+        <section data-background-color="#D4D764">
+          <h2>About Trx-h</h2>
+          <ul>
+            <li class='fragment fade-in'>
+              Originally found in cytosol
+            </li>
+            <li class='fragment fade-in'>
+              Also found (to less extent) at other subcellular locations such as in the mitochondrium, ER, Golgi
+              apparatus, and nucleus
+            </li>
+            <li class='fragment fade-in'>The largest TRX gene family in plants; 9 isoforms in <em>A. thaliana</em>
+            </li>
+            <li class='fragment fade-in'>
+              Reduced by NTRA/NTRB
+            </li>
+            <li class='fragment fade-in'>
+              NADPH produced by the oxidative pentose phosphate pathway (OPPP)
+            </li>
+          </ul>
+        </section>
+        <section data-background-color="#D4D764">
+          <h2>Trx-h targets</h2>
+          <ul>
+            <li class='fragment fade-in'>
+              Storage
+            </li>
+            <li class='fragment fade-in'>
+              Redox control
+            </li>
+            <li class='fragment fade-in'>
+              Amino acid and carbohydrate metabolism
+            </li>
+            <li class='fragment fade-in'>
+              Proteinaceous inhibitors of α-amylases and proteases
+            </li>
+            <li class='fragment fade-in'>
+              ...
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section data-background-color="#E16774">
+        <section data-background-color="#E16774">
+          <h1>mBBr Labelling</h1>
+        </section>
+        <section data-background-color="#E16774">
+          <h2>mBBr Labelling</h2>
+          <ul>
+            <li class='fragment fade-in'>
+              Fluorescent alkylating agent monobromobimane
+            </li>
+            <li class='fragment fade-in'>
+              Label free -SH groups (in proteins reduced by Trx)
+            </li>
+            <li class='fragment fade-in'>
+              Example: Specific Reduction of Wheat Storage Thioredoxin h1 (Kobrehel-1992)
+            </li>
+          </ul>
+        </section>
+        <section data-background-color="#E16774">
+          <img src="./img/gel-1.png" alt="gel">
+        </section>
+        <section data-background-color="#E16774">
+          <img src="./img/specificity-1.png" alt="gel">
+        </section>
+        <section data-background-color="#E16774">
+          <img src="./img/germi-1.png" alt="gel">
+        </section>
+
+      </section>
+
+      <!--         
+        <section data-background-image="./img/gel-1.png">
+
+        </section> -->
+      </section>
+      <section data-background-color="#5FB673">
+        <section data-background-color="#5FB673">
+          <h1>CXXS Trx mutants</h1>
+        </section>
+        <section data-background-color="#5FB673">
+          <img src="./img/cxxs.png" alt="gel">
+        </section>
+        <section data-background-color="#5FB673">
+          <h2>CXXS Trx mutants</h2>
+          <ul>
+            <li class='fragment fade-in'>
+              Reduction of the target disulfide bond by Trx has two steps
+            </li>
+            <li class='fragment fade-in'>
+              If one of the C in CXXC is replaced by S, the intermediate is trapped
+            </li>
+            <li class='fragment fade-in'>
+              Originally applied by Verdoucq (1999)
+            </li>
+            <li class='fragment fade-in'>
+              Improved by Yamazaki (2004): Immobilised (on Sepharose 4B) monocysteinic Trx-h traps targets in column;
+              trapped targets subsequently eluted with DTT
+            </li>
+          </ul>
+        </section>
+
+        <section data-background-color="#5FB673">
+          <img src="./img/yamazaki1.png" alt="gel">
+        </section>
+
+      </section>
+      <section data-background-color="#67A3E1">
+        <section data-background-color="#67A3E1">
+          <h1>Differential Labelling</h1>
+        </section>
+        <section data-background-color="#67A3E1">
+          <h2>Determination of Target Disulphide Bonds</h2>
+          <ul>
+            <li class='fragment fade-in'>
+              Studies on chloroplastic Trxs mainly depended on site directed mutagenesis
+            </li>
+            <li class='fragment fade-in'>
+              Trx <em>h</em> has too many targets; mutagenesis would be inefficient
+            </li>
+            <li class='fragment fade-in'>
+              MS can find positions of chemical modifications
+            </li>
+            <li class='fragment fade-in'>
+              Normal MS cannot distinguish between -SH and -S-S-
+            </li>
+            <li class='fragment fade-in'>...because of complete reduction and alkylation prior to sample preparation
+            </li>
+          </ul>
+        </section>
+        <section data-background-color="#67A3E1">
+          <h2>Differential Oxidation (Maeda 2004)</h2>
+          <ol>
+            <li class='fragment fade-in'>Target protein: BASI (barley α-amylase/subtilisin inhibitor)</li>
+            <li class='fragment fade-in'>
+              Thioredoxin <em>h</em> treatment (NADPH + NTR + Trx-h)
+            </li>
+            <li class='fragment fade-in'>
+              Alkylation using IAA (iodoacetamide; carbamidomethylation (57 Da))
+            </li>
+            <li class='fragment fade-in'>
+              SDS-PAGE; excision of pieces containing BASI
+            </li>
+            <li class='fragment fade-in'>
+              Incubation with DTT (reduction of non-target disulphide bonds)
+            </li>
+            <li class='fragment fade-in'>
+              Alkylation using 4-VP (4-vinylpyridine; pyridylethylation (105 Da))
+            </li>
+          </ol>
+        </section>
+        <section data-background-color="#67A3E1">
+          <h2>Differential Oxidation (Maeda 2004)</h2>
+          <ul>
+            <li class='fragment fade-in'>
+              After treatment with Trx-h, the accessible cysteinyl side chains in thiol form are
+              carbamidomethylated by
+              IAA (57 Da) whereas those inaccessible or forming disulphides are pyridylethylated by 4-VP (105
+              Da)
+            </li>
+            <li class='fragment fade-in'>
+              Control: no Trx-h treatment; cysteines that should be carbamidomethylated (57 Da) are now pyridylethylated
+              (105 Da)
+            </li>
+            <li class='fragment fade-in'>
+              Compare the MS maps (with & without Trx-h reduction); look for 48 Da differences (105 - 57 = 48)
+            </li>
+          </ul>
+        </section>
+        <section data-background-color="#67A3E1">
+          <img src="./img/Maeda1.png" alt="gel">
+        </section>
+      </section>
+      <section data-background-color="#FFFFFF">
+        <section data-background-color="#FFFFFF">
+          <h2>References</h2>
+          <div style="font-size:17px">
+            <p>Geigenberger, Peter, Ina Thormählen, Danilo M. Daloso, and Alisdair R. Fernie. 2017. “The Unprecedented
+              Versatility of the Plant‎ Thioredoxin System.” <em>Trends in Plant Science</em> 22 (3): 249–62. <a
+                href="https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008">https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008</a>.
+            </p>
+            <p>Hägglund, Per, Christine Finnie, Hiroyuki Yano, Azar Shahpiri, Bob B. Buchanan, Anette Henriksen, and
+              Birte
+              Svensson. 2016. “Seed Thioredoxin H.” <em>Biochimica et Biophysica Acta (BBA) - Proteins and
+                Proteomics</em>
+              1864 (8): 974–82. <a
+                href="https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014">https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014</a>.
+            </p>
+            <p>Kobrehel, K, J H Wong, A Balogh, F Kiss, B C Yee, and B B Buchanan. 1992. “Specific Reduction of Wheat
+              Storage Proteins by Thioredoxin H.” <em>Plant Physiology</em> 99 (3). American Society of Plant
+              Biologists:
+              919–24. <a href="https://doi.org/10.1104/pp.99.3.919">https://doi.org/10.1104/pp.99.3.919</a>.</p>
+            <p>Maeda, Kenji, Christine Finnie, and Birte Svensson. 2005. “Identification of Thioredoxin h-Reducible
+              Disulphides in Proteomes by Differential Labelling of Cysteines: Insight into Recognition and Regulation
+              of Proteins in Barley Seeds by Thioredoxin h.” <em>PROTEOMICS</em> 5 (6): 1634–44. <a
+                href="https://doi.org/10.1002/pmic.200401050">https://doi.org/10.1002/pmic.200401050</a>.</p>
+            <p>Motohashi, Ken, Aiko Kondoh, Michael T. Stumpp, and Toru Hisabori. 2001. “Comprehensive Survey of
+              Proteins Targeted by Chloroplast Thioredoxin.” <em>Proceedings of the National Academy of Sciences</em> 98
+              (20). National Academy of Sciences: 11224–9. <a
+                href="https://doi.org/10.1073/pnas.191282098">https://doi.org/10.1073/pnas.191282098</a>.</p>
+            <p>Verdoucq, L, F Vignols, J P Jacquot, Y Chartier, and Y Meyer. n.d. “In Vivo Characterization of a
+              Thioredoxin H Target Protein Defines a New Peroxiredoxin Family.” <em>J Biol Chem</em> 274 (28).
+              Laboratoire de Physiologie et de Biologie Moléculaire des Plantes, UMR 5545, Université de Perpignan,
+              Avenue de Villeneuve, F 66025, Perpignan, France.: 19714–22. <a
+                href="https://doi.org/10.1074/jbc.274.28.19714">https://doi.org/10.1074/jbc.274.28.19714</a>.</p>
+            <p>Yamazaki, Daisuke, Ken Motohashi, Takeshi Kasama, Yukichi Hara, and Toru Hisabori. n.d. “Target Proteins
+              of the Cytosolic Thioredoxins in Arabidopsis Thaliana.” <em>Plant Cell Physiol</em> 45 (1). Chemical
+              Resources Laboratory, Tokyo Institute of Technology, Nagatsuta 4259, Midori-ku, Yokohama, 226-8503 Japan.:
+              18–27. <a href="https://doi.org/10.1093/pcp/pch019">https://doi.org/10.1093/pcp/pch019</a>.</p>
+          </div>
+        </section>
+        <section data-background-color="#FFFFFF">
+          <h3>Thank you for your attention.</h3>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      hash: true,
+      transition: 'slide',
+      backgroundTransition: 'zoom',
+      dependencies: [
+        { src: "plugin/markdown/marked.js" },
+        { src: "plugin/markdown/markdown.js" },
+        { src: "plugin/highlight/highlight.js" },
+        { src: "plugin/notes/notes.js", async: true }
+      ]
+    });
+  </script>
+</body>
+
+</html>

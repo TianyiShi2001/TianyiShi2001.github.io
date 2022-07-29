@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3-Hilary on Tianyi@Oxford</title>
+    <link>/term/3-hilary.html</link>
+    <description>Recent content in 3-Hilary on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/term/3-hilary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Three Biophysical Methods</title>
+      <link>/tutorial/three-biophysical-methods.html</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/three-biophysical-methods.html</guid>
+      <description>1 Circular Dichorism (CD) 1.1 Physical Principles 1.2 Experimental Setup 1.3 Application of CD 1.4 Other CD-based Techniques  2 Small-angle X-ray Scattering (SAXS) 2.1 Physical Principles 2.2 Experimentation and Data Processing  3 Analytical Ultracentrifuge (AUC) 3.1 Choice of Optical System 3.2 Experiments 3.2.1 Sedimentation Velocity (SV)   References   1 Circular Dichorism (CD) Reference: Ranjbar and Gill (2009); Kelly, Jess, and Price (2005);Whitmore and Wallace (2008)</description>
+    </item>
+    
+  </channel>
+</rss>

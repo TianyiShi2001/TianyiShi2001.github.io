@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>FASTA Parser Implemented in Rust with Nom - Tianyi@Oxford</title>
+<meta property="og:title" content="FASTA Parser Implemented in Rust with Nom - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">193 words</span>
+    
+
+
+    
+    <h1 class="article-title">FASTA Parser Implemented in Rust with Nom</h1>
+    <span class="article-date">2020-08-23</span>
+
+    <p class="link-to-pdf"><a href="2020-08-23-fasta-parser-implemented-in-rust-with-nom.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+<script src="../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="../rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#parsing-a-single-fasta-record"><span class="toc-section-number">1</span> Parsing a single FASTA Record</a>
+<ul>
+<li><a href="#representing-the-record-in-rust"><span class="toc-section-number">1.1</span> Representing the Record in Rust</a></li>
+<li><a href="#parsing-the-title"><span class="toc-section-number">1.2</span> Parsing the Title</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>Nom makes it possible to</p>
+<div id="parsing-a-single-fasta-record" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Parsing a single FASTA Record</h1>
+<p>An example of FASTA record is shown below.</p>
+<pre><code>&gt;gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA
+CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG
+AATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG
+CCGCCTCGGGAGCGTCCATGGCGGGTT
+
+&gt;(another FASTA record)</code></pre>
+<p>Each record starts with a <code>&gt;</code> character, which is followed by the title on the same line. The title can be further divided into an ID and description, which is separated by a space character. In this case, the ID is ‘gi|2765658|emb|Z78533.1|CIZ78533’ and the description is ‘C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA’.</p>
+<p>The sequence starts from the second line. There can be line breaks within the sequence.</p>
+<div id="representing-the-record-in-rust" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Representing the Record in Rust</h2>
+<p>When we parse data, we <em>parse it into something that is meaningful in that language</em>. In Rust, users can define custom <code>struct</code> and <code>enum</code> data structures, and in this case, a C-like <code>struct</code> is the most appropriate.</p>
+<p>To make it simple, we define one two fields, <code>title</code> and <code>seq</code>:</p>
+<pre class="rust"><code>fn main(){
+#[derive(Debug)]struct Record {  title: String,  seq: String}
+}</code></pre>
+</div>
+<div id="parsing-the-title" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Parsing the Title</h2>
+<p>To make it</p>
+</div>
+</div>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html"
+      this.page.identifier = "fasta-parser-implemented-in-rust-with-nom"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2020 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

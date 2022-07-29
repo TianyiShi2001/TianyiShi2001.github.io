@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>wuhan - Tianyi@Oxford</title>
+<meta property="og:title" content="wuhan - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../tags/wuhan/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">wuhan</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="../special/wuhan-coronavirus.html" class="archive-item-link">
+                2019–20 outbreak of novel coronavirus &#39;2019-nCoV&#39; 
+              </a>
+              <span class="archive-item-date">
+                2020-01-21
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<div id="about-the-virus" class="section level1">
+<h1>About the virus</h1>
+<p>See <a href="https://en.wikipedia.org/wiki/2019–20_outbreak_of_novel_coronavirus">Wikipedia</a></p>
+</div>
+<div id="statistics" class="section level1">
+<h1>Statistics</h1>
+<details>
+<summary>Source Code</summary>
+<p>
+<pre class="r"><code>library(tidyverse)
+library(lubridate)
+library(scales)
+library(RColorBrewer)
+library(maps)
+library(mapdata)
+library(maptools)
+
+if(&#39;content&#39; %in% dir()){setwd(&#39;content/special/data&#39;)}
+
+source(&#39;ncov_commons.R&#39;)
+
+# read data ---------------------------------------------------------------
+
+read_ncov &lt;- function(sheet, caseType, fn = &#39;wuhan.xlsx&#39;){
+  readxl::read_excel(fn, sheet = sheet) %&gt;%
+  replace(is.na(.), 0) %&gt;% 
+  mutate(date = as_date(date)) %&gt;% 
+  mutate_at(-1, cumsum) %&gt;% 
+  gather(location, !!caseType, -1) %&gt;% 
+  mutate(location=as_factor(location))
+}
+
+calc_ncov_params &lt;- function(df){
+  mutate(df,
+         current = all-death-cure,
+         deathRate = death/all,
+         cureRate = cure/all)
+}
+
+ncov &lt;- read_ncov(&#39;incidence-wiki&#39;, &#39;all&#39;) %&gt;% 
+  left_join(read_ncov(&#39;death-wiki&#39;, &#39;death&#39;)) %&gt;% 
+  left_join(read_ncov(&#39;cure-wiki&#39;, &#39;cure&#39;)) %&gt;% 
+  calc_ncov_params()
+
+ncovByHubei &lt;- 
+  bind_rows(
+    ncov %&gt;% # hubei
+      filter(location==&#39;湖北省&#39;) %&gt;% 
+      select(-location) %&gt;% 
+      add_column(type=&#39;湖北&#39;), 
+    ncov %&gt;% # non-hubei
+      filter(location!=&#39;湖北省&#39;) %&gt;% 
+      group_by(date) %&gt;% 
+      summarise(all = sum(all, na.rm = TRUE),
+                death = sum(death, na.rm = TRUE),
+                cure = sum(cure, na.rm = TRUE)) %&gt;% 
+      calc_ncov_params() %&gt;% 
+      add_column(type=&#39;非湖北&#39;)
+    )
+
+
+typeColorPairs = c(cure=&#39;palegreen3&#39;, death=&#39;grey&#39;, current=&#39;khaki&#39;)
+
+hubeiContrastColor = c(湖北=&quot;orangered2&quot;, 非湖北=&#39;seagreen3&#39;)
+
+{ # death and cure rates
+ncov %&gt;% 
+  ggplot(aes(date, deathRate))+
+  geom_line(aes(group=location, alpha=log(current)))+
+  geom_line(data = ncovByHubei, aes(color=type), size=1.1)+
+  scale_alpha_continuous(guide=FALSE)+
+  scale_y_continuous(limits = c(0,0.15), minor_breaks = seq(0, 0.15, 0.01), labels = scales::percent)+
+  theme_default+
+  dateScale+
+  labs(title=&#39;死亡率趋势图&#39;, x=&#39;日期&#39;,y=&#39;死亡率&#39;,
+       color = &#39;地区&#39;,
+       caption = &#39;注：黑/灰色线为各省/市/区死亡率趋势，累计病例数表现为线条深浅。&#39;)+
+  scale_color_manual(values=hubeiContrastColor)
+
+ggsave(&#39;img/china_death_rate.png&#39;, width = 13, height = 8)
+
+ncov %&gt;% 
+  ggplot(aes(date, cureRate))+
+  geom_line(aes(group=location, alpha=log(current)))+
+  geom_line(data = ncovByHubei, aes(color=type), size=1.1)+
+  scale_alpha_continuous(guide=FALSE)+
+  scale_y_continuous(limits = c(0,0.9), breaks = seq(0,0.8,0.2), labels = scales::percent)+
+  theme_default+
+  dateScale+
+  labs(title=&#39;治愈率趋势图&#39;, x=&#39;日期&#39;,y=&#39;治愈率&#39;,
+       color = &#39;地区&#39;,
+       caption = &#39;注：黑/灰色线为各省/市/区治愈率趋势，累计病例数表现为线条深浅。&#39;)+
+  scale_color_manual(values=hubeiContrastColor)
+
+ggsave(&#39;img/china_cure_rate.png&#39;, width = 13, height = 8)
+}
+
+{ # 治愈死亡现存趋势
+(p &lt;- ncov %&gt;%
+  mutate(location = fct_reorder(location, -all, min)) %&gt;% 
+  select(-all) %&gt;% 
+  gather(type, cases, 3:5) %&gt;% 
+  mutate(type=factor(type, levels=names(typeColorPairs)))%&gt;% 
+  ggplot(aes(date, cases, fill=type))+
+  geom_col()+
+  scale_fill_manual(labels=c(&#39;治愈&#39;,&#39;死亡&#39;,&#39;现存&#39;), values = typeColorPairs)+
+  labs(title = &#39;中国疫情趋势图&#39;, fill = &#39;图例&#39;, x=&#39;日期&#39;, y=&#39;病例数&#39;)+
+  theme_date+
+  dateScale+
+  scale_y_continuous(expand = c(0, 1))
+)
+
+ggsave(&#39;img/china_cure_death_current_all.png&#39;, width = 13, height = 8)
+
+p + facet_wrap(~location, scales = &#39;free_y&#39;)+
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())+
+  labs(title = &#39;中国各省市区疫情趋势图&#39;, fill = &#39;图例&#39;)
+
+ggsave(&#39;img/china_cure_death_current_facet.png&#39;, width = 13, height = 8)
+}
+
+{ # 现存
+ncov %&gt;% 
+    ggplot(aes(date, current, fill=fct_reorder(location, -current, last)))+ 
+    geom_area(position = position_stack())+
+    dateScale+
+    theme_date+
+    fill_province+
+    scale_y_continuous(breaks = seq(0, 70000, 10000))+
+    labs(fill=&#39;省/市/区&#39;, x = &#39;日期&#39;, y=&#39;现存病例数&#39;, 
+         title = &#39;中国现存病例趋势图&#39;)
+ggsave(&#39;img/china_current.png&#39;, width = 13, height = 8)
+}
+
+setwd(&#39;../../..&#39;)</code></pre>
+</p>
+</details>
+<div id="number-of-cases-reported-by-the-government" class="section level2">
+<h2>Number of cases reported by the government</h2>
+<p><img src="data/img/china_current.png" width="100%" /></p>
+</div>
+<div id="incidence-death-and-cure-over-time" class="section level2">
+<h2>Incidence, Death and Cure Over Time</h2>
+<p><img src="data/img/china_cure_death_current_all.png" width="100%" /></p>
+<p><img src="data/img/china_cure_death_current_facet.png" width="100%" /></p>
+</div>
+<div id="death-and-cure-rates" class="section level2">
+<h2>Death and Cure Rates</h2>
+<p><img src="data/img/china_death_rate.png" width="100%" /></p>
+<p><img src="data/img/china_cure_rate.png" width="100%" /></p>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

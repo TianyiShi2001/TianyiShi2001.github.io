@@ -1,0 +1,292 @@
+---
+title: Visualising the Resolution Revolution of Electron Microscopy
+author: Tianyi Shi
+date: '2020-02-23'
+slug: pdb-stats
+categories:
+  - bioinformatics
+tags:
+  - protein
+  - PDB
+  - R
+term: 1-Hilary
+week: 6
+tutor: ~
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+output:
+  blogdown::html_page:
+    number_sections: true
+    toc: true
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#getting-all-the-pdb-files"><span class="toc-section-number">1</span> Getting All the PDB Files</a></li>
+<li><a href="#parsing-pdb-files"><span class="toc-section-number">2</span> Parsing PDB files</a></li>
+<li><a href="#data-analysis-with-r"><span class="toc-section-number">3</span> Data Analysis with R</a><ul>
+<li><a href="#prerequisites"><span class="toc-section-number">3.0.1</span> Prerequisites</a></li>
+<li><a href="#load-data"><span class="toc-section-number">3.1</span> Load Data</a></li>
+<li><a href="#tidying-data"><span class="toc-section-number">3.2</span> Tidying Data</a></li>
+<li><a href="#plotting"><span class="toc-section-number">3.3</span> Plotting</a><ul>
+<li><a href="#plot-setup"><span class="toc-section-number">3.3.1</span> Plot Setup</a></li>
+<li><a href="#median-resolution-of-different-methods-over-time"><span class="toc-section-number">3.3.2</span> Median Resolution of Different Methods Over Time</a></li>
+<li><a href="#all-cases-of-x-ray-and-em-structures"><span class="toc-section-number">3.3.3</span> All Cases of X-Ray and EM Structures</a></li>
+<li><a href="#boxplots"><span class="toc-section-number">3.3.4</span> Boxplots</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<p>Last week I wrote an essay on electron microscopy (EM) and X-ray crystallography. I originally thought X-ray’s superiority in resolution has always been unrivalled, but the situation is changing—the best resolution achived by cryo-EM is now comparable with the average/median resolution achived by X-ray crystallography, which is around 2.3Å (this resolution allows for unambiguous identification of most amino acid residues in proteins). Recently it’s even reported that 1.75Å resolution has been achieved using cryo-EM, which really struck me. Thus, I was motivated to visualise the resolution revolution of cryo-EM. This article is a record of how I downloaded all PDB files from the <a href="https://www.rcsb.org">protein data bank</a> and did some simple analyses on them.</p>
+<div id="getting-all-the-pdb-files" class="section level1">
+<h1><span class="header-section-number">1</span> Getting All the PDB Files</h1>
+<p>All the PDB files are <a href="https://www.rcsb.org/pages/download/ftp">available via PDB’s FTP server</a>. Simply <code>cd</code> to a directory and use <code>wget</code> to download all of them.</p>
+<pre class="bash"><code>mkdir pdb; cd pdb; mkdir compressed decompressed; cd compressed
+wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/*</code></pre>
+<p>Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the <code>-N</code> option to <code>wget</code> (essentially this means downloading “new” files only).</p>
+<p>The <code>*.ent.gz</code> files downloaded are compressed. You can use <code>gunzip</code> to decompress them to ready-to-use <code>*.ent</code> files (which is written in PDB format), but that will remove the <code>*.gz</code> files, which is inconvenient if you want to keep your database in sync with the remote. Use <code>gzcat</code> (or equivalently <code>gunzip -c</code>) instead to preserve the <code>*.gz</code> files while decompressing:</p>
+<pre class="bash"><code>find . -name &quot;*.gz&quot; | xargs -I{} -n1 bash -c &#39;
+src={}; dst=../decompressed/$(basename ${src%*.gz})
+[ -f $dst ] &amp;&amp; echo &quot;$dst already exists, skipping...&quot; || ( gzcat -cv $src &gt; $dst )&#39;</code></pre>
+<p>You can monitor the progress from the verbose output of <code>gzcat</code>:</p>
+<pre><code>./pdb1byf.ent.gz:      78.1%
+./pdb1byg.ent.gz:      76.3%
+./pdb1byh.ent.gz:      77.3%
+./pdb1byi.ent.gz:      75.2%
+...</code></pre>
+</div>
+<div id="parsing-pdb-files" class="section level1">
+<h1><span class="header-section-number">2</span> Parsing PDB files</h1>
+<p>The decompressed <code>*.ent</code> files are in accordance with the PDB format specification, which is accessible <a href="http://www.wwpdb.org/documentation/file-format">here</a>. Many ready-to-use PDB parsers are available, such as in BioPython’s <a href="https://biopython.org/wiki/The_Biopython_Structural_Bioinformatics_FAQ">PDB module</a>. However, I am only interested in three variables: experimental technique, resolution and date, and it would be a overkill to parse entire PDB files using those standard parsers. Instead, I manually wrote a parser (with python) with reference to the format specification:</p>
+<pre class="python"><code>#!/usr/bin/env python3.8
+import sys
+for fn in sys.argv[1:]:
+    with open(fn) as f:
+        HEAD = f.readline()
+        date, id = HEAD[50:59], HEAD[62:66]
+        while True:
+            line = f.readline()
+            if line[:6] == &#39;EXPDTA&#39;:
+                method = line[10:].rstrip()
+            if line[:6] == &#39;REMARK&#39;:
+                if line[11:22] == &#39;RESOLUTION.&#39;:
+                    resolution = line[23:30] if line[31:40] == &#39;ANGSTROMS&#39; else &#39;NA&#39;
+                    break
+    print(&#39;,&#39;.join([id, date, resolution, method]))</code></pre>
+<p>Then I parsed the data, 100 files at a time (took 25 min in total):</p>
+<pre class="bash"><code>echo &quot;id,date,resolution,method&quot; &gt; date_method_resolution.csv
+find decompressed -name &#39;*.ent&#39; | xargs -n100 ./parse &gt;&gt; date_method_resolution.csv</code></pre>
+<p>To see whether it is Python that causes this operation slow, I used Go to rewrite the parser:</p>
+<details>
+<summary>Expand to view</summary>
+<p>
+<pre class="go"><code>package main
+
+import (
+    &quot;bufio&quot;
+    &quot;fmt&quot;
+    &quot;os&quot;
+    &quot;strings&quot;
+)
+
+func check(e error) {
+    if e != nil {
+        panic(e)
+    }
+}
+
+func main() {
+
+    for _, arg := range os.Args[1:] {
+
+        f, err := os.Open(arg)
+        check(err)
+
+        b1 := make([]byte, 81)
+        f.Read(b1)
+        check(err)
+        fmt.Print(string(b1[50:59]) + &quot;,&quot; + string(b1[62:66]) + &quot;,&quot;)
+
+        scanner := bufio.NewScanner(f)
+        var method string
+        var resolution string
+        for scanner.Scan() {
+            var line string
+            line = scanner.Text()
+            if line[:6] == &quot;EXPDTA&quot; {
+                method = strings.TrimSpace(line[10:])
+            }
+            if line[:6] == &quot;REMARK&quot; {
+                if line[11:22] == &quot;RESOLUTION.&quot; {
+                    if line[31:40] == &quot;ANGSTROMS&quot; {
+                        resolution = strings.TrimSpace(line[23:30])
+                    } else {
+                        resolution = &quot;NA&quot;
+                    }
+                    break
+                }
+            }
+        }
+        fmt.Println(resolution + &quot;,&quot; + method)
+
+        if err := scanner.Err(); err != nil {
+            panic(err)
+        }
+    }
+}
+</code></pre>
+</p>
+</details>
+<p>And it turns out that Go achived a similar speed as Python, meaning the speed is limited by the file system I/O instead.</p>
+<p>The csv file looks like this:</p>
+<pre><code>| id   | date      | resolution | method            |
+| ---- | --------- | ---------- | ----------------- |
+| 100D | 05-DEC-94 |       1.90 | X-RAY DIFFRACTION |
+| 101D | 14-DEC-94 |       2.25 | X-RAY DIFFRACTION |
+| 101M | 13-DEC-97 |       2.07 | X-RAY DIFFRACTION |</code></pre>
+</div>
+<div id="data-analysis-with-r" class="section level1">
+<h1><span class="header-section-number">3</span> Data Analysis with R</h1>
+<div id="prerequisites" class="section level3">
+<h3><span class="header-section-number">3.0.1</span> Prerequisites</h3>
+<p>First, load the required packages:</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ──────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.2.1     ✓ purrr   0.3.3
+## ✓ tibble  2.1.3     ✓ dplyr   0.8.4
+## ✓ tidyr   1.0.2     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.4.0</code></pre>
+<pre><code>## ── Conflicts ─────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(lubridate)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     date</code></pre>
+<pre class="r"><code>library(scales)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;scales&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     discard</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     col_factor</code></pre>
+</div>
+<div id="load-data" class="section level2">
+<h2><span class="header-section-number">3.1</span> Load Data</h2>
+<p>Parse the csv data file with <code>readr::read_csv()</code>. It is a good practice to specify the data type of each column (<code>c</code> means ‘character’, <code>d</code> means ‘double precision floating number’). Note the date column cannot be directly parsed, and it should be read as a character column and parsed by <code>lubridate::date()</code> in a separate step. The entries without resolution data are filtered out.</p>
+<pre class="r"><code>pdb &lt;- read_csv(&#39;./src/pdb/date_method_resolution.csv&#39;,
+                col_types = &#39;ccdc&#39;) %&gt;% 
+  mutate(date = dmy(date)) %&gt;% 
+  filter(!is.na(resolution))</code></pre>
+</div>
+<div id="tidying-data" class="section level2">
+<h2><span class="header-section-number">3.2</span> Tidying Data</h2>
+<p>Note that some entries have more than one experimental methods, and individual columns are separated by semicolons, meaning there could be something like <code>X-RAY DIFFRACTION; ELECTRON MICROSCOPY; SOLUTION NMR</code> in the <code>method</code> column. The following code convert such entries into entries each with the first method of the original, dropping the rest:</p>
+<pre class="r"><code>single_method &lt;- pdb %&gt;% filter(!str_detect(method, &#39;;&#39;))
+multiple_method &lt;- pdb %&gt;% filter(str_detect(method, &#39;;&#39;))
+
+
+pdb &lt;- bind_rows(single_method, do.call(bind_rows, 
+  lapply(1:length(multiple_method[[1]]),function(i) {
+    original_row = multiple_method[i,]
+    mutate(original_row, method=str_split(original_row[[&#39;method&#39;]], &#39;; &#39;)[[1]][1])
+    }
+  )
+))</code></pre>
+<p>You can also use a for loop (shown below) to bind new rows to <code>pdb</code>, but this is noticeably slower than the <code>lapply()</code> and <code>do.call()</code> equivalent (shown above). In R, use those vectorised and highly efficient functions whenever possible (they should be able to replace almost all for loops).</p>
+<pre class="r"><code>pdb &lt;- single_method
+for (i in 1:length(multiple_method[[1]])) {
+  original_row = multiple_method[i,]
+  bind_rows(pdb, mutate(original_row, method=str_split(original_row[[&#39;method&#39;]], &#39;; &#39;)[[1]][1]))
+}</code></pre>
+</div>
+<div id="plotting" class="section level2">
+<h2><span class="header-section-number">3.3</span> Plotting</h2>
+<p>I used the <code>ggplot2</code> package for plotting.</p>
+<div id="plot-setup" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Plot Setup</h3>
+<p><code>ggplot2::theme_set()</code> sets global themes for all plots.</p>
+<p><code>ggplot2</code> doesn’t have a built-in <code>reverse_log10</code> scaling, which will be needed, so I used <code>scales::trans_new()</code> to make this.</p>
+<pre class="r"><code>theme_set(
+  theme_bw()+
+  theme(
+    text = element_text(family = &#39;Courier&#39;),
+    plot.title = element_text(hjust = 0.5)
+  )
+)
+
+reverselog_trans &lt;- function(base = exp(1)) {
+  trans &lt;- function(x) -log(x, base)
+  inv &lt;- function(x) base^(-x)
+  trans_new(paste0(&quot;reverselog-&quot;, format(base)), trans, inv, 
+            log_breaks(base = base), 
+            domain = c(1e-100, Inf))
+}</code></pre>
+</div>
+<div id="median-resolution-of-different-methods-over-time" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Median Resolution of Different Methods Over Time</h3>
+<p>This plot shows the median resolution of different structure-solving methods every year. Size represents <code>log(number_of_cases)</code>.</p>
+<pre class="r"><code>pdb %&gt;% mutate(year = year(date)) %&gt;% 
+  group_by(year, method) %&gt;% 
+  summarise(
+    median = median(resolution, na.rm = TRUE),
+    n = n()) %&gt;% 
+  mutate( alpha = ifelse(method==&#39;X-RAY DIFFRACTION&#39;, &#39;A&#39;, &#39;B&#39;)) %&gt;% 
+  ggplot(aes(year, median, color=method, size=log(n), alpha=alpha))+
+  geom_point()+
+  scale_y_continuous(breaks = seq(0,25,5))+
+  scale_alpha_discrete(range=c(0.7, 0.9), guide=FALSE)+
+  labs(title=&#39;Median Resolution of Different Methods Over Time&#39;)+
+  scale_color_brewer(palette = &#39;Set2&#39;)</code></pre>
+<p><img src="src/pdb/plot/dot.png" width="100%" /></p>
+</div>
+<div id="all-cases-of-x-ray-and-em-structures" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> All Cases of X-Ray and EM Structures</h3>
+<p>These plots show the resolution and date of all cases as dots of EM and X-Ray Crystallography, respectively. Linear fits are added.</p>
+<pre class="r"><code>ggplot(filter(pdb, method ==&#39;ELECTRON MICROSCOPY&#39;, date&gt;ymd(20000101), resolution &lt; 20), aes(date, resolution))+
+    geom_point(alpha=0.1)+
+    labs(title = &#39;Resolution of EM Structures Over Time&#39;)+
+    scale_y_continuous(limits = c(0, 20), breaks = c(2, 3, 4, seq(0, 20, 5)), minor_breaks = c(7.5, 12.5, 17.5, seq(2, 5, 0.5)))+
+    geom_smooth(method = &#39;lm&#39;)</code></pre>
+<p><img src="src/pdb/plot/overtime-em.png" width="100%" /></p>
+<pre class="r"><code>ggplot(filter(pdb, method ==&#39;X-RAY DIFFRACTION&#39;), aes(date, resolution))+
+    geom_point(alpha=0.1)+
+    scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, 2), minor_breaks = c(seq(1,9,2), seq(1,3,0.1)))+
+    geom_smooth(method = &#39;lm&#39;)+
+    labs(title = &#39;Resolution of X-Ray Crystallography Structures Over Time&#39;)</code></pre>
+<p><img src="src/pdb/plot/overtime-x-ray.png" width="100%" /></p>
+<p>EM structures show a strong trend of improvement in resolution over time. For X-Ray crystallography, however, although the maximum resolution improves over time, the number of published low-resolution structures also increases, making the median virtually unchanged over time.</p>
+</div>
+<div id="boxplots" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Boxplots</h3>
+<p>Boxplots summarise the resolution, grouped by year, of different structural biology methods. Here the <code>reverse_log10</code> scale is used, so that lower resolution values correspond to ‘high positions’ in the plot, which is more intuitive:</p>
+<pre class="r"><code>boxPlotScale = scale_y_continuous(
+  minor_breaks = c(1:10, seq(10, 100, 10), seq(0.1, 1, 0.1)), 
+  breaks=c(0.5, 1, 2, 3, 5, 10, 20, 60),
+  trans=reverselog_trans(10))</code></pre>
+<pre class="r"><code>ggplot(mutate(pdb, year = year(date)), aes(year, resolution, group=year))+
+    geom_boxplot()+
+    facet_wrap(~method)+
+    boxPlotScale+
+    scale_x_reverse()+
+    coord_flip()+
+    labs(title = &#39;Comparison of Resolution of Different Methods Over Time&#39;)</code></pre>
+<p><img src="src/pdb/plot/hist_all.png" width="100%" /></p>
+<p>To compare EM and X-ray crystallography:</p>
+<pre class="r"><code>ggplot(mutate(pdb, year = year(date)) %&gt;% filter(method %in% c(&#39;X-RAY DIFFRACTION&#39;, &#39;ELECTRON MICROSCOPY&#39;)), aes(year, resolution, group=year))+
+    geom_boxplot()+
+    facet_wrap(~method, ncol = 1)+
+    boxPlotScale+
+    labs(title = &#39;Comparison of Resolution of EM and X-Ray Crystallography Over Time&#39;)</code></pre>
+<p><img src="src/pdb/plot/hist_2.png" width="100%" /></p>
+</div>
+</div>
+</div>

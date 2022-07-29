@@ -1,0 +1,94 @@
+---
+title: Sequence Alignment
+author: Tianyi Shi
+date: '2020-02-03'
+slug: sequence-alignment
+categories:
+  - bioinformatics
+tags:
+  - sequence alignment
+  - blast
+  - fasta
+term: 1-Hilary
+week: 3
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+# Sequence Alignment in R
+
+## Packages
+
+```{r eval=FALSE}
+library(Biostrings)
+library(seqinr)
+```
+
+
+## DNA sequence
+
+```{r eval=FALSE}
+myScoringMat <- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE)
+dnaSeq1 <- "GAATTCGGCTA" # can be a plain string
+dnaSeq2 <- DNAString("GATTACCTA") # or an XString
+gapOpen <- 2
+gapExtend <- 1
+dnaAln <- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = 'global', scoreOnly=FALSE)   
+dnaAln
+```
+
+
+## Amino acid sequence 
+
+Here is a list of built-in amino acid substitution matrices, which can be shown with `data(package="Biostrings")`:
+
+```{}
+BLOSUM100
+BLOSUM45
+BLOSUM50
+BLOSUM62
+BLOSUM80
+PAM120
+PAM250
+PAM30
+PAM40
+PAM70
+```
+
+```{r eval=FALSE}
+aaSeq1 <- 'PAWHEAE'
+aaSeq2 <- 'HEAGAWGHE'
+aaAln <- pairwiseAlignment(aaSeq1, aaSeq2, substitutionMatrix="BLOSUM62", gapOpening=gapOpen, gapExtension=gapExtend, type='global', scoreOnly=FALSE)
+aaAln
+```
+
+
+```{r eval=FALSE}
+ncov <- readDNAStringSet('./src/2019-ncov.fasta', 'fasta')
+sars <- readDNAStringSet('./src/sars.fasta', 'fasta')
+```
+
+```{r eval=FALSE}
+virusAln <- pairwiseAlignment(ncov, sars, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = 'global', scoreOnly=FALSE)
+```
+
+```{r eval=FALSE}
+ncov1 <- seqinr::read.fasta('./src/2019-ncov.fasta', seqtype = 'DNA')
+sars1 <- seqinr::read.fasta('./src/sars.fasta', seqtype = 'DNA')
+```
+
+```{r eval=FALSE}
+library(ape)
+myset <- c("U15717", "U15718", "U15719", "U15720", "U15721","U15722", "U15723", "U15724")
+myseqs <- read.GenBank(myset)
+mydist <- dist.dna(myseqs)
+plot(myphylo, type="phylogram", edge.color="red", cex=1, edge.width=1,main="(A) Phylogram")
+```
+
+
+
+
+
+

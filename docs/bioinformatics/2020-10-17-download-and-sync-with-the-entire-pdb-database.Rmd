@@ -1,0 +1,71 @@
+---
+title: Download and Sync with the Entire PDB Database
+author: Tianyi Shi
+date: '2020-10-17'
+slug: download-and-sync-with-the-entire-pdb-database
+categories:
+  - bioinformatics
+tags:
+  - bioinformatics
+  - PDB
+  - protein
+  - bash
+term: 3-Michaelmas
+week: 2
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: ~
+---
+
+All the PDB files are [available via PDB's FTP server](https://www.rcsb.org/pages/download/ftp). Simply `cd` to a directory and use `wget` to download all of them.
+
+```{bash wget-pdb, eval=FALSE}
+mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped
+wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/*
+```
+
+Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the `-N` option to `wget` (essentially this means downloading "new" files only).
+
+The `*.ent.gz` files downloaded are zipped. You can use `gunzip` to decompress them to ready-to-use `*.ent` files (which is written in PDB format), but that will remove the `*.gz` files, which is inconvenient if you want to keep your database in sync with the remote. Use `gzcat` (or equivalently `gunzip -c`) instead to preserve the `*.gz` files while decompressing:
+
+```{bash eval=FALSE}
+find . -name "*.gz" | xargs -I{} -n1 bash -c '
+src={}; dst=../unzipped/$(basename ${src%*.gz})
+[ -f $dst ] && echo "$dst already exists, skipping..." || ( gzcat -cv $src > $dst )'
+```
+
+You can monitor the progress from the verbose output of `gzcat`:
+
+```{}
+./pdb1byf.ent.gz:	   78.1%
+./pdb1byg.ent.gz:	   76.3%
+./pdb1byh.ent.gz:	   77.3%
+./pdb1byi.ent.gz:	   75.2%
+...
+```
+
+
+<script src="https://gist.github.com/TianyiShi2001/46fcc143b104cd47c7c768f958da2555.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

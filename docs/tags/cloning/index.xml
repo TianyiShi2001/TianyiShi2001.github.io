@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloning on Tianyi@Oxford</title>
+    <link>/tags/cloning.html</link>
+    <description>Recent content in cloning on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cloning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Molecular Cloning</title>
+      <link>/notes/molecular-cloning.html</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/molecular-cloning.html</guid>
+      <description>About the frame Sometimes we want to use the start/stop codon in the vector for our protein production, especially when tag sequences need to be included. In these cases, we need to check our inserted GOI is in frame with the start/codon on the vector. Frame mismatch can be corrected by adding 1 or 2 random nucleotide(s) to the primer (forward primer to match vector start condon and reverse primer to match the stop codon) between the GOI sequence and the restriction site sequence.</description>
+    </item>
+    
+  </channel>
+</rss>

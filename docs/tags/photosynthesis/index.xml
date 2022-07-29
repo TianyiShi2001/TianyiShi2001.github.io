@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>photosynthesis on Tianyi@Oxford</title>
+    <link>/tags/photosynthesis.html</link>
+    <description>Recent content in photosynthesis on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/photosynthesis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improving Photosynthesis by Photorespiratory Bypasses</title>
+      <link>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</guid>
+      <description>1 Attempts to Inhibit Photorespiration and Improve Specificity of Rubisco 2 Bypassing Photorespiration 2.1 Implementing The Bacterial Glycerate Pathway 2.2 Inhibition of the Glycolate Transporter 3 Conclusion References Discuss the feasibility and desirability of improving photosynthesis in higher plants through the use of photorespiratory bypasses.
+Plants and algae use the Calvin cycle to capture inorganic carbon (as CO2) and use ATP and NADPH generated in light reactions to convert it to organic carbon.</description>
+    </item>
+    
+  </channel>
+</rss>

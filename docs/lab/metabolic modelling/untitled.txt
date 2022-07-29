@@ -1,0 +1,158 @@
+Metabolic Control Analysis Result:
+
+A steady state was found. All coefficients are shown.
+
+Unscaled elasticities
+Unscaled elasticity matrix
+Rows:    Reactions (reduced system)
+Columns: Species (reduced system)
+	B	D	F	E	C
+(R1)	-0.242637	0	0	0	0
+(R2)	0.395045	0	0	0	-0.0930437
+(R3)	0	-0.365231	0	0	0.283332
+(R4)	0	0.305895	0	-0.517207	0
+(R5)	0	0	-4.24984	6.13515	0
+(R6)	0	0	11.5462	0	0
+
+Scaled elasticities
+Scaled elasticity matrix
+Rows:    Reactions (reduced system)
+Columns: Species (reduced system)
+	B	D	F	E	C
+(R1)	-0.486076	0	0	0	0
+(R2)	0.791394	0	0	0	-0.460024
+(R3)	0	-0.724979	0	0	1.40084
+(R4)	0	0.607198	0	-0.0940183	0
+(R5)	0	0	-0.383511	1.11525	0
+(R6)	0	0	1.04195	0	0
+
+Unscaled concentration control coefficients
+Unscaled concentration control coefficients
+Rows:    Species (reduced system)
+Columns: Reactions (reduced system)
+	(R1)	(R2)	(R3)	(R4)	(R5)	(R6)
+B	2.14422	-1.21437	-0.398789	-0.476144	-0.0401401	-0.0147744
+D	1.74916	1.07434	0.352803	-2.84786	-0.240081	-0.088367
+F	0.0415488	0.0255194	0.00838033	0.0100059	0.00084352	-0.0862979
+E	0.106975	0.0657043	0.0215767	0.025762	-0.160823	-0.0591946
+C	3.94795	2.42484	-2.73313	-3.26329	-0.275103	-0.101258
+
+Scaled concentration control coefficients
+Scaled concentration control coefficients
+Rows:    Species (reduced system)
+Columns: Reactions (reduced system)
+	(R1)	(R2)	(R3)	(R4)	(R5)	(R6)	'Summation Error'
+B	1.07034	-0.606186	-0.199066	-0.23768	-0.0200369	-0.00737503	1.43433e-16
+D	0.881195	0.541232	0.177736	-1.4347	-0.120948	-0.0445176	1.25749e-16
+F	0.460419	0.28279	0.0928658	0.110879	0.00934739	-0.956303	1.16095e-16
+E	0.588484	0.361448	0.118696	0.14172	-0.884711	-0.325637	1.88235e-16
+C	0.798506	0.490444	-0.552799	-0.660028	-0.0556419	-0.0204802	2.56351e-16
+
+Unscaled flux control coefficients
+Unscaled flux control coefficients
+Rows:    Reactions (reduced system)
+Columns: Reactions (reduced system)
+	(R1)	(R2)	(R3)	(R4)	(R5)	(R6)
+(R1)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483
+(R2)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483
+(R3)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483
+(R4)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483
+(R5)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483
+(R6)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483
+
+Scaled flux control coefficients
+Scaled flux control coefficients
+Rows:    Reactions (reduced system)
+Columns: Reactions (reduced system)
+	(R1)	(R2)	(R3)	(R4)	(R5)	(R6)	'Summation Error'
+(R1)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483	0
+(R2)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483	0
+(R3)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483	0
+(R4)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483	0
+(R5)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483	4.62851e-16
+(R6)	0.479732	0.294652	0.0967611	0.11553	0.00973947	0.00358483	0
+
+Results of the steady state subtask (the state for which the MCA was performed):
+A steady state with given resolution was found.
+
+Species	Concentration (mmol/ml)	Concentration Rate (mmol/(ml*s))	Particle Number	Particle Number Rate (1/s)	Transition Time (s)
+A	10	0	6.02214e+21	0	nan
+B	1.61836	-1.08825e-16	9.74599e+20	-65536	2.0033
+C	3.99413	-2.1765e-16	2.40532e+21	-131072	4.94417
+D	1.60356	3.26475e-16	9.65689e+20	196608	1.98499
+E	0.146851	0	8.84357e+19	0	0.181781
+F	0.072901	0	4.3902e+19	0	0.0902412
+G	0.1	0	6.02214e+19	0	nan
+I	1	0	6.02214e+20	0	nan
+
+Reaction	Flux (mmol/s)	Particle Flux (#/s)
+R1	0.807845	4.86496e+20
+R2	0.807845	4.86496e+20
+R3	0.807845	4.86496e+20
+R4	0.807845	4.86496e+20
+R5	0.807845	4.86496e+20
+R6	0.807845	4.86496e+20
+
+Jacobian (complete system)
+
+Rows:    Variables of the system, including dependent species
+Columns: Variables of the system, including dependent species
+	B	D	F	E	C
+B	-0.637682	-0	-0	-0	0.0930437
+D	-0	-0.671126	-0	0.517206	0.283332
+F	-0	-0	-15.7961	6.13515	-0
+E	-0	0.305895	4.24984	-6.65235	-0
+C	0.395045	0.365231	-0	-0	-0.376376
+
+Eigenvalues	real	imaginary
+	-0.11066	0
+	-0.63679	0
+	-0.900683	0
+	-4.4059	0
+	-18.0796	0
+
+Jacobian (reduced system)
+
+Rows:    Independent variables of the system
+Columns: Independent variables of the system
+	B	D	F	E	C
+B	-0.637682	-0	-0	-0	0.0930437
+D	-0	-0.671126	-0	0.517206	0.283332
+F	-0	-0	-15.7961	6.13515	-0
+E	-0	0.305895	4.24984	-6.65235	-0
+C	0.395045	0.365231	-0	-0	-0.376376
+
+Eigenvalues	real	imaginary
+	-0.11066	0
+	-0.63679	0
+	-0.900683	0
+	-4.4059	0
+	-18.0796	0
+
+Stability Analysis of the Reduced System
+
+KINETIC STABILITY ANALYSIS
+The linear stability analysis based on the eigenvalues
+of the Jacobian matrix is only valid for steady states.
+
+Summary:
+This state is asymptotically stable.
+
+Eigenvalue statistics:
+ Largest real part: -0.11066
+ Largest absolute imaginary part:  0
+ 5 are purely real
+ 0 are purely imaginary
+ 0 are complex
+ 0 are equal to zero
+ 0 have positive real part
+ 5 have negative real part
+ stiffness = 163.380
+ time hierarchy = 0.691352
+
+Fold bifurcaton test functions (standard, bifurcation discovery tool): 5.05570, 5.05570
+Hopf bifurcaton test functions (standard, bifurcation discovery tool): 137.122, -5.05570e+10
+
+Oscillation indicator: -1.27358
+
+

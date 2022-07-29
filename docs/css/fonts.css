@@ -1,0 +1,131 @@
+/* @font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/cmunrm.otf");
+}
+
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/cmunbx.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/cmunti.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/cmunbi.otf");
+  font-weight: bold;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/NexusSerifWebPro-Regular.woff");
+}
+
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/NexusSerifWebPro-Bold.woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/NexusSerifWebPro-Italic.woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: "nexus-serif";
+  src: url("../fonts/nexus-serif/NexusSerifWebPro-BoldItalic.woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "source-serif";
+  src: local("Source Han Serif SC"), local("SourceHanSerifSC-Regular"), url("../fonts/source-serif/SourceHanSerifCN-Light.otf");
+}
+
+@font-face {
+  font-family: "source-serif";
+  src: local("Source Han Serif SC Medium"), local("SourceHanSerifSC-Medium"), url("../fonts/source-serif/SourceHanSerifSC-Medium.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "noto-serif";
+  src: local("Noto Serif JP"), local("NotoSerifJP-Regular"), url("../fonts/source-serif/NotoSerifJP-Regular.otf");
+}
+
+@font-face {
+  font-family: "noto-serif";
+  src: local("Noto Serif JP"), local("NotoSerifJP-Medium"), url("../fonts/source-serif/NotoSerifJP-Medium.otf");
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: "cn-font";
+  src: url("../fonts/source-serif/SourceHanSerifCN-Light.otf");
+}
+
+@font-face {
+  font-family: "cn-font";
+  src: url("../fonts/source-serif/SourceHanSerifSC-Medium.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "cn-font";
+  src: url("../fonts/kaiti/Kaiti.woff");
+  font-style: italic;
+  unicode-range: U+3000-10FFFF;
+}
+
+.cn {
+  font-family: "noto-serif", "Noto Serif JP", "nexus-serif", serif;
+}
+
+.jp {
+  font-family: "noto-serif", "Noto Serif JP", "nexus-serif", serif;
+}
+
+body {
+  font-family: "nexus-serif", serif;
+  font-variant-ligatures: common-ligatures;
+  font-weight: 500;
+}
+
+footer {
+  font-family: "Merriweather";
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merriweather"), local("Merriweather-Regular"), url("../fonts/merriweather-v13-latin-regular.woff2") format("woff2"), url("../fonts/merriweather-v13-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-v11-latin-regular.woff2") format("woff2"), url("../fonts/lato-v11-latin-regular.woff") format("woff");
+}
+
+nav,
+.article-duration,
+.archive-item-link,
+.footer {
+  font-family: "Lato", sans-serif;
+}
+
+.topic,
+.archive-subtitle {
+  font-family: "Merriweather";
+}
+
+code {
+  font-family: "Courier", monospace;
+}

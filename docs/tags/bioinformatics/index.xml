@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bioinformatics on Tianyi@Oxford</title>
+    <link>/tags/bioinformatics.html</link>
+    <description>Recent content in bioinformatics on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download and Sync with the Entire PDB Database</title>
+      <link>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</guid>
+      <description>All the PDB files are available via PDB’s FTP server. Simply cd to a directory and use wget to download all of them.
+mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/* Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the -N option to wget (essentially this means downloading “new” files only).</description>
+    </item>
+    
+    <item>
+      <title>Sequence Alignment: Gap Penalty</title>
+      <link>/bioinformatics/sequence-alignment-gap-penalty.html</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment-gap-penalty.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational Genomics Practical (TT 2020)</title>
+      <link>/lab/computational-genomics-practical-tt-2020.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/computational-genomics-practical-tt-2020.html</guid>
+      <description>1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) 1.2 Heatmaps in Python (with seaborn) 1.3 Average Gene Profile 2 Quiz 8 2.1 Matlab 2.2 Using R 1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) Loading Packages
+library(R.matlab) ## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.matlab for help. ## ## Attaching package: &amp;#39;R.matlab&amp;#39; ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## getOption, isOpen library(reshape2) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.</description>
+    </item>
+    
+  </channel>
+</rss>

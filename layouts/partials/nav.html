@@ -1,0 +1,28 @@
+<nav id="navbar">
+  <a href={{ "/" | relURL }} class="nav-logo">
+    <img src="{{ print "images/" .Site.Params.logo.url | relURL }}" width="{{ .Site.Params.logo.width }}"
+      height="{{ .Site.Params.logo.height }}" alt="{{ .Site.Params.logo.alt }}">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+      <!-- <li id="rip" onclick="rip(this)">Pray for Dr. Wenliang Li</li> -->
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</nav>

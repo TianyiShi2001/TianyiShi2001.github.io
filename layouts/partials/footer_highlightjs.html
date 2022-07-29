@@ -1,0 +1,12 @@
+{{ $highCDN := (.Site.Params.highlightjsCDN | default "//cdnjs.cloudflare.com/ajax/libs") }}
+{{ $highVer := .Site.Params.highlightjsVersion }}
+{{ $highTheme := .Site.Params.highlightjsTheme }}
+<link href='{{ $highCDN }}/highlight.js/{{ $highVer }}/styles/{{ $highTheme }}.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="{{ $highCDN }}/highlight.js/{{ $highVer }}/highlight.min.js"></script>
+{{ $.Scratch.Set "highLangs" .Site.Params.highlightjsLang }}
+{{ range .Params.highlightjsLang }}{{ $.Scratch.Add "highLangs" . }}{{ end }}
+{{ range ($.Scratch.Get "highLangs") }}
+<script src="{{ $highCDN }}/highlight.js/{{ $highVer }}/languages/{{ . }}.min.js"></script>{{ end }}
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>

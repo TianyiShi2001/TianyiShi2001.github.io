@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brain on Tianyi@Oxford</title>
+    <link>/tags/brain.html</link>
+    <description>Recent content in brain on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/brain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Supplying Fuels to the Brain During Starvation</title>
+      <link>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</guid>
+      <description>Title: As starvation proceeds, how does the supply of fuels to the brain change? How is this change related to a requirement to conserve body protein?
+Due to the blood-brain barrier, The human brain can only harness energy from catabolising either glucose or ketone bodies. Under normal circumstances, glucose of dietary origin is the predominant source of fuel for the brain. As starvation begins (during the postabsorptive phase), astrocytes in the brain break down their stored glycogen to supply fuel in the form of lactate to neurons, which is followed by hepatic glycogenolysis that continue to provide glucose for the brain for a short period.</description>
+    </item>
+    
+  </channel>
+</rss>

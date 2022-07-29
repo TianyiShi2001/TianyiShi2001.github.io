@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div class="wrapper{{ if eq .Kind "page" }} single{{ else }} list{{ end }}">
+    <header class="header">
+      {{ partial "nav.html" . }}
+    </header>
+
+    {{ block "main" . }}
+
+    {{ end }}
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="{{ .Site.RSSLink | relURL }}" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="{{ "images/hugo-logo.png" | relURL }}" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      {{ if eq .Kind "page" }}
+      <p>COPYRIGHT © {{ .PublishDate.Format "2006" }} by Tianyi Shi. All rights reserved.</p>
+      {{ end }}
+    </footer>
+
+  </div>
+  {{ partial "footer_highlightjs" . }}
+  {{ partial "footer_mathjax" . }}
+  {{ template "_internal/google_analytics.html" . }}
+  <!--script src="/js/R.js"></script-->
+</body>
+
+</html>

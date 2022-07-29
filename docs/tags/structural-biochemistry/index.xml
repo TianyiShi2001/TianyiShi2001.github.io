@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>structural biochemistry on Tianyi@Oxford</title>
+    <link>/tags/structural-biochemistry.html</link>
+    <description>Recent content in structural biochemistry on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/structural-biochemistry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membrane Protein: Structure and Stability</title>
+      <link>/tutorial/membrane-protein-structure-and-stability.html</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/membrane-protein-structure-and-stability.html</guid>
+      <description>1 Introduction 2 The Biomembrane Environment 3 The Thermodynamic Basis of Secondary Structure Formation 4 Glycine and Proline in TM Helices 5 Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling 6 Interactions with Lipids 1 Introduction Many proteins that perform vital functions are membrane proteins. These include transport proteins (channels, transporters and pumps), cell adhesion molecules, and proteins that transduces energy in the electron transport chain. Despite their diverse roles, the same set of biophysical and biochemical rules govern their structural stability.</description>
+    </item>
+    
+    <item>
+      <title>Assessing The Quality Structural Models</title>
+      <link>/tutorial/assessing-structural-models.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/assessing-structural-models.html</guid>
+      <description>1 The Essence of X-Ray Crystallography 2 Assessing the Quality of A Structure During Model Building and Refinement 2.1 R and Rfree 2.2 Reciprocal-Space Refinement: Refinement by least squares 2.3 Real-Space Refinement: Map Fitting 3 Assessing Quality After Automatic Model Building and Refinement 3.1 Density fit analysis and local geometry validation 3.1.1 Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles 3.1.2 Torsional Angles and Ramachandran Plot 3.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Protein Structures Using Plotly</title>
+      <link>/bioinformatics/visualizing-protein-structures-using-plotly.html</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/visualizing-protein-structures-using-plotly.html</guid>
+      <description>Am I the first one to try to visualize protein structures using Plotly?
+Personally, I think the hitherto most powerful and elegant protein structure visualization tool is SwissPdbViewer (a.k.a. DeepView), which is tightly linked to SWISS-MODEL. Apparently it’s used as a web application, but it is not written in JS. It is not open source, and it’s 32-bit architecture makes it obsolete on modern 64-bit computers.
+Plotly has an open source graphing library with APIs for R, Python and JS, of which the R API highly compatible with the renowned ggplot2 package.</description>
+    </item>
+    
+    <item>
+      <title>NMR</title>
+      <link>/tutorial/nmr.html</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/nmr.html</guid>
+      <description>SAQ Write brief notes on the chemical shift, the nuclear Overhauser enhancement effect (NOE), the relaxation times T1 and T2, and the spin-spin coupling constant (J) with an emphasis on how these can provide information about the structure and dynamics of biological molecules.
+Chemical Shift: NMR applies RF wave to induce resonance with the precession frequency, \(\omega=\gamma (B_0-B_S)\), where \(B_0\) is the constant magnetic field strength on the \(z\) axis, \(B_S\) is the magnetic field strength shilded by electrons around the nucleus and \(\gamma\) is the magnetogyric ratio (depending of the identity of the nucleus).</description>
+    </item>
+    
+    <item>
+      <title>Protein Structure and Function</title>
+      <link>/tutorial/protein-structure-and-function.html</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-structure-and-function.html</guid>
+      <description>Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins&amp;rsquo; lecture series. Bring notes no essay.</description>
+    </item>
+    
+  </channel>
+</rss>

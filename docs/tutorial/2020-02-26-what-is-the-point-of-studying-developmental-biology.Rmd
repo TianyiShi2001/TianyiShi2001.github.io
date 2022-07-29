@@ -1,0 +1,126 @@
+---
+title: What is the Point of Studying Developmental Biology
+author: Tianyi Shii
+date: '2020-02-26'
+slug: what-is-the-point-of-studying-developmental-biology
+categories:
+  - MCB
+tags:
+  - developmental biology
+term: 1-Hilary
+week: 7
+tutor: ~
+summary: ~
+bibliography:
+  - ../bib/main.bib
+# output:
+#   blogdown::html_page:
+#     number_sections: yes
+#     toc: yes
+#   rmarkdown::pdf_document:
+#     number_sections: yes
+#     toc: yes
+nocite: |
+  @Gilbert-2016, @Slack-2018, @Takeo-2018, @Song-2011
+---
+
+**Title: What is the point of studying developmental biology?**
+
+[Link to presentation](https://tianyishi2001.github.io/ox/developmental-biology-presentation/#/)
+
+The main theme of developmental biology is the fate determination of cells, their division, differention and death, as well as the resulting higher level processes, including morphogenesis and organ formation. I'll illustrate how this knowledge can help with preventive and public healthcare as well as modern medical research.
+
+# Prenatal Care (Preventing Teratogenesis)
+
+## Teratogen and congenital anomaly
+
+According to the US’ National Research Council, ~3% of live births suffer from major developmental aberrations, ~70% of neonatal deaths are due to developmental defects. 
+
+- exogenous agents that cause birth defects are teratogens, they can be chemicals, radiations, or viral infections, and so on
+- thalidomide
+  - used to treat anxiety
+  - malformed arms and legs
+  - thee first major evidence that drugs could induce congenital anomalies
+  - led to the development of greater drug regulation and monitoring in many countries
+- alcohol interferes with fetal neural development and is shown to cause mental retardation in the newborn
+  - fetal alcohol syndrome
+  - abnormal facial development
+  - most prevalent type of congenital mental retardation syndrome in the US
+- in pregnant women, Zika virus directly infects the neural progenitor cells of the fetal cortex (vertically transmitted infection), resulting in the death of these cells
+- Model organisms such as Xenopus and Denio, are often used to screen compound that have a high probability of being hazardous, because the early development of these organisms rely on the same basic paracrine factors and TFs as humans do. 
+  - studies on model organisms have revealed three probable pathways for alcohol teratogenesis. first, generation of superoxide redicals; second, downregulation of Sonic hedgehog; third, intereference of the cell adhesion molecule L1
+
+## Nutrients
+
+to sustain normal development of the fetus, healthy diet is needed. This is quite obvious, however, there is one vitamin, that cannot be obtained with enough amount just from food, it is folic acid
+
+- Folic acid 
+  - it is found to significantly reduce the chance of **neural tube defects in infants**, but only at high doses
+  - it's recommended, by NHS, that all pregnant women should take a daily supplement of 400 migrograms of folic acid before they're pregnant and during the first 12 weeeks of pregnancy, when the baby's spine is developing
+
+# Stem Cell
+
+an important subdomain of developmental biology is stem cell biology, which has many applications in research and medicine. here I'll focus on pluripotent stem cells
+
+## ES Cells
+
+- ES cells are the natural source of pluripotent cells
+- ICM (embryoblast) and trophoblast
+- the study of the normal sequence of embryonic inductions yielded the methods for induced differentiation of these cells 
+- derived from the inner cell mass of blastocysts from IVF clinic
+- harvesting human ES cells means destroying human embryos (5 days after fertilisation)
+- raised ethical controversy
+
+## iPS cells
+
+- Reverting to undifferentated state
+  - functionallty equivalent to embryonic stem cells 
+  - capable of differentiating into almost all cell types
+- Shinya Yamanaka factors: Oct4, Klf4, Sox2, c-Myc
+  - screened 22 factors
+- Regenerative Medicine
+  - SMA clinical trial in Japan
+- Organoids
+  - An organoid is a miniaturized and simplified version of an organ produced in vitro in three dimensions that shows realistic micro-anatomy
+
+# Cancer as a Disease of Development
+
+- carcinogenesis can be viewed as a disease of development because it involes aberrations of the processes that underlie cell division, differentiation and morphogenesis
+- once it was thought that carcinogenesis and metastasis were caused by cells that had acquired mutations enabling them to proliferate independent of the enviornment.
+- but it turns out that this is not the complete explanation
+- cancer cells can actuallt modify their environment, turning it into a cancer-promoting niche
+- this means the progression of many cancers depends on reciprocal interactions between hte cancer cells and the supporting cells of their tissue environment
+- Indeed, carcinogenesis appears to recapitulate steps of normal development, including the formation of a niche in which to proliferate, using the same or closely related signalling pathways
+
+- Defects in cell-cell conmmunication
+  - studies have shown that tumours can be cuased by altering hte structure of the surrounding tissue, and that these tumors can be suppressed by restoring an appropriate tissue envionment
+  - althogh 80% human tumors are from epithelial cells, the cells that carcinogens act on are often not the epithelial cells themselves, but the mesenchymal stromal cells that surround and sustain the epithelia
+  - there was a study in which normal and carcinogen-treated epithelia and mesenchyme in rat mammary glands are **recombined**, and it turns out that, tumor growth occurred not in carcinogen-treated epithelia, but in epithelia placed in combination with carcinogen-treated mesenchyme
+  - in this case, the mesenchyme fails to give instructions to the epithelia to form normals structures, and epithelial cells exhibited a loose control of cell proliferation
+- Defects in paracrine pathways 
+  - Several key signaling pathways involved in embryogenesis, such as Hedgehog, Notch and Wnt, also have crucial roles in carcinogenesis when improperly activated in adults through sporadic mutatiions or other mechanisms
+  - many tumors, secrete the paracrine signalling factor Shh, which can act in two ways
+  - **the same chemicals that can cause teratogenesis by blocking a pathway in embryonic development may be useful in blocking the activation of cancer cells** (cancer stem cells, as I will describe next) 
+  - Cyclopamine and other antagonists of the Shh pathway, for instance, appear to be useful in preventing hte generation and proliferation of meedulloblastoma stem cells
+- Cancer stem cells
+  - an aspect of viewing cancers as diseases of development is that the properties of tumors may emerge because of a population of cells that are analogous to adult stem cells
+  - this is shown in studies on rat intestinal adenomas
+  - the lumen of the mice intestine is made up of villi and crypts
+  - at the bottom of the crypts there reside two important cells, Lrg5+ cells and Paneth cells, Lgr5+ is the stem cell and Paneth cell is the 
+  - lineage tracing revealed that
+    - the stem cells of rat intestinal adenomas also expresses Lgr5 and has the same interact with P cell as normal stem cells do
+
+# References
+
+
+
+
+
+
+
+
+
+
+
+
+

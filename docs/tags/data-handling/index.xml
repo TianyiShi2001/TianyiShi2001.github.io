@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data handling on Tianyi@Oxford</title>
+    <link>/tags/data-handling.html</link>
+    <description>Recent content in data handling on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data-handling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Techniques</title>
+      <link>/notes/techniques.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/techniques.html</guid>
+      <description>Protein Structure Homology Modelling Swiss Model Model Evaluation GMQE (global model quality estimation) 0-1, higher better combines properties from the target-alignment and the template search method replecting the expected accuracy of a model built with that alignment and the template and the coverage of the target computed before modelling and after modelling. The latter also takes into account the QMEAN QMEAN QMEAN z score: around 0: ideal; &amp;lt; -4.0: low quality QMEAN is a composite estimator based on different geometrical properties and provides both global and local absolute quality estimates on the basis of one single model the QMEAN z-score provides an estimate of the ‘degree of nativeness’ of the structural features observed in the model on a global scale.</description>
+    </item>
+    
+    <item>
+      <title>Paper VI 2011</title>
+      <link>/tutorial/paper-vi-1.html</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/paper-vi-1.html</guid>
+      <description>Alzheimer’s Disease Effect of AMPK on secreted A\(\beta\) levels in neuronal cultures In ELISA (enzyme-linked immunosorbant assay), antibodies are used to bind an antigen of interest (usually protein) with high specificity, and the presence and concentration of the antigen is reported by the extent of reaction of the enzyme conjugated with the antibody. Using two types of antibodies binding to different regions of the antigen allows sandwich ELISA (see below), which has greater specificity.</description>
+    </item>
+    
+  </channel>
+</rss>

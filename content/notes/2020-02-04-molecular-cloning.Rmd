@@ -1,0 +1,33 @@
+---
+title: Molecular Cloning
+author: Tianyi Shi
+date: '2020-02-04'
+slug: molecular-cloning
+categories:
+  - MCB
+tags:
+  - cloning
+  - recombinant DNA
+term: 1-Hilary
+week: 3
+tutor: ~
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+# About the frame
+
+Sometimes we want to use the start/stop codon in the vector for our protein production, especially when tag sequences need to be included. In these cases, we need to check our inserted GOI is in frame with the start/codon on the vector. Frame mismatch can be corrected by adding 1 or 2 random nucleotide(s) to the primer (forward primer to match vector start condon and reverse primer to match the stop codon) between the GOI sequence and the restriction site sequence.
+
+Some vectors have an N-terminal tag and stop codons in all three frames (e.g. `TGA C TGA C TGA`)
+
+
+
+
+
+
+
+
+

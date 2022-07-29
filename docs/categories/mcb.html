@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>MCB - Tianyi@Oxford</title>
+<meta property="og:title" content="MCB - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../categories/mcb/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">MCB</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="../tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html" class="archive-item-link">
+                How Has Ras Signalling Been Studied in C. Elegans 
+              </a>
+              <span class="archive-item-date">
+                2020-03-03
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#the-big-picture-components-of-the-c.-elegans-egf-ras-mapk-pathway-involved-in-vulva-induction"><span class="toc-section-number">2</span> The Big Picture: Components of the <em>C. elegans</em> EGF-Ras-MAPK Pathway Involved in Vulva Induction</a></li>
+<li><a href="#techniques-for-studying-egfr-ras-mapk-signalling-and-vulva-induction"><span class="toc-section-number">3</span> Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction</a><ul>
+<li><a href="#forward-genetics-and-reverse-genetics"><span class="toc-section-number">3.1</span> Forward Genetics and Reverse Genetics</a><ul>
+<li><a href="#in-early-experiments-forward-genetics-methods-were-used-entensively"><span class="toc-section-number">3.1.1</span> In Early Experiments, Forward Genetics Methods were Used Entensively</a></li>
+<li><a href="#rnai-and-reverse-genetics-since-1998"><span class="toc-section-number">3.1.2</span> RNAi and Reverse Genetics Since 1998</a></li>
+</ul></li>
+<li><a href="#observing-cell-fates"><span class="toc-section-number">3.2</span> Observing Cell Fates</a><ul>
+<li><a href="#microscopic-analysis"><span class="toc-section-number">3.2.1</span> Microscopic Analysis</a></li>
+<li><a href="#transcriptional-reporters"><span class="toc-section-number">3.2.2</span> Transcriptional Reporters</a></li>
+</ul></li>
+<li><a href="#cross-species-genomic-analysis-reveals-homology-and-helps-to-elucidate-roles-of-proteins-with-greater-accuracy"><span class="toc-section-number">3.3</span> Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy</a></li>
+<li><a href="#studying-egfr-localisation-and-trafficking"><span class="toc-section-number">3.4</span> Studying EGFR Localisation and Trafficking</a><ul>
+<li><a href="#immunostaining"><span class="toc-section-number">3.4.1</span> Immunostaining</a></li>
+<li><a href="#live-imaging"><span class="toc-section-number">3.4.2</span> Live Imaging</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conclusion"><span class="toc-section-number">4</span> Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>The <em>Caenorhabditis elegans</em> vulva is one of the best studied models of organogeneis. Genetic screening revealed three signalling pathways, EGFR-Ras-MAPK, Notch and Wnt<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, that are critical to the fate determination of the 6 vulval precursor cells (VPCs), P(3-8)p.</p>
+<p>VPCs adopt either 1<span class="math inline">\(^\circ\)</span> or 2<span class="math inline">\(^\circ\)</span> fate upon receiving appropriate signals, or 3<span class="math inline">\(^\circ\)</span> fate if undinduced. The 8 descentdents of the 1<span class="math inline">\(^\circ\)</span> VPC and the 14 descendents (7 each) of the 2<span class="math inline">\(^\circ\)</span> VPCs give rise to the vulva, while 3<span class="math inline">\(^\circ\)</span> VPCs produces epidermal cells which fuse with the syncytial epidermis hyp7.</p>
+<p>In the L1 stage, a Wnt signal form the posterior body region selects the six Pn.p cells to become the VPCs and form the vulval competentce group. Then in the L2 stage, LIN-3 (EGF) signal from the anchor cell (AC) in the somatic gonad selects P6.p to be the single 1<span class="math inline">\(^\circ\)</span> VPC<span class="citation"><sup>1,2</sup></span>, and contact-dependent LIN-12 (Notch) signalling causes the flanking P5.p and P7.p to become 2<span class="math inline">\(^\circ\)</span> VPCs. These precise signalling events always results in an invariant spatial pattern of VPCs in wild-type (WT) <em>C. elegans</em>, namely 3<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-1<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>.</p>
+<p>This essay illustrates how the LET-60 (Ras) signalling has been studied in <em>C. elegans</em> vulval development, specifically the 1<span class="math inline">\(^\circ\)</span> fate determination, according to these selected work and reviews: <span class="citation">3</span>; <span class="citation">4</span>; <span class="citation">5</span>; <span class="citation">6</span>; <span class="citation">7</span>; <span class="citation">8</span>. A recent review article by <span class="citation">9</span> and a book chapter by <span class="citation">10</span> are also taken into account (the latter was the most helpful).</p>
+</div>
+<div id="the-big-picture-components-of-the-c.-elegans-egf-ras-mapk-pathway-involved-in-vulva-induction" class="section level1">
+<h1><span class="header-section-number">2</span> The Big Picture: Components of the <em>C. elegans</em> EGF-Ras-MAPK Pathway Involved in Vulva Induction</h1>
+<p>Figure <a href="#fig:c-ele-valva-big">2.1</a> gives an overview of the pathways by which EGF-Ras-MAPK signalling leads to the 1<span class="math inline">\(^\circ\)</span> fate in P6.p and 2<span class="math inline">\(^\circ\)</span> fate in flanking P5.p and P7.p cells.</p>
+<div class="figure"><span id="fig:c-ele-valva-big"></span>
+<img src="../img/c-ele-valva-big.jpg" alt="P6.p is the VPC closest to the AC, and it also expresses the highest levels of LET-23 on its basolateral membrane. Thus, P6.p receives most LIN-3 signalling and commits to the 1\(^\circ\) fate. Downstram of the LET-23 (EGFR) RTK, a canocical Ras-MAPK pathway transduces the signal into the nucleus. The scaffold proteins LIN-2 (CASK), LIN-7 (Veli), and LIN-10 (Mint-1) form a complex which helps to maintain basolateral localisation of LET-23. The SEM-5 (Grb2) adaptor protein11 uses its SH2 domain to anchor to LET-23 at phosphorylated tyrosines. The guanine exchange factor (GEF) SOS-112 then binds to SEM-5 (at SEM-5’s two SH3 domains), and it activates the membrane-anchored LET-60 (Ras)3. GTP-bound LET-60 then activates the LIN-45 (Raf)13, MEK-214 and MPK-1 (MAPK) kinase cascade, which is facilitated by the scaffold protein KSR. LIN-1 and forkhead LIN-31 transcription factors are the targets of MPK-115. In their unphosphorylated state, LIN-1 and LIN-31 forms a complex which represses 1\(^\circ\)-specific transcription of lin-39 and egl-1716. Phosphorylation makes the complex to dissociate, and phospho-LIN-31 is turned into an transcriptional activator. The 1\(^\circ\) P6.p also produces LAG-2 (Delta), which is the ligand for LIN-12 (Notch), thus transducing lateral signals to P5.p and P7.p. Notch signalling inhibits MAKP, and LET-60 in P5.p and P7.p cells uses a RAL-1 dependent pathway to commit to 2\(^\circ\) fate. A number of modifiers and negative regulators of the EGFR pathway has been identified, which include the tyrosine kinase Ark-117, the RTK phosphatase Dep-118. Adapted from 10 with reference to 19 and 20." width="100%" />
+<p class="caption">
+Figure 2.1: P6.p is the VPC closest to the AC, and it also expresses the highest levels of LET-23 on its basolateral membrane. Thus, P6.p receives most LIN-3 signalling and commits to the 1<span class="math inline">\(^\circ\)</span> fate. Downstram of the LET-23 (EGFR) RTK, a canocical Ras-MAPK pathway transduces the signal into the nucleus. The scaffold proteins LIN-2 (CASK), LIN-7 (Veli), and LIN-10 (Mint-1) form a complex which helps to maintain basolateral localisation of LET-23. The SEM-5 (Grb2) adaptor protein<span class="citation"><sup>11</sup></span> uses its SH2 domain to anchor to LET-23 at phosphorylated tyrosines. The guanine exchange factor (GEF) SOS-1<span class="citation"><sup>12</sup></span> then binds to SEM-5 (at SEM-5’s two SH3 domains), and it activates the membrane-anchored LET-60 (Ras)<span class="citation"><sup>3</sup></span>. GTP-bound LET-60 then activates the LIN-45 (Raf)<span class="citation"><sup>13</sup></span>, MEK-2<span class="citation"><sup>14</sup></span> and MPK-1 (MAPK) kinase cascade, which is facilitated by the scaffold protein KSR. LIN-1 and <em>forkhead</em> LIN-31 transcription factors are the targets of MPK-1<span class="citation"><sup>15</sup></span>. In their unphosphorylated state, LIN-1 and LIN-31 forms a complex which represses 1<span class="math inline">\(^\circ\)</span>-specific transcription of <em>lin-39</em> and <em>egl-17</em><span class="citation"><sup>16</sup></span>. Phosphorylation makes the complex to dissociate, and phospho-LIN-31 is turned into an transcriptional activator. The 1<span class="math inline">\(^\circ\)</span> P6.p also produces LAG-2 (Delta), which is the ligand for LIN-12 (Notch), thus transducing lateral signals to P5.p and P7.p. Notch signalling inhibits MAKP, and LET-60 in P5.p and P7.p cells uses a RAL-1 dependent pathway to commit to 2<span class="math inline">\(^\circ\)</span> fate. A number of modifiers and negative regulators of the EGFR pathway has been identified, which include the tyrosine kinase Ark-1<span class="citation"><sup>17</sup></span>, the RTK phosphatase Dep-1<span class="citation"><sup>18</sup></span>. Adapted from <span class="citation">10</span> with reference to <span class="citation">19</span> and <span class="citation">20</span>.
+</p>
+</div>
+
+</div>
+<div id="techniques-for-studying-egfr-ras-mapk-signalling-and-vulva-induction" class="section level1">
+<h1><span class="header-section-number">3</span> Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction</h1>
+<div id="forward-genetics-and-reverse-genetics" class="section level2">
+<h2><span class="header-section-number">3.1</span> Forward Genetics and Reverse Genetics</h2>
+<div id="in-early-experiments-forward-genetics-methods-were-used-entensively" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> In Early Experiments, Forward Genetics Methods were Used Entensively</h3>
+<p>Studies on the molecular mechanisms of <em>C. elegans</em> development date back to the 1980s, when genetic manipulating techniques, especially gene cloning, were emerging, but the complete genome sequencing (of <em>C. elegans</em> and other model organisms) had yet to start. Therefore, those pioineering studies relied heavily on forward genetics, where worms were subjected to mutagens, and abnomal phenotypes were identified, isolated, amplified (by self-fertilisation) and the respective genotypes were determined. Differential interference contrast (DIC)/Nomarski microscopes were commonly used to examine the phenotypes because of their superior imaging quuality for live and unstained samples. There were also cellular methods for manipulating gene expression (which especially aided in eludidating cell-cell interactions). First, observing fates of the cells among varying individuals. Second, using laser beams to ablate cells suspected to interact with the cell of interest. Third, isolation of cells of interest, or rearrangement of their surrounding cells.</p>
+<p>These extensive genetic screens led to identification of a number of genes that cause abormal cell lineage (the <em>lin#</em> genes) phenotypes, notably vulvaless (Vul)/Egg-laying defective (Egl) or multivulva (Muv) (Figure <a href="#fig:egl-muv-c-ele-vulva">3.1</a>). Epistasis analyses of these phenotypes grouped these genes into distinct pathways (notably EGFR-Ras-MAPK and Notch) and helped elucidating where each component functions in the respetive pathway. The general idea is that, if the phenotype of gene A masks the phenotype of gene B, then gene A is likely to act downstream of gene B.</p>
+
+<div class="figure"><span id="fig:egl-muv-c-ele-vulva"></span>
+<img src="../img/egl-muv-c-ele-vulva.png" alt="Egg-laying defective (Egl) and Multivulva (Muv) phenotypes caused by LET-23 EGFR-Ras-MAPK signalling mutants. (a): Wild type. Eggs are neatly arranged in the uterus. (b) and (c): Defective LIN-10 (which helps to localise LET-23) can lead to disorganisation of eggs (b) and the bag-of-worms phenotype (c), in which self-fertilised eggs hatch and larvae fills up their mother’s carcass. (d): let-60 gain-of-function results in Ras signalling in all VPCs, resulting in a Muv phenotype. Reproduced from 10." width="100%" />
+<p class="caption">
+Figure 3.1: Egg-laying defective (Egl) and Multivulva (Muv) phenotypes caused by LET-23 EGFR-Ras-MAPK signalling mutants. (a): Wild type. Eggs are neatly arranged in the uterus. (b) and (c): Defective LIN-10 (which helps to localise LET-23) can lead to disorganisation of eggs (b) and the bag-of-worms phenotype (c), in which self-fertilised eggs hatch and larvae fills up their mother’s carcass. (d): <em>let-60</em> gain-of-function results in Ras signalling in all VPCs, resulting in a Muv phenotype. Reproduced from <span class="citation">10</span>.
+</p>
+</div>
+<p>Figure <a href="#fig:vul-Muv-simplest">3.2</a> shows the earliest expetiments that demonstrated the role of the AC and the LET-60 protein in vulval induction.</p>
+
+<div class="figure"><span id="fig:vul-Muv-simplest"></span>
+<img src="../img/vul-mul-simplest.jpg" alt="(a) in wild-type cells, signals from the AC results in the invariant VPC pattern 3\(^\circ\)-3\(^\circ\)-2\(^\circ\)-1\(^\circ\)-2\(^\circ\)-3\(^\circ\); (b) ablation of the AC renders a Vul phenotype, where all 6 VPCs adopts the 3\(^\circ\) fate, this shows that the AC positively regulates vulval induction; (c) inactive LET-60 (Ras) also renders a Vul phenotype even in the presence of the AC, therefore LET-60 should be downstream of the signal from the AC; (d) LET-60 hyperactivity leads to a Muv phenotype, further demonstrating LET-60 as a positive regulator of vulval induction." width="100%" />
+<p class="caption">
+Figure 3.2: (a) in wild-type cells, signals from the AC results in the invariant VPC pattern 3<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-1<span class="math inline">\(^\circ\)</span>-2<span class="math inline">\(^\circ\)</span>-3<span class="math inline">\(^\circ\)</span>; (b) ablation of the AC renders a Vul phenotype, where all 6 VPCs adopts the 3<span class="math inline">\(^\circ\)</span> fate, this shows that the AC positively regulates vulval induction; (c) inactive LET-60 (Ras) also renders a Vul phenotype even in the presence of the AC, therefore LET-60 should be downstream of the signal from the AC; (d) LET-60 hyperactivity leads to a Muv phenotype, further demonstrating LET-60 as a positive regulator of vulval induction.
+</p>
+</div>
+</div>
+<div id="rnai-and-reverse-genetics-since-1998" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> RNAi and Reverse Genetics Since 1998</h3>
+<p>Early mutagenesis studies relied on chance to generate individuals with mutations for certain genes, which is laborious and not specific—usually some genes/DNA regions other than the genes of interest are also mutated, and studies on them can lead to confounding results.</p>
+<p>Reverse genetics in <em>C. elegans</em> has become much more prevalent since 1998, when <em>C. elegans</em> became the first multicellular eukaryote to have its genome sequenced<span class="citation"><sup>21</sup></span>, and it was shown that introdcution of dsRNA into worms results in inactivation of an endogenous gene with corresponding sequence<span class="citation"><sup>22</sup></span>. This technique, known as RNA interference (RNAi), enables rapid, site-specific gene inactivation and has been rapidly embraced as a reverse-genetic tool and has dramatically accelerated the pace at which new gene functions are discovered.</p>
+</div>
+</div>
+<div id="observing-cell-fates" class="section level2">
+<h2><span class="header-section-number">3.2</span> Observing Cell Fates</h2>
+<div id="microscopic-analysis" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Microscopic Analysis</h3>
+<p>Observing Val and Muv phenotypes is generally sufficient for ordering the components of the Ras pathway, but cell-cell interaction analyses require the ability to identify differentiated or undifferentiated individual VPCs. The boundaries between cells are not visible by DIC optics and thus cells are identified by the location, size, and morphology of the nucleus and nucleoli. Undifferentiated VPCs at the Pn.p stage each have a characteristic oblong nucleus with a round nucleolus.</p>
+</div>
+<div id="transcriptional-reporters" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Transcriptional Reporters</h3>
+<p>Several transcriptional targets of LET-23 (EGFR) signalling in P6.p, such as <em>egl-17</em> and <em>lag-2</em>, have been identified and can be used as transcriptional reporters to identify vulval cell fates. By using a highly sentitive Ras-responsive reporter gene, <em>egl-17::CFP</em>, <span class="citation">8</span> showed that the Ras pathway is transiently activated in P5.p and P7.p, and that LIN-12 (Notch) activation in these two cells antagonises Ras signalling.</p>
+<p>Single molecule fluorescence <em>in situ</em> hybridisation (smFISH) can also be used to monitor expression of cell fate determinants. It reveals subtle changes in gene expression and has been used, for example by <span class="citation">23</span>, to visualise the dynamics of Ras-induced <em>lag-2</em> expression, which demonstrates the cellular control of EGF-Ras induced gene expression by changing sensitivity to the EGF gradient .</p>
+</div>
+</div>
+<div id="cross-species-genomic-analysis-reveals-homology-and-helps-to-elucidate-roles-of-proteins-with-greater-accuracy" class="section level2">
+<h2><span class="header-section-number">3.3</span> Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy</h2>
+<p>As sequencing techniques mature, complete genome sequences of more organisms are becoming available. This is accompanied by advance in computing power and bioinformatic algorithms, and they allow identification of a significant amount of homology among species.</p>
+<p>The studies on <em>C. elegans</em> Ras signalling also benefitted from these developments. For example, MPK-1 was initially identified as a suppressor of Ras and was named SUR-1 before being identified as an Erk1/2 homologue. The scaffold protein KSR-1 was originally named SUR-3 due to the same reason. With homology available, one can easily guess the function of a novel gene/protein identified in one organism, if its sequence is found homologous with another gene with known functions.</p>
+</div>
+<div id="studying-egfr-localisation-and-trafficking" class="section level2">
+<h2><span class="header-section-number">3.4</span> Studying EGFR Localisation and Trafficking</h2>
+<p>The LET-23 EGFR upstream of LET-60 Ras has a polarised localisation in VPCs: vuval induction requires that EGFR to be expressed on the basolateral membrane. Immunostaining and live imaging can be used to monitor LET-23 trafficking and identify regulators involved.</p>
+<div id="immunostaining" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Immunostaining</h3>
+<p>Immunostaining can be used to visualise subcellular localisation of components of regulators of the EDGR-Ras-MAPK pathway. This technique was used by <span class="citation">24</span> to establish the role of LIN-2/7/10 complex binding to LET-23 C-terminuc in regulating LET-23 basolateral localisation (Figure <a href="#fig:c-ele-vulva-immunostaining">3.3</a>).</p>
+
+<div class="figure"><span id="fig:c-ele-vulva-immunostaining"></span>
+<img src="../img/c-ele-vulva-immunostaining.png" alt="Top: LET-23 are localised to the basolateral membrane of VPCs in wild-type C. elegans; Middle: lin-7 mutant shows mislocalisation of LET-23 to the apical membrane; Bottom: let-23(sy1) mutant, in which a premature stop codon removes 6 C-terminal amino acids of LET-23, similarly resulted in mislocalisation of LET-23. LET-23 staining is shownin green, and staining for the cell junctions using the monoclonal antibody MH27 is shown in red. Reproduced from 24." width="100%" />
+<p class="caption">
+Figure 3.3: Top: LET-23 are localised to the basolateral membrane of VPCs in wild-type <em>C. elegans</em>; Middle: <em>lin-7</em> mutant shows mislocalisation of LET-23 to the apical membrane; Bottom: <em>let-23(sy1)</em> mutant, in which a premature stop codon removes 6 C-terminal amino acids of LET-23, similarly resulted in mislocalisation of LET-23. LET-23 staining is shownin green, and staining for the cell junctions using the monoclonal antibody MH27 is shown in red. Reproduced from <span class="citation">24</span>.
+</p>
+</div>
+</div>
+<div id="live-imaging" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Live Imaging</h3>
+<p>Modern imaging techniques, notably confocal and epifluorescence microscopy, allow the subcellular localisation and trafficking of LET-23 to be observed <em>in vivo</em>, in real time. These studies often involve fusion proteins with fluorescence tags. For example, <span class="citation">25</span> used time-lapse imaging and fluorescence recovery after photobleaching to identify ERM-1 (the Ezrin homologue) as a temporal regulator of LET-23 localisation.</p>
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1><span class="header-section-number">4</span> Conclusion</h1>
+<p>The understanding of the EGFR-Ras-MAPK signalling pathway is importnat because of its involvement in many human diseases, especially cancer. Vulva induction in <em>C. elegans</em> has been a valuable <em>in vivo</em> model for elucidating the identities and mechanisms of the components and regulators in this pathway. Studies on <em>C. elegans</em> traditionally relied on forward genetics, but new experimental techniques and bioinformatic are now solving previously unanswered questions in this field.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Hill-1992">
+<p>1. Hill, R. &amp; Sternberg, P. The gene lin-3 encodes an inductive signal for vulval development in c. Elegans. <em>Nature</em> <strong>358</strong>, 470–476 (1992).</p>
+</div>
+<div id="ref-Sternberg-1989">
+<p>2. Sternberg, P. W. &amp; Horvitz, H. The combined action of two intercellular signaling pathways specifies three cell fates during vulval induction in c. Elegans. <em>Cell</em> <strong>58</strong>, 679–693 (1989).</p>
+</div>
+<div id="ref-Beitel-1990">
+<p>3. Beitel, G. J., Clark, S. G. &amp; Horvitz, H. R. Caenorhabditis elegans ras gene let-60 acts as a switch in the pathway of vulval induction. <em>Nature</em> <strong>348</strong>, 503–509 (1990).</p>
+</div>
+<div id="ref-Thomas-1990">
+<p>4. Thomas, J. H., Stern, M. J. &amp; Horvitz, H. R. Cell interactions coordinate the development of the c. Elegans egg-laying system. <em>Cell</em> <strong>62</strong>, 1041–1052 (1990).</p>
+</div>
+<div id="ref-Sternberg-1998">
+<p>5. Sternberg, P. W. &amp; Han, M. Genetics of ras signaling in c. Elegans. <em>Trends Genet</em> <strong>14</strong>, 466–472 (1998).</p>
+</div>
+<div id="ref-Kornfeld-1997">
+<p>6. Kornfeld, K. Vulval development in caenorhabditis elegans. <em>Trends Genet</em> <strong>13</strong>, 55–61 (1997).</p>
+</div>
+<div id="ref-Sundaram-2004">
+<p>7. Sundaram, M. V. Vulval development: The battle between ras and notch. <em>Current Biology</em> <strong>14</strong>, R311–R313 (2004).</p>
+</div>
+<div id="ref-Yoo-2004">
+<p>8. Yoo, A., Bais, C. &amp; Greenwald, I. Crosstalk between the egfr and lin-12/notch pathways in c. Elegans vulval development. <em>Science</em> <strong>303</strong>, 663–666 (2004).</p>
+</div>
+<div id="ref-Schmid-2015">
+<p>9. Schmid, T. &amp; Hajnal, A. Signal transduction during c. Elegans vulval development: A neverending story. <em>Current Opinion in Genetics &amp; Development</em> <strong>32</strong>, 1–9 (2015).</p>
+</div>
+<div id="ref-Gauthier-2017">
+<p>10. Gauthier, K. &amp; Rocheleau, C. E. C. Elegans vulva induction: An in vivo model to study epidermal growth factor receptor signaling and trafficking. in <em>ErbB receptor signaling: Methods and protocols</em> (ed. Wang, Z.) vol. 1652 43–61 (Humana Press, 2017).</p>
+</div>
+<div id="ref-Clark-1992">
+<p>11. Clark, S., Stern, M. &amp; Horvritz, H. C. Elegans cell-signalling gene sem-5 encodes a protein with sh2 and sh3 domains. <em>Nature</em> <strong>356</strong>, 340–344 (1992).</p>
+</div>
+<div id="ref-Chang-2000">
+<p>12. Chang, C., Hopper, N. &amp; Sternberg, P. Caenorhabditis elegans sos-1 is necessary for multiple ras-mediated developmental signals. <em>EMBO Journal</em> <strong>19</strong>, 3283–3294 (2000).</p>
+</div>
+<div id="ref-Han-1993">
+<p>13. Han, M., Golden, A., Han, Y. &amp; Sternberg, P. C. Elegans lin-45 raf gene participates in let-60 ras-stimulated vulval differentiation. <em>Nature</em> <strong>363</strong>, 133–140 (1993).</p>
+</div>
+<div id="ref-Kornfeld-1995">
+<p>14. Kornfeld, K., Guan, K. L. &amp; Horvitz, H. R. The caenorhabditis elegans gene mek-2 is required for vulval induction and encodes a protein similar to the protein kinase mek. <em>Genes Dev</em> <strong>9</strong>, 756–768 (1995).</p>
+</div>
+<div id="ref-Lackner-1994">
+<p>15. Lackner, M. R., Kornfeld, K., Miller, L. M., Horvitz, H. R. &amp; Kim, S. K. A map kinase homolog, mpk-1, is involved in ras-mediated induction of vulval cell fates in caenorhabditis elegans. <em>Genes Dev</em> <strong>8</strong>, 160–173 (1994).</p>
+</div>
+<div id="ref-Leight-2005">
+<p>16. Leight, E. R., Glossip, D. &amp; Kornfeld, K. Sumoylation of lin-1 promotes transcriptional repression and inhibition of vulval cell fates. <em>Development</em> <strong>132</strong>, 1047–1056 (2005).</p>
+</div>
+<div id="ref-Hopper-2000">
+<p>17. Hopper, N. A., Lee, J. &amp; Sternberg, P. W. ARK-1 inhibits EGFR signaling in <em>C. elegans</em>. <em>Molecular Cell</em> <strong>6</strong>, 65–75 (2000).</p>
+</div>
+<div id="ref-Berset-2005">
+<p>18. Berset, T. A., Hoier, E. F. &amp; Hajnal, A. The c. Elegans homolog of the mammalian tumor suppressor dep-1/scc1 inhibits egfr signaling to regulate binary cell fate decisions. <em>Genes Dev</em> <strong>19</strong>, 1328–1340 (2005).</p>
+</div>
+<div id="ref-Alberts-2014">
+<p>19. Alberts, B. <em>et al.</em> <em>Molecular biology of the cell</em>. (Garland Science, 2014).</p>
+</div>
+<div id="ref-Sternberg-2005">
+<p>20. Sternberg, P. W. Vulval development. in <em>WormBook</em> (ed. Research Community, T. C. elegans) (WormBook, 2005). doi:<a href="https://doi.org/doi/10.1895/wormbook.1.6.1">doi/10.1895/wormbook.1.6.1</a>.</p>
+</div>
+<div id="ref-Stein-1999">
+<p>21. Stein, L. D. Internet access to the c. Elegans genome. <em>Trends in Genetics</em> <strong>15</strong>, 425–427 (1999).</p>
+</div>
+<div id="ref-Fire-1998">
+<p>22. Fire, A. <em>et al.</em> Potent and specific genetic interference by double-stranded rna in caenorhabditis elegans. <em>Nature</em> <strong>391</strong>, 806–811 (1998).</p>
+</div>
+<div id="ref-Zon-2015">
+<p>23. Zon, J. S. van, Kienle, S., Huelsz-Prince, G., Barkoulas, M. &amp; Oudenaarden, A. van. Cells change their sensitivity to an egf morphogen gradient to control egf-induced gene expression. <em>Nature Communications</em> <strong>6</strong>, 7053 (2015).</p>
+</div>
+<div id="ref-Kaech-1998">
+<p>24. Kaech, S. M., Whitfield, C. W. &amp; Kim, S. K. The lin-2/lin-7/lin-10 complex mediates basolateral membrane localization of the c. Elegans egf receptor let-23 in vulval epithelial cells. <em>Cell</em> <strong>94</strong>, 761–771 (1998).</p>
+</div>
+<div id="ref-Haag-2014">
+<p>25. Haag, P. A. B., Andrea AND Gutierrez. An in vivo egf receptor localization screen in c. Elegans identifies the ezrin homolog erm-1 as a temporal regulator of signaling. <em>PLOS Genetics</em> <strong>10</strong>, 1–13 (2014).</p>
+</div>
+<div id="ref-Gilbert-2016">
+<p>26. Gilbert, S. F. &amp; Barresi, M. J. F. <em>Developmental biology</em>. (Sinauer Associates, 2016).</p>
+</div>
+<div id="ref-Slack-2018">
+<p>27. Slack, J. M. W. <em>Essential developmental biology</em>. (WIley-Blackwell, 2018).</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In this essay, the names of the actual <em>C. elegans</em> proteins and their (more commonly known) vertebrate/<em>Drosophila</em> homologues are used interchangeably. Here is a translation between them: (<em>Drosophila</em>: <em>C. elegans</em>) EGF: LIN-3; EGFR: LET-23; Grb2: SEM-5; Ras: LET-60; Raf: LIN-45; MEK: MEK-2; MAPK/Erk: MPK-1; Notch: LIN-12; Frizzled and Ryk (WNT-receptors): LIN-17 and LIN-18. <em>C. elegans</em> protein naming follows the <a href="https://wormbase.org//about/userguide/nomenclature#634c2j7f9gi1e05kabmlh8d--10">WormBase convention</a><a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../tutorial/what-is-the-point-of-studying-developmental-biology.html" class="archive-item-link">
+                What is the Point of Studying Developmental Biology 
+              </a>
+              <span class="archive-item-date">
+                2020-02-26
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<p><strong>Title: What is the point of studying developmental biology?</strong></p>
+<p><a href="https://tianyishi2001.github.io/ox/developmental-biology-presentation/#/">Link to presentation</a></p>
+<p>The main theme of developmental biology is the fate determination of cells, their division, differention and death, as well as the resulting higher level processes, including morphogenesis and organ formation. I’ll illustrate how this knowledge can help with preventive and public healthcare as well as modern medical research.</p>
+<div id="prenatal-care-preventing-teratogenesis" class="section level1">
+<h1>Prenatal Care (Preventing Teratogenesis)</h1>
+<div id="teratogen-and-congenital-anomaly" class="section level2">
+<h2>Teratogen and congenital anomaly</h2>
+<p>According to the US’ National Research Council, ~3% of live births suffer from major developmental aberrations, ~70% of neonatal deaths are due to developmental defects.</p>
+<ul>
+<li>exogenous agents that cause birth defects are teratogens, they can be chemicals, radiations, or viral infections, and so on</li>
+<li>thalidomide
+<ul>
+<li>used to treat anxiety</li>
+<li>malformed arms and legs</li>
+<li>thee first major evidence that drugs could induce congenital anomalies</li>
+<li>led to the development of greater drug regulation and monitoring in many countries</li>
+</ul></li>
+<li>alcohol interferes with fetal neural development and is shown to cause mental retardation in the newborn
+<ul>
+<li>fetal alcohol syndrome</li>
+<li>abnormal facial development</li>
+<li>most prevalent type of congenital mental retardation syndrome in the US</li>
+</ul></li>
+<li>in pregnant women, Zika virus directly infects the neural progenitor cells of the fetal cortex (vertically transmitted infection), resulting in the death of these cells</li>
+<li>Model organisms such as Xenopus and Denio, are often used to screen compound that have a high probability of being hazardous, because the early development of these organisms rely on the same basic paracrine factors and TFs as humans do.
+<ul>
+<li>studies on model organisms have revealed three probable pathways for alcohol teratogenesis. first, generation of superoxide redicals; second, downregulation of Sonic hedgehog; third, intereference of the cell adhesion molecule L1</li>
+</ul></li>
+</ul>
+</div>
+<div id="nutrients" class="section level2">
+<h2>Nutrients</h2>
+<p>to sustain normal development of the fetus, healthy diet is needed. This is quite obvious, however, there is one vitamin, that cannot be obtained with enough amount just from food, it is folic acid</p>
+<ul>
+<li>Folic acid
+<ul>
+<li>it is found to significantly reduce the chance of <strong>neural tube defects in infants</strong>, but only at high doses</li>
+<li>it’s recommended, by NHS, that all pregnant women should take a daily supplement of 400 migrograms of folic acid before they’re pregnant and during the first 12 weeeks of pregnancy, when the baby’s spine is developing</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="stem-cell" class="section level1">
+<h1>Stem Cell</h1>
+<p>an important subdomain of developmental biology is stem cell biology, which has many applications in research and medicine. here I’ll focus on pluripotent stem cells</p>
+<div id="es-cells" class="section level2">
+<h2>ES Cells</h2>
+<ul>
+<li>ES cells are the natural source of pluripotent cells</li>
+<li>ICM (embryoblast) and trophoblast</li>
+<li>the study of the normal sequence of embryonic inductions yielded the methods for induced differentiation of these cells</li>
+<li>derived from the inner cell mass of blastocysts from IVF clinic</li>
+<li>harvesting human ES cells means destroying human embryos (5 days after fertilisation)</li>
+<li>raised ethical controversy</li>
+</ul>
+</div>
+<div id="ips-cells" class="section level2">
+<h2>iPS cells</h2>
+<ul>
+<li>Reverting to undifferentated state
+<ul>
+<li>functionallty equivalent to embryonic stem cells</li>
+<li>capable of differentiating into almost all cell types</li>
+</ul></li>
+<li>Shinya Yamanaka factors: Oct4, Klf4, Sox2, c-Myc
+<ul>
+<li>screened 22 factors</li>
+</ul></li>
+<li>Regenerative Medicine
+<ul>
+<li>SMA clinical trial in Japan</li>
+</ul></li>
+<li>Organoids
+<ul>
+<li>An organoid is a miniaturized and simplified version of an organ produced in vitro in three dimensions that shows realistic micro-anatomy</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="cancer-as-a-disease-of-development" class="section level1">
+<h1>Cancer as a Disease of Development</h1>
+<ul>
+<li>carcinogenesis can be viewed as a disease of development because it involes aberrations of the processes that underlie cell division, differentiation and morphogenesis</li>
+<li>once it was thought that carcinogenesis and metastasis were caused by cells that had acquired mutations enabling them to proliferate independent of the enviornment.</li>
+<li>but it turns out that this is not the complete explanation</li>
+<li>cancer cells can actuallt modify their environment, turning it into a cancer-promoting niche</li>
+<li>this means the progression of many cancers depends on reciprocal interactions between hte cancer cells and the supporting cells of their tissue environment</li>
+<li><p>Indeed, carcinogenesis appears to recapitulate steps of normal development, including the formation of a niche in which to proliferate, using the same or closely related signalling pathways</p></li>
+<li>Defects in cell-cell conmmunication
+<ul>
+<li>studies have shown that tumours can be cuased by altering hte structure of the surrounding tissue, and that these tumors can be suppressed by restoring an appropriate tissue envionment</li>
+<li>althogh 80% human tumors are from epithelial cells, the cells that carcinogens act on are often not the epithelial cells themselves, but the mesenchymal stromal cells that surround and sustain the epithelia</li>
+<li>there was a study in which normal and carcinogen-treated epithelia and mesenchyme in rat mammary glands are <strong>recombined</strong>, and it turns out that, tumor growth occurred not in carcinogen-treated epithelia, but in epithelia placed in combination with carcinogen-treated mesenchyme</li>
+<li>in this case, the mesenchyme fails to give instructions to the epithelia to form normals structures, and epithelial cells exhibited a loose control of cell proliferation</li>
+</ul></li>
+<li>Defects in paracrine pathways
+<ul>
+<li>Several key signaling pathways involved in embryogenesis, such as Hedgehog, Notch and Wnt, also have crucial roles in carcinogenesis when improperly activated in adults through sporadic mutatiions or other mechanisms</li>
+<li>many tumors, secrete the paracrine signalling factor Shh, which can act in two ways</li>
+<li><strong>the same chemicals that can cause teratogenesis by blocking a pathway in embryonic development may be useful in blocking the activation of cancer cells</strong> (cancer stem cells, as I will describe next)</li>
+<li>Cyclopamine and other antagonists of the Shh pathway, for instance, appear to be useful in preventing hte generation and proliferation of meedulloblastoma stem cells</li>
+</ul></li>
+<li>Cancer stem cells
+<ul>
+<li>an aspect of viewing cancers as diseases of development is that the properties of tumors may emerge because of a population of cells that are analogous to adult stem cells</li>
+<li>this is shown in studies on rat intestinal adenomas</li>
+<li>the lumen of the mice intestine is made up of villi and crypts</li>
+<li>at the bottom of the crypts there reside two important cells, Lrg5+ cells and Paneth cells, Lgr5+ is the stem cell and Paneth cell is the</li>
+<li>lineage tracing revealed that
+<ul>
+<li>the stem cells of rat intestinal adenomas also expresses Lgr5 and has the same interact with P cell as normal stem cells do</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Gilbert-2016">
+<p>Gilbert, Scott F., and Michael J. F. Barresi. 2016. <em>Developmental Biology</em>. 11th ed. Sinauer Associates.</p>
+</div>
+<div id="ref-Slack-2018">
+<p>Slack, Jonathan M. W. 2018. <em>Essential Developmental Biology</em>. 3rd Ser. WIley-Blackwell.</p>
+</div>
+<div id="ref-Song-2011">
+<p>Song, Wen AND Wei, Zhou AND Yue. 2011. “Sonic Hedgehog Pathway Is Essential for Maintenance of Cancer Stem-Like Cells in Human Gastric Cancer.” <em>PLOS ONE</em> 6 (3). Public Library of Science: 1–13. <a href="https://doi.org/10.1371/journal.pone.0017687">https://doi.org/10.1371/journal.pone.0017687</a>.</p>
+</div>
+<div id="ref-Takeo-2018">
+<p>Takeo, Makoto, and Takashi Tsuji. 2018. “Organ Regeneration Based on Developmental Biology: Past and Future.” <em>Current Opinion in Genetics &amp; Development</em> 52: 42–47. <a href="https://doi.org/https://doi.org/10.1016/j.gde.2018.05.008">https://doi.org/https://doi.org/10.1016/j.gde.2018.05.008</a>.</p>
+</div>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../tutorial/bacterial-cell-division.html" class="archive-item-link">
+                Bacterial Cell Division 
+              </a>
+              <span class="archive-item-date">
+                2020-02-08
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  discussing both Gram positive and negative bacteria with different morphologies, how they divide and chose examples of antibiotics, comparing their different effects
+<hr>
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#preparation-for-cell-division"><span class="toc-section-number">2</span> Preparation for Cell Division</a><ul>
+<li><a href="#chromosome-replication"><span class="toc-section-number">2.1</span> Chromosome Replication</a></li>
+<li><a href="#segregation"><span class="toc-section-number">2.2</span> Chromosome Segregation</a></li>
+</ul></li>
+<li><a href="#ftsz-and-the-z-ring"><span class="toc-section-number">3</span> FtsZ and the Z-ring</a><ul>
+<li><a href="#z-ring-placement"><span class="toc-section-number">3.1</span> Z-ring Placement</a><ul>
+<li><a href="#the-min-system"><span class="toc-section-number">3.1.1</span> The Min system</a></li>
+<li><a href="#nuclear-occlusion"><span class="toc-section-number">3.1.2</span> Nuclear Occlusion</a></li>
+</ul></li>
+<li><a href="#other-key-proteins-in-the-divisome"><span class="toc-section-number">3.2</span> Other Key Proteins in the Divisome</a><ul>
+<li><a href="#zipa-and-ftsa"><span class="toc-section-number">3.2.1</span> ZipA and FtsA</a></li>
+<li><a href="#downstream-proteins-recruited-by-the-ftsz-ring"><span class="toc-section-number">3.2.2</span> Downstream Proteins Recruited by the FtsZ Ring</a></li>
+<li><a href="#ftsn"><span class="toc-section-number">3.2.3</span> FtsN</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#alternative-strategies-for-bacterial-cell-division"><span class="toc-section-number">4</span> Alternative Strategies for Bacterial Cell Division</a><ul>
+<li><a href="#alternative-strategies-of-binary-division"><span class="toc-section-number">4.1</span> Alternative strategies of Binary Division</a><ul>
+<li><a href="#caulobacter-crescentus"><span class="toc-section-number">4.1.1</span> <em>Caulobacter crescentus</em></a></li>
+<li><a href="#campylobacter-jejuni-and-magnetotactic-bacterium"><span class="toc-section-number">4.1.2</span> <em>Campylobacter jejuni</em> and Magnetotactic Bacterium</a></li>
+<li><a href="#agrobacterium-tumefaciens"><span class="toc-section-number">4.1.3</span> <em>Agrobacterium Tumefaciens</em></a></li>
+</ul></li>
+<li><a href="#positive-regulation-in-myxococcus-xanthus"><span class="toc-section-number">4.2</span> Positive Regulation in <em>Myxococcus xanthus</em></a></li>
+<li><a href="#cell-division-without-ftsz"><span class="toc-section-number">4.3</span> Cell Division without FtsZ</a></li>
+</ul></li>
+<li><a href="#concluding-remarks"><span class="toc-section-number">5</span> Concluding Remarks</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>The modes of bacterial cell division vary, but the most common one is binary fission <span class="citation">(Stahl 2019)</span>, and its mechanism, especially in rod-shaped model organisms <em>Escherichia coli</em> and <em>Bacillus subtilis</em>, has been studied extensively. Despite the characterisation of most proteins required for divisome, their coordination at the molecular detail remain largely unclear <span class="citation">(Tsang and Bernhardt 2015)</span>. The question of how bacteria divide is further complicated by variations in proteins involved, and even in the physical nature, among different bacterial species <span class="citation">(Eswara and Ramamurthi 2017)</span></p>
+<p>This essay introduces FtsZ as a highly conserved protein involved in septum formation and its regulation in model organsisms, and gives examples on diviations from these rules that mainly comes from studies on nonmodel organisms.</p>
+</div>
+<div id="preparation-for-cell-division" class="section level1">
+<h1><span class="header-section-number">2</span> Preparation for Cell Division</h1>
+<p>The chromosome must be replicated once and only once prior to cell devision, and it must be ensured that each daughter cell receives one copy of the chromosome.</p>
+<div id="chromosome-replication" class="section level2">
+<h2><span class="header-section-number">2.1</span> Chromosome Replication</h2>
+<p>Chromosome replication is principally regulated by DnaA in <em>E. coli</em>. DnaA initiates replication by binding its active, GTP-bound form (DnaA-ATP) to <em>OriC</em>. Its inactivation upon initiation of replication ensures one round of replication per cell cycle<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Such mechanisms include competition for <em>OriC</em> binding by SeqA, repression of <em>dnaA</em> expression (also by SeqA), and inactivation of DnaA-ATP by the ATPase HdaA.</p>
+</div>
+<div id="segregation" class="section level2">
+<h2><span class="header-section-number">2.2</span> Chromosome Segregation</h2>
+<p>Segregation of chromosomes and plasmids is achieved while they are being replicated by using the Par system in some bacteria such as the budding bacteria <em>Caulobacter crescentus</em>, as illustrated in Figure <a href="#fig:cc-par">2.1</a>. popZ proteins anchors the chromosome at its <em>parS</em> sequence (near <em>oriC</em>) to the old pole, which is mediated by parB. As replication starts, more parB binds to <em>parS</em> sequence of the newly synthesised chromosome, and is pulled to the new cell pole by the ATPase activity of ParA.</p>
+<div class="figure"><span id="fig:cc-par"></span>
+<img src="../img/cc-par.jpg" alt="The Par system segregates replicated chromosomes in Caulobacter crescentus." width="100%" />
+<p class="caption">
+Figure 2.1: The Par system segregates replicated chromosomes in Caulobacter crescentus.
+</p>
+</div>
+<p>The mechanism of chromosome segregation in <em>E. coli</em>, which lacks Par, is not well characterised.</p>
+</div>
+</div>
+<div id="ftsz-and-the-z-ring" class="section level1">
+<h1><span class="header-section-number">3</span> FtsZ and the Z-ring</h1>
+<p>Central to almost all bactrial division is the FtsZ protein. FtsZ is a homolog of tubulin found in most bacteria and some archaea. Like tubulin, FtsZ is a GTPase and can polymerise into filaments. During cell division, FtsZ filaments assemble into a ring (Z-ring) at the site where the septum forms. The FtsZ ring then recruits other proteins of the divisome, allowing division to proceed. The Z-ring contracts as the bacterium divides, forming an invagination which finally divides the bacterium in two.</p>
+<p>The GTPase activity accounts for the rapid turnover dynamics of the FtsZ filaments that form the Z-ring. It has also been proposed that FtsZ’s GTPase activity energises the constriction of the ring and the invagination of the cell membrane and the cell wall, but this notion is challenged by the observation of mutants that are severely impoaired in GTP hydrolysis still capable of dividing, and mathematical modelling that shows force generation could be achieved independenly of GTPase activity, but instead with hydrolysis <span class="citation">(Adams and Errington 2009)</span>.</p>
+<div id="z-ring-placement" class="section level2">
+<h2><span class="header-section-number">3.1</span> Z-ring Placement</h2>
+<p>The site of cell division in rod-shaped bacteria is usually at the centre of the cell, which is dependent on the corrent placement of the Z-ring. As shown in Figure <a href="#fig:no-min">3.1</a>, this is typically achieved using two mechanisms, nucleoid occlusion (NO), and the Min system, which are well characterised in <em>E. coli</em> and <em>B. subtilis</em>. It should be noted, however, that there is increasing evidence showing Z-ring positioning may be determined by other factors, and Min and NO systems may primarily function to ensure the efficient utilisation of this site. Such evidence include the observation of precise midcell Z-ring formation in Min- and Noc-null <em>B. subtilis</em> by <span class="citation">Rodrigues and Harry (2012)</span>.</p>
+<div id="the-min-system" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> The Min system</h3>
+<p>The MinC, MinD and MinE proteins interact to prevent Z-ring formation at the poles <span class="citation">(Ghosal et al. 2014; Ramm, Heermann, and Schwille 2019)</span>. MinC is the effector of the system owing to its inhibitory effect on FtsZ ring assembly. MinD is an ATPase which recruit MinC to the membrane. MinCD complex together inhibit Z-ring formation. MinE is an ATPase-activating protein which has an anti-MinCD domain and a topological specificity domain (which confines its anti-MinCD activity only at midcell). The three proteins MinCDE form an oscillation cycle from pole to pole (driven by MinDE), causing the time-averaged concentration of MinCD complexes to be lowest at the midcell, which favours Z-ring formation there. <em>B. subtilis</em> also has a Min system but it is not involved in the placement of the Z-ring.</p>
+</div>
+<div id="nuclear-occlusion" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Nuclear Occlusion</h3>
+<p>Nuclear occlusion prevents Z-ring formation atop of nucleoids. It is mediated by SlmA in <em>E. coli</em> and Noc in <em>B subtilis</em>. Neither are normally essential in their respective organisms, but both are synthetically lethal with mutatations of Min, due to chaotic FtsZ assembly.</p>
+<p>According to <span class="citation">Adams, Wu, and Errington (2015)</span>, Noc has a sequence-specific DNA-binding domain and a membrane-associating domain. Noc is thought to oligomerise using their two dimerisation domains, bind to DNA at specific sequences, and then insert into the inner leaflet of the cytoplasmic membrane.</p>
+<div class="figure"><span id="fig:no-min"></span>
+<img src="../img/no-min.jpg" alt="Negative regulation by nuclear occulation and the Min system ensures formation of the FtsZ ring in E coli." width="100%" />
+<p class="caption">
+Figure 3.1: Negative regulation by nuclear occulation and the Min system ensures formation of the FtsZ ring in E coli.
+</p>
+</div>
+</div>
+</div>
+<div id="other-key-proteins-in-the-divisome" class="section level2">
+<h2><span class="header-section-number">3.2</span> Other Key Proteins in the Divisome</h2>
+<p>A fully functional divisome requires a combination of proteins in addition to the FtsZ ring. Most of these proteins have close association with the Z ring. In <em>E. coli</em>, It was thought that the recruitment of these proteins appears to have a linear dependecy pathway which starts with FtsA/ZipA and ends with FtsN, but a recent review by <span class="citation">Du and Lutkenhaus (2017)</span> shows evidence for the noon-sequential assembly of the divisome.</p>
+<div id="zipa-and-ftsa" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> ZipA and FtsA</h3>
+<p>ZipA is acts to tether the FtsZ ring to the cytoplasmic membrane. It is not widely conserved outside of Gammaproteobacteria, and, in <em>E. coli</em>, its necessity in cell division is bypassed by a gain-of-function mutation in FtsA. FtsA, which is more widely conserved in bacteria, also anchors the Z ring to the membrane and coordinates its initial assembly <span class="citation">(Adams and Errington 2009)</span>.</p>
+<p>FtsA is related to actin, and, like actin, it binds ATP and is found to reversibly polymerise into corkscrew-like helices in <em>Streptococcus pneumoniae</em>. Its ATPase activity is reported in <em>B. subtilis</em> but not in <em>S. pneumoniae</em>. Mutagenesis studies suggest that nucleotide binding may be required for FtsA’s ability to interact with itself and with FtsZ, <span class="citation">(Pichoff and Lutkenhaus 2007)</span> but its exact role is unknown.</p>
+<p>FtsA differs from actin in that it is missing the 1B domain and it has an unrelated subdomain called 1C. The 1C domain is involved in recruiting downstream components of the divisome to the Z ring.</p>
+</div>
+<div id="downstream-proteins-recruited-by-the-ftsz-ring" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Downstream Proteins Recruited by the FtsZ Ring</h3>
+<p>Upon assembly of the FtsZ ring, other downstream proteins, notably those involved in peptidoglycan biosynthesis, are recruited to form the divisome.</p>
+<p>FtsI, also known as penicillin binding protein 3 (PBP3), is one such protein in <em>E. coli</em>. It is required specifically for peptidoglycan synthesis at the septum <span class="citation">(Chen and Beckwith 2001)</span>. Its recruitment is dependent on FtsK, which appears to be a bifunctional protein, with the C-terminal domain facilitating segregation of chromosome and the N-terminal domain carrying out a necessary, but undefined, function in septum development.</p>
+<p>A summary of the divisome components is shown in Figure <a href="#fig:ffts-components">3.2</a></p>
+<div class="figure"><span id="fig:ffts-components"></span>
+<img src="../img/ffts-components.png" alt="Components of the divisome." width="100%" />
+<p class="caption">
+Figure 3.2: Components of the divisome.
+</p>
+</div>
+</div>
+<div id="ftsn" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> FtsN</h3>
+<p>In <em>E. coli</em>, FtsN is the last component of recruited to the divisome. Once it arrives at the Z ring, the divisome begin to actively synthesising septal peptidoglycan to divide the cell. It has been suggest that FtsA-FtsN interaction may trigger cell constriction in a positive feedback loop <span class="citation">(Tsang and Bernhardt 2015)</span>, but the exact mechanism remain elusive.</p>
+</div>
+</div>
+</div>
+<div id="alternative-strategies-for-bacterial-cell-division" class="section level1">
+<h1><span class="header-section-number">4</span> Alternative Strategies for Bacterial Cell Division</h1>
+<div id="alternative-strategies-of-binary-division" class="section level2">
+<h2><span class="header-section-number">4.1</span> Alternative strategies of Binary Division</h2>
+<p>Binary division means dividing a bacterial cell into daughter cells with equal volume and physiology, which requires the FtsZ ring to form at the midcell. Apart form the NO and Min systems described above, there are other strategies to achieve this.</p>
+<div class="figure"><span id="fig:binary-division-alternative"></span>
+<img src="../img/binary-division-alternative.jpg" alt="Alternative strategies of Binary Division" width="100%" />
+<p class="caption">
+Figure 4.1: Alternative strategies of Binary Division
+</p>
+</div>
+<div id="caulobacter-crescentus" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> <em>Caulobacter crescentus</em></h3>
+<p>The budding bacteria <em>C. crescentus</em> uses the MipZ gradient to regulate FtsZ ring placement (Figure <a href="#fig:binary-division-alternative">4.1</a> A). MipZ is translocated from the old pole to the new pole during chromosome replication and segregation, by directly interacting with the ParB-<em>parS</em> complex (see section <a href="#segregation">2.2</a>). MipZ displaces FtsZ from polar regions, thus permitting ring formation only at midcell.</p>
+</div>
+<div id="campylobacter-jejuni-and-magnetotactic-bacterium" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> <em>Campylobacter jejuni</em> and Magnetotactic Bacterium</h3>
+<p>The amphitrichous<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> bacteria <em>Campylobacter jejuni</em> uses the ATPase FlhG, which is a MinD/ParA homologue and a known regulator of flagellar number, to locate the Z ring placement, by expelling FtsZ from the two longitudinal poles where flagella grow.</p>
+<p>By constrast, in the monotrichohus magnetotactic bacterium of the <em>Gammaproteobacteria</em> class, flagellum formation in the daughter cell is dictated by the septum (Figure <a href="#fig:binary-division-alternative">4.1</a> B and C).</p>
+</div>
+<div id="agrobacterium-tumefaciens" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> <em>Agrobacterium Tumefaciens</em></h3>
+<p>Most bacteria that exhibit binary division elongate their cells from the middle or at several locations perpenticular to the long axis (e.g. in <em>E. coli</em>, which is mediated by MreB). However, <em>Agrobacterium Tumefaciens</em>, which elongates unidirectionally, can still achhive binary division. As shown in Figure <a href="#fig:binary-division-alternative">4.1</a> D, after division, FtsA and FtsZ stay at the newly formed growth pole and facilitate polar growth. Upon elongation, they relocate to the midcell to initiate division.</p>
+</div>
+</div>
+<div id="positive-regulation-in-myxococcus-xanthus" class="section level2">
+<h2><span class="header-section-number">4.2</span> Positive Regulation in <em>Myxococcus xanthus</em></h2>
+<p>The NO and Min systems described above are both negative regulatory mechanisms, where regions of low activity of relevant proteins allows for foramtion of FtsZ ring. There is evidence in some nonmodel organisms of positive regulation, where FtsZ ring formation is promoted by presence of certain proteins. This is exemplified by the deltaproteobacterium <em>M. xanthus</em>, in which the ParA-like protein PomZ localises to midcell in an FtsZ-independent manner before FtsZ ring formation.</p>
+</div>
+<div id="cell-division-without-ftsz" class="section level2">
+<h2><span class="header-section-number">4.3</span> Cell Division without FtsZ</h2>
+<p>In some species of Mycoplasma (which are well known for their small genomes), the FtsZ homologue is absent <span class="citation">(Lluch-Senar, Querol, and Piñol 2010)</span>. Although the cell division mechanisms in these organisms remain elusive, they lead to reassessments on the role of FtsZ in FtsZ-dependent cell division. For example, as reviewed by <span class="citation">Xiao and Goley (2016)</span>, it is likely that the main driving force for membrane invagination and constriction is not directly provided by FtsZ, but by the peptidoglycan synthesis.</p>
+</div>
+</div>
+<div id="concluding-remarks" class="section level1">
+<h1><span class="header-section-number">5</span> Concluding Remarks</h1>
+<p>There is an extensive repertoire of cell division strategies based on distinct families of proteins in the domain of bacteria. The lack of universal conservation and the ease of horizontal gene transfer among bacteria make cell division a suboptimal target of antibiotics. Indeed, most available antibiotics related to bacterial cell division target cell wall synthesis, and there is little progress made on developing drugs that interferes with other components of bacterial divisome.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Adams-2009">
+<p>Adams, David W., and Jeff Errington. 2009. “Bacterial Cell Division: Assembly, Maintenance and Disassembly of the Z Ring.” <em>Nature Reviews Microbiology</em> 7 (9): 642–53. <a href="https://doi.org/10.1038/nrmicro2198">https://doi.org/10.1038/nrmicro2198</a>.</p>
+</div>
+<div id="ref-Adams-2015">
+<p>Adams, David William, Ling Juan Wu, and Jeff Errington. 2015. “Nucleoid Occlusion Protein Noc Recruits Dna to the Bacterial Cell Membrane.” <em>EMBO J</em> 34 (4): 491–501. <a href="https://doi.org/10.15252/embj.201490177">https://doi.org/10.15252/embj.201490177</a>.</p>
+</div>
+<div id="ref-Alberts-2014">
+<p>Alberts, Bruce, Alexander Johnson, Julian Lewis, David Morgan, Martin Raff, Keith Roberts, and Peter Walter. 2014. <em>Molecular Biology of the Cell</em>. Book. 6th ed. Garland Science.</p>
+</div>
+<div id="ref-Chen-2001">
+<p>Chen, Joseph C., and Jon Beckwith. 2001. “FtsQ, Ftsl and Ftsi Require Ftsk, but Not Ftsn, for Co-Localization with Ftsz During Escherichia Coli Cell Division.” <em>Molecular Microbiology</em> 42 (2): 395–413. <a href="https://doi.org/10.1046/j.1365-2958.2001.02640.x">https://doi.org/10.1046/j.1365-2958.2001.02640.x</a>.</p>
+</div>
+<div id="ref-Du-2017">
+<p>Du, Shishen, and Joe Lutkenhaus. 2017. “Assembly and Activation of the Escherichia Coli Divisome.” <em>Molecular Microbiology</em> 105 (2): 177–87. <a href="https://doi.org/10.1111/mmi.13696">https://doi.org/10.1111/mmi.13696</a>.</p>
+</div>
+<div id="ref-Eswara-2017">
+<p>Eswara, Prahathees J., and Kumaran S. Ramamurthi. 2017. “Bacterial Cell Division: Nonmodels Poised to Take the Spotlight.” <em>Annual Review of Microbiology</em> 71 (1): 393–411. <a href="https://doi.org/10.1146/annurev-micro-102215-095657">https://doi.org/10.1146/annurev-micro-102215-095657</a>.</p>
+</div>
+<div id="ref-Ghosal-2014">
+<p>Ghosal, Debnath, Daniel Trambaiolo, Linda A. Amos, and Jan Löwe. 2014. “MinCD Cell Division Proteins Form Alternating Copolymeric Cytomotive Filaments.” <em>Nature Communications</em> 5 (1): 5341. <a href="https://doi.org/10.1038/ncomms6341">https://doi.org/10.1038/ncomms6341</a>.</p>
+</div>
+<div id="ref-Lluch-Senar-2010">
+<p>Lluch-Senar, Maria, Enrique Querol, and Jaume Piñol. 2010. “Cell Division in a Minimal Bacterium in the Absence of ftsZ.” <em>Molecular Microbiology</em> 78 (2): 278–89. <a href="https://doi.org/10.1111/j.1365-2958.2010.07306.x">https://doi.org/10.1111/j.1365-2958.2010.07306.x</a>.</p>
+</div>
+<div id="ref-Pichoff-2007">
+<p>Pichoff, Sebastien, and Joe Lutkenhaus. 2007. “Identification of a Region of Ftsa Required for Interaction with Ftsz.” <em>Molecular Microbiology</em> 64 (4): 1129–38. <a href="https://doi.org/10.1111/j.1365-2958.2007.05735.x">https://doi.org/10.1111/j.1365-2958.2007.05735.x</a>.</p>
+</div>
+<div id="ref-Ramm-2019">
+<p>Ramm, Beatrice, Tamara Heermann, and Petra Schwille. 2019. “The E. Coli Mincde System in the Regulation of Protein Patterns and Gradients.” <em>Cellular and Molecular Life Sciences</em> 76 (21): 4245–73. <a href="https://doi.org/10.1007/s00018-019-03218-x">https://doi.org/10.1007/s00018-019-03218-x</a>.</p>
+</div>
+<div id="ref-Rodrigues-2012">
+<p>Rodrigues, Christopher D. A., and Elizabeth J. Harry. 2012. “The Min System and Nucleoid Occlusion Are Not Required for Identifying the Division Site in Bacillus Subtilis but Ensure Its Efficient Utilization.” <em>PLOS Genetics</em> 8 (3). Public Library of Science: 1–20. <a href="https://doi.org/10.1371/journal.pgen.1002561">https://doi.org/10.1371/journal.pgen.1002561</a>.</p>
+</div>
+<div id="ref-Stahl-2019a">
+<p>Stahl, Michael T Madigan; Kelly S Bender; Daniel Hezekiah Buckley; W Matthew Sattley; David Allan. 2019. “Molecular Biology of Microbial Growth.” In <em>Brock Biology of Microorganisms</em>, Fifteenth edition, Global edition. Pearson.</p>
+</div>
+<div id="ref-Tsang-2015">
+<p>Tsang, Mary-Jane, and Thomas G Bernhardt. 2015. “Guiding Divisome Assembly and Controlling Its Activity.” <em>Current Opinion in Microbiology</em> 24: 60–65. <a href="https://doi.org/https://doi.org/10.1016/j.mib.2015.01.002">https://doi.org/https://doi.org/10.1016/j.mib.2015.01.002</a>.</p>
+</div>
+<div id="ref-Xiao-2016">
+<p>Xiao, Jie, and Erin D Goley. 2016. “Redefining the Roles of the Ftsz-Ring in Bacterial Cytokinesis.” <em>Current Opinion in Microbiology</em> 34: 90–96. <a href="https://doi.org/https://doi.org/10.1016/j.mib.2016.08.008">https://doi.org/https://doi.org/10.1016/j.mib.2016.08.008</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Some fast-growing bacteria may afford multiple rounds of replication on a single chromosome, and this makes it possible for their division to outpace DNA replication.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>one flagellum at each pole<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../notes/molecular-cloning.html" class="archive-item-link">
+                Molecular Cloning 
+              </a>
+              <span class="archive-item-date">
+                2020-02-04
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<div id="about-the-frame" class="section level1">
+<h1>About the frame</h1>
+<p>Sometimes we want to use the start/stop codon in the vector for our protein production, especially when tag sequences need to be included. In these cases, we need to check our inserted GOI is in frame with the start/codon on the vector. Frame mismatch can be corrected by adding 1 or 2 random nucleotide(s) to the primer (forward primer to match vector start condon and reverse primer to match the stop codon) between the GOI sequence and the restriction site sequence.</p>
+<p>Some vectors have an N-terminal tag and stop codons in all three frames (e.g. <code>TGA C TGA C TGA</code>)</p>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../tutorial/mcb-toolbox.html" class="archive-item-link">
+                MCB Toolbox 
+              </a>
+              <span class="archive-item-date">
+                2020-01-23
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<p>For the second tutorial, I want you to try some proper molecular biology using online tools, just as we do every day in the lab. Try it out on your own first, though you may wish to discuss any issues you may be having with each other. Please bring files/printouts and if you have one, your laptop to the tutorial. You will find NCBI BLAST useful and various links within www.expasy.org (e.g. In proteomics section, Clustal, T-coffee, Translate, prot param etc). You may also like to download ApE or Snapgene viewer from the web but make sure you scan with e.g. Sophos before you open them. You can do full in silico cloning in ApE (but only in the expensive paid-for version of Snapgene) but Snapgene (even free viewer) offers much better visualization so you may want to use both but for different features. For structural productions, Swissprot is convenient, then for mutagenesis, move to Pymol or equivalent.</p>
+<pre><code>Mystery gene (lower case = non-coding, upper case = coding)
+
+GTATTTTGCGTCCATTTCGATCAAAAGACTATTTCTCATTTCCTCCCACGATTTTAGATAATAATATTATCTTATGTCATGCACAGATGATAAGTGATGATGACGATCTACCATCTACTCGCCCGGGATCTGTGAATGAGGAATTACCAGAAACCGAACCCGAAGATAATGATGAGTTGCCTGAAACAGAACCTGAAAGCGATTCCGATAAACCTACCGTAACCTCGAATAAAACAGAAAACCAAGTTGCTGATGAAGATTATGATTCATTCGACGATTTTGTGCCCAGTCAAACACACACAGCCTCCAAAATACCTGTAAAAAATAAACGAGCCAAAAAGTGCACTGTAGAATCTGATTCATCATCTTCGGATGATTCCGATCAAGGAGATGATTGTGAATTTATCCCAGCTTGTGATGAGACACAGGAAGTTCCGAAAATCAAAAGAGGATACACTCTGAGAACTCGAGCAAGTGTAAAGAACAAATGTGATGATTCATGGGATGATGGAATAGACGAAGAAGATGTCTCAAAAAGATCAGAAGACACGTTAAATGATTCATTTGTTGATCCTGAATTCATGGATTCTGTTCTAGATAATCAATTAACGATCAAAGGCAAAAAGCAATTTCTCGATGATGGAGAGTTTTTCACAGACCGGAATGTTCCTCAGATTGATGAAGCTACAAAAATGAAGTGGGCATCAATGACGTCACCTCCTCAAGAAGCTTTGAACGCATTGAACGAATTCTTCGGTCATAAAGGATTCCGAGAAAAGCAGTGGGATGTTGTCAGAAATGTTTTGGGAGGAAAAGACCAATTTGTTCTTATGTCCACTGGTTATGGTAAAAGTGTATGTTATCAGCTACCATCACTTCTTCTCAATTCGATGACTGTCGTGGTATCTCCATTAATTTCATTGATGAATGATCAAGTAACTACATTGGTTTCTAAAGGTATTGATGCAGTGAAACTAGATGGACATTCTACACAAATTGAATGGGATCAAGTTGCGAATAATATGCACCGAATTAGGTTCATCTACATGTCACCTGAAATGGTTACGAGCCAAAAGGGTTTGGAATTATTAACTTCTTGCCGAAAACATATCTCCCTCCTCGCTATTGATGAAGCTCATTGTGTTTCTCAATGGGGACACGACTTTCGAAACTCGTACAGGCATCTCGCAGAAATTAGAAACCGATCTGATCTATGCAATATTCCAATGATTGCTCTTACCGCTACTGCCACAGTTAGAGTTCGTGATGACGTCATTGCTAATTTAAGACTCCGCAAGCCATTAATCACAACTACGTCGTTTGATAGAAAGAATCTCTACATTTCTGTGCATTCTTCAAAGGACATGGCTGAAGATTTAGGATTATTCATGAAAACCGATGAAGTTAAAGGAAGACACTTTGGTGGACCTACTATTATTTATTGCCAAACGAAACAAATGGTCGATGATGTGAACTGTGTTTTGAGAAGAATCGGAGTTCGTTCTGCTCATTATCACGCAGGACTCACTAAAAATCAACGAGAAAAAGCACACACCGATTTTATGAGAGATAAGATTACAACAATCGTTGCGACAGTTGCATTTGGTATGGGAATTGACAAACCCGACGTTCGAAATGTGATTCATTACGGATGCCCGAACAATATCGAATCATATTATCAAGAAATCGGAAGAGCTGGTCGAGATGGATCTCCAAGTATTTGTCGTGTATTCTGGGCTCCGAAAGATTTGAATACTATAAAATTTAAACTTCGAAATTCGCAGCAAAAAGAAGAAGTAGTTGAAAATCTTACAATGATGCTAAGACAACTCGAGTTGGTTCTGACAACCGTTGGATGTAGAAGATACCAACTTCTGAAGCACTTTGACCCATCATACGCGAAACCTCCAACTATGCAAGCTGATTGTTGTGATAGATGTACTGAAATGCTCAATGGAAATCAAGATTCATCATCCAGTATTGTTGATGTTACAACAGAATCGAAGTGGTTGTTTCAAGTTATTAACGAAATGTACAACGGGAAAACTGGTATCGGAAAACCAATCGAATTTCTGAGGGGATCGAGTAAAGAAGACTGGCGAATCAAGACCACATCTCAACAAAAATTGTTTGGAATTGGAAAACATATTCCTGATAAATGGTGGAAAGCACTTGCAGCATCACTTCGAATTGCTGGTTATCTTGGAGAAGTTAGGCTGATGCAAATGAAATTTGGAAGTTGTATCACTTTGTCCGAACTCGGGGAACGATGGCTTTTGACTGGAAAAGAGATGAAAATCGATGCGACACCGATTTTATTGCAAGGGAAGAAAGAAAAAGCCGCACCTTCAACTGTCCCCGGAGCTTCAAGATCTCAGTCAACTAAATCAAGTACAGAGATTCCAACCAAGATTCTCGGAGCGAATAAGATTCGTGAATACGAGCCTGCAAATGAAAACGAGCAGCTGATGAACTTGAAAAAGCAAGAAGTCACTGGTCTTCCAGAGAAGATTGATCAACTGCGCTCTCGTCTTGACGACATTCGTGTAGGAATTGCAAACATGCATGAAGTAGCACCATTCCAAATTGTATCGAATACTGTTCTTGATTGTTTTGCCAACTTGAGACCTACCTCAGCCTCGAATCTCGAAATGATTGATGGAATGTCGGCTCAGCAGAAATCTAGATACGGAAAACGATTTGTCGATTGTGTTGTACAATTTTCAAAGGAAACTGGCATTGCAACAAACGTCAATGCCAACGATATGATACCCCCTGAACTTATTTCAAAAATGCAGAAAGTTCTCTCGGATGCGGTGAGAAGAGTATACACAGAGCATCTTATTTCGAGATCCACTGCGAAAGAAGTGGCAACTGCTCGAGGAATTAGTGAGGGTACTGTATATTCATATCTCGCGATGGCGGTAGAAAAAGGATTACCTCTTCACTTAGACAAGTTAAATGTCTCCAGAAAGAATATTGCAATGGCTCTAAATGCAGTTAGAGTACATTTAGGATCAAATGTTGCCGTACTGACACCATGGGTTGAAGCTATGGGAGTCGTACCTGATTTTAATCAGTTGAAATTGATCCGGGCAATTCTTATTTACGAATATGGATTGGATACGAGTGAGAACCAAGAGAAGCCAGACATCCAATCTATGCCGTCCACTTCAAATCCATCCACCATCAAAACAGTTCCATCAACACCTTCATCCTCTCTCAGAGCTCCTCCATTGAAGAAATTCAAACTTTAAATTTCTTATATTTTTTTTAATCTGAATATCATAACTATACGGTCTCTTATTTTCAATCTCATCCCTGTCTATATGAATGCTGGTTATTCGATTTTCACTTATGAATTTTTAAAAACACTT</code></pre>
+<pre><code>pIVEX2.3d Vector Sequence
+
+TCGCGCGTTTCGGTGATGACGGTGAAAACCTCTGACACATGCAGCTCCCGGAGACGGTCACAGCTTGTCTGTAAGCGGATGCCGGGAGCAGACAAGCCCGTCAGGGCGCGTCAGCGGGTGTTGGCGGGTGTCGGGGCTGGCTTAACTATGCGGCATCAGAGCAGATTGTACTGAGAGTGCACCATATATGCGGTGTGAAATACCGCACAGATGCGTAAGGAGAAAATACCGCATCAGGCGCCATTCGCCATTCAGGCTGCGCAACTGTTGGGAAGGGCGATCGGTGCGGGCCTCTTCGCTATTACGCCAGCTGGCGAAAGGGGGATGTGCTGCAAGGCGATTAAGTTGGGTAACGCCAGGGTTTTCCCAGTCACGACGTTGTAAAACGACGGCCAGTGCCAAGCTTGCATGCAAGGAGATGGCGCCCAACAGTCCCCCGGCCACGGGGCCTGCCACCATACCCACGCCGAAACAAGCGCTCATGAGCCCGAAGTGGCGAGCCCGATCTTCCCCATCGGTGATGTCGGCGATATAGGCGCCAGCAACCGCACCTGTGGCGCCGGTGATGCCGGCCACGATGCGTCCGGCGTAGAGGATCGAGATCTCGATCCCGCGAAATTAATACGACTCACTATAGGGAGACCACAACGGTTTCCCTCTAGAAATAATTTTGTTTAACTTTAAGAAGGAGATATACCATGGCACATATGAGCGGCCGCGTCGACTCGAGCGAGCTCCCGGGGGGGGTTCTCATCATCATCATCATCATTAATAAAAGGGCGAATTCCAGCACACTGGCGGCCGTTACTAGTGGATCCGGCTGCTAACAAAGCCCGAAAGGAAGCTGAGTTGGCTGCTGCCACCGCTGAGCAATAACTAGCATAACCCCTTGGGGCCTCTAAACGGGTCTTGAGGGGTTTTTTGCTGAAAGGAGGAACTATATCCGGATATCCACAGGACGGGTGTGGTCGCCATGATCGCGTAGTCGATAGTGGCTCCAAGTAGCGAAGCGAGCAGGACTGGGCGGCGGCCAAAGCGGTCGGACAGTGCTCCGAGAACGGGTGCGCATAGAAATTGCATCAACGCATATAGCGCTAGCAGCACGCCATAGTGACTGGCGATGCTGTCGGAATGGACGATATCCCGCAAGAGGCCCGGCAGTACCGGCATAACCAAGCCTATGCCTACAGCATCCAGGGTGACGGTGCCGAGGATGACGATGAGCGCATTGTTAGATTTCATACACGGTGCCTGACTGCGTTAGCAATTTAACTGTGATAAACTACCGCATTAAAGCTTATCGATGATAAGCTGTCAAACATGAGAATTCGTAATCATGTCATAGCTGTTTCCTGTGTGAAATTGTTATCCGCTCACAATTCCACACAACATACGAGCCGGAAGCATAAAGTGTAAAGCCTGGGGTGCCTAATGAGTGAGCTAACTCACATTAATTGCGTTGCGCTCACTGCCCGCTTTCCAGTCGGGAAACCTGTCGTGCCAGCTGCATTAATGAATCGGCCAACGCGCGGGGAGAGGCGGTTTGCGTATTGGGCGCTCTTCCGCTTCCTCGCTCACTGACTCGCTGCGCTCGGTCGTTCGGCTGCGGCGAGCGGTATCAGCTCACTCAAAGGCGGTAATACGGTTATCCACAGAATCAGGGGATAACGCAGGAAAGAACATGTGAGCAAAAGGCCAGCAAAAGGCCAGGAACCGTAAAAAGGCCGCGTTGCTGGCGTTTTTCCATAGGCTCCGCCCCCCTGACGAGCATCACAAAAATCGACGCTCAAGTCAGAGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGAAGCTCCCTCGTGCGCTCTCCTGTTCCGACCCTGCCGCTTACCGGATACCTGTCCGCCTTTCTCCCTTCGGGAAGCGTGGCGCTTTCTCATAGCTCACGCTGTAGGTATCTCAGTTCGGTGTAGGTCGTTCGCTCCAAGCTGGGCTGTGTGCACGAACCCCCCGTTCAGCCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGTAAGACACGACTTATCGCCACTGGCAGCAGCCACTGGTAACAGGATTAGCAGAGCGAGGTATGTAGGCGGTGCTACAGAGTTCTTGAAGTGGTGGCCTAACTACGGCTACACTAGAAGGACAGTATTTGGTATCTGCGCTCTGCTGAAGCCAGTTACCTTCGGAAAAAGAGTTGGTAGCTCTTGATCCGGCAAACAAACCACCGCTGGTAGCGGTGGTTTTTTTGTTTGCAAGCAGCAGATTACGCGCAGAAAAAAAGGATCTCAAGAAGATCCTTTGATCTTTTCTACGGGGTCTGACGCTCAGTGGAACGAAAACTCACGTTAAGGGATTTTGGTCATGAGATTATCAAAAAGGATCTTCACCTAGATCCTTTTAAATTAAAAATGAAGTTTTAAATCAATCTAAAGTATATATGAGTAAACTTGGTCTGACAGTTACCAATGCTTAATCAGTGAGGCACCTATCTCAGCGATCTGTCTATTTCGTTCATCCATAGTTGCCTGACTCCCCGTCGTGTAGATAACTACGATACGGGAGGGCTTACCATCTGGCCCCAGTGCTGCAATGATACCGCGAGACCCACGCTCACCGGCTCCAGATTTATCAGCAATAAACCAGCCAGCCGGAAGGGCCGAGCGCAGAAGTGGTCCTGCAACTTTATCCGCCTCCATCCAGTCTATTAATTGTTGCCGGGAAGCTAGAGTAAGTAGTTCGCCAGTTAATAGTTTGCGCAACGTTGTTGCCATTGCTACAGGCATCGTGGTGTCACGCTCGTCGTTTGGTATGGCTTCATTCAGCTCCGGTTCCCAACGATCAAGGCGAGTTACATGATCCCCCATGTTGTGCAAAAAAGCGGTTAGCTCCTTCGGTCCTCCGATCGTTGTCAGAAGTAAGTTGGCCGCAGTGTTATCACTCATGGTTATGGCAGCACTGCATAATTCTCTTACTGTCATGCCATCCGTAAGATGCTTTTCTGTGACTGGTGAGTACTCAACCAAGTCATTCTGAGAATAGTGTATGCGGCGACCGAGTTGCTCTTGCCCGGCGTCAATACGGGATAATACCGCGCCACATAGCAGAACTTTAAAAGTGCTCATCATTGGAAAACGTTCTTCGGGGCGAAAACTCTCAAGGATCTTACCGCTGTTGAGATCCAGTTCGATGTAACCCACTCGTGCACCCAACTGATCTTCAGCATCTTTTACTTTCACCAGCGTTTCTGGGTGAGCAAAAACAGGAAGGCAAAATGCCGCAAAAAAGGGAATAAGGGCGACACGGAAATGTTGAATACTCATACTCTTCCTTTTTCAATATTATTGAAGCATTTATCAGGGTTATTGTCTCATGAGCGGATACATATTTGAATGTATTTAGAAAAATAAACAAATAGGGGTTCCGCGCACATTTCCCCGAAAAGTGCCACCTGACGTCTAAGAAACCATTATTATCATGACATTAACCTATAAAAATAGGCGTATCACGAGGCCCTTTCGTC</code></pre>
+<ol style="list-style-type: decimal">
+<li>Use the information in the attached DNA file (mystery gene) to identify the encoded protein and the species.
+<ul>
+<li>Caenorhabditis elegans Probable Werner syndrome ATP-dependent helicase homolog 1 (wrn-1) (UniProt accession code: <a href="https://www.uniprot.org/uniprot/Q19546">Q19546</a>)</li>
+</ul></li>
+<li>Draw a schematic diagram of the protein, noting the number of amino acids, predicted Mw and pI of the encoded protein, and annotate on functional domains (e.g. in ppt).
+<ul>
+<li>1056 amino acids; MW = 118522.73 Da (average mass)/118447.63 Da (monoisotopic mass); pI = 6.08 (predicted using ExPASy <a href="https://web.expasy.org/compute_pi/">‘Compute pI/Mw tool’</a>)</li>
+<li><a href="https://swissmodel.expasy.org/repository/uniprot/Q19546">Automated homology modelling in the SWISS-MODEL Repository</a> uses 1oyy.1.A, 4cdg.1.A and 4cgz.1.A as templates to obtain models with global QMEANs of -3.35, -3.57 and -4.19, respectively</li>
+<li>Manual (interactive) modelling using 4q47.1.A (DrRecQ catalytic core (Dr = <em>Deinococcus radiodurans</em>)) achieved a better QMEAN of -3.09. The structure is shown in Fig. <a href="#fig:wrn-model">1</a> (highlighting functional domains) and in Fig. <a href="#fig:wrn-b-factor">2</a> (showing local quality (QMEAN) scores). The annotations on functional domains are based on <span class="citation">Chen et al. (2014)</span>.</li>
+<li>Update on 2 Feb: yet a higher QEMAN of -2.90 is achieved with 2wwy.1. 2wwy.1 is the structure of human RECQ-like helicase in complex with DNA substrate<span class="citation">(Pike et al. 2015)</span>. The homology model based on this is shown in Fig. <a href="#fig:recq-in-action">3</a>, and the PyMOL Session (<code>.pse</code>) file can be downloaded <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/model/tianyi-wrn.pse">here</a>.</li>
+<li>As shown in Fig. <a href="#fig:wrn-org-cox">4</a>, WRN is unique in the family of RecQ helicases in possessing an 3’-to-5’ exonuclease domain<span class="citation">(Cox and Mason 2013)</span>. In <em>C. elegans</em>, the exonuclease and the helicase are encoded in separate genes. The two experimental structures used for modelling (4q47.1.A (DrRecQ) and 2wwy.1 (human RECQ1)) and the query <em>C. elegans</em> wrn homolog all represent only the helicase domain and the RQC (WH) domain.</li>
+</ul></li>
+</ol>
+<div class="figure"><span id="fig:wrn-model"></span>
+<img src="../img/wrn-model.png" alt="A homology model of *C. elegans* wrn-1 based on DrRecQ catalytic core (PDB accession code: 4Q47). The N-terminal part contains the common core structure of the RecQ helicase family, which comprises two RecA-like domains, D1 and D2, each composed of a central β-sheet surrounded by α-helices. The conserved sequence motifs at the interface of D1 and D2 are responsible for ATP binding and hydrolysis. The following Zn-binding domain stabilizes the protein structure. The C-terminus consists of a WH domain (a.k.a RQC domain), which directly participates in DNA binding and base pair separation. [@Chen-2014]" width="100%" />
+<p class="caption">
+Figure 1: A homology model of <em>C. elegans</em> wrn-1 based on DrRecQ catalytic core (PDB accession code: 4Q47). The N-terminal part contains the common core structure of the RecQ helicase family, which comprises two RecA-like domains, D1 and D2, each composed of a central β-sheet surrounded by α-helices. The conserved sequence motifs at the interface of D1 and D2 are responsible for ATP binding and hydrolysis. The following Zn-binding domain stabilizes the protein structure. The C-terminus consists of a WH domain (a.k.a RQC domain), which directly participates in DNA binding and base pair separation. <span class="citation">(Chen et al. 2014)</span>
+</p>
+</div>
+<div class="figure"><span id="fig:wrn-b-factor"></span>
+<img src="../img/wrn-b-factor.png" alt="The same homology model, showing local QMEAN scores (b-factor). Compared to green and thin regions, red and thick regions have local geometrical properties deviating further from those of experimentally determined structures. The Zn-binding domain and WH domain are more consistent with experimental structures than the two RecA-like domains." width="100%" />
+<p class="caption">
+Figure 2: The same homology model, showing local QMEAN scores (b-factor). Compared to green and thin regions, red and thick regions have local geometrical properties deviating further from those of experimentally determined structures. The Zn-binding domain and WH domain are more consistent with experimental structures than the two RecA-like domains.
+</p>
+</div>
+<div class="figure"><span id="fig:recq-in-action"></span>
+<img src="../img/recq-in-action.png" alt="WRN catalytic core (RECQ) in action. This structure is based on the structure of a dimer of human RECQ1 helicase in complex with tailed duplux DNA solved by @Pike-2015. The monomer on the bottom shows the b-factor (local QMEAN) of the homology model with C. elegans wrn-1, where red indicates high and green indicates low scores. The monomer on the top shows the subunits of WRN catalytic core (RECQ), where D1, D2, Zn-binding, and WH (RQC) domains are coloured blue, red, yellow and green, respectively, similar to Fig. 1. DNA is coloured cyan. Ligands (2 zinc ions, 3 sulfate ions and 2 ethanediol molecules) are not removed. " width="100%" />
+<p class="caption">
+Figure 3: WRN catalytic core (RECQ) in action. This structure is based on the structure of a dimer of human RECQ1 helicase in complex with tailed duplux DNA solved by <span class="citation">Pike et al. (2015)</span>. The monomer on the bottom shows the b-factor (local QMEAN) of the homology model with C. elegans wrn-1, where red indicates high and green indicates low scores. The monomer on the top shows the subunits of WRN catalytic core (RECQ), where D1, D2, Zn-binding, and WH (RQC) domains are coloured blue, red, yellow and green, respectively, similar to Fig. 1. DNA is coloured cyan. Ligands (2 zinc ions, 3 sulfate ions and 2 ethanediol molecules) are not removed.
+</p>
+</div>
+<div class="figure"><span id="fig:wrn-org-cox"></span>
+<img src="../img/wrn-org-cox.png" alt="Domain organisation of human WRN and its homologs in *D. melanogaster* and *C. elegans*. Adapted from @Cox-2013." width="100%" />
+<p class="caption">
+Figure 4: Domain organisation of human WRN and its homologs in <em>D. melanogaster</em> and <em>C. elegans</em>. Adapted from <span class="citation">Cox and Mason (2013)</span>.
+</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Find homologues in human, Xenopus and mice and give the protein names (Uniprot should help)
+<ul>
+<li>Use <a href="https://www.uniprot.org/blast/">UniProt BLAST</a></li>
+<li>Query: Q19546 (UniProt ID)</li>
+<li>Relevant Results:
+<ul>
+<li>Werner syndrome ATP-dependent helicase (Homo sapiens) (<a href="https://www.uniprot.org/uniprot/Q14191">Q14191</a>; WRN_HUMAN)</li>
+<li>Werner syndrome ATP-dependent helicase homolog (Mus musculus (<a href="https://www.uniprot.org/uniprot/O09053">O09053</a>; WRN_MOUSE)</li>
+<li>Werner syndrome ATP-dependent helicase homolog (Xenopus laevis) (<a href="https://www.uniprot.org/uniprot/O93530">O93530</a>; WRN_XENLA)</li>
+</ul></li>
+</ul></li>
+<li>Show homology between your mystery protein and the human, mouse and frog homologues.
+<ul>
+<li>Sequences aligned using UniProt alignment tool (accessible via the BLAST result page)</li>
+<li>results displayed using SnapGene Viewer (<a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/clustal.pdf">view PDF</a>)</li>
+<li>UniProt uses the ‘clustalo’ program (MSA algorithm) to align</li>
+<li>I also used the ‘muscle’ program (MUltiple Sequence Comparison by Log-Expectation) in the command line to produce a different result, and standardised its output using BioPython for visualisation in SnapGene (<a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/muscle.pdf">view PDF</a>)</li>
+</ul>
+<pre class="bash"><code>$ cat ce.fasta hs.fasta mm.fasta xl.fasta | muscle -out muscle.fasta</code></pre>
+<pre class="python"><code>from Bio import AlignIO
+muscle = AlignIO.read(&#39;resources/wrn/muscle.fasta&#39;, &#39;fasta&#39;)
+AlignIO.write(muscle, &#39;muscle.aln&#39;, &#39;clustal&#39;)</code></pre>
+<p>With help of the <code>seqin</code> R package, the pairwise genetic differences between these 4 protein sequences can be calculated:</p>
+<pre class="r"><code>aln &lt;- seqinr::read.alignment(&#39;./resources/wrn/clustal.aln&#39;, &#39;clustal&#39;)
+alnDist &lt;- seqinr::dist.alignment(aln)
+alnDist</code></pre>
+<pre><code>##                     SP|Q19546|WRN_CAEEL SP|Q14191|WRN_HUMAN SP|O09053|WRN_MOUSE
+## SP|Q14191|WRN_HUMAN           0.5710006                                        
+## SP|O09053|WRN_MOUSE           0.5782777           0.3408993                    
+## SP|O93530|WRN_XENLA           0.5903942           0.4396192           0.4499939</code></pre>
+<p>These can be visulised by a phylogenetic tree produced by the <code>ape</code> package, as shown in Fig. <a href="#fig:phylo">5</a>.</p>
+<pre class="r"><code>mydist &lt;- seqinr::dist.alignment(aln)
+mytree &lt;- ape::nj(mydist)
+myrootedtree &lt;- root(mytree, &#39;SP|Q19546|WRN_CAEEL&#39;, resolve.root=TRUE)
+ape::plot.phylo(myrootedtree, type=&quot;p&quot;)</code></pre>
+<div class="figure"><span id="fig:phylo"></span>
+<img src="../tutorial/2020-01-23-mcb-toolbox_files/figure-html/phylo-1.png" alt="The phylogenetic relationship between the WRN homologs in 4 organisms" width="100%" />
+<p class="caption">
+Figure 5: The phylogenetic relationship between the WRN homologs in 4 organisms
+</p>
+</div></li>
+<li>Design PCR primers to amplify the coding region, incorporating suitable restriction enzyme sites in each primer so that you can clone easily into the vector pIVEX2.3d (though there are many online primer design sites, I find this is best done manually to get a feel for it, but these days I use SnapGene (viewer version is free….). Hint: we want to keep the start codon ATG so chose an enzyme that contains ATG in its recognition site for the forward primer.
+<ul>
+<li>I opened the <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/in-silico-cloning/original.dna">original sequence</a> with SnapGene. In the ‘Sequence’ view, I displayed translated amino acids with ‘Frame +1 only’ and thus located the stop codon (the start codon is obviously +1)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Then I used the ‘Enzymes’ view to obtain a list of noncutters. By comparing this list with the MCS of the <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/in-silico-cloning/vector.dna">piVEX2.3d</a>, I selected <em>Nde</em>I and <em>Sal</em>I as the RE sites to be used<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. The <em>Sal</em>I site is not in frame with the C-terminal His tag and stop codon, so I included an additional random nucleotide 3’ to the RE site. The stop codon is excluded from the reverse primer because it is provided in the vector.</li>
+<li>forward: <code>NN CAT ATGATAAGTGATGATGACGATCTACC</code>
+<ul>
+<li><code>CATATG</code> is <em>Nde</em>I restriction site. It ends with <code>ATG</code>, so adding <code>CAT</code> instead of <code>CATATG</code> to the 5’ suffices.</li>
+<li>31-mer; 39% GC (&gt;40% if <code>NN</code> = <code>GC</code>); 26 annealed bases; T<sub>m</sub> = 56ºC<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></li>
+</ul></li>
+<li>reverse: <code>NN GTCGAC N AAGTTTGAATTTCTTCAATGGAGGAGC</code>
+<ul>
+<li><code>GTCGAC</code> is <em>Sal</em>I restriction site</li>
+<li>36-mer; 43% GC; 28 annealed bases; T<sub>m</sub> = 58ºC</li>
+</ul></li>
+<li><em>In silico</em> PCR is done in SnapGene, and the resulting DNA can be downloaded <a href="https://tianyishi2001.github.io/ox/tutorial/resources/wrn/in-silico-cloning/Amplified1.dna">here</a></li>
+</ul></li>
+<li><em>In silico</em> clone this into the vector pIVEX2.3d (file attached - .dna is a snap gene format, docx is of course in word). Why might we want to use this vector?
+<ul>
+<li>This vector has a C-terminal 6-His tag which allows efficient purification by affinity chromatography</li>
+<li>The MCS is associated with the T7 promoter. T7 RNAP is highly processive, so consecutive expression is expected.</li>
+</ul></li>
+<li>Check that your new construct allows correct protein expression in frame with the hexahistidine tag of the vector (SnapGene is good for this, but you can also do it in a few more steps using ApE plus translation apps via Expasy)
+<ul>
+<li>Yes. (<a href="./resources/wrn/in-silico-cloning/Cloned1.dna.pdf">view result as PDF</a> or <a href="./resources/wrn/in-silico-cloning/Cloned1.dna">.dna file</a>)</li>
+<li>Serendipitously, the MCS has an ATG in frame with our insert and the His-tag/STOP codon, so translation will probably start more upstream than we expected, which will add 3 additional amino acid residues to the N-terminus of the product. This ATG was not in frame with the His-tag before insertion, and thus unspotted by SnapGene or me.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></li>
+</ul>
+<div class="figure"><span id="fig:clone-serendipity"></span>
+<img src="../img/clone-serendipity.png" alt="An additional in-frame start codon (red) upstream to the start codon of the insert (blue)." width="100%" />
+<p class="caption">
+Figure 6: An additional in-frame start codon (red) upstream to the start codon of the insert (blue).
+</p>
+</div></li>
+<li>Predict the protein fold of the new protein (eg Swissprot). Show the effect of predicted enzyme active site mutations on the structure (eg new file in swissport, but Pymol is good for this).
+<ul>
+<li>Swiss-Model shown in Q2.</li>
+</ul></li>
+</ol>
+<div id="bonus" class="section level3">
+<h3>Bonus: Tianyi’s Restriction Site Finder</h3>
+<p>See Fig. <a href="#fig:tianyi-re-001-1">7</a> and <a href="#fig:tianyi-re-001-2">8</a>.</p>
+<p>This tool takes in two sequences (plain text or FASTA or SnapGene <code>.dna</code> file), one representing the cloning site and the other representing the GOI, and finds the restriction sites inside the cloning site but not in the GOI, and label them with their positions in the cloning site and their commecial suppliers.</p>
+<p>The web interface is built upon the <a href="https://www.djangoproject.com">Django</a> framework and the data come from the <code>Restriction</code> module of <a href="https://biopython.org">BioPython</a>, which is (sort of) a wrapper around NEB’s <a href="http://rebase.neb.com/rebase/rebase.html">REBASE</a>.</p>
+<div class="figure"><span id="fig:tianyi-re-001-1"></span>
+<img src="../img/tianyi-re-001-1.png" alt="Restriction site finder by Tianyi. Query page." width="100%" />
+<p class="caption">
+Figure 7: Restriction site finder by Tianyi. Query page.
+</p>
+</div>
+<div class="figure"><span id="fig:tianyi-re-001-2"></span>
+<img src="../img/tianyi-re--001-2.png" alt="Restriction site finder by Tianyi. Result page." width="100%" />
+<p class="caption">
+Figure 8: Restriction site finder by Tianyi. Result page.
+</p>
+</div>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-Chen-2014">
+<p>Chen, Sheng-Chia, Chi-Hung Huang, Chia Shin Yang, Tzong-Der Way, Ming-Chung Chang, and Yeh Chen. 2014. “Crystal Structure of Deinococcus Radiodurans Recq Helicase Catalytic Core Domain: The Interdomain Flexibility.” <em>BioMed Research International</em> 2014. Hindawi.</p>
+</div>
+<div id="ref-Cox-2013">
+<p>Cox, Lynne S., and Penelope A. Mason. 2013. “The Role of Wrn Helicase/Exonuclease in Dna Replication.” In <em>The Mechanisms of Dna Replication</em>, edited by David Stuart. Rijeka: IntechOpen. <a href="https://doi.org/10.5772/51520">https://doi.org/10.5772/51520</a>.</p>
+</div>
+<div id="ref-Pike-2015">
+<p>Pike, Ashley C. W., Shivasankari Gomathinayagam, Paolo Swuec, Matteo Berti, Ying Zhang, Christina Schnecke, Francesca Marino, et al. 2015. “Human Recq1 Helicase-Driven Dna Unwinding, Annealing, and Branch Migration: Insights from Dna Complex Structures.” <em>Proceedings of the National Academy of Sciences</em> 112 (14). National Academy of Sciences: 4286–91. <a href="https://doi.org/10.1073/pnas.1417594112">https://doi.org/10.1073/pnas.1417594112</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Why does this sequence start with ATG but not end with a stop codon? Are the additional downstream nucleotides for the convinience of primer design (is it worthwhile to include additional upstream nucleotides)?<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Is there a more automatic way of choosing RE sites? I wish I could select the MCS sequence of the vector and the GOI sequence, and then the intersection between the cutting sites of the former and the noncutting sites of the latter is computed automatically. Is this functionality hidden somewhere in SnapGene, or is it available elsewhere? If not I’ll try to make it! (A prototype is shown in Fig. <a href="#fig:tianyi-re-001-1">7</a> and <a href="#fig:tianyi-re-001-2">8</a>)<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>When calculating %GC and T<sub>m</sub>, do we need to include the 5’ additional bases used for RE cutting/frame adjustment? In SnapGene it seems that these additional bases are included in the calculation of %GC but not T<sub>m</sub>. In practice, isn’t the annealing region the complete length of the primers for most DNA strands after a few rounds of synthesis? Do we need to increase the annealing temperature then?<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>It would be nice if it can highlight all ATGs regardless of the frame. I think additional in-frame ATGs can cause inclusion of unwanted aa residues and addtional out-of-frame ATGs can ruin the expression of GOI, especially in eukaryotes, because their ribosomes start translation at the first encountered ATG. It this correct?<a href="#fnref4" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html" class="archive-item-link">
+                Vectors Used in Bacterial and Eukaryotic Host Cells 
+              </a>
+              <span class="archive-item-date">
+                2020-01-20
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  What are the key similarities and differences between vectors used in bacterial and eukaryotic host cells? What can such vectors be used for?<hr>
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#the-structure-of-the-vectors"><span class="toc-section-number">1</span> The structure of the vectors</a><ul>
+<li><a href="#simple-plasmids"><span class="toc-section-number">1.1</span> Simple plasmids</a></li>
+<li><a href="#others"><span class="toc-section-number">1.2</span> Other bacterial vectors</a></li>
+<li><a href="#other-eukaryotic-vectors"><span class="toc-section-number">1.3</span> Other Eukaryotic Vectors</a></li>
+</ul></li>
+<li><a href="#vector-construction"><span class="toc-section-number">2</span> Vector Construction</a><ul>
+<li><a href="#simple-plasmids-for-both-bacteria-and-eukaryotes"><span class="toc-section-number">2.1</span> Simple plasmids (for both bacteria and eukaryotes)</a></li>
+<li><a href="#other-vectors-for-bacteria"><span class="toc-section-number">2.2</span> Other vectors for bacteria</a></li>
+<li><a href="#viral-vectors-for-eukaryotes"><span class="toc-section-number">2.3</span> Viral vectors for eukaryotes</a></li>
+</ul></li>
+<li><a href="#transformationtransfection"><span class="toc-section-number">3</span> Transformation/Transfection</a><ul>
+<li><a href="#transformation-of-bacterial-cells"><span class="toc-section-number">3.1</span> Transformation of bacterial cells</a><ul>
+<li><a href="#heat-shock-transformation"><span class="toc-section-number">3.1.1</span> Heat-shock transformation</a></li>
+<li><a href="#electroporation"><span class="toc-section-number">3.1.2</span> Electroporation</a></li>
+<li><a href="#other-methods"><span class="toc-section-number">3.1.3</span> Other methods</a></li>
+</ul></li>
+<li><a href="#transfection-of-eukaryotic-cells"><span class="toc-section-number">3.2</span> Transfection of Eukaryotic Cells</a><ul>
+<li><a href="#physical-methods"><span class="toc-section-number">3.2.1</span> Physical methods</a></li>
+<li><a href="#chemical-methods"><span class="toc-section-number">3.2.2</span> Chemical methods</a></li>
+<li><a href="#stab-tf"><span class="toc-section-number">3.2.3</span> Biological methods</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<p><strong>What are the key similarities and differences between vectors used in bacterial and eukaryotic host cells? What can such vectors be used for?</strong></p>
+<p>There are various ways by which genes can be introduced into a host organism and expressed. The choice of source genetic material, vector, and the method of transformation/transfection for a particular experiment are largely dependent on the physiology of the host organism, the size of the transgene, and the purpose of the study. However, it is useful to catagorise these strategies into bacteria-compatible ones and eukaryote-compatible ones.</p>
+<p>Most molecular cloning experiments begin with the production of a recombinant plasmid containing the gene of interest (GOI). For bacterial hosts, the recombinant plasmid is directly introduced into the cells. Bacteria naturally possess the machinary for replicating plasmids, which allows inheritance of the GOI in their progenies. Eukaryotic cells cannot reliably replicate plasmids, therefore introducing plasmids into eukaryotic cells normally results in <em>transient transfection</em>, which means the GOI is expressed in successfully tranfected cells but not in their progenies. In order to produce a <em>stable cell line</em>, the GOI must be integrated into the genome of the host cell (by homologous recombination), which is an extremely rare event in nature but can be induced artificially, for example by viral/bacterial infection or by designer nucleases such as TALEN, ZFN and CRISPR-Cas9. In order to be compatible with the different transformation/tranfection strategies and the physiology of the host cells, the molecular structure of the plasmids (or vectors of other kinds) vary.</p>
+<div id="the-structure-of-the-vectors" class="section level1">
+<h1><span class="header-section-number">1</span> The structure of the vectors</h1>
+<div id="simple-plasmids" class="section level2">
+<h2><span class="header-section-number">1.1</span> Simple plasmids</h2>
+<p>Plasmids are extrachromosomal self-replicating cytoplasmic (usually circular) DNA elements found in prokaryotes and, less commonly, in eukaryotes. They come in various forms, from simple plasmids used for direct transformation and fosmids for phage transduction. Plasmids optimised for expressing recombinant proteins share several features, as illustrated in Fig. <a href="#fig:pet">1.1</a> and <a href="#fig:pcmv-gfp-lc3b">1.2</a>:</p>
+<ul>
+<li>An origin of replication (<em>ori</em>), which allows it to be duplicated in bacterial cells. The type of origin of replication affects the copy number. Eukaryotic vectors generally carry two <em>ori</em>s, one bacterial (e.g. pUC <em>ori</em>) and one viral (e.g. SV40 <em>ori</em>). The bacterial <em>ori</em> is for amplifying the plasmid in bacteria before transfection, and the viral <em>ori</em> allows for episomal amplification of plasmids in the eukaryotic host.<br />
+</li>
+<li>A cloning site where the GOI is inserted. Typically it is crowded with restriction enzyme cutting sites (compatible with RE/ligase dependent cloning), but it can also be made compatible with other cloning methods, such as the LIC-compatible pBLIC-puro<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> plasmid developed by <span class="citation">Patel et al. (2012)</span>.</li>
+<li>A promoter and associated operator/enhancer. The promoter sequences for bacteria and eukaryotes are different (-35/-10 consensus sequence v.s. TATA box) For a bacterial vector, the promoter is usually controlled by an inducible operator so that protein expression is induced manually only when the optimal bacterial density is reached (e.g. <em>lac</em> operator induced by IPTG). In contrast, for a eukaryotic vector, the promoter is usually made as processive as possible, because the natural rate of transcription is generally low, and cell growth and division are not important (they do not serve to amplify the plasmid but to express the protein). For example, the pEF-BOS vector developed by <span class="citation">Mizushima and Nagata (1990)</span> contains the promoter of EF-1<span class="math inline">\(\alpha\)</span> (EF-1<span class="math inline">\(\alpha\)</span> is one of the most abundant proteins in eukaryotic cells, so its promoter is highly processive). Recently, promoters of viral origin (e.g. CMV, SV40) are gaining popularity.</li>
+<li>A transcription terminator/polyA signal. The mechanisms of transcription termination in bacteria and eukaryotes differ. In bacteria, the terminator sequence consists of a symmetric DNA sequence, and its transcribed product folds into a hairpin structure, releasing RNA polymerase (RNAP) from DNA. In eukaryotes, CstF and CPSF bound on RNAP C-terminal domain recognise 3’-end processing (polyadenylation) sequence (AAUAAA and GU-rich sequence) and induce cleavage and polyadenylation.</li>
+<li>A selectable marker. Usually an antibiotic resistance gene (bacteria and eukaryotes are sensitive to different antibiotics). Fluorophore genes are also common in eukaryotic vectors.</li>
+<li>Some plasmids possess a start codon and associated Shine-Dalgarno sequence (for bacteria) or Kozak sequence (for eukaryotes).</li>
+<li>Some plasmids have tag sequences near the start or end of the ORF for easy purification of the recombinant protein by affinity chromatography (e.g. hex-His, GST, HSV) and associated cleavage sequence (e.g. TEV) for easy removal of the tag.</li>
+</ul>
+<div class="figure"><span id="fig:pet"></span>
+<img src="../img/pETBlue.jpg" alt="The bacterial expression vector pETBlue-2" width="100%" />
+<p class="caption">
+Figure 1.1: The bacterial expression vector pETBlue-2
+</p>
+</div>
+<div class="figure"><span id="fig:pcmv-gfp-lc3b"></span>
+<img src="../img/pcmv-gfp-lc3b.jpg" alt="The eukaryotic expression vector pCMV-GFP-LC3" width="100%" />
+<p class="caption">
+Figure 1.2: The eukaryotic expression vector pCMV-GFP-LC3
+</p>
+</div>
+</div>
+<div id="others" class="section level2">
+<h2><span class="header-section-number">1.2</span> Other bacterial vectors</h2>
+<p>There are other forms of circular DNA, each with different disirable properties (larger insertion size, low copy number, phage-compatibility, etc.). They are sometimes called ‘high capacity vectors’ because their insertion sizes are greater than simple plasmids.</p>
+<p>Bacterial artificial chromosomes (BACs) contain some regions derived from a special plasmid called the F (fertility) factor: the region containing the origin of replication as well as genes that ensured its precise segregation during bacterial cell division. A great advantage of BAC vectors is the large insertion size (100-200 kb). But the very large insertion can be a problem, in that it cannot be manipulated by restriction enzymes. Instead, in vivo homologous recombination-based strategies are used to insert DNA fragments into BACs. (Fig. <a href="#fig:bac-mech">1.3</a>)</p>
+<div class="figure"><span id="fig:bac-mech"></span>
+<img src="../img/bac-mech.png" alt="Making a BAC" width="50%" />
+<p class="caption">
+Figure 1.3: Making a BAC
+</p>
+</div>
+<p>Fosmids are hybrids of <span class="math inline">\(\lambda\)</span> phage DNA and bacterial F plasmid DNA. Fosmids are packaged into <span class="math inline">\(\lambda\)</span> phage particles, which delivers them into bacterial cells. Due to the presence of the F plasmid origins of replications, fosmids are maintained at a very low copy number (normally single copy).</p>
+<p>Fig. <a href="#fig:plasmid-derivatives">1.4</a> is a schematic of 6 high capacity vectors <span class="citation">(Saraswathy and Ramalingam 2011)</span>.</p>
+<div class="figure"><span id="fig:plasmid-derivatives"></span>
+<img src="../img/plasmid-derivatives.png" alt="Schematic of 6 high capacity vectors." width="50%" />
+<p class="caption">
+Figure 1.4: Schematic of 6 high capacity vectors.
+</p>
+</div>
+</div>
+<div id="other-eukaryotic-vectors" class="section level2">
+<h2><span class="header-section-number">1.3</span> Other Eukaryotic Vectors</h2>
+<p>Yeast artificial chromosome (YAC) has a cloning capacity up to 3000 kbp. It is introduced into the yeast cells by electroporation, then it is maintained as a linear DNA-like chromosome. It is replicated along with other chromosomes in yeast and its copy number of one is maintained after cell divition.</p>
+<p>Some viruses (e.g. Adenovirus, Lentivirus and Baculovirus) and bacteria (e.g. <em>Agrobacterium tumefaciens</em>) are reliable vectors for stable transfection of eukaryotic cells (see section <a href="#stab-tf">3.2.3</a>)</p>
+</div>
+</div>
+<div id="vector-construction" class="section level1">
+<h1><span class="header-section-number">2</span> Vector Construction</h1>
+<div id="simple-plasmids-for-both-bacteria-and-eukaryotes" class="section level2">
+<h2><span class="header-section-number">2.1</span> Simple plasmids (for both bacteria and eukaryotes)</h2>
+<p>Traditionally, restriction endonucleases and T4 ligase are used to insert GOI into pladmids. This method has several drawbacks:</p>
+<ul>
+<li>the association between the short 2-4 nt overhangs (sticky ends) is weak</li>
+<li>each DNA insert has to be inspected for any internal restriction sites</li>
+<li>due to the above two reasons, it has very limited capability of constructing multi-fragment plasmids</li>
+<li>incomplete DNA digestion and poor ligation yields</li>
+<li>unwanted amino acids can be introduced to the expressed protein</li>
+<li>the GOI can only be cloned in the vector position where the selected restriction site is present</li>
+</ul>
+<p>Ligation-independent cloning (LIC) overcomes many of the problems described above. In a T4 DNA polymerase-dependent approach, the sticky sequences are made by the 3’-to-5’ exonuclease activity of T4 polymerase. These sequences are long, allowing formation of stable recombinant plasmid without <em>in vitro</em> ligase treatment. The nicks in sugar-phosphate backbone are later fixed by the host’s ligase. As T4 polymerase (exonuclease activity) always proceeds from 3’ ends, any internal sticky sequences will not be disrupting and thus the custom stiky sequence can be used for any DNA inserts.</p>
+<p>Fig. <a href="#fig:lic">2.1</a> compares the mechanisms of the traditional RE/ligase-based cloning and the T4 polymerase-dependent LIC approach.</p>
+<div class="figure"><span id="fig:lic"></span>
+<img src="../img/lc-lic.jpg" alt="Left, traditional cloning based on restriction endonuclease and ligase; right, ligase-independent cloning based on T4 polymerase" width="100%" />
+<p class="caption">
+Figure 2.1: Left, traditional cloning based on restriction endonuclease and ligase; right, ligase-independent cloning based on T4 polymerase
+</p>
+</div>
+<p>There are also other alternatives to the traditional method:</p>
+<ul>
+<li>the Gateway cloning system exploits the site-specific recombination system utilized by bacteriophage lambda to shuttle sequences between plasmids bearing flanking compatible recombination attachment (att) sites</li>
+<li>Gibson assembly is a molecular cloning method which allows for ‘stitching’ multiple overlapping DNA fragments together in a single, isothermal reaction, using exonuclease, polymerase, and ligase.</li>
+<li>TOPO cloning expoits Taq polymerase’s feature that adds non-specific A to the 3’ end, and uses topoisomerase I to hold vectors open and to promote ligation</li>
+</ul>
+</div>
+<div id="other-vectors-for-bacteria" class="section level2">
+<h2><span class="header-section-number">2.2</span> Other vectors for bacteria</h2>
+<p>BACs and fosmids: see section <a href="#others">1.2</a></p>
+</div>
+<div id="viral-vectors-for-eukaryotes" class="section level2">
+<h2><span class="header-section-number">2.3</span> Viral vectors for eukaryotes</h2>
+<p>See section <a href="#lenti">3.2.3.1</a></p>
+</div>
+</div>
+<div id="transformationtransfection" class="section level1">
+<h1><span class="header-section-number">3</span> Transformation/Transfection</h1>
+<div id="transformation-of-bacterial-cells" class="section level2">
+<h2><span class="header-section-number">3.1</span> Transformation of bacterial cells</h2>
+<div id="heat-shock-transformation" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Heat-shock transformation</h3>
+<p>Heat-shock transformation is used for small vectors such as plasmids. The general procedure is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Host cells are incubated in a solution containing divalent cations (typically CaCl<sub>2</sub>) on ice.</li>
+<li>CaCl<sub>2</sub> partially disrupts the cell membrane, which allows the recombinant DNA enter the host cell. Such cells are called competent cells.</li>
+<li>Cells are exposed to a heat pulse (heat shock), and the thermal imbalance causes the entry of DNA through disrupted plasma membrane.</li>
+</ol>
+</div>
+<div id="electroporation" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Electroporation</h3>
+<p>Electroporation can be used for larger vectors such as BAC and PAC<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. The general procedure is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Host cells are placed into a cuvette, together with the vector. The cuvette is connect to electrodes.</li>
+<li>The cuvette containing the mixture is subjected to intense electric pulses (2500 V/cm for bacteria, lower for animal and plant cells) each lasting for only a few milliseconds</li>
+<li>Most cells would die under such treatment, but for those survived, their membranes are polarised by the electric field and are disrupted, and DNA enters through the pores. Finally, the membrane reseals after the treatment.</li>
+</ol>
+</div>
+<div id="other-methods" class="section level3">
+<h3><span class="header-section-number">3.1.3</span> Other methods</h3>
+<p>Cosmid, fosmid and PAC vectors are introduced into bacterial cells via bacteriophages. (See section <a href="#others">1.2</a>)</p>
+</div>
+</div>
+<div id="transfection-of-eukaryotic-cells" class="section level2">
+<h2><span class="header-section-number">3.2</span> Transfection of Eukaryotic Cells</h2>
+<p>Transfection of eukaryotic cells can be transient or stable. Transient gene expression is generally used in academic settings, when the product of the GOI (usually a protein) is used for short-term research purposes. Stable transfection is usually used in indusdries, but it is also used in academia for specific purposes.</p>
+<div id="physical-methods" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Physical methods</h3>
+<p>In general, physical methods work by briefly pushing holes through the memrbane. The three specific methods are:</p>
+<ul>
+<li>electroporation, which is described above as a transformation method for bacteria, can also be applied to eukaryotic cells. The mechanism is the same but the voltage used for eukaryotic cells are lower.</li>
+<li>microinjection entails injection of recombinant DNA (or RNA) into the cytoplasm or nucleus. This is method particularly convinient for large eukaryotic cells, such as the syncytial gonadal cell of <em>Caenorhabditis elegans</em> and the fertilised egg of <em>Mus musculus</em>.</li>
+<li>biolistic delivery of tungsten- or gold-coated DNA (or RNA) by gene gun is mostly used with plant cells.</li>
+</ul>
+</div>
+<div id="chemical-methods" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Chemical methods</h3>
+<p>In general, chemical methods work by sheding the negative charge on DNA so as to apprach and cross the plasma membrane, which is also negatively charged.</p>
+<ul>
+<li>CaPO<sub>4</sub> co-precipitation involves mixing DNA with CaCl<sub>2</sub> in a phosphate solution to generate a CaPO<sub>4</sub>-DNA co-precipitate, which is then added to cultured cells. DNA enters the cell by endocytosis.</li>
+<li>the cationic diethylaminoethyl(DEAE)-dextran work similarly by associating and neutralising negatively charged DNA</li>
+<li>cationic lipids work similarly by forming DNA-lipid complexes (DNA is not encapsulated in liposomes)</li>
+<li>By far, the most cost-effective chemical carrier is polyethylenimine (PEI), which works similarly by forming DNA-PEI complexes <span class="citation">(L’Abbé et al. 2018)</span></li>
+</ul>
+</div>
+<div id="stab-tf" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Biological methods</h3>
+<p>The physical and chemical methods described above are generally used for transient transfection. Although they may produce stably transfected cells (when the rare homologous recombination events occur), the probability is very low and the GOI is inserted randomly and is thus not expressed with greatest efficiency (the chances are low that the GOI is inserted into a highly ‘transcriptionally open’ region).</p>
+<p>Biological methods significantly improve the chance of integration of GOI into the host’s genome, and can even direct the site of insertion.</p>
+<div id="lenti" class="section level4">
+<h4><span class="header-section-number">3.2.3.1</span> Lentiviral transduction as an example of viral transfection <span class="citation">(Merten, Hebben, and Bovolenta 2016)</span></h4>
+<p>Lentiviruses (LV) carry a genome made of (+) strand RNA. Upon infection, the viral RNA genome is reverse-transcribed and the cDNA is stably integrated into the host’s genome. Unlike <span class="math inline">\(\gamma\)</span>-retroviruses, LVs exploit active nuclear transport and thus do not rely on cell division to access the nucleus. Fig. <a href="#fig:lentivirus-3-gen">3.1</a> is an example of the third generation HIV-1 vector system.</p>
+<div class="figure"><span id="fig:lentivirus-3-gen"></span>
+<img src="../img/lentivirus-3-gen.jpg" alt="Production of recombinant LV particles and their infection. Production of recombinant LV particles is usually accomplished by transfection of HEK293T cells with a set of three helper plasmids and additionally a LV vector plasmid that encodes the GOI as well as optional reporter (e.g resistance, fluorophore) genes. LV particles released from HEK helper cells infect target cells and integrate the GOI into their genome." width="100%" />
+<p class="caption">
+Figure 3.1: Production of recombinant LV particles and their infection. Production of recombinant LV particles is usually accomplished by transfection of HEK293T cells with a set of three helper plasmids and additionally a LV vector plasmid that encodes the GOI as well as optional reporter (e.g resistance, fluorophore) genes. LV particles released from HEK helper cells infect target cells and integrate the GOI into their genome.
+</p>
+</div>
+</div>
+<div id="ti-plasmid-and-agrobacterium-tumefaciens-infection" class="section level4">
+<h4><span class="header-section-number">3.2.3.2</span> Ti plasmid and <em>Agrobacterium tumefaciens</em> infection</h4>
+<p><em>Agrobacterium tumefaciens</em> is the bacterium that causes crown gall disease in plants. When the it infects a plant cell, a part of its Ti plasmid, called T-DNA, is transferred and inserted (at random) into the genome of the plant cell. Thus, the T-DNA can be replaced with any GOI for stable transfection of plant cells.</p>
+</div>
+<div id="crispr-cas9-transfection" class="section level4">
+<h4><span class="header-section-number">3.2.3.3</span> CRISPR-Cas9 Transfection</h4>
+<p>The CRISPR-Cas9 system comprises a short guide RNA (gRNA) and the Cas9 nuclease. The gRNA guides Cas9 to a specific gene locus that is complementary to its crRNA portion, then Cas9 makes a double strand break, which is dependent on the PAM (protospacer adjacent motif) sequence immediately downstream of the recognition sequence.</p>
+<p>Following DNA cleavage, the break is repaired by either non-homologous end joining (NHEJ) or homology directed repair (HDR). It is the HDR mechanism that may cause integration of GOI into the cleavage site.</p>
+<div class="figure"><span id="fig:crispr"></span>
+<img src="../img/crispr.jpg" alt="gRNA directed DNA cleavage by Cas9" width="100%" />
+<p class="caption">
+Figure 3.2: gRNA directed DNA cleavage by Cas9
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Alberts-2014">
+<p>Alberts, Bruce, Alexander Johnson, Julian Lewis, David Morgan, Martin Raff, Keith Roberts, and Peter Walter. 2014. <em>Molecular Biology of the Cell</em>. Book. 6th ed. Garland Science.</p>
+</div>
+<div id="ref-Balbas-2012">
+<p>Balbás, Paulina, and Argelia Lorence. 2012. <em>Recombinant Gene Expression: Reviews and Protocols</em>. Book. 2nd ed. Vol. 267. Methods in Molecular Biology. Springer.</p>
+</div>
+<div id="ref-Griffiths-2015a">
+<p>Griffiths, Anthony J. F., Susan R. Wessler, Sean B. Carroll, and John Doebley. 2015. “Gene Isolation and Manipulation.” In <em>Introduction to Genetic Analysis</em>, 11th ed. W.H. Freeman.</p>
+</div>
+<div id="ref-Hacker-2018">
+<p>Hacker, David L. 2018. <em>Recombinant Protein Expression in Mammalian Cells: Methods and Protocols</em>. Book. Vol. 1850. Methods in Molecularbiology. Humana Press. <a href="https://doi.org/10.1007/978-1-4939-8730-6">https://doi.org/10.1007/978-1-4939-8730-6</a>.</p>
+</div>
+<div id="ref-LAbbe-2018">
+<p>L’Abbé, Denis, Louis Bisson, Christian Gervais, Eric Grazzini, and Yves Durocher. 2018. “Transient Gene Expression in Suspension Hek293-Ebna1 Cells.” In <em>Recombinant Protein Expression in Mammalian Cells: Methods and Protocols</em>, edited by David L. Hacker. Vol. 1850. Humana Press.</p>
+</div>
+<div id="ref-Merten-2016">
+<p>Merten, Otto-Wilhelm, Matthias Hebben, and Chiara Bovolenta. 2016. “Production of Lentiviral Vectors.” <em>Molecular Therapy - Methods &amp; Clinical Development</em> 3: 16017. <a href="https://doi.org/https://doi.org/10.1038/mtm.2016.17">https://doi.org/https://doi.org/10.1038/mtm.2016.17</a>.</p>
+</div>
+<div id="ref-Mizushima-1990">
+<p>Mizushima, S, and S Nagata. 1990. “PEF-Bos, a Powerful Mammalian Expression Vector.” <em>Nucleic Acids Res</em> 18 (17). Osaka Bioscience Institute, Japan.: 5322. <a href="https://doi.org/10.1093/nar/18.17.5322">https://doi.org/10.1093/nar/18.17.5322</a>.</p>
+</div>
+<div id="ref-Patel-2012">
+<p>Patel, Asmita, Anisleidys Muñoz, Katherine Halvorsen, and Priyamvada Rai. 2012. “Creation and Validation of a Ligation-Independent Cloning (Lic) Retroviral Vector for Stable Gene Transduction in Mammalian Cells.” <em>BMC Biotechnology</em> 12 (1): 3. <a href="https://doi.org/10.1186/1472-6750-12-3">https://doi.org/10.1186/1472-6750-12-3</a>.</p>
+</div>
+<div id="ref-Saraswathy-2011a">
+<p>Saraswathy, Nachimuthu, and Ponnusamy Ramalingam. 2011. “High Capacity Vectors.” In <em>Concepts and Techniques in Genomics and Proteomics</em>, 49–56. Woodhead Publishing. <a href="https://doi.org/https://doi.org/10.1533/9781908818058.49">https://doi.org/https://doi.org/10.1533/9781908818058.49</a>.</p>
+</div>
+<div id="ref-Singha-2017">
+<p>Singha, Tapan Kumar, Pooja Gulati, Aparajita Mohanty, Yogender Pal Khasa, Rajeev Kumar Kapoor, and Sanjay Kumar. 2017. “Efficient Genetic Approaches for Improvement of Plasmid Based Expression of Recombinant Protein in Escherichia Coli: A Review.” Journal Article. <em>Process Biochemistry</em> 55: 17–31. <a href="https://doi.org/https://doi.org/10.1016/j.procbio.2017.01.026">https://doi.org/https://doi.org/10.1016/j.procbio.2017.01.026</a>.</p>
+</div>
+<div id="ref-Valla-2014">
+<p>Valla, Svein, and Rahmi Lale. 2014. <em>DNA Cloning and Assembly Methods</em>. Book. Vol. 1116. Methods in Molecular Biology. Humana Press. <a href="https://doi.org/10.1007/978-1-62703-764-8">https://doi.org/10.1007/978-1-62703-764-8</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>pBLIC-puro was a gift from Priyamvada Rai (Addgene plasmid # 45197 ; <a href="http://n2t.net/addgene:45197" class="uri">http://n2t.net/addgene:45197</a> ; RRID:Addgene_45197)<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>P1-derived artificial chromosome<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+      
+      <h2 class="archive-title">2019</h2>
+          
+            <article class="archive-item">
+              <a href="../tutorial/antibiotics-and-protein-synthesis.html" class="archive-item-link">
+                Antibiotics and Protein Synthesis 
+              </a>
+              <span class="archive-item-date">
+                2019-11-30
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.<hr>
+                
+                
+
+
+<p><strong>Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.</strong></p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Protein synthesis occurs in ribosomes and involves 3 phases: initiation, elongation (which is subdivided into 4 steps) and termination. Each phase depends on the correct conformation and/or catalytic activity of different domains of the ribosomal complex and soluble protein factors (IFs, EFs and RFs). The identities and mechanisms of these critical RNA/protein domains (in bacterial cells) can be investigated by genetic mutation and antibiotics, which hinder their normal functions, along with recent advances in biophysical methods, which allows high resolution structures to be determined for ribosomes in different contexts.</p>
+</div>
+<div id="background-information" class="section level1">
+<h1>Background information</h1>
+<div id="the-ribosome" class="section level2">
+<h2>The Ribosome</h2>
+<p>The bacterial 70S ribosome comprises two subunits, the 50S (large) and the 30S (small) subunit. The 30S subunit mediates selection of cognate aminoacyl tRNAs and the 50S subunit contains the peptidyl-transferase centre (PTC), which catalyses addition of new amino acids to the elongating polypeptide chain.</p>
+</div>
+<div id="the-process-of-protein-synthesis" class="section level2">
+<h2>The process of protein synthesis</h2>
+<p>The 3 phases of protein synthesis are initiation, elongation and termination.</p>
+<p>During initiation, the 3’ end of the 16S rRNA of the 30S subunit base-pairs with the Shine-Dalgarno sequence, which positions the start codon (usually AUG) in the P site for the binding of the initiator tRNA (usually fMet-tRNA) and IF1, 2, 3. Joining of the 50S subunit and dissociations of IFs primes the elongation phase.</p>
+<p>The elongation phase, where new amino acids are appended to the growing polypeptide, involves 4 steps:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Decoding.</strong> An aminoacylated tRNA (aa-tRNA) is delivered to the A-site of the ribosome by elongation factor EF-Tu complexed with GTP. GTP hydrolysis facilitates discrimination between cognate and non-cognate tRNAs.</li>
+<li><strong>Peptidyl transfer.</strong> The peptidyl-transferase centre (PTC) on the 50S subunit catalyses the formation of peptide bond between the amino acids attached to the tRNAs in the A- and P-sites by transferring the polypeptide chain from the P-site tRNA to the aa-tRNA in the A-site.</li>
+<li><strong>Translocation.</strong> EF-G catalyses the movement tRNAs from the A and P sites to the P and E sites</li>
+<li>the growing polypeptide chain passes through an exit tunnel</li>
+</ol>
+<p>Finally, when the stop codon (UAA/UAG/UGA) is encountered, it is recognised by release factors (RF1/RF2) that forces hydrolysis of the peptidyl-tRNA bond in the P-site, thus releasing the polypeptide chain from the ribosome.</p>
+</div>
+</div>
+<div id="mutations" class="section level1">
+<h1>Mutations</h1>
+<p>Mutation in different components of protein synthesis (tRNA, ribosomal proteins, rRNAs) can all lead to decreased fidelity of this process.</p>
+<p>The tRNA needs to undergo a structual transition that involves a 30<span class="math inline">\(^\circ\)</span> bend in order to achieve the A/T (decoding) conformation. Mutagenesis studies showed that two mutations in the D-stem, A9C and G24A, promote miscoding and these two bases are critical for distortion of the cognate tRNA that is required for decoding.</p>
+<p>Mutagenesis studies also help to identify ribosomal proteins that are critical in the decoding process. The mutations can be classified into two types according to their implication on the speed and accuracy/robustness of translation: <em>ram</em> (ribosome ambiguity) mutations improve speed but has a higher frequency of failure in rejecting non-cognate tRNAs; in contrast, ribosomes with <em>str</em> (stringency) mutations are slower and more accurate, but they reject some cognate aa-tRNAs and thus waste GTP. Most of such mutations are found in the ribosomal proteins S12, S5 and S4, which are close to the decoding site, and these proteins have an important effect on codon/anticodon interactions.</p>
+</div>
+<div id="antibiotics" class="section level1">
+<h1>Antibiotics</h1>
+<p>The antibiotic puromycin can be used to demonstrate the existence of A and P sites in the ribosome and the ATP/GTP-independent nature of the peptidyl transfer reaction.</p>
+<p>Puromycin (PM) is an aa-tRNA analogue which is composed of an nucleoside and an bound amino acid. Unlike the normal aa-tRNA where the 5’ OH of the nucleoside (adenosine) is linked to the rest of the tRNA, PM has a free 5’ OH. Therefore, PM can fit into the peptidyl transfer centre (PTC) and accept the polypeptide chain in the peptidyl tranfer reaction, but the new peptide with PM attached is released immediately because PM does not have an attached tRNA to anchor it to the ribosome.</p>
+<p>The details of the experiment is shown below and in Figure <a href="#fig:puromycin">1</a>:</p>
+<ul>
+<li>Take a cell free system containing: ribosomes, Mg<sup>2+</sup>-containing buffer, poly-U mRNA, <sup>14</sup>C-Phe-tRNA, ATP/GTP-regenerating system and add varying concentrations of soluble cell extract.</li>
+<li>This yields ribosomes carrying polyPhe-tRNA (not free polyPhe or poly-Phe-tRNA unbound to ribosomes). [with prior knowledge, this is because there are no stop codons on the mRNA and hence RFs are not recruited to terminate translation]</li>
+<li>the ribosomes are washed to remove soluble proteins and ATP/GTP.</li>
+<li>then they are incubated with puromycin (PM)</li>
+<li>about 50% of the ribosomes release <sup>14</sup> labelled polyPhe as polyPhe-PM [As shown in Figure <a href="#fig:puromycin">1</a>, the convertion from state 2 to 3 and from state 3 to 1 requires GTP, and the convertion from state 1 to 2 (peptidyl transfer) does not. Therefore, when GTP is removed, protein synthesis is either trapped in state 2 or 3]</li>
+<li>without a tRNA, PM cannot bind to the ribosome (at A/P sites) so the compound with polyPhe is released</li>
+</ul>
+<p>Conclusion: ribosome itself catalyses the formation of the peptide bond without energy supplying molecules (ATP/GTP).</p>
+<ul>
+<li>now wash the ribosomes to remove the PM</li>
+<li>add soluble cell extract and GTP, then more PM</li>
+<li>the remaining 50% ribosomes release polyPhe-PM</li>
+</ul>
+<p>Conclusion:</p>
+<ol style="list-style-type: decimal">
+<li>ribosomes have a ‘PM-reactive’ site (P site) and a ‘PM-unreactive site’ (A site)</li>
+<li>soluble cell extract can translocate from RM-unreactive to PM-reactive site (driven by EF-G)</li>
+</ol>
+<div class="figure"><span id="fig:puromycin"></span>
+<img src="../img/puromycin.jpg" alt="The puromycin experiment." width="100%" />
+<p class="caption">
+Figure 1: The puromycin experiment.
+</p>
+</div>
+</div>
+<div id="summary" class="section level1">
+<h1>Summary</h1>
+<p>Mutagenesis and ribosome-targeting antibiotics are valuable tools for studying the mechanisms of protein synthesis in the ribosome. These methods are usually aided by cryo-EM and X-ray crystallography to probe into the 3D molecular details.</p>
+<p>Mutations in tRNA, rRNA and associated proteins give information on their specific roles and behaviours during protein synthesis. Antibiotics with various (and usually predictable) chemical properties is another way of studying the mechanisms of protein synthesis. Apart from the puromycin (which targets the peptidyl transfer centre) mentioned in this essay, there is a wide range of antibiotics that target different steps of protein synthesis. For example, streptomycins interferes with the delivery of tRNAs to the A-site and neomycin hinders translocation following peptidyl transfer. High resolution crystal structures were obtained for many of these antibiotics in complex with the ribosome (or part of ribosome). These structures are indicative of functionally important sites in the ribosome and they often shed light on the mechanisms.</p>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../tutorial/rna-splicing.html" class="archive-item-link">
+                RNA Splicing 
+              </a>
+              <span class="archive-item-date">
+                2019-11-23
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  What are the roles of small nuclear RNAs (SnRNAs) in pre-mRNA splicing and what are the mechanisms that control alternative splicing?<hr>
+                
+                
+
+
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>RNA splicing by spliceosomes removes introns from nascent pre-mRNA and joins protein-coding exon sequences, which matures the mRNA and makes it ready for translation. By chosing variable splice sites, different mature mRNAs (and hence proteins) can be produced from the same pre-mRNA.</p>
+</div>
+<div id="structure-of-the-intron" class="section level1">
+<h1>Structure of the Intron</h1>
+<p>Splice sites (i.e. exon-intron junctions) have conserved features. As shown in Figure <a href="#fig:intron">1</a>, most introns have an invariant GU at the 5’ end (5’ splice site) and AG at the 3’ end (3’ splice site), their flanking sequences are variable but the bases are found at frequencies higher than expected based on a random distribution. The branch point A is also invariant, and most introns also have a polypyrimidine tract between the branch point and the 3’ splice site. These ‘standard’ pre-mRNAs are spliced by snRNPs U1, U2, U4, U5, and U6. A small fraction of pre-mRNA does not follow the ‘GU-AG’ rule and have 5’-AU and AC-3’ instead, which are spliced by four low-abundance snRNPs together with U5.</p>
+<div class="figure"><span id="fig:intron"></span>
+<img src="../img/intron.jpg" alt="The structure of a typical intron" width="100%" />
+<p class="caption">
+Figure 1: The structure of a typical intron
+</p>
+</div>
+</div>
+<div id="spliceosome-assembly-and-the-splicing-process" class="section level1">
+<h1>Spliceosome Assembly and the Splicing Process</h1>
+<p>The spliceosome is a large and dynamic RNP machine whose size is comparable to a ribosome. The 5 snRNPs that constitute the spliceosome are U1, U2, U4, U5, and U6, each of which is a association of an snRNA with proteins. The key catalytic activity is attributed to RNA, so the spliceosome is an ribozyme. A spliceosome is assembled whenever an intron is to be removed and its components are recycled after splicing. The series of events are shown in Figure 2.</p>
+<div class="figure"><span id="fig:spliceosome-assembly"></span>
+<img src="../img/spliceosome-assembly.jpg" alt="Spliceosome assembly and the splicing process" width="100%" />
+<p class="caption">
+Figure 2: Spliceosome assembly and the splicing process
+</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>U1 base-pairs with the 5’ splice site; SF1 (splicing factor 1) binds to the branch-point A; U2AF (U2 auxilliary factor) associates with the polypyrimidine tract and 3’ splice site. Then, U2 replaces SF1 and U2AF.</li>
+<li>The U4/U6.U5 tri-snRNP complex joins, forming the spliceosome</li>
+<li>Rearrangement of base-paring interactions leads to the catalytically active conformation. U6 dissociates from U4 and replaces U1. U4 is also released.</li>
+<li>The catalytic core of U6/U2 catalyses the first transesterification reaction (ligating 5’ guanosine to the 2’ OH of the branch point adenosine)</li>
+<li>Further rearrangements take place, and the second transesterification reaction occurs (joining the two exons)</li>
+</ol>
+<p>The two sequential transesterification reactions <em>per se</em> do not require energy input, as there is no net bond breaking (two phosphodiester bonds are hydrolysed and another two are formed), but ATP/GTP hydrolysis is used to drive structural transitions and as a ‘proofreading’ mechanism.</p>
+<p>As shown in Figure <a href="#fig:splice-detailed-mech">3</a>, In the catalitically active state, U6 partially base-pairs with U2 and U6 forms an internal stem loop structure with three nucleotides coordinated to two Mg<sup>2+</sup> ions. Mg<sup>2+</sup> ions stabilise the transitions states of the two transesterification reactions and thus achieve catalysis. The key bases coordinated to Mg<sup>2+</sup> are confirmed by substitution of oxygen for sulfur atoms at various locations.</p>
+<div class="figure"><span id="fig:splice-detailed-mech"></span>
+<img src="../img/splice-detailed-mech.jpg" alt="The transesterification reactions in detail" width="100%" />
+<p class="caption">
+Figure 3: The transesterification reactions in detail
+</p>
+</div>
+</div>
+<div id="alternative-splicing" class="section level1">
+<h1>Alternative Splicing</h1>
+<p>pre-mRNAs contain <em>cis</em>-acting regulatory sequences (either splicing enhancers or silencers) to which splicing factors can bind and thus regulate splicing (Figure <a href="#fig:alternative-splicing">4</a>). RNA-RNA base pairing, which can occur either in <em>cis</em> or <em>trans</em>, can also specify splice site use.</p>
+<p>RNA-binding proteins/RNPs that regulate splicing can be classified into 3 classes: the classical hnRNPs, serine-arginine repeat (SR) proteins, and tissue-specific RNA-binding proteins. Generally, hnRNPs inhibit splicing from nearby splice sites by interacting with splicing silencers while SR proteins promotes splicing by binding to enhancers.</p>
+<div class="figure"><span id="fig:alternative-splicing"></span>
+<img src="../img/alternative-splicing.jpg" alt="Splicing control by cis-regulatory sequences. ISE/ESE, intronic/exonic splicing enhancers; ISS/ESS, intronic/exonic splicing silencers." width="100%" />
+<p class="caption">
+Figure 4: Splicing control by cis-regulatory sequences. ISE/ESE, intronic/exonic splicing enhancers; ISS/ESS, intronic/exonic splicing silencers.
+</p>
+</div>
+<p>RNA-RNA recognition can also control splice site choice, as exemplified by the exon 6 cluster of the <em>Drosophila</em> DSCAM gene, as shown in Figure <a href="#fig:alternative-splicing-rna-rna">5</a>.</p>
+<div class="figure"><span id="fig:alternative-splicing-rna-rna"></span>
+<img src="../img/alternative-splicing-rna-rna.jpg" alt="hrp36 binds to all axon6 variants and represses their inclusion in the mature mRNA. When the cis-acting RNA selector sequence upstream of a specific exon (in this case 6.6) pairs with the docking site, it results in activation of the exon immediately downstream." width="100%" />
+<p class="caption">
+Figure 5: hrp36 binds to all axon6 variants and represses their inclusion in the mature mRNA. When the cis-acting RNA selector sequence upstream of a specific exon (in this case 6.6) pairs with the docking site, it results in activation of the exon immediately downstream.
+</p>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+            <article class="archive-item">
+              <a href="../tutorial/protein-purification.html" class="archive-item-link">
+                Protein Expression and Purification 
+              </a>
+              <span class="archive-item-date">
+                2019-11-02
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein. OR What strategies could you employ during protein expression and purification to minimise heterogeneity in a sample required for structural studies?<hr>
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#title">Title</a></li>
+<li><a href="#overview"><span class="toc-section-number">1</span> Overview</a></li>
+<li><a href="#protein-expression"><span class="toc-section-number">2</span> Protein Expression</a><ul>
+<li><a href="#design"><span class="toc-section-number">2.1</span> Identifying and amplifying the gene</a></li>
+<li><a href="#choosing-the-host-organism-and-the-vector"><span class="toc-section-number">2.2</span> Choosing the host organism and the vector</a><ul>
+<li><a href="#bacteria-and-plasmid-vectors"><span class="toc-section-number">2.2.1</span> Bacteria and plasmid vectors</a></li>
+<li><a href="#eukaryotic-hosts"><span class="toc-section-number">2.2.2</span> Eukaryotic hosts</a></li>
+<li><a href="#high-throughput-strategy"><span class="toc-section-number">2.2.3</span> High-throughput strategy</a></li>
+</ul></li>
+<li><a href="#lic"><span class="toc-section-number">2.3</span> Constructing the vector</a></li>
+<li><a href="#transformationtransfection"><span class="toc-section-number">2.4</span> Transformation/Transfection</a></li>
+</ul></li>
+<li><a href="#protein-extraction-and-purification"><span class="toc-section-number">3</span> Protein Extraction and Purification</a><ul>
+<li><a href="#extraction"><span class="toc-section-number">3.1</span> Extraction</a><ul>
+<li><a href="#cell-lysis"><span class="toc-section-number">3.1.1</span> Cell lysis</a></li>
+<li><a href="#removing-cellular-components-and-debris"><span class="toc-section-number">3.1.2</span> Removing cellular components and debris</a></li>
+</ul></li>
+<li><a href="#purification"><span class="toc-section-number">3.2</span> Purification</a><ul>
+<li><a href="#salting-out-and-dialysis"><span class="toc-section-number">3.2.1</span> Salting out and dialysis</a></li>
+<li><a href="#chromatography"><span class="toc-section-number">3.2.2</span> Chromatography</a></li>
+<li><a href="#monitor"><span class="toc-section-number">3.2.3</span> Monitoring the progress of purification</a></li>
+</ul></li>
+<li><a href="#preparation-for-crystallography"><span class="toc-section-number">3.3</span> Preparation for crystallography</a></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="title" class="section level2 unnumbered">
+<h2>Title</h2>
+<p><strong>You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein.</strong></p>
+</div>
+<div id="overview" class="section level1">
+<h1><span class="header-section-number">1</span> Overview</h1>
+<p>The general workflow for obtaining a sample of (malarial) protein is summarised as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Identifying and amplifying the gene of interest (GOI)</li>
+<li>Constructing the vector</li>
+<li>Transformation/transfection of host cells</li>
+<li>Screening for the most viable (high yield and solubility) transformants</li>
+<li>Extracting and purifying proteins</li>
+</ol>
+<p>For crystallography studies, a protein sample with high purity, solubility and yield must be obtained. The expression and purification strategies depend on the characteristics of the protein of interest, such as size, shape, intrinsic solubility, requirement of post-translational modifications and/or cofactors, presence of disulfide bridges, <em>in vitro</em> stability.</p>
+</div>
+<div id="protein-expression" class="section level1">
+<h1><span class="header-section-number">2</span> Protein Expression</h1>
+<div id="design" class="section level2">
+<h2><span class="header-section-number">2.1</span> Identifying and amplifying the gene</h2>
+<p>If the coding sequence of the protein is unknown but the protein is purified, mass spectrometry (or chemical methods such as Edman degradation) can be used to determine the amino acid sequence of the protein, which can then be used to search for the the corresponding DNA sequence.</p>
+<p>Usually, instead of using the full DNA sequence, cDNA is used in cloning because it does not contain introns. cDNA is made by:</p>
+<ol style="list-style-type: decimal">
+<li>extracting total RNA from cells by TRIzol and then isolate the mature mRNA by affinity chromatography (with poly-T coated resins which binds to poly-A tails of mature mRNA)</li>
+<li>reverse transcription of the template DNA strand by viral reverse transcriptase (RT) followed by RNA degradation (often by the RNAse H activity of RT)</li>
+<li>synthesis of the coding strand by DNA polymerase</li>
+</ol>
+<p>Often, the latter two steps are done repeatedly in RT-PCR to amplify the DNA fragment, if the sequence of the GOI is known and specific<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> primers are designed. The primers include additional restriction enzyme cleavage sites for the convinience of traditional ligation-dependent cloning, or other sequences for ligation-independent cloning (see Section <a href="#lic">2.3</a>).</p>
+<p>If the protein is already known to have a match in malarial cDNA library, we can skip most of the above steps and PCR-amplify the cDNA of interest from the library directly.</p>
+<p>When we know the sequence of GOI, we can do a BLAST to find possible homologous proteins, and study any relavant scientific literature. The structure of some homologous proteins might have been solved previously and we can refer to their expression and purification strategies, which might prevent some waste of time on trial-and-errors. Bioinformatic analyses, such as disorder prediction using the RONN algorithm and generation of 3D homology models using the Phyre2 server, might also be helpful.</p>
+<p>Codon optimisation might also be needed. Codon usage can vary significantly between species as well as between genome types such as nuclear DNA and mitochondrial DNA. For example, the frequencies of codons AGG, AGA, and CGA (which code for arginine) in H. sapiens are 11.4, 11.5 and 6.3, respectively, while the corresponding frequencies in E. coli are 1.2, 2.1 and 3.6. Codons that occur in high frequency in <em>Plasmodium</em> but in low frequencies in <em>E. coli</em> would result in a condition where the pool of tRNA for that codon will be so low as to become depleted. When the rare tRNAs are depleted to produce the recombinant protein, proliferation of the host cells is restricted, leading to low yield. This problem may be partially solved by the use of an inducible expression vector (e.g. IPTG), but when the foreign gene contains a large number of rare codons, this is not enough. There are two further approaches to improve the yield. First, the rare codons in the foreign genes can be substituted with prevalent codons, but this is not always reliable. Second, host cells can be transformed with the genes that code for the rare tRNAs. This approach is reliable and several such cell lines are commercially available. Custom host cells can also be made using plasmids.</p>
+<p>We might fail in crystallising the single full-length protein (often because of low solubility). In that case, we can try co-expressing another protein or add an appropriate cofactor and crystallising the resulting complex. If this still fails, we might consider truncating the GOI, e.g. removing a very hydrophobic region that results in low solubility. In high-throughput approaches, such as the pipeline adopted by Oxford Protein Production Facility (OPPF), many variants are constructed in parallel to maximise output.</p>
+</div>
+<div id="choosing-the-host-organism-and-the-vector" class="section level2">
+<h2><span class="header-section-number">2.2</span> Choosing the host organism and the vector</h2>
+<div id="bacteria-and-plasmid-vectors" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Bacteria and plasmid vectors</h3>
+<p>Typically and traditionally, the gene of interest (GOI) is incorporated into a plasmid vector via a ligation-dependent mechanism, then the plasmid is introduced into bacterial (<em>E. coli</em>) cells for expression. There are also ligation-independent methods for making vectors, which is more robust and easy to use (only need to design one ‘adaptor’ parts of the primers once), making it suitable for high-throughput methods.</p>
+<p>Bacteria-based protein expression is time- and cost-efficient, but it has two major limitations:</p>
+<ol style="list-style-type: decimal">
+<li>the insertion size of a plasmid is small, typically 2-10 kb (bacterial artificial chromosomes (BAC) with greater insertion sizes can be used, but the procedures are more complex)</li>
+<li>Bacteria might be unable provide the appropriate protein folding environment (including chaperones) and/or post-translational modifications that can be crucial to protein’s functions.</li>
+</ol>
+<p>Given the protein of interest is cysteine-rich, it is susceptible that disulfide bridges are present if this protein is also extracellular. The normal intracellular reducing environment disfavours disulfide bridge formation, but <em>Origami</em> and related strains have an oxidising intracellular environment due to mutant thioredoxin reductase and glutathione reductase, and they are used to express proteins that require disulfide bonds to achieve their correctly-folded conformation.</p>
+<p>The plasmid should contain selectable markers for easy identification of successful transformants. The combination of <em>Amp<sup>R</sup></em> and <em>lacZ</em><span class="math inline">\(\alpha\)</span> is a common choice, as explained in Figure <a href="#fig:pet">2.1</a>.</p>
+<p>In addition, the <strong>promoter</strong> should be strong and tightly regulated with minimum or complete lack of basal level transcription under uninduced conditions. The IPTG inducible T7 promoter system (as in pET plasmid) is one of the common choices. IPTG is an analog of allolactose, which can bind to and silence <em>lac</em> inhibitor, de-inhibiting the <em>lac</em> operator. IPTG is not digested by the bacteria, and thus its constant concentration continuously induces protein expression. The <em>lac</em> operator may be also made symmetric, strictly preventing transcription when uninduced.</p>
+<p>Some commerially available plamids also include tags added to the N- or C-terminus of the insertion site (multiple cloning site), which aids protein purification. This can be a polyhistidine tag, a fusion protein (e.g. GST) or a short recognisable peptide, and often a cleavage sequence is also introduced for removal of the tags.</p>
+<div class="figure"><span id="fig:pet"></span>
+<img src="../img/pETBlue.jpg" alt="The pETBlue-2 plasmid vector" width="100%" />
+<p class="caption">
+Figure 2.1: The pETBlue-2 plasmid vector
+</p>
+</div>
+<p>Plasmid-based bacterial transformation is usually permanent because plasmids can replicate themselves and be distributed into daughter cells after cell division.</p>
+</div>
+<div id="eukaryotic-hosts" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Eukaryotic hosts</h3>
+<p>If the protein is incompatible for expression in bacteria, an eukaryotic host is chosen. This is typically yeast, insect, or human cells.</p>
+<p>Transfection of eukaryotic cells can be transient or permanent. Eukaryotic cells do not transcribe plasmids, and the DNA fragment of interest must integrates into the host cell’s genome to produce a stable cell line–which is a rare event and takes more time to achieve. If we had to use a eukaryotic host, transient transfection may be used first to screen for the most viable construct, then a stable cell line is made with this construct for higher yield and convience for later use.</p>
+</div>
+<div id="high-throughput-strategy" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> High-throughput strategy</h3>
+<p>High-throughput protein production aims to use robots to automate the steps in making expression constructs and screening them.</p>
+<p>Take the OPPF pipeline for example, when the GOI is an eukaryotic protein, they test expressions with different vector constructs (with varying amino acid start and end points, fusion partners, and plasmids) in both <em>E. coli</em> and insect cells in parallel (Figure <a href="#fig:htp-ox">2.2</a>). The expresison screening is automated and performed in 96-well format.</p>
+<div class="figure"><span id="fig:htp-ox"></span>
+<img src="../img/htp-ox.png" alt="SDS-PAGE gel after NiNTA magnetic bead purification showing expression of constructs for DDR1 in (A) *E. coli* and (B) insect cells via the baculovirus system. The names of constructs correspond to amino acid start and end points and the vector being used (pOPINE, pOPINF or pOPINJ, which confers a C-terminal His-tag, an N-terminal His-tag, or an N-terminal His-GST tag, respectively)" width="100%" />
+<p class="caption">
+Figure 2.2: SDS-PAGE gel after NiNTA magnetic bead purification showing expression of constructs for DDR1 in (A) <em>E. coli</em> and (B) insect cells via the baculovirus system. The names of constructs correspond to amino acid start and end points and the vector being used (pOPINE, pOPINF or pOPINJ, which confers a C-terminal His-tag, an N-terminal His-tag, or an N-terminal His-GST tag, respectively)
+</p>
+</div>
+<p>they also used ligation-independent cloning methods (Section <a href="#lic">2.3</a>) to reduce variability and thus simplify the workflow.</p>
+</div>
+</div>
+<div id="lic" class="section level2">
+<h2><span class="header-section-number">2.3</span> Constructing the vector</h2>
+<p>The DNA fragment we obtained should be incorporated into a vector before they can be introduced into the host cell. Usually, a recombinant plasmid is made first and amplified in bacteria. Then, if necessary, it can be transferred into other vectors such as viruses and liposomes, depending on the strategies. Here I describe two ways of making recombinant plasmids: traditional restriction enzyme and ligation-based plasmid cloning, and T4 polymerase-based ligation-independent cloning (LIC).</p>
+<div class="figure"><span id="fig:lic"></span>
+<img src="../img/lc-lic.jpg" alt="Left, traditional cloning based on restriction enzyme and ligase; right, ligase-independent cloning based on T4 polymerase" width="100%" />
+<p class="caption">
+Figure 2.3: Left, traditional cloning based on restriction enzyme and ligase; right, ligase-independent cloning based on T4 polymerase
+</p>
+</div>
+<p>As shown in Figure <a href="#fig:lic">2.3</a>, in the ligation-dependent method, the PCR product contains flanking restriction sites (came from the designed primers) to be recognised by a restriction enzyme (e.g. EcoRI). The plasmid also contain the restriction site for EcoRI (located in the multiple cloning site, see Figure <a href="#fig:pet">2.1</a>). Cleavage by EcoRI results in complementary ‘sticky ends’, which facilitate annealing of GOI to the plasmid. The sticky sequences are shart (usually 3-5 bp), thus, to overcome low stability, ligation must be done immediately.</p>
+<p>The ligation-based cloning are not proper for high throughput protein production (HTPP) projects due to several disadvantages:</p>
+<ul>
+<li>incomplete DNA digestion and poor ligation yields</li>
+<li>each GOI has to be inspected for any internal restriction sites (for exclusion from the choices of the ligation sequence)</li>
+<li>unwanted amino acids can be introduced to the expressed protein</li>
+<li>the GOI can only be cloned in the vector position where the selected restriction site is present</li>
+</ul>
+<p>Ligation-independent cloning (LIC) overcomes many of the problems described above. In a T4 DNA polymerase-dependent approach, the sticky sequences are made by the 3’-to-5’ exonuclease activity of T4 polymerase. These sequences are long, allowing formation of stable recombinant plasmid without <em>in vitro</em> ligase treatment. The nicks in sugar-phosphate backbone are later fixed by host ligase.</p>
+<p>The obvious elegance of T4-LIC is that once the sticky sequence is designed and constructed, it can be used for any GOI. As T4 polymerase (exonuclease activity) always proceeds from 3’ ends, any internal sticky sequences will not be disrupting.</p>
+</div>
+<div id="transformationtransfection" class="section level2">
+<h2><span class="header-section-number">2.4</span> Transformation/Transfection</h2>
+<p>Transformation is the process of delivering GOI-containing foreign DNA into host cells. For eukaryotic cells, this is more often known as transfection (because ‘transformtion’ has other meanings). Many chemical/physical transformation/transfection methods are generally done by making transient holes on host cell plasma membrane (technically, ‘inducing competence’ in host cells). Here are two examples.</p>
+<p>Heat-shock transformation is used for small vectors such as plasmids. The general procedures are:</p>
+<ol style="list-style-type: decimal">
+<li>Host cells are incubated in a solution containing divalent cations (typically CaCl<sub>2</sub>) on ice.</li>
+<li>CaCl<sub>2</sub> partially disrupts the cell membrane, which allows the recombinant DNA enter the host cell. Such cells are called competent cells.</li>
+<li>Cells are exposed to a heat pulse (heat shock), and the thermal imbalance causes the entry of DNA through disrupted plasma membrane.</li>
+</ol>
+<p>Electroporation can be used for larger vectors such as BAC and PAC<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. The general procedures are:</p>
+<ol style="list-style-type: decimal">
+<li>Host cells are placed into a cuvette, together with the vector. The cuvette is connect to electrodes.</li>
+<li>The cuvette containing the mixture is subjected to intense electric pulses (2500 V/cm for bacteria, lower for animal and plant cells) each lasting for only a few milliseconds</li>
+<li>Most cells would die under such treatment, but for those survived, their membranes are polarised by the electric field and are disrupted, and DNA enters through the pores. Finally, the membrane reseals after the treatment.</li>
+</ol>
+<p>Depending on the identity of the host cell and the vector, other methods are also available. These are not directly relevant with our goal of expressing a malarial protein, so here is a simple listing:</p>
+<ul>
+<li>cosmid and fosmid vectors are introduced into bacterial cells via bacteriophages</li>
+<li>calcium phosphate co-precipitation for mammalian cells</li>
+<li>microinjection for animal cells</li>
+<li>microprojectile bombardment for plant cells</li>
+<li>adenovirus and lentivirus vectors for mammalian cells</li>
+<li><em>Agrobacterium</em>-mediated transformation for plant cells</li>
+<li>genome editing techniques based on ‘designer nucleases’ such as ZFN, TALEN and CRISPR-Cas9 with homology directed repair</li>
+</ul>
+</div>
+</div>
+<div id="protein-extraction-and-purification" class="section level1">
+<h1><span class="header-section-number">3</span> Protein Extraction and Purification</h1>
+<p>After proliferation of transformed/transfected cells, we can extract and purify the protein fo interest.</p>
+<div id="extraction" class="section level2">
+<h2><span class="header-section-number">3.1</span> Extraction</h2>
+<div id="cell-lysis" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Cell lysis</h3>
+<p>The first step is to lyse, or homogenise the cells to release the protein. To do this, cells can be subjected to osmotic shock or ultrasonic vibration, forced through a small orifice, or ground up in a blender. (if a membrane protein is to be extracted, detergents are normally used, although detergent-free methods have been developed recently)</p>
+</div>
+<div id="removing-cellular-components-and-debris" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Removing cellular components and debris</h3>
+<p>Repeated centrifugation, each time with a higher speed (i.e. differential centrifugation), removes many impurities with large sizes. Organelles (and small vesicles and microsomes) sediment (forming pallets) while proteins remain in the solution (as supernatant).</p>
+<p>A finer degree of separation can be achieved by layering the homogenate in a thin band on top of a salt solution that fills a centrifuge tube. When centrifuged, the various components in the mixture move as a series of distinct bands through the solution, each at a different rate, in a process called velocity sedimentation. A glucose gradient is established to protect the bands from convective mixing.</p>
+</div>
+</div>
+<div id="purification" class="section level2">
+<h2><span class="header-section-number">3.2</span> Purification</h2>
+<p>Classical methods for separating proteins depend on variable protein properties, including solubility, size, charge, and binding affinity. In most cases, protein mixtures are sequentially subjected to different separation methods, each based on a different property. After each step of purification, the fractions are assayed (see Section <a href="#monitor">3.2.3</a>).</p>
+<div id="salting-out-and-dialysis" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Salting out and dialysis</h3>
+<p>The addition of certain salts in the right amount can selectively precipitate the protein of interest, while others remaining in solution. The precipitation is removed by centrifugation.</p>
+<p>Dialysis is then used to remove the salt from the solution containing the protein of interest. The protein mixture is place inside a dialysis bag (i.e. made of size-selective permeable membrane) and placed in a buffer solution with low salt concentration. Salt in the protein-containing solution then diffuse out, leaving proteins inside the bag.</p>
+</div>
+<div id="chromatography" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Chromatography</h3>
+<p>In column chromatography, the solution containing proteins is passed through a column containing a solid matrix (resin). Different proteins are retarded to different extents by their interaction with the matrix, and they can be collected separately as they flow out of the bottom of the column. Depending on the choice of matrix, proteins can be separated according to their charge (ion-exchange chromatography),nhydrophobicity (hydrophobic chromatography), size (gel-filtration/size-exclusion chromatography), or ability to bind to particular small molecules or to other macromolecules (affinity chromatography). The last two are the most important for high throughput protein purification are affinity chromatography and size-exclusion chromatography.</p>
+<p>Affinity chromatography extract protein according to the tags we attached to target proteins. For example, His-tagged proteins bind to Nickle-coated resin and HSV epitope tagged proteins bind to resin coated with corresponding antibodies (polyHis-Ni interactions often have lower specificity compared to enzyme-substrate and epitope-antibody interactions)</p>
+<p>Size exclusion chromatography cleans abnormal protein aggregates based on their large size.</p>
+<p>A problem experienced by column chromatographic methods is diffusional spreading (i.e. proteins that are going down faster also diffuse upwards, mixing with proteins going slower), which reduces the resolution. The degree of diffusional spreading increases with time during which proteins stay in the column. HPLC (high-performance liquid chromatography) solves this problem. It makes use of high-pressure pumps that speed the movement down the column, so that the time of travelling, and hence the diffusional spreading, is greatly reduced, leading to higher resolution.</p>
+</div>
+<div id="monitor" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Monitoring the progress of purification</h3>
+<p>As purification progresses:</p>
+<ol style="list-style-type: decimal">
+<li>the total amount of protein should decrease as unwanted proteins are removed and some target proteins are lost</li>
+<li>amount of target proteins should also decrease because they are unavoidably lost e.g. by nonspecific attachment to the purification apparatus or washed away</li>
+<li>the proportion of the target protein (i.e. purity) should increase as unwanted proteins are removed</li>
+</ol>
+<p>The simplest way to monitor these changes is running a SDS-PAGE gel electrophoresis after each purification step. The bands should progressively decrease to one (which correspond to the target protein), and the thickness of this band should increase because the concentration of target protein increases (its absolute amount decreases, but as we removed the fractions without the target protein in chromatography, its concentration should increase).</p>
+<p>To assess whether the protein is correctly folded and functional, specific assays are used For example, if the target protein is an enzyme, it can be assayed using its substrate; if it is a protein which binds to another molecule, their interaction can be probed by surface plasmon resonance. Circular dichroism also helps to assess the foldedness of the target protein.</p>
+</div>
+</div>
+<div id="preparation-for-crystallography" class="section level2">
+<h2><span class="header-section-number">3.3</span> Preparation for crystallography</h2>
+<p>For crystallisation, the protein sample must be homogenous and correctly folded. They can be checked by the methods descibed in Section <a href="#monitor">3.2.3</a>.</p>
+<p>If the affinity tag needs to be removed (which is often required for structual studies), a protease cleavage site is often incorporated before or after the fusion tag and the cleavage can be conducted either in solution following purification (the protease themselves are tagged) or immediately after enzyme capture in situ on the chromatography resin itself. AKTA Express (GE Healthcare) is an elegant procedure for on-column cleavage coupled to multidimensional chromatography that is highly amenable to high throughput protein purification.</p>
+<p>There are three methods to grow protein crystalls, namely ‘hanging drop’, ‘sitting drop’, and microdialysis, but the underlying principles are similar. The protein is first dissolved in a ‘crystallisation cocktail’ droplet and concentrated to 2-50 mg/ml, then it is allowed to equilibrate with a more concentrated reservoir solution of the cocktail with a volume ratio of 1:1. As the protein droplet becomes supersaturated, it <em>may</em> start to crystalise. Robots are commonly used for automatic screeening and optimisation of crystallisation conditions. If crystallisation fails under all conditions, we can try co-crystalising with a ligand. If this still fails, we might consider using a truncated protein, as described in Section <a href="#design">2.1</a>.</p>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Doyle-2008">
+<p>Doyle, Sharon A. 2008. <em>HIgh Throughput Protein Expression and Purification: Methods and Protocols</em>. Edited by John W. Walker. Methods in Molecular Biology 498. Humana Press.</p>
+</div>
+<div id="ref-ThermoFisher-2019">
+<p>ThermoFisher. 2019. <a href="https://www.thermofisher.com/uk/en/home/references/gibco-cell-culture-basics/transfection-basics/gene-delivery-technologies.html">https://www.thermofisher.com/uk/en/home/references/gibco-cell-culture-basics/transfection-basics/gene-delivery-technologies.html</a>.</p>
+</div>
+<div id="ref-Vicentelli-2019">
+<p>Vicentelli, Renaud. 2019. <em>HIgh-Throughput Protein Production and Purification: Methods and Protocols</em>. Edited by John M. Walker. Vol. 2025. Methods in Molecular Biology. New York, NY: Humana Press.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>a specific primer will bind the mRNA of interest but not any other mRNAs. Online tools such as Primer3 and Primer-BLAST (NCBI) aids design of specific primers.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>P1-derived artificial chromosome<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

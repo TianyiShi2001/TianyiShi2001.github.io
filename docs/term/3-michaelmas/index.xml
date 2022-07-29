@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3-Michaelmas on Tianyi@Oxford</title>
+    <link>/term/3-michaelmas.html</link>
+    <description>Recent content in 3-Michaelmas on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/term/3-michaelmas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insertion of Membrane Proteins</title>
+      <link>/tutorial/insertion-of-membrane-proteins.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/insertion-of-membrane-proteins.html</guid>
+      <description>1 Targeting the Protein to the ER Membrane: SRP and the Sec61 Translocon 2 Single-Pass Proteins 2.1 Type I Proteins 2.2 Type II and III Proteins 3 Multi-Pass Proteins 4 Insertases 4.1 Insertion of Tail-anchored Proteins by the Get system 4.2 The Roles of YidC 5 \(\beta\)-barrel Proteins References The majority of integral membrane proteins in an eukaryotic cell are made of one or more \(\alpha\)-helices and are first inserted co-translationally via the Sec61 translocon into the endoplasmic reticulum (ER) membrane, assembled there, and then dispatched, via the golgi apparatus and vesicles, to their final destinations.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Nucleic Acid Interactions</title>
+      <link>/tutorial/protein-nucleic-acid-interactions.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-nucleic-acid-interactions.html</guid>
+      <description>1 Introduction 2 An Overview of Mechanisms of Protein-DNA Interactions 3 Thermodynamics of Protein-DNA Binding 4 Base Readout in the Major Groove 5 Shape Readout 5.1 Minor Groove Narrowing 5.2 Kinks 6 The Nucleosome as an Example of Non-Specific Binding 7 (Question 2) 7.1 (a) bHLH Motif 7.2 (b) Leucine Zipper 7.3 (c) Zinc Finger 7.4 (d) TATA box binding protein References 1 Introduction Protein-DNA interactions have profound impact on the expression and regulation of genes.</description>
+    </item>
+    
+    <item>
+      <title>Metabolic Modelling</title>
+      <link>/lab/metabolic-modelling.html</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/metabolic-modelling.html</guid>
+      <description>1 The Haldane Relationship 2 Control Points in A Simple Linear Pathway 3 Linear Pathway with Negative Feedback 3.1 Re-analyse the effect of \(K_i\) with constant flux 3.1.1 Repeat with Model 212 Model 112 was used. 1 The Haldane Relationship Using the “Parameter Scan” utility in Copasi (Figure 1.1), I collected steady state concentrations of ‘A’ and ‘B’ in \(5^4 = 625\) combinations of \(V_{max(f)}\), \(K_{m(p)}\), \(V_{max(r)}\), and \(K_{m(s)}\), where each parameter vary from \(1\times10^{-2}\) to \(1\times10^{2}\) in a logarithmic scale.</description>
+    </item>
+    
+    <item>
+      <title>Gene Expression Practical Paper 6 Questions</title>
+      <link>/lab/gene-expression-practical-paper-6-questions.html</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/gene-expression-practical-paper-6-questions.html</guid>
+      <description>(a) Assign each lac mutation to one of the strains 1 to 5. Explain your reasoning in each case.
+1 2 3 4 5 WT glycerol + − + − − - glycerol+IPTG + − + + − + glucose+IPTG − − − + − - ×WT hybrid + glycerol IPTG IPTG + IPTG IPTG ×lacY− hybrid IPTG × Strain 1: lacI- Strain 2: lacZ- Strain 3: lacOc Strain 4: mutation that causes RNAP to bind more easily Strain 5: lacP- Strains 1 and 3 are both sensitive to catabolite repression (by glucose) but insensitive to induction by IPTG (transcription occurs as long as glucose is not present), which can be either due to lacI- or lacOc.</description>
+    </item>
+    
+    <item>
+      <title>Data Handling — Biophysical Methods</title>
+      <link>/worksheet/data-handling-biophysical-methods.html</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/worksheet/data-handling-biophysical-methods.html</guid>
+      <description>1 Enzyme 2 ATP Synthase 3 Fluorescence spectroscopy 4 High-resolution Nuclear Magnetic Resonance Spectroscopy. 5 Electrospray mass spectrometry. 6 Analytical ultracentrifugation: equilibrium sedimentation. 1 Enzyme 2 ATP Synthase 3 Fluorescence spectroscopy 4 High-resolution Nuclear Magnetic Resonance Spectroscopy. 5 Electrospray mass spectrometry. 6 Analytical ultracentrifugation: equilibrium sedimentation. \[ M = \dfrac{2RT}{(1-v\rho)\omega^2}\dfrac{d(\ln(c))}{dr^2} \]
+\[ M = \dfrac{2\times 8.314\times298.15}{(1-0.74)\times27000^2}\dfrac{d(\ln(c))}{dr^2} = 2.6156\times10^{-5}\dfrac{d(\ln(c))}{dr^2} \]
+r = c(6.918, 6.923, 6.924, 6.929, 6.932, 6.935, 6.942, 6.943, 6.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Protein Interactions</title>
+      <link>/tutorial/protein-protein-interactions.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-protein-interactions.html</guid>
+      <description>1 Introduction 2 Properties of PPI 2.1 Reversibility 2.2 Properties of the Binding Interfaces 2.3 Roles of Water Molecules 2.4 Kinetics and Thermodynamics 3 Studying PPIs 3.1 Determining Kd (and rate constants) 3.1.1 Surface Plasmon resonance (SPR) 3.1.2 Fluorescence anisotropy 3.1.3 Isothermal titration calorimetry (ITC) 3.2 Mechanistic Studies 3.2.1 Alanine Scanning 3.2.2 Extent of Exchengeability of Amino Acids 3.2.3 Directed Evolution 3.2.4 Computational Approaches 3.2.5 Connectivity Map Reveals Modularity 3.</description>
+    </item>
+    
+    <item>
+      <title>Membrane Protein: Structure and Stability</title>
+      <link>/tutorial/membrane-protein-structure-and-stability.html</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/membrane-protein-structure-and-stability.html</guid>
+      <description>1 Introduction 2 The Biomembrane Environment 3 The Thermodynamic Basis of Secondary Structure Formation 4 Glycine and Proline in TM Helices 5 Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling 6 Interactions with Lipids 1 Introduction Many proteins that perform vital functions are membrane proteins. These include transport proteins (channels, transporters and pumps), cell adhesion molecules, and proteins that transduces energy in the electron transport chain. Despite their diverse roles, the same set of biophysical and biochemical rules govern their structural stability.</description>
+    </item>
+    
+    <item>
+      <title>Gene Control Practical</title>
+      <link>/lab/gene-control-practical.html</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/gene-control-practical.html</guid>
+      <description>1 Determine the time course of \(\beta\)-galactosidase induction 1.1 Protocal 1.2 Results 2 Identify the WT Strain 2.1 Protocol 3 Devise an experimental protocol to show the role played by cAMP in catabolite repression. 3.1 Results (part 2 and 3) 4 Devise experiments to test the following model. 4.1 Protocol 4.2 Results 1 Determine the time course of \(\beta\)-galactosidase induction 1.1 Protocal Trial experiment:
+Take OD600 reading in spectrophotometer 1) to verify that the absorbance is around 0.</description>
+    </item>
+    
+    <item>
+      <title>Crystallography: A Case Study</title>
+      <link>/tutorial/crystallography-a-case-study.html</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/crystallography-a-case-study.html</guid>
+      <description>Introduction The Ca2+ selectivity of voltage-gated calcium (Cav) channels remained unclear. They were thought to use a ‘knock-off’ methanism which requires multiple ion-binding cores, but mutational analyses supported a single high-affinity Ca2+ binding site. This paradox is explained by the mechanism proposed in this article, based on the crystal structures of CavAb channels.
+Methods In this study, the authors created several mutants of bacterial Nav channel NavAb by site directed mutagenesis using QuickChange at the selectivity filter region1.</description>
+    </item>
+    
+    <item>
+      <title>Assessing The Quality Structural Models</title>
+      <link>/tutorial/assessing-structural-models.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/assessing-structural-models.html</guid>
+      <description>1 The Essence of X-Ray Crystallography 2 Assessing the Quality of A Structure During Model Building and Refinement 2.1 R and Rfree 2.2 Reciprocal-Space Refinement: Refinement by least squares 2.3 Real-Space Refinement: Map Fitting 3 Assessing Quality After Automatic Model Building and Refinement 3.1 Density fit analysis and local geometry validation 3.1.1 Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles 3.1.2 Torsional Angles and Ramachandran Plot 3.</description>
+    </item>
+    
+    <item>
+      <title>Download and Sync with the Entire PDB Database</title>
+      <link>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</guid>
+      <description>All the PDB files are available via PDB’s FTP server. Simply cd to a directory and use wget to download all of them.
+mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/* Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the -N option to wget (essentially this means downloading “new” files only).</description>
+    </item>
+    
+    <item>
+      <title>Sequence Alignment: Gap Penalty</title>
+      <link>/bioinformatics/sequence-alignment-gap-penalty.html</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment-gap-penalty.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FASTA Parser Implemented in Rust with Nom</title>
+      <link>/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html</guid>
+      <description>1 Parsing a single FASTA Record 1.1 Representing the Record in Rust 1.2 Parsing the Title Nom makes it possible to
+1 Parsing a single FASTA Record An example of FASTA record is shown below.
+&amp;gt;gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG AATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG CCGCCTCGGGAGCGTCCATGGCGGGTT &amp;gt;(another FASTA record) Each record starts with a &amp;gt; character, which is followed by the title on the same line. The title can be further divided into an ID and description, which is separated by a space character.</description>
+    </item>
+    
+    <item>
+      <title>Antibiotics and Protein Synthesis</title>
+      <link>/tutorial/antibiotics-and-protein-synthesis.html</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/antibiotics-and-protein-synthesis.html</guid>
+      <description>Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.</description>
+    </item>
+    
+    <item>
+      <title>RNA Splicing</title>
+      <link>/tutorial/rna-splicing.html</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/rna-splicing.html</guid>
+      <description>What are the roles of small nuclear RNAs (SnRNAs) in pre-mRNA splicing and what are the mechanisms that control alternative splicing?</description>
+    </item>
+    
+    <item>
+      <title>NMR</title>
+      <link>/tutorial/nmr.html</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/nmr.html</guid>
+      <description>SAQ Write brief notes on the chemical shift, the nuclear Overhauser enhancement effect (NOE), the relaxation times T1 and T2, and the spin-spin coupling constant (J) with an emphasis on how these can provide information about the structure and dynamics of biological molecules.
+Chemical Shift: NMR applies RF wave to induce resonance with the precession frequency, \(\omega=\gamma (B_0-B_S)\), where \(B_0\) is the constant magnetic field strength on the \(z\) axis, \(B_S\) is the magnetic field strength shilded by electrons around the nucleus and \(\gamma\) is the magnetogyric ratio (depending of the identity of the nucleus).</description>
+    </item>
+    
+    <item>
+      <title>Biophysical Techniques</title>
+      <link>/tutorial/biophysical-techniques.html</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/biophysical-techniques.html</guid>
+      <description>You have expressed and purified a protein in a recombinant system. How would you confirm that the protein was the one expected from the DNA sequence. (ESI-MS) How would you determine that the protein was folded and its solution behaviour. (CD, Thermofluor, Intrinsic fluorescence, DSC, SEC MALS, AUC, DLS) How can we quantify the binding between two macromolecules? Discuss how you could use the following techniques to determine a KD for an interaction? What are their limitations in practice? What would decide which techniques you could apply to an interaction? (Surface Plasmon resonance, Fluorimetry/Fluorescence anisotropy, Microscale thermophoresis (MST), Isothermal titration calorimetry (ITC), Stopped flow, NMR, AUC) References: Use Campbell&amp;rsquo;s Biophysical Techniques; for MST use Wienken et al 2010 Nature Communications 10.1038/ncomms1093</description>
+    </item>
+    
+    <item>
+      <title>Paper VI 2011</title>
+      <link>/tutorial/paper-vi-1.html</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/paper-vi-1.html</guid>
+      <description>Alzheimer’s Disease Effect of AMPK on secreted A\(\beta\) levels in neuronal cultures In ELISA (enzyme-linked immunosorbant assay), antibodies are used to bind an antigen of interest (usually protein) with high specificity, and the presence and concentration of the antigen is reported by the extent of reaction of the enzyme conjugated with the antibody. Using two types of antibodies binding to different regions of the antigen allows sandwich ELISA (see below), which has greater specificity.</description>
+    </item>
+    
+    <item>
+      <title>Protein Expression and Purification</title>
+      <link>/tutorial/protein-purification.html</link>
+      <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-purification.html</guid>
+      <description>You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein. OR What strategies could you employ during protein expression and purification to minimise heterogeneity in a sample required for structural studies?</description>
+    </item>
+    
+    <item>
+      <title>Protein Structure and Function</title>
+      <link>/tutorial/protein-structure-and-function.html</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-structure-and-function.html</guid>
+      <description>Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins&amp;rsquo; lecture series. Bring notes no essay.</description>
+    </item>
+    
+    <item>
+      <title>Principle of electron transfer and proton transport</title>
+      <link>/tutorial/principle-of-electron-transfer-and-proton-transport.html</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/principle-of-electron-transfer-and-proton-transport.html</guid>
+      <description>What mechanisms are employed by mitochondrial electron transfer proteins to generate a proton-motive force (pmf)? Using the concept of membrane capacitance, explain why the dominant component of the pmf in mitochondria is an electrical potential rather than a pH gradient.</description>
+    </item>
+    
+    <item>
+      <title>Specific Radioactivity</title>
+      <link>/lab/2019-10-16-specific-radioactivity.html</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/2019-10-16-specific-radioactivity.html</guid>
+      <description>Specific radioactivity of ATP and glucose.</description>
+    </item>
+    
+    <item>
+      <title>Radioactivity Worksheet</title>
+      <link>/worksheet/radioactivity-worksheet.html</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/worksheet/radioactivity-worksheet.html</guid>
+      <description>Guinea pig A guinea pig was given a single injection of 24NaCl (0.5ml of 0.5\(\mu\)Ci/ml). Subsequently, 0.2 ml samples of blood were taken at intervals and counted for radioactivity. The following results were obtained. The efficiency of counting 24Na is 30%.
+(a) Given that the radioactive half-life of 24Na is 15h, calculate the biological half life of Na+ in the guinea pig body. Why are these values different?
+Radioactive decay is a first-order process, so the rate of decay is proportional to the amount of the decaying substance.</description>
+    </item>
+    
+    <item>
+      <title>Principle of chemiosmotic mechanism</title>
+      <link>/tutorial/principle-of-chemiosmotic-mechanism.html</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/principle-of-chemiosmotic-mechanism.html</guid>
+      <description>What is the evidence that the chemiosmotic mechanism applies to oxidative phosphorylation and photophosphorylation?</description>
+    </item>
+    
+  </channel>
+</rss>

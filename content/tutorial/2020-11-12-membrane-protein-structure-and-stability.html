@@ -1,0 +1,125 @@
+---
+title: 'Membrane Protein: Structure and Stability'
+author: Tianyi Shi
+date: '2020-11-12'
+slug: membrane-protein-structure-and-stability
+categories:
+  - biochemistry
+tags:
+  - membrane protein
+  - structural biochemistry
+term: 3-Michaelmas
+week: 5
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: ~
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#the-biomembrane-environment"><span class="toc-section-number">2</span> The Biomembrane Environment</a></li>
+<li><a href="#the-thermodynamic-basis-of-secondary-structure-formation"><span class="toc-section-number">3</span> The Thermodynamic Basis of Secondary Structure Formation</a></li>
+<li><a href="#glycine-and-proline-in-tm-helices"><span class="toc-section-number">4</span> Glycine and Proline in TM Helices</a></li>
+<li><a href="#snorkel"><span class="toc-section-number">5</span> Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling</a></li>
+<li><a href="#interactions-with-lipids"><span class="toc-section-number">6</span> Interactions with Lipids</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>Many proteins that perform vital functions are membrane proteins. These include transport proteins (channels, transporters and pumps), cell adhesion molecules, and proteins that transduces energy in the electron transport chain. Despite their diverse roles, the same set of biophysical and biochemical rules govern their structural stability. Membrane proteins fall into two broad categories: 1) integeral proteins, which are embedded within a membrane and can only be isolated with detergents, and 2) peripheral proteins, which are associated with the surface of a membrane and can be removed without detergents. The focus of this essay is on how integral proteins interact with the membrane to maintain their structural stability.</p>
+</div>
+<div id="the-biomembrane-environment" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> The Biomembrane Environment</h1>
+<p>The basic structure of a biomembrane is a bilayer of amphipathic phospholipids and sphingolipids, where the polar head groups of lipids align the surfaces (each ~10 angstroms thick) and the acyl chains of lipid tails occupy the hydrophobic core (~ 30 angstroms thick). A bitopic or polytopic integral membrane protein spans the membrane entirely one or more times (Figure <a href="#fig:lipid-bilayer-diagram">2.1</a>).</p>
+<div class="figure"><span id="fig:lipid-bilayer-diagram"></span>
+<img src="../img/lipid-bilayer-diagram.png" alt="(a) a schematic showing a integral protein embedded within a biomembrane. (b)" width="100%" />
+<p class="caption">
+Figure 2.1: (a) a schematic showing a integral protein embedded within a biomembrane. (b)
+</p>
+</div>
+<p>The hydrophobic core region has a dielectric constant (<span class="math inline">\(\epsilon_{r}\)</span>) of about 2, which is much lower than <span class="math inline">\(\epsilon_{r}\)</span> of water (about 80), which means the same pair of charges separated by the same distance experience more electrostatic force in the membrane core than in water, according to the Coulomb’s law:</p>
+<p><span class="math display">\[F = \dfrac{q_1 q_2}{4\pi \epsilon_0 \epsilon_r r^2}\]</span></p>
+<p>This has several implications on acidic and basic amino acid residues. First, the carboxyl group of acidic side chains are more difficult to dissociate (i.e. p<span class="math inline">\(K_a\)</span>s are shifted up), meaning they tend to remain in the uncharged (–COOH) form. Second, in <span class="math inline">\(\alpha\)</span>-helical bundles, oppositely charged residues in adjacent helices associated more strongly than they do in aqueous environment. Third, this facilitates the snorkelling of lysine and arginine residues near the interface (Section <a href="#snorkel">5</a>).</p>
+</div>
+<div id="the-thermodynamic-basis-of-secondary-structure-formation" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> The Thermodynamic Basis of Secondary Structure Formation</h1>
+<p>Transmembrane proteins tend to adopt a conformation that minimises the contact between their polar groups (main chain -NH, C=O, and side chains of polar residues, if any) and the hydrophobic core. This can be explained by simple thermodynamic reasoning.
+The water molecules in the aqueous environment outside the membrane are capable of forming relatively strong dipole-dipole interactions and hydrogen bonds (H-bonds) with polar (including charged) amino acids, while the non-polar alkyl groups that occupy the hydrophobic core of the membrane can only provide weak van der Waals interactions.
+Thus, if a protein adopts a conformation that exposes many polar groups, the loss of strong interactions with water will make this process very energetically unfavourable (very large <span class="math inline">\(\Delta G\)</span>).
+On the contrary, if a protein with a hydrophobic surface were present in an aqueous environment, it would disrupt the dipole-dipole interactions and hydrogen bonding among water and other polar molecules. Thus, its insertion into the membrane is energetically favourable.</p>
+<p>By forming either an <span class="math inline">\(\alpha\)</span>-helix or a <span class="math inline">\(\beta\)</span>-sheet (Figure <a href="#fig:bundle-helix">3.1</a>), the hydrogen bonds between main chain -NH and -C=O are maximised, and this is an efficient way to shield the polar groups on the main chain from the hydrophobic core.
+Many transmembrane proteins, such as bacteriorhodopsin, contain multiple TM helices, which aggregates to form a <span class="math inline">\(\alpha\)</span>-helix bundle.
+A <span class="math inline">\(\beta\)</span>-sheet has to twist and coil to form a ring, called a <span class="math inline">\(\beta\)</span>-barrel, in order to shield the main chain -NH and C=O groups on the first and last strands.
+<span class="math inline">\(\beta\)</span>-barrels usually have a even number of strands so that every strand is anti-parallel to adjacent strands, there are exceptions: the voltage-dependent anion channels (VDACs) located on mitochondrial outer membrane has 19 strands, where the first strand is parallel with tha last strand, with weaker hydrogen bonding.
+<span class="math inline">\(\beta\)</span>-barrels are less common than <span class="math inline">\(\alpha\)</span>-helix bundles, and they are predominantly present on the outer membrane of Gram-negative bacteria, mitochondria, and chloroplasts.</p>
+<div class="figure"><span id="fig:bundle-helix"></span>
+<img src="../img/bundle-helix.png" alt="Schematic representation of an alpha helix and a beta barrel. Blue and red lines represent hydrophobic and hydrophilic side chains, respectively." width="100%" />
+<p class="caption">
+Figure 3.1: Schematic representation of an alpha helix and a beta barrel. Blue and red lines represent hydrophobic and hydrophilic side chains, respectively.
+</p>
+</div>
+<p>The transmembrane region of each helix in a <span class="math inline">\(\alpha\)</span>-helical bundle is composed predominantly of hydrophobic amino acid residues (Ala, Leu, Ile, Val, Phe), which are exposed on the surface and allows favourable interaction with the hydrophobic core.
+By contrast, each <span class="math inline">\(\beta\)</span>-strand of a <span class="math inline">\(\beta\)</span>-barrel has an alternating pattern of hydrophobic and polar residues.
+This is because two adjacent residues in a beta strand have their side chains pointing in opposite directions, and a <span class="math inline">\(\beta\)</span>-barrel formed in this way has an hydrophobic exterior that interacts with the hydrophobic core and an hydrophilic inner surface that is in contact with the aqueous environment.</p>
+<p>Thus, TM helices, but not <span class="math inline">\(\beta\)</span>-barrels, can be predicted using a hydropathy plot (Figure <a href="#fig:hydropathy-plot-1">3.2</a>), in which the average hydrophobicity index of a fixed number of consecutive residues (a “window”), <span class="math inline">\(H(i)\)</span>, is plotted against the index (<span class="math inline">\(i\)</span>) of the window, i.e.</p>
+<p><span class="math display">\[H(i) = \sum_{i&lt;j&lt;i+k}h(a_j)/k\]</span></p>
+<p>for <span class="math inline">\(1 &lt; i &lt; n - k\)</span>, where n is the length (number of residues) of the peptide, <span class="math inline">\(h(a_j)\)</span> is the hydrophobicity index of the <span class="math inline">\(j\)</span>-th amino acid residue and <span class="math inline">\(k\)</span> is the window size.</p>
+<div class="figure"><span id="fig:hydropathy-plot-1"></span>
+<img src="../img/hydropathy-plot-1.png" alt="A schematic hydropathy plot. Every peak in the plot represents a highly hydrophobic local region in the peptide and thus indicates a potential transmembrane helix." width="100%" />
+<p class="caption">
+Figure 3.2: A schematic hydropathy plot. Every peak in the plot represents a highly hydrophobic local region in the peptide and thus indicates a potential transmembrane helix.
+</p>
+</div>
+<p>A small number of polar (even charged) residues within a TM helix can be tolerated as long as the overall transmembrane segment is hydrophobic enough.
+In addition, in polytopic proteins, polar residues in adjacent helices may help to stabilise each other.
+These non-hydrophobic residues often have functional roles, as exemplified by voltage-gated K<sup>+</sup>, Na<sup>+</sup> and Ca<sup>2+</sup> channels (Figure <a href="#fig:kv-mech">3.3</a>).</p>
+<div class="figure"><span id="fig:kv-mech"></span>
+<img src="../img/kv-mech.png" alt="The gating mechanism of voltage-gated potassium channel. The S4 helix (red) is arginine-rich and thus positively charged. A linker connects S4 and S5 helix, the latter being a part of the pore domain. In resting state, the interior (bottom) of the cell is negatively charged relative to the exterior (top). A change in voltage causes the S4 helix to move upwards due to electrostatic force, and it pulls the gate open via the S4-S5 linker." width="100%" />
+<p class="caption">
+Figure 3.3: The gating mechanism of voltage-gated potassium channel. The S4 helix (red) is arginine-rich and thus positively charged. A linker connects S4 and S5 helix, the latter being a part of the pore domain. In resting state, the interior (bottom) of the cell is negatively charged relative to the exterior (top). A change in voltage causes the S4 helix to move upwards due to electrostatic force, and it pulls the gate open via the S4-S5 linker.
+</p>
+</div>
+</div>
+<div id="glycine-and-proline-in-tm-helices" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Glycine and Proline in TM Helices</h1>
+<p>The side chain of proline forms a pentameric ring with the amine group on the main chain. Thus, in a helix, the amine group of a proline does not have a hydrogen that can be H-bonded to the main chain C=O of the residue above it. This introduces local flexibility within a relatively regid helix and often forms a hinge. Similarly, due to glycine’s small size, it can tolerate a much wider range of dihedral angles than other amino acids, which also makes it able to introduce flexibility. This flexibility is crucial for the function of some proteins, such as voltage-gated ion channels (Figure <a href="#fig:kv-mech">3.3</a>).</p>
+</div>
+<div id="snorkel" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling</h1>
+<p>Tryptophan and tyrosine are often found in the interfacial region in both <span class="math inline">\(\alpha\)</span>-helical bundle and <span class="math inline">\(\beta\)</span>-barrel proteins. Their hydrophobic aromatic ring interacts with the hydrophobic core, and their polar -NH (of Trp) or -OH (of Tyr) groups interacts with the lipid head groups. Similarly, lysine and arginine extend their side chain towards the surface, so that their positively charged guanidium (of Arg) or amide (of Lys) groups form strong ionic interactions with the negatively charged lipid head groups. This phenomenon is known as “snorkelling.” These interactions helps to lock the membrane in place within the membrane, preventing vertical motions.</p>
+</div>
+<div id="interactions-with-lipids" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Interactions with Lipids</h1>
+<p>Membrane proteins interacts with lipid in various ways, and these interactions contribute to the structural stability and function of the protein to different extents.</p>
+<p>A transmembrane protein interacts strongly with the shell (annulus) of lipid that surrounds it. These lipids are called annular lipids and can be distinguished experimentally from the bulk lipids of the bilayer. In addition, there is a third class of lipids, called nonannular lipids (or lipid cofactors), which are tightly bound in crevices or between subunits of the protein and are often crutial for the activity of the protein. Electron paramagnetic resonance (EPR) can be used to measure the mobility of annular lipids, and thus gives information on the selectivity for annular lipids of a protein. Most proteins are found to prefer negatively charged lipids such as phosphatidylserine and phosphatidylinositol.</p>
+<p>Strong lipid-protein interactions are also evident form crystal structures, and this interaction can be specific. For example, three cardiolipin (CDL) molecules were found to bind to three sites on the ANT1 transporter. The tendency of CDL to bind to these sites can also be shown in molecular dynamics simulations. The specificity of this binding can also be shown computationally, by calculating the free energy at different protein-lipid separations for CDL and other lipids (Figure <a href="#fig:simu-lipid-protein-binding">6.1</a>).</p>
+<div class="figure"><span id="fig:simu-lipid-protein-binding"></span>
+<img src="../img/simu-lipid-protein-binding.png" alt="Computational analysis of a protein's preference to bound lipids. CDL binding results in a significantly lower energy state." width="100%" />
+<p class="caption">
+Figure 6.1: Computational analysis of a protein’s preference to bound lipids. CDL binding results in a significantly lower energy state.
+</p>
+</div>
+<p>Inward-rectifier K<sup>+</sup> channels (K<sub>ir</sub>) are an example where the lipid-protein interaction is directly involved in the protein’s function. K<sub>ir</sub> have a Transmembrane domain (TMD) and an intracellular C-terminal domain (CTD). PIP<sub>2</sub> binding cuases the CTD to move towards the TMD, which in turn causes the helices in the TMD to bend and thus opens the gate (Figure <a href="#fig:kir">6.2</a>).</p>
+<div class="figure"><span id="fig:kir"></span>
+<img src="../img/kir.png" alt="Lipid-gated Kir channel" width="100%" />
+<p class="caption">
+Figure 6.2: Lipid-gated Kir channel
+</p>
+</div>
+<p>Many crystal structures of GPCRs reveal cholesterol bound to the protein. Molecular dynamics simulations at different cholesterol concentrations suggests the role of cholesterol in reducing the dynamic flexibility the protein and stabilising a certain conformational state in an allosteric fashion.</p>
+<!-- Lipid rafts are stable but transient domains that are enriched in cholesterol and sphingolipids, which makes them thinker than the average membrane thinkness (directly detectable using atomic force microscopy). They are specifically associated with lipid anchored proteins (e.g. GPI-, palmitoyl-, myristoyl-anchored protein) -->
+</div>

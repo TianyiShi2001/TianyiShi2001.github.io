@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Tianyi@Oxford</title>
+    <link>/notes.html</link>
+    <description>Recent content in Notes on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Notes</title>
+      <link>/notes/rust-notes.html</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/rust-notes.html</guid>
+      <description>fn main() { let number_list = vec![34, 50, 25, 100, 65]; print_max(&amp;amp;number_list); print_max_1(&amp;amp;number_list); print_max_2(number_list) } fn print_max(number_list: &amp;amp;[u16]) { let mut largest = &amp;amp;number_list[0]; for number in number_list.iter() { if number &amp;gt; largest { largest = number; } } println!(&amp;quot;The largest number is {}&amp;quot;, largest); } fn print_max_1(number_list: &amp;amp;[u16]) { let mut largest = &amp;amp;number_list[0]; for number in number_list { if number &amp;gt; largest { largest = number; } } println!</description>
+    </item>
+    
+    <item>
+      <title>Molecular Cloning</title>
+      <link>/notes/molecular-cloning.html</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/molecular-cloning.html</guid>
+      <description>About the frame Sometimes we want to use the start/stop codon in the vector for our protein production, especially when tag sequences need to be included. In these cases, we need to check our inserted GOI is in frame with the start/codon on the vector. Frame mismatch can be corrected by adding 1 or 2 random nucleotide(s) to the primer (forward primer to match vector start condon and reverse primer to match the stop codon) between the GOI sequence and the restriction site sequence.</description>
+    </item>
+    
+    <item>
+      <title>Techniques</title>
+      <link>/notes/techniques.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/techniques.html</guid>
+      <description>Protein Structure Homology Modelling Swiss Model Model Evaluation GMQE (global model quality estimation) 0-1, higher better combines properties from the target-alignment and the template search method replecting the expected accuracy of a model built with that alignment and the template and the coverage of the target computed before modelling and after modelling. The latter also takes into account the QMEAN QMEAN QMEAN z score: around 0: ideal; &amp;lt; -4.0: low quality QMEAN is a composite estimator based on different geometrical properties and provides both global and local absolute quality estimates on the basis of one single model the QMEAN z-score provides an estimate of the ‘degree of nativeness’ of the structural features observed in the model on a global scale.</description>
+    </item>
+    
+    <item>
+      <title>Reading Lists</title>
+      <link>/notes/reading-lists.html</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/reading-lists.html</guid>
+      <description>Paper I X-ray and EM  “Biomolecular Crystallography” by Bernard Rupp (preferably 2 nd Edition) Garland Science ISBN 978-0815340812  “Outline of Crystallography for Biologists” by David Blow Oxford University Press, ISBN 978-0198510512  “Crystallography Made Crystal Clear” by Gale Rhodes Academic Press ISBN 978-0125870733  Milne JL, Borgnia MJ, Bartesaghi A, Tran EE, Earl LA, Schauder DM, Lengyel J, Pierson J, Patwardhan A, Subramaniam S. Cryo-electron microscopy–a primer for the non-microscopist.</description>
+    </item>
+    
+  </channel>
+</rss>

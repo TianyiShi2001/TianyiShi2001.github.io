@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lab on Tianyi@Oxford</title>
+    <link>/tags/lab.html</link>
+    <description>Recent content in lab on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metabolic Modelling</title>
+      <link>/lab/metabolic-modelling.html</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/metabolic-modelling.html</guid>
+      <description>1 The Haldane Relationship 2 Control Points in A Simple Linear Pathway 3 Linear Pathway with Negative Feedback 3.1 Re-analyse the effect of \(K_i\) with constant flux 3.1.1 Repeat with Model 212 Model 112 was used. 1 The Haldane Relationship Using the “Parameter Scan” utility in Copasi (Figure 1.1), I collected steady state concentrations of ‘A’ and ‘B’ in \(5^4 = 625\) combinations of \(V_{max(f)}\), \(K_{m(p)}\), \(V_{max(r)}\), and \(K_{m(s)}\), where each parameter vary from \(1\times10^{-2}\) to \(1\times10^{2}\) in a logarithmic scale.</description>
+    </item>
+    
+    <item>
+      <title>Gene Control Practical</title>
+      <link>/lab/gene-control-practical.html</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/gene-control-practical.html</guid>
+      <description>1 Determine the time course of \(\beta\)-galactosidase induction 1.1 Protocal 1.2 Results 2 Identify the WT Strain 2.1 Protocol 3 Devise an experimental protocol to show the role played by cAMP in catabolite repression. 3.1 Results (part 2 and 3) 4 Devise experiments to test the following model. 4.1 Protocol 4.2 Results 1 Determine the time course of \(\beta\)-galactosidase induction 1.1 Protocal Trial experiment:
+Take OD600 reading in spectrophotometer 1) to verify that the absorbance is around 0.</description>
+    </item>
+    
+    <item>
+      <title>Specific Radioactivity</title>
+      <link>/lab/2019-10-16-specific-radioactivity.html</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/2019-10-16-specific-radioactivity.html</guid>
+      <description>Specific radioactivity of ATP and glucose.</description>
+    </item>
+    
+  </channel>
+</rss>

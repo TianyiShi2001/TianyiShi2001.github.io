@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>protein-dna interaction on Tianyi@Oxford</title>
+    <link>/tags/protein-dna-interaction.html</link>
+    <description>Recent content in protein-dna interaction on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/protein-dna-interaction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protein-Nucleic Acid Interactions</title>
+      <link>/tutorial/protein-nucleic-acid-interactions.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-nucleic-acid-interactions.html</guid>
+      <description>1 Introduction 2 An Overview of Mechanisms of Protein-DNA Interactions 3 Thermodynamics of Protein-DNA Binding 4 Base Readout in the Major Groove 5 Shape Readout 5.1 Minor Groove Narrowing 5.2 Kinks 6 The Nucleosome as an Example of Non-Specific Binding 7 (Question 2) 7.1 (a) bHLH Motif 7.2 (b) Leucine Zipper 7.3 (c) Zinc Finger 7.4 (d) TATA box binding protein References 1 Introduction Protein-DNA interactions have profound impact on the expression and regulation of genes.</description>
+    </item>
+    
+  </channel>
+</rss>

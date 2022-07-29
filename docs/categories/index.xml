@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Tianyi@Oxford</title>
+    <link>/categories.html</link>
+    <description>Recent content in Categories on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NGS</title>
+      <link>/categories/ngs.html</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/ngs.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RNA-seq</title>
+      <link>/categories/rna-seq.html</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/rna-seq.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biochemistry</title>
+      <link>/categories/biochemistry.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/biochemistry.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lab</title>
+      <link>/categories/lab.html</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/lab.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biophysical techniques</title>
+      <link>/categories/biophysical-techniques.html</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/biophysical-techniques.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioinformatics</title>
+      <link>/categories/bioinformatics.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/bioinformatics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plant metabolism</title>
+      <link>/categories/plant-metabolism.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/plant-metabolism.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioenergetics</title>
+      <link>/categories/bioenergetics.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/bioenergetics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>human metabolism</title>
+      <link>/categories/human-metabolism.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/human-metabolism.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCB</title>
+      <link>/categories/mcb.html</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/mcb.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>/categories/programming.html</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/programming.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT</title>
+      <link>/categories/it.html</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/it.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>general</title>
+      <link>/categories/general.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/general.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data analysis</title>
+      <link>/categories/data-analysis.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data-analysis.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>/categories/statistics.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/statistics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genral</title>
+      <link>/categories/genral.html</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/genral.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data handling</title>
+      <link>/categories/data-handling.html</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data-handling.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>physics</title>
+      <link>/categories/physics.html</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/physics.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

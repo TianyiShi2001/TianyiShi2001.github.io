@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PDB on Tianyi@Oxford</title>
+    <link>/tags/pdb.html</link>
+    <description>Recent content in PDB on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/pdb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download and Sync with the Entire PDB Database</title>
+      <link>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</guid>
+      <description>All the PDB files are available via PDB’s FTP server. Simply cd to a directory and use wget to download all of them.
+mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/* Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the -N option to wget (essentially this means downloading “new” files only).</description>
+    </item>
+    
+    <item>
+      <title>Visualising the Resolution Revolution of Electron Microscopy</title>
+      <link>/bioinformatics/pdb-stats.html</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/pdb-stats.html</guid>
+      <description>1 Getting All the PDB Files 2 Parsing PDB files 3 Data Analysis with R 3.0.1 Prerequisites 3.1 Load Data 3.2 Tidying Data 3.3 Plotting 3.3.1 Plot Setup 3.3.2 Median Resolution of Different Methods Over Time 3.3.3 All Cases of X-Ray and EM Structures 3.3.4 Boxplots Last week I wrote an essay on electron microscopy (EM) and X-ray crystallography. I originally thought X-ray’s superiority in resolution has always been unrivalled, but the situation is changing—the best resolution achived by cryo-EM is now comparable with the average/median resolution achived by X-ray crystallography, which is around 2.</description>
+    </item>
+    
+  </channel>
+</rss>

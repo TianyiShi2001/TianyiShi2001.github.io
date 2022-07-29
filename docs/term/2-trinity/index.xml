@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2-Trinity on Tianyi@Oxford</title>
+    <link>/term/2-trinity.html</link>
+    <description>Recent content in 2-Trinity on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/term/2-trinity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redox-Based Modulation of Enzyme Activity</title>
+      <link>/tutorial/redox-based-modulation-of-enzyme-activity.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/redox-based-modulation-of-enzyme-activity.html</guid>
+      <description>Presentation see here
+Geigenberger, Peter, Ina Thormählen, Danilo M. Daloso, and Alisdair R. Fernie. 2017. “The Unprecedented Versatility of the Plant‎ Thioredoxin System.” Trends in Plant Science 22 (3): 249–62. https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008.
+Hägglund, Per, Christine Finnie, Hiroyuki Yano, Azar Shahpiri, Bob B. Buchanan, Anette Henriksen, and Birte Svensson. 2016. “Seed Thioredoxin H.” Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics 1864 (8): 974–82. https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014.</description>
+    </item>
+    
+    <item>
+      <title>Improving Photosynthesis by Photorespiratory Bypasses</title>
+      <link>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html</guid>
+      <description>1 Attempts to Inhibit Photorespiration and Improve Specificity of Rubisco 2 Bypassing Photorespiration 2.1 Implementing The Bacterial Glycerate Pathway 2.2 Inhibition of the Glycolate Transporter 3 Conclusion References Discuss the feasibility and desirability of improving photosynthesis in higher plants through the use of photorespiratory bypasses.
+Plants and algae use the Calvin cycle to capture inorganic carbon (as CO2) and use ATP and NADPH generated in light reactions to convert it to organic carbon.</description>
+    </item>
+    
+    <item>
+      <title>Computational Genomics Practical (TT 2020)</title>
+      <link>/lab/computational-genomics-practical-tt-2020.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/computational-genomics-practical-tt-2020.html</guid>
+      <description>1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) 1.2 Heatmaps in Python (with seaborn) 1.3 Average Gene Profile 2 Quiz 8 2.1 Matlab 2.2 Using R 1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) Loading Packages
+library(R.matlab) ## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.matlab for help. ## ## Attaching package: &amp;#39;R.matlab&amp;#39; ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## getOption, isOpen library(reshape2) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.</description>
+    </item>
+    
+    <item>
+      <title>Genetic Manipulation of the Calvin Cycle</title>
+      <link>/tutorial/genetic-manipulation-of-the-calvin-cycle.html</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/genetic-manipulation-of-the-calvin-cycle.html</guid>
+      <description>1 Introduction 1.1 Rubisco Does not Exert Much Control on the Flux of the Calvin Cycle Unless in Special Conditions 2 Other Enzymes that Catalyse Irreversible Reactions 3 Plastid Aldolase as an ‘Non-Regulated’ Enzyme Exerts a Greater Control than Rubisco on the Rate of Photosynthesis 4 Transketolase Directly Controls not Only Calvin Cycle but Also Other Pathways 5 Conclusion To what extent has genetic manipulation of the Calvin cycle forced the reappraisal of our understanding of the control of metabolic pathways in plants?</description>
+    </item>
+    
+    <item>
+      <title>Coordination of PS I and PS II</title>
+      <link>/tutorial/coordination-of-ps-i-and-ps-ii.html</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/coordination-of-ps-i-and-ps-ii.html</guid>
+      <description>1 Background 2 Why is Coordination between Photosystems I and II Needed 3 How is Coordination between PS-I and PS-II Achieved 3.1 The Role of the Plastoquinone Pool 3.2 Reversible Redistribution of LHC-II 3.3 Transcriptional Regulation 3.3.1 How does SIG1 phosphorylation confer phhotosystem promoter specificity? 4 Conclusion References Why do plants co-ordinate the relative activities of Photosystems I and II and how is this co-ordination achieved?
+1 Background Photosystems I and II are photochemical complexes that harvest light energy to drive endergonic redox reactions.</description>
+    </item>
+    
+    <item>
+      <title>Fuel Selection During Exercise</title>
+      <link>/tutorial/sensing-energy-status-during-exercise.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/sensing-energy-status-during-exercise.html</guid>
+      <description>1 Introduction 2 Overview 2.1 Glycogen and Glucose 2.1.1 Blood Glucose 2.1.2 Regulation of Glycogenolysis 2.2 Fatty Acids 2.2.1 Adipose Tissue Lipolysis and Plasma NEFA 2.2.2 Intramuscular Triacylglycerol (IMTG) 2.2.3 Plasma TG (VLDL-TG) What effects do the intensity and duration of exercise have on fuel selection by mammalian muscle?
+1 Introduction During exercise, glucose and fatty acids are the fuels used by the muscle. Their origin and relative contribution depend on the intensity and duration of exercise, as well as on characteristics of individuals such as the level of physical training.</description>
+    </item>
+    
+    <item>
+      <title>Insulin and Ketone Bodies</title>
+      <link>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</guid>
+      <description>1 Introduction 2 Regulation of Ketogenesis by Insulin 2.1 Adipocyte Lipolysis 2.2 Regulation of CPT1 2.3 Channeling of Acetyl-CoA into Ketogenesis 2.4 Mitochondrial HMG-CoA Synthase 3 Diabetes and Ketone Bodies 3.1 Aetiology of Diabetes 3.2 Overproduction of Ketone Bodies 3.3 Consequences of Ketoacidosis How does insulin regulate the pathways for the conversion of body fat into ketone bodies? Why are ketone bodies overproduced in uncontrolled diabetes and what are the metabolic consequences.</description>
+    </item>
+    
+    <item>
+      <title>Glucagon and Insulin</title>
+      <link>/tutorial/glucagon-and-insulin.html</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/glucagon-and-insulin.html</guid>
+      <description>1 Introduction 2 Initial Steps of Glucagon and Insulin Signalling 2.1 Insulin Signalling 2.2 Glucagon Signalling 3 Glucose Metabolism 3.1 Glycogen Metabolism in Liver 3.1.1 Glucagon Activates Glycogenolysis in Liver 3.1.2 Insulin Activates Glycogen Synthesis in Liver 3.2 Glycolysis and Gluconeogeneis in Liver 3.2.1 Short-Term Control via PFK2/PBPase2 Bifunctional Enzyme 3.2.2 Long-Term Transcriptional Control 3.3 Glucose Uptake into Muscle Cells 4 Lipid Metabolism 4.1 Lipolysis in Adipocytes 4.2 TAG Synthesis in Liver 4.</description>
+    </item>
+    
+    <item>
+      <title>Supplying Fuels to the Brain During Starvation</title>
+      <link>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</guid>
+      <description>Title: As starvation proceeds, how does the supply of fuels to the brain change? How is this change related to a requirement to conserve body protein?
+Due to the blood-brain barrier, The human brain can only harness energy from catabolising either glucose or ketone bodies. Under normal circumstances, glucose of dietary origin is the predominant source of fuel for the brain. As starvation begins (during the postabsorptive phase), astrocytes in the brain break down their stored glycogen to supply fuel in the form of lactate to neurons, which is followed by hepatic glycogenolysis that continue to provide glucose for the brain for a short period.</description>
+    </item>
+    
+  </channel>
+</rss>

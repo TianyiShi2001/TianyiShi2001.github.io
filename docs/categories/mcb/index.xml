@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MCB on Tianyi@Oxford</title>
+    <link>/categories/mcb.html</link>
+    <description>Recent content in MCB on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/mcb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Has Ras Signalling Been Studied in C. Elegans</title>
+      <link>/tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html</guid>
+      <description>1 Introduction 2 The Big Picture: Components of the C. elegans EGF-Ras-MAPK Pathway Involved in Vulva Induction 3 Techniques for Studying EGFR-Ras-MAPK Signalling and Vulva Induction 3.1 Forward Genetics and Reverse Genetics 3.1.1 In Early Experiments, Forward Genetics Methods were Used Entensively 3.1.2 RNAi and Reverse Genetics Since 1998 3.2 Observing Cell Fates 3.2.1 Microscopic Analysis 3.2.2 Transcriptional Reporters 3.3 Cross-Species Genomic Analysis Reveals Homology and Helps to Elucidate Roles of Proteins with Greater Accuracy 3.</description>
+    </item>
+    
+    <item>
+      <title>What is the Point of Studying Developmental Biology</title>
+      <link>/tutorial/what-is-the-point-of-studying-developmental-biology.html</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/what-is-the-point-of-studying-developmental-biology.html</guid>
+      <description>Title: What is the point of studying developmental biology?
+Link to presentation
+The main theme of developmental biology is the fate determination of cells, their division, differention and death, as well as the resulting higher level processes, including morphogenesis and organ formation. I’ll illustrate how this knowledge can help with preventive and public healthcare as well as modern medical research.
+Prenatal Care (Preventing Teratogenesis) Teratogen and congenital anomaly According to the US’ National Research Council, ~3% of live births suffer from major developmental aberrations, ~70% of neonatal deaths are due to developmental defects.</description>
+    </item>
+    
+    <item>
+      <title>Bacterial Cell Division</title>
+      <link>/tutorial/bacterial-cell-division.html</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/bacterial-cell-division.html</guid>
+      <description>discussing both Gram positive and negative bacteria with different morphologies, how they divide and chose examples of antibiotics, comparing their different effects</description>
+    </item>
+    
+    <item>
+      <title>Molecular Cloning</title>
+      <link>/notes/molecular-cloning.html</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/molecular-cloning.html</guid>
+      <description>About the frame Sometimes we want to use the start/stop codon in the vector for our protein production, especially when tag sequences need to be included. In these cases, we need to check our inserted GOI is in frame with the start/codon on the vector. Frame mismatch can be corrected by adding 1 or 2 random nucleotide(s) to the primer (forward primer to match vector start condon and reverse primer to match the stop codon) between the GOI sequence and the restriction site sequence.</description>
+    </item>
+    
+    <item>
+      <title>MCB Toolbox</title>
+      <link>/tutorial/mcb-toolbox.html</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/mcb-toolbox.html</guid>
+      <description>For the second tutorial, I want you to try some proper molecular biology using online tools, just as we do every day in the lab. Try it out on your own first, though you may wish to discuss any issues you may be having with each other. Please bring files/printouts and if you have one, your laptop to the tutorial. You will find NCBI BLAST useful and various links within www.</description>
+    </item>
+    
+    <item>
+      <title>Vectors Used in Bacterial and Eukaryotic Host Cells</title>
+      <link>/tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html</guid>
+      <description>What are the key similarities and differences between vectors used in bacterial and eukaryotic host cells? What can such vectors be used for?</description>
+    </item>
+    
+    <item>
+      <title>Antibiotics and Protein Synthesis</title>
+      <link>/tutorial/antibiotics-and-protein-synthesis.html</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/antibiotics-and-protein-synthesis.html</guid>
+      <description>Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.</description>
+    </item>
+    
+    <item>
+      <title>RNA Splicing</title>
+      <link>/tutorial/rna-splicing.html</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/rna-splicing.html</guid>
+      <description>What are the roles of small nuclear RNAs (SnRNAs) in pre-mRNA splicing and what are the mechanisms that control alternative splicing?</description>
+    </item>
+    
+    <item>
+      <title>Protein Expression and Purification</title>
+      <link>/tutorial/protein-purification.html</link>
+      <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-purification.html</guid>
+      <description>You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein. OR What strategies could you employ during protein expression and purification to minimise heterogeneity in a sample required for structural studies?</description>
+    </item>
+    
+  </channel>
+</rss>

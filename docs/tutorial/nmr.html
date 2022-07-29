@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>NMR - Tianyi@Oxford</title>
+<meta property="og:title" content="NMR - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1521 words</span>
+    
+
+
+    
+    <h1 class="article-title">NMR</h1>
+    <span class="article-date">2019-11-16</span>
+
+    <p class="link-to-pdf"><a href="2019-11-16-nmr.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="saq" class="section level1">
+<h1>SAQ</h1>
+<p><strong>Write brief notes on the chemical shift, the nuclear Overhauser enhancement effect (NOE), the relaxation times T1 and T2, and the spin-spin coupling constant (J) with an emphasis on how these can provide information about the structure and dynamics of biological molecules.</strong></p>
+<ul>
+<li>Chemical Shift: NMR applies RF wave to induce resonance with the precession frequency, <span class="math inline">\(\omega=\gamma (B_0-B_S)\)</span>, where <span class="math inline">\(B_0\)</span> is the constant magnetic field strength on the <span class="math inline">\(z\)</span> axis, <span class="math inline">\(B_S\)</span> is the magnetic field strength shilded by electrons around the nucleus and <span class="math inline">\(\gamma\)</span> is the magnetogyric ratio (depending of the identity of the nucleus). Nuclei in different chemical environment have different <span class="math inline">\(B_S\)</span> and thus different <span class="math inline">\(\omega\)</span>, and the chemical shift, <span class="math inline">\(\delta\)</span>, is defined as <span class="math display">\[\delta=\dfrac{\nu - \nu_\text{reference}}{\nu_\text{o}}\times10^6\]</span> When a protein is folded, the chemical environment of protons is highly variable and the NMR signal is noisy and has many peaks. In contrast, when a protein is unfolded, the chemical shift tend to be less variable, and fewer peaks with greater intensities are observed.</li>
+<li>NOE: When two nuclei are close (&lt; 5-6 angstroms) to each other, selective irradiation of one spin by <span class="math inline">\(B_1\)</span> field causes intensity changes of the other spin. Two dimensional methods detect NOE more easily. NOE is the main source of information for macromolecular structure determination by NMR.</li>
+<li>T<sub>1</sub> &amp; T<sub>2</sub> relaxation: The applied RF wave creates <span class="math inline">\(B_1\)</span> field which transiently reorient the net magnetisation, <span class="math inline">\(M\)</span>. The decay rate of <span class="math inline">\(M_{xy}\propto\dfrac{1}{\text{T}_2}\)</span>; decay rate of <span class="math inline">\(M_z\propto\dfrac{1}{\text{T}_1}\)</span>. T<sub>1</sub> relaxation is along the <span class="math inline">\(B_0\)</span> field (longitudinal) and T<sub>2</sub> relaxation is in the <span class="math inline">\(xy\)</span> plane (transverse). Relaxation rates give information about molecular dynamics and distances. T2 can be measured from the decay rate of the FID and linewidths and T1 can be measured by an inversion-recovery experiment.</li>
+<li>Spin-spin coupling constant: The spin states of two protons on two covalently bonded atoms affect the nuclear energy levels of each other, so the peak split in a neighbour-dependent way (<span class="math inline">\(n\)</span> adjacent protons give <span class="math inline">\(n+1\)</span> multiplets). Coupling strength gives bond-angle information for biomolecules. For example, splitting of H<sup>N</sup> due to H<span class="math inline">\(^\alpha\)</span> (<span class="math inline">\(^3J_{\text{NH}\alpha\text{CH}}\)</span>) depends on <span class="math inline">\(\Phi\)</span> angle.</li>
+</ul>
+<p><strong>Describe how NMR can be used to measure the pK values of ionizable groups in proteins. Why is chemical shift sensitive to ionization state? How can <sup>31</sup>P NMR be used to measure intracellular pH? Over what pH range is this effective?</strong></p>
+<ul>
+<li>The chemical shift a proton depends on its chemical environment, which includes the protonation state of adjacent acidic or basic sites. Therefore, gradual alteration of pH causes changes in the chemical shifts that can be plotted against pH. The p<span class="math inline">\(K_\text{a}\)</span> is the pH that corresponds to the inflection point of the resulting sigmoidal curve.</li>
+<li><em>In vivo</em> phosphate concentration is about constant. In pH range 5-8, the two dominant forms of phosphate, <span class="math inline">\(\text{H}_2\text{PO}_4^-\)</span> and <span class="math inline">\(\text{HPO}_4^{2-}\)</span> have different chemical shifts for <sup>31</sup>P in NMR, so the chemical shift can be related to pH: at higher pH, the <span class="math inline">\(\text{HPO}_4^{2-}\)</span> form is dominant, and its phosphate is more deshielded, leading to larger chemical shift</li>
+</ul>
+<p><strong>How does multidimensional NMR differ from basic 1-D NMR? What type of information is contained in the 2-D NMR experiments known as NOESY, TOCSY and HSQC?</strong></p>
+<p>As shown in Figure <a href="#fig:2d3dnmr">1</a>:</p>
+<ul>
+<li>The 1D spectrum is obtained by Fourier transformation of a single transient decaying signal. By collecting a series of transients separated by incrementing lengths of ‘evolution time’, <span class="math inline">\(t_1\)</span>, a 2D spectrum can be obtained. Similarly, 3D spectra are made with an additional period of ‘evolution time’, <span class="math inline">\(t_2\)</span>. Multidimensional NMR clearly shows connections (either <em>J</em>-coupling or NOE) between nuclei as ‘cross peaks’.</li>
+<li>COSY (correlated spectroscopy) spectra detect through-bond correlations (<em>J</em>-couplings)</li>
+<li>NOESY spectra has an extra 90<span class="math inline">\(^\circ\)</span> pulse and a fixed delay, <span class="math inline">\(\tau_m\)</span> inserted in the sequence and this allows detection of nuclear Overhauster effect (NOE).</li>
+<li>HSQC (heteronuclear single quantum coherence spectroscopy) gives a 2D spectrum with one axis for <sup>1</sup>H and another for a heteroatom (usually <sup>15</sup>N or <sup>13</sup>C).</li>
+</ul>
+<div class="figure"><span id="fig:2d3dnmr"></span>
+<img src="../img/2d3dnmr.jpg" alt="Schematic of 1D, 2D and 3D NMR, and sample " width="1993" />
+<p class="caption">
+Figure 1: Schematic of 1D, 2D and 3D NMR, and sample
+</p>
+</div>
+<p><strong>Outline the application of NMR spectroscopy to the determination of protein 3-D structure in solution. What are the advantages and disadvantages of this technique compared to X-ray crystallography?</strong></p>
+<ul>
+<li>Application of NMR
+<ul>
+<li>Experimental restraints: structure-related data derived from NMR spectra
+<ul>
+<li><sup>1</sup>H-<sup>1</sup>H NOEs: each NOESY cross peak gives a specific pairwise distance information</li>
+<li>coupling constants <span class="math inline">\(J\)</span> values can help to determine some dihedral angles</li>
+<li>chimical shifts: can be used to search in the database</li>
+<li>residual dipolar coupling: gives information about the direction of specific groups with respect to B<sub>0</sub>; gives long-range order information which complements the short-range information given by NOEs.</li>
+<li>solvent H-exchange: slow H-D exchange suggests that the proton is in a defined region of secondary structure</li>
+</ul></li>
+<li>Calculation of structures is done by incorporating various experimental restraints into a molecular dynamics (MD) simulation protocol. MD calculates position and velocity of atoms in a series of small steps using Newtonian mechanics. Extra energy terms are added to take account of observed constraints</li>
+</ul></li>
+<li>Compared to X-ray crystallography:
+<ul>
+<li>Disadvantages:
+<ul>
+<li>NMR is relatively laborious and slow</li>
+<li>restricted to small proteins</li>
+</ul></li>
+<li>Advantages:
+<ul>
+<li>No need for crystallization; only a pure solution is needed. Can be used on proteins that do not crystallize (e.g. those containing intrinsically unstructured regions)</li>
+<li>can be used to study dynamics</li>
+<li>site-specific info on ligand binding</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="essay" class="section level1">
+<h1>Essay</h1>
+<p><strong>Describe methods to monitor protein-folding pathways during the formation of a globular protein from an extended chain. Place particular emphasis on the role of NMR but also show how other methods provide complementary information. </strong></p>
+<div id="nmr" class="section level2">
+<h2>NMR</h2>
+<p>Protein folding is a multistep process that proceeds through intermediate states and studying these intermediates is difficult due to their transient nature, low populations under non-denaturing conditions, and difficulty of their isolation.</p>
+<p>Over the past two decades, many NMR methods have been developed and some became invaluable tools in studying molecular details of protein folding. Tansverse relaxation optimized spectroscopy (TROSY) is the first method developed for probing of dynamics and interactions of large (up to 1MDa) protein assemblies. Relaxation dispersion (RD) and saturation transfer (ST) methods provide a detailed look into the pathways of biomolecular processes, allowing studies of transient intermediates during protein folding.</p>
+<p>RD and ST methods allow studying the minor nonnative conformations during protein folding with short lifespans (often <span class="math inline">\(\mu\)</span>s-ms). The two major types of RD experiments include (1) Carr-Purcell-Meiboom-Gill (CPMG) methods that exploit modulation of R<sub>ex</sub> by a sequence of evenly spaced refocusing pulses, and (2) rotating frame <span class="math inline">\(\text{R}_{1\rho}\)</span> relaxation experiments that use modulation of R<sub>ex</sub> by an on- or off-resonance continuous wave (CW) RF field. The ST experiments exploit modulation of R<sub>ex</sub> by a weak RF field, and are conceptually similar to off-resonance <span class="math inline">\(\text{R}_{1\rho}\)</span> measurements. Transient nonnative protein states can be studied by other NMR experiments, such as paramagnetic relaxation enhancement.</p>
+<p>Dynamics of protein folding, on the time scale of seconds, can be studied by other methods. Changes in NMR spectra can be monitored in real-time. Logitudinal magnetization (ZZ) exchange experiments can probe interconversions between states with comparable populations. Hydrogen exchange measurements detect evanescent populations of disordered nonnative states transiently sampled by proteins under native-like conditions.</p>
+</div>
+<div id="other-methods" class="section level2">
+<h2>Other Methods</h2>
+<p>There are some methods that can assess the extent of folding qualitatively, but they do not give as much quantitative information as NMR does.</p>
+<div id="cd-circular-dichroism" class="section level3">
+<h3>CD (Circular Dichroism)</h3>
+<p>Plane-polarized light is the sum of two circularly polarized beams, L and R, which are rotating in opposite directions. CD arises from differential absorption of L and R component beams in a smaple of chiral molecules. CD is detected by a double beam instrument with separate L and R paths (which are usually produced by high frequency modulation of a photoelastic modulator (PEM) device). The high intensity light source is produced by synchrotron.</p>
+<p>The CD spectrum shows the variation of <span class="math inline">\(\Delta\epsilon\)</span> (difference between the extinction coefficient of the L and R beams) with wavelength (<span class="math inline">\(\lambda\)</span>). Because of the chiral nature of amino acids (except glycine), peptides are optically active. The CD spectra in the 170-250 nm region are distinct for proteins with different structure. Standard curves for different secondary structures (<span class="math inline">\(\alpha\)</span>-helix, <span class="math inline">\(\beta\)</span>-sheet, <span class="math inline">\(\beta\)</span>-turn, and random coil) are available (Figure <a href="#fig:cd">2</a>) and the proportion of different secondary structures of a protein is calculated by linear combination of the standard curves.</p>
+<div class="figure"><span id="fig:cd"></span>
+<img src="../img/cd.jpg" alt="CD components and standard curves" width="100%" />
+<p class="caption">
+Figure 2: CD components and standard curves
+</p>
+</div>
+</div>
+</div>
+<div id="dsc-differential-scanning-calorimetry" class="section level2">
+<h2>DSC (Differential Scanning Calorimetry)</h2>
+<p>DSC determines the heat capacity (the difference between the heat capacity in the sample cell and in the reference cell), C<sub>p</sub>, of a molecule in aqueous solution, as a function of temperature. This is done by increasing cell temperatures while keeping the two cells at the same temperature and recording the power supply throughout the experiment. The variation of <span class="math inline">\(C_\text{p}\)</span> with temperature is plotted. On such a curve, there is a peak if the sample molecule undergoes state changes within the temperature (Figure <a href="#fig:dsc">3</a>). For a protein, the peak corresponds to the melting temperature, <span class="math inline">\(T_\text{m}\)</span>, which occurs when the concentrations of its native state ([N]) and the denatured state ([D]) are equal. Stabilization of protein, for example by altering the pH and forming complexes, increases <span class="math inline">\(T_\text{m}\)</span></p>
+<div class="figure"><span id="fig:dsc"></span>
+<img src="../img/dsc.jpg" alt="Principles of DSC" width="100%" />
+<p class="caption">
+Figure 3: Principles of DSC
+</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Campbell-2012">
+<p>Campbell, Iain D. 2012. <em>Biophysical Techniques</em>. Oxford University Press.</p>
+</div>
+<div id="ref-Zhuravleva-2017">
+<p>Zhuravleva, Anastasia, and Dmitry M. Korzhnev. 2017. “Protein Folding by Nmr.” <em>Progress in Nuclear Magnetic Resonance Spectroscopy</em> 100: 52–77. <a href="https://doi.org/https://doi.org/10.1016/j.pnmrs.2016.10.002">https://doi.org/https://doi.org/10.1016/j.pnmrs.2016.10.002</a>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/tutorial/nmr.html"
+      this.page.identifier = "nmr"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2019 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

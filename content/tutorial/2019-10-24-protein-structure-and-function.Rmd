@@ -1,0 +1,59 @@
+---
+title: Protein Structure and Function
+author: 'Tianyi Shi'
+date: '2019-10-24'
+slug: protein-structure-and-function
+categories: []
+tags:
+  - protein
+  - structural biochemistry
+  - X-ray crystallography
+  - cryo-EM
+term: 3-Michaelmas
+week: 3
+tutor: Dominic Alonzi
+summary: Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins' lecture series. Bring notes no essay.
+bibliography: ../bib/main.bib
+nocite: ~
+---
+
+# Principles of X-ray crystallography
+
+## Scattering
+
+- When light hits matter...
+  - Vibration$\rightarrow$scattering (all directions)
+  - Energy level transitions$\rightarrow$absorption and emission (fluorescence)
+  - Photochemical reactions (e.g. photosynthesis)
+- scattering can give rise to refraction and diffraction
+- experiments on scattering
+  - turbidity (reduction in intensity)
+  - angular dependence
+  - changes in $\lambda$
+  
+  
+## Wnt3-Fz8 Complex [@Hirai-2019]
+
+- crystals of lysine-methylated and deglycosylated human Wnt3 (hWnt3)-mFz8 CRD complex were obtained by X-ray crystal structure was solved by molecular replacement and refined to a resolution of 2.8Å.
+
+### Difficulties in crystallisation and their solutions
+
+- Strong hydrophobic property of Wnt proteins caused by a covalent lipid modification 
+
+Optimisation and chemical modifications conducted to ensure high expression yields, enhanced solubility and sample homogeneity
+
+#### Solubility
+
+- Failed attempts on making crystallization constructs
+  - afamin can solubilize Wnt proteins; when coexpressed and complexed, Wnt3 and 3a can be purified to homogeneity. However, diffraction-quality crystals could not be obtained after repeated trials.
+  - coexpression with mFz8 CRD after Janda's success; but found purified Wnt3a-Fz8 CRD complex still remained hydrophobic and required detergents during concentration, which hampered crystallisation
+- Successful: N-terminal truncation of Wnts to mimic the cleavage of the N-terminal peptide by a metalloprotease Tiki, which has been reported to reduce the overall hydrophobicity
+  - N-terminal 20 residues were removed from hWnt3/mWnt3a constructs
+  - PA-hWnt3($\Delta$N)/PA-mWnt3a($\Delta$N) coexpressed with mFz8 CRD C-terminally fused with modified human Fc.
+  - confirmed that complexes were fully soluble in aqueous buffer and could be concentrated to > 5 mg/ml without detergents
+
+#### Optimisation
+
+- Initially (following Janda) attached normal (with hinge region) human IgG1 Fc to the C-terminal of mFz8 CRD, intervened by a TEV protease cleavage sequence for the later Fc removal
+  - although complex formed with high yield, it could not be cleaved at all; different linker lengths showed no improvements
+- decided to use IdeS protease to remove Fc.

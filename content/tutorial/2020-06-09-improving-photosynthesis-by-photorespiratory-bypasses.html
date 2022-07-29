@@ -1,0 +1,116 @@
+---
+title: Improving Photosynthesis by Photorespiratory Bypasses
+author: Tianyi Shi
+date: '2020-06-09'
+slug: improving-photosynthesis-by-photorespiratory-bypasses
+categories:
+  - biochemistry
+  - plant metabolism
+tags:
+  - plant metabolism
+  - photosynthesis
+term: 2-Trinity
+week: 7
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+  rmarkdown::word_document:
+    number_sections: true
+    toc: true
+nocite: ~
+---
+
+
+<div id="TOC">
+<ul>
+<li><a href="#attempts-to-inhibit-photorespiration-and-improve-specificity-of-rubisco"><span class="toc-section-number">1</span> Attempts to Inhibit Photorespiration and Improve Specificity of Rubisco</a></li>
+<li><a href="#bypassing-photorespiration"><span class="toc-section-number">2</span> Bypassing Photorespiration</a><ul>
+<li><a href="#implementing-the-bacterial-glycerate-pathway"><span class="toc-section-number">2.1</span> Implementing The Bacterial Glycerate Pathway</a></li>
+<li><a href="#inhibition-of-the-glycolate-transporter"><span class="toc-section-number">2.2</span> Inhibition of the Glycolate Transporter</a></li>
+</ul></li>
+<li><a href="#conclusion"><span class="toc-section-number">3</span> Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<p><strong>Discuss the feasibility and desirability of improving photosynthesis in higher plants through the use of photorespiratory bypasses.</strong></p>
+<p>Plants and algae use the Calvin cycle to capture inorganic carbon (as CO<sub>2</sub>) and use ATP and NADPH generated in light reactions to convert it to organic carbon. This process, known as photosynthesis, is the predominant way to replenish organic carbon in the biosphere, and is the basis for human food production. Despite its crucial role, the key enzyme in the pathway that attaches the inorganic CO<sub>2</sub> to the organic sugar 1,5-bisphosphate (RuBP), called Rubisco, is not efficient, in that it can also use O<sub>2</sub> instead of CO<sub>2</sub> as the substrate, which leads to production of one molecule each of 3-PGA and 2-phosphoglycerate (2-PG). Plants use a pathway known as photorespiration to remove the toxic 2-PG and to salvage some (75%) carbon lost from the Calvin cycle by converting two 2-PG to one 3-PGA while releasing CO<sub>2</sub> (Figure <a href="#fig:pr-bypass-native">0.1</a> ). Photorespiration is one of the major factors contributing to inefficiency of photosynthesis because 1) much CO<sub>2</sub> released in mitochondria is escaped into the atmosphere and not re-assimilated in the Calvin cycle, resulting in the reduction of the amount of Calvin cycle intermediates; 2) O<sub>2</sub> directly competes with CO<sub>2</sub> for Rubisco reaction (in ambient atmosphere and at 25<sup>o</sup>C, 25% of the Rubisco reactions in an average C3 plant uses O<sub>2</sub>); 3) in photorespiration, ammonia is released and needs to be reassimilated at the expense of one molecule of ATP and two reducing equivalents (reduced ferredoxins) per molecule of ammonia; 4) reducing power is dissipated in the oxidation of glycolate using molecular oxygen; 5) ATP is also consumed for phosphorylating glycerate in the final step in the photorespiration pathway (because the phosphate group on 2-PG is removed by phosphatase and is thus not conserved). The total direct energy cost for converting two 2PG to one 3PGA is 3.5 ATP and 2 NADPH. The rate of photorespiration is increased by the ratio of O<sub>2</sub> concentration to CO<sub>2</sub> concentration experienced by Rubisco (in C<sub>3</sub> plants, this is similar to atmospheric ratio), and is thus increased by high temperature, as solubulity of CO<sub>2</sub> decreases faster than does O<sub>2</sub> with increasing temperature.</p>
+<div class="figure"><span id="fig:pr-bypass-native"></span>
+<img src="../img/pr-bypass-native.png" alt="The native photorespiration pathway." width="100%" />
+<p class="caption">
+Figure 0.1: The native photorespiration pathway.
+</p>
+</div>
+<p>Several groups of photosynthetic organisms independently evolved strategies to minimise photorespiration and are thus able to grow in hot and/or CO<sub>2</sub>-deficient conditions. For example, C<sub>4</sub> and CAM plants uses PEP carboxylase, which uses <span class="math inline">\(HCO_3^-\)</span> instead of CO<sub>2</sub> as the substrate, to perform an initial carboxylation, which results in production of 4-carbon malate/oxaloacetate that is later used to release CO<sub>2</sub> for Rubisco reaction. The initial carboxylation and later decarboxylation is separated spatially in C<sub>4</sub> plants and temporally in CAM plants. In aquatics environments where CO<sub>2</sub> concentration is low, cyanobacteria and green algae uses bicarbonate pumps to actively increase intracellular CO<sub>2</sub> (<span class="math inline">\(HCO_3^-\)</span>) concentration, and their Rubisco is in close proximity with carbonic anhydrase, which converts <span class="math inline">\(HCO_3^-\)</span> to CO<sub>2</sub>.</p>
+<p>The vast majority of land plants (especially crops), however, adopts the C<sub>3</sub> metabolism scheme, which means they do not actively concentrate CO<sub>2</sub> and are susceptible to reduction of photosynthesis efficiency by photorespiration. Thus, it has been believed that reduction in photorespiration can improve photosynthesis and hence crop yield.</p>
+<div id="attempts-to-inhibit-photorespiration-and-improve-specificity-of-rubisco" class="section level1">
+<h1><span class="header-section-number">1</span> Attempts to Inhibit Photorespiration and Improve Specificity of Rubisco</h1>
+<p>Initial attempts to reduce the effect of photorespiration include inhibition, knock-down and knock-out of the enzymes involved in photorespiration. The relevant genes are identified by screening for mutants that have impaired photorespiratory function. However, most of such mutants exhibited chlorosis and stunted growth. The rationale is simple: reduction of photorespiratory enzyme activity not only does not reduce the production of 2-PG by Rubisco, but also causes the toxic molecules resulted from partial metabolism of 2-PG to accumulate. Also, it has been suggested that photorespiratory enzymes may be also involved in other pathways related to serine biosynthesis and nitrogen metabolism.</p>
+<p>Researches that attempted for a Rubisco enzyme with a greater specificity for CO<sub>2</sub> were also conducted. However, it was found that there is a inverse relationship between specificity and rate of reaction. As adaptations to achieve maximal rate of photosynthesis in different environments, Rubisco with high specificity and low turnover rate are typically found in C<sub>3</sub> plants that grow under high temperature/low CO<sub>2</sub>, and Rubisco with high turnover and low specificity are generally found in C<sub>3</sub> plants that grow under lower temperature, as well as in organisms with a CO<sub>2</sub>-concentrating mechanism (C<sub>4</sub>/CAM/algae/cyanobacteria).</p>
+</div>
+<div id="bypassing-photorespiration" class="section level1">
+<h1><span class="header-section-number">2</span> Bypassing Photorespiration</h1>
+<p>As attempts to improve Rubisco specificity and inhibit photorespiration directly both did not yield much outcome, photorespiratory bypasses becomes the new hotspot for improving photosynthesis. In general, photorespiratory bypasses are ‘designed photorespiratory pathways’ that aim to minimise energy comsumption and CO<sub>2</sub> loss to the atmosphere. Successful bypasses usually involve confining photorespiration to less compartments (ideally in chloroplast only), preventing lost of reducing power via oxidase, preventing release of NH<sub>3</sub>, and reducing the number of steps of reactions.</p>
+<div id="implementing-the-bacterial-glycerate-pathway" class="section level2">
+<h2><span class="header-section-number">2.1</span> Implementing The Bacterial Glycerate Pathway</h2>
+<p>Many bacteria possess a simple and efficient pathway for converting glyoxylate to glycerate. This pathway involves two steps: 1) condensation of two glyoxylate to tartronate semialdehyde (by glyoxylate carboxyligase (GCL)) while releasing CO<sub>2</sub>; 2) reduction of tartronate semialdehyde by tartronate semialdehyde reductase (requiring one NADH) to glycerate. Compared with the native photorespiratory pathway (which converts glyoxylate to glycine in peroxisome and decarboxylates glycine in the mitochondrion), NH<sub>3</sub> release is prevented and, if this pathway can be implemented in the chloroplast, CO<sub>2</sub> release is localised to the chloroplast and is more likely to be re-assimilated by Rubisco instead of escaping to the atmosphere.</p>
+<p>To implement the pathway in the chloroplast, a targeting sequence (e.g. Arabidopsis Rubisco small subunit (RbcS) or phosphoglucomutase transit peptide sequence) needs to be added to the N terminus of the gene constructs of the desired enzymes. In addition, the enzyme(s) that converts glycolate to glyoxylate also need(s) to be imported to the chloroplast. In normal plants, this conversion is catalysed by glycolate oxidase in peroxisome, and the same enzyme can be targeted to the chloroplast. However, glycolate oxidase is inefficient, as it uses O<sub>2</sub> as the hydrogen acceptor, which wastes reducing power. In addition, its reaction generates H<sub>2</sub>O<sub>2</sub>, which needs to be broken down by catalase. A more efficient bacterial enzyme, glycolate dehydrogenase (GDH), can be used to replace glycolate oxidase’s role. GDH uses NAD<sup>+</sup> instead of O<sub>2</sub> as the hydrogen acceptor, which prevents production of toxic H<sub>2</sub>O<sub>2</sub> and preserves reducing power.</p>
+<p>According to the scheme described above, <span class="citation">Kebeish et al. (2007)</span> generated plants transformed with five chloroplast-targeted bacterial genes encoding glycolate dehydrogenase, glyoxylate carboligase and tartronic semialdehyde reductase (Figure <a href="#fig:pr-bypass-3mech">2.1</a>, 1). In these plants, some glycolate is successfully converted directly to glycerate in chloroplasts, and reduces, but not eliminate, flux of photorespiratory metabolites through peroxisomes and mitochondria. The transgenic plants grew faster, produced more shoot and root biomass, and <a href="https://www.nature.com/articles/nbt1299/tables/1">the content of soluble sugars (fructose, glucose and sucrose) increases significantly</a>.</p>
+<div class="figure"><span id="fig:pr-bypass-3mech"></span>
+<img src="../img/pr-bypass-3mech.png" alt="Three photorespiratory bypasses. The loop represents the native pathway." width="100%" />
+<p class="caption">
+Figure 2.1: Three photorespiratory bypasses. The loop represents the native pathway.
+</p>
+</div>
+<p><span class="citation">Carvalho et al. (n.d.)</span> designed a similar photorespiratory bypass (Figure <a href="#fig:pr-bypass-3mech">2.1</a>, 3). It also uses tartronate semialdehyde (TSA) as the intermediate and thus prevents NH<sub>3</sub> production. However, the CO<sub>2</sub>-releasing TSA synthesis reaction occurs in the peroxisome rather than in the chloroplast and therefore this mechanism does not have the additional benefit of reducing CO<sub>2</sub> loss. In the peroxisome, TSA is converted to hydroxypyruvate by hydroxypyruvate isomerase (HYI), and the rest is identical to the native pathway. Unfortunately, all plants fail to express HYI, and for those with GCL expressed, chlorosis and stunted growth are exhibited, similar to photorespiration mutants. (I think one statement regarding this piece of research at the end of page 808 of the review written by <span class="citation">Weber and Bar-Even (2019)</span> is not appropriate, as HYI was not even expressed)</p>
+<p><span class="citation">Maier et al. (2012)</span> used a completely different approach. Instead of taking shortcuts within the native photorespiratory pathway with 3-PGA being the final product, they introduced glycolate oxidase, catalase and malate synthase into the chloroplast, which, together with pyruvate dehydrogenase and malic enzyme which are natively present in the chloroplast, completely oxidise glycolate into two CO<sub>2</sub> (Figure <a href="#fig:pr-bypass-3mech">2.1</a>, 2), while producing NADPH and NADH. Although this pathway requires more energy than the native pathway to restore the ‘<em>status quo ante</em>’ according to the calculation (see <span class="citation">Peterhansel, Blume, and Offermann (n.d.)</span>, Table 2), and is shown in computational modelling to result in a 31% <em>decrease</em> in photosynthetic efficiency compared to WT <span class="citation">(Xin et al. 2015)</span>, experimental studies on <em>Arabidopsiis thaliana</em> surprisingly revealed an increase in biomass in these transgenic plants. A modified version of this approach carried out later on tobacco plants by <span class="citation">South et al. (2019)</span> were shown to be even more successful than Kebeish’s approach which was calculated to be the most energy-efficient. The success of Maier’s method may be explained by thhe fact that, in hot climates (where sunlight is intense), ATP and NADPH supply from light reactions is often not limiting, so an improved energy balance in photorespiration does not necessarily improve the rate of carbon fixation. Instead, the benefit brought about by the rapid CO<sub>2</sub> generation in this bypass is more important. In addition, it is argued that the ‘wasteful’ dissipation of reducing power by glycolate oxidase may actually be beneficial in avoiding production of reactive oxygen species (ROS) in high light intensity, when the output of light reactions is in large excess. This also explains why higher plants prefer glycolate oxidase rather than glycolate dehydrogenase.</p>
+</div>
+<div id="inhibition-of-the-glycolate-transporter" class="section level2">
+<h2><span class="header-section-number">2.2</span> Inhibition of the Glycolate Transporter</h2>
+<p>In the two successful photorespiratory bypasses described above, glycolate metabolism inside chloroplast competes with its export via the glycolate exporter PLGG. Therefore, repression of this transporter is expected to increase the flux into the bypasses and thus further increase the efficiency. <span class="citation">South et al. (2019)</span> studied the effect of RNAi inhibition of <em>PLGG1</em> in these two methods as well as a ‘combined’ scheme of the two. The constructs and mechanisms of action are shown in Figure <a href="#fig:pr-bypasses-south-2019">2.2</a>. Both AP1 and AP3 (but not AP2) showed significant increase in dry weight biomass, by 13% and 18%, respectively. When the <em>PLGG1</em> RNAi module is added, the benefit of AP1 is lost, while that of AP3 increases to 24% (<span class="citation">Weber and Bar-Even (2019)</span> implied, on page 808 when citing this work, that inhibition of <em>PLGG</em> always increases efficiency, which is not correct).</p>
+<div class="figure"><span id="fig:pr-bypasses-south-2019"></span>
+<img src="../img/pr-bypasses-south-2019.png" alt="South's (2019) three photorespiratory bypass constructs. AP1: five bacterial genes encoding glycolate dehydrogenase (GDH), glyoxylate carboligase and tartronic semialdehyde reductase (same as Kebeish (2007)); AP2: glycolate oxidase (GOX), malate synthase and catalase (CAT) (same as Maier (2012)); AP3: same as AP2, except that GOX+CAT is replaced by GDH." width="100%" />
+<p class="caption">
+Figure 2.2: South’s (2019) three photorespiratory bypass constructs. AP1: five bacterial genes encoding glycolate dehydrogenase (GDH), glyoxylate carboligase and tartronic semialdehyde reductase (same as Kebeish (2007)); AP2: glycolate oxidase (GOX), malate synthase and catalase (CAT) (same as Maier (2012)); AP3: same as AP2, except that GOX+CAT is replaced by GDH.
+</p>
+</div>
+<p>Elimination of the AP1 enhancements by the <em>PLGG1</em> RNAi module implies that this introduced pathway ‘may not have had sufficient kinetic capacity to handle the full glycolate flux under high rates of Rubisco oxygenation’, according to <span class="citation">South et al. (2019)</span>. This is in accordance with the aforementioned statement that the efficiency of photorespiratory bypasses in accelerating carbon fixation does not depend on energy economy (conservation of ATP and NADPH), but instead on the rate of conversion of 2-PG into TCA cycle intermediates (CO<sub>2</sub> and/or 3-PGA). That is to say, the real culprit for photorespiration-induced reduction in carbon fixation activity is not loss of energy in the form of ATP and NADPH, but is likely to be the inefficiency of removing 2-PG, as well as the low CO<sub>2</sub>:O<sub>2</sub> ratio. Thus, in South’s AP3 construct where 2-PG is efficiently cleared up and CO<sub>2</sub> is produced in a large amount, the most prominent increase in carbon fixation and biomass is observed.</p>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1><span class="header-section-number">3</span> Conclusion</h1>
+<p>Photorespiration has long been a target for improving photosynthesis and crop yield. Several photorespiratory bypasses, which provide alternative, more efficient pathways to complement or replace the native pathway, have proved successful for this goal in model plants. Much is yet to be known about the mechanisms by which these bypasses accelerates photosynthesis, but recent experiments suggests that, in contrast to the traditional view that photorespiration is energy-wasting and should be avoided, increasing the flux through the photorespiration pathway might instead speed up carbon fixation. Also, conclusion obtained from computational modelling should be viewed with care, at least in photorespiratory studies, as the seemingly sensible assumptions they make often results in significant deviations from the experimental results.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Carvalho-2011">
+<p>Carvalho, Josirley de F C, Pippa J Madgwick, Stephen J Powers, Alfred J Keys, Peter J Lea, and Martin A J Parry. n.d. “An Engineered Pathway for Glyoxylate Metabolism in Tobacco Plants Aimed to Avoid the Release of Ammonia in Photorespiration.” <em>BMC Biotechnol</em> 11. Embrapa Soybean, Londrina, Paraná, Brazil, Rodovia Carlos Strass, Distrito da Warta, Londrina PR, Brasil.: 111. <a href="https://doi.org/10.1186/1472-6750-11-111">https://doi.org/10.1186/1472-6750-11-111</a>.</p>
+</div>
+<div id="ref-Kebeish-2007">
+<p>Kebeish, Rashad, Markus Niessen, Krishnaveni Thiruveedhi, Rafijul Bari, Heinz-Josef Hirsch, Ruben Rosenkranz, Norma Stäbler, Barbara Schönfeld, Fritz Kreuzaler, and Christoph Peterhänsel. 2007. “Chloroplastic Photorespiratory Bypass Increases Photosynthesis and Biomass Production in Arabidopsis Thaliana.” <em>Nat Biotechnol</em> 25 (5). RWTH Aachen, Institute of Biology I, Worringer Weg 1, 52056 Aachen, Germany.: 593–99. <a href="https://doi.org/10.1038/nbt1299">https://doi.org/10.1038/nbt1299</a>.</p>
+</div>
+<div id="ref-Maier-2012">
+<p>Maier, Alexandra, Holger Fahnenstich, Susanne Von Caemmerer, Martin Engqvist, Andreas Weber, Ulf-Ingo Flügge, and Veronica Maurino. 2012. “Transgenic Introduction of a Glycolate Oxidative Cycle into a. Thaliana Chloroplasts Leads to Growth Improvement.” <em>Frontiers in Plant Science</em> 3: 38. <a href="https://doi.org/10.3389/fpls.2012.00038">https://doi.org/10.3389/fpls.2012.00038</a>.</p>
+</div>
+<div id="ref-Peterhansel-2013">
+<p>Peterhansel, Christoph, Christian Blume, and Sascha Offermann. n.d. “Photorespiratory Bypasses: How Can They Work?” <em>J Exp Bot</em> 64 (3). Leibniz University Hannover, Institute of Botany, Herrenhaeuser Straße 2, 30419 Hannover, Germany. cp@botanik.uni-hannover.de: 709–15. <a href="https://doi.org/10.1093/jxb/ers247">https://doi.org/10.1093/jxb/ers247</a>.</p>
+</div>
+<div id="ref-South-2019">
+<p>South, Paul F, Amanda P Cavanagh, Helen W Liu, and Donald R Ort. 2019. “Synthetic Glycolate Metabolism Pathways Stimulate Crop Growth and Productivity in the Field.” <em>Science</em> 363 (6422). Global Change; Photosynthesis Research Unit, United States Department of Agriculture-Agricultural Research Service, Urbana, IL 61801, USA.; Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, IL 61801, USA.; Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, IL 61801, USA.; Department of Crop Sciences, University of Illinois, Urbana, IL 61801, USA.; Global Change; Photosynthesis Research Unit, United States Department of Agriculture-Agricultural Research Service, Urbana, IL 61801, USA. d-ort@illinois.edu.; Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, IL 61801, USA.; Department of Crop Sciences, University of Illinois, Urbana, IL 61801, USA.; Department of Plant Biology, University of Illinois, Urbana, IL 61801, USA. <a href="https://doi.org/10.1126/science.aat9077">https://doi.org/10.1126/science.aat9077</a>.</p>
+</div>
+<div id="ref-Weber-2019">
+<p>Weber, Andreas P.M., and Arren Bar-Even. 2019. “Update: Improving the Efficiency of Photosynthetic Carbon Reactions.” <em>Plant Physiology</em> 179 (3). American Society of Plant Biologists: 803–12. <a href="https://doi.org/10.1104/pp.18.01521">https://doi.org/10.1104/pp.18.01521</a>.</p>
+</div>
+<div id="ref-Xin-2015">
+<p>Xin, Chang-Peng, Danny Tholen, Vincent Devloo, and Xin-Guang Zhu. 2015. “The Benefits of Photorespiratory Bypasses: How Can They Work?” <em>Plant Physiology</em> 167 (2). American Society of Plant Biologists: 574–85. <a href="https://doi.org/10.1104/pp.114.248013">https://doi.org/10.1104/pp.114.248013</a>.</p>
+</div>
+</div>
+</div>

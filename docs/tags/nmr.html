@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>NMR - Tianyi@Oxford</title>
+<meta property="og:title" content="NMR - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../tags/nmr/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">NMR</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="../tutorial/assessing-structural-models.html" class="archive-item-link">
+                Assessing The Quality Structural Models 
+              </a>
+              <span class="archive-item-date">
+                2020-10-27
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+<script src="../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="../rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#the-essence-of-x-ray-crystallography"><span class="toc-section-number">1</span> The Essence of X-Ray Crystallography</a></li>
+<li><a href="#assessing-the-quality-of-a-structure-during-model-building-and-refinement"><span class="toc-section-number">2</span> Assessing the Quality of A Structure During Model Building and Refinement</a>
+<ul>
+<li><a href="#r-and-rfree"><span class="toc-section-number">2.1</span> <em>R</em> and <em>R</em><sub>free</sub></a></li>
+<li><a href="#reci"><span class="toc-section-number">2.2</span> Reciprocal-Space Refinement: Refinement by least squares</a></li>
+<li><a href="#fit"><span class="toc-section-number">2.3</span> Real-Space Refinement: Map Fitting</a></li>
+</ul></li>
+<li><a href="#assessing-quality-after-automatic-model-building-and-refinement"><span class="toc-section-number">3</span> Assessing Quality After Automatic Model Building and Refinement</a>
+<ul>
+<li><a href="#density-fit-analysis-and-local-geometry-validation"><span class="toc-section-number">3.1</span> Density fit analysis and local geometry validation</a>
+<ul>
+<li><a href="#structural-parameters-bond-length-bond-angle-chirality-planarity-and-dihedral-angles"><span class="toc-section-number">3.1.1</span> Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles</a></li>
+<li><a href="#torsional-angles-and-ramachandran-plot"><span class="toc-section-number">3.1.2</span> Torsional Angles and Ramachandran Plot</a></li>
+<li><a href="#undefined-regions"><span class="toc-section-number">3.1.3</span> Undefined regions</a></li>
+<li><a href="#unexplained-density"><span class="toc-section-number">3.1.4</span> Unexplained Density</a></li>
+<li><a href="#distortions-due-to-crystal-packing"><span class="toc-section-number">3.1.5</span> Distortions due to crystal packing</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<p>A high-quality protein structure model explains the experimental observations well, and conforms to physical and biochemical principles. There are some parameters indicating the quality of a structure model. Some of them are used during model building and refinement, while others apply only on a refined structure.</p>
+<div id="the-essence-of-x-ray-crystallography" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> The Essence of X-Ray Crystallography</h1>
+<p>The intensity at <span class="math inline">\((h, k, l)\)</span> in the reciprocal space, i.e. the structure factor amplitudes collected in X-ray experiments is directly related to the Fourier transform of the electron density in the real space (<span class="math inline">\(I = \mathbf{F}_{hkl}^2\)</span>), the latter being calculated as:</p>
+<p><span class="math display">\[\begin{equation}
+\mathbf{F}_{hkl} = \int_{x}\int_{y}\int_{z}\rho(x, y, z)e^{2\pi i(hx +ky + lz) }\mathrm{d}x \mathrm{d}y \mathrm{d}z
+\end{equation}\]</span></p>
+<p>In practice, since the number of atoms and reflections (hence <span class="math inline">\((x, y, z)\)</span> or <span class="math inline">\((h, k, l)\)</span> coordinates is limited, its discrete form, which can be efficiently computed, is used:<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p><span class="math display">\[\begin{equation}
+\mathbf{F}_{hkl} = \sum_{j}^{n}f_j e^{2\pi i(hx_j +ky_j + lz_j) }
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\((x_j, y_j, z_j)\)</span> is the coordinates of the <em>j</em>-th atom in real space.</p>
+<p>This is also known as the <em>structure factor equation</em>.</p>
+<p>Solving the electron density from structure factors involves solving the inverse Fourier transform of the above equation, also known as the <em>electron density equation</em>, in its discrete form:</p>
+<p><span class="math display">\[\begin{equation}
+\rho(x, y, z) = \dfrac{1}{V}\sum_{h}\sum_{k}\sum_{l}w_{hkl}|\mathbf{F}_\text{obs}|e^{-2\pi i(hx + ky + lz - \alpha^\prime_{hkl})}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\alpha^\prime_{hkl}\)</span> is the phase at each set of coordinates in the reciprocal space. The phases are not directly available but are necessary (actually more important than intensities) for computing <span class="math inline">\(\rho(x,y,z)\)</span> (electron density).</p>
+<p>The phases can be solved either by phasing experiments, in which case the resolution is relatively low but the data is unbiased, or by molecular replacement (MR), in which case the resolution is relatively high but the data suffer from bias (the phases resemble the search model more than the actual structure). Thus, bias minimisation measures such as maxinum likelihood map coefficients are applied before electron density map contrstruction.</p>
+</div>
+<div id="assessing-the-quality-of-a-structure-during-model-building-and-refinement" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Assessing the Quality of A Structure During Model Building and Refinement</h1>
+<p>Solving the electron density and ultimately the atomic structure from experimental data is an iterative process, starting from a model with low resolution and imperfect phases and progressively refining the model by applying prior knowledge on the information the current model can provide so far.</p>
+<p>In general, the first step in refinement is to construct a crude electron density map (Equation (3)) using phase angles (<span class="math inline">\(\alpha^\prime\)</span>) obtained either from MR or experimental phasing. This initial map, <strong>F</strong><sub>0</sub>, is improved using techniques such as <em>density modification, solvent leveling, solvent flattening</em>. At some critical point in the iterative improvement of phases, the map becomes clear enough that a protein chain can be traced through it. From this point on, real-space refinement is also conducted at each round of iteration. Electron density map is obtained (details in Section <a href="#fit">2.3</a>), and filled with atoms, and transformed back to the reciprocal space. This process repeats until converging to a high-quality strucure. <span class="math inline">\(R\)</span> and <span class="math inline">\(R_\text{free}\)</span>, explained below, are used to assess progress in the refinement, and is also a major factor in evaluating the quality of a model.</p>
+<div id="r-and-rfree" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> <em>R</em> and <em>R</em><sub>free</sub></h2>
+<p><em>R</em> is a measure of the deviation of calculated intensities from models (details in Section <a href="#reci">2.2</a>) from the observed intensities in the diffraction pattern, defined by the following equation:</p>
+<p><span class="math display">\[
+R = \dfrac{\sum ||\mathbf{F}_\text{obs}| - |\mathbf{F}_\text{calc}||}{\mathbf{F}_\text{obs}}
+\]</span></p>
+<p>Since bias can easily be introduced into the <em>R</em> value (especially by overparameterisation, see Section <a href="#reci">2.2</a>) and a reduction of <em>R</em> value sometimes does not improve the actual quality of structure (<span class="citation">Kleywegt and Brünger (n.d.)</span>), a small fraction (typically around 5%<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>) of randomly selected reflections are removed from the data used for refinement. These reflections can then be used to calculate an R factor, denoted as <span class="math inline">\(R_\text{free}\)</span>, whose reduction can be considered as an <em>unbiased estimate</em> of the improvement of the model.</p>
+<div class="figure"><span id="fig:coot-phenix"></span>
+<img src="../img/coot-phenix.png" alt=" R and R-free values decreases as refinement proceeds (left: Coot; right: phenix.refine)." width="100%" />
+<p class="caption">
+Figure 2.1:  R and R-free values decreases as refinement proceeds (left: Coot; right: phenix.refine).
+</p>
+</div>
+<p>Figure <a href="#fig:coot-phenix">2.1</a> shows the decrease of <em>R</em> and <em>R</em><sub>free</sub> during a refinement task conducted in Phenix.</p>
+</div>
+<div id="reci" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Reciprocal-Space Refinement: Refinement by least squares</h2>
+<p>Reciprocal-space refinement involves computerised attempts to improve agreement between <span class="math inline">\(\mathbf{F}_\text{obs}\)</span> and <span class="math inline">\(\mathbf{F}_\text{calc}\)</span> by <em>without</em> consideration of the maps and models. <em>Refinement by least squares</em> is the earliest successful technique and is discussed here.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>The goal of refinement by least squares is, find <span class="math inline">\((x_j, y_j, z_j)\)</span> for all atom <span class="math inline">\(j\)</span> whose <em>expected</em> ( i.e. computed) structure factor amplitudes, <span class="math inline">\(|\mathbf{F}_\text{calc}|\)</span> are as close as possible to <em>observed</em> structure factor amplitudes, <span class="math inline">\(|\mathbf{F}_\text{obs}|\)</span>. Specifically, this means minimising the function <span class="math inline">\(\Phi\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+\Phi = \sum_{hkl}(w_{hkl}\mid\mathbf{F}_\text{obs}\mid - \mid\mathbf{F}_\text{calc}\mid)_{hkl}^{2}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(w_{hkl}\)</span> is the weight term that depends on the reliability of the corresponding measured intensity and <span class="math inline">\(|\mathbf{F}_\text{calc}|\)</span> is a variant form of Equation (2) that can include additional parameters such as <em>B</em>-factor (<span class="math inline">\(B_j\)</span>) and occupancy <span class="math inline">\(n_j\)</span>. An equation with <span class="math inline">\(B_j\)</span> and <span class="math inline">\(n_j\)</span> included can be written as:</p>
+<p><span class="math display">\[\begin{equation}
+\mathbf{F}_\text{calc} = \sum_{j}n_j f_j e^{2\pi i(hx_j +ky_j + lz_j) - B_j[(\sin\theta)/\lambda]^2}
+\end{equation}\]</span></p>
+<p>Note that the equatin shows that the effect of <em>B</em>-factors depends on the angle of reflection <span class="math inline">\((\sin\theta)/\lambda\)</span>.</p>
+<p>Solving the minimum of <span class="math inline">\(\Phi\)</span> analytically is impractical, and instead numerical methods are used, which would lead to a minimum closest to the starting value.To prevent the refinement converging to a local minimum, it is important that the starting parameters be near the <em>global minimum</em>. Is also important <em>not</em> to include too many parameters (such as <em>B</em>-factor) at the initial stages of resolution when the resolution is low, as this would decrease the radius of convergence (Figure <a href="#fig:radius-convergece">2.2</a>).</p>
+<div class="figure"><span id="fig:radius-convergece"></span>
+<img src="../img/radius-convergece.png" alt="Adding number of parameters improves precision of refinement, but makes it more unlikely to reach the global minimum from a given point. Thus, refinement starts with a small number of parameters, and more parameters are only added after the success of previous lower-resolution refinement steps." width="100%" />
+<p class="caption">
+Figure 2.2: Adding number of parameters improves precision of refinement, but makes it more unlikely to reach the global minimum from a given point. Thus, refinement starts with a small number of parameters, and more parameters are only added after the success of previous lower-resolution refinement steps.
+</p>
+</div>
+<p>To minimise the number of parameters used during early stages of refinement (and thus to increase radius of convergence), individual <span class="math inline">\((x,y,z)\)</span> coordinates are actually not used. Instead, only torional angles <span class="math inline">\(\psi\)</span> and <span class="math inline">\(\phi\)</span> are allowed to change, and all bond lengths and angles are fixed to their theoretical average, side chains are assumed to be in their preferred conformation, and peptide linkages are fixed to be planar. This strategy is known as <em>restrained</em> reciprocal space refinement. As refinement proceeds, more parameters, from individual <span class="math inline">\((x,y,z)\)</span> coordinates to isotropic B-factors and finally anisotropic factors, can be added into calculation.</p>
+</div>
+<div id="fit" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Real-Space Refinement: Map Fitting</h2>
+<p><em>Map fitting</em> or <em>model building</em> entails building a molecular model that fits realistically into the current electron density contour map.</p>
+<p>To reduce the bias (towards <strong>F</strong><sub>calc</sub> (<strong>F</strong><sub>c</sub>)) when constructing the electron density map, Fourier syntheses of <strong>F</strong><sub>obs</sub> and <strong>F</strong><sub>calc</sub> are used.
+A Fourier synthesis <em>m</em><strong>F</strong><sub>o</sub> - <em>n</em><strong>F</strong><sub>c</sub> is calculated as:</p>
+<p><span class="math display">\[
+\rho(x, y, z) = \dfrac{1}{V}\sum_{h}\sum_{k}\sum_{l}(m|\mathbf{F}_\text{o}|-|\mathbf{F}_\text{c}|)e^{-2\pi i(hx + ky + lz - \alpha^\prime_{hkl})}
+\]</span></p>
+<p>and its corresponding electron density map is called an <em>m</em><strong>F</strong><sub>o</sub> - <em>n</em><strong>F</strong><sub>c</sub> map.</p>
+<p>Simply put, the 2<strong>F</strong><sub>o</sub> - <strong>F</strong><sub>c</sub> map resembles a molecular surface, and a <strong>F</strong><sub>o</sub> - <strong>F</strong><sub>c</sub> map emphasises the error (positive density implies that the unit cell contains more electron density in this region than implied by the model (<strong>F</strong><sub>c</sub>). Near the end of refinement, the <strong>F</strong><sub>o</sub> - <strong>F</strong><sub>c</sub> map becomes rather empty except in problem areas, which may need to be corrected manually.</p>
+<p>Fitting a molecular model into the electron density map depends on prior knowledge, such as average bond lengths and angles, the amino acid sequence of the protein, properties of peptide chains, etc. For example, we know that carboxyl oxygens in adjacent amino acid residues in a <span class="math inline">\(\beta\)</span>-sheet point in opposite directions. Thus, once a <span class="math inline">\(\beta\)</span>-sheet along with one or two carboxyl oxygen are discernible, we can make a sensible guess of the positions of all other carbonyl oxygens.</p>
+</div>
+</div>
+<div id="assessing-quality-after-automatic-model-building-and-refinement" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Assessing Quality After Automatic Model Building and Refinement</h1>
+<div id="density-fit-analysis-and-local-geometry-validation" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Density fit analysis and local geometry validation</h2>
+<p>Automatic model building and refinement use the decrease of <em>R</em> value as an indicator of progress and terminates when <em>R</em> is considered to be sufficiently low. This may lead to situations where the global <em>R</em> is favourable but local geometry can still be improved.</p>
+<p>Local geometry validation programs, such as “Density fit analysis” in Coot (Figure <a href="#fig:coot-density-fit-2">3.1</a>), evaluate the model geomtry on a per-residue basis and flag outliers. These outliers can then be fixed manually. With the aid of electron density contour maps (where model atoms lie outside 2<strong>F</strong><sub>o</sub> - <strong>F</strong><sub>c</sub> contours, the <strong>F</strong><sub>o</sub> - <strong>F</strong><sub>c</sub> will often show the atoms with negativel contours, with nearby positive contours pointing to correct locations for these atoms).</p>
+<div class="figure"><span id="fig:coot-density-fit-2"></span>
+<img src="../img/coot-density-fit-2.png" alt="Use the 'Density fit analysis' function to evaluate model geometry on a per-residue basis and plot a histogram that shows outliers, then use the 'Rotamers' tool to fix a side chain that's pointing the wrong way." width="100%" />
+<p class="caption">
+Figure 3.1: Use the ‘Density fit analysis’ function to evaluate model geometry on a per-residue basis and plot a histogram that shows outliers, then use the ‘Rotamers’ tool to fix a side chain that’s pointing the wrong way.
+</p>
+</div>
+<div id="structural-parameters-bond-length-bond-angle-chirality-planarity-and-dihedral-angles" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles</h3>
+<p>During late stages of refinement, restraints on structura paramaters such as bond lengths and angles are release such that thay are allowed to change freely as long as <em>R</em> values could be made to decrease. This may lead to unrealistic models with improbable structural parameters. Thus, they need to be validated. By convention, this is done by calculating the root-mean-square deviations (RMSD) of these parameters in the model from the corresponding set of values based opon the geometry of small organic molecules. These values are recorded in PDB files in <code>REMARK 3</code> fields:</p>
+<pre><code>REMARK   3  DEVIATIONS FROM IDEAL VALUES.                                       
+REMARK   3                 RMSD          COUNT                                  
+REMARK   3   BOND      :  0.003           1366                                  
+REMARK   3   ANGLE     :  0.675           1846                                  
+REMARK   3   CHIRALITY :  0.050            186                                  
+REMARK   3   PLANARITY :  0.005            246                                  
+REMARK   3   DIHEDRAL  : 15.473            459                                  </code></pre>
+<p>Because bond angles, lengths, chirality and planarity are restrained in early stages of refinement, they are less likely to deviate much from ideal values. Dihedral angles, which is allowed to change throughout the refinement, produce much larger RMSD and are worth closer examination.</p>
+</div>
+<div id="torsional-angles-and-ramachandran-plot" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Torsional Angles and Ramachandran Plot</h3>
+<p>Torsional (dihedral) angles <span class="math inline">\(\psi\)</span> and <span class="math inline">\(\phi\)</span> are show much more variation than bond lengths and angles, but only a subset of all possible (<span class="math inline">\(\phi\)</span>, <span class="math inline">\(\psi\)</span>) pairs are allowed so that adjacent amino acid side chains do not clash. Validation of torsional angle is achieved via a lookup table, where the keys are (<span class="math inline">\(\phi\)</span>, <span class="math inline">\(\psi\)</span>) pairs and values are scores. A (<span class="math inline">\(\phi\)</span>, <span class="math inline">\(\psi\)</span>) is considered preferred or allowed if its score is within certain thresholds. Otherwise, it is considered an outlier. Due to glycine’s small size and proline’s cyclic structure, the preferred/allowed regions of their torsinal angle pairs are defined differently, for example in Phenix/cctbx<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>. Torsional angle validation is often visualised with a Ramachandran plot, as shown in Figure <a href="#fig:coot-ramachandran">3.2</a>.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<div class="figure"><span id="fig:coot-ramachandran"></span>
+<img src="../img/coot-ramachandran.png" alt="Validating dihedral angles with Ramachandran plot in Coot" width="100%" />
+<p class="caption">
+Figure 3.2: Validating dihedral angles with Ramachandran plot in Coot
+</p>
+</div>
+</div>
+<div id="undefined-regions" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Undefined regions</h3>
+<p>Often, some regions (often the terminal regions) of the protein are highly disordered and produce no detectable diffraction at high resolution and are thus invisible in the electron-density maps. It is not uncommon to omit these residues in the model. In some cases, however, exact coordinates are given for these atoms, along with very high <em>B</em>-factors (above 50 or 60 angstroms), and one must be careful not to over-interprete these regions.</p>
+</div>
+<div id="unexplained-density" class="section level3" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Unexplained Density</h3>
+<p>Empty electron density may remain after all known contents of the unit cell have been located. This can either due to an artifect of missing Fourier terms, reagents used in purification or crystallisation, or it could be due to previously unknown ligands (cofactors, inhibitors or allosteric effectors).</p>
+</div>
+<div id="distortions-due-to-crystal-packing" class="section level3" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> Distortions due to crystal packing</h3>
+<p>Although flexibility of atoms is usually reflected by the <em>B</em>-factor, in certain situations dynamic regions of a protein molecule can be rigidly fixed in a specific conformation as a result of crystal packing interactions. It should be declared in the PDB header that the protein is affected by crystallisation. One can also check whether these interactions are likely to occur by displaying all neighbouring, symmetry-related molecules in the crystal structure and examine if any intermolecular interactions are present that are a result of crystal packing.</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references hanging-indent">
+<div id="ref-Blow-2002">
+<p>Blow, David. 2002. <em>Outline of Crystallography for Biologists</em>. Oxford University Press.</p>
+</div>
+<div id="ref-Kleywegt-1996">
+<p>Kleywegt, G J, and A T Brünger. n.d. “Checking Your Imagination: Applications of the Free R Value.” <em>Structure</em> 4 (8): 897–904. <a href="https://doi.org/10.1016/s0969-2126(96)00097-4">https://doi.org/10.1016/s0969-2126(96)00097-4</a>.</p>
+</div>
+<div id="ref-rhodes-2006">
+<p>Rhodes, Gale. 2006. <em>Crystallography Made Crystal Clear Clear</em>. Academic Press.</p>
+</div>
+<div id="ref-Rupp-2010">
+<p>Rupp, Bernhard. 2010. <em>Biomolecular Crystallography: Principles, Practice, and Application to Structural Biology</em>. Garland Science.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Most crystallography softwares seem to use Fast Fourier Trasnform (FFT) algorithms provided by FFTW (<a href="http://www.fftw.org/" class="uri">http://www.fftw.org/</a>) to compute discrete fourier transforms (and its inverse)<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>In PDB files, this fraction is recorded in the field <code>FREE R VALUE TEST SET SIZE</code><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>modern refinement softwares use techniques such as simulated annealing and beyesian methods to improve the accuracy of refinement<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>In Phenix/cctbx, a lookup table (actually implemented as an array for better performance) is defined for each of the following cases: glycine, cis-proline, trans-proline, pre-proline, isoleucine/valine, and all other amino acid residues: <a href="https://github.com/cctbx/cctbx_project/blob/master/mmtbx/validation/ramachandran/rama8000_tables.h"><code>mmtbx/validation/ramachandran/rama8000_tables.h</code></a><a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Recently I’ve been developing a PDB file parser. It is now able to parse coordinate information reliably, which allows Ramanchandran plot analysis: <a href="https://github.com/TianyiShi2001/protein" class="uri">https://github.com/TianyiShi2001/protein</a><a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+      
+      <h2 class="archive-title">2019</h2>
+          
+            <article class="archive-item">
+              <a href="../tutorial/nmr.html" class="archive-item-link">
+                NMR 
+              </a>
+              <span class="archive-item-date">
+                2019-11-16
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<div id="saq" class="section level1">
+<h1>SAQ</h1>
+<p><strong>Write brief notes on the chemical shift, the nuclear Overhauser enhancement effect (NOE), the relaxation times T1 and T2, and the spin-spin coupling constant (J) with an emphasis on how these can provide information about the structure and dynamics of biological molecules.</strong></p>
+<ul>
+<li>Chemical Shift: NMR applies RF wave to induce resonance with the precession frequency, <span class="math inline">\(\omega=\gamma (B_0-B_S)\)</span>, where <span class="math inline">\(B_0\)</span> is the constant magnetic field strength on the <span class="math inline">\(z\)</span> axis, <span class="math inline">\(B_S\)</span> is the magnetic field strength shilded by electrons around the nucleus and <span class="math inline">\(\gamma\)</span> is the magnetogyric ratio (depending of the identity of the nucleus). Nuclei in different chemical environment have different <span class="math inline">\(B_S\)</span> and thus different <span class="math inline">\(\omega\)</span>, and the chemical shift, <span class="math inline">\(\delta\)</span>, is defined as <span class="math display">\[\delta=\dfrac{\nu - \nu_\text{reference}}{\nu_\text{o}}\times10^6\]</span> When a protein is folded, the chemical environment of protons is highly variable and the NMR signal is noisy and has many peaks. In contrast, when a protein is unfolded, the chemical shift tend to be less variable, and fewer peaks with greater intensities are observed.</li>
+<li>NOE: When two nuclei are close (&lt; 5-6 angstroms) to each other, selective irradiation of one spin by <span class="math inline">\(B_1\)</span> field causes intensity changes of the other spin. Two dimensional methods detect NOE more easily. NOE is the main source of information for macromolecular structure determination by NMR.</li>
+<li>T<sub>1</sub> &amp; T<sub>2</sub> relaxation: The applied RF wave creates <span class="math inline">\(B_1\)</span> field which transiently reorient the net magnetisation, <span class="math inline">\(M\)</span>. The decay rate of <span class="math inline">\(M_{xy}\propto\dfrac{1}{\text{T}_2}\)</span>; decay rate of <span class="math inline">\(M_z\propto\dfrac{1}{\text{T}_1}\)</span>. T<sub>1</sub> relaxation is along the <span class="math inline">\(B_0\)</span> field (longitudinal) and T<sub>2</sub> relaxation is in the <span class="math inline">\(xy\)</span> plane (transverse). Relaxation rates give information about molecular dynamics and distances. T2 can be measured from the decay rate of the FID and linewidths and T1 can be measured by an inversion-recovery experiment.</li>
+<li>Spin-spin coupling constant: The spin states of two protons on two covalently bonded atoms affect the nuclear energy levels of each other, so the peak split in a neighbour-dependent way (<span class="math inline">\(n\)</span> adjacent protons give <span class="math inline">\(n+1\)</span> multiplets). Coupling strength gives bond-angle information for biomolecules. For example, splitting of H<sup>N</sup> due to H<span class="math inline">\(^\alpha\)</span> (<span class="math inline">\(^3J_{\text{NH}\alpha\text{CH}}\)</span>) depends on <span class="math inline">\(\Phi\)</span> angle.</li>
+</ul>
+<p><strong>Describe how NMR can be used to measure the pK values of ionizable groups in proteins. Why is chemical shift sensitive to ionization state? How can <sup>31</sup>P NMR be used to measure intracellular pH? Over what pH range is this effective?</strong></p>
+<ul>
+<li>The chemical shift a proton depends on its chemical environment, which includes the protonation state of adjacent acidic or basic sites. Therefore, gradual alteration of pH causes changes in the chemical shifts that can be plotted against pH. The p<span class="math inline">\(K_\text{a}\)</span> is the pH that corresponds to the inflection point of the resulting sigmoidal curve.</li>
+<li><em>In vivo</em> phosphate concentration is about constant. In pH range 5-8, the two dominant forms of phosphate, <span class="math inline">\(\text{H}_2\text{PO}_4^-\)</span> and <span class="math inline">\(\text{HPO}_4^{2-}\)</span> have different chemical shifts for <sup>31</sup>P in NMR, so the chemical shift can be related to pH: at higher pH, the <span class="math inline">\(\text{HPO}_4^{2-}\)</span> form is dominant, and its phosphate is more deshielded, leading to larger chemical shift</li>
+</ul>
+<p><strong>How does multidimensional NMR differ from basic 1-D NMR? What type of information is contained in the 2-D NMR experiments known as NOESY, TOCSY and HSQC?</strong></p>
+<p>As shown in Figure <a href="#fig:2d3dnmr">1</a>:</p>
+<ul>
+<li>The 1D spectrum is obtained by Fourier transformation of a single transient decaying signal. By collecting a series of transients separated by incrementing lengths of ‘evolution time’, <span class="math inline">\(t_1\)</span>, a 2D spectrum can be obtained. Similarly, 3D spectra are made with an additional period of ‘evolution time’, <span class="math inline">\(t_2\)</span>. Multidimensional NMR clearly shows connections (either <em>J</em>-coupling or NOE) between nuclei as ‘cross peaks’.</li>
+<li>COSY (correlated spectroscopy) spectra detect through-bond correlations (<em>J</em>-couplings)</li>
+<li>NOESY spectra has an extra 90<span class="math inline">\(^\circ\)</span> pulse and a fixed delay, <span class="math inline">\(\tau_m\)</span> inserted in the sequence and this allows detection of nuclear Overhauster effect (NOE).</li>
+<li>HSQC (heteronuclear single quantum coherence spectroscopy) gives a 2D spectrum with one axis for <sup>1</sup>H and another for a heteroatom (usually <sup>15</sup>N or <sup>13</sup>C).</li>
+</ul>
+<div class="figure"><span id="fig:2d3dnmr"></span>
+<img src="../img/2d3dnmr.jpg" alt="Schematic of 1D, 2D and 3D NMR, and sample " width="1993" />
+<p class="caption">
+Figure 1: Schematic of 1D, 2D and 3D NMR, and sample
+</p>
+</div>
+<p><strong>Outline the application of NMR spectroscopy to the determination of protein 3-D structure in solution. What are the advantages and disadvantages of this technique compared to X-ray crystallography?</strong></p>
+<ul>
+<li>Application of NMR
+<ul>
+<li>Experimental restraints: structure-related data derived from NMR spectra
+<ul>
+<li><sup>1</sup>H-<sup>1</sup>H NOEs: each NOESY cross peak gives a specific pairwise distance information</li>
+<li>coupling constants <span class="math inline">\(J\)</span> values can help to determine some dihedral angles</li>
+<li>chimical shifts: can be used to search in the database</li>
+<li>residual dipolar coupling: gives information about the direction of specific groups with respect to B<sub>0</sub>; gives long-range order information which complements the short-range information given by NOEs.</li>
+<li>solvent H-exchange: slow H-D exchange suggests that the proton is in a defined region of secondary structure</li>
+</ul></li>
+<li>Calculation of structures is done by incorporating various experimental restraints into a molecular dynamics (MD) simulation protocol. MD calculates position and velocity of atoms in a series of small steps using Newtonian mechanics. Extra energy terms are added to take account of observed constraints</li>
+</ul></li>
+<li>Compared to X-ray crystallography:
+<ul>
+<li>Disadvantages:
+<ul>
+<li>NMR is relatively laborious and slow</li>
+<li>restricted to small proteins</li>
+</ul></li>
+<li>Advantages:
+<ul>
+<li>No need for crystallization; only a pure solution is needed. Can be used on proteins that do not crystallize (e.g. those containing intrinsically unstructured regions)</li>
+<li>can be used to study dynamics</li>
+<li>site-specific info on ligand binding</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="essay" class="section level1">
+<h1>Essay</h1>
+<p><strong>Describe methods to monitor protein-folding pathways during the formation of a globular protein from an extended chain. Place particular emphasis on the role of NMR but also show how other methods provide complementary information. </strong></p>
+<div id="nmr" class="section level2">
+<h2>NMR</h2>
+<p>Protein folding is a multistep process that proceeds through intermediate states and studying these intermediates is difficult due to their transient nature, low populations under non-denaturing conditions, and difficulty of their isolation.</p>
+<p>Over the past two decades, many NMR methods have been developed and some became invaluable tools in studying molecular details of protein folding. Tansverse relaxation optimized spectroscopy (TROSY) is the first method developed for probing of dynamics and interactions of large (up to 1MDa) protein assemblies. Relaxation dispersion (RD) and saturation transfer (ST) methods provide a detailed look into the pathways of biomolecular processes, allowing studies of transient intermediates during protein folding.</p>
+<p>RD and ST methods allow studying the minor nonnative conformations during protein folding with short lifespans (often <span class="math inline">\(\mu\)</span>s-ms). The two major types of RD experiments include (1) Carr-Purcell-Meiboom-Gill (CPMG) methods that exploit modulation of R<sub>ex</sub> by a sequence of evenly spaced refocusing pulses, and (2) rotating frame <span class="math inline">\(\text{R}_{1\rho}\)</span> relaxation experiments that use modulation of R<sub>ex</sub> by an on- or off-resonance continuous wave (CW) RF field. The ST experiments exploit modulation of R<sub>ex</sub> by a weak RF field, and are conceptually similar to off-resonance <span class="math inline">\(\text{R}_{1\rho}\)</span> measurements. Transient nonnative protein states can be studied by other NMR experiments, such as paramagnetic relaxation enhancement.</p>
+<p>Dynamics of protein folding, on the time scale of seconds, can be studied by other methods. Changes in NMR spectra can be monitored in real-time. Logitudinal magnetization (ZZ) exchange experiments can probe interconversions between states with comparable populations. Hydrogen exchange measurements detect evanescent populations of disordered nonnative states transiently sampled by proteins under native-like conditions.</p>
+</div>
+<div id="other-methods" class="section level2">
+<h2>Other Methods</h2>
+<p>There are some methods that can assess the extent of folding qualitatively, but they do not give as much quantitative information as NMR does.</p>
+<div id="cd-circular-dichroism" class="section level3">
+<h3>CD (Circular Dichroism)</h3>
+<p>Plane-polarized light is the sum of two circularly polarized beams, L and R, which are rotating in opposite directions. CD arises from differential absorption of L and R component beams in a smaple of chiral molecules. CD is detected by a double beam instrument with separate L and R paths (which are usually produced by high frequency modulation of a photoelastic modulator (PEM) device). The high intensity light source is produced by synchrotron.</p>
+<p>The CD spectrum shows the variation of <span class="math inline">\(\Delta\epsilon\)</span> (difference between the extinction coefficient of the L and R beams) with wavelength (<span class="math inline">\(\lambda\)</span>). Because of the chiral nature of amino acids (except glycine), peptides are optically active. The CD spectra in the 170-250 nm region are distinct for proteins with different structure. Standard curves for different secondary structures (<span class="math inline">\(\alpha\)</span>-helix, <span class="math inline">\(\beta\)</span>-sheet, <span class="math inline">\(\beta\)</span>-turn, and random coil) are available (Figure <a href="#fig:cd">2</a>) and the proportion of different secondary structures of a protein is calculated by linear combination of the standard curves.</p>
+<div class="figure"><span id="fig:cd"></span>
+<img src="../img/cd.jpg" alt="CD components and standard curves" width="100%" />
+<p class="caption">
+Figure 2: CD components and standard curves
+</p>
+</div>
+</div>
+</div>
+<div id="dsc-differential-scanning-calorimetry" class="section level2">
+<h2>DSC (Differential Scanning Calorimetry)</h2>
+<p>DSC determines the heat capacity (the difference between the heat capacity in the sample cell and in the reference cell), C<sub>p</sub>, of a molecule in aqueous solution, as a function of temperature. This is done by increasing cell temperatures while keeping the two cells at the same temperature and recording the power supply throughout the experiment. The variation of <span class="math inline">\(C_\text{p}\)</span> with temperature is plotted. On such a curve, there is a peak if the sample molecule undergoes state changes within the temperature (Figure <a href="#fig:dsc">3</a>). For a protein, the peak corresponds to the melting temperature, <span class="math inline">\(T_\text{m}\)</span>, which occurs when the concentrations of its native state ([N]) and the denatured state ([D]) are equal. Stabilization of protein, for example by altering the pH and forming complexes, increases <span class="math inline">\(T_\text{m}\)</span></p>
+<div class="figure"><span id="fig:dsc"></span>
+<img src="../img/dsc.jpg" alt="Principles of DSC" width="100%" />
+<p class="caption">
+Figure 3: Principles of DSC
+</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Campbell-2012">
+<p>Campbell, Iain D. 2012. <em>Biophysical Techniques</em>. Oxford University Press.</p>
+</div>
+<div id="ref-Zhuravleva-2017">
+<p>Zhuravleva, Anastasia, and Dmitry M. Korzhnev. 2017. “Protein Folding by Nmr.” <em>Progress in Nuclear Magnetic Resonance Spectroscopy</em> 100: 52–77. <a href="https://doi.org/https://doi.org/10.1016/j.pnmrs.2016.10.002">https://doi.org/https://doi.org/10.1016/j.pnmrs.2016.10.002</a>.</p>
+</div>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

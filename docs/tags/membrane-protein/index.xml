@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>membrane protein on Tianyi@Oxford</title>
+    <link>/tags/membrane-protein.html</link>
+    <description>Recent content in membrane protein on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/membrane-protein/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insertion of Membrane Proteins</title>
+      <link>/tutorial/insertion-of-membrane-proteins.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/insertion-of-membrane-proteins.html</guid>
+      <description>1 Targeting the Protein to the ER Membrane: SRP and the Sec61 Translocon 2 Single-Pass Proteins 2.1 Type I Proteins 2.2 Type II and III Proteins 3 Multi-Pass Proteins 4 Insertases 4.1 Insertion of Tail-anchored Proteins by the Get system 4.2 The Roles of YidC 5 \(\beta\)-barrel Proteins References The majority of integral membrane proteins in an eukaryotic cell are made of one or more \(\alpha\)-helices and are first inserted co-translationally via the Sec61 translocon into the endoplasmic reticulum (ER) membrane, assembled there, and then dispatched, via the golgi apparatus and vesicles, to their final destinations.</description>
+    </item>
+    
+    <item>
+      <title>Membrane Protein: Structure and Stability</title>
+      <link>/tutorial/membrane-protein-structure-and-stability.html</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/membrane-protein-structure-and-stability.html</guid>
+      <description>1 Introduction 2 The Biomembrane Environment 3 The Thermodynamic Basis of Secondary Structure Formation 4 Glycine and Proline in TM Helices 5 Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling 6 Interactions with Lipids 1 Introduction Many proteins that perform vital functions are membrane proteins. These include transport proteins (channels, transporters and pumps), cell adhesion molecules, and proteins that transduces energy in the electron transport chain. Despite their diverse roles, the same set of biophysical and biochemical rules govern their structural stability.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}The Biomembrane Environment}{1}{section.2}%
+\contentsline {section}{\numberline {3}The Thermodynamic Basis of Secondary Structure Formation}{2}{section.3}%
+\contentsline {section}{\numberline {4}Glycine and Proline in TM Helices}{4}{section.4}%
+\contentsline {section}{\numberline {5}Tryptophan and Tyrosine at the Interface and Lysine/Arginine Snorkelling}{5}{section.5}%
+\contentsline {section}{\numberline {6}Interactions with Lipids}{5}{section.6}%

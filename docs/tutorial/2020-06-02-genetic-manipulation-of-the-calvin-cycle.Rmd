@@ -1,0 +1,79 @@
+---
+title: Genetic Manipulation of the Calvin Cycle
+author: Tianyi Shi
+date: '2020-06-02'
+slug: genetic-manipulation-of-the-calvin-cycle
+categories:
+  - biochemistry
+  - plant metabolism
+tags:
+  - plant metabolism
+term: 2-Trinity
+week: 6
+tutor: Nick
+summary: ~
+bibliography: ../bib/main.bib
+csl: ../bib/nature.csl
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+  rmarkdown::word_document:
+    number_sections: true
+    toc: true
+nocite: ~
+---
+
+**To what extent has genetic manipulation of the Calvin cycle forced the reappraisal of our understanding of the control of metabolic pathways in plants? What do studies of these transgenic plants reveal about the integration of metabolism?**
+
+# Introduction
+
+Genetic manipulation, particularly graded knock-down of enzymes in the Calvin cycle, has been exploited in the quest for understanding the control of the rate of carbon fixation step of photosynthesis. While initially it was thought that the flux of carbon fixation is limited by a few 'regulated' enzymes, with Rubisco being the most promising candidate, many unexpected experimental results revealed that, in reality, the flux of the Calvin cycle is influenced by multifarious factors, some of which are even due to other carbohydrate-unrelated pathways.
+
+## Rubisco Does not Exert Much Control on the Flux of the Calvin Cycle Unless in Special Conditions
+
+Rubisco catalyses the carbon fixation step in the Calvin cycle and was initially widely thought to act as a control point on the rate of photosynthesis. Indeed, the enzymatic activity of Rubisco is modulated by a number of ways, such as activation by resersible carbamylation by CO~2~ and by Rubisco activase, and inhibition by a number of sugars resulting from Rubisco's side reactions.
+
+@Rodermel-1988 produced a series of tobacco plants (*Nicotiana tabacum*) that exhibit a range of reduced amounts of Rubisco by Agrobacterium-mediated transformation of plants with antisense mRNA to the gene for the small subunit of Rubisco (*rbcS*). Such 'antisense' plants were used by [@Quick-1991] to examine the control exerted by Rubisco on the rate of photosynthesis. They found that in optimum enviornmental conditions the amount of Rubisco in a leaf could be reduced by more than one-third before any significant effect on the rate of photosynthesis, with $C^J$ = 0.05-0.15 (very small). It was shown that reduction of enzyme amount is compensated for by an increase in Rubisco activation (from about 55% to almost 100%) due to 1) an increase of substrates (ribulose 1,5-bisphosphate and CO~2~) and decrease of products (3-phosphoglycerate), and 2) an increase of ATP/ADP ratio in the chloroplast stroma. Also, Rubisco is produced in large excess in WT plants, also explaining the lack of impact of its knock-down.
+
+However, when plants were grown in low light and are then suddenly exposed to high light intensity, there was a near-proportional relation between the amount of Rubisco and the rate of photosynthesis [@Quick-1992]. A similar result can be obtained with low CO~2~ concentration. These experiments show that the contribution of Rubisco to the control of photosynthesis depends on both current and past conditions (CO~2~ concentration and light intensity).
+
+# Other Enzymes that Catalyse Irreversible Reactions
+
+Apart from Rubisco, three other enzymes in the Calvin cycle catalyse irreversible reactions: (stromal) fructose 1,6-bisphosphatase (FBPase), sedoheptulose 1,7-bisphosphatase (SBPase) and phosphoribulokinase (PRK). These three enzymes are subjected to a same set of 'fine' regulatory mechanisms, all of which are exploited by the light reaction to activate the Calvin cycle:
+
+- **pH.** These enzymes have a relatively sharp pH optimium at around 8.2.
+- **Mg^2+^** stimulation.
+- **Redox state.** These enzymes are inactive when disulfide bridges form between certain cysteine residues, and are activated by (reduced) thioredoxin, which reduces these disulfide bonds.
+
+Analysis of plant strains with each of these three enzymes knocked down reavealed that transformants with decreased SBPase activity show a significant but still non-proportional inhibition of photosynthesis [@Harrison-1997] in ambient conditions, while the effects of FBPase and PRK knock-down are marginal. Therefore, enzymes with similar regulatory properties does not indicate they have similar flux-control capabilities in a metabolic pathway.
+
+# Plastid Aldolase as an 'Non-Regulated' Enzyme Exerts a Greater Control than Rubisco on the Rate of Photosynthesis
+
+In the Calvin cycle, aldolase carries out the synthesis of fructose 1,6-bisphohsphate (FBP) and sedoheptulose 1,7-bisphohsphate (SBP), both of which are close to equilibrium. Unlike the four enzymes described previously, aldolase's activity is devoid of any regulatory properties and thus its rate is solely determined by the concentrations of substrates and products.
+
+However, similar knock-down experiments targeting aldolase showed unexpected results, in that reduction in aldolase was found to significantly reduce the rate of photosynthesis [@Haake-1998]. A 30% decrease of aldolase activity in potato transformants led to a small (5–10%) inhibition of ambient photosynthesis, and reduction below 30% of the wild-type activity led to a severe inhibition. The experiment is repeated with different light intensities and CO~2~ concentrations, and it was found that the inhibition is smallest in low light and highest in high light and elevated CO~2~ (with $C^J$ of about 0.18 and 0.56, respectively).
+
+Decreased expression of aldolase inhibits photosynthesis for different reasons in low and high light. In low light, decreased expression of aldolase led to an accumulation of its substrate, triose phosphates and a depletion of of its product, which in turn causes the depletion of RuBP. In high light (plus elevated CO~2~), however, the triose phosphates remained very low, RuBP remained high, and PGA was higher in the transformants than in wild-type plants. This is because high irradiation inhibits starch synthesis and hence accumulation of phosphorylated intermediates, which leads to P~i~-limitation, which in turn restricts ATP regeneration by the light reaction. The decreased ATP concentration thhen limits conversion of 3PGA to GAP, causing 3PGA to accumulate, which in turn results in product inibition of Rubisco. Of course, the two mechanisms are not mutually exclusive, and the relative importance of each vary gradually according to the light intensity.
+
+It is important to note here that, to fully rationalise the difference in the effectiveness of inhibition of the Calvin cycle in different conditions, the effect of the conditions on other pathways (starch synthesis) in the metabolic network need also be considered.
+
+# Transketolase Directly Controls not Only Calvin Cycle but Also Other Pathways
+
+Perturbation of the enzymes involved in the central carbohydrate metabolism pathways can directly influence the activity of other pathways. Transketolase is such an example.
+
+In the Calvin cycle, transketolase catalyses the reactions 1) $F6P + GAP \rightarrow E4P + X5P$ and 2) $S7P + GAP \rightarrow X5P + R5P$, both of which are reactions close to equilibrium. Tobacco tranformant with decreased expression of plastid transketolase were also produced. Like aldolase, this 'non-regulated' enzyme also has a relatively high flux-control coefficient, especially in saturating light and CO~2~. As expected, loss of transketolase activity results in an increase in the amounts of its substrate (F6P) and decrease of its products, ultimately leading to a decrease of RuBP concentration. However, it was also observed that there was a significant decrease in the levels of aromatic amino acids, intermediates of the phenylpropanoid pathway, and secondary products such as chlorogenic acid and lignin. A plausible explanation for these observations is that the flux into the shikimic acid pathway (which synthesises aromatic pathways) is limited by the decreasing erythrose 4-phosphate (one product of transketolase) concentration.
+
+The multiple consequences of reducing transketolase activity highlight the extent of integration within thhe central metabolic pathways and the potential difficulties in attepting to modify flux through a specific section of the metabolic network.
+
+# Conclusion
+
+Genetic manipulation (mainly knock-outs) of some enzymes of the Calvin cycle qualitatively revealed some of the logic behind the regulation of (plant) metabolism in general: 1) loss of regulated enzymes such as Rubisco are compensated by increase in activity, 2) regulated enzymes are often produced in excess so that minor reduction in their amount does not affect the flux at all, 3) non-regulated enzymes such as aldolase are not produced in excess, and their loss restricts the flux more effectively, 4) the extent and the mechanisms of influence on Calvin cycle flux by reduction of an enzyme is affected by enviornmental conditions and the developmental history of the plant, 5) perturbation of a single reaction/enzyme can influence other, even distantly-related metabolic pathways, due to the plethora of interconnected components, 6) the flux through the Calvin cycle is determined by multiple enzymes.
+
+Lots of effort has been made in modelling plant metabolism pathways such as the Calvin cycle (in order to 'improve' them), which proves extremely difficult. The Calvin cycle does not exist in isolation, so natually its flux is also influenced by other pathways in the complicated plant metabolism network, through shared intermediates/enzymes/regulatory molcules. Therefore, the precise prediction of its activity, in principle, also requires modelling of other, even distantly related pathways. However, it is impossible to presisely predict the behaviour of the entire metabolic network without knowing all the details (kinetic properties under different conditions, concentrations of enzymes and substrates, etc.) of every reaction in the network. Even if precise kinetic data of enzymes and concentrations of all substances can be obtained, further challenges will be encountered when considering *in vivo* modelling: unlike the test tube where all substances are relatively evenly distributed and there is only one single isolated compartment, the plant cells are extensively compartmentalised (many metabolic pathways take place in more than one compartments), and substances (substrate or enzymes) may not be evenly distributed and instead localise to specific regions of each compartment, thus altering the effective concentration. In addition, the effects of the internal and external enviornment (e.g. signalling molecules, light intensity) on gene expression of enzymes are also difficult to simulate.
+
+References
+

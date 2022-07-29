@@ -1,0 +1,701 @@
+---
+title: Specific Radioactivity
+author: Tianyi Shi
+date: '2019-10-20'
+slug: 2019-10-16-specific-radioactivity
+categories: [lab]
+tags: [lab, radioactivity]
+term: 3-Michaelmas
+week: 1
+summary: Specific radioactivity of ATP and glucose.
+header-includes:
+    - \usepackage{float}
+output:
+  blogdown::html_page:
+    number_sections: true
+    toc: true
+  rmarkdown::pdf_document:
+    number_sections: true
+    toc: true
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(out.width = '100%')
+library(tidyverse); library(knitr)
+theme_set(theme_bw()+theme(plot.title = element_text(hjust = 0.5)))
+# kable <- function(data, ...) {
+#   knitr::kable(data, 'latex', booktabs=TRUE, escape = F, align = 'c') %>% kableExtra::kable_styling(position = "center")}
+```
+
+# Aim
+
+- Given a sample containing (fake) radioactive ^14^C glucose and ^3^H ATP:
+  - determine concentration of glucose and ATP. 
+    - Given that both concentrations lie between 1mM and 10mM.
+    - Given that $\epsilon^{260}_\text{ATP}=1.57\times10^4 \text{ mol}^{-1}\text{ dm}^3\text{ dm}^{-1}$
+  - determine radioactivity of the sample (virtual practical)
+  - and hence determine the specific radioactivity of ATP and glucose
+- 23 samples have glucose and ATP concentrations falling into two distinct classes. They are independently measured by 23 pairs of students. Determine these concentrations using the class results and assess precision and accuracy.
+
+# Reagents and Apparatus Provided
+
+- 15mL sample solution
+- 0.1 M Na~3~PO~4~ buffer at pH 7.0
+- 1mM ABTS
+- Glucose Oxidase (100 U/mL) and peroxidase (20 U/mL)
+- Solid glucose
+- Spectrophotometer
+
+# Method
+
+## ATP concentration {#method-atp}
+
+### Dilution
+
+#### Determining scale of dilution
+
+Given that 1mM < [ATP] < 10mM and that $\epsilon^{260}_\text{ATP}=1.57\times10^4 \text{ mol}^{-1}\text{ dm}^3\text{ dm}^{-1}$, according to $A^{260}=\epsilon^{260}cl$:
+
+if no dilution:
+
+$$
+\begin{aligned}
+1.57\times10^4\times0.001<&A^{260}<1.57\times10^4\times0.01 \\
+15.7<&A^{260}_\text{raw}<157 \\
+\end{aligned}
+$$
+
+clearly, a 1:100 dilution would be very likely to produce a sensible $A^{260}$:
+
+$$0.157<A^{260}_\text{1:100 dilution}<1.57$$
+
+#### Making dilution
+
+5mL of 1:100 diluton is made serially by first fixing 500 $\mu\text{L}$ sample with 4.5mL buffer then mixing 500 $\mu\text{L}$ of the resulting 1:10 dilution with another 4.5mL buffer.
+
+A preliminary test gives $A^{260}_\text{1:100 dilution}=0.503$, which is within the range where the spectrophotometer is accurate, so we made 4 more 1:100 dilutions using the method described above.
+
+### Results
+
+See section \@ref(our-atp)
+
+## Glucose concentration {#method-glucose}
+
+### Mechanism
+
+Glucose itself does not have convenient absorption. Thus, glucose oxidase, ABTS and peroxidase is added to make a green solution (glucose is first oxidised by oxidase to produce gluconic acid and H~2~O~2~; peroxidase then catalyses the reaction between H~2~O~2~ and ABTS to produce a green dye).
+
+### Determine the volume of enzyme
+
+We want the reaction to 'virtually' complete (i.e. > 99% conversion of substrate) in 10 min.
+
+For an enzyme reaction:
+
+$$-\dfrac{ds}{dt}=v-\dfrac{V_\text{max}s}{K_m+S}$$
+
+As the reaction approaches completion, $s<<K_m$:
+
+$$-\dfrac{ds}{dt}=\dfrac{V_\text{max}s}{K_m}$$
+
+Integrating to determine the total time for a given change in $s$:
+
+$$
+\begin{aligned}
+-\int_{s_0}^{s_1}{\dfrac{ds}{s}}&=\dfrac{V_\text{max}}{K_m}\int_0^t dt \\
+\ln\dfrac{s_0}{s_1}&=\dfrac{V_\text{max}t}{K_m}
+\end{aligned}
+$$
+
+For a decrease in $s$ from 100% to 1% in 10 min:
+
+$$
+\begin{aligned}
+\ln\dfrac{100}{1}&=\dfrac{V_\text{max}\times 10}{K_m} \\
+V_\text{max}&=0.4605K_m \text{ (mol L}^{-1}\text{min}^{-1}\text{)}
+\end{aligned}
+$$
+
+Our assay volume will be 4.0mL, so the amound of enzyme, in U ($\mu\text{mol min}^{-1}$), will be
+
+$$\text{amount of enzyme in U}=0.4605\times K_m \times 4.0 \times 10^{-3}\times10^6=1842K_m$$
+
+where $K_m$ has unit M.
+
+For GOD, $K_m=1\text{ mM}$, and the provided enzyme concentration is 100U/mL:
+
+$$
+\begin{aligned}
+K_m&=1\text{ mM} \\
+\text{minimum amount of enzyme}&=1842 \times 1 \times 10^{-3}=1.84 \text{ U} \\
+\text{minimum volume of enzyme}&=1.84 \div 100=0.0184 \text{ mL}
+\end{aligned}
+$$
+
+For POD, $K_m=100\text{ }\mu\text{M}$, and the provided enzyme concentration is 20U/mL:
+
+$$
+\begin{aligned}
+K_m&=100\text{ }\mu\text{M} \\
+\text{minimum amount of enzyme}&=1842 \times 100 \times 10^{-6}=0.184 \text{ U} \\
+\text{minimum volume of enzyme}&=0.184 \div 20=0.0092 \text{ mL}
+\end{aligned}
+$$
+
+We decided to use an excess amount of enzyme (i.e. 0.1mL for both). This guarantees that the reactions will complete within 10 min, and makes it easier to make up the 4mL total volume for assay (see section \@ref(glu-assay)).
+
+### Determining $\lambda_\text{max}$
+
+Measuring absorbance near $\lambda_\text{max}$ reduces error. An 100nmol-glucose-containing (i.e. with 1mL 0.1mM glucose solution, see section \@ref(glu-assay)) assay result is used. The absorbance in the range 350nm to 450nm  is measured, and $\lambda_\text{max} = 418\text{ nm}$. We then used this wavelength for all glucose assays. 
+
+### Calibration
+
+Calibrate $A^{418}$ with known glucose concentrations, then we can map $A^{418}_\text{sample}$ to the calibration curve to determine sample glucose concentration.
+
+#### Dilution
+
+- 0.18 g glucose is dissolved in 100mL buffer, which gives 10mM glucose solution (which is handy, as the maximum possible concentration of glucose in the sample is also 10mM)
+- 100mL 0.1mM glucose solution is made by mixing 1mL 10mM glucose solution with 99mL buffer (1:100 dilution).
+
+#### Assay {#glu-assay}
+
+Assays are made on 4mL mixtures with varying amount of glucose, according to the following table:
+
+|ABTS|Buffer|0.1mM glucose|H~2~O|GOD|POD|nmol glucose|
+|:--:|:----:|:------------:|:---:|:-:|:-:|:----:|
+|2mL|0.8mL|1.0mL        |0mL |0.1mL|0.1mL|100|
+|2mL|0.8mL|0.8mL        |0.2mL |0.1mL|0.1mL|80|
+|2mL|0.8mL|0.6mL        |0.4mL |0.1mL|0.1mL|60|
+|2mL|0.8mL|0.4mL        |0.6mL |0.1mL|0.1mL|40|
+|2mL|0.8mL|0.2mL        |0.8mL |0.1mL|0.1mL|20|
+|2mL|0.8mL|0mL          |1.0mL |0.1mL|0.1mL|0|
+
+Then the mixture is incubated at 37$^\circ\text{C}$ for 10 minutes (in a theromostatically-controlled water bath), then $A^{418}$ is measured. 
+
+Every row is repeated 3 times.
+
+### Sample Assay
+
+The sample is diluted 1:100 by mixing 1mL sample with 99mL buffer. 
+
+4mL assays are made on 1mL 1:100 dilution 3 times, according to the following table (identical to the assays used for calibration except that an unknown concentration is used this time)
+
+|ABTS|Buffer|diluted sample|GOD|POD|
+|:--:|:----:|:------------:|:---:|:-:|:-:|
+|2mL|0.8mL|1.0mL        |0.1mL|0.1mL|
+
+### Results
+
+See section \@ref(our-glucose)
+
+## Radioactivity Counting (Virtual)
+
+0.2mL sample is mixed with 1.8mL scintillation fluid in a polyvial and placed into the scintillation counter. The count time is 2min. The results are shown in section \@ref(radioactivity).
+
+# Our Results
+
+## ATP {#our-atp}
+
+(Methods in section \@ref(method-atp))
+
+```{r}
+A <- c(0.503, 0.513, 0.508, 0.525, 0.516)
+c_ATP <- A/1.57e4*100*1000
+kable(tibble(`$A^{260}_\\text{1:100 dilution}$`=A, `[ATP] of raw sample (mM)`=c_ATP))
+```
+
+Statistical summary of [ATP] in sample:
+
+```{r}
+x <- c_ATP; n <- length(x); df <- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))
+```
+
+Which gives 95% confidence interval: $\text{[ATP]}=3.268\pm0.054$ mM
+
+### Distinguishing between 4.0mM and 4.5mM ATP {#distinguish}
+
+The percentage error (coefficient of variance) of this experiment is:
+
+$$c_v=\dfrac{s_x}{\bar{x}}=\dfrac{0.054}{3.268}=0.0165$$
+
+for $\bar{x}$ = 4.0 and 4.5, $s_x=c_v\bar{x}$ = 0.0661 and 0.0744, respectively.
+
+To distinguish between the two, two sample t test is used. If $n$ measurements are made on each concentration, then
+
+$$t=\dfrac{\bar{x_1}-\bar{x_2}}{\sqrt{\dfrac{s_1^2}{n}+\dfrac{s_2^2}{n}}}=\dfrac{4.5-4.0}{\sqrt{\dfrac{0.0661^2+0.0744^2}{n}}}=\sqrt{25.26n}$$
+
+then we can get a list of $p$ values for each $n$:
+
+```{r}
+n <- 2:8
+df <- n - 1
+t <- sqrt(25.26 * n)
+p <- (1 - pt(t, df)) * 2
+names(p) <- paste('n =', n)
+round(p, 5)
+```
+
+as n increases, $p$ decreases. When n = 3, $p$ is already less than 0.05. 
+
+## Glucose {#our-glucose}
+
+(Methods in section \@ref(method-glucose))
+
+### Calibration {#glucose-calibration-results}
+
+The results are shown below:
+
+```{r}
+A1 <- c(0.952, 0.815, 0.709, 0.496, 0.272, 0)
+A2 <- c(1.223, 0.969, 0.704, 0.415, 0.222, 0)
+A3 <- c(1.194, 0.919, 0.682, 0.452, 0.236, 0)
+A <- c(A1, A2, A3)
+glucose = c(100, 80, 60, 40, 20, 0)
+kable(tibble(`nmol glucose in 4mL assay` = glucose, `$A^{418}_1$` = A1,
+             `$A^{418}_2$` = A2, `$A^{418}_3$` = A3))
+```
+
+To fit a straight line, linear regression is used. The coefficients are shown below:
+
+```{r}
+summary(lm(A ~ 0 + rep(glucose, 3)))
+```
+
+which shows there is a linear relationship $A^{418}=0.01133n_\text{glucose}$ with $R^2=0.9921$.
+
+Then we can plot it (CI added).
+
+```{r out.width='60%', fig.align='center'}
+ggplot(data.frame(A, glucose), aes(glucose, A))+
+  geom_point()+
+  geom_smooth(formula = y ~ 0 + x, method = 'lm')+
+  labs(x = 'nmol glucose in 4mL assay', y = expression(A ^ 418),
+       title = 'Calibrationn Curve for 4mL essay')
+```
+
+### Sample result {#our-glucose-sample}
+
+Three independent measurements of $A^{418}_\text{sample}$ gives 0.863, 0.872 and 0.871. According to the linear relationship $A^{418}=0.01133n_\text{glucose}$ we can calculate the amount (in nmol) of glucose in 1mL 1:100 dilution, then the concentration of the raw sample can be calculated easily:
+
+```{r}
+A <- c(0.863, 0.872, 0.871) # sample absorbance
+n <- A/0.01133 # nmol glucose in 1 mL 1:100 dilution
+(c_glucose_sample <- n * 1e-9 # converting to mol/mL (1:100 dilution)
+       / 1e-3 # converting to M (1:100 dilution)
+       * 100 # in M (raw sample)
+       * 1e3) # converting to mM (raw sample)
+```
+
+Statistical summary:
+
+```{r}
+x <- c_glucose_sample; n <- length(x); df <- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t * sd(x)/sqrt(n))
+```
+
+Which gives 95% confidence interval: $\text{[glucose]}=7.667\pm0.057$ mM
+
+### Distinguishing between 4.0mM and 4.5mM glucose {#distinguish-glucose}
+
+Similar to the calculation for ATP shown in section \@ref(distinguish), first calculate the percentage error (coefficient of variance) of this experiment:
+
+$$c_v=\dfrac{s_x}{\bar{x}}=\dfrac{0.057}{7.667}=0.00743$$
+
+for $\bar{x}$ = 4.0 and 4.5, $s_x=c_v\bar{x}$ = 0.0297 and 0.0335, respectively.
+
+To distinguish between the two, two sample t test is used. If $n$ measurements are made on each concentration, then
+
+$$t=\dfrac{\bar{x_1}-\bar{x_2}}{\sqrt{\dfrac{s_1^2}{n}+\dfrac{s_2^2}{n}}}=\dfrac{4.5-4.0}{\sqrt{\dfrac{0.0297^2+0.0335^2}{n}}}=\sqrt{124.7n}$$
+
+then we can get a list of $p$ values for each $n$:
+
+```{r}
+n <- 2:8
+df <- n - 1
+t <- sqrt(124.7 * n)
+p <- (1 - pt(t, df)) * 2
+names(p) <- paste('n =', n)
+round(p, 5)
+```
+
+as n increases, $p$ decreases. When n = 2, $p$ is already less than 0.05. 
+
+#### What difference would it make to your assay if you doubled the concentrations of ABTS, GOD and POD?
+
+Time required for incubation will be shorter and the final intensity of colors (and hence absorption) will be the same.
+
+# Class Results
+
+## Data[^removed]
+
+[^removed]: 2 pairs of students produced incomplete results, so only 21/23 sets of results are given.
+
+```{r}
+ATP <- c(3.93, 4.04, 3.01, 3.94, 3.20, 3.15, 2.81,       
+         4.07, 3.17, 3.05, 4.20, 3.15, 4.17, 3.05,       
+         3.90, 2.97, 3.11, 4.13, 3.27, 3.85, 2.92)
+ATP_sd <- c(0.164, 0.082, 0.080, 0.080, 0.140, 0.126, 0.139,       
+            0.071, 0.140, 0.142, 0.002, 0.012, 0.240, 0.033,       
+            0.051, 0.091, 0.187, 0.160, 0.053, 5.e-4, 0.218)
+glucose <- c(6.89, 6.92, 8.36, 7.38, 7.10, 7.65, 7.70,         
+             9.09, 7.34, 7.60, 8.92, 8.80, 8.50, 6.60,       
+             3.81, 9.80, 7.73, 9.80, 7.67, 8.50, 8.63)
+glucose_sd <- c(0.0880, 0.0104, 0.1560, 0.0150, 0.0603, 0.5900, 1.4580,        
+                0.0470, 0.1640, 0.2810, 0.2500, 0.2000, 0.0010, 0.1180,       
+                0.0170, 0.0425, 0.1500, 0.0530, 0.0440, 0.1400, 0.4800)
+class_results <- tibble(ATP, ATP_sd, glucose, glucose_sd)
+kable(tibble(`ATP conc`=ATP, `ATP sd`=ATP_sd, 
+             `Glucose conc`=glucose, `Glucose sd`=glucose_sd))
+```
+
+## Preliminary graphical analysis
+
+Density plots and histograms are used to examine the distribution of measurements:
+
+```{r}
+op <- par(mfrow=c(2,2))
+for(i in c('ATP', 'glucose')){
+  main = paste0('[', i, '] in 21 samples:'); xlab <- paste(i, 'concentration')
+  {
+    plot(density(class_results[[i]], bw = c(ATP = 0.1, glucose = 0.2)[i]), 
+         main = paste(main, 'density plot'), xlab = xlab) 
+    rug(class_results[[i]])
+  }
+  {
+    hist(class_results[[i]], breaks = 10, main = paste(main, 'histogram'), xlab = xlab)
+  }
+}
+```
+
+```{r include=FALSE}
+par(op)
+```
+
+Clealy, [ATP] has a clear bimodal distribution, with two peaks at around 3.1 and 4.0.
+
+The distibution of [glucose] is affected by two outliers (the maximum and minimum). After their removal, a bimodal distribution, which peaks at 7.6 and 8.8, is also produced:
+
+```{r out.height='60%'}
+op <- par(mfrow=c(1,2))
+glucose <- glucose[glucose != max(glucose) & glucose != min(glucose)]
+main = '[glucose] corrected'; xlab <- 'glucose concentration'
+{
+  plot(density(glucose, bw = c(ATP = 0.1, glucose = 0.2)[i]), 
+       main = paste(main, 'density plot'), xlab = xlab) 
+  rug(glucose)
+}
+{
+  hist(glucose, breaks = 10, main = paste(main, 'histogram'), xlab = xlab)
+}
+```
+
+```{r include=FALSE}
+par(op)
+```
+
+## ATP concentration {#class-atp}
+
+### Grouping and grouped confidence interval of mean
+
+According to the plots, evidently there are two ATP concentrations, so we need to divide the 21 measurements into two groups, and calculate their mean and CI separately.
+
+```{r}
+ATP1 <- ATP[ATP < 3.5] # less than 3.5mM, around 3.0mM
+ATP2 <- ATP[ATP > 3.5] # more than 3.5mM, around 4.0mM
+```
+
+For the [ATP] around 3.0:
+
+```{r}
+x <- ATP1; n <- length(x); df <- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))
+```
+
+95% confidence interval: $\text{[ATP]}=3.07\pm0.08$ mM
+
+For the [ATP] around 4.0:
+
+```{r}
+x <- ATP2; n <- length(x); df <- n - 1; t = qt(0.975, df)
+c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))
+```
+
+95% confidence interval: $\text{[ATP]}=4.03\pm0.10$ mM
+
+### Test for significance of the difference in concentration between the two groups
+
+To test there is a significant difference between the two concentrations, t-test[^t] is used: 
+
+[^t]: Specifically, Welch's two sample t-test with unequal variances
+
+```{r}
+t.test(ATP1, ATP2)
+```
+
+$p=2.3\times10^{-12}<<0.05$; the two concentrations are significantly different
+
+### Test for diviation from given concentrations
+
+The solutions were actually made up to be 3.0mM and 4.0mM ATP. Were they made up correctly? We need two one-sample t tests using the given concentrations as the population mean, $\mu$:
+
+3.0mM: ($H_0$: true concentration is 3.0mM)
+
+```{r}
+t.test(ATP1, mu=3.0)
+```
+
+$p=0.082>0.05$, failed to reject hypothesis. Solution made up correctly.
+
+4.0mM: ($H_0$: true concentration is 4.0mM)
+
+```{r}
+t.test(ATP2, mu=4.0)
+```
+
+$p=0.56>0.05$, failed to reject hypothesis. Solution made up correctly.
+
+## Glucose {#class-glucose}
+
+### Grouping and grouped confidence interval of mean
+
+By observing the plots, the boundary between the two concentrations of glucose is 8.0mM, so we can divide them into two groups:
+
+```{r}
+glucose1 <- glucose[glucose < 8.0]
+glucose2 <- glucose[glucose > 8.0]
+```
+
+And calculate their 95% CIs separately:
+
+```{r}
+lapply(list(glucose1=glucose1, glucose2=glucose2), function(x){
+  n <- length(x); df <- n - 1; t = qt(0.975, df)
+  c(mean=mean(x), sd=sd(x), SE=sd(x)/sqrt(n), t = t, `t*SE` = t*sd(x)/sqrt(n))
+})
+```
+
+The confidence intervals are: $7.33\pm0.27$ mM and $8.69\pm0.22$ mM
+
+### Test for significance of the difference in concentration between the two groups
+
+t-test performed to test for significance:
+
+```{r}
+t.test(glucose1, glucose2)  
+```
+
+$p=1.57\times 10^{-7}<<0.05$, which shows the two concentrations are significantly different.
+
+### Test for diviation from given concentrations
+
+The solutions were actually made up to be 7.0mM and 9.0mM ATP. Were they made up correctly? We need two one-sample t tests using the given concentrations as the population mean, $\mu$:
+
+7.0mM: ($H_0$: true concentration is 7.0mM)
+
+```{r}
+t.test(glucose1, mu=7.0)
+```
+
+$p=0.020<0.05$, reject null hypothesis. Solution made up incorrectly.
+
+9.0mM: ($H_0$: true concentration is 9.0mM)
+
+```{r}
+t.test(glucose2, mu=9.0)
+```
+
+$p=0.019<0.05$, reject null hypothesis. Solution made up incorrectly.
+
+## Radioactivity {#radioactivity}
+
+### Results of the sample
+
+Counts in the H channel and C channel are shown below:
+
+```{r}
+H <- c(14178.5, 13963, 14065, 14356.5, 13809, 14157.5, 13824.5, 14032, 14094.5, 14014)
+C <- c(3411, 3472.5, 3386.5, 3516, 3375.5, 3418.5, 3438, 3464.5, 3513.5, 3438.5)
+```
+
+Statistical summaries are calculated:
+
+```{r}
+n <- 10; df <- n-1; t = qt(0.975, df)
+lapply(list(`H Channel`=H, `C Channel`=C), function(i){
+  c(mean=mean(i), sd=sd(i), SE=sd(i)/sqrt(n), t = t, `t*SE` = t*sd(i)/sqrt(n))
+})
+```
+
+95% confidence intervals:
+
+- H channel: $14049.5\pm 117.38$ cpm
+- C channel: $3443.5\pm 34.59$ cpm
+
+### Correction for overlap
+
+Let counts due to ^3^H = $X$ and counts due to ^14^C = $Y$. Let $\alpha$ be the fraction in H channel of all counts due to ^3^H and $\beta$ be the fraction in C channel of all counts due to ^14^C, so that for a sample with mixed isotopes:
+
+$$H = \alpha X + (1-\beta)Y$$
+$$C = (1-\alpha)X+\beta Y$$
+
+$\alpha$ and $\beta$ can be determined by counting pure ^3^H and ^14^C, respectively. Here are the results:
+
+```{r}
+c(H_in_H = mean(c(464814.5, 462463.5, 464775.5)),
+  H_in_C = mean(c(14825.5, 15057.5, 14210.0)),
+  C_in_H = mean(c(10295, 9842.5, 9922.5)),
+  C_in_C = mean(c(47989, 48868.5, 49133.5)))
+```
+
+which gives:
+
+$$
+\begin{aligned}
+ \alpha &= 464017.83/(464017.83+14697.67)=0.9693 \\
+ \beta &= 48663.67/(48663.67+10020.00)=0.8293
+\end{aligned}
+$$
+
+Plugging in sample results:
+
+$$
+\begin{aligned}
+  H &= \alpha X + (1-\beta)Y = 0.9693X+(1-0.8293)Y=14049.5(\pm117.38) \\
+  C &= (1-\alpha)X+\beta Y = (1-0.9693)X+0.8293Y = 3443.5(\pm34.59)
+\end{aligned}
+$$
+
+Simplifying... 
+
+$$
+\begin{aligned}
+  0.9693X+0.1707Y&=14049.5(\pm117.38) \\
+  0.0307X+0.8293Y &= 3443.5(\pm34.59)
+\end{aligned}
+$$
+
+Solving for X: (note that uncertainties are added)
+
+$$
+\begin{aligned}
+  4.7075X+0.8293Y &=60721.7(\pm507.31) \\
+  0.0307X+0.8293Y &= 3443.5(\pm34.59) \\
+  4.6769X &= 57278.2(\pm541.9) \\
+X &= 12247.2(\pm115.9)
+\end{aligned}
+$$
+
+Solving for Y:
+
+$$
+\begin{aligned}
+  0.9693X+0.1707Y&=14049.5(\pm117.38) \\
+  0.9693X+26.18Y &= 108722.6(\pm1058.66) \\
+  26.01Y &= 94673.1(\pm1176.04) \\
+  Y &= 3639.4(\pm45.2)
+\end{aligned}
+$$
+
+which gives:
+
+$$
+\begin{aligned}
+  \text{actual H (ATP) counts in 0.2mL sample}&=12247.2(\pm115.9) \\
+  \text{actual C (glucose) counts in 0.2mL sample} &= 3639.4(\pm45.2)
+\end{aligned}
+$$
+
+### Specific Radioactivity
+
+The radioactivity counting were done on 0.2mL sample. Our ATP concentration (section \@ref(our-atp)) is $\text{[ATP]}=3.268\pm0.054$ mM and glucose concentration (section \@ref(our-glucose-sample)) is $\text{[glucose]}=7.667\pm0.057$ mM. Thus, the specific radioactivity of ATP and glucose are:
+
+$$
+\begin{aligned}
+  \text{ATP: }12247.2(\pm115.9)/[0.2\times10^{-3}\times3.268\times 10^{-3}(\pm0.054\times 10^{-3})]&= 1.87(\pm0.05)\times 10^{10} \text{ cpm mol}^{-1}\\
+  \text{glucose: } 3639.4(\pm45.2)/[0.2\times10^{-3}\times7.667\times 10^{-3}(\pm0.057\times 10^{-3})]&= 2.37(\pm0.05) \times 10^{9} \text{ cpm mol}^{-1}
+\end{aligned}
+$$
+
+(the $\pm0.05$ comes from the maximal possible numerator (e.g. $12247.2 + 115.9$ for ATP) over the least possible denominator (e.g. $(3.268-0.054)\times10^{-3}$ for ATP))
+
+# Appendix
+
+## People should report all measurements to get a true 95% confidence interval {#temp}
+
+The statistical computations perfomed in section \@ref(class-atp) and section \@ref(class-glucose) for class results are actually improper.
+
+Let's say 3 people are measuring a concentration whose true value is 4.0. Here are their results:
+
+```{r}
+c1 <- rnorm(5, 4.0, 3) # 5 times, sd about 3
+c2 <- rnorm(6, 4.0, 2) # 6 times, sd about 2
+c3 <- rnorm(7, 4.0, 1) # 7 times, sd about 1
+```
+
+To calculate the true mean and sd, we need to combine their results i.e. to get list of 15 independent measurements:
+
+True mean:
+
+```{r}
+mean(c(c1,c2,c3))
+```
+
+but if we take the mean of the mean (which in this practical we are supposed to do):
+
+```{r}
+mean(c(mean(c1),
+       mean(c2),
+       mean(c3)))
+```
+
+This gives a different mean from the true mean!
+
+similarly, the true sd calculation is not possible if only the sd of each person's results are given:
+
+true sd:
+
+```{r}
+sd(c(c1, c2, c3))
+```
+
+we might be supposed to calculate:
+
+```{r}
+mean(c(sd(c1), sd(c2), sd(c3)))
+```
+
+(see: https://bit.ly/2Wj505F )
+
+What I did was treating each person's mean as one observation:
+
+```{r}
+c(
+  mean = mean(c(mean(c1),
+       mean(c2),
+       mean(c3))),
+  sd = sd(c(mean(c1),
+     mean(c2),
+     mean(c3)))
+)
+```
+
+## The mathematical computation behind R functions used in this report
+
+Statistical computations are done automatically by R. For completeness, I include here the actual mathematical operations performed by the mathematical functions used in this report.
+
+For an R vector `x <- c(x1, x2, x3, x4, x5, ... xn)`:
+
+`mean(x)` = $\bar{x}=\dfrac{\sum{x}}{n}$
+`sd(x)` = $s_x=\sqrt{\dfrac{\sum{(x-\bar{x})^2}}{n-1}}=\sqrt{\dfrac{\sum{x^2}-\dfrac{(\sum x)^2}{n}}{n-1}}$
+
+`lm(y ~ x)` produces a linear model $y = b_0 + b_1x$
+
+$$b_1=\dfrac{s_{xy}}{s_x}=\dfrac{\sum{(x-\bar{x})}\sum{(y-\bar{y})}}{\sum{(x-\bar{x})^2}} = \dfrac{n\sum{xy}-\sum x \sum y}{n\sum{x^2}-(\sum x)^2}$$
+
+and 
+
+$$b_0 = \bar{y} - b_1\bar{x} = \dfrac{\sum y - b_1 \sum x}{n}$$
+
+However, I forced intercept to be at the origin (`lm(y ~ 0 + x)`), so actually $b_1$ is calculated as:
+
+$$b_1=\dfrac{\sum xy}{\sum x^2}$$

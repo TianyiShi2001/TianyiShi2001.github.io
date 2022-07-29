@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>human metabolism on Tianyi@Oxford</title>
+    <link>/categories/human-metabolism.html</link>
+    <description>Recent content in human metabolism on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/human-metabolism/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuel Selection During Exercise</title>
+      <link>/tutorial/sensing-energy-status-during-exercise.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/sensing-energy-status-during-exercise.html</guid>
+      <description>1 Introduction 2 Overview 2.1 Glycogen and Glucose 2.1.1 Blood Glucose 2.1.2 Regulation of Glycogenolysis 2.2 Fatty Acids 2.2.1 Adipose Tissue Lipolysis and Plasma NEFA 2.2.2 Intramuscular Triacylglycerol (IMTG) 2.2.3 Plasma TG (VLDL-TG) What effects do the intensity and duration of exercise have on fuel selection by mammalian muscle?
+1 Introduction During exercise, glucose and fatty acids are the fuels used by the muscle. Their origin and relative contribution depend on the intensity and duration of exercise, as well as on characteristics of individuals such as the level of physical training.</description>
+    </item>
+    
+    <item>
+      <title>Insulin and Ketone Bodies</title>
+      <link>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html</guid>
+      <description>1 Introduction 2 Regulation of Ketogenesis by Insulin 2.1 Adipocyte Lipolysis 2.2 Regulation of CPT1 2.3 Channeling of Acetyl-CoA into Ketogenesis 2.4 Mitochondrial HMG-CoA Synthase 3 Diabetes and Ketone Bodies 3.1 Aetiology of Diabetes 3.2 Overproduction of Ketone Bodies 3.3 Consequences of Ketoacidosis How does insulin regulate the pathways for the conversion of body fat into ketone bodies? Why are ketone bodies overproduced in uncontrolled diabetes and what are the metabolic consequences.</description>
+    </item>
+    
+  </channel>
+</rss>

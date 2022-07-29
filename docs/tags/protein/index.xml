@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>protein on Tianyi@Oxford</title>
+    <link>/tags/protein.html</link>
+    <description>Recent content in protein on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/protein/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protein-Nucleic Acid Interactions</title>
+      <link>/tutorial/protein-nucleic-acid-interactions.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-nucleic-acid-interactions.html</guid>
+      <description>1 Introduction 2 An Overview of Mechanisms of Protein-DNA Interactions 3 Thermodynamics of Protein-DNA Binding 4 Base Readout in the Major Groove 5 Shape Readout 5.1 Minor Groove Narrowing 5.2 Kinks 6 The Nucleosome as an Example of Non-Specific Binding 7 (Question 2) 7.1 (a) bHLH Motif 7.2 (b) Leucine Zipper 7.3 (c) Zinc Finger 7.4 (d) TATA box binding protein References 1 Introduction Protein-DNA interactions have profound impact on the expression and regulation of genes.</description>
+    </item>
+    
+    <item>
+      <title>Protein-Protein Interactions</title>
+      <link>/tutorial/protein-protein-interactions.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-protein-interactions.html</guid>
+      <description>1 Introduction 2 Properties of PPI 2.1 Reversibility 2.2 Properties of the Binding Interfaces 2.3 Roles of Water Molecules 2.4 Kinetics and Thermodynamics 3 Studying PPIs 3.1 Determining Kd (and rate constants) 3.1.1 Surface Plasmon resonance (SPR) 3.1.2 Fluorescence anisotropy 3.1.3 Isothermal titration calorimetry (ITC) 3.2 Mechanistic Studies 3.2.1 Alanine Scanning 3.2.2 Extent of Exchengeability of Amino Acids 3.2.3 Directed Evolution 3.2.4 Computational Approaches 3.2.5 Connectivity Map Reveals Modularity 3.</description>
+    </item>
+    
+    <item>
+      <title>Download and Sync with the Entire PDB Database</title>
+      <link>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</guid>
+      <description>All the PDB files are available via PDB’s FTP server. Simply cd to a directory and use wget to download all of them.
+mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/* Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the -N option to wget (essentially this means downloading “new” files only).</description>
+    </item>
+    
+    <item>
+      <title>Visualising the Resolution Revolution of Electron Microscopy</title>
+      <link>/bioinformatics/pdb-stats.html</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/pdb-stats.html</guid>
+      <description>1 Getting All the PDB Files 2 Parsing PDB files 3 Data Analysis with R 3.0.1 Prerequisites 3.1 Load Data 3.2 Tidying Data 3.3 Plotting 3.3.1 Plot Setup 3.3.2 Median Resolution of Different Methods Over Time 3.3.3 All Cases of X-Ray and EM Structures 3.3.4 Boxplots Last week I wrote an essay on electron microscopy (EM) and X-ray crystallography. I originally thought X-ray’s superiority in resolution has always been unrivalled, but the situation is changing—the best resolution achived by cryo-EM is now comparable with the average/median resolution achived by X-ray crystallography, which is around 2.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Protein Structures Using Plotly</title>
+      <link>/bioinformatics/visualizing-protein-structures-using-plotly.html</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/visualizing-protein-structures-using-plotly.html</guid>
+      <description>Am I the first one to try to visualize protein structures using Plotly?
+Personally, I think the hitherto most powerful and elegant protein structure visualization tool is SwissPdbViewer (a.k.a. DeepView), which is tightly linked to SWISS-MODEL. Apparently it’s used as a web application, but it is not written in JS. It is not open source, and it’s 32-bit architecture makes it obsolete on modern 64-bit computers.
+Plotly has an open source graphing library with APIs for R, Python and JS, of which the R API highly compatible with the renowned ggplot2 package.</description>
+    </item>
+    
+    <item>
+      <title>Protein Purification Practical</title>
+      <link>/lab/protein-purification-practical.html</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/protein-purification-practical.html</guid>
+      <description>absorbance &amp;lt;- c(0.086, 0.142, 0.548, 0.976, 1.419, 1.294, 1.161, 1.472, 1.800, 2.003, 1.777, 1.463, 1.430, 1.486, 1.538, 1.254, 0.820, 0.503, 0.388, 0.235, 0.204, 0.163, 0.148, 0.151, 0.169, 0.221, 0.381, 0.701, 0.954, 0.917, 0.651, 0.423, 0.274, 0.191, 0.034, 0.031 ) volume &amp;lt;- 1:36 plot(volume, absorbance, xlab = &amp;#39;volume (ml)&amp;#39;, type = &amp;#39;p&amp;#39;, ylim=c(0, 2.2), yaxs=&amp;#39;i&amp;#39;) lines(volume, absorbance) lines(c(5, 5), c(0.0, 1.419), col=&amp;#39;red&amp;#39;) lines(c(10, 10), c(0.0, 2.003), col=&amp;#39;red&amp;#39;) lines(c(15, 15), c(0.0, 1.</description>
+    </item>
+    
+    <item>
+      <title>Protein Expression and Purification</title>
+      <link>/tutorial/protein-purification.html</link>
+      <pubDate>Sat, 02 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-purification.html</guid>
+      <description>You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein. OR What strategies could you employ during protein expression and purification to minimise heterogeneity in a sample required for structural studies?</description>
+    </item>
+    
+    <item>
+      <title>Protein Structure and Function</title>
+      <link>/tutorial/protein-structure-and-function.html</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-structure-and-function.html</guid>
+      <description>Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins&amp;rsquo; lecture series. Bring notes no essay.</description>
+    </item>
+    
+  </channel>
+</rss>

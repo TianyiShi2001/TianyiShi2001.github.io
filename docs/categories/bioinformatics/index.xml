@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bioinformatics on Tianyi@Oxford</title>
+    <link>/categories/bioinformatics.html</link>
+    <description>Recent content in bioinformatics on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download and Sync with the Entire PDB Database</title>
+      <link>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</guid>
+      <description>All the PDB files are available via PDB’s FTP server. Simply cd to a directory and use wget to download all of them.
+mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/* Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the -N option to wget (essentially this means downloading “new” files only).</description>
+    </item>
+    
+    <item>
+      <title>Sequence Alignment: Gap Penalty</title>
+      <link>/bioinformatics/sequence-alignment-gap-penalty.html</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment-gap-penalty.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FASTA Parser Implemented in Rust with Nom</title>
+      <link>/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html</guid>
+      <description>1 Parsing a single FASTA Record 1.1 Representing the Record in Rust 1.2 Parsing the Title Nom makes it possible to
+1 Parsing a single FASTA Record An example of FASTA record is shown below.
+&amp;gt;gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG AATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG CCGCCTCGGGAGCGTCCATGGCGGGTT &amp;gt;(another FASTA record) Each record starts with a &amp;gt; character, which is followed by the title on the same line. The title can be further divided into an ID and description, which is separated by a space character.</description>
+    </item>
+    
+    <item>
+      <title>Computational Genomics Practical (TT 2020)</title>
+      <link>/lab/computational-genomics-practical-tt-2020.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/computational-genomics-practical-tt-2020.html</guid>
+      <description>1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) 1.2 Heatmaps in Python (with seaborn) 1.3 Average Gene Profile 2 Quiz 8 2.1 Matlab 2.2 Using R 1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) Loading Packages
+library(R.matlab) ## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.matlab for help. ## ## Attaching package: &amp;#39;R.matlab&amp;#39; ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## getOption, isOpen library(reshape2) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.</description>
+    </item>
+    
+    <item>
+      <title>Visualising the Resolution Revolution of Electron Microscopy</title>
+      <link>/bioinformatics/pdb-stats.html</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/pdb-stats.html</guid>
+      <description>1 Getting All the PDB Files 2 Parsing PDB files 3 Data Analysis with R 3.0.1 Prerequisites 3.1 Load Data 3.2 Tidying Data 3.3 Plotting 3.3.1 Plot Setup 3.3.2 Median Resolution of Different Methods Over Time 3.3.3 All Cases of X-Ray and EM Structures 3.3.4 Boxplots Last week I wrote an essay on electron microscopy (EM) and X-ray crystallography. I originally thought X-ray’s superiority in resolution has always been unrivalled, but the situation is changing—the best resolution achived by cryo-EM is now comparable with the average/median resolution achived by X-ray crystallography, which is around 2.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing Protein Structures Using Plotly</title>
+      <link>/bioinformatics/visualizing-protein-structures-using-plotly.html</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/visualizing-protein-structures-using-plotly.html</guid>
+      <description>Am I the first one to try to visualize protein structures using Plotly?
+Personally, I think the hitherto most powerful and elegant protein structure visualization tool is SwissPdbViewer (a.k.a. DeepView), which is tightly linked to SWISS-MODEL. Apparently it’s used as a web application, but it is not written in JS. It is not open source, and it’s 32-bit architecture makes it obsolete on modern 64-bit computers.
+Plotly has an open source graphing library with APIs for R, Python and JS, of which the R API highly compatible with the renowned ggplot2 package.</description>
+    </item>
+    
+    <item>
+      <title>Isoelectric Point Calculation</title>
+      <link>/bioinformatics/isoelectric-point-calculation.html</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/isoelectric-point-calculation.html</guid>
+      <description>By rearranging the Henderson-Hasselbalch equation:
+\[ \text{pH}=\text{pK}_\text{a} + \log\left(\dfrac{\text{[A}^{-}\text{]}}{\text{[HA]}}\right) \]
+we can get the ratio between an acid and its conjugate base:
+\[ \frac{\text{[HA]}}{\text{[A}^{-}\text{]}}=10^{(\text{pK}_\text{a}-\text{pH})} \]
+and between an base and its conjugate acid:
+\[ \frac{\text{[B]}}{\text{[BH}^+\text{]}} = 10^{(\text{pH}-\text{pK}_\text{a})} \]
+Thus, the proportion of deprotonated acid is calculated as follows:
+\[ \dfrac{\text{[A}^{-}\text{]}}{\text{[A]}_\text{total}}=\dfrac{\text{[A}^{-}\text{]}}{\text{[HA]}+\text{[A}^{-}\text{]}}=\dfrac{1}{1+\frac{\text{[HA]}}{\text{[A}^{-}\text{]}}}=\dfrac{1}{1+10^{(\text{pK}_\text{a}-\text{pH})}} \]
+Similarly, for basic species:
+\[ \dfrac{\text{[BH}^+\text{]}}{\text{[B]}_\text{total}}=\dfrac{\text{[BH}^+\text{]}}{\text{[B]}+\text{[BH}^+\text{]}}=\dfrac{1}{1+\frac{\text{[B]}}{\text{[BH}^+\text{]}}}=\dfrac{1}{1+10^{(\text{pH}-\text{pK}_\text{a})}} \]
+http://fields.scripps.edu/DTASelect/20010710-pI-Algorithm.pdf</description>
+    </item>
+    
+    <item>
+      <title>Sequence Alignment</title>
+      <link>/bioinformatics/sequence-alignment.html</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment.html</guid>
+      <description>Sequence Alignment in R Packages library(Biostrings) library(seqinr) DNA sequence myScoringMat &amp;lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE) dnaSeq1 &amp;lt;- &amp;quot;GAATTCGGCTA&amp;quot; # can be a plain string dnaSeq2 &amp;lt;- DNAString(&amp;quot;GATTACCTA&amp;quot;) # or an XString gapOpen &amp;lt;- 2 gapExtend &amp;lt;- 1 dnaAln &amp;lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &amp;#39;global&amp;#39;, scoreOnly=FALSE) dnaAln Amino acid sequence Here is a list of built-in amino acid substitution matrices, which can be shown with data(package=&amp;quot;Biostrings&amp;quot;):</description>
+    </item>
+    
+  </channel>
+</rss>

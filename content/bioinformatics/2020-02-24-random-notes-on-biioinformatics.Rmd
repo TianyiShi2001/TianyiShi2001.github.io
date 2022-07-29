@@ -1,0 +1,42 @@
+---
+title: Random Notes on Bioinformatics
+author: Tianyi Shi
+date: '2020-02-24'
+slug: random-notes-on-biioinformatics
+categories:
+  - bioenergetics
+tags:
+  - R
+  - Go
+  - python
+term: 1-Hilary
+week: 6
+summary: ~
+bibliography:
+  - ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: no
+    toc: no
+  rmarkdown::pdf_document:
+    number_sections: no
+    toc: no
+nocite: ~
+---
+
+# Go 
+
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2903-5
+
+
+
+
+
+
+
+
+
+
+
+
+

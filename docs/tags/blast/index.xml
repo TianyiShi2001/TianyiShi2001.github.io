@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blast on Tianyi@Oxford</title>
+    <link>/tags/blast.html</link>
+    <description>Recent content in blast on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/blast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sequence Alignment</title>
+      <link>/bioinformatics/sequence-alignment.html</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment.html</guid>
+      <description>Sequence Alignment in R Packages library(Biostrings) library(seqinr) DNA sequence myScoringMat &amp;lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE) dnaSeq1 &amp;lt;- &amp;quot;GAATTCGGCTA&amp;quot; # can be a plain string dnaSeq2 &amp;lt;- DNAString(&amp;quot;GATTACCTA&amp;quot;) # or an XString gapOpen &amp;lt;- 2 gapExtend &amp;lt;- 1 dnaAln &amp;lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &amp;#39;global&amp;#39;, scoreOnly=FALSE) dnaAln Amino acid sequence Here is a list of built-in amino acid substitution matrices, which can be shown with data(package=&amp;quot;Biostrings&amp;quot;):</description>
+    </item>
+    
+  </channel>
+</rss>

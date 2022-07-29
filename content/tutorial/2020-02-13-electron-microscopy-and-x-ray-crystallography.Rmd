@@ -1,0 +1,90 @@
+---
+title: Electron Microscopy and X-Ray Crystallography
+author: Tianyi Shi
+date: '2020-02-13'
+slug: electron-microscopy-and-x-ray-crystallography
+categories:
+  - biophysical techniques
+tags:
+  - EM
+  - X-ray crystallography
+term: 1-Hilary
+week: 5
+tutor: ~
+summary: |
+  Learning objectives
+  
+  To understand the methodological principle of electron microscopy in its different applications (e.g. TEM, SEM, tomography, single-particle), and X-ray crystallography  To be able to evaluate, which method of structural analysis would be most feasible with which kind of biological specimen (e.g. whole cells, viruses, protein complexes, peptides).
+  
+  To gain a conception of the resolution ranges attainable by EM methods as compared to X-ray crystallography.
+  
+  To be aware of the computational methods that combine EM maps and crystallogrographic data
+bibliography:
+  - ../bib/main.bib
+nocite: |
+  [@Kuhlbrandt-2014, @Milne-2013, @Rupp-2010, @Xiong-2008, @Rhodes-2006a, @Nogales-2018, @Whitford-2005a, @Earl-2017, @Powell-2017, @Wang-2017, @Jain-2010, @Elmlund-2017, @Cheng-2018]
+output:
+  rmarkdown::pdf_document:
+    number_sections: true
+    toc: true
+---
+
+**Compare the strengths and limitations of Electron Microscopy and X-ray crystallography. Which types of biological specimen can be studied with the respective methods, and how can cryo-EM and X-ray crystallography be combined to obtain novel structural information?**
+
+# Introduction
+
+Being able to solve macromolecular strucutures at atomic resolution, X-ray crystallography has long been the most powerful tool in structural biology. As of Feb 16 2019, 167943 molecular structures have been deposited into the Protein Data Bank (PDB) since its launch in 1971. However, recent improvements in the field of electron microscopy, especially the introduction of the use of cryocooling, have revolutionised the way cellular material is viewed. In conjunction with computational methods, cryo-EM can now solve macromolecular structures at sub-atomic or even atomic resolution. The structures publicised on Electron Microscopy Data Bank (EMDB) has grown exponentially over the last two decades, from only 8 in 2002 to more than 10000 on Feb 16 2020. In this breif narrative, I introduce the basic principles of both methods, their strengths and limitations, and how they can complement each other in modern structural biology studies. 
+
+# X-Ray Crystallography
+
+In short, structural determination using X-ray crystallography involves making the appropriately-sized crystals of the protein of interest, gaining electron density maps by deciphering X-ray diffraction patterns obtained from these crystals, and filling the map with amino acids (and prosthetic groups or other ligands).
+
+Prior to the X-ray experiment, the protein must be crystallised. This is often the most laborious and time-consuming step, involving numerous trial-and-errors. In modern high throughput methods, a wide range of crystallisation constructs are designed (which involves truncation the protein of interest, expression with a fusion partner, binding with a ligand, use of different detergents, etc.), and robots are used to deploy these crystallisation conditions in multiwell plates and to monitor the growth of crystals. *One of the critial factors in the sucess of crystallisation is aqueous solubility, which represents the major bottleneck in solving membrane protein structures [@Parker-2016].*
+
+In the X-ray experiment, the crytal is mounted on a support which can be rotated in any direction, and is cryocooled in order to minimise radioactive damage and random thermal vibration, thus improving signal-to-noise-ratio (contrast). For every orientation of the crystal, a monochromatic X-ray is applied, and the detector records the position and intensity of the reflections (points) in the diffraction pattern.
+
+Crystallisation is needed for two reasons. First, the diffraction signal given by a single protein molecule is too weak to be detected. Second, incoherent scattering causes serious chemical damage to protein molecules, and if we try to image a single molecule with X-rays, it would be destroyed as soon as it scattered one or two photons and no longer represent the native protein structure. Crystallisation forms an array of a substantial number of protein molecules arranged in the same orientation (so that their diffraction properties are the same) so the radiation damage in a small number of molecules becomes negligible. Every molecule in the array gives the same diffraction signal, thus achieving amplification.
+
+X-rays with wavelengths within the range 0.5-1.6Å are used in crystallography. X-rays above this range are 'soft X-rays' that penerate crystals without scattering. Generally, X-rays of shorter wavelengths are more preferable because of two reasons. First, this generally gives better resolution. According to this rearranged form of Bragg's equation, $\dfrac{n_{max}}{d}\propto\dfrac{1}{\lambda}$, as wavelength ($\lambda$ decreases), smaller $d$ (distance between crystal lattice planes) can be distinguished with the same $n$ (number of constructive interference). Second, X-rays with shorter $\lambda$ are scattered more, thus producing stronger signals for a fixed amount of sample, which allows crytals of smaller sizes to be studied. However, using X-rays of too short wavelengths (and using too small crystals) have the disadvantage that a greater proportion of proteins would be damaged due to the higher energy of the X-ray and the smaller sample size. Traditional X-rays sources are characteristic radiations from a Cu anode (CuK$\alpha$, $\lambda$=1.54Å) or a Mo anode (MoK$\alpha$, $\lambda$=0.71Å) when bombarded by electrons beams at appropriate potential difference from the cathode. Since the 1960s, synchrotrons (e.g. Diamond Light Source in Oxfordshire) have become available as more intense and X-ray sources. In these giant devices, electrons travel on a circular track in vacuum, emitting intense X-rays in  tangential directions. Electrical disturbances in synchrotron allow for production of X-rays with any $\lambda$ within the useful range 0.5-1.6Å, and this makes it possible to use multiple anomalous dispersion (MAD) method to solve the phase problem. 
+
+The diffraction patterns only give information on the position amplitude of every reflection, but an additional parameter, phase, is required to do the inverse Fourier transform that would give the electron density map. Single/multiple isomorphous replacements (SIR/MIR) using heavy metals represent the earliest attempts to solve the phase problem. Later, with the advent of synchrotrons, multi-wavelength anomalous dispersion (MAD) became the more popular phasing strategy. Recently, thank to the numerous experimental structures solved previously and publicised in PDB, molecular replacement (MR) has become the most efficient way to solve the phase problem.
+
+After solving the first electron density map using inverse Fourier transform, the structure is refined by optimising the parameters of the model to fit the observations in a iterative process.
+
+Today, abundant software packages are available for data collection and processing, structure solution, refinement and validation.
+
+# Cryo-Electron Microscopy
+
+Electron microscopy (EM) is mechanistically similar to light microscopy (LM). Electron beams (which is analogous to visible light beams in LM) hit the sample, and their path is regulated by a set of electromagnets (analogous to lens in LM) so that they finally converge onto a plane where an enlarged image of the sample can be detected. 
+
+Unstained samples have a very poor singal-to-noise ratio (contrast) under EM, and traditionally heavy metal are applied to improve contrast. However, this often leads to unwanted artefacts and can only achieve resolutions at 20-40Å. High electron dose improves contrast but causes damage to the specimen. 
+
+Cryo-EM partially solves this problem by reducing the effect of radiation damage using low temperature. In cryo-electron microscopy, protein solutions are applied onto a support grid, and is then plunge-frozen with liquid ethane. The process is so fast that the water adopts a vitreous form instead of crystallises into ice. The vitrified sample is then maintained at low temperature with liquid nitrogen during storage and EM studies. 
+
+Another challenge of cryo-EM is the movement of the particles when being hit by the electron beam, which leads to blurred images on conventional CCD/photographic films (because they are less sensitive and need a long time of exposure). This is solved by the more sensive and faster direct electron detectors which can record movies at a rate of many fps. The traces of molecules recorded in the movies can be computationally processed to give much sharper images. The motion is in part due to the different thermal expansion coefficients between the metal grid and the carbon film, and choosing metals that have similar thermal properties  with carbon (e.g. titanium, molybdenum or tungsten instead of copper or gold) can minimise this effect [@Sgro-2018]. 
+
+There are two major strategies of constructing 3D models using cryo-EM, namely electron tomography and single-particle cryo-EM. In electron tomography, the specimen is tilted in all directions and respective EM images are recorded, which are combined (similar to CT) into a 3D model. It is commonly used to visualise one-of-a-kind, structurally heterogeneous entities (such as viruses and whole bacterial cells) at resolutions 50-100Å. Single-particle cryo-EM are usually used to study smaller entities such as the ribosome and proteins. In this approach, a large number (tens or hunders of thousands) of 2D images are extracted from EM images. These heterogeneous low-resolution 'snapshots' are computationally sorted and aligned (sometimes called *in silico* purification), and finally used to synthesise the 3D model using Fourier transform. 
+
+# Comparison of Strengths and Limitations
+
+The most significant advantage of X-ray crystallography is its resolution. 2.05Å is the median resolution for X-ray crystallographic results in the protein data bank (as of May 19, 2019, according to [Proteopedia](https://proteopedia.org/wiki/index.php/Resolution), but I will do the analysis myself on Monday. I have downloaded all the entire PDB repository.). The protein backbone and most sidechains can be identified unambiguously under this resolution. Strikingly[^strike], however, this long unrivalled strength of X-ray crystallography is now challeged by cryo-EM—Wu el al.[^wu] claimed cryo-EM solution of mouse heavy chain apoferritin at 1.75Å!
+
+[^wu]: To be published. Preprint available on [bioRxiv](https://www.biorxiv.org/content/10.1101/855643v1.full)
+
+[^strike]: I was REALLY shocked when when facing the search results on EMDB website. According to reviews written in 2014, 4.5Å was still the best resolution ever achieved at that time, and in less than 6 years cryo-EM is becoming able to provide atomic resolution as does X-ray crystallography!
+
+A major advantage of cryo-EM over X-ray crystallography is the ease and speed of sample preparation, as the proteins need not to be crystallised and only a small amount is needed. Another related merit is its forgiveness of heterogeneity, as robust computational methods can 'purify' proteins *in silico*. Furthermore, cryo-EM are suited for studying membrane proteins and multiprotein supra-assemblies/RNP machines, which are difficult to crystallise in their native states. However, it should be noted that during the process of specimen preparation, delicate protein complexes may become associated so that they no longer represent their *in vivo* state.
+
+# Combining X-ray and Cryo-EM studies
+
+Today, it is common to combine the results of X-ray crystallography and cryo-EM studies for structural determination. There are two major ways in which these two methods can complement each other. First, a low-resolution cryo-EM map can provide an overall shape of the macromolecule, whose sub-components are solved at a high resolution by X-ray crystallograhy and docked onto the EM map. Second, the cryo-EM model may help to solve the phase problem in X-ray crystallography by serving as a search model in molecular replacement (MR). 
+
+The docking methods can be classified into two categories: rigid-body docking and flexible docking. Both are used to find the optimal position and orientation of sub-component X-ray structures in the cryo-EM map, but the the latter entails additional algorithms such as normal mode analysis and molecular dynamic simulation that introduce minor conformational changes within stereochemistry limits in X-ray structures to minimise local conformational discrepancy between the X-ray and cryo-EM models. The docking is useful to define the protein location and protein-protein interface within a complex and new interaction modes that are not revealed by X-ray crystallography. 
+
+The electron density map (strictly speaking, Coulomb potential density map) obtained by Cryo-EM, albeit at a low resolution, has information about the phase, and thus can be used as an initial phasing model for X-ray studies. Once the search EM map has been positioned, theoretical phases can be calculated by Fourier transform up to the EM model resolution.
+
+# Concluding Remarks
+
+The past decade has witnessed a resolution revolution in single particle cryo-EM, making them another powerful tool in solving biological macromolecules after X-ray crystallography. The different perspectives provided by these two methods is helping us to gain a more complete understanding of molecualr mechanisms that underlie the principle of life.
+
+# References

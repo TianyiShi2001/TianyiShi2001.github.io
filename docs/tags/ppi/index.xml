@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ppi on Tianyi@Oxford</title>
+    <link>/tags/ppi.html</link>
+    <description>Recent content in ppi on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ppi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Protein-Protein Interactions</title>
+      <link>/tutorial/protein-protein-interactions.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-protein-interactions.html</guid>
+      <description>1 Introduction 2 Properties of PPI 2.1 Reversibility 2.2 Properties of the Binding Interfaces 2.3 Roles of Water Molecules 2.4 Kinetics and Thermodynamics 3 Studying PPIs 3.1 Determining Kd (and rate constants) 3.1.1 Surface Plasmon resonance (SPR) 3.1.2 Fluorescence anisotropy 3.1.3 Isothermal titration calorimetry (ITC) 3.2 Mechanistic Studies 3.2.1 Alanine Scanning 3.2.2 Extent of Exchengeability of Amino Acids 3.2.3 Directed Evolution 3.2.4 Computational Approaches 3.2.5 Connectivity Map Reveals Modularity 3.</description>
+    </item>
+    
+  </channel>
+</rss>

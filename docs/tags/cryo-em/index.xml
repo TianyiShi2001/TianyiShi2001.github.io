@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cryo-EM on Tianyi@Oxford</title>
+    <link>/tags/cryo-em.html</link>
+    <description>Recent content in cryo-EM on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cryo-em/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assessing The Quality Structural Models</title>
+      <link>/tutorial/assessing-structural-models.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/assessing-structural-models.html</guid>
+      <description>1 The Essence of X-Ray Crystallography 2 Assessing the Quality of A Structure During Model Building and Refinement 2.1 R and Rfree 2.2 Reciprocal-Space Refinement: Refinement by least squares 2.3 Real-Space Refinement: Map Fitting 3 Assessing Quality After Automatic Model Building and Refinement 3.1 Density fit analysis and local geometry validation 3.1.1 Structural parameters: bond length, bond angle, chirality, planarity, and dihedral angles 3.1.2 Torsional Angles and Ramachandran Plot 3.</description>
+    </item>
+    
+    <item>
+      <title>Protein Structure and Function</title>
+      <link>/tutorial/protein-structure-and-function.html</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/protein-structure-and-function.html</guid>
+      <description>Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins&amp;rsquo; lecture series. Bring notes no essay.</description>
+    </item>
+    
+  </channel>
+</rss>

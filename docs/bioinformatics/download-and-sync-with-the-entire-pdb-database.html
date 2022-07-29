@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Download and Sync with the Entire PDB Database - Tianyi@Oxford</title>
+<meta property="og:title" content="Download and Sync with the Entire PDB Database - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">182 words</span>
+    
+
+
+    
+    <h1 class="article-title">Download and Sync with the Entire PDB Database</h1>
+    <span class="article-date">2020-10-17</span>
+
+    <p class="link-to-pdf"><a href="2020-10-17-download-and-sync-with-the-entire-pdb-database.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+
+
+<p>All the PDB files are <a href="https://www.rcsb.org/pages/download/ftp">available via PDB’s FTP server</a>. Simply <code>cd</code> to a directory and use <code>wget</code> to download all of them.</p>
+<pre class="bash"><code>mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped
+wget ftp://ftp.wwpdb.org/pub/pdb/data/structures/all/pdb/*</code></pre>
+<p>Depending on the traffic, The first download will take 2~4 days. After the first download, to sync the local database with the FTP server, add the <code>-N</code> option to <code>wget</code> (essentially this means downloading “new” files only).</p>
+<p>The <code>*.ent.gz</code> files downloaded are zipped. You can use <code>gunzip</code> to decompress them to ready-to-use <code>*.ent</code> files (which is written in PDB format), but that will remove the <code>*.gz</code> files, which is inconvenient if you want to keep your database in sync with the remote. Use <code>gzcat</code> (or equivalently <code>gunzip -c</code>) instead to preserve the <code>*.gz</code> files while decompressing:</p>
+<pre class="bash"><code>find . -name &quot;*.gz&quot; | xargs -I{} -n1 bash -c &#39;
+src={}; dst=../unzipped/$(basename ${src%*.gz})
+[ -f $dst ] &amp;&amp; echo &quot;$dst already exists, skipping...&quot; || ( gzcat -cv $src &gt; $dst )&#39;</code></pre>
+<p>You can monitor the progress from the verbose output of <code>gzcat</code>:</p>
+<pre><code>./pdb1byf.ent.gz:      78.1%
+./pdb1byg.ent.gz:      76.3%
+./pdb1byh.ent.gz:      77.3%
+./pdb1byi.ent.gz:      75.2%
+...</code></pre>
+<script src="https://gist.github.com/TianyiShi2001/46fcc143b104cd47c7c768f958da2555.js"></script>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/bioinformatics/download-and-sync-with-the-entire-pdb-database.html"
+      this.page.identifier = "download-and-sync-with-the-entire-pdb-database"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2020 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

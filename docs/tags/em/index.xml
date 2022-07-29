@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EM on Tianyi@Oxford</title>
+    <link>/tags/em.html</link>
+    <description>Recent content in EM on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/em/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Electron Microscopy and X-Ray Crystallography</title>
+      <link>/tutorial/electron-microscopy-and-x-ray-crystallography.html</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/electron-microscopy-and-x-ray-crystallography.html</guid>
+      <description>&lt;p&gt;Learning objectives&lt;/p&gt;
+&lt;p&gt;To understand the methodological principle of electron microscopy in its different applications (e.g. TEM, SEM, tomography, single-particle), and X-ray crystallography  To be able to evaluate, which method of structural analysis would be most feasible with which kind of biological specimen (e.g. whole cells, viruses, protein complexes, peptides).&lt;/p&gt;
+&lt;p&gt;To gain a conception of the resolution ranges attainable by EM methods as compared to X-ray crystallography.&lt;/p&gt;
+&lt;p&gt;To be aware of the computational methods that combine EM maps and crystallogrographic data&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

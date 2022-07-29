@@ -1,0 +1,67 @@
+---
+title: Sequence Alignment
+author: Tianyi Shi
+date: '2020-02-03'
+slug: sequence-alignment
+categories:
+  - bioinformatics
+tags:
+  - sequence alignment
+  - blast
+  - fasta
+term: 1-Hilary
+week: 3
+summary: ~
+bibliography:
+  - ../bib/main.bib
+nocite: ~
+---
+
+
+
+<div id="sequence-alignment-in-r" class="section level1">
+<h1>Sequence Alignment in R</h1>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<pre class="r"><code>library(Biostrings)
+library(seqinr)</code></pre>
+</div>
+<div id="dna-sequence" class="section level2">
+<h2>DNA sequence</h2>
+<pre class="r"><code>myScoringMat &lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE)
+dnaSeq1 &lt;- &quot;GAATTCGGCTA&quot; # can be a plain string
+dnaSeq2 &lt;- DNAString(&quot;GATTACCTA&quot;) # or an XString
+gapOpen &lt;- 2
+gapExtend &lt;- 1
+dnaAln &lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &#39;global&#39;, scoreOnly=FALSE)   
+dnaAln</code></pre>
+</div>
+<div id="amino-acid-sequence" class="section level2">
+<h2>Amino acid sequence</h2>
+<p>Here is a list of built-in amino acid substitution matrices, which can be shown with <code>data(package=&quot;Biostrings&quot;)</code>:</p>
+<pre><code>BLOSUM100
+BLOSUM45
+BLOSUM50
+BLOSUM62
+BLOSUM80
+PAM120
+PAM250
+PAM30
+PAM40
+PAM70</code></pre>
+<pre class="r"><code>aaSeq1 &lt;- &#39;PAWHEAE&#39;
+aaSeq2 &lt;- &#39;HEAGAWGHE&#39;
+aaAln &lt;- pairwiseAlignment(aaSeq1, aaSeq2, substitutionMatrix=&quot;BLOSUM62&quot;, gapOpening=gapOpen, gapExtension=gapExtend, type=&#39;global&#39;, scoreOnly=FALSE)
+aaAln</code></pre>
+<pre class="r"><code>ncov &lt;- readDNAStringSet(&#39;./src/2019-ncov.fasta&#39;, &#39;fasta&#39;)
+sars &lt;- readDNAStringSet(&#39;./src/sars.fasta&#39;, &#39;fasta&#39;)</code></pre>
+<pre class="r"><code>virusAln &lt;- pairwiseAlignment(ncov, sars, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &#39;global&#39;, scoreOnly=FALSE)</code></pre>
+<pre class="r"><code>ncov1 &lt;- seqinr::read.fasta(&#39;./src/2019-ncov.fasta&#39;, seqtype = &#39;DNA&#39;)
+sars1 &lt;- seqinr::read.fasta(&#39;./src/sars.fasta&#39;, seqtype = &#39;DNA&#39;)</code></pre>
+<pre class="r"><code>library(ape)
+myset &lt;- c(&quot;U15717&quot;, &quot;U15718&quot;, &quot;U15719&quot;, &quot;U15720&quot;, &quot;U15721&quot;,&quot;U15722&quot;, &quot;U15723&quot;, &quot;U15724&quot;)
+myseqs &lt;- read.GenBank(myset)
+mydist &lt;- dist.dna(myseqs)
+plot(myphylo, type=&quot;phylogram&quot;, edge.color=&quot;red&quot;, cex=1, edge.width=1,main=&quot;(A) Phylogram&quot;)</code></pre>
+</div>
+</div>

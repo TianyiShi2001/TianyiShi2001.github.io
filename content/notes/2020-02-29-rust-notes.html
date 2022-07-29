@@ -1,0 +1,52 @@
+---
+title: Rust Notes
+author: Tianyi Shi
+date: '2020-02-29'
+slug: rust-notes
+categories:
+  - programming
+tags:
+  - Rust
+# term: 1-Hilary
+# week: 6
+---
+
+
+
+<pre class="rust"><code>fn main() {
+    let number_list = vec![34, 50, 25, 100, 65];
+
+    print_max(&amp;number_list);
+    print_max_1(&amp;number_list);
+    print_max_2(number_list)
+}
+
+fn print_max(number_list: &amp;[u16]) {
+    let mut largest = &amp;number_list[0];
+    for number in number_list.iter() {
+        if number &gt; largest {
+            largest = number;
+        }
+    }
+    println!(&quot;The largest number is {}&quot;, largest);
+}
+
+fn print_max_1(number_list: &amp;[u16]) {
+    let mut largest = &amp;number_list[0];
+    for number in number_list {
+        if number &gt; largest {
+            largest = number;
+        }
+    }
+    println!(&quot;The largest number is {}&quot;, largest);
+} 
+
+fn print_max_2(number_list: Vec&lt;u16&gt;) {
+    let mut largest = number_list[0];
+    for number in number_list {
+        if number &gt; largest {
+            largest = number;
+        }
+    }
+    println!(&quot;The largest number is {}&quot;, largest);
+} </code></pre>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Tianyi@Oxford</title>
+    <link>/categories/programming.html</link>
+    <description>Recent content in programming on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Notes</title>
+      <link>/notes/rust-notes.html</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/rust-notes.html</guid>
+      <description>fn main() { let number_list = vec![34, 50, 25, 100, 65]; print_max(&amp;amp;number_list); print_max_1(&amp;amp;number_list); print_max_2(number_list) } fn print_max(number_list: &amp;amp;[u16]) { let mut largest = &amp;amp;number_list[0]; for number in number_list.iter() { if number &amp;gt; largest { largest = number; } } println!(&amp;quot;The largest number is {}&amp;quot;, largest); } fn print_max_1(number_list: &amp;amp;[u16]) { let mut largest = &amp;amp;number_list[0]; for number in number_list { if number &amp;gt; largest { largest = number; } } println!</description>
+    </item>
+    
+  </channel>
+</rss>

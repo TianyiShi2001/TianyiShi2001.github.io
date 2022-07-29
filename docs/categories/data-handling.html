@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>data handling - Tianyi@Oxford</title>
+<meta property="og:title" content="data handling - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../categories/data-handling/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">data handling</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2019</h2>
+          
+            <article class="archive-item">
+              <a href="../tutorial/paper-vi-1.html" class="archive-item-link">
+                Paper VI 2011 
+              </a>
+              <span class="archive-item-date">
+                2019-11-09
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+
+<div id="alzheimers-disease" class="section level1">
+<h1>Alzheimer’s Disease</h1>
+<div id="effect-of-ampk-on-secreted-abeta-levels-in-neuronal-cultures" class="section level2">
+<h2>Effect of AMPK on secreted A<span class="math inline">\(\beta\)</span> levels in neuronal cultures</h2>
+<ol style="list-style-type: lower-alpha">
+<li>In ELISA (enzyme-linked immunosorbant assay), antibodies are used to bind an antigen of interest (usually protein) with high specificity, and the presence and concentration of the antigen is reported by the extent of reaction of the enzyme conjugated with the antibody. Using two types of antibodies binding to different regions of the antigen allows sandwich ELISA (see below), which has greater specificity. Horseradish peroxidase converts its substrate to a coloured product, and the intensity of the colour, which is related to the concentration of A<span class="math inline">\(\beta\)</span> peptide (the antigen), can be measured by a spectrophotometer as absorbance of EM wave at a certain visible wavelength (the relationship is not always linear so a calibration is needed).</li>
+</ol>
+<p><img src="../img/elisa-sandwich.jpg" width="100%" /></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>By plotting ‘measured value’ against the number of dilution (the power to which <span class="math inline">\(\frac{1}{2}\)</span> is raised), it can be shown that the realtionship between them is roughly linear when measured value is around 100.</li>
+</ol>
+<pre class="r"><code>standard &lt;- c(206, 215, 201, 199, 205, 197, 199, 202, 190, 120, 67, 41, 27, 13, 8, 8)
+untreated &lt;- c(211, 197, 200, 202, 198, 195, 197, 164, 88, 47, 27, 15, 6, 9, 7, 7)
+AICAR &lt;- c(207, 202, 205, 199, 189, 200, 183, 101, 58, 30, 18, 12, 7, 7, 8, 6)
+pow &lt;- 0:15
+
+df &lt;- tibble(pow, standard, untreated, AICAR)
+df %&gt;% gather(standard, untreated, AICAR, key = &#39;treatment&#39;, value = &#39;measured value&#39;) %&gt;% 
+  ggplot(aes(pow, `measured value`, color = treatment, shape = treatment, linetype=treatment))+
+  geom_point()+xlab(&#39;number of dilution (i.e. number of times the concentration is halved)&#39;)+
+  geom_smooth(se=FALSE, method=&#39;loess&#39;, span=0.4, size=0.5)+
+  geom_hline(yintercept = 100)+
+  scale_x_continuous(breaks = 0:15)</code></pre>
+<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
+<p><img src="../tutorial/2019-11-09-paper-vi-1_files/figure-html/unnamed-chunk-3-1.png" width="100%" /></p>
+<p>Reading off from the plot:</p>
+<ul>
+<li>for the standard solution, a <span class="math inline">\(\dfrac{1}{2^{9.5}}\)</span> dilution corresponds to 100 units. Thus, 100 units correspond to <span class="math inline">\(10\times \dfrac{1}{2^{9.5}}=0.01381\text{ ng/ml}\)</span></li>
+<li>for the untreated sample, a <span class="math inline">\(\dfrac{1}{2^{7.9}}\)</span> dilution corresponds to 100 units, or <span class="math inline">\(0.0138\text{ ng/ml}\)</span>, so the undiluted sample has a A<span class="math inline">\(\beta\)</span> concentration of <span class="math inline">\(0.01381\times2^{7.9}=3.299\text{ ng/ml}\)</span>. The volume of 10<sup>6</sup> cells is 100<span class="math inline">\(\mu\)</span>l, so the level of secretion is <span class="math inline">\(3.299\times0.100\times 1000=329\text{ pg/10}^6\text{ cells/day}\)</span></li>
+<li>for the sample with AICAR, the undiluted sample has a A<span class="math inline">\(\beta\)</span> concentration of <span class="math inline">\(0.01381\times2^{7.2}=2.031\text{ ng/ml}\)</span>. The level of secretion is <span class="math inline">\(2.031\times0.100\times 1000=203\text{ pg/10}^6\text{ cells/day}\)</span></li>
+</ul>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Upon activation by AICAR, AMPK reduces secretion of A<span class="math inline">\(\beta\)</span></li>
+</ol>
+</div>
+<div id="effect-of-added-abeta-on-ampk-activity" class="section level2">
+<h2>Effect of added A<span class="math inline">\(\beta\)</span> on AMPK activity</h2>
+<ol start="4" style="list-style-type: lower-alpha">
+<li><p>Triton X-100 is a detegent, disrupting the cell membrane and lysing the cell; PMSF inhibits serine proteases, preventing degradation of target protein; protein A, which is immobilised on sepharose, binds specifically to the F<sub>c</sub> region of anti-AMPK antibody</p></li>
+<li><p>This ensures that all measured enzymatic activity is due to AMPK but not other kinases that would be present in the whole cell extract.</p></li>
+<li>Substituting <span class="math inline">\(t_{\frac{1}{2}}=14\text{ days}\)</span> and <span class="math inline">\(t = 14\)</span> into <span class="math inline">\(A=A_0e^{-kt}=A_0e^{-\dfrac{\ln{2}t}{t_{\frac{1}{2}}}}=A_0\times(2)^{-\dfrac{t}{t_{\frac{1}{2}}}}\)</span>, <span class="math inline">\(A=A_0\times(2)^{-\frac{9}{14}}=0.6404A_0\)</span>, i.e. <span class="math inline">\(A_0=1.5614A\)</span>, where <span class="math inline">\(A_0\)</span> is the original activity and <span class="math inline">\(A\)</span> is the activity after 9 days. <span class="math display">\[\begin{aligned}A_0 \text{ cpm}\div80\%\div(2.2\times10^{12})\text{ cpm/Ci}\div(0.5\times10^{-3})\text{ Ci/nmol}\div(50\times10^{-3}\text{ mg cell protein})\div20\text{ min}\div\frac{50}{50+5+5}\\=x \text{ nmol substrate phosphorylated/min/mg cell protein}\end{aligned}\]</span> where x is the final answer. This simplifies to <span class="math display">\[x=1.3636\times10^{-9}A_0=2.129\times10^{-9}A\]</span>
+<ul>
+<li>Activity (+A<span class="math inline">\(\beta\)</span>): <span class="math inline">\(2.129\times10^{-9}\times(11800-278)=2.45\times10^{-5} \text{ nmol substrate phosphorylated/min/mg cell protein}\)</span></li>
+<li>Activity (no A<span class="math inline">\(\beta\)</span>): <span class="math inline">\(2.129\times10^{-9}\times(2940-278)=5.67\times10^{-6} \text{ nmol substrate phosphorylated/min/mg cell protein}\)</span></li>
+</ul></li>
+<li><p>AMPK activity increases as A<span class="math inline">\(\beta\)</span> is added, and AMPK may help to degrade A<span class="math inline">\(\beta\)</span> according to (c).</p></li>
+</ol>
+</div>
+<div id="association-of-tau-protein-with-microtubules" class="section level2">
+<h2>Association of <span class="math inline">\(\tau\)</span> protein with microtubules</h2>
+<ol start="8" style="list-style-type: lower-alpha">
+<li>tau alone is soluble and exists solely in the supernatant. Unphosphorylated tau binds to microtubules strongly and exists entirely in the pallet (insoluble). Phosphorylated tau has less affinity to microtubules and most of them are found in the supernatant.</li>
+</ol>
+</div>
+<div id="phosphorylation-sites-on-tau" class="section level2">
+<h2>Phosphorylation sites on tau</h2>
+<ol style="list-style-type: lower-roman">
+<li><ul>
+<li>Induce mutations on different positions and observe their effect on phosphorylation. The mutated position(s) can be determined by DNA sequencing and the effect of phosphorylation can be determined by isoelectric focusing (phosphorylated protein has a more negative charge).</li>
+<li>Fragment the protein and test each piece for phosphorylation.</li>
+</ul></li>
+</ol>
+<ol start="10" style="list-style-type: lower-alpha">
+<li>These phosphorylation sites are all located on the MT binding domain (235-368) and thus phosphorylation can directly (at least sterically) hinder binding to MT. In addition, MT binding domain contains many postively charged lysine (K) residues and few negatively charged (D and E) residues. This suggest that the binding between tau and MT is electrostatic (+ve on tau, -ve on MT). Phosphorylation adds -ve charge on tau and thus hinders electrostatic binding.</li>
+</ol>
+</div>
+</div>
+<div id="notch-receptor" class="section level1">
+<h1>Notch Receptor</h1>
+<ol style="list-style-type: lower-alpha">
+<li><p>The primer sequences are:</p>
+<pre><code>forward primer
+5&#39; GGATCC CAGGACGTGGATGAGTGCTCGCTGGG 3&#39; # 33 nt
+reverse primer
+5&#39; GGATCC TCA CTGGCACAGATGCCCAGTGAAGCCC 3&#39; # 34 nt</code></pre>
+<p>To produce a standalone peptide, a start codon (ATG) and a stop codon (TGG) is needed. The stop codon is included in the reverse primer (<code>5'TCA3'</code> which correspond to <code>5'TGA3'</code> in the forward direction). The start codon is defined in the plasmid and sets the reading frame. The restriction site chosen must ensure correct reading frame alignment of the gene of interest, and Bam HI does this job (while some others, such as Sal I, does not), so I chose it, and its sequence, <code>GGATCC</code>, is included at the 5’ end of both primers
+<img src="../img/sticky.jpg" width="100%" />
+Regarding restriction sites, Pst I and Sph I must not be chosen because they are contained within the gene of interest and applying these restriction enzymes will break the gene. The remaining part of the primer corresponds to the gene of interest, and the 3’ ends are chosen to include 3-4 consecutive G/C to ensure high annealing stability, facilitating DNA polymerase binding.</p></li>
+<li><p>Bam HI is applied both to the plasmid and the PCR product, creating sticky ends and allowing them to join. The resulting set of plasmids (some are recombinant and some are not) are transformed into bacteria by heat shock (by disrupting the cell membrane using CaCl<sub>2</sub> and exposing cells to thermal imbalance) or electroporation (by using short pulses of high-voltage electric currents). Ampicilin is added to kill cells without gaining the plasmid, and after that, usually (when a lacZ<span class="math inline">\(\alpha\)</span> gene is incorporated into the cloning site in the reverse direction) X-gal is used to test whether the cells with plasmids contains the gene of interest (blue-white screening).
+<img src="../img/clone.jpg" width="100%" /></p></li>
+<li><p>As illustrated in the plasmid map, the expression of inserted gene is controlled by the <em>Lac</em> operator. When uninduced, lac repressor protein due to <em>LacI</em> expression binds to <em>Lac</em> operator, preventing expression of inserted gene. IPTG can be used to induce expression. IPTG is an analogue of lactose, which activates <em>Lac</em> inducible operon by deactivating the lac repressor. IPTG is not metabolised by <em>E. coli</em> so it can be maintained at a constant concentration.</p></li>
+<li><p>The protein product contains N-terminal hexahistidine tag which binds to Nickle ions with high affinity. Affinity chromatography using nickle-bound resin can be used to purify the protein. After that, size-exclusion chromatography may also be done to remove any possible aggregates of this peptide or complexes of this peptide with other species.</p></li>
+<li><p>Run a SDS-PAGE, stain with Commassie blue and there should be only one band.</p></li>
+<li><p>This extracellular protein is likely to contain disulfide bridges, which would not form in the normal reducing intracellular environment of bacteria. Some strains of <em>E. coli</em>, such as <em>Origami</em>, have mutant thioredoxin reductase and/or glutathione reductase an thus have a oxidising cytoplasm, and they can be used to express proteins with disulfide bridges.</p></li>
+<li><ul>
+<li>From the blot developed with biotin binding protein, A alone produce a band while B or C alone does not. This indicates that A must be a potential ligand (because it, being alone and biotin-tagged, is pulled down by biotin-binding Streptavidin).</li>
+<li>From the blot developed with His tag binding antibody, only A+B produces a band. As A is the potential ligand, B must be Notch that is pulled down along with A. C must not be Notch because A+C does not produce a band, so C is another potential ligand.</li>
+<li>C alone does not produce a band in the biotin-specific blot possibly because the biotin tag possibly because C’s tertiary structure prevents biotin binding</li>
+</ul></li>
+<li><p>The potential ligand A binds to Notch (B), so A+B produces a band on the His-specific blot. It is uncertain whether A interacts with C. A and C are both potential ligands and will not produce a band on the His-specific blot. A+C produces a band on the biotin-specific blot and this may be solely due to A (which itself alone produces the band). A might bind to C without making C’s biotin available for binding, or A might not bind to C, or A might bind to C, making its own biotin unavailable and C’s biotin available, so that a band with equal thickness is produced.</p></li>
+<li><ul>
+<li>Fluoresence resonance energy transfer (FRET), in which the potential ligand and Notch are each tagged with a fluorophore, where one type of fluorophore, when excited, can transfer energy to the other type of fluorophore through nonradiative dipole-dipole coupling and hence induce fluorescence of the acceptor fluorophore. The energy transfer is only possible when two fluorophores are very close to each other (when their associated proteins are bound to each other). If excitation of the donor fluorophore results in emission from the acceptor fluorophore, it indicates complex formation.</li>
+<li>As shown in Figure <a href="#fig:spr">1</a>, surface plasmon resonance can also be used to monitor complex formation.</li>
+<li>MST (Microscale Thermophoresis) allows detection of complex formation in complex bioliquids such as blood serum or cell lysate.</li>
+</ul></li>
+</ol>
+<div class="figure"><span id="fig:spr"></span>
+<img src="../img/spr.jpg" alt="Principles of SPR" width="100%" />
+<p class="caption">
+Figure 1: Principles of SPR
+</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="compound-a" class="section level1">
+<h1>Compound A</h1>
+<ol style="list-style-type: lower-alpha">
+<li><p>Toa1 decreases generation time and decreases lifespan.</p></li>
+<li><p>No effect on both.</p></li>
+<li><p>As a control group.</p></li>
+<li><p>DMSO reduces lifespan.</p></li>
+<li><p>Regarding lifespan in DMSO, when either Toa1 or Abp1 (or both) is absent, lifespan is unresponsive to compound A. Among these three conditions, when Toa1 is present and Abp1 is absent, lifespan is constantly short; when Toa is absent, lifespan is constantly long. This suggest that Toa1 reduces lifespan, and Abp1 itself has no effect on the lifespan when Toa1 is absent.
+When both proteins are present, lifespan increases with concentration of A and then decreases. This suggest that, at low concentrations of A, Abp1 binds to A, and the binding of Toa1 to Abp1-A complex reduces Toa1’s ability to shorten lifespan. At high concentrations of A, Abp1 becomes less effective in deactivating Toa1, possibly because Abp1 forms aggregates.</p></li>
+<li><p>Mutation of ATG8 always leads to short lifespan and generation time, and mutation of SCH9 always leads to increased lifespan and generation time, regardless of the conditions of ABP1 and TOA1, and they all made the lifespan insensitive to the concentration of compound A. When mutations of ATG8 and SCH9 occur simutaneously, the effect of ATG8 loss dominates and results in short lifespan &amp; generation time.
+Therefore, SCH9 may reduce lifespan and generation time and ATG8 opposes SCH9’s activity. This explains <span class="math inline">\(sch9\Delta\)</span>, <span class="math inline">\(atg8\Delta\)</span> and <span class="math inline">\(sch9\Delta atg8\Delta\)</span>. In addition, Toa1’s ability to reduce lifespan is dependent on SCH9. In <span class="math inline">\(sch9\Delta abp1\Delta\)</span> and <span class="math inline">\(sch9\Delta toa1\Delta\)</span>, the life-span reduction cannot be done without SCH9. In <span class="math inline">\(abp1\Delta atg8\Delta\)</span>, lifespan reduction is caused by Toa1+SCH9 and in <span class="math inline">\(toa1\Delta atg8\Delta\)</span> caused by SCH9, and no ATG8 was present to oppose this effect.</p></li>
+<li><p>In the western blot data, for Sch9 5SA, the purpose of changing serine to alanine is usually to test for phosphorylation, and in this case the band is shorter than WT, indicating there is phosphorylation on Sch9. Also Sch9 5SA band is similar in length to <span class="math inline">\(toa1\Delta\)</span>, which implies that toa1 loss has an similar effect to making Sch9 unavailable for phosphorylation. Thus Toa1 may phosphorylate Sch9, and this is in accordance with an observation in (f): ‘toa1’s ability to reduce lifespan is dependent on sch9’. Sch9 5SA with phosphatase further reduces the signal, and this indicates that Sch9 has other phosphorylation sites (apart from the site where 5 S was changed to A i.e. target of toa1) being phosphorylated.</p></li>
+<li><p>WT + compound A produced a low signal comparable to the WT + phosphate band. Thus compound A may hamper phosphorylation of Sch9 (by directly hindering phosphorylation, or acting as a phosphatase). As toa1 is ‘target of A’ and toa1 is the kinase that phosphorylates Sch9, compound A is very likely to inhibit toa1.</p></li>
+<li><p>see Figure (g)</p></li>
+<li>Purify the proteins and study their interactions <em>in vitro</em>.
+<ul>
+<li>to confirm phosphorylation of Sch9 by Toa1: mix Sch9, Toa1 and ATP (control group: Sch9 and ATP only) and run isoelectric focusing (phosphorylated Sch9 has a more negative charge)</li>
+<li>to confirm the role of compound A: mix compound A, Sch9, Toa1 and ATP (control group: buffer+Sch9+Toa1+ATP) and run isoelectric focusing.</li>
+</ul></li>
+<li><p>In strains with Sch92D3E but not WT Sch9, the lifespan is constantly reduced and this effect is unaffected by compound A.</p></li>
+<li><p>See Figure <a href="#fig:fuckyoucompoundA">2</a>.</p></li>
+</ol>
+<div class="figure"><span id="fig:fuckyoucompoundA"></span>
+<img src="../img/fuckyoucompoundA.jpg" alt="When compound A concentration increases, TOA is is inhibited and less Sch9 is phosphorylated, so there is less lifespan-reduction effect due to phosphorylated Sch9, and hence the lifespan increases. When the concentration of A gets too high, however, ATG8 phosphatase is expressed to dephosphorylate Sch9 and thus decrease lifespan." width="100%" />
+<p class="caption">
+Figure 2: When compound A concentration increases, TOA is is inhibited and less Sch9 is phosphorylated, so there is less lifespan-reduction effect due to phosphorylated Sch9, and hence the lifespan increases. When the concentration of A gets too high, however, ATG8 phosphatase is expressed to dephosphorylate Sch9 and thus decrease lifespan.
+</p>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

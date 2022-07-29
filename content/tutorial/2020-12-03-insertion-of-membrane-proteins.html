@@ -1,0 +1,164 @@
+---
+title: Insertion of Membrane Proteins
+author: Tianyi Shi
+date: '2020-12-03'
+slug: insertion-of-membrane-proteins
+categories:
+  - biochemistry
+tags:
+  - membrane protein
+  - protein transport
+term: 3-Michaelmas
+week: 8
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: |
+    @Cymer-2015, @Guna-2018, @Alberts-2014, @Lodish-2016
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#targeting-the-protein-to-the-er-membrane-srp-and-the-sec61-translocon"><span class="toc-section-number">1</span> Targeting the Protein to the ER Membrane: SRP and the Sec61 Translocon</a></li>
+<li><a href="#single-pass-proteins"><span class="toc-section-number">2</span> Single-Pass Proteins</a>
+<ul>
+<li><a href="#type-i-proteins"><span class="toc-section-number">2.1</span> Type I Proteins</a></li>
+<li><a href="#type-ii-and-iii-proteins"><span class="toc-section-number">2.2</span> Type II and III Proteins</a></li>
+</ul></li>
+<li><a href="#multi-pass-proteins"><span class="toc-section-number">3</span> Multi-Pass Proteins</a></li>
+<li><a href="#insertases"><span class="toc-section-number">4</span> Insertases</a>
+<ul>
+<li><a href="#insertion-of-tail-anchored-proteins-by-the-get-system"><span class="toc-section-number">4.1</span> Insertion of Tail-anchored Proteins by the Get system</a></li>
+<li><a href="#the-roles-of-yidc"><span class="toc-section-number">4.2</span> The Roles of YidC</a></li>
+</ul></li>
+<li><a href="#beta-barrel-proteins"><span class="toc-section-number">5</span> <span class="math inline">\(\beta\)</span>-barrel Proteins</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<p>The majority of integral membrane proteins in an eukaryotic cell are made of one or more <span class="math inline">\(\alpha\)</span>-helices and are first inserted co-translationally via the Sec61 translocon into the endoplasmic reticulum (ER) membrane, assembled there, and then dispatched, via the golgi apparatus and vesicles, to their final destinations. Bacteria use the SecYEG translocon, which is a homolog of Sec61, to insert membrane proteins into their plasma membrane. There are also translocons specific to chroloplasts (TIC-TOC), mitochondria (TIM-TOM) and peroxisomes (PEX), but this essay will focus on the Sec61 translocon.</p>
+<div id="targeting-the-protein-to-the-er-membrane-srp-and-the-sec61-translocon" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Targeting the Protein to the ER Membrane: SRP and the Sec61 Translocon</h1>
+<p>The common co-translationally inserted membrane proteins are targeted to the Sec61 translocon on the ER membrane via the cytosolic signal recognition particle (SRP) and the SRP receptor near the translocon.</p>
+<p>SRP is a ribonucleoprotein particle made up of 6 proteins bound to a 300-nucleotide RNA acting as a scaffold. The M and Alu domains of SRP are critical for its functions. The M domain contains a cleft whose inner surface is lined by methionine and other hydrophobic side chains. This cleft binds to a hydrophobic segment of the nascent peptide as soon as it emerges from the exit tunnel. Meanwhile, the Alu domain blocks the elongation factor 2 (eEF2) binding site on the ribosome, pausing translation.</p>
+<p>Usually it is the first hydrophobic segment that is recognised by SRP. This segment can either be a pure ER-targeting signal sequence or be the first TM helix itself (see next section). Recognition by SRP not only serves to target the ribosome-nascent protein to the ER but also prevents exposure of the hydrophobic segment to the aqueous environment.</p>
+<p>SRP and SRP receptor each has a GTP binding site. When their GTP-bound forms associate with each other, they form two GTPase active sites. The GTPase activity is inhibited by signal peptide binding. Once the nascent chain has left SRP and enters the translocon, the two GTP molecules are hydrolysed, causing dissociation of SRP and its receptor. GTP replaces GDP on both proteins, and they are ready to initiate another round of ER targeting.</p>
+<p>The Sec61 translocon is made up of 3 subunits: Sec61<span class="math inline">\(\alpha\)</span>, an integral membrane protein composed of two 5-helix bundles that constitutes the central channel and two smaller proteins, Sec61<span class="math inline">\(\beta\)</span> and Sec61<span class="math inline">\(\gamma\)</span>. The central channel through Sec61<span class="math inline">\(\alpha\)</span> is sealed by a plug made of a helical peptide that only opens during traslocation. The channel can also open laterally by hinging apart the two 5-helix bundles to expose a hydrophobic binding pocket for signal sequences and/or TM helices of the nascent peptide. The verticle opening allows elongation of the nascent peptide chain through the central pore, and the lateral opening allows attachment of signal sequences and exit of TM helices into the membrane (Figure <a href="#fig:sec61">1.1</a>).</p>
+<div class="figure"><span id="fig:sec61"></span>
+<img src="../img/sec61.png" alt="The structure and mode of action of the Sec61 translocon. Left: the closed conformation. Right: the open conformation." width="100%" />
+<p class="caption">
+Figure 1.1: The structure and mode of action of the Sec61 translocon. Left: the closed conformation. Right: the open conformation.
+</p>
+</div>
+</div>
+<div id="single-pass-proteins" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Single-Pass Proteins</h1>
+<p>A single-pass membrane protein use a single 20-25 residue long <span class="math inline">\(\alpha\)</span>-helix made mainly of hydrophobic amino acids to traverse the membrane. The <span class="math inline">\(\alpha\)</span>-helical structure satisfies hydrogen bonding between main chain carbonyl and amino groups and exposes hydrophobic side chains, which form favourable hydrophobic interactions with the aliphatic core of the membrane bilayer. Co-translational insertion of this helix is a natural strategy to minimise unfavourable interation between the hydrophobic helix and the aqueous cytosolic environment and between the hydrophilic regions of the peptide surrounding the helix and the hydrophobic core of the bilayer.</p>
+<p>Single-pass proteins are classified into three types according to the mechanism by which they are inserted. All of them are described in the following sections.</p>
+<div id="type-i-proteins" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Type I Proteins</h2>
+<p>Type I membrane proteins, like soluble proteins to be translocated into the ER lumen, contain an N-terminal ER-targeting signal sequence to be cleaved. The signal sequence is recognised by SRP, causing the ribosome-nascent peptide complex to be targeted to the Sec61 translocon. Sec61<span class="math inline">\(\alpha\)</span> opens the lateral gate, and the signal peptide fits into the exposed hydrophobic bindng pocket. The sequence following the signal peptide displaces the plug and inserts into the central channel, resulting in the conformation shown in Figure <a href="#fig:mem-insert-type-i">2.1</a>. Signal peptidase cleaves off the signal peptide once it recognises a specific sequence on the C-terminal end of the signal peptide. After cleavage, translation continues and the newly synthesised sequence is threaded through the channel and enters the ER lumen, until another hydrophobic segment is encountered. This segment is the TM helix of the nascent protein, and it acts as a <em>stop-transfer signal</em> (or “stop-transfer anchor sequence”) by triggering the lateral opening of Sec61<span class="math inline">\(\alpha\)</span> and thus allowing this helix to move into the membrane. The C-terminus continues to be synthesised and loops out on the cytosolic side of the membrane. Eventually, the hydrophic N- and C- termini are on the luminal and the cytosolic face, respectively.</p>
+<div class="figure"><span id="fig:mem-insert-type-i"></span>
+<img src="../img/mem-insert-type-i.png" alt="Insertion of type I membrane proteins." width="100%" />
+<p class="caption">
+Figure 2.1: Insertion of type I membrane proteins.
+</p>
+</div>
+</div>
+<div id="type-ii-and-iii-proteins" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Type II and III Proteins</h2>
+<p>Type II and III proteins do not contain a cleavable signal sequence, and they have opposite orientations: the N-terminus is on the cytosolic and the luminal face in type II and type III proteins, respectively.</p>
+<p>Type II and III proteins use the sequence of their TM helix as an ER-targeting signal (“start-transfer singal”, or “signal anchor sequence”), and the targeting is also mediated by SRP and SRP receptor. The distribution of positively charged residues around the helix dictates its orientation: the positively charged residues tend to remain on the cytosolic side of the membrane, thus in type II proteins where the N-terminal side has more positively charged residues, the helix adopts the orientation with the N-terminus facing the cytosolic side; and in type III proteins where the C-terminal side has more positively charged residues the opposite orientation is adopted (<br />
+Figure <a href="#fig:mem-insert-type-iii-iii">2.2</a> ).</p>
+
+<div class="figure"><span id="fig:mem-insert-type-iii-iii"></span>
+<img src="../img/mem-insert-type-iii-iii.png" alt="Insertion of type II and III membrane proteins. In type II proteins, the orientation of the signal anchor sequence in the hydrophibic binding pocket of the laterally opened Sec61\(\alpha\) results in the opening of the pore in the vertical direction (in the same way as type I proteins, but the signal peptide is not cleaved off), allowing the remaining C-terminal portion of the polypeptide to thread through the pore and enter the ER lumen. In type III proteins, the orientation of the signal anchor sequence causes the channel to close, and the C-terminal portion is synthesised in the cytosol." width="100%" />
+<p class="caption">
+Figure 2.2: Insertion of type II and III membrane proteins. In type II proteins, the orientation of the signal anchor sequence in the hydrophibic binding pocket of the laterally opened Sec61<span class="math inline">\(\alpha\)</span> results in the opening of the pore in the vertical direction (in the same way as type I proteins, but the signal peptide is not cleaved off), allowing the remaining C-terminal portion of the polypeptide to thread through the pore and enter the ER lumen. In type III proteins, the orientation of the signal anchor sequence causes the channel to close, and the C-terminal portion is synthesised in the cytosol.
+</p>
+</div>
+</div>
+</div>
+<div id="multi-pass-proteins" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Multi-Pass Proteins</h1>
+<p>Multi-pass membrane proteins (a.k.a. type IV proteins) contain more than one TM <span class="math inline">\(\alpha\)</span> helices and traverse the membrane multiple times. Since the adjacent helices are in opposite orientations, insertion of multipass membrane proteins can be viewed as an alternation of insertion of a type I helix and insertion of a type II helix, which is dictated by the TM helix sequences that alternatingly act as start-transfer signals (signal anchor sequences) and stop-transfer signals (stop-transfer anchor sequences).</p>
+<p>In multipass proteins with N-terminus in the cytosol (type IV-A), the TM helix sequence that first emerges from the ribosome (the one closest to the N-terminus) functions in the same way as the start transfer sequence (signal-anchor sequence) of the type II protein, which interacts with SRP to target the protein to the translocon, opens the translocon channel, and allow growing polypeptide chain to pass through the channel. Unlike type II proteins, as the chain grows, the translocon will encounter another hydrophobic TM helix sequence, which then functions as the stop-transfer signal (stop-transfer anchor sequence) in the same way as in type I proteins: the channel is closed, and this helix is moved via the lateral gate to the bilayer, and the nascent chain continues to grow into the cytosol. If a third TM helix sequence is encountered, it will function as another type II-like start-transfer signal, but this time the insertion does not depend on SRP and SRP receptor. This cycle continues until translation completes.</p>
+<p>The insertion of multipass proteins with N-terminus in the ER lumen (type IV-B) occurs in a similar manner. The only difference is the first TM helix sequence, which now functions in the same way as the start-transfer sequence of the type III protein, resulting in a closed translocon and the growing peptide to be synthesised in the cytosol. Then, the second, third, fourth TM helix sequences functions in the same way as the first, second, and third TM helix sequences in a type IV-A protein and so on.</p>
+<div class="figure"><span id="fig:type-iv-a-b"></span>
+<img src="../img/type-iv-a-b.png" alt="Multipass membrane proteins have multiple TM helices which alternatingly function as start-transfer signals (signal-anchor sequences, SA) and stop-transfer signals (stop-transfer anchor sequences, STA). The distribution of charge usually follows the same rule as in type II and III proteins, so that in the final conformation, the cytosolic side has more positively charged residues overall." width="100%" />
+<p class="caption">
+Figure 3.1: Multipass membrane proteins have multiple TM helices which alternatingly function as start-transfer signals (signal-anchor sequences, SA) and stop-transfer signals (stop-transfer anchor sequences, STA). The distribution of charge usually follows the same rule as in type II and III proteins, so that in the final conformation, the cytosolic side has more positively charged residues overall.
+</p>
+</div>
+</div>
+<div id="insertases" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Insertases</h1>
+<p>Some membrane proteins are inserted into the lipid bilayer via Sec-independent mechanisms, which are mediated by factors generally termed ‘insertases’. The bacterial (YidC), mitochondrial (Oxa1), and chrloroplast (Alb3) insertases are evolutionarily related, whereas the ER membrane contains 3 seemingly unrelated insertases: Get1/2 complex, the ER membrane-protein complex (EMC), and TMCO1.</p>
+<div id="insertion-of-tail-anchored-proteins-by-the-get-system" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Insertion of Tail-anchored Proteins by the Get system</h2>
+<p>Tail-anchored proteins also use an <span class="math inline">\(\alpha\)</span>-helix to traverse the membrane, but this helix is located near the C-terminus. Because there are only few, if any, residues succeeding the C-terminal helix, translation terminates while the helix have not yet emerged from the exit tunnel, so recognition by SRP is not possible, and its insertion into ER membrane depends on a post-translational pathway involving Get1, Get2, and Get3 proteins.</p>
+<p>In this pathway, the protein is completely synthesised and released into the cytosol. ATP-bound Get3 binds to the hydrophobic C-terminal tail of the protein (facilitated by some other proteins), and then docks onto the dimeric Get1/Get2 receptor on the ER membrane. Accompanying the hydrolysis of ATP by Get3, the Get1/Get2 complex facilitates the insertion of the tail into the ER membrane. Finally, ATP displaces ADP and Get3 is released back to the cytosol.</p>
+</div>
+<div id="the-roles-of-yidc" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> The Roles of YidC</h2>
+<p>YidC contains 5 TM helices arranged to form a partially hydrophilic groove that is open towards both the lipid bilayer and the cytosol (Figure <a href="#fig:yidc">4.1</a>). Cross-linking experiments suggest that this groove operates as a binding site for TM helices (of the protein to be inserted). YidC alone can mediate insertion of a small subset of small (single- or double-pass) proteins in either co-translationally or post-translationally, and it is also suggested that YidC may act as a chaperone in conjunction with the Sec translocon. Specifically, it may shield the hydrophilic surface of TM helice that line polar cavities/channels in the final structure.</p>
+
+<div class="figure"><span id="fig:yidc"></span>
+<img src="../img/yidc.png" alt="The structure of Bacillus halodurans Yidc." width="100%" />
+<p class="caption">
+Figure 4.1: The structure of <em>Bacillus halodurans</em> Yidc.
+</p>
+</div>
+</div>
+</div>
+<div id="beta-barrel-proteins" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> <span class="math inline">\(\beta\)</span>-barrel Proteins</h1>
+<p>In Gram-negative bacteria, intergral OM (outer membrane) <span class="math inline">\(\beta\)</span>-barrel proteins (OMPs) are translocated in an unfolded form across the IM (inner membrane), ferried to the OM via periplasmic chaperones, and integrated into the OM by the <span class="math inline">\(\beta\)</span>-barrel assembly machine (Bam) multiprotein complex.</p>
+<p>In mitochondria, the precursors of nucleus-encoded <span class="math inline">\(\beta\)</span>-barrel proteins are transferred from the TOM complex, with the help of chaperones, to the SAM (sorting and assembly machinery) complex. The SAM complex, being homologous to the Bam complex, mediates the assembly and insertion of <span class="math inline">\(\beta\)</span>-barrel proteins in a similar manner (Figure <a href="#fig:insert-beta-barrel">5.1</a>).</p>
+
+<div class="figure"><span id="fig:insert-beta-barrel"></span>
+<img src="../img/insert-beta-barrel.png" alt="Insertion of \(\beta\)-barrel proteins into bacterial or mitochondrial outer membrane." width="100%" />
+<p class="caption">
+Figure 5.1: Insertion of <span class="math inline">\(\beta\)</span>-barrel proteins into bacterial or mitochondrial outer membrane.
+</p>
+</div>
+<p>The exact mechanism of assembly and insertion is not fully understood, but a recent proposed mechanism is shown in Figure <a href="#fig:insert-beta-barrel-mech">5.2</a> <span class="citation">(Ricci and Silhavy 2019)</span>.</p>
+
+<div class="figure"><span id="fig:insert-beta-barrel-mech"></span>
+<img src="../img/insert-beta-barrel-mech.png" alt="Proposed Bam-assisted assembly and insertion of \(\beta\)-barrel proteins. (a) Unfolded precursor protein (red) stablised by chaperons (green) are transferred to the Bam complex (blue). (b) The five periplasmic POTRA domains of BamA is thought to nucleate the early formation of OMP secondary structure and, together with Bam lipoproteins, form a ring that act as a scaffold for the client protein. The hydrogen bonds between the \(\beta\)-1 and \(\beta\)-16 strands of BamA are metastable, allowing transient lateral opening of the barrel through this seam. (c) The Bam complex prevents aggregation, protects the client protein from proteolysis, and lowers the kinetic barrier to OM integration to accelerate OMP folding along the native pathway, (d) Bam destabilises the membrane locally, which facilitates the insertion of the client protein into the membrane. (e) The folded client protein is released into the membrane, and the Bam complex restores to its idle state." width="100%" />
+<p class="caption">
+Figure 5.2: <strong>Proposed Bam-assisted assembly and insertion of <span class="math inline">\(\beta\)</span>-barrel proteins.</strong> <strong>(a)</strong> Unfolded precursor protein (red) stablised by chaperons (green) are transferred to the Bam complex (blue). <strong>(b)</strong> The five periplasmic POTRA domains of BamA is thought to nucleate the early formation of OMP secondary structure and, together with Bam lipoproteins, form a ring that act as a scaffold for the client protein. The hydrogen bonds between the <span class="math inline">\(\beta\)</span>-1 and <span class="math inline">\(\beta\)</span>-16 strands of BamA are metastable, allowing transient lateral opening of the barrel through this seam. <strong>(c)</strong> The Bam complex prevents aggregation, protects the client protein from proteolysis, and lowers the kinetic barrier to OM integration to accelerate OMP folding along the native pathway, <strong>(d)</strong> Bam destabilises the membrane locally, which facilitates the insertion of the client protein into the membrane. <strong>(e)</strong> The folded client protein is released into the membrane, and the Bam complex restores to its idle state.
+</p>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references hanging-indent">
+<div id="ref-Alberts-2014">
+<p>Alberts, Bruce, Alexander Johnson, Julian Lewis, David Morgan, Martin Raff, Keith Roberts, and Peter Walter. 2014. <em>Molecular Biology of the Cell</em>. Book. 6th ed. Garland Science.</p>
+</div>
+<div id="ref-Cymer-2015">
+<p>Cymer, Florian, Gunnar von Heijne, and Stephen H. White. 2015. “Mechanisms of Integral Membrane Protein Insertion and Folding.” <em>Journal of Molecular Biology</em> 427 (5): 999–1022. <a href="https://doi.org/https://doi.org/10.1016/j.jmb.2014.09.014">https://doi.org/https://doi.org/10.1016/j.jmb.2014.09.014</a>.</p>
+</div>
+<div id="ref-Guna-2018">
+<p>Guna, Alina, and Ramanujan S. Hegde. n.d. “Transmembrane Domain Recognition During Membrane Protein Biogenesis and Quality Control.” <em>Current Biology</em> 28 (8): R498–R511. <a href="https://doi.org/10.1016/j.cub.2018.02.004">https://doi.org/10.1016/j.cub.2018.02.004</a>.</p>
+</div>
+<div id="ref-Lodish-2016">
+<p>Lodish, Harvey F., Arnold Berk, Chris Kaiser, Monty Krieger, Anthony Bretscher, Hidde L. Ploegh, Angelika Amon, and Kelsey C Martin. 2016. <em>Molecular Cell Biology</em>. Book. 8th ed. New York: W.H. Freeman.</p>
+</div>
+<div id="ref-Ricci-2019">
+<p>Ricci, Dante P., and Thomas J. Silhavy. 2019. “Outer Membrane Protein Insertion by the β-Barrel Assembly Machine.” In <em>Protein Secretion in Bacteria</em>, 91–101. American Society of Microbiology. <a href="https://www.asmscience.org/content/book/10.1128/9781683670285.chap8">https://www.asmscience.org/content/book/10.1128/9781683670285.chap8</a>.</p>
+</div>
+</div>
+</div>

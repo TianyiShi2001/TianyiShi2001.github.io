@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>in silico - Tianyi@Oxford</title>
+<meta property="og:title" content="in silico - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../tags/in-silico/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">in silico</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="../lab/immunoassay-in-silico.html" class="archive-item-link">
+                Immunoassay (in Silico) 
+              </a>
+              <span class="archive-item-date">
+                2020-03-08
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#aim-of-the-practical"><span class="toc-section-number">1</span> Aim of the Practical</a></li>
+<li><a href="#background"><span class="toc-section-number">2</span> Background</a><ul>
+<li><a href="#q1">Q1</a></li>
+</ul></li>
+<li><a href="#introduction-to-radioimmunoassay"><span class="toc-section-number">3</span> Introduction to Radioimmunoassay</a></li>
+<li><a href="#radioimmunoassay-simulation-tutorial"><span class="toc-section-number">4</span> Radioimmunoassay Simulation — Tutorial</a><ul>
+<li><a href="#a-choosing-a-suitable-concentration-of-ab">(a) Choosing a suitable concentration of Ab</a></li>
+<li><a href="#b-testing-effect-of-changing-ab-at-fixed-ag">(b) Testing effect of changing [Ab] at fixed [Ag]</a></li>
+<li><a href="#d-testing-precision">(d) Testing precision</a></li>
+</ul></li>
+<li><a href="#ria-generating-your-own-data"><span class="toc-section-number">5</span> RIA: Generating Your Own Data</a><ul>
+<li><a href="#a-finding-a-suitable-concentration-of-antibody">(a) Finding a suitable concentration of antibody</a></li>
+<li><a href="#b-generating-the-calibartion-curve-and-c-finding-the-concentration-of-the-unknown">(b) Generating the calibartion curve and (c) Finding the concentration of the unknown</a></li>
+</ul></li>
+<li><a href="#enzyme-linked-immunosorbentassay"><span class="toc-section-number">6</span> Enzyme-Linked Immunosorbentassay</a><ul>
+<li><a href="#a-background-to-elisa">(a) Background to ELISA</a></li>
+<li><a href="#b-method-elisalab">(b) METHOD: ElisaLab</a></li>
+</ul></li>
+<li><a href="#etut"><span class="toc-section-number">7</span> ELISA Tutorial</a></li>
+<li><a href="#elisa-experiment"><span class="toc-section-number">8</span> ELISA Experiment</a><ul>
+<li><a href="#a-choosing-a-suitable-concentration-of-antibody">(a) Choosing a suitable concentration of antibody</a></li>
+<li><a href="#b-generating-the-calibration-curve">(b) Generating the calibration curve</a></li>
+<li><a href="#c-measuring-concentration-of-the-unknown">(c) Measuring concentration of the unknown</a></li>
+</ul></li>
+<li><a href="#supplementary-information"><span class="toc-section-number">9</span> Supplementary Information</a><ul>
+<li><a href="#ria-supp"><span class="toc-section-number">9.1</span> RIA</a></li>
+<li><a href="#elisa-absorbance"><span class="toc-section-number">9.2</span> ELISA</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="aim-of-the-practical" class="section level1">
+<h1><span class="header-section-number">1</span> Aim of the Practical</h1>
+</div>
+<div id="background" class="section level1">
+<h1><span class="header-section-number">2</span> Background</h1>
+<div id="q1" class="section level2 unnumbered">
+<h2>Q1</h2>
+<p>Draw a simple schematic diagram of an IgG molecule, labelling the relevant chains and domains.</p>
+<p>Diagram see Figure <a href="#fig:ab-schematic">2.1</a></p>
+<div class="figure"><span id="fig:ab-schematic"></span>
+<img src="../img/ab-schematic.jpg" alt="Schematic of an IgG molecule." width="100%" />
+<p class="caption">
+Figure 2.1: Schematic of an IgG molecule.
+</p>
+</div>
+<ol style="list-style-type: lower-roman">
+<li>What is meant by a polyclonal antibody?
+<ul>
+<li>A mixture of antibodies with diifferent F<sub>v</sub> regions (antigen-binding sites) that are complementary to different epitopes (on the same antigen)</li>
+</ul></li>
+<li>What is a monoclonal antibody?
+<ul>
+<li>A group of clone of a single antibody, with identical F<sub>v</sub> region and bind to the same epitope.</li>
+</ul></li>
+<li>Detail the steps by which mouse monoclonal antibodies are raised.
+<ul>
+<li>When the antigen molecules are injected (probably with an adjunvant e.g. Aluminium salt to elicit immune response more effectively), they activate antigen-presenting cells (APCs) called dendritic cells. Activated dendritic cells then use their MHC class II to present antigens on their plasma membrane, while migrating to the lymphatic system. When they encounter B cells and T<sub>h</sub> (T helper) cells with cognate BCR/TCRs in lymph nodes, they activate these B and T cells. With the help from activated dendritic cells and T<sub>h</sub> cells, B cells undergoes monoclonal expansion, class switching and somatic hypermutation, and differentiate into plasma cells, which produce a large number of antibodies in a short period.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="introduction-to-radioimmunoassay" class="section level1">
+<h1><span class="header-section-number">3</span> Introduction to Radioimmunoassay</h1>
+<div id="q2" class="section level3 unnumbered">
+<h3>Q2</h3>
+<p><strong>18 tubes are set up for radioimmunoassay containing antibody with a capacity for binding 1µg antigen. Both labelled antigen and a known concentration of unlabelled antigen are added to the tube as indicated. Note that the labelled antigen has been conjugated with 125I so that approx 50,000 cpm are associated with every <span class="math inline">\(\mu\text{g}\)</span> of labelled antigen). Fill in the table below giving values rounded to the nearest integer.</strong></p>
+<table>
+<caption>Horizontal axis: unlabelled antigen (<span class="math inline">\(\mu\text{g}\)</span>); vertical axis: labelled antigen (<span class="math inline">\(\mu\text{g}\)</span>);</caption>
+<thead>
+<tr class="header">
+<th align="right"></th>
+<th align="right">0</th>
+<th align="right">0.5</th>
+<th align="right">1</th>
+<th align="right">2</th>
+<th align="right">4</th>
+<th align="right">8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>0.5</strong></td>
+<td align="right"><em>25000</em></td>
+<td align="right">25000</td>
+<td align="right">16667</td>
+<td align="right">10000</td>
+<td align="right">5556</td>
+<td align="right">2941</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>1.0</strong></td>
+<td align="right">50000</td>
+<td align="right">33333</td>
+<td align="right">25000</td>
+<td align="right">16666</td>
+<td align="right">10000</td>
+<td align="right">5556</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>2.0</strong></td>
+<td align="right">50000</td>
+<td align="right">40000</td>
+<td align="right">33333</td>
+<td align="right">25000</td>
+<td align="right">16667</td>
+<td align="right">10000</td>
+</tr>
+</tbody>
+</table>
+<p>When the antibodies are saturated with antigens (when the amount of total antigen is greater than <span class="math inline">\(1 \mu\text{g}\)</span>), the radioactivity is the proportion of labelled antigen multiplied by the maximal radioactivity (50000 cpm). There is one case (0 <span class="math inline">\(\mu\text{g}\)</span> unlabelled; 0.5 <span class="math inline">\(\mu\text{g}\)</span> labelled) where the antibodies are not saturated.</p>
+</div>
+<div id="q3" class="section level3 unnumbered">
+<h3>Q3</h3>
+<p><strong>Use the data from Q2 to draw curves of <em>counts precipitated</em> versus <em>amount of unlabelled antigen</em> added at each concentration of labelled antigen.</strong></p>
+<p>There are two ways to plot it. The obvious way is to directly plot the radioactivity count against the amount of unlabelled antigen (Figure <a href="#fig:q2">3.1</a> <strong>A</strong>). However, by simply taking the reciprocal of the radioactivity count, a linear relationship can be obtained (Figure <a href="#fig:q2">3.1</a> <strong>B</strong>). This is explained in more detail in Q4.</p>
+<pre class="r"><code># Loading data
+d &lt;- tibble(labelled = rep(c(&#39;0.5 microgram&#39;, &#39;1 microgram&#39;, &#39;2 microgram&#39;), each = 6),
+       unlabelled = rep(c(0, 0.5, 1, 2, 4, 8), 3),
+       count = c(25000, 25000, 16667, 10000, 5556, 2941,
+                 50000, 33333, 25000, 16666, 10000, 5556,
+                 50000, 40000, 33333, 25000, 16667, 10000))
+# Direct plot
+direct &lt;- ggplot(d, aes(unlabelled, count, linetype = labelled))+
+  geom_line()+
+  labs(title=&#39;Direct Plotting&#39;)
+# Plot after transformation
+linear &lt;- ggplot(d, aes(unlabelled, 10000/count, linetype = labelled))+
+  geom_line()+
+  labs(title=&quot;Tranformed to Linear Relationship&quot;)
+# Arrangement
+ggarrange(direct, linear, ncol=2, nrow=1, common.legend = TRUE, legend=&quot;bottom&quot;, labels = c(&quot;A&quot;, &quot;B&quot;))</code></pre>
+<div class="figure"><span id="fig:q2"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/q2-1.png" alt="A: direct plotting; B: plotting the reciprocal of radioactivity count against unlabelled antigen amount." width="100%" />
+<p class="caption">
+Figure 3.1: A: direct plotting; B: plotting the reciprocal of radioactivity count against unlabelled antigen amount.
+</p>
+</div>
+</div>
+<div id="q4" class="section level3 unnumbered">
+<h3>Q4</h3>
+<p><strong>Explain why these curves have a negative slope.</strong></p>
+<p>When antibodies are saturated with antigens, this simple relationship holds:</p>
+<p><span class="math display">\[y=\dfrac{k}{x+k}\times A\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is the amount of labelled antigen (constant), <span class="math inline">\(x\)</span> is the amount of unlabelled antigen, <span class="math inline">\(A\)</span> is the maximal radioactivity count (when <span class="math inline">\(x=0\)</span> and all antibodies are bound to labelled antigens). In other words, the proportion of labelled antigen (relative to the total amount of antigen that saturates the antibodies) equals the ratio between the actual radioactivity and the maximal radioactivity. Thus, according to this equation, plotting radioactivity against amount of unlabelled antigen will result in a negative slope.</p>
+<p>Taking the reciprocal results in a linear relationship between <span class="math inline">\(\dfrac{1}{y}\)</span> and <span class="math inline">\(x\)</span>, and this was used to plot Q3 and later the calibration curve.</p>
+<p><span class="math display">\[\dfrac{1}{y}=\dfrac{x}{Ak} + A\]</span></p>
+</div>
+<div id="q5" class="section level3 unnumbered">
+<h3>Q5</h3>
+<p><strong>From the data in Q3 and Q4 and your graph, identify the range of counts precipitated that would be useful for calibration (i.e. that will give you a significant change in counts precipitated when you add antigen).</strong></p>
+<p>The slope of the curve is steeper (i.e. it’s more sensitive to small change in unlabelled antigen amount) as the radioactivity count is closer to maximum (50000). However, when the count is too close to 50000, the amount of unlabelled antigen would be too low, which would be more error-prone.</p>
+<p>Thus my answer is: 5000-20000 cpm.</p>
+</div>
+<div id="q6" class="section level3 unnumbered">
+<h3>Q6</h3>
+<p><strong>How does this vary with [Ag] labelled and [Ag] unlabelled?</strong></p>
+<p>A decrease in [Ag]<sub>labelled</sub> increases the sensitivity of RIA for detecting [Ag]<sub>unlabelled</sub>, but the amount of labelled antigen must be at least as much as the capacity of the antibodies (in this case, 1 microgram), otherwise it would be impossible to detect very small amount (precisely, capacity of antibodies minus amount of labelled antigen) of unlabelled antigen.</p>
+<p>As [Ag]<sub>unlabelled</sub> increases, the change in cpm becomes less significant.</p>
+<p><strong>What does this tell you about the dynamic range of the assay (i.e. the range of amounts of unlabelled antigen you can measure) in these particular experiments?</strong></p>
+<p>The dynamic range varies with the amount of labelled antigen. Greater [Ag]<sub>labelled</sub> allows measurement of larger [Ag]<sub>unlabelled</sub> (but has less absolute precision/sensitivity); smaller [Ag]<sub>labelled</sub> allows more precise measurement of low concentrations of unlabelled antigen, but becomes insensitive when [Ag]<sub>unlabelled</sub> is high. The amount of labelled antigen must be at least as much as the capacity of the antibodies, as noted above.</p>
+</div>
+</div>
+<div id="radioimmunoassay-simulation-tutorial" class="section level1">
+<h1><span class="header-section-number">4</span> Radioimmunoassay Simulation — Tutorial</h1>
+<div id="a-choosing-a-suitable-concentration-of-ab" class="section level2 unnumbered">
+<h2>(a) Choosing a suitable concentration of Ab</h2>
+<p><strong>7. Enter your results in the table below, using scientific notation rather than strings of zeros.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag dil</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ab dil (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ab vol</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>6</sup></td>
+<td align="right">1</td>
+<td align="right">489</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">5525</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">44899</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">51875</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">1</td>
+<td align="right">48750</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>1</sup></td>
+<td align="right">1</td>
+<td align="right">51700</td>
+</tr>
+</tbody>
+</table>
+<p><strong>14. Fill out the table below using own your own data from the results screen, making sure you use scientific notation (ie NOT like the data table on screen). Calculate how much Ag you have added.</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="6%" />
+<col width="25%" />
+<col width="19%" />
+<col width="25%" />
+<col width="6%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag dil</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Amount of Ag (pg)</th>
+<th align="right">Ab dil (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ab vol</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">1000</td>
+<td align="right">10<sup>6</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>4606</strong></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">7</td>
+<td align="right">700</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>5178</strong></td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">5</td>
+<td align="right">700</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>9203</strong></td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">0</td>
+<td align="right">100</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>25687</strong></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">0</td>
+<td align="right">10</td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">1</td>
+<td align="right"><strong>51613</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unique Code: txt9</strong></p>
+</div>
+<div id="b-testing-effect-of-changing-ab-at-fixed-ag" class="section level2 unnumbered">
+<h2>(b) Testing effect of changing [Ab] at fixed [Ag]</h2>
+<p><strong>2. Increase the Ab concentration 10x (ie decrease the dilution factor to 103) and test against three concentrations of Ag (diluted 10<sup>3</sup>, 10<sup>4</sup> and 10<sup>5</sup>) (Keep volume of Ab and Ag at 1 <span class="math inline">\(\mu\text{l}\)</span> for now). Click Experiment and 1mg/ml to generate data. Enter the results.</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1000</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">48772</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">100</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">55150</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">43975</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Now perform the same experiment but with the ‘optimal’ Ab dilution of 10<sup>4</sup>.</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1000</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">4122</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">100</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">22237</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">44681</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Finally, set up three tubes with 10x LESS Ab than the ‘optimal’ i.e. diluted 10<sup>5</sup>. Again, note your data:</strong></p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="27%" />
+<col width="10%" />
+<col width="15%" />
+<col width="10%" />
+<col width="27%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">1000</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">402</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">100</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">2366</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">4872</td>
+</tr>
+</tbody>
+</table>
+<div id="q6-1" class="section level3 unnumbered">
+<h3>Q6</h3>
+<p><strong>How does the amount of antibody influence the number of counts precipitated?</strong></p>
+<p>The number of counts increases with increasing antibody concentration until the antigen-binding capacity of antibodies exceed the amount of labelled antigen (when Ab dilution is 10<sup>3</sup>). In this case, additional unlabelled antigens will just bind free antibodies without interfering with those bound to labelled antigens.</p>
+</div>
+<div id="q7" class="section level3 unnumbered">
+<h3>Q7</h3>
+<p>See Figure <a href="#fig:immunolab-q7">4.1</a>.</p>
+<div class="figure"><span id="fig:immunolab-q7"></span>
+<img src="../img/immunolab-q7.jpg" alt="Q7" width="100%" />
+<p class="caption">
+Figure 4.1: Q7
+</p>
+</div>
+</div>
+</div>
+<div id="d-testing-precision" class="section level2 unnumbered">
+<h2>(d) Testing precision</h2>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">19215</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14307</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14866</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14474</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">14607</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">200</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">15341</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">51798</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">45749</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">52873</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">55798</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">57048</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">-</td>
+<td align="right">0</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">49474</td>
+</tr>
+</tbody>
+</table>
+<div id="q8" class="section level3 unnumbered">
+<h3>Q8</h3>
+<p>See Figure <a href="#fig:immunolab-q8">4.2</a></p>
+<div class="figure"><span id="fig:immunolab-q8"></span>
+<img src="../img/immunolab-q8.jpg" alt="Q8" width="100%" />
+<p class="caption">
+Figure 4.2: Q8
+</p>
+</div>
+</div>
+<div id="q9" class="section level3 unnumbered">
+<h3>Q9</h3>
+<p>Calculations see Figure <a href="#fig:immunolab-q9">4.3</a></p>
+<div class="figure"><span id="fig:immunolab-q9"></span>
+<img src="../img/immunolab-q9.jpg" alt="Q9" width="100%" />
+<p class="caption">
+Figure 4.3: Q9
+</p>
+</div>
+<p><strong>Explain the possible causes of the variation, bearing in mind the experiments have been carried out by an experienced operator</strong></p>
+<ul>
+<li>Radioactive decay is a probablistic event, so the number of disintegrations per unit time naturally varies.</li>
+<li>There can also be random errors intrintic to the Geiger counter</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="ria-generating-your-own-data" class="section level1">
+<h1><span class="header-section-number">5</span> RIA: Generating Your Own Data</h1>
+<p><strong>Unique Code:</strong> <code>yckmq9fe</code></p>
+<div id="a-finding-a-suitable-concentration-of-antibody" class="section level2 unnumbered">
+<h2>(a) Finding a suitable concentration of antibody</h2>
+<p><strong>4. Using the grid below…</strong></p>
+<p>See Figure <a href="#fig:immunolab-5a4">5.1</a></p>
+<div class="figure"><span id="fig:immunolab-5a4"></span>
+<img src="../img/immunolab-5a4.jpg" alt="5 (a) 4." width="100%" />
+<p class="caption">
+Figure 5.1: 5 (a) 4.
+</p>
+</div>
+<p><strong>6. Note down useful data in the tables below</strong></p>
+<table>
+<colgroup>
+<col width="4%" />
+<col width="27%" />
+<col width="9%" />
+<col width="14%" />
+<col width="9%" />
+<col width="27%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Tube</th>
+<th align="right">Ag vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">Ag dil’n</th>
+<th align="right">Ag mass (pg)</th>
+<th align="right">Ab dil’n</th>
+<th align="right">Ab vol (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">346</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">10<sup>3</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">4083</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">10<sup>2</sup></td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">18380</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">10<sup>5</sup></td>
+<td align="right">10</td>
+<td align="right">10<sup>4</sup></td>
+<td align="right">1</td>
+<td align="right">35217</td>
+</tr>
+</tbody>
+</table>
+<p><strong>8. If necessary, try varying the volume at given Ab dilution to see if you can optimise further.</strong></p>
+<p>I decided to use the 10<sup>4</sup> dilution.</p>
+</div>
+<div id="b-generating-the-calibartion-curve-and-c-finding-the-concentration-of-the-unknown" class="section level2 unnumbered">
+<h2>(b) Generating the calibartion curve and (c) Finding the concentration of the unknown</h2>
+<p><strong>5. Note all the relevant data in the table below</strong></p>
+<p>Implicitly shown in Figure <a href="#fig:ria-cali-raw">5.2</a> and <a href="#fig:ria-cali">5.3</a>.</p>
+<p><strong>Q10: How many replicates would be appropriate for your unknown solution? Explain your answer using sound statistical reasoning.</strong></p>
+<p>This depends on the precision we want to achieve, the <em>p</em> value we adopt, and the variance of the results of the repeats of that particular piece of experiment (which is unknown before we have done them). For example, if we choose <span class="math inline">\(p=0.05\)</span> as the threshold, and did some experiments resulting in a mean of <span class="math inline">\(\bar{x}\)</span> and standard deviation of <span class="math inline">\(s_x\)</span>, the confidence interval of the population mean, <span class="math inline">\(\mu\)</span>, will be:</p>
+<p><span class="math display">\[\mu = \bar{x} \pm t_{0.975, n} \times \dfrac{s_x}{\sqrt{n}}\]</span></p>
+<p>Clearly, in order to calculate <span class="math inline">\(n\)</span>, it should be specified clearly to what precision we want to achieve for <span class="math inline">\(\mu\)</span>, and calculate <span class="math inline">\(\mu\)</span> each time we finish one repeat of the experiment (because <span class="math inline">\(\bar{x}\)</span> and <span class="math inline">\(s_x\)</span> will update).</p>
+<p><strong>You may have to test a range of Ag dilutions before you obtain a cpm value that can be read of your calibration curve (remember to find appropriate range first by altering only the dilution). Show your preliminary data here:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Unknown Ag dilution</th>
+<th align="right">Unknown Ag volume (<span class="math inline">\(\mu\text{l}\)</span>)</th>
+<th align="right">cpm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">10<sup>2</sup></td>
+<td align="right">1</td>
+<td align="right">454</td>
+</tr>
+<tr class="even">
+<td align="right">10<sup>3</sup></td>
+<td align="right">5</td>
+<td align="right">826</td>
+</tr>
+<tr class="odd">
+<td align="right">10<sup>3</sup></td>
+<td align="right">1</td>
+<td align="right">3857</td>
+</tr>
+<tr class="even">
+<td align="right">10<sup>4</sup></td>
+<td align="right">5</td>
+<td align="right">8245</td>
+</tr>
+<tr class="odd">
+<td align="right"><strong>10<sup>4</sup></strong></td>
+<td align="right"><strong>1</strong></td>
+<td align="right"><strong>19760</strong></td>
+</tr>
+<tr class="even">
+<td align="right">10<sup>5</sup></td>
+<td align="right">5</td>
+<td align="right">29922</td>
+</tr>
+<tr class="odd">
+<td align="right">10<sup>5</sup></td>
+<td align="right">1</td>
+<td align="right">33886</td>
+</tr>
+</tbody>
+</table>
+<p>I decide to use Ag dilution of 10<sup>4</sup> and volume of 1 <span class="math inline">\(\mu\text{l}\)</span>, because 19760 is within the optimal range of the calibration curve (shown later, as a response to Q11)</p>
+<p><strong>Q11: Read the data off your calibration curve, and calculate the concentration of antigen in your unknown solution. (Each successful measurement will generate a value for the amount of antigen estimated to be present in that particular assay tube. You are required to calculate the concentration of antigen in the unknown solution). Explain your result below. Provide a discussion of your experimental approach, the validity of your answer (conduct appropriate statistical tests) and discuss any aspects that could have been improved. How would you express the precision of your answer (see Q.8)?</strong></p>
+<p>Here I load the data (and standardised variable names):</p>
+<pre class="r"><code>library(tidyverse)
+raw &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/ria.tsv&#39;) %&gt;% 
+  transmute(antigen_volume = `Ag volume`,
+            antigen_dilution = `Ag dilution`,
+            antibody_volume = `Ab volume`,
+            antibody_dilution = factor(`Ab dilution`),
+            count = Count,
+            known = `Known?`)</code></pre>
+<div id="calibration-curve" class="section level3 unnumbered">
+<h3>Calibration Curve</h3>
+<p>I extracted experiments with known amount of antigen and calculated the mass of antigen in pg:</p>
+<pre class="r"><code>known &lt;- raw %&gt;%
+  filter(known == 1, # experiments with known antigen amount for calibration
+         antibody_dilution == 10000) %&gt;%
+  mutate(antigen_amount = 
+        antigen_volume / 1000 # \mu L to ml
+                       * 10^9  # mg to pg
+                       / antigen_dilution) %&gt;%
+  filter(antigen_amount&lt;=1000)</code></pre>
+<p>First, I plotted count vs antigen amount directly (the blue line is fitted using the LOESS algorithm) in Figure <a href="#fig:ria-cali-raw">5.2</a> . Although this plot is not the most useful for calibration, it shows that the random variation is large when the count is greater than 20000. Therefore I aim at a count around 20000 in the test for the unkown antigen concentration.</p>
+<pre class="r"><code>known %&gt;%
+  ggplot(aes(antigen_amount, count))+
+  geom_point()+
+  geom_smooth(span=0.9, se=FALSE)+
+  labs(x = &#39;antigen amount (pg)&#39;, title = &#39;Calibration Curve (cpm vs antigen amount)&#39;)+
+  theme_bw()</code></pre>
+<div class="figure"><span id="fig:ria-cali-raw"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/ria-cali-raw-1.png" alt="RIA Calibration Curve" width="672" />
+<p class="caption">
+Figure 5.2: RIA Calibration Curve
+</p>
+</div>
+<p>The real calibration curve is shown in Figure <a href="#fig:ria-cali">5.3</a> (The reasoning was described in Q3 and Q4).</p>
+<pre class="r"><code>known %&gt;% 
+  ggplot(aes(antigen_amount, 10000/count))+
+  geom_point()+
+  geom_smooth(span=0.9)+
+  labs(x = &#39;antigen amount (pg)&#39;, title = &#39;Calibration Curve (10000/cpm vs antigen amount)&#39;)+
+  theme_bw()</code></pre>
+<div class="figure"><span id="fig:ria-cali"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/ria-cali-1.png" alt="RIA Calibration Curve (10000/count vs antigen amount)" width="672" />
+<p class="caption">
+Figure 5.3: RIA Calibration Curve (10000/count vs antigen amount)
+</p>
+</div>
+<p>The equation of the fitted straight line can be calculated as follows:</p>
+<pre class="r"><code>with(known, summary(lm(10000/count ~ antigen_amount)))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = 10000/count ~ antigen_amount)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.33043 -0.05604  0.00116  0.05493  0.39587 
+## 
+## Coefficients:
+##                 Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)    2.591e-01  1.659e-02   15.62   &lt;2e-16 ***
+## antigen_amount 2.486e-03  3.819e-05   65.10   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.133 on 134 degrees of freedom
+## Multiple R-squared:  0.9693, Adjusted R-squared:  0.9691 
+## F-statistic:  4238 on 1 and 134 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>This gives:</p>
+<p><span class="math display">\[10000/\text{cpm} = 0.2591 + 2.486\times10^{-3}\text{antigen amount}\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[\text{antigen amount (in pg)}=4022526/\text{cpm} - 104.2237\]</span></p>
+</div>
+<div id="testing-for-the-unkown" class="section level3 unnumbered">
+<h3>Testing for the Unkown</h3>
+<p>Here is the data when I tried different antigen dilution and volumes to make the count close to 20000. <span class="math inline">\(1\mu\text{L}\)</span> of <span class="math inline">\(1\times10^4\)</span> dilution suffices:</p>
+<pre class="r"><code>unknown_trial &lt;- raw %&gt;%
+  filter(`known`== 0,
+         `antigen_volume` != 0) %&gt;%
+  slice(1:7)
+unknown_trial</code></pre>
+<pre><code>## # A tibble: 7 x 6
+##   antigen_volume antigen_dilution antibody_volume antibody_dilution count known
+##            &lt;dbl&gt;            &lt;dbl&gt;           &lt;dbl&gt; &lt;fct&gt;             &lt;dbl&gt; &lt;dbl&gt;
+## 1              1              100               1 10000               454     0
+## 2              5             1000               1 10000               826     0
+## 3              1             1000               1 10000              3857     0
+## 4              5            10000               1 10000              8245     0
+## 5              1            10000               1 10000             19760     0
+## 6              5           100000               1 10000             29922     0
+## 7              1           100000               1 10000             33886     0</code></pre>
+<p>Then I repeated <span class="math inline">\(1\mu\text{L}\)</span> of <span class="math inline">\(1\times10^4\)</span> dilution 276 times (see Section <a href="#ria-supp">9.1</a> for the data). <strong>Curiously, the counts do not follow a normal distribution. It is bimodal:</strong></p>
+<pre class="r"><code>unknown_test &lt;- raw %&gt;%
+  filter(`known`== 0,
+         `antigen_volume` != 0) %&gt;%
+  slice(8:n())
+unknown_test %&gt;% 
+  ggplot(aes(count))+
+  geom_histogram(bins = 40, fill=&#39;white&#39;, color=&#39;black&#39;)+
+  labs(title = &#39;Distribution of 276 Radioactivity Count Readings&#39;, x=&#39;radioactivity count&#39;)+
+  theme_bw()</code></pre>
+<p><img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><strong>This is likely to be a bug in the ImmunoLab application. </strong></p>
+<p>If I had to assume it’s a normal distribution, a 95% confidence interval could be calculated:</p>
+<pre class="r"><code>cpm = unknown_test[[&#39;count&#39;]]
+mass = 4022526/cpm - 104.2237
+conc = mass /
+          1e-3 / # 1e-3 ml
+          1e-4 / # dilution
+          1e9  # pg to mg
+mean = mean(conc); sd = sd(conc);
+t = qt(0.975, length(conc)-1); t_sd = t*sd
+c(mean=mean, sd = sd, t = t, t_sd = t_sd, lower = mean-t_sd, upper = mean+t_sd)</code></pre>
+<pre><code>##      mean        sd         t      t_sd     lower     upper 
+## 0.8361621 0.1897999 1.9686279 0.3736453 0.4625168 1.2098075</code></pre>
+<p>(The relationship between cpm and antigen amount has been established previously: <span class="math inline">\(\text{antigen amount (in pg)}=4022526/\text{cpm} - 104.2237\)</span>)</p>
+<p>The mean is 0.8362 mg/ml and the confidence interval is <span class="math inline">\(0.8362 \pm 0.3736\)</span>, or [0.4625 1.2098] mg/ml. (This is actually invalid because the distribution was not normal).</p>
+</div>
+</div>
+</div>
+<div id="enzyme-linked-immunosorbentassay" class="section level1">
+<h1><span class="header-section-number">6</span> Enzyme-Linked Immunosorbentassay</h1>
+<div id="a-background-to-elisa" class="section level2 unnumbered">
+<h2>(a) Background to ELISA</h2>
+<div id="q12" class="section level3 unnumbered">
+<h3>Q12</h3>
+<p><strong>Draw a simple labelled diagram showing the principle of a sandwich ELISA.</strong></p>
+<p>See Figure <a href="#fig:immunolab-elisa">6.1</a>.</p>
+<div class="figure"><span id="fig:immunolab-elisa"></span>
+<img src="../img/immunolab-elisa.jpg" alt="Schematic of ELISA" width="100%" />
+<p class="caption">
+Figure 6.1: Schematic of ELISA
+</p>
+</div>
+</div>
+<div id="q13" class="section level3 unnumbered">
+<h3>Q13</h3>
+<p><strong>Give an example of a chromogenic substrate for:</strong></p>
+<ol style="list-style-type: lower-roman">
+<li>phosphatase: BCIP/NBT</li>
+<li>peroxidase: TMB (3,3’,5,5’-tetramethylbenzidine)</li>
+</ol>
+</div>
+<div id="q14" class="section level3 unnumbered">
+<h3>Q14</h3>
+<p><strong>Measuring the amount of enzyme in a well is technically simpler than measuring radioactivity, but it is much more susceptible to outside influences. List the factors that might affect the accuracy of your estimation of the amount of enzyme (assuming that optical density measurements are completely accurate).</strong></p>
+<ul>
+<li>Variation in temperature and pH</li>
+<li>Aggregation of enzyme proteins (which leads to underestimation)</li>
+</ul>
+</div>
+</div>
+<div id="b-method-elisalab" class="section level2 unnumbered">
+<h2>(b) METHOD: ElisaLab</h2>
+<div id="q15" class="section level3 unnumbered">
+<h3>Q15</h3>
+<p><strong>What is the Beer-Lambert law and why is it relevant when working out how much labelled antibody to use?</strong></p>
+<p>Beer-Lambert Law is:</p>
+<p><span class="math display">\[A = \epsilon cl\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is the absorbance (<span class="math inline">\(A=\log_{10}\left(\dfrac{I_\text{incident}}{I_\text{transmitted}}\right)\)</span>), <span class="math inline">\(\epsilon\)</span> is the molar extinction coefficient, <span class="math inline">\(c\)</span> is the concentration of the light-absorbing substance, <span class="math inline">\(l\)</span> is the path length.</p>
+<p>By measuring absorbance (<span class="math inline">\(A\)</span>), the concentration of the coloured product, and hence the concentration of the enzyme-conjugated antibodies, can be deduced.</p>
+<p><strong>What would happen to the dynamic range if we used more labelled Ab?</strong></p>
+</div>
+</div>
+</div>
+<div id="etut" class="section level1">
+<h1><span class="header-section-number">7</span> ELISA Tutorial</h1>
+<p>As I will be plot several heatmaps to show the ELISA results, and the procedures are similar, I created this helper function to prevent repetition:</p>
+<pre class="r"><code>plot_elisa &lt;- function(fn, title) {
+  df &lt;- read_tsv(fn) %&gt;% 
+    janitor::clean_names() %&gt;% 
+    mutate(ag_dilution = factor(ag_dilution),
+           ab_dilution = factor(ab_dilution))
+  return(ggplot(df, aes(ab_dilution, ag_dilution, fill=absorbance))+
+    geom_tile()+
+    labs(title = title)+
+    scale_y_discrete(limits = rev(levels(df$ag_dilution)))+
+    scale_fill_gradient(high=&#39;blue&#39;, low=&#39;white&#39;)+
+    geom_text(aes(label=absorbance)))
+}</code></pre>
+<p><strong><em>A small flaw: until now I haven’t found an easy way to show exponent forms of axes values in this case. It would have been straightforward if my axes had been continuous. However, heatmaps require discrete variables so I converted numerical values (continuous) to factors (discrete).</em></strong></p>
+<p>The results of the ELISA tutorial are shown in Figure <a href="#fig:elisa-tut">7.1</a>.</p>
+<pre class="r"><code>plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_tutorial.tsv&#39;, &quot;ELISA Tutorial&quot;)</code></pre>
+<div class="figure"><span id="fig:elisa-tut"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-tut-1.png" alt="ELISA tutorial results" width="100%" />
+<p class="caption">
+Figure 7.1: ELISA tutorial results
+</p>
+</div>
+</div>
+<div id="elisa-experiment" class="section level1">
+<h1><span class="header-section-number">8</span> ELISA Experiment</h1>
+<p><strong>Reference number:</strong> <code>2nf5rpcd</code></p>
+<div id="a-choosing-a-suitable-concentration-of-antibody" class="section level2 unnumbered">
+<h2>(a) Choosing a suitable concentration of antibody</h2>
+<div id="q16" class="section level3 unnumbered">
+<h3>Q16</h3>
+<p><strong>Describe the steps you took to optimise Antibody dilution for the rest of the experiment.</strong></p>
+<p>First, I used a wide range of antibody dilutions (but with smaller intervals around <span class="math inline">\(10^4\)</span>, as the optimal concentration is more likely to be around here), these concentrations are <span class="math inline">\(10^2, 10^3, 4\times10^3, 10^4, 4\times10^4, 8\times10^4, 10^5, 10^6\)</span>. The antigen concentrations are evenly distributed, namely <span class="math inline">\(1\times10^n\)</span> and <span class="math inline">\(4\times10^n\)</span> for <span class="math inline">\(n\)</span> in <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>. The results are shown in Figure <a href="#fig:elisa-t1">8.1</a>. The <code>plot_elisa()</code> function used here were defined in Section <a href="#etut">7</a>. I believe the plots I made are a better representation of ELISA results than screenshots or Excel spreadsheets. However, if you wish to view the raw data, you can download them from <a href="https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/">https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/</a>.</p>
+<pre class="r"><code>plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_trial_1.tsv&#39;, &quot;ELISA Trial 1 (choosing antibody concentration)&quot;)</code></pre>
+<div class="figure"><span id="fig:elisa-t1"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-t1-1.png" alt="ELISA Trial 1 (choosing antibody concentration) results." width="100%" />
+<p class="caption">
+Figure 8.1: ELISA Trial 1 (choosing antibody concentration) results.
+</p>
+</div>
+<p>As shown in Figure <a href="#fig:elisa-t1">8.1</a>, the optimal antibody concentration is between <span class="math inline">\(4\times10^4\)</span> and <span class="math inline">\(8\times10^4\)</span>. So in the next round of trial, I chosed antibody concentrations of <span class="math inline">\(3.2\times10^4\)</span>, <span class="math inline">\(4.0\times10^4\)</span>, <span class="math inline">\(6.4\times10^4\)</span>, and <span class="math inline">\(8.0\times10^4\)</span>. The antigen concentrations are the same as the previous trial. The experiments on these four antibody concentrations are repeated to fill 96 wells. The results are shown in Figure <a href="#fig:elisa-t2">8.2</a>.</p>
+<pre class="r"><code>elisa_trial_2_1 &lt;- plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_trial_2_1.tsv&#39;, &quot;ELISA Trial 2-1&quot;)
+elisa_trial_2_2 &lt;- plot_elisa(&#39;./2020-03-08-immunoassay-in-silico/elisa_trial_2_2.tsv&#39;, &quot;ELISA Trial 2-2&quot;)
+ggarrange(elisa_trial_2_1, elisa_trial_2_2, ncol=2, nrow=1, common.legend = TRUE, legend=&quot;bottom&quot;, labels = c(&quot;A&quot;, &quot;B&quot;))</code></pre>
+<div class="figure"><span id="fig:elisa-t2"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-t2-1.png" alt="ELISA Trial 2 (choosing antibody concentration) results." width="100%" />
+<p class="caption">
+Figure 8.2: ELISA Trial 2 (choosing antibody concentration) results.
+</p>
+</div>
+<p>The plot suggests that an antibody concentration of <span class="math inline">\(4.0\times10^4\)</span> would be optimal. Its maximum is close to, but does not exceed, 2.0.</p>
+</div>
+</div>
+<div id="b-generating-the-calibration-curve" class="section level2 unnumbered">
+<h2>(b) Generating the calibration curve</h2>
+<div id="q17" class="section level3 unnumbered">
+<h3>Q17</h3>
+<p><strong>Discuss how you generated data for your calibration curve (you can append titled data sets to the end of this document)</strong></p>
+</div>
+<div id="q18" class="section level3 unnumbered">
+<h3>Q18</h3>
+<p><strong>Plot your results to generate a calibration curve. Ensure axes are labelled, amount (not dilution) of antigen is plotted and that you have provided a descriptive title of the graph.</strong></p>
+<p>First, I used the same antigen concentrations as in previous two trials (<span class="math inline">\(1\times10^n\)</span> and <span class="math inline">\(4\times10^n\)</span> for <span class="math inline">\(n\)</span> in <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>.), as shown below (this code reads data into dataframe <code>std1</code> while printing unique dilutions used).</p>
+<pre class="r"><code>std1 &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_std1.tsv&#39;) %&gt;%
+  janitor::clean_names() %T&gt;%
+  # print dilutions used
+  (function(d){print(sort(unique(d$ag_dilution)))}) %&gt;%
+  # convert antigen dilution into antigen concentration in ng/ml
+  # keep only two variables: ag_conc and absorbance
+  transmute(ag_conc = 10^6 / ag_dilution, absorbance)</code></pre>
+<pre><code>##  [1] 1e+01 4e+01 1e+02 4e+02 1e+03 4e+03 1e+04 4e+04 1e+05 4e+05 1e+06 4e+06</code></pre>
+<p>As shown in Figure <a href="#fig:elisa-std-1-raw">8.3</a>, if plotted directly, it can be observed that absorbance increases with increasing antigen concentration as expected, but the mathematical relationship is unclear and so the ‘optimal range’ is also vague.</p>
+<pre class="r"><code>ggplot(std1, aes(ag_conc, absorbance))+
+  geom_point()+
+  labs(title = &#39;ELISA priliminary calibration curve&#39;, x = &#39;antigen concentration (ng/ml)&#39;)</code></pre>
+<div class="figure"><span id="fig:elisa-std-1-raw"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-std-1-raw-1.png" alt="ELISA priliminary calibration curve" width="100%" />
+<p class="caption">
+Figure 8.3: ELISA priliminary calibration curve
+</p>
+</div>
+<p>However, as shown in Figure <a href="#fig:elisa-std-1">8.4</a>, a linear relationship can be obtained by a double-log transformation. In this plot, it is clear that the useful range of antigen concentration would be <span class="math inline">\(1.0&lt;\log_{10}{c}&lt;{3.4}\)</span>, or <span class="math inline">\(10^1 &lt; c &lt; 10^{3.4}\)</span>, where <span class="math inline">\(c\)</span> is the antigen concentration in <span class="math inline">\(ng/ml\)</span>. This corresponds to a range of dilution of <span class="math inline">\(4\times10^2 &lt; x &lt; 10^5\)</span>.</p>
+<pre class="r"><code>ggplot(std1, aes(log10(ag_conc), log10(absorbance)))+
+  geom_point()+
+  labs(title = &#39;ELISA priliminary calibration curve (double log)&#39;,
+       x = &#39;log(antigen concentration (ng/ml))&#39;)+
+  geom_abline(intercept = -3.4, slope = 1)+
+  geom_text(x=2,y=-1, label=&#39;y = x - 3.4&#39;, family=&quot;Helvetica&quot;, size=4.5)</code></pre>
+<div class="figure"><span id="fig:elisa-std-1"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-std-1-1.png" alt="ELISA priliminary calibration curve (double log)" width="100%" />
+<p class="caption">
+Figure 8.4: ELISA priliminary calibration curve (double log)
+</p>
+</div>
+<p>Based on previous knowledge that the dilution should be in the range <span class="math inline">\(4\times10^2 &lt; x &lt; 10^5\)</span>, more experiments are carried out. The dilutions used are shown below.</p>
+<pre class="r"><code>std2 &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_std2.tsv&#39;) %&gt;%
+  janitor::clean_names() %T&gt;%
+  # print dilutions used
+  (function(d){print(sort(unique(d$ag_dilution)))}) %&gt;%
+  # convert antigen dilution into antigen concentration in ng/ml
+  # keep only two variables: ag_conc and absorbance
+  transmute(ag_conc = 10^6 / ag_dilution, absorbance)</code></pre>
+<pre><code>##  [1]   800  1000  2000  4000  8000 10000 20000 32000 40000 64000 80000</code></pre>
+<p>The calibration curve is shown in Figure <a href="#fig:elisa-std-fin">8.5</a>.</p>
+<pre class="r"><code>ggplot(std2, aes(log10(ag_conc), log10(absorbance)))+
+  geom_point()+
+  labs(title = &#39;ELISA calibration curve&#39;,
+       x = &#39;log(antigen concentration (ng/ml))&#39;)+
+  geom_smooth(method=&#39;lm&#39;)</code></pre>
+<div class="figure"><span id="fig:elisa-std-fin"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-std-fin-1.png" alt="ELISA calibration curve (double log)" width="100%" />
+<p class="caption">
+Figure 8.5: ELISA calibration curve (double log)
+</p>
+</div>
+</div>
+<div id="q19" class="section level3 unnumbered">
+<h3>Q19</h3>
+<p><strong>Briefly comment on the graph:</strong></p>
+<pre class="r"><code>summary(lm(log10(std2$absorbance) ~ log10(std2$ag_conc)))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = log10(std2$absorbance) ~ log10(std2$ag_conc))
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.09315 -0.03981  0.00023  0.04625  0.08439 
+## 
+## Coefficients:
+##                      Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)         -3.397722   0.015712  -216.3   &lt;2e-16 ***
+## log10(std2$ag_conc)  0.996370   0.007425   134.2   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.04711 on 94 degrees of freedom
+## Multiple R-squared:  0.9948, Adjusted R-squared:  0.9948 
+## F-statistic: 1.801e+04 on 1 and 94 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>As shown in Figure <a href="#fig:elisa-std-fin">8.5</a> and in the linear model summary above, when the antigen concentration is in the range <span class="math inline">\(10^1 &lt; c &lt; 2.5\times10^3\)</span> (i.e. the absorbance is in the range <span class="math inline">\(0.004 &lt; A &lt; 1.000\)</span>), there is a significant correlation between the antigen concentration and the absorbance, which can be described by this equation:</p>
+<p><span class="math display">\[\log_{10}{A} = \log_{10}{c} - 3.40\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is the absorbance and <span class="math inline">\(c\)</span> is the antigen concentration in <span class="math inline">\(ng/ml\)</span>.</p>
+<p>As shown in Figure <a href="#fig:elisa-std-fin">8.5</a>, when log(antigen concentration) is less than 1.7, the variation within each sets of absorbance readings is slightly larger, so the optimal range should be narrow down to <span class="math inline">\(10^{1.7} &lt; c &lt; 10^{3.4}\)</span> for antigen concentration, or <span class="math inline">\(0.020 &lt; A &lt; 1.000\)</span> for absorbance.</p>
+</div>
+</div>
+<div id="c-measuring-concentration-of-the-unknown" class="section level2 unnumbered">
+<h2>(c) Measuring concentration of the unknown</h2>
+<div id="q20" class="section level3 unnumbered">
+<h3>Q20</h3>
+<p><strong>Using appropriate dilutions and number of replicates (discuss briefly below). Calculate the concentration of antigen in the original (unknown) solution, stating your calculation process. Where relevant, you can append titled data sets to the end of this document. Esnure your answer is statistically valid (think back to the stats test used in RiaLab)</strong></p>
+<p>First, I used a broad range of dilutions (again, <span class="math inline">\(1\times10^n\)</span> and <span class="math inline">\(4\times10^n\)</span> for <span class="math inline">\(n\)</span> in <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>).</p>
+<pre class="r"><code>df &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_exp1.tsv&#39;) %&gt;%
+  janitor::clean_names() %&gt;%
+  transmute(ag_dilution = factor(ag_dilution), absorbance)
+ggplot(df, aes(ag_dilution, absorbance))+
+    geom_boxplot()+
+    labs(title = &quot;ELISA Experiment for the Unknown&quot;)+
+    geom_hline(yintercept = 1.000, color=&#39;red&#39;, size = 0.6)+
+    geom_hline(yintercept = 0.020, color=&#39;red&#39;, size = 0.6)</code></pre>
+<div class="figure"><span id="fig:elisa-exp1"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-exp1-1.png" alt="Finding the appropriate dilution of the unknown so that the absorbance fall within the linear range." width="100%" />
+<p class="caption">
+Figure 8.6: Finding the appropriate dilution of the unknown so that the absorbance fall within the linear range.
+</p>
+</div>
+<pre class="r"><code>    # scale_x_discrete(limits = rev(levels(df$ag_dilution)))+</code></pre>
+<p>As learnt from Q19, the linear range is where the absorbance lies between 0.020 and 1.000. According to Figure <a href="#fig:elisa-exp1">8.6</a>, a <span class="math inline">\(10^3\)</span> dilution would be the most appropriate. Therefore, I repeat 480 times with this dilution.</p>
+<pre class="r"><code>elisa_absorbance &lt;- read_tsv(&#39;./2020-03-08-immunoassay-in-silico/elisa_exp_fin.tsv&#39;) %&gt;%
+  janitor::clean_names() %&gt;%
+  extract2(&#39;absorbance&#39;)</code></pre>
+<p>Curiously, again, the distribution is bimodal (the data is shown in Section <a href="#elisa-absorbance">9.2</a>:</p>
+<pre class="r"><code>qplot(elisa_absorbance, geom = &#39;histogram&#39;, bins = I(40), fill=I(&#39;white&#39;), color=I(&#39;black&#39;),
+      main = &quot;distribution of 480 absorbance readings for the unknown&quot;)</code></pre>
+<div class="figure"><span id="fig:elisa-abs-dist"></span>
+<img src="../lab/2020-03-08-immunoassay-in-silico_files/figure-html/elisa-abs-dist-1.png" alt="Distribution of 480 absorbance readings for the ELISA assay with 1:1000 unknown sample and 1:40000 antibody" width="100%" />
+<p class="caption">
+Figure 8.7: Distribution of 480 absorbance readings for the ELISA assay with 1:1000 unknown sample and 1:40000 antibody
+</p>
+</div>
+<p>If I had to assume it’s a normal distribution, a 95% confidence interval could be calculated:</p>
+<pre class="r"><code>conc &lt;- 10^(log10(elisa_absorbance) + 3.40) *
+                10^3 / # dilution
+                10^6 # ng/ml to mg/ml
+mean &lt;- mean(conc); sd = sd(conc);
+t &lt;- qt(0.975, length(conc)-1); t_sd &lt;- t*sd
+c(mean=mean, sd = sd, t = t, t_sd = t_sd, lower = mean-t_sd, upper = mean+t_sd)</code></pre>
+<pre><code>##       mean         sd          t       t_sd      lower      upper 
+## 0.80949203 0.08313395 1.96492886 0.16335230 0.64613973 0.97284433</code></pre>
+<p>(Used the relationship between antigen concentration and absorbance established previously: <span class="math inline">\(\log_{10}{A} = \log_{10}{c} - 3.40\)</span>)</p>
+<p>The mean is 0.8095 mg/ml and the confidence interval is <span class="math inline">\(0.8094\pm0.1634\)</span>, or [0.6461 0.9728] mg/ml. (This is actually invalid because the distribution was not normal).</p>
+</div>
+</div>
+</div>
+<div id="supplementary-information" class="section level1">
+<h1><span class="header-section-number">9</span> Supplementary Information</h1>
+<p>For a complete set of raw data, please go to <a href="https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/">https://github.com/TianyiShi2001/ox/tree/master/content/lab/2020-03-08-immunoassay-in-silico/</a>.</p>
+<div id="ria-supp" class="section level2">
+<h2><span class="header-section-number">9.1</span> RIA</h2>
+<p>The 276 counts for <span class="math inline">\(1\mu\text{L}\)</span> of <span class="math inline">\(1\times10^4\)</span> dilution of antigen:</p>
+<pre class="r"><code>unknown_test[[&#39;count&#39;]]</code></pre>
+<pre><code>##   [1] 20336 17947 20618 23919 23332 23224 21150 23007 23463 20596 25927 18685
+##  [13] 20270 21910 20466 20162 19880 17502 20314 24646 20281 20151 18946 20346
+##  [25] 23137 21715 20108 19858 23180 19445 18012 20477 23256 19782 23235 24407
+##  [37] 23647 24320 20064 21291 19521 22735 19250 21573 23560 18631 25656 19337
+##  [49] 19174 24016 19630 24136 20292 24005 17643 23365 19890 20629 24103 20173
+##  [61] 25102 20933 19174 19065 23397 19880 22388 19174 23159 23658 22008 24787
+##  [73] 22931 24309 24841 23484 23777 25048 20976 24700 20053 20629 20792 19565
+##  [85] 19261 24527 18099 24516 23072 22279 21139 23745 21715 19782 19977 19923
+##  [97] 24353 18609 23452 19000 20336 19858 18968 23951 24744 23539 24418 23810
+## [109] 21009 19478 23625 19152 25211 23202 22963 22844 20379 22409 25069 17730
+## [121] 20846 23452 24646 25254 24722 18533 24429 19597 19532 24483 22073 19521
+## [133] 19804 25493 19956 20889 18240 17806 19445 18577 24168 19543 25395 23929
+## [145] 19912 24820 24060 18707 18881 20368 19044 24114 23224 20640 23995 20227
+## [157] 24049 19348 23506 24679 19152 20412 19413 23560 22442 23897 19814 23159
+## [169] 22399 19586 22605 23473 23148 19337 20650 17969 23061 22789 25482 19749
+## [181] 24537 23408 20564 18989 22127 19011 20596 19337 19022 19402 20455 23169
+## [193] 22724 19966 20835 20216 23148 23951 19510 20650 19206 24559 23647 19434
+## [205] 22073 19880 20705 19543 17849 23691 23940 17686 20813 19250 22876 19521
+## [217] 23767 22225 25688 23734 18826 20683 20694 20433 21573 19206 25004 23354
+## [229] 23332 24635 22540 17914 22692 23017 22149 19652 24038 20900 24744 20346
+## [241] 22681 20064 19717 19109 24331 19500 23235 19825 19152 19684 19630 21421
+## [253] 23365 22822 20162 22073 23202 24505 24309 22062 23799 19836 22963 24429
+## [265] 19293 23962 21204 23886 18685 24147 20531 19901 19521 23734 20118 24125</code></pre>
+</div>
+<div id="elisa-absorbance" class="section level2">
+<h2><span class="header-section-number">9.2</span> ELISA</h2>
+<p>The 480 absorbance readings:</p>
+<pre class="r"><code>elisa_absorbance</code></pre>
+<pre><code>##   [1] 0.354 0.343 0.355 0.279 0.268 0.303 0.348 0.358 0.283 0.358 0.277 0.378
+##  [13] 0.290 0.290 0.304 0.284 0.355 0.331 0.345 0.271 0.276 0.356 0.349 0.301
+##  [25] 0.259 0.308 0.331 0.357 0.284 0.361 0.295 0.332 0.282 0.381 0.278 0.340
+##  [37] 0.358 0.316 0.273 0.285 0.359 0.366 0.286 0.297 0.275 0.307 0.368 0.351
+##  [49] 0.341 0.339 0.313 0.354 0.346 0.284 0.334 0.278 0.300 0.286 0.312 0.353
+##  [61] 0.361 0.364 0.357 0.372 0.285 0.358 0.274 0.282 0.280 0.344 0.253 0.300
+##  [73] 0.336 0.300 0.301 0.348 0.355 0.374 0.276 0.290 0.279 0.370 0.338 0.270
+##  [85] 0.373 0.351 0.356 0.353 0.256 0.294 0.339 0.315 0.351 0.288 0.311 0.352
+##  [97] 0.352 0.280 0.333 0.368 0.334 0.294 0.297 0.299 0.279 0.343 0.357 0.309
+## [109] 0.366 0.363 0.310 0.311 0.358 0.335 0.361 0.296 0.257 0.334 0.308 0.293
+## [121] 0.293 0.336 0.342 0.352 0.366 0.287 0.266 0.286 0.360 0.313 0.358 0.287
+## [133] 0.305 0.363 0.343 0.284 0.290 0.339 0.268 0.350 0.363 0.334 0.343 0.271
+## [145] 0.324 0.299 0.258 0.334 0.309 0.336 0.374 0.362 0.290 0.344 0.303 0.352
+## [157] 0.295 0.314 0.286 0.300 0.287 0.292 0.369 0.349 0.292 0.349 0.360 0.334
+## [169] 0.339 0.277 0.286 0.347 0.293 0.325 0.288 0.278 0.303 0.271 0.289 0.305
+## [181] 0.309 0.364 0.344 0.309 0.355 0.360 0.298 0.298 0.299 0.322 0.340 0.364
+## [193] 0.344 0.337 0.311 0.344 0.294 0.365 0.351 0.297 0.384 0.327 0.350 0.315
+## [205] 0.326 0.301 0.316 0.292 0.300 0.366 0.346 0.329 0.291 0.355 0.290 0.300
+## [217] 0.301 0.370 0.299 0.340 0.336 0.274 0.301 0.359 0.342 0.345 0.350 0.356
+## [229] 0.347 0.317 0.354 0.286 0.339 0.358 0.326 0.362 0.358 0.349 0.329 0.298
+## [241] 0.317 0.337 0.327 0.309 0.301 0.291 0.368 0.342 0.359 0.347 0.337 0.352
+## [253] 0.292 0.294 0.370 0.377 0.287 0.292 0.279 0.349 0.315 0.370 0.365 0.280
+## [265] 0.352 0.342 0.342 0.363 0.278 0.335 0.372 0.351 0.354 0.348 0.292 0.293
+## [277] 0.298 0.327 0.286 0.374 0.335 0.348 0.359 0.274 0.314 0.354 0.359 0.347
+## [289] 0.331 0.345 0.371 0.283 0.370 0.289 0.359 0.344 0.356 0.374 0.267 0.356
+## [301] 0.304 0.333 0.279 0.344 0.355 0.366 0.291 0.306 0.352 0.361 0.372 0.270
+## [313] 0.359 0.317 0.294 0.340 0.257 0.265 0.283 0.285 0.293 0.330 0.345 0.322
+## [325] 0.294 0.336 0.362 0.369 0.343 0.283 0.324 0.326 0.341 0.299 0.362 0.368
+## [337] 0.358 0.334 0.283 0.331 0.278 0.261 0.351 0.337 0.288 0.278 0.269 0.298
+## [349] 0.361 0.311 0.355 0.361 0.287 0.343 0.267 0.294 0.343 0.293 0.286 0.312
+## [361] 0.296 0.340 0.267 0.281 0.301 0.326 0.356 0.287 0.265 0.296 0.295 0.254
+## [373] 0.289 0.371 0.274 0.285 0.349 0.361 0.353 0.277 0.341 0.332 0.336 0.296
+## [385] 0.274 0.321 0.279 0.297 0.346 0.273 0.370 0.298 0.380 0.273 0.338 0.342
+## [397] 0.369 0.308 0.361 0.294 0.312 0.353 0.371 0.288 0.354 0.278 0.367 0.280
+## [409] 0.315 0.335 0.334 0.369 0.308 0.292 0.369 0.349 0.312 0.286 0.289 0.379
+## [421] 0.349 0.315 0.339 0.297 0.355 0.310 0.287 0.342 0.296 0.275 0.337 0.353
+## [433] 0.329 0.302 0.332 0.356 0.311 0.344 0.283 0.358 0.288 0.332 0.341 0.278
+## [445] 0.367 0.284 0.287 0.321 0.343 0.286 0.307 0.271 0.311 0.266 0.357 0.348
+## [457] 0.298 0.297 0.361 0.370 0.377 0.362 0.330 0.388 0.287 0.332 0.295 0.357
+## [469] 0.279 0.306 0.313 0.355 0.279 0.303 0.328 0.334 0.339 0.335 0.312 0.305</code></pre>
+</div>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Tianyi@Oxford</title>
+    <link>/tags/r.html</link>
+    <description>Recent content in R on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Genomics Practical (TT 2020)</title>
+      <link>/lab/computational-genomics-practical-tt-2020.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/computational-genomics-practical-tt-2020.html</guid>
+      <description>1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) 1.2 Heatmaps in Python (with seaborn) 1.3 Average Gene Profile 2 Quiz 8 2.1 Matlab 2.2 Using R 1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) Loading Packages
+library(R.matlab) ## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.matlab for help. ## ## Attaching package: &amp;#39;R.matlab&amp;#39; ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## getOption, isOpen library(reshape2) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.</description>
+    </item>
+    
+    <item>
+      <title>Linux Setup</title>
+      <link>/fun/linux-setup.html</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/fun/linux-setup.html</guid>
+      <description> Utilities Input Methods Framwork: Fcitx
+Chinese: Sougou Pinyin Japanese: Mozc
+LaTeX Select from:
+texlive-base - 136 MB texlive-latex-recommended - 177 MB texlive - 240 MB texlive-latex-extra - 404 MB texlive-full - 4714 MB References
+https://linuxconfig.org/how-to-install-latex-on-ubuntu-18-04-bionic-beaver-linux </description>
+    </item>
+    
+    <item>
+      <title>Random Notes on Bioinformatics</title>
+      <link>/bioinformatics/random-notes-on-biioinformatics.html</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/random-notes-on-biioinformatics.html</guid>
+      <description>Go https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2903-5</description>
+    </item>
+    
+    <item>
+      <title>Visualising the Resolution Revolution of Electron Microscopy</title>
+      <link>/bioinformatics/pdb-stats.html</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/pdb-stats.html</guid>
+      <description>1 Getting All the PDB Files 2 Parsing PDB files 3 Data Analysis with R 3.0.1 Prerequisites 3.1 Load Data 3.2 Tidying Data 3.3 Plotting 3.3.1 Plot Setup 3.3.2 Median Resolution of Different Methods Over Time 3.3.3 All Cases of X-Ray and EM Structures 3.3.4 Boxplots Last week I wrote an essay on electron microscopy (EM) and X-ray crystallography. I originally thought X-ray’s superiority in resolution has always been unrivalled, but the situation is changing—the best resolution achived by cryo-EM is now comparable with the average/median resolution achived by X-ray crystallography, which is around 2.</description>
+    </item>
+    
+    <item>
+      <title>Three Biophysical Methods</title>
+      <link>/tutorial/three-biophysical-methods.html</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/three-biophysical-methods.html</guid>
+      <description>1 Circular Dichorism (CD) 1.1 Physical Principles 1.2 Experimental Setup 1.3 Application of CD 1.4 Other CD-based Techniques 2 Small-angle X-ray Scattering (SAXS) 2.1 Physical Principles 2.2 Experimentation and Data Processing 3 Analytical Ultracentrifuge (AUC) 3.1 Choice of Optical System 3.2 Experiments 3.2.1 Sedimentation Velocity (SV) References 1 Circular Dichorism (CD) Reference: Ranjbar and Gill (2009); Kelly, Jess, and Price (2005);Whitmore and Wallace (2008)
+Circular dichorism measures the difference in absorption of left-hand and right-hand circularly polarised light by optically active (chiral) molecules (usually biological macromolecules).</description>
+    </item>
+    
+  </channel>
+</rss>

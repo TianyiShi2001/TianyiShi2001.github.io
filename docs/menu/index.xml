@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>菜谱 on Tianyi@Oxford</title>
+    <link>/menu.html</link>
+    <description>Recent content in 菜谱 on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/menu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>菜谱</title>
+      <link>/menu/menu.html</link>
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/menu/menu.html</guid>
+      <description>1 原材料 1.1 辣椒 1.2 猪肉 2 菜 2.1 回锅肉 2.1.1 用料 2.1.2 步骤 3 炒饭 document.getElementsByTagName(&#39;body&#39;)[0].classList.add(&#39;cn&#39;) 1 原材料 1.1 辣椒 1.2 猪肉 2 菜 2.1 回锅肉 2.1.1 用料 五花肉 辣椒 淀粉 2.1.2 步骤 将整块五花肉放入清水，加入葱段</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+---
+title: Gene Expression Practical Paper 6 Questions
+author: Tianyi Shi
+date: '2020-11-22'
+slug: gene-expression-practical-paper-6-questions
+categories:
+  - lab
+tags:
+  - genetics
+term: 3-Michaelmas
+week: 6
+---
+
+**(a) Assign each lac mutation to one of the strains 1 to 5. Explain your reasoning in each case.**
+
+|                       |   1   |   2   |   3   |   4   |   5   |  WT   |
+| --------------------- | :---: | :---: | :---: | :---: | :---: | :---: |
+| glycerol              |   +   |   −   |   +   |   −   |   −   |   -   |
+| glycerol+IPTG         |   +   |   −   |   +   |   +   |   −   |   +   |
+| glucose+IPTG          |   −   |   −   |   −   |   +   |   −   |   -   |
+| ×WT hybrid + glycerol | IPTG  | IPTG  |   +   | IPTG  | IPTG  |       |
+| ×lacY^−^ hybrid       |       | IPTG  |       |       |   ×   |       |
+
+- Strain 1: *lacI^-^*
+- Strain 2: *lacZ^-^*
+- Strain 3: *lacO^c^*
+- Strain 4: mutation that causes RNAP to bind more easily
+- Strain 5: *lacP^-^*
+
+Strains 1 and 3 are both sensitive to catabolite repression (by glucose) but insensitive to induction by IPTG (transcription occurs as long as glucose is not present), which can be either due to *lacI^-^* or *lacO^c^*. In the diploid with WT, strain 1 becomes sensitive to IPTG, which means strain 1 had a *lacI^-^* mutation, and the *lacI^-^* of the newly introduced WT allele produces LacI proteins which are effective on both *lac* operons. Strain 3 has a *lacO^c^* mutation, thus this operon is continuously being transcribed regardless of the newly introduced WT allele (LacI is present, but this mutant operon is insensitive to it)
+
+In the last experiment, the introduced plasmid has *lacY^-^* mutation and therefore cannot produce $\beta$-galactoside permease, this causes strain 5 unable to survive with only lactose. Thus, strain 5 has the *lacP^-^* mutation, which originally was able to produce neither permease or galactosidase (because RNAP cannot bind to the promoter to initiate transcription). With plasmid introduced, only galactosidase but not permease is produced, which is not sufficient to catabolise lactose.
+
+Strain 2 contains a *lacZ^-^* mutation, which make it unable to produce galactoside but able to produce permease. Thus, $\beta$-galactoside catabolism activity is rescued by the introduction of the *lacY^-^* pladmid in the last experiment, which allows galactosidase to be produced.
+
+**What is a likely explanation for the phenotype displayed by the strain containing the uncharacterized mutation? In which part of the lac region is the uncharacterized mutation likely to be found?**
+
+Strain 4 shows insensitivity to catabolite repression (IPTG induces transcription regardless of the presence of glucose). Thus, it may contain a mutation in the promoter region that causes RNA polymerase to bind more easily, without activation by CAP-cAMP.
+
+**The mutation in the catabolite repression-insensitive strain used in the practical has been determined to be within the lac operon and is shown below. The sequence alteration involved (substitution of GT in the wild-type sequence with AA) is highlighted by arrows (▼). How could this sequence alteration lead to the observed mutant phenotype?**
+
+ApA and ApT steps have smaller base stacking energies than TpT steps, and there are 2 hydrogen bonds between a AT base pair, which is weaker than the 3 hydrogen bonds between a CG base pair. These makes the sequence `AAT` easier to deform than `GTT`. Higher deformability makes a the mutant promoter stronger (i.e. higher affinity for RNA polymerase), so RNAP can bind to it regardless of the binding of CAP-cAMP.

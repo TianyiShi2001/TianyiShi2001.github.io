@@ -1,0 +1,53 @@
+---
+title: Personal Notes on RNA-seq
+author: Tianyi Shi
+date: '2022-07-29'
+slug: personal-notes-on-rna-seq
+categories:
+  - NGS
+  - RNA-seq
+tags:
+  - RNA-seq
+  - Illumina
+  - NGS
+week: 9
+tutor: ~
+summary: ~
+bibliography: ../../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: ~
+---
+
+# Trimming
+
+# Mapping
+
+## STAR
+
+The `--outSAMstrandField` intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data [@Dobin-2015]. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

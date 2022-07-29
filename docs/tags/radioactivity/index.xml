@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>radioactivity on Tianyi@Oxford</title>
+    <link>/tags/radioactivity.html</link>
+    <description>Recent content in radioactivity on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/radioactivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Specific Radioactivity</title>
+      <link>/lab/2019-10-16-specific-radioactivity.html</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/2019-10-16-specific-radioactivity.html</guid>
+      <description>Specific radioactivity of ATP and glucose.</description>
+    </item>
+    
+    <item>
+      <title>Radioactivity Worksheet</title>
+      <link>/worksheet/radioactivity-worksheet.html</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/worksheet/radioactivity-worksheet.html</guid>
+      <description>Guinea pig A guinea pig was given a single injection of 24NaCl (0.5ml of 0.5\(\mu\)Ci/ml). Subsequently, 0.2 ml samples of blood were taken at intervals and counted for radioactivity. The following results were obtained. The efficiency of counting 24Na is 30%.
+(a) Given that the radioactive half-life of 24Na is 15h, calculate the biological half life of Na+ in the guinea pig body. Why are these values different?
+Radioactive decay is a first-order process, so the rate of decay is proportional to the amount of the decaying substance.</description>
+    </item>
+    
+  </channel>
+</rss>

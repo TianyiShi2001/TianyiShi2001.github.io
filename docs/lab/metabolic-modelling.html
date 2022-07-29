@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Metabolic Modelling - Tianyi@Oxford</title>
+<meta property="og:title" content="Metabolic Modelling - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1998 words</span>
+    
+
+
+    
+    <h1 class="article-title">Metabolic Modelling</h1>
+    <span class="article-date">2020-11-26</span>
+
+    <p class="link-to-pdf"><a href="2020-11-26-metabolic-modelling.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+<script src="../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="../rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#the-haldane-relationship"><span class="toc-section-number">1</span> The Haldane Relationship</a></li>
+<li><a href="#control-points-in-a-simple-linear-pathway"><span class="toc-section-number">2</span> Control Points in A Simple Linear Pathway</a></li>
+<li><a href="#linear-pathway-with-negative-feedback"><span class="toc-section-number">3</span> Linear Pathway with Negative Feedback</a>
+<ul>
+<li><a href="#re-analyse-the-effect-of-k_i-with-constant-flux"><span class="toc-section-number">3.1</span> Re-analyse the effect of <span class="math inline">\(K_i\)</span> with constant flux</a>
+<ul>
+<li><a href="#repeat-with-model-212"><span class="toc-section-number">3.1.1</span> Repeat with Model 212</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<ul>
+<li><strong>Model 112 was used.</strong></li>
+</ul>
+<div id="the-haldane-relationship" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> The Haldane Relationship</h1>
+<p>Using the “Parameter Scan” utility in Copasi (Figure <a href="#fig:copasi-q1-scan">1.1</a>), I collected steady state concentrations of ‘A’ and ‘B’ in <span class="math inline">\(5^4 = 625\)</span> combinations of <span class="math inline">\(V_{max(f)}\)</span>, <span class="math inline">\(K_{m(p)}\)</span>, <span class="math inline">\(V_{max(r)}\)</span>, and <span class="math inline">\(K_{m(s)}\)</span>, where each parameter vary from <span class="math inline">\(1\times10^{-2}\)</span> to <span class="math inline">\(1\times10^{2}\)</span> in a logarithmic scale.</p>
+<div class="figure"><span id="fig:copasi-q1-scan"></span>
+<img src="../img/copasi-q1-scan.png" alt="&quot;Parameter Scan&quot; setup" width="100%" />
+<p class="caption">
+Figure 1.1: “Parameter Scan” setup
+</p>
+</div>
+<p>Here I read the data, and add two columns, where <code>keq</code> represents the experimental <span class="math inline">\(K_\text{eq}\)</span>:</p>
+<p><span class="math inline">\(K_\text{eq} = \dfrac{\text{[B]}}{\text{[A]}}\)</span></p>
+<p>and <code>keq_calc</code> represents the <span class="math inline">\(K_\text{eq}\)</span> calculated from the Haldane relationship:</p>
+<p><span class="math inline">\(K_\text{eq} = \dfrac{V_{max(f)}\cdot K_{m(p)}}{V_{max(r)}\cdot K_{m(s)}}\)</span></p>
+<pre class="r"><code>q1 &lt;- read_tsv(&#39;metabolic modelling/q1.txt&#39;, col_names = c(&#39;vf&#39;, &#39;kmp&#39;, &#39;vr&#39;, &#39;kms&#39;, &#39;A&#39;, &#39;B&#39;))
+q1 &lt;- q1 %&gt;% mutate(
+  keq = B/A,
+  keq_calc = (vf * kmp) / (vr * kms),
+  keq_diff = keq - keq_calc
+)
+q1</code></pre>
+<pre><code>## # A tibble: 625 x 9
+##       vf   kmp     vr   kms     A        B      keq keq_calc  keq_diff
+##    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
+##  1  0.01  0.01   0.01  0.01 1     1         1         1       0.      
+##  2  0.01  0.01   0.1   0.01 1.82  0.182     0.1       0.1     0.      
+##  3  0.01  0.01   1     0.01 1.98  0.0198    0.01      0.01    0.      
+##  4  0.01  0.01  10     0.01 2.00  0.00200   0.001     0.001   0.      
+##  5  0.01  0.01 100     0.01 2.00  0.000200  0.00010   0.0001 -1.36e-20
+##  6  0.1   0.01   0.01  0.01 0.182 1.82     10.0      10      -1.78e-15
+##  7  0.1   0.01   0.1   0.01 1     1         1         1       0.      
+##  8  0.1   0.01   1     0.01 1.82  0.182     0.1       0.1     0.      
+##  9  0.1   0.01  10     0.01 1.98  0.0198    0.01      0.01    0.      
+## 10  0.1   0.01 100     0.01 2.00  0.00200   0.001     0.001   0.      
+## # … with 615 more rows</code></pre>
+<p>Plotting <code>keq_calc</code> against <code>keq</code> shows that <span class="math inline">\(K_\text{eq}\)</span> calculated in these two ways are equal, as the linear regression line has a gradient of 1 and passes through the origin.</p>
+<pre class="r"><code>q1 %&gt;% ggplot(aes(keq, keq_calc)) +
+  geom_point() +
+  geom_smooth()+
+  scale_x_log10()+
+  scale_y_log10()</code></pre>
+<p><img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>mod &lt;- lm(q1$keq ~ q1$keq_calc)
+summary(mod)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = q1$keq ~ q1$keq_calc)
+## 
+## Residuals:
+##        Min         1Q     Median         3Q        Max 
+## -1.148e-08 -4.480e-10 -4.480e-10 -4.190e-10  2.880e-07 
+## 
+## Coefficients:
+##              Estimate Std. Error   t value Pr(&gt;|t|)    
+## (Intercept) 7.078e-10  4.630e-10 1.529e+00    0.127    
+## q1$keq_calc 1.000e+00  1.135e-16 8.814e+15   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.156e-08 on 623 degrees of freedom
+## Multiple R-squared:      1,  Adjusted R-squared:      1 
+## F-statistic: 7.769e+31 on 1 and 623 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>The Haldane relationship shows that <span class="math inline">\(K_\text{eq}\)</span> is proportional to <span class="math inline">\(V_{max(f)}\)</span> and <span class="math inline">\(K_{m(p)}\)</span>, and inversely proportional to <span class="math inline">\(V_{max(r)}\)</span> and <span class="math inline">\(K_{m(s)}\)</span>, and this can be illustrated using a facetted heatmap:</p>
+
+<pre class="r"><code>q1 %&gt;% ggplot(aes(x = vf, y = kmp, fill = log10(keq))) +
+  geom_tile()+
+  facet_grid((1/vr)~(1/kms), as.table = FALSE, labeller = label_both)+
+  scale_x_log10(labels = plain, expand = c(0, 0))+
+  scale_y_log10(labels = plain, expand = c(0, 0))+
+  scale_fill_gradient2(low = &#39;blue&#39;, mid = &#39;yellow&#39;, high = &#39;red&#39;)+
+  labs(title = &quot;Variation of Keq with vf, kmp, vr, and kms&quot;)+
+  theme(axis.text.x = element_text(angle = 90))</code></pre>
+<div class="figure"><span id="fig:q1"></span>
+<img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/q1-1.png" alt="Variation of \(K_\text{eq}\) with \(V_{max(f)}\), \(K_{m(p)}\), \(V_{max(r)}\), and \(K_{m(s)}\)" width="672" />
+<p class="caption">
+Figure 1.2: Variation of <span class="math inline">\(K_\text{eq}\)</span> with <span class="math inline">\(V_{max(f)}\)</span>, <span class="math inline">\(K_{m(p)}\)</span>, <span class="math inline">\(V_{max(r)}\)</span>, and <span class="math inline">\(K_{m(s)}\)</span>
+</p>
+</div>
+<p>The pattern in each grid shows that <span class="math inline">\(K_\text{eq}\)</span> is proportional to <span class="math inline">\(V_{max(f)}\)</span> and <span class="math inline">\(K_{m(p)}\)</span>, and the pattern across the grids shows that it is inversely proportional to <span class="math inline">\(V_{max(r)}\)</span> and <span class="math inline">\(K_{m(s)}\)</span>.</p>
+</div>
+<div id="control-points-in-a-simple-linear-pathway" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Control Points in A Simple Linear Pathway</h1>
+<p>I use the “Parameter Scan” function to vary the <span class="math inline">\(K_\text{eq}\)</span> of reaction 3 (that catalyses the reversible conversion between C and D) in the range <span class="math inline">\(10^{-6}\)</span> to <span class="math inline">\(10^6\)</span> in a logarithmic scale (13 samples). The variables being recorded are <span class="math inline">\(K_\text{eq}\)</span> and <span class="math inline">\(J\)</span> (flux control coefficient) of reaction 3, and the concentrations of C and D. Then, the reaction quotient, <span class="math inline">\(Q\)</span> (a.k.a. mass action ratio), of each row is calculated as:</p>
+<p><span class="math display">\[Q = \dfrac{\text{[D]}}{\text{[C]}}\]</span></p>
+<pre class="r"><code>q2_scan_r3 &lt;- read_tsv(&#39;metabolic modelling/Q2.txt&#39;)
+q2_scan_r3 &lt;- q2_scan_r3 %&gt;% mutate(q = d/c)
+q2_scan_r3</code></pre>
+<pre><code>## # A tibble: 13 x 5
+##            j     keq     c         d          q
+##        &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;
+##  1 0.0000489 1.00e-6 100.   0.000100 0.00000100
+##  2 0.0000489 1.00e-5 100    0.001    0.00001   
+##  3 0.00470   1.00e-4  99.1  0.00987  0.0000996 
+##  4 0.0353    1.00e-3  92.2  0.0885   0.000960  
+##  5 0.119     1.00e-2  69.0  0.556    0.00806   
+##  6 0.210     1.00e-1  44.5  2.35     0.0528    
+##  7 0.309     1.00e+0  32.0  6.77     0.212     
+##  8 0.369     1.00e+1  28.6 10.0      0.350     
+##  9 0.380     1.00e+2  28.2 10.6      0.378     
+## 10 0.381     1.00e+3  28.1 10.7      0.381     
+## 11 0.381     1.00e+4  28.1 10.7      0.381     
+## 12 0.381     1.00e+5  28.1 10.7      0.381     
+## 13 0.381     1.00e+6  28.1 10.7      0.381</code></pre>
+<p>Figure <a href="#fig:q2-keq">2.1</a> shows the variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3, with its <span class="math inline">\(K_\text{eq}\)</span>. The plot shows that a high <span class="math inline">\(K_\text{eq}\)</span>, i.e. high irreversibility, is correlated with a high <span class="math inline">\(J\)</span>, and in the intermediate range <span class="math inline">\(J\)</span> varies linearly with <span class="math inline">\(\ln(K_\text{eq})\)</span>, i.e. varies linearly with <span class="math inline">\(\Delta G = -RT\ln(K_\text{eq})\)</span></p>
+
+<pre class="r"><code>q2_scan_r3 %&gt;% ggplot(aes(log(keq), j)) +
+  geom_point()</code></pre>
+<div class="figure"><span id="fig:q2-keq"></span>
+<img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/q2-keq-1.png" alt="Variation of the flux control coefficient, \(J\), of reaction 3, with its \(K_\text{eq}\)" width="672" />
+<p class="caption">
+Figure 2.1: Variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3, with its <span class="math inline">\(K_\text{eq}\)</span>
+</p>
+</div>
+<p>Figure <a href="#fig:q2-displacement">2.2</a> shows the variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3 with <span class="math inline">\(Q/K_\text{eq}\)</span>, which is a measure of displacement of the reaction from the equilibrium. A <span class="math inline">\(Q/K_\text{eq}\)</span> close to 1 indicates the reaction is close to equilibrium.
+The plot shows that when reaction is further displaced from the equilibrium, the its flux control coefficient is higher.</p>
+
+<pre class="r"><code>q2_scan_r3 %&gt;% ggplot(aes(q/keq, j)) +
+  geom_point()+
+  geom_smooth(method = &#39;lm&#39;, size = 0.5)</code></pre>
+<div class="figure"><span id="fig:q2-displacement"></span>
+<img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/q2-displacement-1.png" alt="Variation of the flux control coefficient, \(J\), of reaction 3, with \(Q/K_\text{eq}\)" width="672" />
+<p class="caption">
+Figure 2.2: Variation of the flux control coefficient, <span class="math inline">\(J\)</span>, of reaction 3, with <span class="math inline">\(Q/K_\text{eq}\)</span>
+</p>
+</div>
+<p>A linear regression analysis shows that there is a strong linear correlation between <span class="math inline">\(J\)</span> and <span class="math inline">\(Q/K_\text{eq}\)</span>, with <span class="math inline">\(p = 4.02\times10^{-6} &lt; 10^{-5}\)</span></p>
+<pre class="r"><code>mod &lt;- with(q2_scan_r3, lm(j ~ q/keq))
+summary(mod)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = j ~ q/keq)
+## 
+## Residuals:
+##       Min        1Q    Median        3Q       Max 
+## -0.054438 -0.019991 -0.012931  0.001452  0.108459 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  5.448e-02  2.221e-02   2.453   0.0341 *  
+## q            8.960e-01  9.010e-02   9.945 1.67e-06 ***
+## q:keq       -4.196e-08  1.569e-07  -0.267   0.7946    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.05374 on 10 degrees of freedom
+## Multiple R-squared:  0.9167, Adjusted R-squared:    0.9 
+## F-statistic:    55 on 2 and 10 DF,  p-value: 4.02e-06</code></pre>
+<p>In order to vary <span class="math inline">\(Q/K_\text{eq}\)</span> without directly varying <span class="math inline">\(K_\text{eq}\)</span>, and to see the effect not only on reaction 3 but also on all other reactions, I vary <span class="math inline">\(V_f\)</span>, not <span class="math inline">\(K_\text{eq}\)</span>, of reaction 3 from <span class="math inline">\(10^{-6}\)</span> to <span class="math inline">\(10^6\)</span> with 1000 intervals, and collected the flux control coefficients of all 6 reactions, the <span class="math inline">\(K_\text{eq}\)</span> of reaction 3, as well as concentrations of all species, which are then used to calculate the mass action ratio of each reaction. Then, the displacement of each reaction is calculated. The resulting dataframe contains three columns: 1) the reaction number; 2) the flux control coefficient and 3) displacement from equilibrium of this reaction</p>
+<pre class="r"><code>q2_scan_r3_vf &lt;- read_tsv(&#39;metabolic modelling/Q2-1.txt&#39;)
+q2_scan_r3_vf &lt;- q2_scan_r3_vf %&gt;% 
+  mutate(
+    d1 = (B/A) / 10,
+    d2 = (C/B) / 1,
+    d3 = (D/C) / 0.5,
+    d4 = (E/D) / 5,
+    d5 = (F/E) / 2,
+    d6 = (G/F) / 10,
+    c1 = A + B,
+    c2 = B + C,
+    c3 = C + D,
+    c4 = D + E,
+    c5 = E + F,
+    c6 = F + G,
+  ) %&gt;% select(!(1:7))
+q2_scan_r3_vf_cleaned &lt;- tibble(
+  reaction = integer(),
+  displacement = double(),
+  j = double()
+  )
+for (i in 1:6) {
+  q2_scan_r3_vf_cleaned &lt;- add_row(
+    q2_scan_r3_vf_cleaned, 
+    reaction = i, j = q2_scan_r3_vf[[paste0(&#39;j&#39;, i)]], displacement = q2_scan_r3_vf[[paste0(&#39;d&#39;, i)]])
+}
+q2_scan_r3_vf_cleaned </code></pre>
+<pre><code>## # A tibble: 6,006 x 3
+##    reaction displacement            j
+##       &lt;int&gt;        &lt;dbl&gt;        &lt;dbl&gt;
+##  1        1         1.00 0.0000000343
+##  2        1         1.00 0.0000000353
+##  3        1         1.00 0.0000000363
+##  4        1         1.00 0.0000000373
+##  5        1         1.00 0.0000000383
+##  6        1         1.00 0.0000000394
+##  7        1         1.00 0.0000000405
+##  8        1         1.00 0.0000000416
+##  9        1         1.00 0.0000000428
+## 10        1         1.00 0.0000000440
+## # … with 5,996 more rows</code></pre>
+<p>Then, for all reactions, <span class="math inline">\(J\)</span> versus displacement from equilibrium is plotted:</p>
+<pre class="r"><code>q2_scan_r3_vf_cleaned %&gt;% ggplot(aes(displacement, j)) + 
+  geom_point()+
+  facet_wrap(~reaction, scales = &#39;free&#39;, labeller = label_both)+
+  xlab(&quot;MAR/Keq&quot;)</code></pre>
+<p><img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/q2_2-1.png" width="672" /></p>
+<p>The plots shows that, when disturbing <span class="math inline">\(V_{max(f)}\)</span> of reaction 3, the disequilibrium ratio of all reactions are also altered. Not only reaction 3 but also all other reactions follow the rule that, the flux control coefficent of a reaction increases with the extent of displacement from the equilibrium. However, it is hard to predict <span class="math inline">\(J\)</span> given only the value of <span class="math inline">\(Q/K_\text{eq}\)</span>, as different reactions show different patterns of variations, so <span class="math inline">\(Q/K_\text{eq}\)</span> (displacement from equilibrium) is not a robust indicator of <span class="math inline">\(J\)</span>.</p>
+</div>
+<div id="linear-pathway-with-negative-feedback" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Linear Pathway with Negative Feedback</h1>
+<p>I chose reaction 2 to be the one sensitive to the inhibitor, and varied <span class="math inline">\(K_i\)</span> from <span class="math inline">\(10^{-18}\)</span> to <span class="math inline">\(10^{18}\)</span> with 1000 intervals, and recorded it along with flux control coefficients of all reactions. The results are shown in Figure <a href="#fig:q3">3.1</a>.</p>
+
+<pre class="r"><code>q3 &lt;- read_tsv(&#39;metabolic modelling/Q3.txt&#39;)
+q3 &lt;- q3 %&gt;% gather(reaction, &quot;j&quot;, -ki)
+q3 %&gt;% ggplot(aes(ki, j)) +
+  geom_point()+
+  facet_wrap(~reaction, labeller = label_both)+
+  scale_x_log10()</code></pre>
+<div class="figure"><span id="fig:q3"></span>
+<img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/q3-1.png" alt="Effect of changing \(K_i\) of reaction 2 on the flux control coefficient of all reactions. Lower \(K_i\) means higher binding affinity to the inhibitor." width="672" />
+<p class="caption">
+Figure 3.1: Effect of changing <span class="math inline">\(K_i\)</span> of reaction 2 on the flux control coefficient of all reactions. Lower <span class="math inline">\(K_i\)</span> means higher binding affinity to the inhibitor.
+</p>
+</div>
+<p>The plots show that, the flux control coefficient (<span class="math inline">\(J\)</span>) of reaction 2 increases as the binding affinity (i.e. sensitivity) to the inhibitor of the enzyme involved in this step increases (i.e. as <span class="math inline">\(K_i\)</span> decreases). <span class="math inline">\(J\)</span> of the upsteam reaction 1 also inceases slightly. For all downstream reactions, <span class="math inline">\(J\)</span> decreases.</p>
+<div id="re-analyse-the-effect-of-k_i-with-constant-flux" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Re-analyse the effect of <span class="math inline">\(K_i\)</span> with constant flux</h2>
+<p>The flux and values of <span class="math inline">\(J\)</span> when <span class="math inline">\(K_\text{i} = 10^{-18}\)</span> and when <span class="math inline">\(K_\text{i} = 10^18\)</span> are shown below:</p>
+<pre class="r"><code>ki_low = 1e-18
+flux_low = 0.476572
+j_low = c(0.203839, 0.717872,   0.0342001,  0.0340061,  0.00278022, 0.007302)
+ki_high = 1e18
+flux_high = 1.07393
+j_high = c(0.110937,    0.0822319,  0.278976,   0.319753,   0.0478304,  0.160271)</code></pre>
+<p><span class="math inline">\(V_f\)</span> of reaction 2 are optimised so that the flux when <span class="math inline">\(K_\text{i} = 10^{-18}\)</span> is 1.07393 (the same as when <span class="math inline">\(K_\text{i} = 10^{18}\)</span>)</p>
+<pre><code>Optimization Result:
+
+    Objective Function Value:   1.07393
+    Function Evaluations:   248
+    CPU Time [s]:   0.061
+    Evaluations/Second [1/s]:   4065.57
+
+    (R2).Vf: 45.0229</code></pre>
+<div class="figure"><span id="fig:copasi-q32"></span>
+<img src="../img/copasi-q32.png" alt="Adjusting Vf" width="100%" />
+<p class="caption">
+Figure 3.2: Adjusting Vf
+</p>
+</div>
+<p>I adjusted the <span class="math inline">\(V_f\)</span> of reaction 2 from 5 to 45.0229 (<a href="#fig:copasi-q32">3.2</a>), verified that the flux is 1.07393 (the same as in the state with negligible inhibition), and the values of <span class="math inline">\(J\)</span> are:</p>
+<pre class="r"><code>j_low &lt;-    c(0.144048, 0.0858949,  0.266261,   0.30518,    0.0456503,  0.152966)</code></pre>
+<p>which can be directly compared to the <span class="math inline">\(J\)</span> values in the uninhibited state:</p>
+<pre class="r"><code>tibble(
+  ki =c(rep(&quot;low (1e-18)&quot;, 6), rep(&quot;high (1e18)&quot;, 6)),
+  reaction = rep(as.character(1:6), 2),
+  j = c(j_low, j_high)
+) %&gt;% ggplot(aes(reaction, j, fill = ki)) +
+  geom_col(position = &#39;dodge&#39;)</code></pre>
+<p><img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>The plot shows that, when the flux is made constant, a lower <span class="math inline">\(K_i\)</span> (higher affinity of inhibitor binding) increases the flux control coefficent of reaction 2 and the upstream reaction 1, and decreases that of downstream reactions, which is consistent with the previous experiment. However, the amount of change is not as much as previously modelled.</p>
+<div id="repeat-with-model-212" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Repeat with Model 212</h3>
+<p>I repeat the last analysis with model 212, this time choosing reaction 1 as the one to be affected by the inhibitor.</p>
+<pre class="r"><code>ki_low = 1e-16
+j_low = c(0.982287, 0.0109131,  0.00433655, 0.00237021, 6.9396e-05, 2.40539e-05)
+flux_low = 0.091902
+ki_high = 1e16
+flux_high = 0.807846
+j_high = c(0.437942,    0.31832,    0.104533,   0.12481,    0.0105218,  0.00387277)</code></pre>
+<pre><code>Optimization Result:
+
+    Objective Function Value:   0.807846
+    Function Evaluations:   82
+    CPU Time [s]:   0.018
+    Evaluations/Second [1/s]:   4555.56
+
+    (R1).Vf: 25.7611</code></pre>
+<p>I adjusted the <span class="math inline">\(V_f\)</span> of reaction 1 from 5 to 25.7611 (<a href="#fig:copasi-q32">3.2</a>), verified that the flux is 0.807846 (the same as in the state with negligible inhibition), and the values of <span class="math inline">\(J\)</span> are:</p>
+<pre class="r"><code>j_low &lt;-    c(0.479732, 0.294652,   0.0967611,  0.11553,    0.00973947, 0.00358483)</code></pre>
+<p>comparing to the <span class="math inline">\(J\)</span> values in the uninhibited state:</p>
+<pre class="r"><code>tibble(
+  ki =c(rep(&quot;low (1e-16)&quot;, 6), rep(&quot;high (1e16)&quot;, 6)),
+  reaction = rep(as.character(1:6), 2),
+  j = c(j_low, j_high)
+) %&gt;% ggplot(aes(reaction, j, fill = ki)) +
+  geom_col(position = &#39;dodge&#39;)</code></pre>
+<p><img src="../lab/2020-11-26-metabolic-modelling_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>This time only reaction 1 has an increased <span class="math inline">\(J\)</span>, and all other downstream reactions have an lowered <span class="math inline">\(J\)</span>, which is consistent with previous observations.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/lab/metabolic-modelling.html"
+      this.page.identifier = "metabolic-modelling"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2020 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

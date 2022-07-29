@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fasta on Tianyi@Oxford</title>
+    <link>/tags/fasta.html</link>
+    <description>Recent content in fasta on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/fasta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FASTA Parser Implemented in Rust with Nom</title>
+      <link>/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/fasta-parser-implemented-in-rust-with-nom.html</guid>
+      <description>1 Parsing a single FASTA Record 1.1 Representing the Record in Rust 1.2 Parsing the Title Nom makes it possible to
+1 Parsing a single FASTA Record An example of FASTA record is shown below.
+&amp;gt;gi|2765658|emb|Z78533.1|CIZ78533 C.irapeanum 5.8S rRNA gene and ITS1 and ITS2 DNA CGTAACAAGGTTTCCGTAGGTGAACCTGCGGAAGGATCATTGATGAGACCGTGGAATAAACGATCGAGTG AATCCGGAGGACCGGTGTACTCAGCTCACCGGGGGCATTGCTCCCGTGGTGACCCTGATTTGTTGTTGGG CCGCCTCGGGAGCGTCCATGGCGGGTT &amp;gt;(another FASTA record) Each record starts with a &amp;gt; character, which is followed by the title on the same line. The title can be further divided into an ID and description, which is separated by a space character.</description>
+    </item>
+    
+    <item>
+      <title>Sequence Alignment</title>
+      <link>/bioinformatics/sequence-alignment.html</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/sequence-alignment.html</guid>
+      <description>Sequence Alignment in R Packages library(Biostrings) library(seqinr) DNA sequence myScoringMat &amp;lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE) dnaSeq1 &amp;lt;- &amp;quot;GAATTCGGCTA&amp;quot; # can be a plain string dnaSeq2 &amp;lt;- DNAString(&amp;quot;GATTACCTA&amp;quot;) # or an XString gapOpen &amp;lt;- 2 gapExtend &amp;lt;- 1 dnaAln &amp;lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &amp;#39;global&amp;#39;, scoreOnly=FALSE) dnaAln Amino acid sequence Here is a list of built-in amino acid substitution matrices, which can be shown with data(package=&amp;quot;Biostrings&amp;quot;):</description>
+    </item>
+    
+  </channel>
+</rss>

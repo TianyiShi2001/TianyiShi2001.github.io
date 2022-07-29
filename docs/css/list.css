@@ -1,0 +1,42 @@
+@media (min-width: 1024px) {
+  .list #about {
+    display: block;
+  }
+  .list .nav {
+    max-width: none;
+  }
+  .list .content {
+    width: 50%;
+    margin: 40px 10px 10px;
+  }
+  .footer {
+    width: 50%;
+    padding: 25px 40px 20px 0px;
+    text-align: center;
+  }
+  .nav-title {
+    text-align: left;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -5px;
+    font-size: 1.8em;
+    color: #555;
+    font-family: Arial;
+    font-weight: 100;
+    display: none;
+  }
+  .archive-title {
+    font-size: 38px;
+    margin-top: 60px;
+    text-align: left;
+  }
+  .archive-subtitle {
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: right;
+    color: #555555;
+  }
+  .archive-item {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Coordination of PS I and PS II - Tianyi@Oxford</title>
+<meta property="og:title" content="Coordination of PS I and PS II - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2193 words</span>
+    
+
+
+    
+    <h1 class="article-title">Coordination of PS I and PS II</h1>
+    <span class="article-date">2020-05-27</span>
+
+    <p class="link-to-pdf"><a href="2020-05-27-coordination-of-ps-i-and-ps-ii.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+
+<div id="TOC">
+<ul>
+<li><a href="#background"><span class="toc-section-number">1</span> Background</a></li>
+<li><a href="#why-is-coordination-between-photosystems-i-and-ii-needed"><span class="toc-section-number">2</span> Why is Coordination between Photosystems I and II Needed</a></li>
+<li><a href="#achieve"><span class="toc-section-number">3</span> How is Coordination between PS-I and PS-II Achieved</a><ul>
+<li><a href="#the-role-of-the-plastoquinone-pool"><span class="toc-section-number">3.1</span> The Role of the Plastoquinone Pool</a></li>
+<li><a href="#redistribution"><span class="toc-section-number">3.2</span> Reversible Redistribution of LHC-II</a></li>
+<li><a href="#transcriptional"><span class="toc-section-number">3.3</span> Transcriptional Regulation</a><ul>
+<li><a href="#how-does-sig1-phosphorylation-confer-phhotosystem-promoter-specificity"><span class="toc-section-number">3.3.1</span> How does SIG1 phosphorylation confer phhotosystem promoter specificity?</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conclusion"><span class="toc-section-number">4</span> Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<p><strong>Why do plants co-ordinate the relative activities of Photosystems I and II and how is this co-ordination achieved?</strong></p>
+<div id="background" class="section level1">
+<h1><span class="header-section-number">1</span> Background</h1>
+<p>Photosystems I and II are photochemical complexes that harvest light energy to drive endergonic redox reactions. Their operation in series (PS-II then PS-II), known as the Z scheme, results in generation of oxygen from water via photolysis, ATP production via electron transport chain (ETC) and production of NADPH (reduction of NADP<sup>+</sup>), which is essential for providing reducing power in anabolic reactions such as photosynthesis, by ferredoxin-NADP<sup>+</sup> reductase. PS-I can also operate alone, resulting in cyclic photophosphorylation, generating ATP only.</p>
+<p>Each photosystem exists on the thylakiod membrane (PS-II mainly in grana lamellae; PS-I mainly in stroma lamellae) as a multisubunit pigment-protein complex (or a dimer thereof, in the case of PS-II) comprising a reaction centre (RC) core containing a pair of chlorophyll <em>a</em> molecules, which is surrounded by other accessory proteins as well as variable number of antenna complexes ((trimers of) LHC-II/LHC-I; also known as chlorophyll <em>a/b</em> light-harvesting complex ) containing accessory pigments (e.g. chlorophylls and carotenoids) that pass light energy to the reaction centre via resonance energy transfer. The reaction centre in PS-II preferentially absorbs red light at wavelength 680 nm and is thus referred to as P680; the reaction centre in PS-I, known as P700, preferentially absorbs far-red light.</p>
+<p>The activities of two types of photosystems is determined both by the external factors, i.e. intensity and wavelength of light, as well as the the intrinsic factors which can be regulated by the plant cells, namely the number of PS-II/PS-I cores and the antenna complexes (and hence the amount of accessory pigments) associated with them. Such regulation can affect the absolute activities of PS-II and PS-I as well as their activities relative to each other.</p>
+</div>
+<div id="why-is-coordination-between-photosystems-i-and-ii-needed" class="section level1">
+<h1><span class="header-section-number">2</span> Why is Coordination between Photosystems I and II Needed</h1>
+<p>Because the PS-I and PS-II complexes are not physically coupled (so their abundance can differ) and their light absorption properties differ (PS-I prefers longer wavelength), their activities are not directly related and are often different. The activities of the two photosystems relative to each other can be regulated using the mechanisms described in Section <a href="#achieve">3</a>, but before that, the benefits of this regulation are considered here:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Stoichiometry adjustment.</strong> PS-II and PS-I activities should ideally be equal, in order to maximise the efficiency of light utilisation for production of NADPH in vectorised electron flow, which would otherwise be limited by the slower photosystem. There is a need for this kind of adjustment when there is a change in light quality. Upon illumination by far-red light that preferentially activates PS-I (PS-I light), PS-I activity is greater than PS-II, so PS-II activity shhould be improved relative to PS-I. Conversely, illumination by PS-II light leads to hyperactive PS-II, and its activity should be reduced relative to PS-II. These two states are referred to state 1 and 2, respectively, and state transition is the process by which the plant adjusts relative activity of PS-II and PS-I in response to a change in state.</li>
+<li><strong>Protection against photoinhibition.</strong> If PS-II activity exceeds PS-I activity, the rate of production of reactive oxygen species (ROS) is increased. However, recent studies on stn7 mutants argue against this role. Photodamage of PS-II is unavoidable even under nomal conditions, and it is repaired efficiently in healthy plants.</li>
+<li><strong>Meeting increased requirement for ATP.</strong> If PS-I activity exceeds PS-II activity, the excess activity in PS-I results in cyclic electron flow (CEF), generating additional ATP. Theoretically, this may be exploited by the plant to meet increased demand for ATP. However, recent work revealed that CEF is controlled by the redox power and is independent of state transition: state 2 is neither sufficient nor required to promote CEF <span class="citation">(Takahashi et al. 2013)</span>.</li>
+</ol>
+<p>The discussion below, therefore, focuses on the role of photosystem coordination in stoichiometry adjustment.</p>
+</div>
+<div id="achieve" class="section level1">
+<h1><span class="header-section-number">3</span> How is Coordination between PS-I and PS-II Achieved</h1>
+<div id="the-role-of-the-plastoquinone-pool" class="section level2">
+<h2><span class="header-section-number">3.1</span> The Role of the Plastoquinone Pool</h2>
+<p>The oxidative status of the plastoquinone (PQ) pool reflects the relative activity of PS-II and PS-I, and is involved in the signalling pathway of both short-term and long-term coordination (described in Section <a href="#redistribution">3.2</a> and <a href="#transcriptional">3.3</a>, respectively).</p>
+<p>Upon illumination by PS-I light (in state 1), PS-I activity is greater than PS-II, leading to oxidation of the plastoquinone pool (most plastoquinone molecules are in the oxidised form, PQ). Conversely, the plastoquinone pool becomes reduced upon preferential excitation of PS-II (Figure <a href="#fig:plastoquinone">3.1</a>).</p>
+<div class="figure"><span id="fig:plastoquinone"></span>
+<img src="../img/ps-i-light-ps-2-light-states.png" alt="Preferential activation of either PS-I or PS-II causes a shift in the oxidation state of the plastoquinone (PQ) pool." width="100%" />
+<p class="caption">
+Figure 3.1: Preferential activation of either PS-I or PS-II causes a shift in the oxidation state of the plastoquinone (PQ) pool.
+</p>
+</div>
+</div>
+<div id="redistribution" class="section level2">
+<h2><span class="header-section-number">3.2</span> Reversible Redistribution of LHC-II</h2>
+<p>LHC-II plays an important role in the coordination between PS-I and PS-II. The structure of one LHC-II protein has been determined by a combination of electron microscopy and X-ray crystallography (reviewed by <span class="citation">Barros and Kühlbrandt (2009)</span>). It contains three membrane-spaning <span class="math inline">\(\alpha\)</span>-helices, and binds about 15 chlorophyll <em>a</em> and <em>b</em> molecules plus a few carotenoids. LHC-II complexes of different subtypes (of which Lhcb1, 2 and 3 are the most common) spontaneously assemble into trimers (can be heterogeneous), which then associate with PS-II and PS-I to increase the efficiency of their corresponding photochemical reaction.</p>
+<div class="figure"><span id="fig:lhcii-conf-change"></span>
+<img src="../img/lhcii-conf-change.png" alt="Phosphorylation by STN7 causes conformational changes in LHC-II. Top: stroma; bottom: thylakoid lumen." width="100%" />
+<p class="caption">
+Figure 3.2: Phosphorylation by STN7 causes conformational changes in LHC-II. Top: stroma; bottom: thylakoid lumen.
+</p>
+</div>
+<p>The LHC-II subtypes Lhcb1 and Lhcb2 (but not Lhcb3) can be phosphorylated by a specific protein kinase called STN7 (a.k.a. Stt7) at a threonine residue near the N-terminus <span class="citation">(Mullet 1983)</span>. This happens during transition to state 2, when the STN7 kinase, which is associated with a specific region of the Rieske protein of the cytochrome <em>b<sub>6</sub>f</em> complex (Cyt<em>b<sub>6</sub>f</em>), is activated upon binding of PQH<sub>2</sub> to the Q<sub>o</sub> site of Cyt<em>b<sub>6</sub>f</em>. Phosphorylation on LHC-II causes a conformational change (Figure <a href="#fig:lhcii-conf-change">3.2</a>), reduces its affinity to PS-II and increases its affinity to PS-I. The increase in affinity to PS-I is due to not only the conformational change, but also the tight association between the phosphate group and a specific arginine residue in PsaL, a protein that facilitates docking of LHC-II to PS-I core complex. As a result, LHC-II migrates from PS-II towards PS-I, thus enhancing efficiency of PS-I relative to PS-II (Figure <a href="#fig:stn7-tap38-pq-lhcii">3.3</a>). This is supported by the findings that plants without either STN7 <span class="citation">(Bellafiore et al. 2005)</span> or Lhcb1+Lhcb2 <span class="citation">(Andersson et al. 2003)</span> do not undergo state transitions. It was later shown by <span class="citation">Longoni et al. (2015)</span> that only Lhcb2 phosphorylation is relevant to state transition (Lhcb1 phosphorylation causes its exclusion from the complex). The N-terminal region of phosphorylated Lhcb2 interacts with PsaL, PsaH and PsaO proteins, and PsaO bridges PsaA (PSI reaction centre) and Lhcb2 through contacts within the membrane and on the stromal and luminal surface. PsaO is associated with two chlorophyll molecules which facilitates resonance energy transfer from LHC-II to PsaA.</p>
+<p>The phosphorylation can be reversed by a specific kinase called TAP38 (a.k.a PPH1). When PS-I is over-excited relative to PS-II, STN7 is inactive, and TAP38 dephosphorylates LHC-II and causes them to return to PS-II (Figure <a href="#fig:stn7-tap38-pq-lhcii">3.3</a>).</p>
+<div class="figure"><span id="fig:stn7-tap38-pq-lhcii"></span>
+<img src="../img/stn7-tap38-pq-lhcii.png" alt="Oxidative status of plastoquinone determines the phosphorylation state of LHC-II, which in turn regulates relative activity of PS-I and PS-II." width="100%" />
+<p class="caption">
+Figure 3.3: Oxidative status of plastoquinone determines the phosphorylation state of LHC-II, which in turn regulates relative activity of PS-I and PS-II.
+</p>
+</div>
+<!-- under High light conditions by response to FdH~2~) -->
+</div>
+<div id="transcriptional" class="section level2">
+<h2><span class="header-section-number">3.3</span> Transcriptional Regulation</h2>
+<p>Regulation of relative activity of PS-I and PS-II can also be achieved by controlling the amount of transcription of PS-I genes (e.g. <em>psaA</em>) and PS-II genes (<em>psbA</em>).</p>
+<p><span class="citation">Puthiyaveetil et al. (2008)</span> described a sensor kinase called chloroplast sensor kinase (CSK) that couples oxidation state of PQ to transcriptional control of psbA. As shown in Figure <a href="#fig:csk">3.4</a>, PS-I light causes the PQ pool to be oxidised, and then CSK, which is activated by PQ (the PQ analogue, DBMIB (2,5-dibromo-3-methyl-5-isopropyl-<em>p</em>-benzoquinone) binds to CSK similarly), autophosphorylates itself, and then phosphorylates sigma factor 1 (SIG1) subunit of PEP (RNA polymerase). This results in specific repression of PS-I genes (<em>psaA</em>), thus decreasing the stoichiometry of PS-I to PS-I. Conversely, CSK is inactive with a reduced PQ pool under PS-II light, and SIG1 phosphatase removes the repression of PS-I gene transcription, thus increasing the stoichiometry of PS-I to PS-II.</p>
+<div class="figure"><span id="fig:csk"></span>
+<img src="../img/psi-ii-csk-tx.png" alt="Transcriptional control of PS-I genes mediated by PQ, CSK, SIG1 and PEP." width="100%" />
+<p class="caption">
+Figure 3.4: Transcriptional control of PS-I genes mediated by PQ, CSK, SIG1 and PEP.
+</p>
+</div>
+<div id="how-does-sig1-phosphorylation-confer-phhotosystem-promoter-specificity" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> How does SIG1 phosphorylation confer phhotosystem promoter specificity?</h3>
+<p>Bacterial sigma factors contain the region 1.1 at the extreme N-terminus. Region 1.1 is a poorly-conserved, acidic region, which is associated with the positively charged catalytic cavity of RNA polymerase in the closed (non-transcribing) conformation. To begin transcription, (negatively-charged) DNA must replace region 1.1, and the efficiency of this replacement depends on how well the -10 and -35 elements of the promoter match the consensus sequence.</p>
+<p>Chloroplast SIG1 also has an N-terminal un-conserved region (UCR), but it contains both acidic and basic patches. It is proposed that, in PS-II light, the basic patch and the acidic patch of the un-phosphorylated SIG1 form a complex through electrostatic interactions, thus preventing the association of the acidic patch with the basic catalytic cavity.
+In PS-I light, phosphorylation with the basic patch disfavours its complex formation with the acidic patches, thus allowing the acidic patch to associate with the catalytic cavity, where it acts as the gatekeeper and discriminates between strong and weak promoters.</p>
+<p>By comparing the -35 and -10 regions of the promoters of <em>psaA</em> and <em>psbA</em> to the consensus sequence, it can be deduced that <em>psbA</em> (PS-II gene) has a stronger promoter and is therefore preferentially transcribed over PS-I under PS-I light, when SIG1 is phosphorylated and the discrimination mechanism is functioning.</p>
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1><span class="header-section-number">4</span> Conclusion</h1>
+<p>Plants need to coordinate the efficiency of PS-II and PS-I in order to maximise the utilisation of light energy in linear electron flow. Upon change in light quality, activities of PS-II and PS-I are transiently unsyncronised, leading to change in oxidative state of PQ (i.e. accumulation of PQ or PQH<sub>2</sub>). This triggers two mechanisms used to regain the balance. First, PQH<sub>2</sub> binding to Cyt<em>b<sub>6</sub>f</em> activates STN7, which in turn causes phosphorylation of LHC-II and its migration from PS-II to PS-I. Second, PQ activates CSK, which phosphorylates SIG1, causing PS-II genes to be preferentially transcribed.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Andersson-2003">
+<p>Andersson, Jenny, Mark Wentworth, Robin G Walters, Caroline A Howard, Alexander V Ruban, Peter Horton, and Stefan Jansson. 2003. “Absence of the Lhcb1 and Lhcb2 Proteins of the Light-Harvesting Complex of Photosystem Ii - Effects on Photosynthesis, Grana Stacking and Fitness.” <em>Plant J</em> 35 (3). UmeåPlant Science Centre, Department of Plant Physiology, UmeåUniversity, S-901 87 Umeå, Sweden. jenny.andersson@plantphys.umu.se: 350–61. <a href="https://doi.org/10.1046/j.1365-313x.2003.01811.x">https://doi.org/10.1046/j.1365-313x.2003.01811.x</a>.</p>
+</div>
+<div id="ref-Barros-2009">
+<p>Barros, Tiago, and Werner Kühlbrandt. 2009. “Crystallisation, Structure and Function of Plant Light-Harvesting Complex Ii.” <em>Biochimica et Biophysica Acta (BBA) - Bioenergetics</em> 1787 (6): 753–72. <a href="https://doi.org/https://doi.org/10.1016/j.bbabio.2009.03.012">https://doi.org/https://doi.org/10.1016/j.bbabio.2009.03.012</a>.</p>
+</div>
+<div id="ref-Bellafiore-2005">
+<p>Bellafiore, Stéphane, Frédy Barneche, Gilles Peltier, and Jean-David Rochaix. 2005. “State Transitions and Light Adaptation Require Chloroplast Thylakoid Protein Kinase Stn7.” <em>Nature</em> 433 (7028). Department of Molecular Biology, University of Geneva, 30, Quai Ernest Ansermet, 1211 Geneva, Switzerland.: 892–95. <a href="https://doi.org/10.1038/nature03286">https://doi.org/10.1038/nature03286</a>.</p>
+</div>
+<div id="ref-Buchanan-2015">
+<p>Buchanan, Bob B., Wilhelm Gruissem, and Russel L. Jones. 2015. <em>Biochemistry &amp; Molecular Biology of Plants</em>. John Wiley &amp; Sons.</p>
+</div>
+<div id="ref-Holloszy-1996">
+<p>Holloszy, John O., and Wendy M. Kohrt. 1996. “Regulation of Carbohydrate and Fat Metabolism During and After Exercise.” <em>Annual Review of Nutrition</em> 16 (1): 121–38. <a href="https://doi.org/10.1146/annurev.nu.16.070196.001005">https://doi.org/10.1146/annurev.nu.16.070196.001005</a>.</p>
+</div>
+<div id="ref-Horowitz-2000">
+<p>Horowitz, Jeffrey F, and Samuel Klein. 2000. “Lipid metabolism during endurance exercise.” <em>The American Journal of Clinical Nutrition</em> 72 (2): 558S–563S. <a href="https://doi.org/10.1093/ajcn/72.2.558S">https://doi.org/10.1093/ajcn/72.2.558S</a>.</p>
+</div>
+<div id="ref-Jensen-2012">
+<p>Jensen, Thomas E., and Erik A. Richter. 2012. “Regulation of Glucose and Glycogen Metabolism During and After Exercise.” <em>The Journal of Physiology</em> 590 (5): 1069–76. <a href="https://doi.org/10.1113/jphysiol.2011.224972">https://doi.org/10.1113/jphysiol.2011.224972</a>.</p>
+</div>
+<div id="ref-Longoni-2015">
+<p>Longoni, Paolo, Damien Douchi, Federica Cariti, Geoffrey Fucile, and Michel Goldschmidt-Clermont. 2015. “Phosphorylation of the Light-Harvesting Complex Ii Isoform Lhcb2 Is Central to State Transitions.” <em>Plant Physiol</em> 169 (4): 2874–83. <a href="https://doi.org/10.1104/pp.15.01498">https://doi.org/10.1104/pp.15.01498</a>.</p>
+</div>
+<div id="ref-Maarbjerg-2011">
+<p>Maarbjerg, S. J., L. Sylow, and E. A. Richter. 2011. “Current Understanding of Increased Insulin Sensitivity After Exercise – Emerging Candidates.” <em>Acta Physiologica</em> 202 (3): 323–35. <a href="https://doi.org/10.1111/j.1748-1716.2011.02267.x">https://doi.org/10.1111/j.1748-1716.2011.02267.x</a>.</p>
+</div>
+<div id="ref-Mittendorfer-2003">
+<p>Mittendorfer, Bettina, and Samuel Klein. 2003. “Physiological Factors That Regulate the Use of Endogenous Fat and Carbohydrate Fuels During Endurance Exercise.” <em>Nutrition Research Reviews</em> 16 (1). Cambridge University Press: 97–108. <a href="https://doi.org/10.1079/NRR200357">https://doi.org/10.1079/NRR200357</a>.</p>
+</div>
+<div id="ref-Mullet-1983">
+<p>Mullet, J E. 1983. “The Amino Acid Sequence of the Polypeptide Segment Which Regulates Membrane Adhesion (Grana Stacking) in Chloroplasts.” <em>J Biol Chem</em> 258 (16): 9941–8.</p>
+</div>
+<div id="ref-Puthiyaveetil-2008">
+<p>Puthiyaveetil, Sujith, T Anthony Kavanagh, Peter Cain, James A Sullivan, Christine A Newell, John C Gray, Colin Robinson, Mark van der Giezen, Matthew B Rogers, and John F Allen. 2008. “The Ancestral Symbiont Sensor Kinase Csk Links Photosynthesis with Gene Expression in Chloroplasts.” <em>Proc Natl Acad Sci U S A</em> 105 (29): 10061–6. <a href="https://doi.org/10.1073/pnas.0803928105">https://doi.org/10.1073/pnas.0803928105</a>.</p>
+</div>
+<div id="ref-Richter-2009">
+<p>Richter, Erik A., and Neil B. Ruderman. 2009. “AMPK and the biochemistry of exercise: implications for human health and disease.” <em>Biochemical Journal</em> 418 (2): 261–75. <a href="https://doi.org/10.1042/BJ20082055">https://doi.org/10.1042/BJ20082055</a>.</p>
+</div>
+<div id="ref-Taiz-2010">
+<p>Taiz, Lincoln, and Eduardo Zeiger. 2010. <em>Plant Physiology</em>. Sinauer Associates.</p>
+</div>
+<div id="ref-Takahashi-2013">
+<p>Takahashi, Hiroko, Sophie Clowez, Francis-André Wollman, Olivier Vallon, and Fabrice Rappaport. 2013. “Cyclic Electron Flow Is Redox-Controlled but Independent of State Transition.” <em>Nat Commun</em> 4. Institut de Biologie Physico-Chimique, UMR 7141 CNRS-UPMC, 13 rue P et M Curie, 75005 Paris, France.: 1954. <a href="https://doi.org/10.1038/ncomms2954">https://doi.org/10.1038/ncomms2954</a>.</p>
+</div>
+<div id="ref-Thompson-2012">
+<p>Thompson, Dylan, Fredrik Karpe, Max Lafontan, and Keith Frayn. 2012. “Physical Activity and Exercise in the Regulation of Human Adipose Tissue Physiology.” <em>Physiological Reviews</em> 92 (1): 157–91. <a href="https://doi.org/10.1152/physrev.00012.2011">https://doi.org/10.1152/physrev.00012.2011</a>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/tutorial/coordination-of-ps-i-and-ps-ii.html"
+      this.page.identifier = "coordination-of-ps-i-and-ps-ii"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2020 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

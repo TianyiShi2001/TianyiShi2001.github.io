@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MCB on Tianyi@Oxford</title>
+    <link>/tags/mcb.html</link>
+    <description>Recent content in MCB on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/mcb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCB Toolbox</title>
+      <link>/tutorial/mcb-toolbox.html</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/mcb-toolbox.html</guid>
+      <description>For the second tutorial, I want you to try some proper molecular biology using online tools, just as we do every day in the lab. Try it out on your own first, though you may wish to discuss any issues you may be having with each other. Please bring files/printouts and if you have one, your laptop to the tutorial. You will find NCBI BLAST useful and various links within www.</description>
+    </item>
+    
+  </channel>
+</rss>

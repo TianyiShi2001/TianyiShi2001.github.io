@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Gene Control Practical - Tianyi@Oxford</title>
+<meta property="og:title" content="Gene Control Practical - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2018 words</span>
+    
+
+
+    
+    <h1 class="article-title">Gene Control Practical</h1>
+    <span class="article-date">2020-11-05</span>
+
+    <p class="link-to-pdf"><a href="2020-11-05-gene-control-practical.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+<script src="../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="../rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#determine-the-time-course-of-beta-galactosidase-induction"><span class="toc-section-number">1</span> Determine the time course of <span class="math inline">\(\beta\)</span>-galactosidase induction</a>
+<ul>
+<li><a href="#protocal"><span class="toc-section-number">1.1</span> Protocal</a></li>
+<li><a href="#results"><span class="toc-section-number">1.2</span> Results</a></li>
+</ul></li>
+<li><a href="#identify-the-wt-strain"><span class="toc-section-number">2</span> Identify the WT Strain</a>
+<ul>
+<li><a href="#protocol"><span class="toc-section-number">2.1</span> Protocol</a></li>
+</ul></li>
+<li><a href="#devise-an-experimental-protocol-to-show-the-role-played-by-camp-in-catabolite-repression."><span class="toc-section-number">3</span> Devise an experimental protocol to show the role played by cAMP in catabolite repression.</a>
+<ul>
+<li><a href="#results-part-2-and-3"><span class="toc-section-number">3.1</span> Results (part 2 and 3)</a></li>
+</ul></li>
+<li><a href="#devise-experiments-to-test-the-following-model."><span class="toc-section-number">4</span> Devise experiments to test the following model.</a>
+<ul>
+<li><a href="#protocol-1"><span class="toc-section-number">4.1</span> Protocol</a></li>
+<li><a href="#results-1"><span class="toc-section-number">4.2</span> Results</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="determine-the-time-course-of-beta-galactosidase-induction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Determine the time course of <span class="math inline">\(\beta\)</span>-galactosidase induction</h1>
+<div id="protocal" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Protocal</h2>
+<p>Trial experiment:</p>
+<ul>
+<li>Take OD<sub>600</sub> reading in spectrophotometer 1) to verify that the absorbance is around 0.6 (i.e. the cultures are in exponential growth) 2) to estimate the density of <em>E. coli.</em> in solution</li>
+<li>Add 9.940 ml (9.9 ml + <span class="math inline">\((20 \times 2)\)</span> <span class="math inline">\(\mu\)</span>l) of stock E. coli solution into each of two flasks labelled <code>+IPTG</code> and <code>-IPTG</code> (control), respectively</li>
+<li>at 1 min intervals take 20 <span class="math inline">\(\mu\)</span>l sample and add to a microtube containing 80 <span class="math inline">\(\mu\)</span>l permeabilisation reagent (200 mM Na2HPO4, 20 mM KCl, 2 mM MgSO4, 0.8 mg/mL hexadecyltrimethylammonium bromide (CTAB), 0.4 mg/mL sodium deoxycholate and chloramphenicol. Whirlimix for 5 seconds. (add permeabilisation reagent as soon as a sample is taken out, which contains antibiotics to stop the bacteria from producing more galactosidase (otherwise the bacteria taken out will just continue to produce galactosidase at the same rate); do not add ONPG until all samples are collected, so assays start at the same time)</li>
+<li>collect 2 samples, at -2 min and 0 min (for both <code>+IPTG</code> and <code>-IPTG</code>) which represent baseline activity and then:
+<ul>
+<li>To the remaining 9.9 ml of <em>E. coli.</em> in <code>+IPTG</code> flask, add 0.1 ml of IPTG (stock solution provided at 100 mM) so that the final concentration is 1 mM. This will induce the lac operon by acting as an allolactose mimic. Mix.</li>
+<li>To the remaining 9.9 ml of <em>E. coli.</em> in <code>-IPTG</code> flask, add 0.1 ml of salt solution</li>
+</ul></li>
+<li>Collect 10 additional samples (for each of <code>+IPTG</code> and <code>-IPTG</code>), and setup a blank: 20 <span class="math inline">\(\mu\)</span>l of salt solution plus 80 <span class="math inline">\(\mu\)</span>l permeabilisation reagent. (i.e. measuring 40 samples against one blank).</li>
+<li>Add 75 <span class="math inline">\(\mu\)</span>l of ONPG to 75 <span class="math inline">\(\mu\)</span>l of each sample and the blank. Incubate at 37<sup>o</sup>C and start the timer.</li>
+<li>Monitor the reaction until a convenient intensity of colour has developed. Take samples out and note the time of incubation.</li>
+<li>Read absorption at 415 nm against the blank. The readings should not exceed 1.2 to ensure linearity, so it’s important to stop the reaction before the colour gets too dark (in the previous step).
+<ul>
+<li>If any of the readings gets beyond 1.2, incubate for less time in the next experiment</li>
+</ul></li>
+<li>Plot a graph of A<sub>415</sub> against time. Assess the graph:
+<ul>
+<li>Are there any regions of uncertainty? If yes, take more samples in this region in the next experiemnt.</li>
+<li>Has the induction reached completion? If not, take samples in a longer time range (2 hours) in the next experiment.</li>
+</ul></li>
+</ul>
+<p>Optimised experiment:</p>
+<p>Perform the same procedure described above with better knowledge on the time of incubation and time range and intervals to take samples.</p>
+</div>
+<div id="results" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Results</h2>
+<pre class="r"><code>control &lt;- c(.060, .076, .077, .079, .080, .082,
+             .086, .082, .084, .085, .085, .083)
+iptg    &lt;- c(.077, .082, .079, .098, .103, .136,
+             .171, .220, .280, .297, .310, .336)
+iptg1   &lt;- c(.079, .079, .078, .105, .112, .148,
+             .202, .239, .274, .335, .362, .440)
+iptg2   &lt;- c(.081, .082, .082, .110, .168, .219,
+             .324, .414, .538, .651, .704, .786)
+tibble(
+  time = rep(seq(-2, 20, 2), 4),
+  group = rep(c(&quot;-IPTG&quot;, &quot;+IPTG 1&quot;, &quot;+IPTG 2&quot;, &quot;+IPTG 3&quot;), each = 12),
+  absorbance = c(control, iptg, iptg1, iptg2)
+) %&gt;% ggplot(aes(time, absorbance)) +
+  geom_line(aes(color = group)) +
+  ylab(&quot;absorbance (A415)&quot;)+
+  geom_vline(xintercept = 0)+
+  geom_text(data = tibble(x = 1.4, y = 0.4, label = &#39;+IPTG&#39;),
+            aes(x, y, label = label))+
+  scale_x_continuous(breaks = seq(-2, 20, 2))</code></pre>
+<p><img src="../lab/2020-11-05-gene-control-practical_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><strong>Conclusion.</strong> It takes about 4 minutes for the effect of IPTG on increasing galactosidase activity to become evident.</p>
+</div>
+</div>
+<div id="identify-the-wt-strain" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Identify the WT Strain</h1>
+<p><em>You are provided with two strains of coli labelled A and B, one of which (‘wild type’) is subject to catabolite repression, and one of which is not. Devise an experimental protocol to determine which strain is the wild type strain.</em></p>
+<p>The E.coli strains are already grown on minimal medium containing 1% glycerol as a ‘poor’ carbon source (which should result in a <em>high</em> intracellualr cAMP concentration). Thus, to test for sensitivity of catabolite repression, we add a ‘good’ carbon source — glucose (which should increase cAMP level and repress galactosidase synthesis).</p>
+<div id="protocol" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Protocol</h2>
+<ul>
+<li>Measure OD<sub>600</sub> of both strains.</li>
+<li>For each of strains A and B, set up two flasks, <code>+glucose</code> and <code>-glucose</code> (i.e. 4 flasks in total); then:
+<ul>
+<li>Add 9.440 ml of <em>E. coli</em> to all flasks</li>
+<li>collect 2 samples, at -2 min and 0 min which represent baseline activity and then:</li>
+<li>add 0.5 ml of glucose solution or glycerol solution to <code>+glucose</code> flasks and <code>-glucose</code> flasks, respectively</li>
+<li>collect 3 samples at 2, 4, 6 min and then:</li>
+<li>Add 0.1 ml IPTG (100 mM) to all flasks and mix (start induction)</li>
+<li>From 8 to 18 min, take 6 samples at 2 min intervals</li>
+<li>Add 0.1 ml cAMP to all flasks</li>
+<li>Collect samples and set up a blank: 20 <span class="math inline">\(\mu\)</span>l of salt solution plus 80 <span class="math inline">\(\mu\)</span>l permeabilisation reagent. (the blank is used by all samples taken from 4 flasks)</li>
+<li>Add 75 <span class="math inline">\(\mu\)</span>l of ONPG to 75 <span class="math inline">\(\mu\)</span>l of each sample and the blank. Incubate at 37<sup>o</sup>C.</li>
+<li>Incubate for appropriate amount of time (as determined in part 1)</li>
+<li>Read absorption at 415 nm against the blank.</li>
+<li>Plot a graph of A<sub>415</sub> against time.</li>
+</ul></li>
+<li>Compare the plots. The strain unresponsive to catabolite inhibition should give similar plots in both <code>+glucose</code> and <code>-glucose</code> conditions. The WT strain should show lower A<sub>415</sub> (galactosidase activity) when glucose is added, since its galactosidase synthesis is inhibited by the ‘good’ carbon source, pyruvate.</li>
+</ul>
+<p>The experiment in this part also answers the question in the next part, and results are shown there.</p>
+</div>
+</div>
+<div id="devise-an-experimental-protocol-to-show-the-role-played-by-camp-in-catabolite-repression." class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Devise an experimental protocol to show the role played by cAMP in catabolite repression.</h1>
+<!-- cAMP production is promoted by a lack of metabolites (or unavailability of 'good' carbon sources), and cAMP in turn allows for galactosidase production via CAP. Here, -->
+<p>Since our bacteria are grown on minimal medium containing 1% glycerol as a ‘poor’ carbon source (which should result in a <em>high</em> intracellualr cAMP concentration), we need to first use glucose to inhibit galactosidase production (as described in part 2). Then, we add cAMP. If the added cAMP enhances the production of galactosidase, we can prove that it’s cAMP whose level is decreased during catabolite repression (by addition of a ‘good’ carbon source, pyruvate).</p>
+<p>The experimental procedure is described in the previous section.</p>
+<div id="results-part-2-and-3" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Results (part 2 and 3)</h2>
+<p><strong>Optical density</strong>. OD<sub>600</sub> of strain A and B solutions are 0.309 and 0.505, respectively. Both are within the range in which the bacteria are in exponential growth phase. However, since their densitie differ, when interpreting the result we should not directly compare A to B. Instead, we should assess the effects of glucose and cAMP on each of the strains independently.</p>
+<p><strong>Galactosidase activity assay results.</strong> The raw data and the plot are shown below.</p>
+<pre class="r"><code># strain A -glucose
+Ag = c(.089, .049, .089, .048, .070, .072, .079, .111, 
+       .156, .198, .254,  NA, .388, .424, .419, .520)
+# strain A +glucose
+AG = c(.071, .071, .082, .049, .075, .070,   NA, .102,
+       .130, .169, .207, .221, .251, .261, .342, .412)
+# strain B -glucose
+Bg = c(.087, .086, .097, .073, .091, .089, .099, .156,
+       .188, .273, .356, .482, .593, .699, .795, .943)
+# strain B +glucose
+BG = c(.084, .080, .084, .071, .087, .088, .096, .109,
+       .127, .150, .184, .216, .254, .322, .463, .543)
+label = tibble (
+  x = c(2, 6, 18),
+  y = c(0.75, 0.7, 0.75),
+  label = c(&quot;+glucose&quot;, &quot;+IPTG&quot;, &quot;+cAMP&quot;)
+)
+tibble(
+  strain = rep(c(&quot;A&quot;, &quot;B&quot;), each = 32),
+  glucose = rep(c(&quot;-&quot;, &quot;+&quot;, &quot;-&quot;, &quot;+&quot;), each = 16),
+  time = rep(seq(-2, 28, 2), 4),
+  absorbance = c(Ag, AG, Bg, BG)
+) %&gt;%
+  ggplot(aes(time, absorbance)) +
+  geom_point(aes(shape = glucose))+
+  geom_smooth(aes(linetype = glucose), method = &#39;loess&#39;, formula = &#39;y ~ x&#39;)+
+  # label addition of glucose, IPTG and cAMP
+  geom_vline(xintercept = c(0, 6, 18))+
+  geom_text(data = label, aes(x, y, label = label))+
+  # plot strain A and strain B side by side
+  facet_grid(~strain)+
+  # tweak axes and add title &amp; notes
+  scale_x_continuous(breaks = c(0, seq(-2, 30, 4)))+
+  labs(
+    title = &quot;Effect of glucose and cAMP on galactosidase activity of strains A and B&quot;,
+    caption = &quot;N.B. anomalous data values were replaced with NA and are invisible from the plot&quot;
+  )</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="../lab/2020-11-05-gene-control-practical_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><strong>Conclusion.</strong> Strain B is WT. In strain B, galactosidase activity was significantly lower in <code>+glucose</code> than in <code>-glucose</code> from <code>t = 6 min</code> to <code>t = 18 min</code> (after IPTG induction, before addition of cAMP). In strain A the difference is less pronounced. Addition of cAMP at <code>t = 18 min</code> markedly increased galactosidase activity in <code>strain B + glucose</code> setup, but had no noticeable effects in the other three setups. This means catabolite repression by glucose is mediated by lowering concentration of cAMP, and thus an addition of cAMP could relieve this repression.</p>
+</div>
+</div>
+<div id="devise-experiments-to-test-the-following-model." class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Devise experiments to test the following model.</h1>
+<p><span class="math inline">\(\alpha\)</span><em>-keto acids are the long sought `catabolites’ that control cAMP levels and that they act by inhibiting cAMP synthesis</em></p>
+<p><em>(Solutions of <span class="math inline">\(\alpha\)</span>-ketoglutarate, pyruvate, and succinate are available in the lab. E. coli is able to take up any of these exogenously added metabolites.)</em></p>
+<div id="protocol-1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Protocol</h2>
+<p>Repeat the experimental procedure described in part 2 with only the WT strain (strain B) and replacing glucose with different <span class="math inline">\(\alpha\)</span>-keto acids. The concentration of the ketoacids are 0.5 M. Thus, to make their concentration in the 10 ml reaction mixture be 10 mM, 0.2 mL of each was added to different flasks individually (alpha-ketoglutarate was 1.0 M, so 0.1 mL of it was added instead).</p>
+<!-- - Use the WT strain in this set of experiments.
+- 4 experiments will be done for each $\alpha$-keto acid. Adding the control, there will be a total of 13 experiments. (if there isn't enough reagent, just scale everything by 1/10)
+- Make 1:10 and 1:100 dilutions of each $\alpha$-keto acid.  (*do we need to be quantitative (i.e. comparing the effectiveness of different metabolite)? If this is just a qualitative assessment we don't need multiple dilutions to prove their involvement in catabolite repression and inhibition of cAMP synthesis (we only need 2 experiments for each ketoacid)*)
+
+|            | $\alpha$-ketoglutarate | pyruvate | succinate |
+| ---------- | ---------------------- | -------- | --------- |
+| 1:1        |                        |          |           |
+| 1:10       |                        |          |           |
+| 1:100      |                        |          |           |
+| 1:1 + cAMP |                        |          |           |
+
+For each cell of the above table:
+
+- Take 9.0 ml of *E. coli* and add 0.9 ml of the dilution.
+- Wait for 5 minutes to allow the bacteria adapt to the addition of  $\alpha$-keto acid.
+- Add 0.1 ml IPTG (100 mM) and mix (start induction).
+- At 1 min intervals take 20 $\mu$l sample and add to a microtube containing 80 $\mu$l permeabilisation reagent
+- Collect samples and set up a blank: 20 $\mu$l of uninduced *E. coli* plus 80 $\mu$l permeabilisation reagent. (the blank is only made once and used for all measurements)
+- Add 75 $\mu$l of ONPG to 75 $\mu$l of each sample and the blank. Incubate at 37^o^C.
+- Incubate for appropriate amount of time (as determined in part 1)
+- Read absorption at 415 nm against the blank.
+- Plot a graph of A~415~ against time. -->
+<p>If the addition of an <span class="math inline">\(\alpha\)</span>-keto acid alone causes the activity of galactosidase to decrease, it can be considered as the evidence that this ketoacid is involved in catabolite repression. If the following addition of cAMP can ‘rescue’ galactosidase activity, then this can be considered as the evidence that this ketoacid inhibits cAMP synthesis.</p>
+</div>
+<div id="results-1" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Results</h2>
+<p><strong>Optical density</strong>. OD<sub>600</sub> = 0.393, which verifies that the bacteria were in exponential growth phase.</p>
+<p><strong>Galactosidase activity assay results.</strong> The raw data and the plot are shown below.</p>
+<pre class="r"><code># glycerol (control)
+gly = c(.075, .076, .076, .076, .077, .078, .116, .214,
+        .303, .404, .510, .609, .702, .901, 1.028, 1.173)
+# pyruvate
+pyr = c(.077, .075, .075, .075, .075, .072, .085, .088,
+        .095, .135, .149, .184, .234, .280, .469, .585)
+# succinate
+suc = c(.074, .076, .075, .074, .078, .080, .083, .120, 
+        .152, .204, NA, .307, .408, .554, NA, .762)
+# alpha-ketoglutarate
+akg = c(.077, .076, .073, .074, .076, .078, .088, .097, 
+        .122, .172, .215, .244, .293, .367, .448, .647)
+tibble(
+  carbon_source = as_factor(rep(c(&quot;glycerol&quot;, &quot;succinate&quot;, &quot;alpha-ketoglutarate&quot;, &quot;pyruvate&quot;), each = 16)),
+  time = rep(seq(-2, 28, 2), 4),
+  absorbance = c(gly, suc, akg, pyr)
+) %&gt;%
+  ggplot(aes(time, absorbance)) +
+  geom_point(aes(shape = carbon_source))+
+  geom_smooth(aes(color = carbon_source), method = &#39;loess&#39;, formula = &#39;y ~ x&#39;)+
+  # rates after adding cAMP (tangent lines)
+  geom_abline(slope = 0.06314, intercept = c(-0.647, -1.00, -1.20))+
+  # label addition of glucose, IPTG and cAMP
+  geom_vline(xintercept = c(0, 6, 18))+
+  geom_text(data = label, aes(x, y, label = label))+
+  # tweak the axes and add title &amp; notes
+  scale_x_continuous(breaks = c(0, seq(-2, 30, 4)))+
+  labs(
+    title = &quot;Effect of different carbon sources on galactosidase activity&quot;,
+    caption = &quot;N.B. anomalous data values were replaced with NA and are invisible from the plot&quot;
+  )</code></pre>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<p><img src="../lab/2020-11-05-gene-control-practical_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><strong>Conclusion.</strong> All three <span class="math inline">\(\alpha\)</span>-keto acids are shown to be capable of catabolite repression. After adding IPTG, the extents to which the <span class="math inline">\(\beta\)</span>-galactosidase activity increases in <em>E. coli</em> provided with <span class="math inline">\(\alpha\)</span>-keto acids are significantly and consistently lower than in <em>E. coli</em> provided with glycerol only. Addition of cAMP has no significant effect on the <code>glycerol</code> control, but was able to improve the rate of increase of <span class="math inline">\(\beta\)</span>-galactosidase activity (gradient on the graph) in groups with <span class="math inline">\(\alpha\)</span>-keto acids to about the same as the <code>glycerol</code> control (shown as tangent lines in the plot). The capability of different <span class="math inline">\(\alpha\)</span>-keto acids can be ranked qualitatively: pyruvate &gt; <span class="math inline">\(\alpha\)</span>-ketoglutarate &gt; succinate.</p>
+</div>
+</div>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/lab/gene-control-practical.html"
+      this.page.identifier = "gene-control-practical"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2020 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genomics on Tianyi@Oxford</title>
+    <link>/tags/genomics.html</link>
+    <description>Recent content in genomics on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/genomics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Genomics Practical (TT 2020)</title>
+      <link>/lab/computational-genomics-practical-tt-2020.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/computational-genomics-practical-tt-2020.html</guid>
+      <description>1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) 1.2 Heatmaps in Python (with seaborn) 1.3 Average Gene Profile 2 Quiz 8 2.1 Matlab 2.2 Using R 1 Quiz 5 1.1 Heatmaps (using ggplot2 in R) Loading Packages
+library(R.matlab) ## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.matlab for help. ## ## Attaching package: &amp;#39;R.matlab&amp;#39; ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## getOption, isOpen library(reshape2) library(tidyverse) ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.</description>
+    </item>
+    
+  </channel>
+</rss>

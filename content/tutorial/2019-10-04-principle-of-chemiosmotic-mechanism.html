@@ -1,0 +1,172 @@
+---
+title: Principle of chemiosmotic mechanism
+author: Tianyi Shi
+date: '2019-10-15'
+slug: principle-of-chemiosmotic-mechanism
+categories: []
+tags: ["bioenergetics", "biochemistry"]
+term: 3-Michaelmas
+week: 1
+tutor: Tanadet Pipatpolkai
+summary: What is the evidence that the chemiosmotic mechanism applies to oxidative phosphorylation and photophosphorylation?
+bibliography: [../bib/main.bib]
+nocite: | 
+  @Nicholls:2013
+---
+
+
+
+<div id="saq" class="section level1">
+<h1>SAQ</h1>
+<p class="topic">
+<strong>Explain the difference between electrochemical gradient, pH gradient and membrane potentials. How can they be measured and how are these related to chemiosmotic mechanism.</strong>
+</p>
+<p>The electrochemical gradient describes the difference in chemical stability of ions (typically protons), between two aqueous compartments separated by a non-conducting and non-permeable membrane (typically a energy-transducing membrane such as mitochondrial inner membrane). It is quantified by the difference in Gibbs’ free energy, <span class="math inline">\(\Delta G\)</span>, or its molar equivalent, <em>chemical potential</em>, <span class="math inline">\(\Delta\mu\)</span>, of the ion species (proton) between the two compartments.</p>
+<p>Usually, electrochemical gradient is used in studying processes coupled with <span class="math inline">\(\text{H}^+\)</span> movement across a membrane, where one side is positively charged and has a high <span class="math inline">\(\left[\text{H}^+\right]\)</span> and the other side with -ve charge and low <span class="math inline">\(\left[\text{H}^+\right]\)</span>. These are denoted by P and N sides, respectively, and the ‘gradients’ are often defined as the value of the corresponding parameter on the N side minus its value on the P side.</p>
+<p>The electrochemical gradient is the sum of pH gradient (concentration gradient) and membrane potential (electrical gradient).</p>
+<p>pH gradient is the (log-transformed) difference in the concentration of protons, <span class="math inline">\(\left[\text{H}^+\right]\)</span>, across the membrane. Protons tend to move down its concentration gradient to maximise the entropy of the whole system, and this tendency, i.e. potetial energy is the “chemical” part of the electrochemical potential. Intracellular/intra-orgenellar pH can be measured with pH-sensitive microelectrodes, nuclear magnetic resonance, or pH-sensitive fluorescent proteins <span class="citation">(Loiselle and Casey 2010)</span>. Low-RMM weak acids and bases can equilibrate across the membrane independent of the membrane potential. When there is an pH gradient, however, weak acids accumulate in the basic compartment and bases in the acidic compartment, and this property is used to measure pH gradient.</p>
+<p>The membrane potential is the electrical potential difference across the membrane. According to Coulomb’s law, postively charge protons is repelled by the positively charged P side while attracted towards the N side, and this also results in a potential energy, which adds to the electrochemical gradient as the “electro-” part. Membrane potential is measured with microelectrodes.</p>
+<p>Considering only the effect of concentration and electrical potential, the electrochemical potential for the proton on either side is defined as follows:</p>
+<p><span class="math display">\[\bar{\mu}_{\text{H}^+} = \bar{\mu}_{\text{H}^+}^\circ + RT\ln\left[{\text{H}^+}\right] + z_{\text{H}^+}F\Psi\]</span></p>
+<p>where <span class="math inline">\(\bar{\mu}_{\text{H}^+}^\circ\)</span> is the chemical potential under standard states, <span class="math inline">\(RT\ln\left[{\text{H}^+}\right]\)</span> and <span class="math inline">\(z_{\text{H}^+}F\Psi\)</span> are the additional chemical potential due to concentration and electrical potential, respectively.</p>
+<p>The electrochemical gradient is the difference of the electrochemical potential between two compartments:</p>
+<p><span class="math display">\[\Delta\bar{\mu} = \bar{\mu}_{\text{N}} - \bar{\mu}_{\text{P}} = \left(RT\ln\left[{\text{H}^+}\right]_{\text{N}} + z_{\text{H}^+}F\Psi_{\text{N}}\right) - \left(RT\ln\left[{\text{H}^+}\right]_{\text{P}} + z_{\text{H}^+}F\Psi_{\text{P}}\right)\]</span></p>
+<p><span class="math display">\[ = -\ln{10}RT\left(\text{pH}_\text{N}-\text{pH}_\text{P}\right) + F(\Psi_{\text{N}}-\Psi_{\text{P}})=F\Delta\Psi- 2.3RT\Delta\text{pH} \text{  (J mol}^{-1}\text{)}\]</span></p>
+<p>or it can be expressed as ‘protomotive force’ in (milli)volts:</p>
+<p><span class="math display">\[\Delta\text{p}=\Delta\Psi-\dfrac{2.3RT}{F}\Delta\text{pH}\]</span></p>
+</div>
+<div id="essay" class="section level1">
+<h1>Essay</h1>
+<p class="topic">
+<strong>What is the evidence that the chemiosmotic mechanism applies to oxidative phosphorylation and photophosphorylation?</strong> <br><sub><em>The essay MUST be equipped with at least 3 annotated diagrams and the length should be 1500-1750 words. Remember to include at least one KEY experimental evidence in the essay.</em></sub>
+</p>
+<div id="clues-leading-to-the-original-chemiosmosis-hypothesis" class="section level2">
+<h2>Clues leading to the original chemiosmosis hypothesis</h2>
+<p>The mechanism of oxidative phosphorylation were initially thought to be analogous to substrate-level phosphotylation, that the redox reactions create ‘high-energy’ intermediates, which in turn adds P<sub>i</sub> to ADP. In 1961, Peter Mitchell listed 6 facts to question this chemical mechanism hypothesis:</p>
+<ol style="list-style-type: decimal">
+<li>The ‘high-energy’ intermediate is not found.</li>
+<li>The close association between phosphorylation and membranous structrures is not explained.</li>
+<li>P/O ratio varies–it does not follow a fixed stoichiometry.</li>
+<li>ATP hydrolysis outside mitochondria promotes NAD reduction inside, accentuated by succinate oxidation. (this observation is probably irrelevant or wrong?)</li>
+<li>Uncoupling can be caused by reagents with distinct chemical properties–so they are unlikely to act on a single ‘intermediate’.</li>
+<li>Unexplained swelling and shrinkage accompany phosphorylation.</li>
+</ol>
+<p>Trying to explain these phenomena, he proposed his initial chemiosmosis mechanism, with following 3 features:</p>
+<ol style="list-style-type: decimal">
+<li>A membrane located, reversible and anisotropic ‘ATPase’</li>
+<li>An electron and hydrogen translocation system</li>
+<li>A charge impermeable membrane</li>
+</ol>
+<p>According to this model, oxidation of substrates does not occur in a single compartment, but it instead allow protons and electrons to go in different directions, which in turn creates a concentration gradient of H<sup>+</sup> and OH<sup>-</sup>, as well as a membrane potential. ATP synthesis is driven by the one-way movement of OH<sup>-</sup> down its electrochemical gradient.</p>
+<p>Mitchell’s origin model was rather different from the current model, as depicted in figure <a href="#fig:mitchell1961">1</a>, but it provided decent explanations for the phenomena listed above. (In his later review <span class="citation">(Mitchell 1966)</span>, there were some amendments made on his original model, but I have no time to read it)</p>
+<div class="figure"><span id="fig:mitchell1961"></span>
+<img src="img/mitchell1961.jpg" alt="Left, Mitchell's original chemiosmosis model; right, the current model" width="100%" />
+<p class="caption">
+Figure 1: Left, Mitchell’s original chemiosmosis model; right, the current model
+</p>
+</div>
+<p>The principal idea was that, energy released from ‘asymmetric’ redox reactions can be used to establish a rather ‘physical’ form of energy (not the common chemical bond energy), the electrochemical gradient, and this is the first coupling. The second coupling is between the synthesis of ATP and the vectorised diffusion of some species promoted by the electrochemical gradient established by the first coupling.</p>
+<p>It should be noted that the conception of first coupling was not new. Before the 1960s, it was known that redox reactions can create a electrical potential between two compartments, and it had been noted that some inhibitors of ion transport also has an effect (either stimulatory or inhibitory) on respiratory rate <span class="citation">(Robertson 1960)</span> (Fig. <a href="#fig:fig1">2</a>).</p>
+<div class="figure"><span id="fig:fig1"></span>
+<img src="img/chemiosmosis-inhibitor.png" alt="Correlation between the effect on oxygen uptake and on ion accumulation of some inhibitors" width="100%" />
+<p class="caption">
+Figure 2: Correlation between the effect on oxygen uptake and on ion accumulation of some inhibitors
+</p>
+</div>
+</div>
+<div id="proving-proton-pumping-by-the-redox-chain-and-determining-ho-ratio" class="section level2">
+<h2>Proving proton pumping by the redox chain and determining H<sup>+</sup>/O ratio</h2>
+<p>The ‘first coupling’ of the current chemiosmosis model means the pumping of protons into the P compartment powered by stepwise redox reactions along the ETC, with the overall oxidation of NADH or FADH<sub>2</sub> as substrate by molecular oxygen.</p>
+<p>In actively respiring mitochondria, the proton concentrations (i.e. pH) on either side of the membrane is constant because the rate at which protons are pumped into the P compartment and that flowing back to the N compartment are equal. This makes it difficult to detect the presence of proton flux.</p>
+<p><span class="citation">Mitchell and Moyle (1967)</span> devised the following procedure to solve the problem (Fig. <a href="#fig:mitchell1967a">3</a>):</p>
+<ol style="list-style-type: decimal">
+<li>mitochondria are incubated in anaerobic conditions, allowing H<sup>+</sup> to equilibrate (i.e. making <span class="math inline">\(\Delta p\)</span> fall back to zero)</li>
+<li>a pH-sensitive glass electrode is used to monitor pH of the suspension (i.e. the environment outside the mitochondria)</li>
+<li>a known quantity of O<sub>2</sub> is introduced into the suspension by ‘injecting pulses of air-saturated 150mM KCI solution.’</li>
+<li>by measuring the pH change, the amount of protons pumped out of the mitochondria can be calculated, and with the known amount of O<sub>2</sub>, the H<sup>+</sup>/O ratio can be calculated.</li>
+</ol>
+<div class="figure"><span id="fig:mitchell1967a"></span>
+<img src="img/mitchell1967a.jpg" alt="Determining H/O ratio (Mitchell 1967a)" width="100%" />
+<p class="caption">
+Figure 3: Determining H/O ratio (Mitchell 1967a)
+</p>
+</div>
+<p>Additional procedures are needed to minimise error, and they’re described in <em>Bioenergetics</em> pp59-60</p>
+</div>
+<div id="proving-the-atp-synthesis-is-driven-by-the-electrochemical-gradient" class="section level2">
+<h2>Proving the ATP synthesis is driven by the electrochemical gradient</h2>
+<p>The electrochemical gradients is the sum of concentration gradient and electrical potential gradient, and each of them are shown to drive ATP synthesis.</p>
+<p><span class="citation">Jagendorf and Uribe (1966)</span> showed ATP synthesis can be induced in dark, by artificially creating a pH difference across the thylakoid membrane in chloroplasts (Fig <a href="#fig:Sone">4</a>). In this experiment, broken chloroplasts (extracted from spinach) are first incubated in an acidic solution, allowing the thylakoid space to achieve the enviornmental pH of 4.0 (different acids are used to verify its non-specificity). Next, chloroplasts are exposed to pH 8.0 to develop the proton gradient across the thylakoid membrane. While moving out from the thylakoid space, protons drive ATP synthase. The amount of ATP produced is then determined by firefly luciferase assay. By repeating with different pHs, the authors concluded that the rate of ATP synthesis is positively correlated with the pH difference between two phases.</p>
+<p><span class="citation">Sone et al. (1977)</span> used reconsitituted vesicles, made from purified <span class="math inline">\(\text{F}_o\text{F}_1\)</span> complex and the membrane of a thermophilic bacterium, to achieve ATP synthesis by induced membrane potential (Fig <a href="#fig:Sone">4</a>). They first incubated mitochondria with valinomycin at a fixed pH, then exposed the suspension to KCl. Valinomycin-mediated entry of K<sup>+</sup> shifts the membrane potential so the vesicle interior becomes more positively charged. Consequently, H<sup>+</sup> moves out and drives ATP synthase.</p>
+<div class="figure"><span id="fig:Sone"></span>
+<img src="img/sone.jpg" alt="Left, Jagendorf (2016); right, Sone (1977)" width="100%" />
+<p class="caption">
+Figure 4: Left, Jagendorf (2016); right, Sone (1977)
+</p>
+</div>
+</div>
+<div id="monitoring-the-protomotive-force-and-proton-flux-in-different-conditions" class="section level2">
+<h2>Monitoring the protomotive force and proton flux in different conditions</h2>
+<p>If the chemiosmotic model is corrent, it will have some properties resembling those of an electric circuit–the current (<span class="math inline">\(I\)</span>) and electromotive force (<span class="math inline">\(V\)</span>) are mirrored by the proton flux (<span class="math inline">\(J_{\text{H}^+}\)</span>) and the protomotive force (<span class="math inline">\(\Delta\text{p}\)</span>), respectively. These two terms can be monitored in different states of the proton circuit, and the results are in accordance with the chemiosmotic model.</p>
+<div class="figure"><span id="fig:circuit-analogy"></span>
+<img src="img/circuit_analogy.jpg" alt="Circuit Analogy. Top left, proton gradient; top right, oxygen concentration, whose gradient reflects proton flux; below, illustrations of each numbered state." width="100%" />
+<p class="caption">
+Figure 5: Circuit Analogy. Top left, proton gradient; top right, oxygen concentration, whose gradient reflects proton flux; below, illustrations of each numbered state.
+</p>
+</div>
+<p>The different states shown in Fig <a href="#fig:circuit-analogy">5</a> are explained below:</p>
+<ol style="list-style-type: decimal">
+<li>When ETC substrate is absent, there is absolutely no oxygen consumption. No active forces act protons so they are allowed to equilibrate, and therefore the <span class="math inline">\(\Delta\text{p}\)</span> is zero. This resembles an electrical circuit without a power source.</li>
+<li>When substrate (e.g. succinate) is provided, it is oxidised by ETC and oxygen is consumed. ETC starts to pump H<sup>+</sup> into the P face, building up the electrochemical gradient If the membrane was perfectly impermeable to H<sup>+</sup>, ETC would quickly stop as its provided energy for proton efflux balances the electrochemical gradient which favours protons’ influx, and there would be no oxygen consumption. However, the membrane is ‘leaky’ (and there are other processes causing influx of H<sup>+</sup>), causing constant influx of H<sup>+</sup>, which in turn allows H<sup>+</sup> to be steadily, but slowly, pumped to the P face, which is accompanied by oxygen usage. This resembles more of a closed circuit where energy is dissipated slowly through a high-resistance resistor than of an ‘open circuit’ as described in some books.</li>
+<li>When ADP is added, ATP synthase can use the proton gradient to synthesise ATP. The proton flux through ATP synthase is huge, so the oxygen concentration (whose gradient parallels proton flux) decreases steeply. (I can’t give an rigorous mathematical explanation on the decrease of <span class="math inline">\(\Delta\text{p}\)</span>)</li>
+<li>ATP is used up, and the condition is identical to state 2.</li>
+<li>FCCP short-circuits the proton circuit by allowing H<sup>+</sup> quickly flowing back to the N face without doing ‘useful work’ (driving ATP synthase). The proton influx is so large that it outstrips the maximal efflux powered by ETC, so <span class="math inline">\(\Delta\text{p}\)</span> quickly falls back to zero.</li>
+</ol>
+</div>
+<div id="lateral-proton-current" class="section level2">
+<h2>Lateral proton current?</h2>
+<p>The widely accepted view that ETC pumps protons transversally from the N to the P face may need updating for the following reasons stated by <span class="citation">Morelli et al. (2019)</span>:</p>
+<ol style="list-style-type: decimal">
+<li>H<sup>+</sup> almost never exist as isolated protons. Instead, they bind to water to form H<sub>3</sub>O<sup>+</sup>. Free protons in a mitochondrial periplasmic space are too few (fewer than 10) to drive ATP synthase.</li>
+<li>Free protons are destructive for biological membranes</li>
+<li>The pH inside mitochondria was shown to be higher by 0.5 units from what was previously believed <span class="citation">(Żurawik et al. 2016)</span></li>
+<li>Phospholipid membranes are intrinsically (significantly) permeable to protons</li>
+</ol>
+<p>According to the classic view of proton pumping, complex I should have a continuous channel traversing the membrane. However, based on comprehensive X-ray studies, the ‘proton entrance half channel’ is not identified with certainty, while the ‘proton exit half channel’ is clearly identifiable, and an obvious proton tunnelling is found at the centre of complex I. This leads to an lateral mechanism of proton circuiting, as shown below:</p>
+<div class="figure"><span id="fig:Morelli2019"></span>
+<img src="img/Morelli2019.png" alt="A possible lateral proton circuit suggested by Morelli (2019)." width="100%" />
+<p class="caption">
+Figure 6: A possible lateral proton circuit suggested by Morelli (2019).
+</p>
+</div>
+</div>
+</div>
+<div id="bibliography" class="section level1 unnumbered">
+<h1>Bibliography</h1>
+<div id="refs" class="references">
+<div id="ref-Jagendorf:1966">
+<p>Jagendorf, A T, and E Uribe. 1966. “ATP Formation Caused by Acid-Base Transition of Spinach Chloroplasts.” <em>Proceedings of the National Academy of Sciences</em> 55 (1). National Academy of Sciences: 170–77. <a href="https://doi.org/10.1073/pnas.55.1.170">https://doi.org/10.1073/pnas.55.1.170</a>.</p>
+</div>
+<div id="ref-Loiselle:2010">
+<p>Loiselle, Frederick B., and Joseph R. Casey. 2010. “Measurement of Intracellular pH.” In <em>Membrane Transporters in Drug Discovery and Development</em>, edited by Qing Yan. Vol. 637. Methods in Molecular Biology. Humana Press.</p>
+</div>
+<div id="ref-Mitchell:1966">
+<p>Mitchell, Peter. 1966. “CHEMIOSMOTIC Coupling in Oxidative and Photosynthetic Phosphorylation.” Journal Article. <em>Biological Reviews</em> 41 (3): 445–501. <a href="https://doi.org/10.1111/j.1469-185X.1966.tb01501.x">https://doi.org/10.1111/j.1469-185X.1966.tb01501.x</a>.</p>
+</div>
+<div id="ref-Mitchell:1967a">
+<p>Mitchell, Peter, and Jennifer Moyle. 1967. “Respiration-driven proton translocation in rat liver mitochondria.” <em>Biochemical Journal</em> 105 (3): 1147–62. <a href="https://doi.org/10.1042/bj1051147">https://doi.org/10.1042/bj1051147</a>.</p>
+</div>
+<div id="ref-Morelli:2019">
+<p>Morelli, Alessandro Maria, Silvia Ravera, Daniela Calzia, and Isabella Panfoli. 2019. “An Update of the Chemiosmotic Theory as Suggested by Possible Proton Currents Inside the Coupling Membrane.” Journal Article. <em>Open Biology</em> 9 (4): 180221. <a href="https://doi.org/10.1098/rsob.180221">https://doi.org/10.1098/rsob.180221</a>.</p>
+</div>
+<div id="ref-Robertson:1960">
+<p>Robertson, R. N. 1960. “ION Transport and Respiration.” Journal Article. <em>Biological Reviews</em> 35 (2): 231–64. <a href="https://doi.org/10.1111/j.1469-185X.1960.tb01415.x">https://doi.org/10.1111/j.1469-185X.1960.tb01415.x</a>.</p>
+</div>
+<div id="ref-Sone:1977">
+<p>Sone, N, M Yoshida, H Hirata, and Y Kagawa. 1977. “Adenosine Triphosphate Synthesis by Electrochemical Proton Gradient in Vesicles Reconstituted from Purified Adenosine Triphosphatase and Phospholipids of Thermophilic Bacterium.” <em>Journal of Biological Chemistry</em> 252: 2956–60.</p>
+</div>
+<div id="ref-Zurawik:2016">
+<p>Żurawik, Tomasz Michał, Adam Pomorski, Agnieszka Belczyk-Ciesielska, Grażyna Goch, Katarzyna Niedźwiedzka, Róża Kucharczyk, Artur Krężel, and Wojciech Bal. 2016. “Revisiting Mitochondrial pH with an Improved Algorithm for Calibration of the Ratiometric 5(6)-Carboxy-Snarf-1 Probe Reveals Anticooperative Reaction with H+ Ions and Warrants Further Studies of Organellar pH.” <em>PLOS ONE</em> 11 (8). Public Library of Science: 1–17. <a href="https://doi.org/10.1371/journal.pone.0161353">https://doi.org/10.1371/journal.pone.0161353</a>.</p>
+</div>
+</div>
+</div>

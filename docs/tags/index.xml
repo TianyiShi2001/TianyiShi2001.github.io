@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Tianyi@Oxford</title>
+    <link>/tags.html</link>
+    <description>Recent content in Tags on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Illumina</title>
+      <link>/tags/illumina.html</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/illumina.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NGS</title>
+      <link>/tags/ngs.html</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ngs.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RNA-seq</title>
+      <link>/tags/rna-seq.html</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rna-seq.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>membrane protein</title>
+      <link>/tags/membrane-protein.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/membrane-protein.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protein transport</title>
+      <link>/tags/protein-transport.html</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/protein-transport.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protein</title>
+      <link>/tags/protein.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/protein.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protein-dna interaction</title>
+      <link>/tags/protein-dna-interaction.html</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/protein-dna-interaction.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lab</title>
+      <link>/tags/lab.html</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lab.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metabolism</title>
+      <link>/tags/metabolism.html</link>
+      <pubDate>Thu, 26 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/metabolism.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genetics</title>
+      <link>/tags/genetics.html</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/genetics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biophysical techniques</title>
+      <link>/tags/biophysical-techniques.html</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/biophysical-techniques.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ppi</title>
+      <link>/tags/ppi.html</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ppi.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>structural biochemistry</title>
+      <link>/tags/structural-biochemistry.html</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/structural-biochemistry.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X-ray crystallography</title>
+      <link>/tags/x-ray-crystallography.html</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/x-ray-crystallography.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cryo-EM</title>
+      <link>/tags/cryo-em.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cryo-em.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NMR</title>
+      <link>/tags/nmr.html</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nmr.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>/tags/bash.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bash.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioinformatics</title>
+      <link>/tags/bioinformatics.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bioinformatics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDB</title>
+      <link>/tags/pdb.html</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pdb.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>/tags/javascript.html</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/javascript.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sequence alignment</title>
+      <link>/tags/sequence-alignment.html</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sequence-alignment.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fasta</title>
+      <link>/tags/fasta.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fasta.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nom</title>
+      <link>/tags/nom.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nom.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parser</title>
+      <link>/tags/parser.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/parser.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>/tags/rust.html</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rust.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biochemistry</title>
+      <link>/tags/biochemistry.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/biochemistry.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plant metabolism</title>
+      <link>/tags/plant-metabolism.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/plant-metabolism.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redox</title>
+      <link>/tags/redox.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/redox.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thioredoxin</title>
+      <link>/tags/thioredoxin.html</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/thioredoxin.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photosynthesis</title>
+      <link>/tags/photosynthesis.html</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/photosynthesis.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genomics</title>
+      <link>/tags/genomics.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/genomics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r.html</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>human metabolism</title>
+      <link>/tags/human-metabolism.html</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/human-metabolism.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brain</title>
+      <link>/tags/brain.html</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/brain.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>starvation</title>
+      <link>/tags/starvation.html</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/starvation.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>in silico</title>
+      <link>/tags/in-silico.html</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/in-silico.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developmental biology</title>
+      <link>/tags/developmental-biology.html</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/developmental-biology.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>/tags/python.html</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>/tags/go.html</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/go.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plotly</title>
+      <link>/tags/plotly.html</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/plotly.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EM</title>
+      <link>/tags/em.html</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/em.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bacteria</title>
+      <link>/tags/bacteria.html</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bacteria.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cell cycle</title>
+      <link>/tags/cell-cycle.html</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cell-cycle.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cell division</title>
+      <link>/tags/cell-division.html</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cell-division.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloning</title>
+      <link>/tags/cloning.html</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cloning.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recombinant DNA</title>
+      <link>/tags/recombinant-dna.html</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/recombinant-dna.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blast</title>
+      <link>/tags/blast.html</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blast.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>purification</title>
+      <link>/tags/purification.html</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/purification.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT</title>
+      <link>/tags/it.html</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/it.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>/tags/programming.html</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/programming.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim.html</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vim.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data analysis</title>
+      <link>/tags/data-analysis.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-analysis.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data handling</title>
+      <link>/tags/data-handling.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-handling.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>molecular graphics</title>
+      <link>/tags/molecular-graphics.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/molecular-graphics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MCB</title>
+      <link>/tags/mcb.html</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mcb.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toolbox</title>
+      <link>/tags/toolbox.html</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/toolbox.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coronavirus</title>
+      <link>/tags/coronavirus.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/coronavirus.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>/tags/statistics.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/statistics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virus</title>
+      <link>/tags/virus.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/virus.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wuhan</title>
+      <link>/tags/wuhan.html</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wuhan.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vector</title>
+      <link>/tags/vector.html</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vector.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genral</title>
+      <link>/tags/genral.html</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/genral.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ribosome</title>
+      <link>/tags/ribosome.html</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ribosome.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RNA</title>
+      <link>/tags/rna.html</link>
+      <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rna.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snRNA</title>
+      <link>/tags/snrna.html</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/snrna.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>physics</title>
+      <link>/tags/physics.html</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/physics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paper vi</title>
+      <link>/tags/paper-vi.html</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/paper-vi.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioenergetics</title>
+      <link>/tags/bioenergetics.html</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bioenergetics.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>radioactivity</title>
+      <link>/tags/radioactivity.html</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/radioactivity.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>physicss</title>
+      <link>/tags/physicss.html</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/physicss.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

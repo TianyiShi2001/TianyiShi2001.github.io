@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genral on Tianyi@Oxford</title>
+    <link>/categories/genral.html</link>
+    <description>Recent content in genral on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/genral/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading Lists</title>
+      <link>/notes/reading-lists.html</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/reading-lists.html</guid>
+      <description>Paper I X-ray and EM  “Biomolecular Crystallography” by Bernard Rupp (preferably 2 nd Edition) Garland Science ISBN 978-0815340812  “Outline of Crystallography for Biologists” by David Blow Oxford University Press, ISBN 978-0198510512  “Crystallography Made Crystal Clear” by Gale Rhodes Academic Press ISBN 978-0125870733  Milne JL, Borgnia MJ, Bartesaghi A, Tran EE, Earl LA, Schauder DM, Lengyel J, Pierson J, Patwardhan A, Subramaniam S. Cryo-electron microscopy–a primer for the non-microscopist.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>in silico on Tianyi@Oxford</title>
+    <link>/tags/in-silico.html</link>
+    <description>Recent content in in silico on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/in-silico/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Immunoassay (in Silico)</title>
+      <link>/lab/immunoassay-in-silico.html</link>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/lab/immunoassay-in-silico.html</guid>
+      <description>1 Aim of the Practical 2 Background Q1 3 Introduction to Radioimmunoassay 4 Radioimmunoassay Simulation — Tutorial (a) Choosing a suitable concentration of Ab (b) Testing effect of changing [Ab] at fixed [Ag] (d) Testing precision 5 RIA: Generating Your Own Data (a) Finding a suitable concentration of antibody (b) Generating the calibartion curve and (c) Finding the concentration of the unknown 6 Enzyme-Linked Immunosorbentassay (a) Background to ELISA (b) METHOD: ElisaLab 7 ELISA Tutorial 8 ELISA Experiment (a) Choosing a suitable concentration of antibody (b) Generating the calibration curve (c) Measuring concentration of the unknown 9 Supplementary Information 9.</description>
+    </item>
+    
+  </channel>
+</rss>

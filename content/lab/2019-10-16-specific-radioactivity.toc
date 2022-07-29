@@ -1,0 +1,44 @@
+\contentsline {section}{\numberline {1}Aim}{2}{section.1}
+\contentsline {section}{\numberline {2}Reagents and Apparatus Provided}{2}{section.2}
+\contentsline {section}{\numberline {3}Method}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}ATP concentration}{2}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Dilution}{2}{subsubsection.3.1.1}
+\contentsline {paragraph}{\numberline {3.1.1.1}Determining scale of dilution}{2}{paragraph.3.1.1.1}
+\contentsline {paragraph}{\numberline {3.1.1.2}Making dilution}{2}{paragraph.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2}Results}{3}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Glucose concentration}{3}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Mechanism}{3}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Determine the volume of enzyme}{3}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Determining \(\lambda _\text {max}\)}{4}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Calibration}{4}{subsubsection.3.2.4}
+\contentsline {paragraph}{\numberline {3.2.4.1}Dilution}{4}{paragraph.3.2.4.1}
+\contentsline {paragraph}{\numberline {3.2.4.2}Assay}{4}{paragraph.3.2.4.2}
+\contentsline {subsubsection}{\numberline {3.2.5}Sample Assay}{4}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Results}{5}{subsubsection.3.2.6}
+\contentsline {subsection}{\numberline {3.3}Radioactivity Counting (Virtual)}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Our Results}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}ATP}{5}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Distinguishing between 4.0mM and 4.5mM ATP}{5}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Glucose}{6}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Calibration}{6}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Sample result}{7}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Distinguishing between 4.0mM and 4.5mM glucose}{8}{subsubsection.4.2.3}
+\contentsline {paragraph}{\numberline {4.2.3.1}What difference would it make to your assay if you doubled the concentrations of ABTS, GOD and POD?}{8}{paragraph.4.2.3.1}
+\contentsline {section}{\numberline {5}Class Results}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Data}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Preliminary graphical analysis}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}ATP concentration}{11}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Grouping and grouped confidence interval of mean}{11}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Test for significance of the difference in concentration between the two groups}{12}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Test for diviation from given concentrations}{12}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Glucose}{13}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Grouping and grouped confidence interval of mean}{13}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Test for significance of the difference in concentration between the two groups}{13}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Test for diviation from given concentrations}{13}{subsubsection.5.4.3}
+\contentsline {subsection}{\numberline {5.5}Radioactivity}{14}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Results of the sample}{14}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Correction for overlap}{15}{subsubsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.3}Specific Radioactivity}{16}{subsubsection.5.5.3}
+\contentsline {section}{\numberline {6}Appendix}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}People should report all measurements to get a true 95\% confidence interval}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}The mathematical computation behind R functions used in this report}{17}{subsection.6.2}

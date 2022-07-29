@@ -1,0 +1,232 @@
+---
+title: Protein-Protein Interactions
+author: Tianyi Shi
+date: '2020-11-18'
+slug: protein-protein-interactions
+categories:
+  - biochemistry
+tags:
+  - ppi
+  - protein
+term: 3-Michaelmas
+week: 6
+tutor: ~
+summary: ~
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+  rmarkdown::pdf_document:
+    number_sections: yes
+    toc: yes
+nocite: |
+  @Wienken-2010, Campbell-2012, @Arkin-2014
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#properties-of-ppi"><span class="toc-section-number">2</span> Properties of PPI</a>
+<ul>
+<li><a href="#reversibility"><span class="toc-section-number">2.1</span> Reversibility</a></li>
+<li><a href="#prop"><span class="toc-section-number">2.2</span> Properties of the Binding Interfaces</a></li>
+<li><a href="#roles-of-water-molecules"><span class="toc-section-number">2.3</span> Roles of Water Molecules</a></li>
+<li><a href="#kd"><span class="toc-section-number">2.4</span> Kinetics and Thermodynamics</a></li>
+</ul></li>
+<li><a href="#studying-ppis"><span class="toc-section-number">3</span> Studying PPIs</a>
+<ul>
+<li><a href="#determine-kd"><span class="toc-section-number">3.1</span> Determining K<sub>d</sub> (and rate constants)</a>
+<ul>
+<li><a href="#surface-plasmon-resonance-spr"><span class="toc-section-number">3.1.1</span> Surface Plasmon resonance (SPR)</a></li>
+<li><a href="#fluorescence-anisotropy"><span class="toc-section-number">3.1.2</span> Fluorescence anisotropy</a></li>
+<li><a href="#isothermal-titration-calorimetry-itc"><span class="toc-section-number">3.1.3</span> Isothermal titration calorimetry (ITC)</a></li>
+</ul></li>
+<li><a href="#mechanistic-studies"><span class="toc-section-number">3.2</span> Mechanistic Studies</a>
+<ul>
+<li><a href="#alanine-scanning"><span class="toc-section-number">3.2.1</span> Alanine Scanning</a></li>
+<li><a href="#ext"><span class="toc-section-number">3.2.2</span> Extent of Exchengeability of Amino Acids</a></li>
+<li><a href="#directed-evolution"><span class="toc-section-number">3.2.3</span> Directed Evolution</a></li>
+<li><a href="#comp"><span class="toc-section-number">3.2.4</span> Computational Approaches</a></li>
+<li><a href="#connectivity-map-reveals-modularity"><span class="toc-section-number">3.2.5</span> Connectivity Map Reveals Modularity</a></li>
+<li><a href="#x-ray-crystallography"><span class="toc-section-number">3.2.6</span> X-Ray Crystallography</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#why-designing-small-molecule-ppi-inhibitors-is-difficult"><span class="toc-section-number">4</span> Why Designing Small Molecule PPI Inhibitors is Difficult</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<p><strong>How and why do proteins form specific complexes with each other? How can such protein-protein interactions (PPIs) be investigated experimentally, and which problems are associated with designing small molecules to disrupt PPIs?</strong></p>
+<div id="introduction" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>Specific protein-protein interactions (PPIs) are critical to numerous biological processes, including cell-cell recognition, immune response, and signal transduction. An understanding of PPIs not only helps to elucidate the detailed roles and to predict the behaviour of proteins in a physiological context but also aids structure-based drug design.</p>
+</div>
+<div id="properties-of-ppi" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Properties of PPI</h1>
+<div id="reversibility" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Reversibility</h2>
+<p>Protein-protein interactions can be stable (permanent) or transient. Stable interactions are involved in the assembly of proteins made of multi-subunit complexes such as haemoglobin, which non-reversible in normal physiological conditions. Transient interactions, on the other hand, are reversible, and it is this property that make them act like molecular switches that play versatile roles in controlling cellular processes.</p>
+</div>
+<div id="prop" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Properties of the Binding Interfaces</h2>
+<p>Protein-protein interaction interfaces often have a large surface area (1000-2000 Å<sup>2</sup>) and are relatively flat compared to the deep cavities that typically bind small molecules.
+On a binding interface, some residues, known as “hotspots”, contribute to the overall affinity more than other residues.</p>
+</div>
+<div id="roles-of-water-molecules" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Roles of Water Molecules</h2>
+<p>Crystal structures frequently reveal water molecules within PPI interfaces. These water molecules play multifaceted roles in the stability of PPI, e.g. offsetting unfavourable electrostatic interactions, bridging two distant residues via H-bonds.</p>
+</div>
+<div id="kd" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Kinetics and Thermodynamics</h2>
+<p>Reversible PPIs have two important parameters: affinity and specificity. While affinity ranges from as low as millimolar to as high as femtomolar, it is important that the specificity, i.e. the relative affinity of a protein to its cognate binding partner compared to non-cognate ones, is high.</p>
+<p>Reversible PPIs can the considered as a simple balance of association and dissociation reactions, with rate constants being <span class="math inline">\(k_{\text{on}}\)</span> and <span class="math inline">\(k_{\text{off}}\)</span>.</p>
+<p><span class="math display">\[
+\text{A+B}\mathrel{\mathop{\rightleftarrows}^{k_{\text{on}}}_{k_{\text{off}}}} \text{AB}
+\]</span></p>
+<p>The affinity is usually defined by the dissociation constant:</p>
+<p><span class="math display">\[
+K_\text{d} = \dfrac{\text{[A][B]}}{\text{[AB]}} = \dfrac{k_{\text{off}}}{k_{\text{on}}}
+\]</span></p>
+<p>where [A], [B], and [AB] are the concentrations of each species at equilibrium.</p>
+<p><span class="math inline">\(K_\text{d}\)</span> can be converted to <span class="math inline">\(\Delta G\)</span> and vice versa:</p>
+<p><span class="math display">\[
+\Delta G = -RT\ln{(K_\text{d})}
+\]</span></p>
+<p>In addition to the simple single-step model, <span class="citation">Keeble and Kleanthous (2005)</span> suggested that relatively low affinity PPIs may be better modelled with a two-step induced-fit mechanism involving an unstable intermediate, where electrostatics drives the fast first step (supported by strong dependence on ionic strength) and rigid body rotation occurs in the slow second step:</p>
+<p><span class="math display">\[
+\text{A+B} \mathrel{\mathop{\rightleftarrows}^{k_{1}}_{k_{-1}}} \text{AB}^\text{*} \mathrel{\mathop{\rightleftarrows}^{k_{2}}_{k_{-2}}} \text{AB}
+\]</span></p>
+</div>
+</div>
+<div id="studying-ppis" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Studying PPIs</h1>
+<div id="determine-kd" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Determining K<sub>d</sub> (and rate constants)</h2>
+<p>Many experimental methods can be used used for studying thermodynamics and kinetics of PPIs (the frequent tasks are determining <span class="math inline">\(K_\text{d}\)</span> and rate constants). Most of them assumes the simple single-step association-dissociation model (Section <a href="#kd">2.4</a>). Three methods are described in this essay.</p>
+<div id="surface-plasmon-resonance-spr" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Surface Plasmon resonance (SPR)</h3>
+<p>Surface plasmon resonance (Figure <a href="#fig:spr">3.1</a>) can be used to measure both <span class="math inline">\(K_\text{d}\)</span> and <span class="math inline">\(k_\text{on}\)</span> and <span class="math inline">\(k_\text{off}\)</span> rates. How <span class="math inline">\(K_\text{d}\)</span> can be calculated is explained in Equation <a href="#eq:spr-kd">(3.1)</a>.</p>
+
+<div class="figure" style="text-align: c"><span id="fig:spr"></span>
+<img src="../img/spr.jpg" alt="A surface plasmon is an electron oscillation generated at a surface interface between a metal and a dielectric. A plasmon resonance occurs when EM wave in visible light couples optimally with the oscillating electrons in the metal, and this results in a maximal reduction in the reflected light intensity. The resonance angle, \(\theta_\text{spr}\), is found by changing the angle of incidence of the light beam, giving a dip in a plot of intensity against angle. \(\Delta\theta_\text{spr}\) is sensitive to changes in the refractive index of the medium near the metal surface and this is a measure of the mass change at the sensor surface (in the evanescent region). In an SPR experiment, the protein acting as the “bait” is immobilised on the sensor surface, and a the analyte containing the other protein (acting as the “prey”) is passed through the cell. If binding occurs between the two proteins, \(\Delta\theta_\text{spr}\) would increase. Then, non-specific binding is washed off by buffer, and \(\Delta\theta_\text{spr}\) would decrease and \(\Delta\theta_\text{spr}\). Finally, regeneration solution is applied to remove all binding and reset \(\Delta\theta_\text{spr}\) to zero." width="100%" />
+<p class="caption">
+Figure 3.1: A surface plasmon is an electron oscillation generated at a surface interface between a metal and a dielectric. A plasmon resonance occurs when EM wave in visible light couples optimally with the oscillating electrons in the metal, and this results in a maximal reduction in the reflected light intensity. The resonance angle, <span class="math inline">\(\theta_\text{spr}\)</span>, is found by changing the angle of incidence of the light beam, giving a dip in a plot of intensity against angle. <span class="math inline">\(\Delta\theta_\text{spr}\)</span> is sensitive to changes in the refractive index of the medium near the metal surface and this is a measure of the mass change at the sensor surface (in the evanescent region). In an SPR experiment, the protein acting as the “bait” is immobilised on the sensor surface, and a the analyte containing the other protein (acting as the “prey”) is passed through the cell. If binding occurs between the two proteins, <span class="math inline">\(\Delta\theta_\text{spr}\)</span> would increase. Then, non-specific binding is washed off by buffer, and <span class="math inline">\(\Delta\theta_\text{spr}\)</span> would decrease and <span class="math inline">\(\Delta\theta_\text{spr}\)</span>. Finally, regeneration solution is applied to remove all binding and reset <span class="math inline">\(\Delta\theta_\text{spr}\)</span> to zero.
+</p>
+</div>
+<p><span class="math display" id="eq:spr-kd">\[\begin{equation}
+\begin{split}
+\overbrace{k_{\text{on}}\text{[A][B]}}^\text{rate of association} &amp; = \overbrace{k_{\text{off}}\text{[AB]}}^\text{rate of dissociation} \\
+k_{\text{on}}\text{[A]([B]}_{\text{max}}-\text{[AB])} &amp; = k_{\text{off}}\text{[AB]} \\
+\text{[AB]} &amp; = \dfrac{k_{\text{on}}\text{[A][B]}_{\text{max}}}{k_{\text{on}}\text{[A]} + k_{\text{off}}} \\
+\text{[AB]} &amp; = \dfrac{\text{[A][B]}_{\text{max}}}{\text{[A]} + K_{\text{d}}}
+\end{split}
+\tag{3.1}
+\end{equation}\]</span></p>
+<p>In the equation, A is the protein in the analyte, whose concentration is kept constant, and B is the immobilised protein. Since the <span class="math inline">\(\Delta\theta_\text{spr} \propto \text{[AB]}\)</span> (intensity of the signal is proportional to concentration of protein-protein complexes), we can work out <span class="math inline">\(K_\text{d}\)</span> from our initial concentrations of A and B.</p>
+<p>SPR was used in the early kinetic analysis of hGH binding (<span class="citation">Wells (1996)</span>).</p>
+</div>
+<div id="fluorescence-anisotropy" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Fluorescence anisotropy</h3>
+<p>Fluorescence anisotropy is based on the phenomenon that, if fluorophores are excited with plane polarized light and the fluorescence is observed through analyzing polarizers, the fluorescence is also polarised.</p>
+<p>The fluorescence anisotropy is defined as <span class="math inline">\(A=\dfrac{I_\parallel - I_\bot}{I_\parallel+2_{\bot}}\)</span>, where <span class="math inline">\(I_\parallel\)</span> and <span class="math inline">\(I_{\bot}\)</span> are the fluorescence intensities polarised parallel and perpendicular to the direction of the excitation beam. <span class="math inline">\(A\)</span> is a direct measure of the molecular rotation in solution and can be used to study complex formation, as a macromolecule will rotate more slowly when it is in a complex thatn when it is alone.</p>
+<p>Fluorescence anisotropy is more accurate than SPR for measuring ultra-high affinity interactions, and were used to to study ColE DNase-Im interactions (<span class="citation">Papadakos, Wojdyla, and Kleanthous (2012)</span>).</p>
+</div>
+<div id="isothermal-titration-calorimetry-itc" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Isothermal titration calorimetry (ITC)</h3>
+<p>ITC measures heat changes when a complex is formed at constant temperature. In ITC, an insulated reaction cell containing protein is kept at a temperature (usually 8<span class="math inline">\(^\circ\text{C}\)</span> above the environment) which is equal to the temperature of a reference cell, and the reference cell is kept at a constant temperature by a thermostat. Then, increasing amounts of ligand is added into the chamber, and they form complexes with the protein, which can be exothermic or endothermic. The heat change is compensated by a power supply, which can be converted to <span class="math inline">\(\Delta H\)</span> of the reaction. As more ligands are added, proteins become saturated and <span class="math inline">\(\Delta H\)</span> approaches zero. The raw data obtained (power supplied to compensate the heat change caused by each addition of ligands) can be integrated and corrected to give a plot of <span class="math inline">\(\Delta H\)</span> against the molar ratio of the ligand and the protein, and <span class="math inline">\(\Delta H\)</span>, K<sub>d</sub> and stoichiometry can be inferred from the curve (Figure <a href="#fig:itc">3.2</a>).</p>
+<div class="figure" style="text-align: c"><span id="fig:itc"></span>
+<img src="../img/itc.jpg" alt="ITC data manipulation" width="100%" />
+<p class="caption">
+Figure 3.2: ITC data manipulation
+</p>
+</div>
+</div>
+</div>
+<div id="mechanistic-studies" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Mechanistic Studies</h2>
+<p>The main theme of mechanistic studies is to find out the “hotspot” residues or regions that are main contributors to the affnity of PPI interfaces, and to attempt to generalise this knowledge in order to predict the affnity of any given PPI interfaces.</p>
+<div id="alanine-scanning" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Alanine Scanning</h3>
+<p>Alanine scanning is a mutagenesis technique in which mutants are made by substituting alanine for each of the residues in a ‘reactive region’, in this case the PPI interface. By comparing the PPI affininy of each mutant to the wild type (i.e. calculating <span class="math inline">\(\Delta \Delta G\)</span>), the contribution of each residue in binding can be assessed, and this reveals “hotspots” representing important residues.</p>
+</div>
+<div id="ext" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Extent of Exchengeability of Amino Acids</h3>
+<p>Mutational analysis is most often restricted to alanine substitution and this does not provide an comprehensive view of the allowed amino acid space at each position. This limitation is especially significant in the analysis of PPI interfaces, which, unlike enzyme active sites, the specific orientation and chemical reactivity are less important.</p>
+<p><span class="citation">Pál et al. (2006)</span> introduced any one of the 20 natrual amino acids at all 35 hGH-hGHR binding interface positions and obtained surprising results. They verified that, the interface was highly adaptable to mutations, either from a structural or functional point of view. Whereas some of the alanine scanning hotspots showed high specificity agianst substitution, others did not, and some highly specific positions were not hotspots at all.</p>
+</div>
+<div id="directed-evolution" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Directed Evolution</h3>
+<p>Directed evolution is an efficient approach to probe sequence and structure space in a PPI. Phage display is a specific implementation of it.</p>
+<p>The phage display technique is summarised as follows and illustrated in Figure <a href="#fig:phage-sel">3.3</a>:</p>
+<ol style="list-style-type: decimal">
+<li>Generate a randomised library of mutants. This can be done using error-prone PCR (ep-PCR). In PPI studies usually the randomised mutations are generated only across small sections of protein sequence that are form of the PPI interface.</li>
+<li>The randomised mutant DNA are ligated with a phage coat protein gene and the hybrid is then used to transduce <em>E. coli.</em> cells.</li>
+<li>The phage library is amplified by <em>E. coli.</em> cells, and phage particles are produced.</li>
+<li>The “bait” protein is immobilised, and the mixture of phage particles displaying different mutant proteins are added. Then, those with low binding affinity are washes away, and the remaining phages and collected, amplified, and used in the next round of selection.</li>
+<li>Repeated cycles of selection (a.k.a. “panning”) will identify the mutant proteins with the highest binding affinity to the “bait” protein. The complexes formed by these proteins with the “bait” protein can then be used for detailed mechanistic studies of PPI.</li>
+</ol>
+<div class="figure" style="text-align: c"><span id="fig:phage-sel"></span>
+<img src="../img/phage-sel.png" alt="Directed evolution with phage display." width="100%" />
+<p class="caption">
+Figure 3.3: Directed evolution with phage display.
+</p>
+</div>
+</div>
+<div id="comp" class="section level3" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Computational Approaches</h3>
+<p>Computational methods can speed up the quest for high-affinity PPIs. These methods are based on rotamer libraries, which summarise the existing knowledge of the experimentally determined structures quantitatively. Rotamers are picked from the library (hotspot constraints may be applied) and grafted onto the scaffold of known structure, then the fitness is assessed using a scoring function, which unfortunately often fails to predict the actual experimental results. As the number rotamers in the library grows and algorithms improve, computational methods are expected to provide more accurate predictions.</p>
+</div>
+<div id="connectivity-map-reveals-modularity" class="section level3" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> Connectivity Map Reveals Modularity</h3>
+<p><span class="citation">Reichmann et al. (2005)</span> analysed the TEM1–BLIP complex by drawing a connectivity map, which is build from the physical interactions between the proteins (hydrogen bonds, van der Waals interactions, etc.), and showed that the interface can be divided into 6 clusters.
+The change <span class="math inline">\(\Delta \Delta G\)</span> on different clusters was found to be additive, whereas mutations within the same cluster caused complex energetic and structural consequences.
+Therefore, a PPI interface can be seen as a group of “hot regions”, where each region contribute relatively independently to the total binding affinity, but within each region the contributions from its component amino acids are cooperative.</p>
+<div class="figure" style="text-align: c"><span id="fig:ppi"></span>
+<img src="../img/ppi.png" alt="Connectivity map of the TEM1–BLIP complex." width="100%" />
+<p class="caption">
+Figure 3.4: Connectivity map of the TEM1–BLIP complex.
+</p>
+</div>
+</div>
+<div id="x-ray-crystallography" class="section level3" number="3.2.6">
+<h3><span class="header-section-number">3.2.6</span> X-Ray Crystallography</h3>
+<p>X-ray crystallography (XRC) studies provide structural basis for PPI interfaces, which not only facilitates the analysis of individual cases but also help to improve the scoring algorithms for computational methods.</p>
+<p>Crystallisation tends to be difficult for low affnity PPIs due to their unstable nature. To overcome this, correctly positioned cysteines can be introduced into each of the binding partners at the interface, which could stabilise the complex, facilitating crystallisation. This technique is known as “disulfide trapping”.</p>
+</div>
+</div>
+</div>
+<div id="why-designing-small-molecule-ppi-inhibitors-is-difficult" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Why Designing Small Molecule PPI Inhibitors is Difficult</h1>
+<p>PPI interfaces are usually large and flat (Section <a href="#prop">2.2</a>), and often tolerent to a small number of mutations (Section <a href="#ext">3.2.2</a>). Thus, the “druggable” targets are usually restricted to the local non-flat regions (i.e. ‘pockets’) on PPI interfaces that are enriched with “hotspot” residues. A large surface area of PPI interface, which is more tolerent to local non-favourable interactions, also makes developing inhibitors more difficult. In addition, in the case of developing non-peptide inhibitors, there is less existing knowledge on the structures of small molecules and their interactions with proteins, meaning the computational modelling is less accurate.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references hanging-indent">
+<div id="ref-Arkin-2014">
+<p>Arkin, Michelle R, Yinyan Tang, and James A Wells. 2014. “Small-Molecule Inhibitors of Protein-Protein Interactions: Progressing Toward the Reality.” <em>Chem Biol</em> 21 (9): 1102–14. <a href="https://doi.org/10.1016/j.chembiol.2014.09.001">https://doi.org/10.1016/j.chembiol.2014.09.001</a>.</p>
+</div>
+<div id="ref-Keeble-2005">
+<p>Keeble, Anthony H, and Colin Kleanthous. 2005. “The Kinetic Basis for Dual Recognition in Colicin Endonuclease-Immunity Protein Complexes.” <em>J Mol Biol</em> 352 (3): 656–71. <a href="https://doi.org/10.1016/j.jmb.2005.07.035">https://doi.org/10.1016/j.jmb.2005.07.035</a>.</p>
+</div>
+<div id="ref-Papadakos-2012">
+<p>Papadakos, Grigorios, Justyna A. Wojdyla, and Colin Kleanthous. 2012. “Nuclease Colicins and Their Immunity Proteins.” <em>Quarterly Reviews of Biophysics</em> 45 (1): 57–103. <a href="https://doi.org/10.1017/S0033583511000114">https://doi.org/10.1017/S0033583511000114</a>.</p>
+</div>
+<div id="ref-Pal-2006">
+<p>Pál, Gábor, Jean-Louis K Kouadio, Dean R Artis, Anthony A Kossiakoff, and Sachdev S Sidhu. 2006. “Comprehensive and Quantitative Mapping of Energy Landscapes for Protein-Protein Interactions by Rapid Combinatorial Scanning.” <em>J Biol Chem</em> 281 (31): 22378–85. <a href="https://doi.org/10.1074/jbc.M603826200">https://doi.org/10.1074/jbc.M603826200</a>.</p>
+</div>
+<div id="ref-Reichmann-2005">
+<p>Reichmann, D, O Rahat, S Albeck, R Meged, O Dym, and G Schreiber. 2005. “The Modular Architecture of Protein-Protein Binding Interfaces.” <em>Proc Natl Acad Sci U S A</em> 102 (1): 57–62. <a href="https://doi.org/10.1073/pnas.0407280102">https://doi.org/10.1073/pnas.0407280102</a>.</p>
+</div>
+<div id="ref-Wells-1996">
+<p>Wells, J A. 1996. “Binding in the Growth Hormone Receptor Complex.” <em>Proceedings of the National Academy of Sciences</em> 93 (1): 1–6. <a href="https://doi.org/10.1073/pnas.93.1.1">https://doi.org/10.1073/pnas.93.1.1</a>.</p>
+</div>
+<div id="ref-Wienken-2010">
+<p>Wienken, Christoph J., Philipp Baaske, Ulrich Rothbauer, Dieter Braun, and Stefan Duhr. 2010. “Protein-Binding Assays in Biological Liquids Using Microscale Thermophoresis.” <em>Nature Communications</em> 1 (1): 100. <a href="https://doi.org/10.1038/ncomms1093">https://doi.org/10.1038/ncomms1093</a>.</p>
+</div>
+</div>
+</div>

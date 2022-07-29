@@ -1,0 +1,155 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Crystallography: A Case Study},
+  pdfauthor={Tianyi Shi},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+\title{Crystallography: A Case Study}
+\author{Tianyi Shi}
+\date{2020-11-04}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+The Ca\textsuperscript{2+} selectivity of voltage-gated calcium (Ca\textsubscript{v}) channels remained unclear. They were thought to use a `knock-off' methanism which requires multiple ion-binding cores, but mutational analyses supported a single high-affinity Ca\textsuperscript{2+} binding site. This paradox is explained by the mechanism proposed in this article, based on the crystal structures of Ca\textsuperscript{v}Ab channels.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+In this study, the authors created several mutants of bacterial Na\textsubscript{v} channel Na\textsubscript{v}Ab by site directed mutagenesis using QuickChange at the selectivity filter region\footnote{specifically, from \textsuperscript{175}TLESWSM\textsuperscript{181} to \textsuperscript{175}TLDDWSD\textsuperscript{181}, \textsuperscript{175}TLDDWSN\textsuperscript{181}, \textsuperscript{175}TLEDWSM\textsuperscript{181} and \textsuperscript{175}TLDSWSM\textsuperscript{181}}. Some of these mutations changes the activity of the channel from allowing efflux of Na\textsuperscript{+} to allowing influx of Ca\textsuperscript{2+} to different extents (quantified by the relative permeability of Ca\textsuperscript{2+} against Na\textsuperscript{+}). Baculovirus were used as the vector to infect \emph{Trichopulsia ni} cells. Proteins were collected from insect cells, purified, concentrated to \textasciitilde20mg ml\textsuperscript{-1}, and reconstituted into DMPC:CHAPSO bicelles (Figure \ref{fig:dmpc-chapso}). Crystals were grown in a hanging-drop vapour-diffusion format.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{../img/dmpc-chapso} \caption{The DMPC:CHAPSO bicelle. Bicelles are disks with a planar region formed by long chain lipid phospholipids and a rim composed of short chain phospholipids or detergent molecules. It provides an environment that resembles a lipid bilayer where membrane proteins' natively resides. Membrane proteins can be incorporated into bicelles for functional studies as well as crystallisation.}\label{fig:dmpc-chapso}
+\end{figure}
+
+Vapor diffusion can be performed in either hanging-drop or sitting-drop format. Hanging-drop apparatus involve a drop of protein solution placed on an inverted cover slip, which is then suspended above the reservoir. Sitting-drop crystallization apparatus place the drop on a pedestal that is separated from the reservoir. Both of these methods require sealing of the environment so that equilibration between the drop and reservoir can occur
+
+Before X-ray diffraction data collection, crystals were soaked with cryo-protectant solutions containing Ca\textsuperscript{2+}, Mn\textsuperscript{2+} or Cd\textsuperscript{2+} of indicated concentrations. These ions travel through solvent channels within the crystals and chelate with amino acid residues in the selectivity filter region.
+
+X-ray diffraction data were integrated and scaled with the HKL2000 packaged and further processed with the CCP4 package. THe structure of Ca\textsubscript{v}Ab and its derivatives were solved by molecular replacement by using an individual subunit of the Na\textsubscript{v}Ab structure (PDB code 3RVY) as the search template. This choice is natural since the proteins used in this study are derived from Na\textsubscript{v}Ab and differ from it by no more than 3 amino acid residues.
+
+The divalent cations were identified by anomalous difference Fourier maps calculated using data collected at wavelengths of 1.75 Å for Ca\textsuperscript{2+}, Cd\textsuperscript{2+} and Mn\textsuperscript{2+}. Anomalous scattering describes cases where a pair of structure factors \(\mathbf{F}_{hkl}\) and \(\mathbf{F}_{\overline{hkl}}\) does not obey Friedel's law\footnote{Friedel's law states that \(\mathbf{F}_{hkl}\) and \(\mathbf{F}_{\overline{hkl}}\) have the same amplitude but opposite phase angle.}, which occurs when the incident X-ray photons have an energy close to a transition energy of the diffracting atom, resulting in absorption of radiation energy and change in phase (normal scattering does not change the phase). At the wavelengths convinient for diffraction, only atoms heavier than phosphorus or sulfur behave as anomalous scatterers. While anomalous scattering data are frequently used to solve the phase problem (in techniques known as single/multiple wavelength anomalous dispersion (SAD/MAD)), it can also be used (as in this study) to calculate an anomalous difference map after phases are available to show the locations of the heavy atoms.\footnote{This map is automatically calculated in phenix.refine.}
+
+Crystallography and NMR System software was used for refinement of coordinates and \emph{B}-factors. Final models were obtained after several cycle refinement with REFMAC and PHENIX and manual re-building using COOT. The geometries of the final structural models of Ca\textsubscript{v}Ab and its derivatives were verified using PROCHECK.
+
+13 crystal structures of 5 proteins (Na\textsubscript{v}Ab and 4 Ca\textsubscript{v}Ab variants) with the following divalent cation concentrations were determined and deposited into PDB:\footnote{namely 4MS2, 4MTO, 4MTF, 4MTG, 4MVU, 4MW8, 4MVZ, 4MVM, 4MVO, 4MVQ, 4MW3, 4MVS, 4MVR}
+
+\begin{itemize}
+\tightlist
+\item
+  TLESWSM (Na\textsubscript{v}Ab) + Ca\textsuperscript{2+} 15mM
+\item
+  (TLE\textbf{D}WSM, TLE\textbf{D}ES\textbf{D}, TL\textbf{DD}WSM) + Ca\textsuperscript{2+} 15mM
+\item
+  TL\textbf{DD}WS\textbf{D} + (Ca\textsuperscript{2+} 15mM; Mn\textsuperscript{2+} 100mM; Cd\textsuperscript{2+} 100mM)
+\item
+  TL\textbf{DD}WS\textbf{N} + Ca\textsuperscript{2+} (0.5, 2.5, 5, 10, 15mM)
+\end{itemize}
+
+Of the 13 crystal structure models, 4MVR (\textsuperscript{175}TLDDWSD\textsuperscript{181}) corresponds to the protein with the greatest permeability ratio \emph{P}\textsubscript{Ca}:\emph{P}\textsubscript{Na} , while \href{https://www.rcsb.org/structure/4MS2}{4MS2} (\textsuperscript{175}TLDDWSN\textsuperscript{181}) diffracted to the highest resolution (2.75 Å).
+
+\hypertarget{analyses-of-results}{%
+\section{Analyses of Results}\label{analyses-of-results}}
+
+\hypertarget{ca2-binding-sites}{%
+\subsection{\texorpdfstring{Ca\textsuperscript{2+} Binding Sites}{Ca2+ Binding Sites}}\label{ca2-binding-sites}}
+
+Using the anomalous diffraction data, the \textbf{F}\textsuperscript{+}\textsubscript{Ca} - \textbf{F}\textsuperscript{-}\textsubscript{Ca} anomalous difference map was calculated. Two strong peaks followed by a weaker peak were found along the ion-conduction pathway, which correspond to the three Ca\textsuperscript{2+} binding sites. They are designated site 1, 2 and 3 from the extracellular side to the intracellular side.
+
+Site 2 is the site with the highest affinity for Ca\textsuperscript{2+}. It is surrounded by a total of 8 oxygen atoms, 4 of which coming from the carboxylate of D177 above and the other 4 from the carbonyl of L176 below. Site 1 is coordinated by the plane of 4 carboxyl groups from D178, and site 3 by the plane of 4 carbonyls from T175 (Figure \ref{fig:cavab-schematic}). Throughout the selectivity filter, the O-Ca\textsuperscript{2+} coordination distances are in the range of 4.0-5.0 Å, which is much longer than the ionic diameter of Ca\textsuperscript{2+} (2.28 Å), suggesting that the bound Ca\textsuperscript{2+} ion maintains its hydration shell while passing through the pore. Site 3 has the lowest affinity, consistent with its role in exit of Ca\textsuperscript{2+} from the selectivity filter into the central cavity. Figure \ref{fig:coot-4ms2} shows the molecular model and electron density near the selectivity fileter region of Ca\textsubscript{v}Ab (TL\textbf{DD}WS\textbf{N} + 15mM Ca\textsuperscript{2+}) in COOT\footnote{COOT version 0.9.1 (packaged with CCP4), on Linux version 5.8.16-2-MANJARO} (contoured at r.m.s.d = \(3.02 \sigma\)).
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{../img/cavab-schematic} \caption{A schemetic showing the Ca^2+^ ion coordination sites of Ca~v~Ab (TL**DD**WS**D**)}\label{fig:cavab-schematic}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{../img/coot-4ms2} \caption{The selectivity filter region of 4MS2.}\label{fig:coot-4ms2}
+\end{figure}
+
+The relative affinities of the three sites were further confirmed by experiments on Ca\textsubscript{v}Ab (TL\textbf{DD}WS\textbf{N}) with varying Ca\textsuperscript{2+} concentrations (0.5, 2.5, 5, 10, 15mM): at low Ca\textsuperscript{2+} concentration, two strong peaks of approximately equal intensity are found at Site 1 and Site 2; at high concentration the electron density is significantly enhanced in Site 2 and decreased in Site 1. The electron density at Site 3 remains low in all concentrations.
+
+\hypertarget{ion-permeation-mechanism}{%
+\subsection{Ion-Permeation Mechanism}\label{ion-permeation-mechanism}}
+
+Based on the properties of the three coordination sites, an ion-permeation mechanism can be deduced. The three coordination sites are separated by a distance of about 4.5 Å, which makes it energetically unfavourable for Ca\textsuperscript{2+} to occupy adjacent sites simutaneously. Thus the authors suggested that the selectivity filter oscillates between two states, in which either a single hydrated Ca\textsuperscript{2+} occupies Site 2, or two of them each occupies Site 1 and Site 3. The entry of Ca\textsuperscript{2+} into Site 1 is promoted by it high extracellular concentration, and the exit of Ca\textsuperscript{2+} is facilitated by the low affinity of Site 3.
+
+Notably, this mechanism suggests that Ca\textsuperscript{2+} ions are kept hydrated during its passage through the selectivity filter. This is very different from the mechanism by which potassium channels achive selectivity, which requires K\textsuperscript{+} ions' hydration shell to be removed.
+
+\hypertarget{roles-of-key-selectivity-filter-residues}{%
+\subsection{Roles of Key Selectivity Filter Residues}\label{roles-of-key-selectivity-filter-residues}}
+
+The five variants of Ca\textsubscript{v}Ab the author produced have different Ca\textsuperscript{2+} selectivity ratios, which can be partially explained by directly comparing the difference in the arrangement of selectivity filter residues. This comparison is sometimes facilitated by superposition of one structure onto another. For example, the carboxyl group of D177 in TL\textbf{DD}WS\textbf{D} interacts with the Ca\textsuperscript{2+} ion, while the carboxyl group of E177 in TLE\textbf{D}WS\textbf{D} swings away from the selectivity filter and forms a hydrogen bond with D181 and the main-chain nitrogen atoms of S180.
+
+\end{document}

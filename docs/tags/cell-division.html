@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>cell division - Tianyi@Oxford</title>
+<meta property="og:title" content="cell division - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+<link href="../tags/cell-division/index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content term" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">cell division</h1>
+    
+    <div class="article-content">
+      
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      <h2 class="archive-title">2020</h2>
+          
+            <article class="archive-item">
+              <a href="../tutorial/bacterial-cell-division.html" class="archive-item-link">
+                Bacterial Cell Division 
+              </a>
+              <span class="archive-item-date">
+                2020-02-08
+              </span>
+              <div class="article-summary" style="display: none;">
+                
+                  discussing both Gram positive and negative bacteria with different morphologies, how they divide and chose examples of antibiotics, comparing their different effects
+<hr>
+                
+                
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#preparation-for-cell-division"><span class="toc-section-number">2</span> Preparation for Cell Division</a><ul>
+<li><a href="#chromosome-replication"><span class="toc-section-number">2.1</span> Chromosome Replication</a></li>
+<li><a href="#segregation"><span class="toc-section-number">2.2</span> Chromosome Segregation</a></li>
+</ul></li>
+<li><a href="#ftsz-and-the-z-ring"><span class="toc-section-number">3</span> FtsZ and the Z-ring</a><ul>
+<li><a href="#z-ring-placement"><span class="toc-section-number">3.1</span> Z-ring Placement</a><ul>
+<li><a href="#the-min-system"><span class="toc-section-number">3.1.1</span> The Min system</a></li>
+<li><a href="#nuclear-occlusion"><span class="toc-section-number">3.1.2</span> Nuclear Occlusion</a></li>
+</ul></li>
+<li><a href="#other-key-proteins-in-the-divisome"><span class="toc-section-number">3.2</span> Other Key Proteins in the Divisome</a><ul>
+<li><a href="#zipa-and-ftsa"><span class="toc-section-number">3.2.1</span> ZipA and FtsA</a></li>
+<li><a href="#downstream-proteins-recruited-by-the-ftsz-ring"><span class="toc-section-number">3.2.2</span> Downstream Proteins Recruited by the FtsZ Ring</a></li>
+<li><a href="#ftsn"><span class="toc-section-number">3.2.3</span> FtsN</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#alternative-strategies-for-bacterial-cell-division"><span class="toc-section-number">4</span> Alternative Strategies for Bacterial Cell Division</a><ul>
+<li><a href="#alternative-strategies-of-binary-division"><span class="toc-section-number">4.1</span> Alternative strategies of Binary Division</a><ul>
+<li><a href="#caulobacter-crescentus"><span class="toc-section-number">4.1.1</span> <em>Caulobacter crescentus</em></a></li>
+<li><a href="#campylobacter-jejuni-and-magnetotactic-bacterium"><span class="toc-section-number">4.1.2</span> <em>Campylobacter jejuni</em> and Magnetotactic Bacterium</a></li>
+<li><a href="#agrobacterium-tumefaciens"><span class="toc-section-number">4.1.3</span> <em>Agrobacterium Tumefaciens</em></a></li>
+</ul></li>
+<li><a href="#positive-regulation-in-myxococcus-xanthus"><span class="toc-section-number">4.2</span> Positive Regulation in <em>Myxococcus xanthus</em></a></li>
+<li><a href="#cell-division-without-ftsz"><span class="toc-section-number">4.3</span> Cell Division without FtsZ</a></li>
+</ul></li>
+<li><a href="#concluding-remarks"><span class="toc-section-number">5</span> Concluding Remarks</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<p>The modes of bacterial cell division vary, but the most common one is binary fission <span class="citation">(Stahl 2019)</span>, and its mechanism, especially in rod-shaped model organisms <em>Escherichia coli</em> and <em>Bacillus subtilis</em>, has been studied extensively. Despite the characterisation of most proteins required for divisome, their coordination at the molecular detail remain largely unclear <span class="citation">(Tsang and Bernhardt 2015)</span>. The question of how bacteria divide is further complicated by variations in proteins involved, and even in the physical nature, among different bacterial species <span class="citation">(Eswara and Ramamurthi 2017)</span></p>
+<p>This essay introduces FtsZ as a highly conserved protein involved in septum formation and its regulation in model organsisms, and gives examples on diviations from these rules that mainly comes from studies on nonmodel organisms.</p>
+</div>
+<div id="preparation-for-cell-division" class="section level1">
+<h1><span class="header-section-number">2</span> Preparation for Cell Division</h1>
+<p>The chromosome must be replicated once and only once prior to cell devision, and it must be ensured that each daughter cell receives one copy of the chromosome.</p>
+<div id="chromosome-replication" class="section level2">
+<h2><span class="header-section-number">2.1</span> Chromosome Replication</h2>
+<p>Chromosome replication is principally regulated by DnaA in <em>E. coli</em>. DnaA initiates replication by binding its active, GTP-bound form (DnaA-ATP) to <em>OriC</em>. Its inactivation upon initiation of replication ensures one round of replication per cell cycle<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Such mechanisms include competition for <em>OriC</em> binding by SeqA, repression of <em>dnaA</em> expression (also by SeqA), and inactivation of DnaA-ATP by the ATPase HdaA.</p>
+</div>
+<div id="segregation" class="section level2">
+<h2><span class="header-section-number">2.2</span> Chromosome Segregation</h2>
+<p>Segregation of chromosomes and plasmids is achieved while they are being replicated by using the Par system in some bacteria such as the budding bacteria <em>Caulobacter crescentus</em>, as illustrated in Figure <a href="#fig:cc-par">2.1</a>. popZ proteins anchors the chromosome at its <em>parS</em> sequence (near <em>oriC</em>) to the old pole, which is mediated by parB. As replication starts, more parB binds to <em>parS</em> sequence of the newly synthesised chromosome, and is pulled to the new cell pole by the ATPase activity of ParA.</p>
+<div class="figure"><span id="fig:cc-par"></span>
+<img src="../img/cc-par.jpg" alt="The Par system segregates replicated chromosomes in Caulobacter crescentus." width="100%" />
+<p class="caption">
+Figure 2.1: The Par system segregates replicated chromosomes in Caulobacter crescentus.
+</p>
+</div>
+<p>The mechanism of chromosome segregation in <em>E. coli</em>, which lacks Par, is not well characterised.</p>
+</div>
+</div>
+<div id="ftsz-and-the-z-ring" class="section level1">
+<h1><span class="header-section-number">3</span> FtsZ and the Z-ring</h1>
+<p>Central to almost all bactrial division is the FtsZ protein. FtsZ is a homolog of tubulin found in most bacteria and some archaea. Like tubulin, FtsZ is a GTPase and can polymerise into filaments. During cell division, FtsZ filaments assemble into a ring (Z-ring) at the site where the septum forms. The FtsZ ring then recruits other proteins of the divisome, allowing division to proceed. The Z-ring contracts as the bacterium divides, forming an invagination which finally divides the bacterium in two.</p>
+<p>The GTPase activity accounts for the rapid turnover dynamics of the FtsZ filaments that form the Z-ring. It has also been proposed that FtsZ’s GTPase activity energises the constriction of the ring and the invagination of the cell membrane and the cell wall, but this notion is challenged by the observation of mutants that are severely impoaired in GTP hydrolysis still capable of dividing, and mathematical modelling that shows force generation could be achieved independenly of GTPase activity, but instead with hydrolysis <span class="citation">(Adams and Errington 2009)</span>.</p>
+<div id="z-ring-placement" class="section level2">
+<h2><span class="header-section-number">3.1</span> Z-ring Placement</h2>
+<p>The site of cell division in rod-shaped bacteria is usually at the centre of the cell, which is dependent on the corrent placement of the Z-ring. As shown in Figure <a href="#fig:no-min">3.1</a>, this is typically achieved using two mechanisms, nucleoid occlusion (NO), and the Min system, which are well characterised in <em>E. coli</em> and <em>B. subtilis</em>. It should be noted, however, that there is increasing evidence showing Z-ring positioning may be determined by other factors, and Min and NO systems may primarily function to ensure the efficient utilisation of this site. Such evidence include the observation of precise midcell Z-ring formation in Min- and Noc-null <em>B. subtilis</em> by <span class="citation">Rodrigues and Harry (2012)</span>.</p>
+<div id="the-min-system" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> The Min system</h3>
+<p>The MinC, MinD and MinE proteins interact to prevent Z-ring formation at the poles <span class="citation">(Ghosal et al. 2014; Ramm, Heermann, and Schwille 2019)</span>. MinC is the effector of the system owing to its inhibitory effect on FtsZ ring assembly. MinD is an ATPase which recruit MinC to the membrane. MinCD complex together inhibit Z-ring formation. MinE is an ATPase-activating protein which has an anti-MinCD domain and a topological specificity domain (which confines its anti-MinCD activity only at midcell). The three proteins MinCDE form an oscillation cycle from pole to pole (driven by MinDE), causing the time-averaged concentration of MinCD complexes to be lowest at the midcell, which favours Z-ring formation there. <em>B. subtilis</em> also has a Min system but it is not involved in the placement of the Z-ring.</p>
+</div>
+<div id="nuclear-occlusion" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Nuclear Occlusion</h3>
+<p>Nuclear occlusion prevents Z-ring formation atop of nucleoids. It is mediated by SlmA in <em>E. coli</em> and Noc in <em>B subtilis</em>. Neither are normally essential in their respective organisms, but both are synthetically lethal with mutatations of Min, due to chaotic FtsZ assembly.</p>
+<p>According to <span class="citation">Adams, Wu, and Errington (2015)</span>, Noc has a sequence-specific DNA-binding domain and a membrane-associating domain. Noc is thought to oligomerise using their two dimerisation domains, bind to DNA at specific sequences, and then insert into the inner leaflet of the cytoplasmic membrane.</p>
+<div class="figure"><span id="fig:no-min"></span>
+<img src="../img/no-min.jpg" alt="Negative regulation by nuclear occulation and the Min system ensures formation of the FtsZ ring in E coli." width="100%" />
+<p class="caption">
+Figure 3.1: Negative regulation by nuclear occulation and the Min system ensures formation of the FtsZ ring in E coli.
+</p>
+</div>
+</div>
+</div>
+<div id="other-key-proteins-in-the-divisome" class="section level2">
+<h2><span class="header-section-number">3.2</span> Other Key Proteins in the Divisome</h2>
+<p>A fully functional divisome requires a combination of proteins in addition to the FtsZ ring. Most of these proteins have close association with the Z ring. In <em>E. coli</em>, It was thought that the recruitment of these proteins appears to have a linear dependecy pathway which starts with FtsA/ZipA and ends with FtsN, but a recent review by <span class="citation">Du and Lutkenhaus (2017)</span> shows evidence for the noon-sequential assembly of the divisome.</p>
+<div id="zipa-and-ftsa" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> ZipA and FtsA</h3>
+<p>ZipA is acts to tether the FtsZ ring to the cytoplasmic membrane. It is not widely conserved outside of Gammaproteobacteria, and, in <em>E. coli</em>, its necessity in cell division is bypassed by a gain-of-function mutation in FtsA. FtsA, which is more widely conserved in bacteria, also anchors the Z ring to the membrane and coordinates its initial assembly <span class="citation">(Adams and Errington 2009)</span>.</p>
+<p>FtsA is related to actin, and, like actin, it binds ATP and is found to reversibly polymerise into corkscrew-like helices in <em>Streptococcus pneumoniae</em>. Its ATPase activity is reported in <em>B. subtilis</em> but not in <em>S. pneumoniae</em>. Mutagenesis studies suggest that nucleotide binding may be required for FtsA’s ability to interact with itself and with FtsZ, <span class="citation">(Pichoff and Lutkenhaus 2007)</span> but its exact role is unknown.</p>
+<p>FtsA differs from actin in that it is missing the 1B domain and it has an unrelated subdomain called 1C. The 1C domain is involved in recruiting downstream components of the divisome to the Z ring.</p>
+</div>
+<div id="downstream-proteins-recruited-by-the-ftsz-ring" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Downstream Proteins Recruited by the FtsZ Ring</h3>
+<p>Upon assembly of the FtsZ ring, other downstream proteins, notably those involved in peptidoglycan biosynthesis, are recruited to form the divisome.</p>
+<p>FtsI, also known as penicillin binding protein 3 (PBP3), is one such protein in <em>E. coli</em>. It is required specifically for peptidoglycan synthesis at the septum <span class="citation">(Chen and Beckwith 2001)</span>. Its recruitment is dependent on FtsK, which appears to be a bifunctional protein, with the C-terminal domain facilitating segregation of chromosome and the N-terminal domain carrying out a necessary, but undefined, function in septum development.</p>
+<p>A summary of the divisome components is shown in Figure <a href="#fig:ffts-components">3.2</a></p>
+<div class="figure"><span id="fig:ffts-components"></span>
+<img src="../img/ffts-components.png" alt="Components of the divisome." width="100%" />
+<p class="caption">
+Figure 3.2: Components of the divisome.
+</p>
+</div>
+</div>
+<div id="ftsn" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> FtsN</h3>
+<p>In <em>E. coli</em>, FtsN is the last component of recruited to the divisome. Once it arrives at the Z ring, the divisome begin to actively synthesising septal peptidoglycan to divide the cell. It has been suggest that FtsA-FtsN interaction may trigger cell constriction in a positive feedback loop <span class="citation">(Tsang and Bernhardt 2015)</span>, but the exact mechanism remain elusive.</p>
+</div>
+</div>
+</div>
+<div id="alternative-strategies-for-bacterial-cell-division" class="section level1">
+<h1><span class="header-section-number">4</span> Alternative Strategies for Bacterial Cell Division</h1>
+<div id="alternative-strategies-of-binary-division" class="section level2">
+<h2><span class="header-section-number">4.1</span> Alternative strategies of Binary Division</h2>
+<p>Binary division means dividing a bacterial cell into daughter cells with equal volume and physiology, which requires the FtsZ ring to form at the midcell. Apart form the NO and Min systems described above, there are other strategies to achieve this.</p>
+<div class="figure"><span id="fig:binary-division-alternative"></span>
+<img src="../img/binary-division-alternative.jpg" alt="Alternative strategies of Binary Division" width="100%" />
+<p class="caption">
+Figure 4.1: Alternative strategies of Binary Division
+</p>
+</div>
+<div id="caulobacter-crescentus" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> <em>Caulobacter crescentus</em></h3>
+<p>The budding bacteria <em>C. crescentus</em> uses the MipZ gradient to regulate FtsZ ring placement (Figure <a href="#fig:binary-division-alternative">4.1</a> A). MipZ is translocated from the old pole to the new pole during chromosome replication and segregation, by directly interacting with the ParB-<em>parS</em> complex (see section <a href="#segregation">2.2</a>). MipZ displaces FtsZ from polar regions, thus permitting ring formation only at midcell.</p>
+</div>
+<div id="campylobacter-jejuni-and-magnetotactic-bacterium" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> <em>Campylobacter jejuni</em> and Magnetotactic Bacterium</h3>
+<p>The amphitrichous<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> bacteria <em>Campylobacter jejuni</em> uses the ATPase FlhG, which is a MinD/ParA homologue and a known regulator of flagellar number, to locate the Z ring placement, by expelling FtsZ from the two longitudinal poles where flagella grow.</p>
+<p>By constrast, in the monotrichohus magnetotactic bacterium of the <em>Gammaproteobacteria</em> class, flagellum formation in the daughter cell is dictated by the septum (Figure <a href="#fig:binary-division-alternative">4.1</a> B and C).</p>
+</div>
+<div id="agrobacterium-tumefaciens" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> <em>Agrobacterium Tumefaciens</em></h3>
+<p>Most bacteria that exhibit binary division elongate their cells from the middle or at several locations perpenticular to the long axis (e.g. in <em>E. coli</em>, which is mediated by MreB). However, <em>Agrobacterium Tumefaciens</em>, which elongates unidirectionally, can still achhive binary division. As shown in Figure <a href="#fig:binary-division-alternative">4.1</a> D, after division, FtsA and FtsZ stay at the newly formed growth pole and facilitate polar growth. Upon elongation, they relocate to the midcell to initiate division.</p>
+</div>
+</div>
+<div id="positive-regulation-in-myxococcus-xanthus" class="section level2">
+<h2><span class="header-section-number">4.2</span> Positive Regulation in <em>Myxococcus xanthus</em></h2>
+<p>The NO and Min systems described above are both negative regulatory mechanisms, where regions of low activity of relevant proteins allows for foramtion of FtsZ ring. There is evidence in some nonmodel organisms of positive regulation, where FtsZ ring formation is promoted by presence of certain proteins. This is exemplified by the deltaproteobacterium <em>M. xanthus</em>, in which the ParA-like protein PomZ localises to midcell in an FtsZ-independent manner before FtsZ ring formation.</p>
+</div>
+<div id="cell-division-without-ftsz" class="section level2">
+<h2><span class="header-section-number">4.3</span> Cell Division without FtsZ</h2>
+<p>In some species of Mycoplasma (which are well known for their small genomes), the FtsZ homologue is absent <span class="citation">(Lluch-Senar, Querol, and Piñol 2010)</span>. Although the cell division mechanisms in these organisms remain elusive, they lead to reassessments on the role of FtsZ in FtsZ-dependent cell division. For example, as reviewed by <span class="citation">Xiao and Goley (2016)</span>, it is likely that the main driving force for membrane invagination and constriction is not directly provided by FtsZ, but by the peptidoglycan synthesis.</p>
+</div>
+</div>
+<div id="concluding-remarks" class="section level1">
+<h1><span class="header-section-number">5</span> Concluding Remarks</h1>
+<p>There is an extensive repertoire of cell division strategies based on distinct families of proteins in the domain of bacteria. The lack of universal conservation and the ease of horizontal gene transfer among bacteria make cell division a suboptimal target of antibiotics. Indeed, most available antibiotics related to bacterial cell division target cell wall synthesis, and there is little progress made on developing drugs that interferes with other components of bacterial divisome.</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Adams-2009">
+<p>Adams, David W., and Jeff Errington. 2009. “Bacterial Cell Division: Assembly, Maintenance and Disassembly of the Z Ring.” <em>Nature Reviews Microbiology</em> 7 (9): 642–53. <a href="https://doi.org/10.1038/nrmicro2198">https://doi.org/10.1038/nrmicro2198</a>.</p>
+</div>
+<div id="ref-Adams-2015">
+<p>Adams, David William, Ling Juan Wu, and Jeff Errington. 2015. “Nucleoid Occlusion Protein Noc Recruits Dna to the Bacterial Cell Membrane.” <em>EMBO J</em> 34 (4): 491–501. <a href="https://doi.org/10.15252/embj.201490177">https://doi.org/10.15252/embj.201490177</a>.</p>
+</div>
+<div id="ref-Alberts-2014">
+<p>Alberts, Bruce, Alexander Johnson, Julian Lewis, David Morgan, Martin Raff, Keith Roberts, and Peter Walter. 2014. <em>Molecular Biology of the Cell</em>. Book. 6th ed. Garland Science.</p>
+</div>
+<div id="ref-Chen-2001">
+<p>Chen, Joseph C., and Jon Beckwith. 2001. “FtsQ, Ftsl and Ftsi Require Ftsk, but Not Ftsn, for Co-Localization with Ftsz During Escherichia Coli Cell Division.” <em>Molecular Microbiology</em> 42 (2): 395–413. <a href="https://doi.org/10.1046/j.1365-2958.2001.02640.x">https://doi.org/10.1046/j.1365-2958.2001.02640.x</a>.</p>
+</div>
+<div id="ref-Du-2017">
+<p>Du, Shishen, and Joe Lutkenhaus. 2017. “Assembly and Activation of the Escherichia Coli Divisome.” <em>Molecular Microbiology</em> 105 (2): 177–87. <a href="https://doi.org/10.1111/mmi.13696">https://doi.org/10.1111/mmi.13696</a>.</p>
+</div>
+<div id="ref-Eswara-2017">
+<p>Eswara, Prahathees J., and Kumaran S. Ramamurthi. 2017. “Bacterial Cell Division: Nonmodels Poised to Take the Spotlight.” <em>Annual Review of Microbiology</em> 71 (1): 393–411. <a href="https://doi.org/10.1146/annurev-micro-102215-095657">https://doi.org/10.1146/annurev-micro-102215-095657</a>.</p>
+</div>
+<div id="ref-Ghosal-2014">
+<p>Ghosal, Debnath, Daniel Trambaiolo, Linda A. Amos, and Jan Löwe. 2014. “MinCD Cell Division Proteins Form Alternating Copolymeric Cytomotive Filaments.” <em>Nature Communications</em> 5 (1): 5341. <a href="https://doi.org/10.1038/ncomms6341">https://doi.org/10.1038/ncomms6341</a>.</p>
+</div>
+<div id="ref-Lluch-Senar-2010">
+<p>Lluch-Senar, Maria, Enrique Querol, and Jaume Piñol. 2010. “Cell Division in a Minimal Bacterium in the Absence of ftsZ.” <em>Molecular Microbiology</em> 78 (2): 278–89. <a href="https://doi.org/10.1111/j.1365-2958.2010.07306.x">https://doi.org/10.1111/j.1365-2958.2010.07306.x</a>.</p>
+</div>
+<div id="ref-Pichoff-2007">
+<p>Pichoff, Sebastien, and Joe Lutkenhaus. 2007. “Identification of a Region of Ftsa Required for Interaction with Ftsz.” <em>Molecular Microbiology</em> 64 (4): 1129–38. <a href="https://doi.org/10.1111/j.1365-2958.2007.05735.x">https://doi.org/10.1111/j.1365-2958.2007.05735.x</a>.</p>
+</div>
+<div id="ref-Ramm-2019">
+<p>Ramm, Beatrice, Tamara Heermann, and Petra Schwille. 2019. “The E. Coli Mincde System in the Regulation of Protein Patterns and Gradients.” <em>Cellular and Molecular Life Sciences</em> 76 (21): 4245–73. <a href="https://doi.org/10.1007/s00018-019-03218-x">https://doi.org/10.1007/s00018-019-03218-x</a>.</p>
+</div>
+<div id="ref-Rodrigues-2012">
+<p>Rodrigues, Christopher D. A., and Elizabeth J. Harry. 2012. “The Min System and Nucleoid Occlusion Are Not Required for Identifying the Division Site in Bacillus Subtilis but Ensure Its Efficient Utilization.” <em>PLOS Genetics</em> 8 (3). Public Library of Science: 1–20. <a href="https://doi.org/10.1371/journal.pgen.1002561">https://doi.org/10.1371/journal.pgen.1002561</a>.</p>
+</div>
+<div id="ref-Stahl-2019a">
+<p>Stahl, Michael T Madigan; Kelly S Bender; Daniel Hezekiah Buckley; W Matthew Sattley; David Allan. 2019. “Molecular Biology of Microbial Growth.” In <em>Brock Biology of Microorganisms</em>, Fifteenth edition, Global edition. Pearson.</p>
+</div>
+<div id="ref-Tsang-2015">
+<p>Tsang, Mary-Jane, and Thomas G Bernhardt. 2015. “Guiding Divisome Assembly and Controlling Its Activity.” <em>Current Opinion in Microbiology</em> 24: 60–65. <a href="https://doi.org/https://doi.org/10.1016/j.mib.2015.01.002">https://doi.org/https://doi.org/10.1016/j.mib.2015.01.002</a>.</p>
+</div>
+<div id="ref-Xiao-2016">
+<p>Xiao, Jie, and Erin D Goley. 2016. “Redefining the Roles of the Ftsz-Ring in Bacterial Cytokinesis.” <em>Current Opinion in Microbiology</em> 34: 90–96. <a href="https://doi.org/https://doi.org/10.1016/j.mib.2016.08.008">https://doi.org/https://doi.org/10.1016/j.mib.2016.08.008</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Some fast-growing bacteria may afford multiple rounds of replication on a single chromosome, and this makes it possible for their division to outpace DNA replication.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>one flagellum at each pole<a href="#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+              </div>
+            </article>
+          
+      
+    
+  </div>
+
+</main>
+
+<script src="../js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

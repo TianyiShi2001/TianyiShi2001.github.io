@@ -1,0 +1,40 @@
+---
+title: Reading Lists
+author: Tianyi Shi
+date: '2020-01-19'
+slug: reading-lists
+categories:
+  - genral
+tags:
+  - genral
+---
+
+## Paper I
+
+### X-ray and EM
+
+ “Biomolecular Crystallography” by Bernard Rupp (preferably 2 nd Edition) Garland Science ISBN 978-0815340812  “Outline of Crystallography for Biologists” by David Blow Oxford University Press, ISBN 978-0198510512  “Crystallography Made Crystal Clear” by Gale Rhodes Academic Press ISBN 978-0125870733  Milne JL, Borgnia MJ, Bartesaghi A, Tran EE, Earl LA, Schauder DM, Lengyel J, Pierson J, Patwardhan A, Subramaniam S. Cryo-electron microscopy--a primer for the non-microscopist. FEBS J. 2013 Jan;280(1):28-45. doi:
+
+10.1111/febs.12078.
+
+ Kühlbrandt W. Cryo-EM enters a new era. Elife. 2014 Aug 13;3:e03678. doi:
+
+10.7554/eLife.03678  Yong Xiong (2007) From electron microscopy to X-ray crystallography:
+
+molecular-replacement case studies. Elife. 2014 Aug 13;3:e03678.
+
+## Paper VI
+
+### HT 2020: Protein Purification
+
+- ‘Methods in Enzymology’ volumes 22, 34, and 104 are devoted to techniques of protein purification.
+- ‘Protein Purification Methods: A Practical Approach’ IRL Press, Eds ELV Harris and S Angal
+
+
+
+
+
+
+
+
+

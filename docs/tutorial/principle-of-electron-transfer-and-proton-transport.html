@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Principle of electron transfer and proton transport - Tianyi@Oxford</title>
+<meta property="og:title" content="Principle of electron transfer and proton transport - Tianyi@Oxford">
+
+
+<link href='../favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/fonts.css" media="all">
+<link rel="stylesheet" href="../css/main.css" media="all">
+<script src=../js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper single">
+    <header class="header">
+      <nav id="navbar">
+  <a href=../ class="nav-logo">
+    <img src="../images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="../lab.html">Lab</a></li>
+      
+      <li><a href="../notes.html">Notes</a></li>
+      
+      <li><a href="../special.html">Special</a></li>
+      
+      <li><a href="../tutorial.html">Tutorial</a></li>
+      
+      <li><a href="../worksheet.html">Worksheet</a></li>
+      
+      <li><a href="../menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="../lab.html">Lab</a></li>
+    
+    <li><a href="../notes.html">Notes</a></li>
+    
+    <li><a href="../special.html">Special</a></li>
+    
+    <li><a href="../tutorial.html">Tutorial</a></li>
+    
+    <li><a href="../worksheet.html">Worksheet</a></li>
+    
+    <li><a href="../menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3614 words</span>
+    
+
+
+    
+    <h1 class="article-title">Principle of electron transfer and proton transport</h1>
+    <span class="article-date">2019-10-23</span>
+
+    <p class="link-to-pdf"><a href="2019-10-04-principle-of-electron-transfer-and-proton-transport.pdf "> PDF Version Here</a></p>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="saq" class="section level1">
+<h1>SAQ</h1>
+<p><strong>Using the physical chemistry principles, discuss factors which are contributed in the favourability of an electron transfer reactions between cofactors.</strong></p>
+<p>The reduction potential, <span class="math inline">\(E\)</span>, is used to quantify favourability of gaining electrons (getting reduced). <span class="math inline">\(E^{\circ\prime}\)</span> is the reduction potential measured under biological standard conditions (i.e. pH = 7, oxidised and reduced species are 1M, 298K and 1 atm). When concentrations of the oxidised and reduced species differ:</p>
+<p><span class="math display">\[E=E^{\circ\prime} + \dfrac{RT}{zF}\ln\left(\dfrac{\text{[reduced]}}{\text{[oxidised]}}\right)\]</span></p>
+<p>For two half equations, A<sup>+</sup> + <span class="math inline">\(e^-\rightarrow\)</span> A and <span class="math inline">\(\text{B} + e^- \rightarrow\)</span> B<sup>-</sup> with <span class="math inline">\(E\)</span> of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> respectively, a full reaction equation can be constructed, which can be A<sup>+</sup> + B<sup>-</sup> <span class="math inline">\(\rightarrow\)</span> A + B (with <span class="math inline">\(E_\text{r}\)</span> = x - y) or the reverse (with <span class="math inline">\(E_\text{r}\)</span> = y - x); the one with positive <span class="math inline">\(E_\text{r}\)</span> (reaction potential) will actually occur.</p>
+<p>Electron transfers occur because electrons are moving down to a lower energy level. In simple cases, atoms with greater electronegativity have greater affinity for electrons and thus a more positive reduction potential, and <em>vice versa</em>. This is the case for strong oxidants F<sub>2</sub> and Cl<sub>2</sub> (electronegative; highly positive <span class="math inline">\(E\)</span>) and strong reductants Li and Na (electropositive, highly negative <span class="math inline">\(E\)</span>). In most cases, however, other factors, such as change in state, conformation, or interactions with water, will significantly affect the reduction potential. For example, Cu and Ag is less electronegative than hydrogen, but their monovalent ions are more easily reduced than H<sup>+</sup>. That is mainly because the formation of metallic solid upon reduction is highly exergonic. Similarly, although the atoms involved in the redox reactions in the repiratory chain are not variable (Cu and Fe), they have different <span class="math inline">\(E\)</span> due to the enviornment (e.g. proximity to the P/N face, identity of ligands).</p>
+<p>The series of cofactors along the electron transport chain have a generally steadily increasing <span class="math inline">\(E^{\circ\prime}\)</span>, so electrons are moved toward increasingly lower energy levels. There are some exceptions to this trend, but <span class="math inline">\(E_\text{r}\)</span> would be made positive in these cases by making a concentration difference (usually by means of ‘pulling’ from the next redox centre with favourable <span class="math inline">\(E\)</span>).</p>
+<p>While the thermodynamic feasibility of the redox reactions is solely determined by the difference in the reduction potentials (which is proportional to Gibbs free energy), the kinetics (rates) are affected by more factors.</p>
+<p>Electrons are passed from one centre to another by <em>tunnelling</em>. Specifically, the wave function for an electron in the donor shows there is a probability that the electron will be found at an acceptor some distance away. <em>Tunnelling</em> is independent of temperature and orientation of chemical groups, but is instead influenced by 1) the distance between the electron donor and acceptor, 2) the redox potential difference, <span class="math inline">\(E\)</span>, and 3) the ‘reorganisation energy’, <span class="math inline">\(\lambda\)</span>.</p>
+<p>Within each respiratory complex, the redox centres are close to each other—no more than 14Å apart (the maxium 14Å is found between N5 and N6a Fe-S clusters in complex I). Ubiquinone has binding sites in complex I (II) and III in close proximity to the redox centres from which it receives and to which it delivers electrons, and the same is true for cyt <em>c</em> (which binds to complex III and IV). This arrangement makes the numerous electron transfer steps not the limiting factor in the respiratory chain.</p>
+</div>
+<div id="essay" class="section level1">
+<h1>Essay</h1>
+<p><strong>What mechanisms are employed by mitochondrial electron transfer proteins to generate a proton-motive force (pmf)? Using the concept of membrane capacitance, explain why the dominant component of the pmf in mitochondria is an electrical potential rather than a pH gradient.</strong></p>
+<div id="two-proton-translocation-models-loop-and-pump" class="section level2">
+<h2>Two Proton Translocation Models: Loop and Pump</h2>
+<p>Mechanisms of coupling redox reactions to proton translocation can be classified into two models: the chemical loop, and the conformational pump.</p>
+<p>In the loop model shown in Figure <a href="#fig:loop">1</a>, the hydrogens (protons plus electrons) from the substrate (AH<sub>2</sub>) first reduce an mediator molecule (B) on the N side, and this mediator is reoxidised, forcing protons to be released to the P side via one pathway and electrons to flow back to the N side via another pathway. The electrons then reduce another species (C) using protons from the N side. This mechanism is employed in the respiratory chain, where ubiquinone serves as the ‘mediator’ molecule and ETC components from Rieske Fe-S protein in complex III to Cu<sub>B</sub> centre in complex IV as the electron pathway. The number of protons translocated in this way has to follow a fixed stoichiometry (i.e. 1 proton per electron). (Not shown in this diagram, the reduction of Q near the N face driven by QH<sub>2</sub> oxidation near the P face in the Q cycle is also an example of this mechanism.)</p>
+<div class="figure" style="text-align: c"><span id="fig:loop"></span>
+<img src="../img/etc-mech-1.png" alt="The loop model. Left, generic form; right, simplified example found in the respiratory chain." width="100%" />
+<p class="caption">
+Figure 1: The loop model. Left, generic form; right, simplified example found in the respiratory chain.
+</p>
+</div>
+<p>The key idea of the pump mechanism is the conformational change driven by redox reactions. Conformational change can lead to alternating proton accessibility from the two faces and differential pKa values of proton binding sites, resulting in proton translocation (explained in Figure <a href="#fig:pump">2</a>). The number of protons pumped in this way does not have to follow a fixed stoichiometry within the thermodynamic constraints (i.e. <em>E</em><sub>r</sub>/n must be greater than ∆p). This mechanism is thought to be employed in complex I and IV of the respiratory chain. However, recent studies have shown that complex IV may adopt a unique mechanism, as explained later in this essay.</p>
+<div class="figure" style="text-align: c"><span id="fig:pump"></span>
+<img src="../img/etc-mech-2.jpg" alt="The conformational pump mechanism. When the &quot;pump&quot; protein is reduced, the proton binding site is exposed to the N face and with high pKa, promoting proton binding; upon oxidation, the proton binding site is open to the P face, and pKa drops, promoting proton dissociation." width="100%" />
+<p class="caption">
+Figure 2: The conformational pump mechanism. When the “pump” protein is reduced, the proton binding site is exposed to the N face and with high pKa, promoting proton binding; upon oxidation, the proton binding site is open to the P face, and pKa drops, promoting proton dissociation.
+</p>
+</div>
+</div>
+<div id="complex-i" class="section level2">
+<h2>Complex I</h2>
+<p>As shown in Figure <a href="#fig:3m9s">3</a>, bacterial complex I (from <em>Thermus thermophilus</em>) comprises two domains. The hydrophobic, transmembrane domain (a.k.a. membrane arm) has a proton-translocating P-module and subunit NuoH. The hydrophilic domain (a.k.a. peripheral domain) has an NADH-oxidising dehydrogenase module (N-module) which feeds electrons to the electron-transferring chain of Fe-S clusters, and the connecting Q-module, which reduces ubiquinone. Mammalian mitochondrial complex I is similar in gross organisation and function, although it possesses more subunits.</p>
+<div class="figure" style="text-align: c"><span id="fig:3m9s"></span>
+<img src="../img/3M9S.png" alt="Annotated structure of bacterial complex I. PDB accession code: 3M9S" width="100%" />
+<p class="caption">
+Figure 3: Annotated structure of bacterial complex I. PDB accession code: 3M9S
+</p>
+</div>
+<div id="hydrophilic-domain-peripheral-arm" class="section level3">
+<h3>Hydrophilic domain (peripheral arm)</h3>
+<p>All FMN and the seven (bacteria have additional two redundant ones) Fe-S centres reside in the hydrophilic domain. FMN, which is located at the extremity of the hydrophilic arm, accepts two electrons from NADH<sub>2</sub> and transfers them one by one to the nearest Fe-S centre (N3). Electrons then flow from N3 through a series of isopotential Fe-S centres and finally to N2, whose <span class="math inline">\(E^\circ\)</span> is significantly less negative (-100 mV) <span class="citation">(Sazanov and Hinchliffe 2006)</span>. The ubiquinone is then reduced by two one-electron gaining from N2; the existence of at least two forms of semiquinone is identified by electron paramagnetic resonance.</p>
+</div>
+<div id="hydrophobic-domain-membrane-arm" class="section level3">
+<h3>Hydrophobic domain (membrane arm)</h3>
+<p>The hydrophobic domain comprises subunits NuoAHJKLMN, of which NuoLMN are homologous to bacterial Mrp Na<sup>+</sup>/H<sup>+</sup> antiporters (characterised by the conserved 14 transmembrane helices).</p>
+<p>At the centre of each antiporter-like subunit (NuoLMN), two transmembrane helices are ‘broken’ and each have a kink known as a ‘π-bulge’, and there is a lysine residue in this region (Glu407 for NuoM) critical to proton pumping, confirmed by mutagenesis studies. There are two symmetry-related plausible proton channels lined by hydrophilic/charged residues, one connecting the central lysine on one broken TM to the P face and the other connecting lysine of the other TM to the N face.</p>
+<div class="figure" style="text-align: c"><span id="fig:lys"></span>
+<img src="../img/membrane-arm.png" alt="Plausible proton paths" width="100%" />
+<p class="caption">
+Figure 4: Plausible proton paths
+</p>
+</div>
+<p>As shown in Figure <a href="#fig:proton-path">5</a>, NuoL/M/N may work by using conformational changes (induced from the hydrophilic domain) to transfer a proton from the lysines on the helix with N half channel to the other lysine (or Glu in NuoM) on the helix with P half channel, and if the pK<sub>a</sub>s of the two lysines differ, this leads to unidirectional proton transport. This mechanism is in accordance with the general scheme shown in Figure <a href="#fig:pump">2</a>.</p>
+<div class="figure" style="text-align: c"><span id="fig:proton-path"></span>
+<img src="../img/proton-path.png" alt="Schematic diagram of proton translocation in complex I" width="100%" />
+<p class="caption">
+Figure 5: Schematic diagram of proton translocation in complex I
+</p>
+</div>
+<p>The three antiporter-related subunits are thought to be responsible for the translocation of 3 protons per 2 <span class="math inline">\(e^-\)</span>. An additional channel is found at the interface of subunits NuoN,K,J,A (according to <span class="citation">Efremov and Sazanov (2011)</span> and <span class="citation">Sazanov (2015)</span> or NuoH,J,K according to <span class="citation">Hirst (2013)</span> and <span class="citation">Nicholls and Ferguson (2013)</span>) and they are thought to act together to pump another proton with a similar mechanism involving protonation/deprotonation of lysine.</p>
+</div>
+<div id="coupling" class="section level3">
+<h3>Coupling</h3>
+<p>It is debated how the redox reactions in the hydrophilic domain triggers conformational change, and how this conformational change is transmitted along the hydrophobic domain.</p>
+<p>Some features of the Fe-S centre N2 (the last Fe-S centre in complex I) led to hypotheses in which N2 plays a major role in pumping protons<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a><sup>,</sup><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, but currently, the mainstream idea is that the initial conformational change in the hydrophilic domain is contributed mostly by the reduction of ubiquinone.</p>
+<p>As claimed by <span class="citation">Wirth et al. (2016)</span>, reduction of ubiquinone is a two-step process, where the Q binding site cycles between a conformation that permits electron transfer (E-state), and a conformation that permits proton transfer (P-state) onto intermediates of ubiquinone. The conformational change associated with this controlled process is assumed to initiate proton translocation.</p>
+<p>It was originally suggested that the horizontal HL helix (see Figure <a href="#fig:3m9s">3</a>) in NuoL could move horizontally like a piston to transmit conformational change along the hydrophobic domain<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, but now, after realising the similarity between NuoH and NuoL/M/N, it is thought that conformational changes associated with π-bulges in the mid-membrane parts are transmitted laterally to NuoN/M/L <span class="citation">(Nicholls and Ferguson 2013)</span>, and, as suggested by <span class="citation">Wirth et al. (2016)</span>, this is achieved by electrostatic coupling in the central hydrophilic axis.</p>
+<p>As I mentioned last week <span class="citation">(Shi 2019)</span>, as there is no complete evidence demonstrating how complex I proton pump works, other hypotheses exists, including a radical one recently proposed by <span class="citation">Morelli et al. (2019)</span>, which emphasises the elusiveness of the ‘proton entrance half channel’ (from the middle Lys to the N face) contrasted by the clarity of the ‘proton exit half channel’ (to the P face). Together with another piece of evidence that an obvious proton tunnelling is found at the centre of complex I, Morelli drafted an lateral mechanism of proton circuiting, as shown in Figure <a href="#fig:Morelli2019">6</a></p>
+<div class="figure" style="text-align: c"><span id="fig:Morelli2019"></span>
+<img src="img/Morelli2019.png" alt="A possible lateral proton circuit suggested by Morelli (2019). Protons are only pumped from the middle to the P side, then trasferred through the hydrophilic heads of phospholipids to ATP synthase. After a complete turn in ATP synthase, protons move back through channelling in the middle of the membrane to complex I, but not to the N side" width="100%" />
+<p class="caption">
+Figure 6: A possible lateral proton circuit suggested by Morelli (2019). Protons are only pumped from the middle to the P side, then trasferred through the hydrophilic heads of phospholipids to ATP synthase. After a complete turn in ATP synthase, protons move back through channelling in the middle of the membrane to complex I, but not to the N side
+</p>
+</div>
+</div>
+</div>
+<div id="complex-iii-cyt-bc1-complex" class="section level2">
+<h2>Complex III (cyt <em>bc<sub>1</sub></em> complex)</h2>
+<p>Complex III is a homodimer, with each monomer consisting of three subunits: cytochrome b, the Rieske iron-sulfur protein, and cytochrome c1. Each monomer has two binding sites for ubiquinone, called Q<sup>N</sup> and Q<sup>P</sup>, indicating their proximities to two opposite faces.</p>
+<p>Uniquinone oxidation and proton translocation is coupled in the Q cycle, as illustrated in Figure <a href="#fig:ciii">7</a>.</p>
+<div class="figure" style="text-align: c"><span id="fig:ciii"></span>
+<img src="../img/complexIII.png" alt="The Q cycle. Left, stage 1; right, stage 2." width="100%" />
+<p class="caption">
+Figure 7: The Q cycle. Left, stage 1; right, stage 2.
+</p>
+</div>
+<p>In stage 1, QH<sub>2</sub> binds to Q<sub>N</sub> of one dimer and a Q binds to the Q<sub>P</sub> of another dimer. The QH<sub>2</sub> at Q<sub>N</sub> is oxidised by two electron acceptors in two steps: the first electron is accepted by the Rieske iron-sulfur protein and passed though cytochrome c<sub>1</sub> and finally to cytochrome c, and second other electron is accepted by cytochrome b, passed through its two hemes (b<sub>H</sub> and b<sub>L</sub>) and finally to the Q at Q<sub>P</sub> on the other monomer, forming semiquinone. The two protons of QH<sub>2</sub> are released into the P face (the molecular details is unclear).</p>
+<p>In stage 2, the same process is repeated—one QH<sub>2</sub> is oxidised to Q, its protons released and electrons passed 1) onto one cytochrome c and 2) to the other side—but this time the electron acceptor on the other side is semiquinone. Acceptance of an electron by semiquinone, and the addition of two protons from the matrix, produces QH2.</p>
+</div>
+<div id="complex-iv" class="section level2">
+<h2>Complex IV</h2>
+<p>Complex IV (cytochrome oxidase) accepts electrons from cytochrome c to reduce oxygen to water and pumps 2 electrons to the P face.</p>
+<p>Previous X-ray studies suggested that complex IV exists as dimers with each monomer comprising 13 subunits <span class="citation">(Tsukihara et al. 1996)</span>. However, it was recently shown by <span class="citation">Zong et al. (2018)</span> that complex IV is actually a 14-subunit monomer, and dimerisation was an artifect due to the dissociation of NDUFA4 subunit during the detergent-based purification steps before crystallisation (NDUFA4 hampers dimerisation).</p>
+<div id="reduction-of-oxygen" class="section level3">
+<h3>Reduction of oxygen</h3>
+<p>The key catalytic activities are found in subunit I and II, as shown in Fig. <a href="#fig:complexIV">8</a></p>
+<div class="figure" style="text-align: c"><span id="fig:complexIV"></span>
+<img src="../img/complexIV.png" alt="Schematic diagram of complex IV with emphasis on the electron-transport and catalytic activities of subunit I and II." width="100%" />
+<p class="caption">
+Figure 8: Schematic diagram of complex IV with emphasis on the electron-transport and catalytic activities of subunit I and II.
+</p>
+</div>
+<p>Each cytochrome c first donates one electron to Cu<sub>A</sub> located in the globular domain of subunit II. Cu<sub>A</sub> is a binulear centre, but it undergoes one-electron redox reactions. The electron is then passed onto haem <em>a</em>, and then to haem <em>a</em><sub>3</sub>-Cu<sub>B</sub> binuclear centre, where an oxygen molecule is bound. 4 electrons from cyt c and 4 protons from the N phase are required to reduce one oxygen molecule to two water molecules. Cu<sub>B</sub> has three His ligands, and the forth empty coordination site mediates oxygen reduction by holding the intermediates (its malfunction leads to generation of ROS).</p>
+</div>
+<div id="pump-mechanism" class="section level3">
+<h3>Pump mechanism</h3>
+<p>For each pair of electrons, 2 H<sup>+</sup> from N phase is consumed to make water and another 2 H<sup>+</sup> is pumped intot he P phase.</p>
+<p>According to a recent review by <span class="citation">Wikström and Sharma (2018)</span>, the favoured charge-conpensation mechanism is as follows: (see Figure <a href="#fig:civ-p">9</a>)</p>
+<ol style="list-style-type: decimal">
+<li>when an electron is transferred from haem <em>a</em> to the haem <em>a</em><sub>3</sub>-Cu<sub>B</sub> binulear centre (BNC), one proton from Glu242 is loaded onto the ‘proton loading site’ (PLS<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>). This is a purely electrostatic event (not acid-base, as pK<sub>a</sub> of PLS is not high enough).</li>
+<li>reprotonated Glu242 transfers another proton to BNC, annihilating the -ve charge in BNC, so H<sup>+</sup> on PLS can leave. There must be a barrier preventing H<sup>+</sup> flowing back to the N side, which can be achieved by raising the energy of the transition state of proton transfer between the Glu242 and PLS.</li>
+</ol>
+<div class="figure" style="text-align: c"><span id="fig:civ-p"></span>
+<img src="../img/civ-p.png" alt="Charge-compensation mechanism of proton pumping in complex IV." width="70%" />
+<p class="caption">
+Figure 9: Charge-compensation mechanism of proton pumping in complex IV.
+</p>
+</div>
+</div>
+</div>
+<div id="components-of-pmf-in-chloroplasts-and-mitochondria" class="section level2">
+<h2>Components of pmf in chloroplasts and mitochondria</h2>
+<p>In mitochondria, the major component of protomotive force (<span class="math inline">\(\Delta p\)</span>) is the membrane potential (<span class="math inline">\(\Delta \Psi\)</span>), while in chloroplasts it is <span class="math inline">\(\Delta\)</span>pH. This is caused by the physiology of these organelles and the electrical properties of membranes.</p>
+<p>In chloroplasts, when protons are being pumped into the thylakoid space, the developed membrane potential is balanced out by efflux of K<sup>+</sup> and influx of Cl<sup>–</sup> through voltage-gated channels, such as KEA3 K<sup>+</sup>/H<sup>+</sup> antiporter and voltage-gated VCCN1 Cl<sup>–</sup> channel, so it results in a pure pH difference. TPK3 was originally thought to be one of such channels but was recently shown to be not critical <span class="citation">(Höhner et al. 2019)</span>. There are not many enzymes in the thylakoid lumen, so a low pH is not unsafe. In addition, the high H<sup>+</sup> concentration has regulatroy functions. <span class="citation">(Höhner et al. 2019)</span></p>
+<p>If mitochondria were allowed to develop such a pH difference (very basic matrix), this would denature the numerous enzymes, such as those involved in <span class="math inline">\(\beta\)</span>-oxidation and TCA cycle, that operate inside the matrix. In mitochondria, there are not such ion channels to counteract change in <span class="math inline">\(\Delta \Psi\)</span>, so proton translocation results in charge imbalance, leading to <span class="math inline">\(\Delta \Psi\)</span> change<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, and a significant membrane potential can be established with only minuscule amount of charge movement.This can be explained by the low capacitance of the membrane. Capacitance is the amount of charge separation needed to develop unit voltage difference, i.e.</p>
+<p><span class="math display">\[C=\dfrac{Q}{V}\]</span></p>
+<p>Given a constant <span class="math inline">\(V\)</span> (<span class="math inline">\(\Delta \Psi\)</span>), lower capacitance means smaller charge difference is required to build up that voltage difference.</p>
+<p>Figure <a href="#fig:capacitance">10</a> shows a simple parallel-plate capacitor, which is analogous to mitochondrial inner membrane.</p>
+<div class="figure" style="text-align: c"><span id="fig:capacitance"></span>
+<img src="img/capacitance.png" alt="Illustration of a simple parallel-plate capacitor" width="70%" />
+<p class="caption">
+Figure 10: Illustration of a simple parallel-plate capacitor
+</p>
+</div>
+<p>The electrical capacitance of such a plate can be calculated as:</p>
+<p><span class="math display">\[C = \dfrac{\epsilon A}{d}\]</span></p>
+<p>where <span class="math inline">\(\epsilon\)</span> is the permittivity of the plate, <span class="math inline">\(A\)</span> is the surface area and <span class="math inline">\(d\)</span> is the distance separating charges. For mitochondrial inner membrane, although <span class="math inline">\(\dfrac{A}{d}\)</span> is large, <span class="math inline">\(\epsilon\)</span> is very small, so the overall capacitance is small.</p>
+<div id="a-failed-quantitative-analysis" class="section level4">
+<h4>A failed quantitative analysis</h4>
+<p>According to <span class="citation">Liang et al. (2017)</span>, the cell membrane capacitance is aroud 10 mF/m<sup>2</sup>, and in the <em>Bioenergetics</em> book <span class="citation">(Nicholls and Ferguson 2013)</span>, the capacitance of the mitochondrial inner membrane takes the same valu. According to a model built by <span class="citation">Mannella, Lederer, and Jafri (2013)</span>, one mitochondria with matrix volume of <span class="math inline">\(9.6\times10^4\)</span> nm^3 would have a inner membrane (cristae) surface area of <span class="math inline">\(5.76\times10^6\)</span> nm<sup>2</sup>.</p>
+<p>With these values, to build up a <span class="math inline">\(\Delta \Psi\)</span> of -140 mV, the charge required is:</p>
+<p><span class="math display">\[Q=CV=0.01\text{F m}^{-2} \times 5.76 \times 10^{-12}\text{m}^{-2}\times 0.14\text{V}=8.1 \times 10^{-15} \text{ C}\]</span></p>
+<p>which corresponds to <span class="math inline">\(8.1 \times 10^{-15}/96450=8.4 \times 10^{-20}\)</span> moles of H<sup>+</sup>, or <span class="math inline">\(8.4 \times 10^{-20}/(9.6\times 10^{-20})=0.875\)</span> M (concentration), which is not realistic…</p>
+</div>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-Efremov-2011">
+<p>Efremov, Rouslan G., and Leonid A. Sazanov. 2011. “Structure of the Membrane Domain of Respiratory Complex I.” <em>Nature</em> 476 (7361): 414–20. <a href="https://doi.org/10.1038/nature10330">https://doi.org/10.1038/nature10330</a>.</p>
+</div>
+<div id="ref-Hirst-2013">
+<p>Hirst, Judy. 2013. “Mitochondrial Complex I.” <em>Annual Review of Biochemistry</em> 82 (1). Annual Reviews: 551–75. <a href="https://doi.org/10.1146/annurev-biochem-070511-103700">https://doi.org/10.1146/annurev-biochem-070511-103700</a>.</p>
+</div>
+<div id="ref-Hohner-2019">
+<p>Höhner, Ricarda, Viviana Correa Galvis, Deserah D. Strand, Carsten Völkner, Moritz Krämer, Michaela Messer, Firdevs Dinc, et al. 2019. “Photosynthesis in Arabidopsis Is Unaffected by the Function of the Vacuolar K<span class="math inline">\(&lt;\)</span>sup<span class="math inline">\(&gt;\)</span>+<span class="math inline">\(&lt;\)</span>/Sup<span class="math inline">\(&gt;\)</span> Channel Tpk3.” <em>Plant Physiology</em> 180 (3): 1322. <a href="https://doi.org/10.1104/pp.19.00255">https://doi.org/10.1104/pp.19.00255</a>.</p>
+</div>
+<div id="ref-Liang:2017">
+<p>Liang, Wenfeng, Yuliang Zhao, Lianqing Liu, Yuechao Wang, Wen Jung Li, and Gwo-Bin Lee. 2017. “Determination of Cell Membrane Capacitance and Conductance via Optically Induced Electrokinetics.” <em>Biophysical Journal</em> 113 (7): 1531–9. <a href="https://doi.org/https://doi.org/10.1016/j.bpj.2017.08.006">https://doi.org/https://doi.org/10.1016/j.bpj.2017.08.006</a>.</p>
+</div>
+<div id="ref-Mannella-2013">
+<p>Mannella, Carmen A., W. Jonathan Lederer, and M. Saleet Jafri. 2013. “The Connection Between Inner Membrane Topology and Mitochondrial Function.” <em>Journal of Molecular and Cellular Cardiology</em> 62: 51–57. <a href="https://doi.org/https://doi.org/10.1016/j.yjmcc.2013.05.001">https://doi.org/https://doi.org/10.1016/j.yjmcc.2013.05.001</a>.</p>
+</div>
+<div id="ref-Morelli:2019">
+<p>Morelli, Alessandro Maria, Silvia Ravera, Daniela Calzia, and Isabella Panfoli. 2019. “An Update of the Chemiosmotic Theory as Suggested by Possible Proton Currents Inside the Coupling Membrane.” Journal Article. <em>Open Biology</em> 9 (4): 180221. <a href="https://doi.org/10.1098/rsob.180221">https://doi.org/10.1098/rsob.180221</a>.</p>
+</div>
+<div id="ref-Nelson-2017">
+<p>Nelson, David L., and Michael M. Cox. 2017. <em>Lehninger Principles of Biochemistry</em>. Book. 7th ed. W. H. Freeman. <a href="https://search.library.wisc.edu/catalog/999964334502121">https://search.library.wisc.edu/catalog/999964334502121</a>.</p>
+</div>
+<div id="ref-Nicholls-2013">
+<p>Nicholls, David G., and Stuart J. Ferguson. 2013. <em>Bioenergetics</em>. Book. 4th ed. Amsterdam: Academic Press, Elsevier.</p>
+</div>
+<div id="ref-Roessler-2010">
+<p>Roessler, Maxie M., Martin S. King, Alan J. Robinson, Fraser A. Armstrong, Jeffrey Harmer, and Judy Hirst. 2010. “Direct Assignment of Epr Spectra to Structurally Defined Iron-Sulfur Clusters in Complex I by Double Electron–Electron Resonance.” <em>Proceedings of the National Academy of Sciences</em> 107 (5): 1930. <a href="https://doi.org/10.1073/pnas.0908050107">https://doi.org/10.1073/pnas.0908050107</a>.</p>
+</div>
+<div id="ref-Sazanov-2015">
+<p>Sazanov, Leonid A. 2015. “A Giant Molecular Proton Pump: Structure and Mechanism of Respiratory Complex I.” <em>Nature Reviews Molecular Cell Biology</em> 16. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved. SN -: 375 EP. <a href="https://doi.org/10.1038/nrm3997">https://doi.org/10.1038/nrm3997</a>.</p>
+</div>
+<div id="ref-Sazanov-2006">
+<p>Sazanov, Leonid A., and Philip Hinchliffe. 2006. “Structure of the Hydrophilic Domain of Respiratory Complex I from Thermus Thermophilus.” <em>Science</em> 311 (5766): 1430. <a href="https://doi.org/10.1126/science.1123809">https://doi.org/10.1126/science.1123809</a>.</p>
+</div>
+<div id="ref-Shi-2019">
+<p>Shi, Tianyi. 2019. “Principle of Chemiosmotic Mechanism.” 2019.</p>
+</div>
+<div id="ref-Tsukihara-1996">
+<p>Tsukihara, Tomitake, Hiroshi Aoyama, Eiki Yamashita, Takashi Tomizaki, Hiroshi Yamaguchi, Kyoko Shinzawa-Itoh, Ryosuke Nakashima, Rieko Yaono, and Shinya Yoshikawa. 1996. “The Whole Structure of the 13-Subunit Oxidized Cytochrome c Oxidase at 2.8 Å.” <em>Science</em> 272 (5265): 1136. <a href="https://doi.org/10.1126/science.272.5265.1136">https://doi.org/10.1126/science.272.5265.1136</a>.</p>
+</div>
+<div id="ref-Verkhovskaya-2013">
+<p>Verkhovskaya, Marina, and Dmitry A. Bloch. 2013. “Energy-Converting Respiratory Complex I: On the Way to the Molecular Mechanism of the Proton Pump.” <em>The International Journal of Biochemistry &amp; Cell Biology</em> 45 (2): 491–511. <a href="https://doi.org/https://doi.org/10.1016/j.biocel.2012.08.024">https://doi.org/https://doi.org/10.1016/j.biocel.2012.08.024</a>.</p>
+</div>
+<div id="ref-Wikstrom-2018">
+<p>Wikström, Mårten, and Vivek Sharma. 2018. “Proton Pumping by Cytochrome c Oxidase – a 40 year Anniversary.” <em>Biochimica et Biophysica Acta (BBA) - Bioenergetics</em> 1859 (9): 692–98. <a href="https://doi.org/https://doi.org/10.1016/j.bbabio.2018.03.009">https://doi.org/https://doi.org/10.1016/j.bbabio.2018.03.009</a>.</p>
+</div>
+<div id="ref-Wirth-2016">
+<p>Wirth, Christophe, Ulrich Brandt, Carola Hunte, and Volker Zickermann. 2016. “Structure and Function of Mitochondrial Complex I.” <em>Biochimica et Biophysica Acta (BBA) - Bioenergetics</em> 1857 (7): 902–14. <a href="https://doi.org/https://doi.org/10.1016/j.bbabio.2016.02.013">https://doi.org/https://doi.org/10.1016/j.bbabio.2016.02.013</a>.</p>
+</div>
+<div id="ref-Zong-2018">
+<p>Zong, Shuai, Meng Wu, Jinke Gu, Tianya Liu, Runyu Guo, and Maojun Yang. 2018. “Structure of the Intact 14-Subunit Human Cytochrome c Oxidase.” <em>Cell Research</em> 28 (10): 1026–34. <a href="https://doi.org/10.1038/s41422-018-0071-1">https://doi.org/10.1038/s41422-018-0071-1</a>.</p>
+</div>
+<div id="ref-Zwicker-2006">
+<p>Zwicker, K., A. Galkin, S. Drose, L. Grgic, S. Kerscher, and U. Brandt. 2006. “The Redox-Bohr Group Associated with Iron-Sulfur Cluster N2 of Complex I.” Journal Article. <em>J Biol Chem</em> 281 (32): 23013–7. <a href="https://doi.org/10.1074/jbc.M603442200">https://doi.org/10.1074/jbc.M603442200</a>.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>In some papers <span class="citation">(Hirst 2013; Verkhovskaya and Bloch 2013)</span> it was suggested that coupling of electron transport to movement of protons depends on the significantly exergonic reduction of the N2 centre by the roughly isopotential wire of Fe-S centres that delivers electrons from NADH, and the large E<sub>m,7</sub> span from N3 to N2 must provide the majority of the driving force for the proton pumping events associated with reduction and reoxidation of N2. This may be incorrect, as newest measurements <span class="citation">(Sazanov 2015)</span> of redox potentials of the full Fe-S series (N3-N1b-N4-N5-N6a-N6b-N2) shows that N3, N4 and N6 are about equipotential at about -250 mV, while N1b, N5 and N6b actually have lower potentials; and such an arrangement is claimed by <span class="citation">Roessler et al. (2010)</span> to be energy efficient.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>The mid-point reduction potential of N2 is shown to be pH-dependent, so that E<sub>acid</sub> &gt; E<sub>alkaline</sub>, and indeed a proton binding site is present there: His226 in <em>Y. lipolytica</em>, and protons are more likely to bind when N2 is reduced. However, shifting the midpoint potential to a more negative and pH insensitive value by exchanging His226 with a methionine affected the functioning of complex I including proton pumping only marginally. <span class="citation">(Zwicker et al. 2006)</span><a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>The alternative role of HL would be to stabilise ends of the helices while permitting movement of the middle hydrophilic axis.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Although the identity of PLS is uncertain, many studies indicates that it may be the A-propionate substituent of haem <em>a</em><sub>3</sub>.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>To be precise, when ∆p = 0, there is still (negative) membrane potential (<span class="math inline">\(\Delta \Psi\)</span>), and H<sup>+</sup> equilibrate under this <span class="math inline">\(\Delta \Psi\)</span>, which results in a lower pH inside (more concentrated H<sup>+</sup>). The <span class="math inline">\(\Delta \Psi\)</span> that contributes to ∆p is actually the <span class="math inline">\(change\)</span> in <span class="math inline">\(\Delta \Psi\)</span> caused by proton translocation.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    
+
+    var disqus_config = function () {
+      this.page.url = "https://tianyishi2001.github.io/ox/tutorial/principle-of-electron-transfer-and-proton-transport.html"
+      this.page.identifier = "principle-of-electron-transfer-and-proton-transport"
+    };
+
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+      <p>COPYRIGHT © 2019 by Tianyi Shi. All rights reserved.</p>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

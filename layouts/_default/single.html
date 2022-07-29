@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="content" role="main">
+
+  <article class="article">
+    {{ if not (eq .Section "") }}
+    <span class="article-duration">{{ .WordCount}} words</span>
+    {{ end }}
+
+
+    {{ if eq .Kind "page" }}
+    <h1 class="article-title">{{ .Title }}</h1>
+    <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
+
+    <p class="link-to-pdf"><a href="{{ .File.BaseFileName }}.pdf "> PDF Version Here</a></p>
+    {{ end }}
+
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+  </article>
+  <div id="disqus_thread"></div>
+
+  <script>
+
+    /*
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+    */
+    var disqus_config = function () {
+      this.page.url = {{ print "https://tianyishi2001.github.io/ox" .RelPermalink }}
+      this.page.identifier = "{{ .Params.slug }}"
+    };
+
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://tianyishi2001.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
+</main>
+{{ end }}

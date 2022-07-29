@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>biophysical techniques on Tianyi@Oxford</title>
+    <link>/categories/biophysical-techniques.html</link>
+    <description>Recent content in biophysical techniques on Tianyi@Oxford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/biophysical-techniques/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Handling — Biophysical Methods</title>
+      <link>/worksheet/data-handling-biophysical-methods.html</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/worksheet/data-handling-biophysical-methods.html</guid>
+      <description>1 Enzyme 2 ATP Synthase 3 Fluorescence spectroscopy 4 High-resolution Nuclear Magnetic Resonance Spectroscopy. 5 Electrospray mass spectrometry. 6 Analytical ultracentrifugation: equilibrium sedimentation. 1 Enzyme 2 ATP Synthase 3 Fluorescence spectroscopy 4 High-resolution Nuclear Magnetic Resonance Spectroscopy. 5 Electrospray mass spectrometry. 6 Analytical ultracentrifugation: equilibrium sedimentation. \[ M = \dfrac{2RT}{(1-v\rho)\omega^2}\dfrac{d(\ln(c))}{dr^2} \]
+\[ M = \dfrac{2\times 8.314\times298.15}{(1-0.74)\times27000^2}\dfrac{d(\ln(c))}{dr^2} = 2.6156\times10^{-5}\dfrac{d(\ln(c))}{dr^2} \]
+r = c(6.918, 6.923, 6.924, 6.929, 6.932, 6.935, 6.942, 6.943, 6.</description>
+    </item>
+    
+    <item>
+      <title>Crystallography: A Case Study</title>
+      <link>/tutorial/crystallography-a-case-study.html</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/crystallography-a-case-study.html</guid>
+      <description>Introduction The Ca2+ selectivity of voltage-gated calcium (Cav) channels remained unclear. They were thought to use a ‘knock-off’ methanism which requires multiple ion-binding cores, but mutational analyses supported a single high-affinity Ca2+ binding site. This paradox is explained by the mechanism proposed in this article, based on the crystal structures of CavAb channels.
+Methods In this study, the authors created several mutants of bacterial Nav channel NavAb by site directed mutagenesis using QuickChange at the selectivity filter region1.</description>
+    </item>
+    
+    <item>
+      <title>Three Biophysical Methods</title>
+      <link>/tutorial/three-biophysical-methods.html</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/three-biophysical-methods.html</guid>
+      <description>1 Circular Dichorism (CD) 1.1 Physical Principles 1.2 Experimental Setup 1.3 Application of CD 1.4 Other CD-based Techniques 2 Small-angle X-ray Scattering (SAXS) 2.1 Physical Principles 2.2 Experimentation and Data Processing 3 Analytical Ultracentrifuge (AUC) 3.1 Choice of Optical System 3.2 Experiments 3.2.1 Sedimentation Velocity (SV) References 1 Circular Dichorism (CD) Reference: Ranjbar and Gill (2009); Kelly, Jess, and Price (2005);Whitmore and Wallace (2008)
+Circular dichorism measures the difference in absorption of left-hand and right-hand circularly polarised light by optically active (chiral) molecules (usually biological macromolecules).</description>
+    </item>
+    
+    <item>
+      <title>Electron Microscopy and X-Ray Crystallography</title>
+      <link>/tutorial/electron-microscopy-and-x-ray-crystallography.html</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/electron-microscopy-and-x-ray-crystallography.html</guid>
+      <description>&lt;p&gt;Learning objectives&lt;/p&gt;
+&lt;p&gt;To understand the methodological principle of electron microscopy in its different applications (e.g. TEM, SEM, tomography, single-particle), and X-ray crystallography  To be able to evaluate, which method of structural analysis would be most feasible with which kind of biological specimen (e.g. whole cells, viruses, protein complexes, peptides).&lt;/p&gt;
+&lt;p&gt;To gain a conception of the resolution ranges attainable by EM methods as compared to X-ray crystallography.&lt;/p&gt;
+&lt;p&gt;To be aware of the computational methods that combine EM maps and crystallogrographic data&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NMR</title>
+      <link>/tutorial/nmr.html</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/nmr.html</guid>
+      <description>SAQ Write brief notes on the chemical shift, the nuclear Overhauser enhancement effect (NOE), the relaxation times T1 and T2, and the spin-spin coupling constant (J) with an emphasis on how these can provide information about the structure and dynamics of biological molecules.
+Chemical Shift: NMR applies RF wave to induce resonance with the precession frequency, \(\omega=\gamma (B_0-B_S)\), where \(B_0\) is the constant magnetic field strength on the \(z\) axis, \(B_S\) is the magnetic field strength shilded by electrons around the nucleus and \(\gamma\) is the magnetogyric ratio (depending of the identity of the nucleus).</description>
+    </item>
+    
+    <item>
+      <title>Biophysical Techniques</title>
+      <link>/tutorial/biophysical-techniques.html</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/biophysical-techniques.html</guid>
+      <description>You have expressed and purified a protein in a recombinant system. How would you confirm that the protein was the one expected from the DNA sequence. (ESI-MS) How would you determine that the protein was folded and its solution behaviour. (CD, Thermofluor, Intrinsic fluorescence, DSC, SEC MALS, AUC, DLS) How can we quantify the binding between two macromolecules? Discuss how you could use the following techniques to determine a KD for an interaction? What are their limitations in practice? What would decide which techniques you could apply to an interaction? (Surface Plasmon resonance, Fluorimetry/Fluorescence anisotropy, Microscale thermophoresis (MST), Isothermal titration calorimetry (ITC), Stopped flow, NMR, AUC) References: Use Campbell&amp;rsquo;s Biophysical Techniques; for MST use Wienken et al 2010 Nature Communications 10.1038/ncomms1093</description>
+    </item>
+    
+  </channel>
+</rss>

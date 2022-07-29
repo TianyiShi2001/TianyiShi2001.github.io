@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<title>Tianyi@Oxford</title>
+<meta property="og:title" content="Tianyi@Oxford">
+<meta property="og:type" content="website">
+
+
+<link href='./favicon.ico' rel='icon' type='image/x-icon' />
+
+
+
+<meta property="description" content="Tianyi Shi&#39;s blog">
+
+
+
+
+
+<link href="./index.xml" rel="alternate" type="application/rss+xml" title="Tianyi@Oxford" />
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="./css/fonts.css" media="all">
+<link rel="stylesheet" href="./css/main.css" media="all">
+<script src=./js/main.js></script>
+
+</head>
+
+<body>
+  <div class="wrapper list">
+    <header class="header">
+      <nav id="navbar">
+  <a href=./ class="nav-logo">
+    <img src="./images/logo.png" width="50"
+      height="50" alt="Logo">
+  </a>
+
+  <p class="nav-title">Tianyi's Work at Oxford</p>
+  <div class="menu">
+    <ul>
+      
+      <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+      
+      <li><a href="./lab.html">Lab</a></li>
+      
+      <li><a href="./notes.html">Notes</a></li>
+      
+      <li><a href="./special.html">Special</a></li>
+      
+      <li><a href="./tutorial.html">Tutorial</a></li>
+      
+      <li><a href="./worksheet.html">Worksheet</a></li>
+      
+      <li><a href="./menu.html">菜谱</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+<div class="nav-button" id="nav-button" onclick="toggleNav(this)" title="Open menu">
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+<nav id="main-nav" class="overlay" style="height: 0%;">
+  <ul class="overlay-content">
+    
+    <li><a href="https://github.com/TianyiShi2001">GitHub</a></li>
+    
+    <li><a href="./lab.html">Lab</a></li>
+    
+    <li><a href="./notes.html">Notes</a></li>
+    
+    <li><a href="./special.html">Special</a></li>
+    
+    <li><a href="./tutorial.html">Tutorial</a></li>
+    
+    <li><a href="./worksheet.html">Worksheet</a></li>
+    
+    <li><a href="./menu.html">菜谱</a></li>
+    
+  </ul>
+</nav>
+
+    </header>
+
+    
+
+<main class="content home" role="main">
+  
+
+  <article class="article">
+    
+      <h1 class="article-title">Academic Work at Oxford</h1>
+    
+    <div class="article-content">
+      
+
+
+<div id="tianyi-shi" class="section level1">
+<h1>Tianyi Shi</h1>
+<p>This blog is used mainly for showing academic work during my undergraduate studies.</p>
+</div>
+
+    </div>
+  </article>
+
+  <div class="archive">
+    
+    
+    
+      
+      
+       
+       
+              <h2 class="archive-title">2022</h2>
+              
+                <article class="archive-item">
+                  <a href="./bioinformatics/personal-notes-on-rna-seq.html" class="archive-item-link">
+                    Personal Notes on RNA-seq 
+                  </a>
+                  <span class="archive-item-date">
+                    2022-07-29
+                  </span>
+                  <div class="article-summary" style="display: none;">
+                    
+                    
+
+<div id="TOC">
+<ul>
+<li><a href="#trimming" id="toc-trimming"><span class="toc-section-number">1</span> Trimming</a></li>
+<li><a href="#mapping" id="toc-mapping"><span class="toc-section-number">2</span> Mapping</a>
+<ul>
+<li><a href="#star" id="toc-star"><span class="toc-section-number">2.1</span> STAR</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="trimming" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Trimming</h1>
+</div>
+<div id="mapping" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Mapping</h1>
+<div id="star" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> STAR</h2>
+<p>The <code>--outSAMstrandField</code> intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data <span class="citation">(<a href="#ref-Dobin-2015" role="doc-biblioref">Dobin and Gingeras 2015</a>)</span>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Dobin-2015" class="csl-entry">
+Dobin, Alexander, and Thomas R. Gingeras. 2015. <span>“Mapping RNA-Seq Reads with STAR.”</span> <em>Current Protocols in Bioinformatics</em> 51 (1): 11.14.1–19. https://doi.org/<a href="https://doi.org/10.1002/0471250953.bi1114s51">https://doi.org/10.1002/0471250953.bi1114s51</a>.
+</div>
+</div>
+</div>
+</div>
+
+                  </div>
+                </article>
+              
+        
+      
+       
+       
+        <h2 class="archive-title">2020</h2>
+          
+          <h3 class="archive-subtitle">Michaelmas Term</h3>
+            
+              <article class="archive-item">
+                <a href="./tutorial/insertion-of-membrane-proteins.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Insertion of Membrane Proteins 
+                </a>
+                <span class="archive-item-date">
+                  Week 8
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/protein-nucleic-acid-interactions.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Protein-Nucleic Acid Interactions 
+                </a>
+                <span class="archive-item-date">
+                  Week 7
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./lab/metabolic-modelling.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Metabolic Modelling 
+                </a>
+                <span class="archive-item-date">
+                  Week 7
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./lab/gene-expression-practical-paper-6-questions.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Gene Expression Practical Paper 6 Questions 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./worksheet/data-handling-biophysical-methods.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Worksheet:
+                  
+                  Data Handling — Biophysical Methods 
+                </a>
+                <span class="archive-item-date">
+                  Week 7
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/protein-protein-interactions.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Protein-Protein Interactions 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/membrane-protein-structure-and-stability.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Membrane Protein: Structure and Stability 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./lab/gene-control-practical.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Gene Control Practical 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/crystallography-a-case-study.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Crystallography: A Case Study 
+                </a>
+                <span class="archive-item-date">
+                  Week 4
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/assessing-structural-models.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Assessing The Quality Structural Models 
+                </a>
+                <span class="archive-item-date">
+                  Week 3
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/download-and-sync-with-the-entire-pdb-database.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Download and Sync with the Entire PDB Database 
+                </a>
+                <span class="archive-item-date">
+                  Week 2
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/sequence-alignment-gap-penalty.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Sequence Alignment: Gap Penalty 
+                </a>
+                <span class="archive-item-date">
+                  Week -4
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/fasta-parser-implemented-in-rust-with-nom.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  FASTA Parser Implemented in Rust with Nom 
+                </a>
+                <span class="archive-item-date">
+                  Week -5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+            
+          
+          <h3 class="archive-subtitle">Trinity Term</h3>
+            
+              <article class="archive-item">
+                <a href="./tutorial/redox-based-modulation-of-enzyme-activity.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Redox-Based Modulation of Enzyme Activity 
+                </a>
+                <span class="archive-item-date">
+                  Week 8
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/improving-photosynthesis-by-photorespiratory-bypasses.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Improving Photosynthesis by Photorespiratory Bypasses 
+                </a>
+                <span class="archive-item-date">
+                  Week 7
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./lab/computational-genomics-practical-tt-2020.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Computational Genomics Practical (TT 2020) 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/genetic-manipulation-of-the-calvin-cycle.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Genetic Manipulation of the Calvin Cycle 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/coordination-of-ps-i-and-ps-ii.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Coordination of PS I and PS II 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/sensing-energy-status-during-exercise.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Fuel Selection During Exercise 
+                </a>
+                <span class="archive-item-date">
+                  Week 4
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/the-aetiology-of-diabetes-mellitus-and-insulin-resistance.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Insulin and Ketone Bodies 
+                </a>
+                <span class="archive-item-date">
+                  Week 3
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/glucagon-and-insulin.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Glucagon and Insulin 
+                </a>
+                <span class="archive-item-date">
+                  Week 2
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/supplying-fuels-to-the-brain-during-starvation.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Supplying Fuels to the Brain During Starvation 
+                </a>
+                <span class="archive-item-date">
+                  Week 1
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+            
+          
+          <h3 class="archive-subtitle">Hilary Term</h3>
+            
+              <article class="archive-item">
+                <a href="./lab/immunoassay-in-silico.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Immunoassay (in Silico) 
+                </a>
+                <span class="archive-item-date">
+                  Week 8
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/how-has-ras-signalling-been-studied-in-c-elegans.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  How Has Ras Signalling Been Studied in C. Elegans 
+                </a>
+                <span class="archive-item-date">
+                  Week 8
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/what-is-the-point-of-studying-developmental-biology.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  What is the Point of Studying Developmental Biology 
+                </a>
+                <span class="archive-item-date">
+                  Week 7
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/random-notes-on-biioinformatics.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Random Notes on Bioinformatics 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/pdb-stats.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Visualising the Resolution Revolution of Electron Microscopy 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/three-biophysical-methods.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Three Biophysical Methods 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/visualizing-protein-structures-using-plotly.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Visualizing Protein Structures Using Plotly 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/electron-microscopy-and-x-ray-crystallography.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Electron Microscopy and X-Ray Crystallography 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    Learning objectives
+
+To understand the methodological principle of electron microscopy in its different applications (e.g. TEM, SEM, tomography, single-particle), and X-ray crystallography  To be able to evaluate, which method of structural analysis would be most feasible with which kind of biological specimen (e.g. whole cells, viruses, protein complexes, peptides).
+
+To gain a conception of the resolution ranges attainable by EM methods as compared to X-ray crystallography.
+
+To be aware of the computational methods that combine EM maps and crystallogrographic data
+<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/bacterial-cell-division.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Bacterial Cell Division 
+                </a>
+                <span class="archive-item-date">
+                  Week 4
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    discussing both Gram positive and negative bacteria with different morphologies, how they divide and chose examples of antibiotics, comparing their different effects
+<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/isoelectric-point-calculation.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Isoelectric Point Calculation 
+                </a>
+                <span class="archive-item-date">
+                  Week 4
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./notes/molecular-cloning.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Notes:
+                  
+                  Molecular Cloning 
+                </a>
+                <span class="archive-item-date">
+                  Week 3
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./bioinformatics/sequence-alignment.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Bioinformatics:
+                  
+                  Sequence Alignment 
+                </a>
+                <span class="archive-item-date">
+                  Week 3
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./lab/protein-purification-practical.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Protein Purification Practical 
+                </a>
+                <span class="archive-item-date">
+                  Week 3
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./fun/vim.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Fun:
+                  
+                  Vim 
+                </a>
+                <span class="archive-item-date">
+                  Week 2
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./notes/techniques.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Notes:
+                  
+                  Techniques 
+                </a>
+                <span class="archive-item-date">
+                  Week 2
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/mcb-toolbox.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  MCB Toolbox 
+                </a>
+                <span class="archive-item-date">
+                  Week 2
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./special/wuhan-coronavirus.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Special:
+                  
+                  2019–20 outbreak of novel coronavirus &#39;2019-nCoV&#39; 
+                </a>
+                <span class="archive-item-date">
+                  Week 1
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/vectors-used-in-bacterial-and-eukaryotic-host-cells.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Vectors Used in Bacterial and Eukaryotic Host Cells 
+                </a>
+                <span class="archive-item-date">
+                  Week 1
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    What are the key similarities and differences between vectors used in bacterial and eukaryotic host cells? What can such vectors be used for?<hr>
+                  
+                </div>
+              </article>
+            
+            
+            
+          
+          
+      
+       
+       
+        <h2 class="archive-title">2019</h2>
+          
+          <h3 class="archive-subtitle">Michaelmas Term</h3>
+            
+              <article class="archive-item">
+                <a href="./tutorial/antibiotics-and-protein-synthesis.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Antibiotics and Protein Synthesis 
+                </a>
+                <span class="archive-item-date">
+                  Week 8
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    Explain how antibiotics and genetic mutations have helped in our understanding of the mechanism of protein synthesis on the ribosome.<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/rna-splicing.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  RNA Splicing 
+                </a>
+                <span class="archive-item-date">
+                  Week 7
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    What are the roles of small nuclear RNAs (SnRNAs) in pre-mRNA splicing and what are the mechanisms that control alternative splicing?<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/nmr.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  NMR 
+                </a>
+                <span class="archive-item-date">
+                  Week 6
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/biophysical-techniques.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Biophysical Techniques 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    You have expressed and purified a protein in a recombinant system. How would you confirm that the protein was the one expected from the DNA sequence. (ESI-MS) How would you determine that the protein was folded and its solution behaviour. (CD, Thermofluor, Intrinsic fluorescence, DSC, SEC MALS, AUC, DLS) How can we quantify the binding between two macromolecules? Discuss how you could use the following techniques to determine a KD for an interaction? What are their limitations in practice? What would decide which techniques you could apply to an interaction? (Surface Plasmon resonance, Fluorimetry/Fluorescence anisotropy, Microscale thermophoresis (MST), Isothermal titration calorimetry (ITC), Stopped flow, NMR, AUC) References: Use Campbell&#39;s Biophysical Techniques; for MST use Wienken et al 2010 Nature Communications 10.1038/ncomms1093
+<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/paper-vi-1.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Paper VI 2011 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/protein-purification.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Protein Expression and Purification 
+                </a>
+                <span class="archive-item-date">
+                  Week 4
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    You want to over-express a protein secreted by the malarial parasite. It is cysteine-rich and has no known structure. Outline an expression and purification strategy, using both traditional and high-throughput methods, to produce a sample suitable for protein crystallography. Include a description of how you would assess the quality of the purified protein. OR What strategies could you employ during protein expression and purification to minimise heterogeneity in a sample required for structural studies?<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/protein-structure-and-function.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Protein Structure and Function 
+                </a>
+                <span class="archive-item-date">
+                  Week 3
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    Choose 3 structural papers. They can be crystallography, NMR, CryoEM etc. Explain why the protein is important and what the structure tells you about function (why you find it interesting) but most importantly go to the methods section (it may be supplementary information especially if you choose high profile paper) and explain how the protein was purified. The techniques will be those covered in Matt Higgins&#39; lecture series. Bring notes no essay.<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/principle-of-electron-transfer-and-proton-transport.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Principle of electron transfer and proton transport 
+                </a>
+                <span class="archive-item-date">
+                  Week 2
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    What mechanisms are employed by mitochondrial electron transfer proteins to generate a proton-motive force (pmf)? Using the concept of membrane capacitance, explain why the dominant component of the pmf in mitochondria is an electrical potential rather than a pH gradient.<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./lab/2019-10-16-specific-radioactivity.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Lab:
+                  
+                  Specific Radioactivity 
+                </a>
+                <span class="archive-item-date">
+                  Week 1
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    Specific radioactivity of ATP and glucose.<hr>
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./worksheet/radioactivity-worksheet.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Worksheet:
+                  
+                  Radioactivity Worksheet 
+                </a>
+                <span class="archive-item-date">
+                  Week 5
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                </div>
+              </article>
+            
+            
+              <article class="archive-item">
+                <a href="./tutorial/principle-of-chemiosmotic-mechanism.html" class="archive-item-link" onmouseover="fetchAndAppend(this)">
+                  
+                    Tutorial:
+                  
+                  Principle of chemiosmotic mechanism 
+                </a>
+                <span class="archive-item-date">
+                  Week 1
+                </span>
+                <div class="article-summary" style="display: none;">
+                  
+                    What is the evidence that the chemiosmotic mechanism applies to oxidative phosphorylation and photophosphorylation?<hr>
+                  
+                </div>
+              </article>
+            
+            
+            
+          
+          
+      
+      <div id="about">
+        
+          
+<script src="./rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="./rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="./rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="./rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/proj4/proj4.min.js"></script>
+<script src="./rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="./rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<div id="about-me" class="section level1">
+<h1>About Me</h1>
+<p>I’m Tianyi Shi, also known as Hideyuki.</p>
+<p>I graduated from the University of Oxford with a Master of Biochemistry (MBiochem) degree in Molecular and Cellular Biochemistry.</p>
+<p>I’m currently working with Aarti Jagannath in Nuffield Department of Clinical Neurosciences.</p>
+<div class="jp">
+<p>石天熠と申します。通称は秀幸です。</p>
+<p>オックスフォード大学で生化学の学士・修士一貫制課程を修了し、今は引き続き本学のナフィールド臨床神経科学科のAarti Jagannathの研究に携わっています。</p>
+</div>
+<div id="htmlwidget-1" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[51.7593,-1.254999,"Nuffield Department of Clinical Neuroscience",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"setView":[[51.7593,-1.254999],17,[]],"limits":{"lat":[51.7593,51.7593],"lng":[-1.254999,-1.254999]}},"evals":[],"jsHooks":[]}</script>
+</div>
+
+        
+      </div>
+    
+  </div>
+
+</main>
+
+<script src="./js/list.js"></script>
+
+
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="./index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+        </li>
+        <li>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
+              src="./images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+        </li>
+      </ul>
+      
+    </footer>
+
+  </div>
+  
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet'
+    type='text/css' />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+  
+<script src="./js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  
+</body>
+
+</html>

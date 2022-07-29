@@ -1,0 +1,20 @@
+LOCUS       Exported                 113 bp ds-DNA     linear   SYN 31-JAN-2020
+DEFINITION  synthetic linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 113)
+  AUTHORS   Trial User
+  TITLE     Direct Submission
+  JOURNAL   Exported Friday, Jan 31, 2020 from SnapGene 5.0.7
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..113
+                     /organism="synthetic DNA construct"
+                     /mol_type="other DNA"
+ORIGIN
+        1 gagaccacaa cggtttccct ctagaaataa ttttgtttaa ctttaagaag gagatatacc
+       61 atggcacata tgagcggccg cgtcgactcg agcgagctcc cggggggggt tct
+//
