@@ -27,7 +27,7 @@ nocite: |
   @Geigenberger-2017, @Hagglund-2016
 ---
 
-Presentation see [here](/ox/thioredoxin-presentation/)
+Presentation see [here](/thioredoxin-presentation/)
 
 <!--
 Thioredoxins are kept in the reduced state by the flavoenzyme thioredoxin reductase in a NADPH-dependent reaction. 

@@ -1,11 +1,9 @@
 ---
-title: Academic Work at Oxford
+title: Hideyuki's Blog
 author: Tianyi Shi
 date: '2019-10-16'
 ---
 
-# Tianyi Shi
-
-This blog is used mainly for showing academic work during my undergraduate studies.
+I started this blog originally to showcase my tutorial essays while I was studying Biochemistry at University of Oxford. Currently I plan to post some random stuff which might or might not be academia-related.
 
 

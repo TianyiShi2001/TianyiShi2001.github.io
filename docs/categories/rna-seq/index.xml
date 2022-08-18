@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RNA-seq on Tianyi@Oxford</title>
+    <title>RNA-seq on Tianyi Shi (Hideyuki)</title>
     <link>/categories/rna-seq.html</link>
-    <description>Recent content in RNA-seq on Tianyi@Oxford</description>
+    <description>Recent content in RNA-seq on Tianyi Shi (Hideyuki)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/rna-seq/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,8 @@
       <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>/bioinformatics/personal-notes-on-rna-seq.html</guid>
-      <description> 1 Trimming 2 Mapping 2.1 STAR 1 Trimming 2 Mapping 2.1 STAR The --outSAMstrandField intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data (Dobin and Gingeras 2015).
-Dobin, Alexander, and Thomas R. Gingeras. 2015. “Mapping RNA-Seq Reads with STAR.” Current Protocols in Bioinformatics 51 (1): 11.14.1–19. https://doi.org/https://doi.org/10.1002/0471250953.bi1114s51. </description>
+      <description>1 Overview 2 Trimming 3 Mapping 3.1 STAR 3.2 HISAT2 1 Overview Typical RNA-seq data analysis workflow:
+Trimming, i.e. removal of the adapter sequences and poor-quality nucleotides. Quality control checks help to indicate whether trimming has been carried out appropriately. Alignment to a reference genome Gene quantification and normalization with reference to a file containing gene positions (GTF file) Differential expression (DE) analysis across conditions 2 Trimming 3 Mapping 3.</description>
     </item>
     
   </channel>

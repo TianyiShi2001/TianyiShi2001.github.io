@@ -2,6 +2,7 @@
 title: Personal Notes on RNA-seq
 author: Tianyi Shi
 date: '2022-07-29'
+draft: true
 slug: personal-notes-on-rna-seq
 categories:
   - NGS
@@ -21,6 +22,16 @@ output:
 nocite: ~
 ---
 
+# Overview
+
+Typical RNA-seq data analysis workflow:
+
+1. **Trimming**, i.e. removal of the adapter sequences and poor-quality nucleotides. **Quality control** checks help to indicate whether trimming has been carried out appropriately.
+2. **Alignment** to a reference genome
+3. **Gene quantification and normalization** with reference to a file containing gene positions (GTF file) 
+4. Differential expression (DE) analysis across conditions
+
+
 # Trimming
 
 # Mapping
@@ -29,14 +40,37 @@ nocite: ~
 
 The `--outSAMstrandField` intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data [@Dobin-2015]. 
 
+According to my experience, alignment to a *M. musculus＊ reference requires about 25 GB of RAM.
 
+## HISAT2
 
+HISAT2's [@Kim-2019] alignment algorithm is based on a graph Ferragina Manzini index, which is faster and more memory-efficient than STAR.
 
+HISAT2 binaries and indexes for *H. sapians* and a few model organisms are available for download from the [official website](https://daehwankimlab.github.io/hisat2/download/).
 
+# Counting
 
+Input for counting = multiple BAM files + 1 GTF file
 
+Simply speaking, the genomic coordinates of where the read is mapped (BAM) are cross-referenced with the genomic coordinates of whichever feature you are interested in counting expression of (GTF), it can be exons, genes or transcripts.
 
+Useful links:
 
+- [Introduction to RNA-Seq using high-performance computing: 05 Counting Reads](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/05_counting_reads.html)
+
+## featureCounts
+
+Like htseq-count, featureCounts reports the "raw" counts of reads that map to a single location (uniquely mapping) and are best at counting at the gene level. Essentially, total read count associated with a gene (meta-feature) = the sum of reads associated with each of the exons (feature) that “belong” to that gene.
+
+# Differential Expression (DE) Analysis
+
+[Manual](http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
+
+## DESeq2
+
+# General Resources
+
+- [Bulk RNA-seq Data Analysis using High-Performance Computing (bulk RNA-seq Part I – FASTQ to counts)](https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon-flipped/schedule/links-to-lessons.html)
 
 
 

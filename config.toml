@@ -1,6 +1,6 @@
 baseURL = "http://tianyishi2001.github.io/"
 languageCode = "en-us"
-title = "Tianyi@Oxford"
+title = "Tianyi Shi (Hideyuki)"
 theme = "hugo-lithium"
 googleAnalytics = ""
 publishDir = "./docs"
@@ -18,26 +18,17 @@ hasCJKLanguage = true
     post = "/:section/:year-:month-:day-:slug/"
 
 [[menu.main]]
-    name = "Tutorial"
+    name = "Oxford"
     url = "/tutorial.html"
-[[menu.main]]
-    name = "Lab"
-    url = "/lab.html"
-[[menu.main]]
-    name = "Worksheet"
-    url = "/worksheet.html"
-[[menu.main]]
-    name = "Notes"
-    url = "/notes.html"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/TianyiShi2001"
 [[menu.main]]
-    name = "菜谱"
-    url = "/menu.html"
+    name = "CV"
+    url = "/cv.pdf"
 [[menu.main]]
-    name = "Special"
-    url = "/special.html"
+    name = "Email"
+    url = "mailto:ShiTianyi2001@outlook.com"
 
 [params]
     description = "Tianyi Shi's blog"

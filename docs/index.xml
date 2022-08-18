@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic Work at Oxford on Tianyi@Oxford</title>
+    <title>Hideyuki&#39;s Blog on Tianyi Shi (Hideyuki)</title>
     <link>/</link>
-    <description>Recent content in Academic Work at Oxford on Tianyi@Oxford</description>
+    <description>Recent content in Hideyuki&#39;s Blog on Tianyi Shi (Hideyuki)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -13,8 +13,8 @@
       <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>/bioinformatics/personal-notes-on-rna-seq.html</guid>
-      <description> 1 Trimming 2 Mapping 2.1 STAR 1 Trimming 2 Mapping 2.1 STAR The --outSAMstrandField intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data (Dobin and Gingeras 2015).
-Dobin, Alexander, and Thomas R. Gingeras. 2015. “Mapping RNA-Seq Reads with STAR.” Current Protocols in Bioinformatics 51 (1): 11.14.1–19. https://doi.org/https://doi.org/10.1002/0471250953.bi1114s51. </description>
+      <description>1 Overview 2 Trimming 3 Mapping 3.1 STAR 3.2 HISAT2 1 Overview Typical RNA-seq data analysis workflow:
+Trimming, i.e. removal of the adapter sequences and poor-quality nucleotides. Quality control checks help to indicate whether trimming has been carried out appropriately. Alignment to a reference genome Gene quantification and normalization with reference to a file containing gene positions (GTF file) Differential expression (DE) analysis across conditions 2 Trimming 3 Mapping 3.</description>
     </item>
     
     <item>
@@ -148,9 +148,8 @@ mkdir pdb; cd pdb; mkdir zipped unzipped; cd zipped wget ftp://ftp.wwpdb.org/pub
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/redox-based-modulation-of-enzyme-activity.html</guid>
-      <description>Presentation see here
-Geigenberger, Peter, Ina Thormählen, Danilo M. Daloso, and Alisdair R. Fernie. 2017. “The Unprecedented Versatility of the Plant‎ Thioredoxin System.” Trends in Plant Science 22 (3): 249–62. https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008.
-Hägglund, Per, Christine Finnie, Hiroyuki Yano, Azar Shahpiri, Bob B. Buchanan, Anette Henriksen, and Birte Svensson. 2016. “Seed Thioredoxin H.” Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics 1864 (8): 974–82. https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014.</description>
+      <description> Presentation see here
+Geigenberger, Peter, Ina Thormählen, Danilo M. Daloso, and Alisdair R. Fernie. 2017. “The Unprecedented Versatility of the Plant‎ Thioredoxin System.” Trends in Plant Science 22 (3): 249–62. https://doi.org/https://doi.org/10.1016/j.tplants.2016.12.008. Hägglund, Per, Christine Finnie, Hiroyuki Yano, Azar Shahpiri, Bob B. Buchanan, Anette Henriksen, and Birte Svensson. 2016. “Seed Thioredoxin h.” Biochimica Et Biophysica Acta (BBA) - Proteins and Proteomics 1864 (8): 974–82. https://doi.org/https://doi.org/10.1016/j.bbapap.2016.02.014. </description>
     </item>
     
     <item>
@@ -550,15 +549,6 @@ Chemical Shift: NMR applies RF wave to induce resonance with the precession freq
       
       <guid>/lab/2019-10-16-specific-radioactivity.html</guid>
       <description>Specific radioactivity of ATP and glucose.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about.html</link>
-      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/about.html</guid>
-      <description>About Me I’m Tianyi Shi, also known as Hideyuki. I graduated from the University of Oxford with a Master of Biochemistry (MBiochem) degree in Molecular and Cellular Biochemistry. I’m currently working with Aarti Jagannath in Nuffield Department of Clinical Neurosciences. 石天熠と申します。通称は秀幸です。 オックスフォード大</description>
     </item>
     
     <item>
