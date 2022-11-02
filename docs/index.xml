@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Research Proposal: Elucidating the Functions of Polycomb Group Proteins in the Context of Neurodevelopment</title>
+      <link>/research-proposal.html</link>
+      <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/research-proposal.html</guid>
+      <description>¶ % 1 Abstract 2 Main 2.1 PcG Proteins and PRCs 2.2 Ubiquitylation (vPRC1)-dependent and ubiquitylation-independent (cPRC1-dependent) Functions of PcG 2.3 The Mechanisms of PcG-mediated Higher-Order Chromatin Interactions and its Relationship With Gene Repression 2.4 Diverse PcG Mechanisms in Neurodevelopment References 1 Abstract The Polycomb repressive complexes PRC1 and PRC2 formed by Polycomb group (PcG) proteins are epigenetic regulators that are involved in the maintenance of gene repression patterns. Although their histone modification activities (H3K27me3 by PRC2 and H2A119ub by PRC1) have been well defined and their ability to drive formation of compacted chromatin regions (PcG domains) has been unveiled using chromatin conformation capture (3C) based technologies, the exact mechanism(s) by which they achieve gene repression are not fully understood.</description>
+    </item>
+    
+    <item>
+      <title>Awesome List</title>
+      <link>/awesome-linux.html</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/awesome-linux.html</guid>
+      <description> File system macFUSE allows you to extend macOS’s native file handling capabilities via third-party file systems. Fuse-ext2 is an EXT2/EXT3/EXT4 filesystem for FUSE </description>
+    </item>
+    
+    <item>
       <title>Personal Notes on RNA-seq</title>
       <link>/bioinformatics/personal-notes-on-rna-seq.html</link>
       <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
