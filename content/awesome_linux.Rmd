@@ -5,7 +5,7 @@ date: '2022-08-02'
 slug: awesome-linux
 categories: []
 tutor: Tanadet Pipatpolkai
-bibliography: [../bib/main.bib]
+bibliography: [bib/main.bib]
 ---
 
 # File system
