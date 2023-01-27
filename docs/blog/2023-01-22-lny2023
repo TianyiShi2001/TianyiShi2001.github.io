@@ -1,0 +1,46 @@
+---
+title: Lunar New Year 2023
+author: Package Build
+date: '2023-01-22'
+slug: ''
+categories:
+  - life
+tags:
+  - life
+  - cooking
+  - food
+bibliography: ../bib/main.bib
+output:
+  blogdown::html_page:
+    number_sections: yes
+    toc: yes
+---
+
+<script>document.getElementsByTagName('body')[0].classList.add('jp')</script>
+
+旧正月を機に韓国とベトナムの正月料理を作ってみた。
+It is a great chance for me to try making some Korean and Vietnamese festive dishes.
+
+```{r immunolab-q8, echo=FALSE, fig.cap="Q8", out.width="100%"}
+knitr::include_graphics('../img/immunolab-q8.jpg')
+```
+
+![](../img/lnr2023/krvt.avif)
+
+トッククは、椎茸とカルビを煮込んだスープでトックを茹で上げ、錦糸卵（白身と黄身は別々で）とネギをトッピングしたものです。
+トッククを作るのは初めてだったけどこんなに美味しいとは思わなかった。さほど手間がかからないし今後は日常的に作るようになるかもしれん😋
+The Tteokguk was made by boiling Tteok (Korean rice cakes) in Shiitake mushrooms & beef Galbi soup and topping 
+it with spring onions and thin strips of fried egg white & yolk. This is the first time I make Tteokguk and I 
+never knew it's so appetising. Since it does not require much effort I might routinely enjoy it from now on.
+
+生春巻きの具材にバラ肉、海老、ビーフン、人参、胡瓜、もやし、レタス、ミント、コリアンダーとニラを使った。
+ヌオックチャムのソースは、砂糖を魚醤に溶かし、搾りたてのライムの果汁と混ぜ、ニンニクの微塵切りとタイ産 
+bird's eye 唐辛子の輪切りをあしらったものです。生のニラとコリアンダーが少し心許なかったけど実際に食べたらすんなり慣れてきた。
+バラ肉の脂っこさを和らげられるのでぴったりした組み合わせです。
+Gỏi cuốn (Vietnamese spring rolls) were made by rolling up dampened bánh tráng (rice paper) to wrap the 
+ingredients of choice (I used a customary combination of pork belly, king prawns, rice vermicelli, carrot 
+& cucumber strands, bean sprouts, lettuce, mint, coriander, and Chinese chive). To make the nước chấm sauce, 
+dissolve sucrose in fish sauce, mix with freshly squeezed lime juice and garnish with finely chopped garlic 
+and rings of bird's eye chillies. Raw Chinese chives and coriander seemed intimidating to me at first but 
+surprisingly I had no problem adapting to them and I realized how they are a perfect match for the pork belly 
+by diminishing its greasiness.
