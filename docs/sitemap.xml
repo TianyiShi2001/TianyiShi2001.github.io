@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/blog.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/cooking.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/food.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/life.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/life.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2023-01-22-lny2023.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags.html</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/research-proposal.html</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +33,6 @@
     <lastmod>2022-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/bioinformatics.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories.html</loc>
     <lastmod>2022-07-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/illumina.html</loc>
@@ -30,9 +51,6 @@
     <lastmod>2022-07-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/rna-seq.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags.html</loc>
     <lastmod>2022-07-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/term/3-michaelmas.html</loc>
