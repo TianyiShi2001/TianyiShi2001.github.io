@@ -47,6 +47,16 @@
 
 </head>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FPDHCSDNTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-FPDHCSDNTQ');
+</script>
+
 <body>
   <div class="wrapper list">
     <header class="header">
@@ -106,7 +116,7 @@
       
 
 
-<p>I started this blog originally to showcase my tutorial essays while I was studying Biochemistry at University of Oxford. Currently I plan to post some random stuff which might or might not be academia-related.</p>
+<p>I started this blog to showcase weekly assignments (mainly essays) of mine as a below-average biochemistry student in Oxford. As I’m moving to Japan, I find myself willing to write on more topics, mainly life- and politics-related. Not much content at the moment, but thank you for your visit. <a href="./cv.pdf">CV is here.</a></p>
 
     </div>
   </article>
@@ -159,69 +169,6 @@ by diminishing its greasiness.</p>
 <p><img src="../img/lnr2023/ramen.avif" width="100%" /></p>
 <p>残りのバラ肉は叉焼に仕上げてラーメンのトッピングにした。</p>
 <p>The remaining pork belly were processed into Chashu and used as a topping for ramen.</p>
-
-                  </div>
-                </article>
-              
-        
-      
-       
-       
-              <h2 class="archive-title">2022</h2>
-              
-                <article class="archive-item">
-                  <a href="./bioinformatics/personal-notes-on-rna-seq.html" class="archive-item-link">
-                    Personal Notes on RNA-seq 
-                  </a>
-                  <span class="archive-item-date">
-                    2022-07-29
-                  </span>
-                  <div class="article-summary" style="display: none;">
-                    
-                    
-
-<div id="TOC">
-<ul>
-<li><a href="#overview" id="toc-overview"><span class="toc-section-number">1</span> Overview</a></li>
-<li><a href="#trimming" id="toc-trimming"><span class="toc-section-number">2</span> Trimming</a></li>
-<li><a href="#mapping" id="toc-mapping"><span class="toc-section-number">3</span> Mapping</a>
-<ul>
-<li><a href="#star" id="toc-star"><span class="toc-section-number">3.1</span> STAR</a></li>
-<li><a href="#hisat2" id="toc-hisat2"><span class="toc-section-number">3.2</span> HISAT2</a></li>
-</ul></li>
-</ul>
-</div>
-
-<div id="overview" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Overview</h1>
-<p>Typical RNA-seq data analysis workflow:</p>
-<ol style="list-style-type: decimal">
-<li><strong>Trimming</strong>, i.e. removal of the adapter sequences and poor-quality nucleotides. <strong>Quality control</strong> checks help to indicate whether trimming has been carried out appropriately.</li>
-<li><strong>Alignment</strong> to a reference genome</li>
-<li><strong>Gene quantification and normalization</strong> with reference to a file containing gene positions (GTF file)</li>
-<li>Differential expression (DE) analysis across conditions</li>
-</ol>
-</div>
-<div id="trimming" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Trimming</h1>
-</div>
-<div id="mapping" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Mapping</h1>
-<div id="star" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> STAR</h2>
-<p>The <code>--outSAMstrandField</code> intronMotif option adds an XS attribute to the spliced alignments in the BAM ﬁle, which is required by Cufﬂinks for unstranded RNA-seq data <span class="citation">(<a href="#ref-Dobin-2015" role="doc-biblioref">Dobin and Gingeras 2015</a>)</span>.</p>
-</div>
-<div id="hisat2" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> HISAT2</h2>
-<p>HISAT2’s <span class="citation">(<a href="#ref-Kim-2019" role="doc-biblioref"><strong>Kim-2019?</strong></a>)</span> alignment algorithm is based on a graph Ferragina Manzini index, which is faster and more memory-efficient than STAR.</p>
-<p>HISAT2 binaries and indexes for <em>H. sapians</em> and a few model organisms are available for download from the <a href="https://daehwankimlab.github.io/hisat2/download/">official website</a>.</p>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-Dobin-2015" class="csl-entry">
-Dobin, Alexander, and Thomas R. Gingeras. 2015. <span>“Mapping RNA-Seq Reads with STAR.”</span> <em>Current Protocols in Bioinformatics</em> 51 (1): 11.14.1–19. https://doi.org/<a href="https://doi.org/10.1002/0471250953.bi1114s51">https://doi.org/10.1002/0471250953.bi1114s51</a>.
-</div>
-</div>
-</div>
-</div>
 
                   </div>
                 </article>
@@ -1105,6 +1052,32 @@ To be aware of the computational methods that combine EM maps and crystallogrogr
       
       <div id="about">
         
+          
+<script src="./rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="./rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="./rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="./rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/proj4/proj4.min.js"></script>
+<script src="./rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="./rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="./rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<div id="about-me" class="section level1">
+<h1>About Me</h1>
+<p>I’m Tianyi Shi, also known as Hideyuki.</p>
+<p>I graduated from the University of Oxford with a Master of Biochemistry (MBiochem) degree in Molecular and Cellular Biochemistry.</p>
+<p>I’m currently working with Aarti Jagannath in Nuffield Department of Clinical Neurosciences.</p>
+<div class="jp">
+<p>石天熠と申します。通称は秀幸です。</p>
+<p>オックスフォード大学で生化学の学士・修士一貫制課程を修了し、今は引き続き本学のナフィールド臨床神経科学科のAarti Jagannathの研究に携わっています。</p>
+</div>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[51.7593,-1.254999,"Nuffield Department of Clinical Neuroscience",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"setView":[[51.7593,-1.254999],17,[]],"limits":{"lat":[51.7593,51.7593],"lng":[-1.254999,-1.254999]}},"evals":[],"jsHooks":[]}</script>
+</div>
+
+        
       </div>
     
   </div>
@@ -1121,8 +1094,7 @@ To be aware of the computational methods that combine EM maps and crystallogrogr
           <a href="./index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
         </li>
         <li>
-          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img
-              src="./images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="./%20images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
         </li>
       </ul>
       

@@ -4,6 +4,6 @@ author: Tianyi Shi
 date: '2019-10-16'
 ---
 
-I started this blog originally to showcase my tutorial essays while I was studying Biochemistry at University of Oxford. Currently I plan to post some random stuff which might or might not be academia-related.
+I started this blog to showcase weekly assignments (mainly essays) of mine as a below-average biochemistry student in Oxford. As I'm moving to Japan, I find myself willing to write on more topics, mainly life- and politics-related. Not much content at the moment, but thank you for your visit. [CV is here.](./cv.pdf)
 
 

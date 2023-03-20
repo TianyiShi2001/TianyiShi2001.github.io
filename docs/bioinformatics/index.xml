@@ -6,17 +6,7 @@
     <description>Recent content in Bioinformatics on Tianyi Shi (Hideyuki)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Personal Notes on RNA-seq</title>
-      <link>/bioinformatics/personal-notes-on-rna-seq.html</link>
-      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/bioinformatics/personal-notes-on-rna-seq.html</guid>
-      <description>1 Overview 2 Trimming 3 Mapping 3.1 STAR 3.2 HISAT2 1 Overview Typical RNA-seq data analysis workflow:
-Trimming, i.e. removal of the adapter sequences and poor-quality nucleotides. Quality control checks help to indicate whether trimming has been carried out appropriately. Alignment to a reference genome Gene quantification and normalization with reference to a file containing gene positions (GTF file) Differential expression (DE) analysis across conditions 2 Trimming 3 Mapping 3.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download and Sync with the Entire PDB Database</title>
       <link>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</link>
@@ -101,7 +91,7 @@ http://fields.scripps.edu/DTASelect/20010710-pI-Algorithm.pdf</description>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/bioinformatics/sequence-alignment.html</guid>
-      <description>Sequence Alignment in R Packages library(Biostrings) library(seqinr) DNA sequence myScoringMat &amp;lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE) dnaSeq1 &amp;lt;- &amp;quot;GAATTCGGCTA&amp;quot; # can be a plain string dnaSeq2 &amp;lt;- DNAString(&amp;quot;GATTACCTA&amp;quot;) # or an XString gapOpen &amp;lt;- 2 gapExtend &amp;lt;- 1 dnaAln &amp;lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &amp;#39;global&amp;#39;, scoreOnly=FALSE) dnaAln Amino acid sequence Here is a list of built-in amino acid substitution matrices, which can be shown with data(package=&amp;quot;Biostrings&amp;quot;):</description>
+      <description>Sequence Alignment in R Packages library(Biostrings) library(seqinr) DNA sequence myScoringMat &amp;lt;- nucleotideSubstitutionMatrix(match = 1, mismatch = -1, baseOnly = TRUE) dnaSeq1 &amp;lt;- &amp;quot;GAATTCGGCTA&amp;quot; # can be a plain string dnaSeq2 &amp;lt;- DNAString(&amp;quot;GATTACCTA&amp;quot;) # or an XString gapOpen &amp;lt;- 2 gapExtend &amp;lt;- 1 dnaAln &amp;lt;- pairwiseAlignment(dnaSeq1, dnaSeq2, substitutionMatrix = myScoringMat, gapOpening = gapOpen, gapExtension = gapExtend, type = &amp;#39;global&amp;#39;, scoreOnly=FALSE) dnaAln Amino acid sequence Here is a list of built-in amino acid substitution matrices, which can be shown with data(package=&#34;</description>
     </item>
     
   </channel>

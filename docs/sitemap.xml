@@ -29,30 +29,6 @@
     <loc>/research-proposal.html</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/awesome-linux.html</loc>
-    <lastmod>2022-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/bioinformatics.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/illumina.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/ngs.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/ngs.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/bioinformatics/personal-notes-on-rna-seq.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/rna-seq.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/rna-seq.html</loc>
-    <lastmod>2022-07-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/term/3-michaelmas.html</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -153,6 +129,9 @@
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/bioinformatics.html</loc>
+    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/bioinformatics.html</loc>
     <lastmod>2020-10-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/bioinformatics/download-and-sync-with-the-entire-pdb-database.html</loc>
@@ -487,6 +466,9 @@
   </url><url>
     <loc>/lab/2019-10-16-specific-radioactivity.html</loc>
     <lastmod>2019-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/about.html</loc>
+    <lastmod>2019-10-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
     <lastmod>2019-10-16T00:00:00+00:00</lastmod>

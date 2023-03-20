@@ -9,26 +9,24 @@ date: '2019-10-16'
 
 I'm Tianyi Shi, also known as Hideyuki.
 
-I graduated from the University of Oxford with a Master of Biochemistry (MBiochem) degree in Molecular and Cellular Biochemistry.
-
-I'm currently working with Aarti Jagannath in Nuffield Department of Clinical Neurosciences.
+I completed the Master of Biochemistry (MBiochem) degree in the University of Oxford in 2022, and currently I'm a research student in the Department of Pharmaceutical Sciences in the University of Tokyo.
 
 
 
 <div class="jp">
 
-石天熠と申します。通称は秀幸です。
+石天熠と申します。通称はひでゆきです。
 
-オックスフォード大学で生化学の学士・修士一貫制課程を修了し、今は引き続き本学のナフィールド臨床神経科学科のAarti Jagannathの研究に携わっています。
+2022年にオックスフォード大学で生化学の学士・修士一貫制課程を修了し、今は東京大学薬学研究科の研究生です。
 
 </div>
 
 ```{r out.width='100%', echo=FALSE}
 library(leaflet)
 leaflet() %>% addTiles() %>%
-  setView(-1.254999, 51.759300, zoom = 17) %>%
+  setView(139.7630689688647, 35.710048512984926, zoom = 17) %>%
   addPopups(
-    -1.254999, 51.759300,
-    'Nuffield Department of Clinical Neuroscience'
+    139.7630689688647, 35.710048512984926,
+    '東京大学薬学研究科'
   )
 ```
