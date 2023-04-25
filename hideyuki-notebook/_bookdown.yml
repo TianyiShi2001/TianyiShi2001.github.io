@@ -1,0 +1,5 @@
+output_dir: '../docs/notebook_ut'
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "

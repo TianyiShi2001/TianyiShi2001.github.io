@@ -1,0 +1,18 @@
+--- 
+title: "Hideyuki's Notebook"
+author: "Hideyuki"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  Hideyuki's notebook desu.
+link-citations: yes
+# github-repo: rstudio/bookdown-demo
+---
+
+# 表紙
+
+表紙です. This page is intentionally left blank.
