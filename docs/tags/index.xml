@@ -341,20 +341,20 @@
     </item>
     
     <item>
-      <title>python</title>
-      <link>/tags/python.html</link>
-      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Go</title>
       <link>/tags/go.html</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/go.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>/tags/python.html</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python.html</guid>
       <description></description>
     </item>
     
@@ -436,33 +436,6 @@
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/purification.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IT</title>
-      <link>/tags/it.html</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/it.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>/tags/programming.html</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/programming.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>/tags/vim.html</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/vim.html</guid>
       <description></description>
     </item>
     

@@ -1,23 +1,19 @@
 ---
 title: About
-author: Tianyi Shi
+author: ひでゆき
 date: '2019-10-16'
 ---
 
 
 # About Me
 
-I'm Tianyi Shi, also known as Hideyuki.
-
-I completed the Master of Biochemistry (MBiochem) degree in the University of Oxford in 2022, and currently I'm a research student in the Department of Pharmaceutical Sciences in the University of Tokyo.
+I'm Tianyi Shi, also known as Hideyuki. I completed the Master of Biochemistry (MBiochem) degree in the University of Oxford in 2022, and currently I'm a research student in the Department of Pharmaceutical Sciences in the University of Tokyo.
 
 
 
 <div class="jp">
 
-石天熠と申します。通称はひでゆきです。
-
-2022年にオックスフォード大学で生化学の学士・修士一貫制課程を修了し、今は東京大学薬学研究科の研究生です。
+石天熠と申します。通称はひでゆきです。令和四年にオックスフォード大学で生化学の学士・修士一貫制課程を修了し、今は東京大学薬学研究科の研究生です。
 
 </div>
 

@@ -238,24 +238,6 @@ Due to the blood-brain barrier, The human brain can only harness energy from cat
     </item>
     
     <item>
-      <title>料理</title>
-      <link>/menu-jp.html</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/menu-jp.html</guid>
-      <description>1 原材料 1.1 辣椒 1.2 猪肉 2 汤 2.1 莲藕排骨汤 3 菜 3.1 回鍋肉 4 炒饭 4.1 印尼炒饭 4.2 XO酱海鲜炒饭 4.3 波兰香肠鸡蛋炒饭 5 面 5.1 伪·热干面 5.2 白汁海鲜 Spaghetti 1 原材料 1.1 辣椒</description>
-    </item>
-    
-    <item>
-      <title>菜谱</title>
-      <link>/menu.html</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/menu.html</guid>
-      <description>1 原材料 1.1 辣椒 1.2 猪肉 2 汤 2.1 莲藕排骨汤 3 菜 3.1 回锅肉 3.2 花菜 3.3 土豆烧牛肉 4 炒饭 4.1 印尼炒饭 4.2 XO酱海鲜炒饭 4.3 波兰香肠鸡蛋炒饭 5 面 5.1 伪·热干面 5.2 白汁海</description>
-    </item>
-    
-    <item>
       <title>Immunoassay (in Silico)</title>
       <link>/lab/immunoassay-in-silico.html</link>
       <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
@@ -280,19 +262,6 @@ Due to the blood-brain barrier, The human brain can only harness energy from cat
       
       <guid>/notes/rust-notes.html</guid>
       <description>fn main() { let number_list = vec![34, 50, 25, 100, 65]; print_max(&amp;amp;number_list); print_max_1(&amp;amp;number_list); print_max_2(number_list) } fn print_max(number_list: &amp;amp;[u16]) { let mut largest = &amp;amp;number_list[0]; for number in number_list.iter() { if number &amp;gt; largest { largest = number; } } println!(&amp;quot;The largest number is {}&amp;quot;, largest); } fn print_max_1(number_list: &amp;amp;[u16]) { let mut largest = &amp;amp;number_list[0]; for number in number_list { if number &amp;gt; largest { largest = number; } } println!</description>
-    </item>
-    
-    <item>
-      <title>Linux Setup</title>
-      <link>/fun/linux-setup.html</link>
-      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/fun/linux-setup.html</guid>
-      <description> Utilities Input Methods Framwork: Fcitx
-Chinese: Sougou Pinyin Japanese: Mozc
-LaTeX Select from:
-texlive-base - 136 MB texlive-latex-recommended - 177 MB texlive - 240 MB texlive-latex-extra - 404 MB texlive-full - 4714 MB References
-https://linuxconfig.org/how-to-install-latex-on-ubuntu-18-04-bionic-beaver-linux </description>
     </item>
     
     <item>
@@ -415,15 +384,6 @@ http://fields.scripps.edu/DTASelect/20010710-pI-Algorithm.pdf</description>
     </item>
     
     <item>
-      <title>Vim</title>
-      <link>/fun/vim.html</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/fun/vim.html</guid>
-      <description>B = Life Technologies C = Minotech Biotechnology E = Agilent Technologies I = SibEnzyme Ltd. J = Nippon Gene Co., Ltd. K = Takara Bio Inc. M = Roche Applied Science N = New England Biolabs O = Toyobo Biochemicals Q = Molecular Biology Resources - CHIMERx R = Promega Corporation S = Sigma Chemical Corporation V = Vivantis Technologies X = EURx Ltd. Y = SinaClon BioScience Co.</description>
-    </item>
-    
-    <item>
       <title>Techniques</title>
       <link>/notes/techniques.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
@@ -524,15 +484,6 @@ Chemical Shift: NMR applies RF wave to induce resonance with the precession freq
     </item>
     
     <item>
-      <title>摘抄</title>
-      <link>/fun/great.html</link>
-      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/fun/great.html</guid>
-      <description>鲁迅 狂人日记 某君昆仲，今隐其名，皆余昔日在中学时良友；分隔多年，消息渐阙。日前偶闻其一大病；适归故乡，迂道往访，则仅晤一人，言病者其弟也。劳</description>
-    </item>
-    
-    <item>
       <title>Protein Structure and Function</title>
       <link>/tutorial/protein-structure-and-function.html</link>
       <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
@@ -565,7 +516,7 @@ Chemical Shift: NMR applies RF wave to induce resonance with the precession freq
       <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/about.html</guid>
-      <description>About Me I’m Tianyi Shi, also known as Hideyuki. I graduated from the University of Oxford with a Master of Biochemistry (MBiochem) degree in Molecular and Cellular Biochemistry. I’m currently working with Aarti Jagannath in Nuffield Department of Clinical Neurosciences. 石天熠と申します。通称は秀幸です。 オックスフォード大</description>
+      <description>About Me I’m Tianyi Shi, also known as Hideyuki. I completed the Master of Biochemistry (MBiochem) degree in the University of Oxford in 2022, and currently I’m a research student in the Department of Pharmaceutical Sciences in the University of Tokyo. 石天熠と申します。通称はひでゆきです。 2022年に</description>
     </item>
     
     <item>

@@ -18,19 +18,6 @@ library(R.matlab) ## R.matlab v3.6.2 (2018-09-26) successfully loaded. See ?R.ma
     </item>
     
     <item>
-      <title>Linux Setup</title>
-      <link>/fun/linux-setup.html</link>
-      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/fun/linux-setup.html</guid>
-      <description> Utilities Input Methods Framwork: Fcitx
-Chinese: Sougou Pinyin Japanese: Mozc
-LaTeX Select from:
-texlive-base - 136 MB texlive-latex-recommended - 177 MB texlive - 240 MB texlive-latex-extra - 404 MB texlive-full - 4714 MB References
-https://linuxconfig.org/how-to-install-latex-on-ubuntu-18-04-bionic-beaver-linux </description>
-    </item>
-    
-    <item>
       <title>Random Notes on Bioinformatics</title>
       <link>/bioinformatics/random-notes-on-biioinformatics.html</link>
       <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>

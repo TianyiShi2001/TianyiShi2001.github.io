@@ -233,12 +233,6 @@
     <loc>/tutorial/supplying-fuels-to-the-brain-during-starvation.html</loc>
     <lastmod>2020-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/menu-jp.html</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/menu.html</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/term/1-hilary.html</loc>
     <lastmod>2020-03-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -263,19 +257,13 @@
     <loc>/notes/rust-notes.html</loc>
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/fun.html</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fun/linux-setup.html</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/python.html</loc>
-    <lastmod>2020-02-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tutorial/what-is-the-point-of-studying-developmental-biology.html</loc>
     <lastmod>2020-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/go.html</loc>
+    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/python.html</loc>
     <lastmod>2020-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/bioinformatics/random-notes-on-biioinformatics.html</loc>
@@ -334,21 +322,6 @@
   </url><url>
     <loc>/tags/purification.html</loc>
     <lastmod>2020-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/it.html</loc>
-    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/it.html</loc>
-    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/programming.html</loc>
-    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/vim.html</loc>
-    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fun/vim.html</loc>
-    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/data-analysis.html</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
@@ -448,9 +421,6 @@
   </url><url>
     <loc>/tutorial/protein-purification.html</loc>
     <lastmod>2019-11-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/fun/great.html</loc>
-    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tutorial/protein-structure-and-function.html</loc>
     <lastmod>2019-10-24T00:00:00+00:00</lastmod>
